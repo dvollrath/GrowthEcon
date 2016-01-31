@@ -5,7 +5,23 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Sat, 30 Jan 2016 22:35:15 -0600</pubDate>
+    <pubDate>Sun, 31 Jan 2016 10:05:28 -0600</pubDate>
+    
+      <item>
+        <title>Site Upgrades</title>
+        <link>https://growthecon.com/blog/Site-Upgrades/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Site-Upgrades/</guid>
+        <description>&lt;p&gt;Thanks to the Cavs/Spurs game turning into a snorer, I distracted myself by fixing up a few things on the new site. Rocking Saturday night, I know. I&amp;#39;m old.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SSL&lt;/strong&gt;: The site is now using SSL, which means you&amp;#39;ll see &amp;quot;https&amp;quot; in the web address. You don&amp;#39;t need to do anything, the site automatically redirects you to the https link. If you want to save yourself a millisecond, change your link to the site to say &amp;quot;https&amp;quot; explicitly.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RSS Equations&lt;/strong&gt;: One thing that came up in the transition was that the RSS feed was not rendering equations. You&amp;#39;d see markup code in your RSS reader, not a nicely formatted equation. This is fixed....I think. In fact, here&amp;#39;s a little test. If you can see &lt;img src=&quot;http://latex.codecogs.com/png.latex?y = x^2\inline&quot;/&gt; in your RSS feed as a nicely formatted equation, then apparently things are working well. If not, then I know what I&amp;#39;m doing next Saturday night.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Again, thanks for reading, and thanks for the patience with the tweaks.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 31 Jan 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>The Persistence of Technology</title>
@@ -91,7 +107,7 @@
 &lt;p&gt;&lt;b&gt;Secular shift in MPK:&lt;/b&gt; Essentially, interpret this as evidence of some kind of sustained, secular change in the US economy. The drift down in the MPK isn&#39;t consistent with the US being on a balanced growth path (BGP). As a quick reminder, traditionally a BGP is a situation where GDP per worker is growing at a roughly constant rate, the return on capital (MPK) is constant over time, and the share of output going to capital is constant over time.&lt;/p&gt;
 &lt;p&gt;And we almost always presume that the US is on a BGP. I will be telling my undergrads this in a week or so, I&#39;m sure. Almost every growth model is written so that it delivers a BGP eventually, because people feel that this represents what we see in the data. And when they say ``BGP&#39;&#39; in their model, they almost always mean that the MPK is constant.&lt;/p&gt;
 &lt;p&gt;In a standard Solow model, the steady state is a BGP, and the model tells us what determines the MPK on that BGP.&lt;/p&gt;
-&lt;p align=&quot;center&quot;&gt;\[MPK = \alpha\frac{n + g + \delta}{s}\]&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?MPK = \alpha\frac{n + g + \delta}{s}&quot; alt=&quot;MPK = \alpha\frac{n + g + \delta}{s}&quot; /&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?{\alpha}\inline&quot;/&gt; is capital&#39;s share of output, &lt;img src=&quot;http://latex.codecogs.com/png.latex?{n}\inline&quot;/&gt; is population growth, &lt;img src=&quot;http://latex.codecogs.com/png.latex?{g}\inline&quot;/&gt; is productivity growth, &lt;img src=&quot;http://latex.codecogs.com/png.latex?{\delta}\inline&quot;/&gt; is the depreciation rate, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?{s}\inline&quot;/&gt; is the savings rate. Note, this equation is for the MPK in steady state, not necessarily at any given point in time, but it is useful for thinking about what might drive the decline in MPK.&lt;/p&gt;
 &lt;p&gt;The steady decline in the MPK over time is consistent with declining &lt;img src=&quot;http://latex.codecogs.com/png.latex?{n}\inline&quot;/&gt; (because capital&#39;s marginal product is lower when there are fewer people around), declining &lt;img src=&quot;http://latex.codecogs.com/png.latex?{g}\inline&quot;/&gt; (slower productivity growth), and higher &lt;img src=&quot;http://latex.codecogs.com/png.latex?{s}\inline&quot;/&gt; (more savings). In this story we are transitioning from the immediate post-war era of relatively rapid population and technological change, to a new era of relatively low population and technological growth.&lt;/p&gt;
 &lt;p&gt;It&#39;s worth remembering here that the MPK is calculated using the BLS data, which excludes the government sector and the residential housing stock. So this represents a decline in the non-residential-housing MPK.&lt;/p&gt;
