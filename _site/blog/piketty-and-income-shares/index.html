@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Piketty and Income Shares | Dietrich Vollrath</title>
+	<meta name="description" content="Doug Gollin, Oxford University econ. professor, my coauthor, and an amateur ninja (I may have made up that last one), left a great reply to my post on Pikett...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/piketty-and-income-shares/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Piketty and Income Shares</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">27 May 2014</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>Doug Gollin, <a href="https://sites.google.com/site/douglasgollin/">Oxford University econ. professor</a>, my <a href="http://ideas.repec.org/p/hou/wpaper/2013-290-26.html">coauthor</a>, and an amateur ninja (I may have made up that last one), left a great reply to my post on <a href="http://wp.me/p3ZJqh-1i">Piketty and Growth Economics</a>. </p>
+<p>Let's start with the first point Doug makes:</p>
+<blockquote><p>
+But for the record, it is not at all straightforward to read these income shares from national accounts data. The “true” labor and capital shares cannot be easily inferred from macro data – and they are also difficult to pin down in firm-level micro data.
+</p></blockquote>
+<p>Before we get going, let's be clear that this is not a criticism about transcription errors or cherry-picking of results, as in <a href="http://blogs.ft.com/money-supply/author/chrisgiles/">Chris Giles</a>' recent FT report. For more than you probably care to digest on that subject, see this <a href="http://www.bruegel.org/nc/blog/detail/article/1341-blogs-review-the-piketty-data-controversy/">link</a> which has a nice roundup of the hubbub.</p>
+<p>Specifically, Doug has the following concern:</p>
+<blockquote><p>
+The national income and product accounts for most countries report something called employee compensation. This sounds like labor income, but it leaves out some important forms of labor income, such as the labor income of the self-employed.
+</p></blockquote>
+<p>This is something that Doug has looked closely at before (see <a href="http://ideas.repec.org/a/ucp/jpolec/v110y2002i2p458-474.html">here</a>), and that prior research is pretty clear that there are big adjustments to be made regarding the earnings of the self-employed. Simply put, earnings for the self-employed (which Piketty calls "mixed" income) are reported as capital income in national accounts, but contain both labor income (the implicit wage I pay myself while running my own firm) and capital income (the implicit return I get for having emptied my savings account to start a company). So the national accounts data do not accurately reflect the distribution of income between labor and capital.</p>
+<p>Further, the amount of self-employed income as a share of national income tends to shrink as countries develop (think of people moving from farms to factories, and going from self-employed to wage-workers). Over the time frame that Piketty is looking at, there would have been distinct changes (declines, almost certainly) in the share of self-employed income within all of the countries he examines.</p>
+<p>Piketty's strategy with the "mixed" income of self-employed is to split it up into labor and capital income using the same ratio he observes in the reported labor and capital income. So if employee compensation is 2/3 of reported labor and capital income in the national accounts, then as I understand it Piketty assumes that self-employed income is also 2/3 labor income and 1/3 capital income. </p>
+<p>Is this a problem? Here's how it might be. If self-employment income is really fundamentally different (perhaps it is 90% labor and only 10% capital) then the shift over time away from self-employment would have necessarily changed the distribution of income between capital and labor. That is, Piketty could be overstating capital's share in 1890 because he assumes that 1/3 of self-employment income is capital income, while really only 10% of self-employment income is capital income. Some of the deep declines in the capital share he documents around WWI and WWII may simply reflect the shift of workers out of self-employment (with it's incorrectly small labor share) and into wage work (which is accurately measured as labor income). That period is one of rapid industrialization, so presumably the shift from self-employment to wage work would have been quite large. </p>
+<p>So one point is that Piketty has possibly overstated capital's share in the early period (roughly 1870-1910). Whether this is enough to materially change his overall story is unclear to me. You'd need data on self-employment shares and take some stand on how self-employment income is split between labor and capital. A second point is that Doug may have provided part of the explanation for the big drop in capital income around WWI and WWII. It may reflect a structural shift away from self-employment and towards wage work.</p>
+<p>Doug also notes a concern over going from the functional distribution of income (labor vs. capital shares) to the size distribution of income (incomes of top 1% of individuals). As Doug notes: "Not all capital income accrues to rich people, and not all labor income goes to the poor or the working classes.". And he is absolutely correct about that, but I don't think that Piketty necessarily falls into that trap. The first section of the Piketty book is really about the functional distribution of income: capital's share of national income. He establishes (perhaps shakily) some stylized facts on this share based on national accounts.</p>
+<p>The second section of the Piketty book is about the size distribution of income, where he looks at variation in the earnings of the top 5% (or 1% or 10%) using individual tax records and surveys from various countries. Piketty is not confounding the capital share with the share going to the top 5%. He has separate sources for those two series. He then further digs into the tax records to establish where those top 5% are getting their income. Long story short, the top 5% are getting an increasing share of their income from wages (or what is reported as wages, at least, to tax authorities) over time. But it is also true that the top 5% earn almost 100% of the total reported capital earnings in the tax data (or what is reported as capital earnings to tax authorities). This is where Piketty then draws a link between capital's share of national income and the income share of the top 5% - given that he observes that historically nearly all of capital income is earned by the top 5% or so, then an increase in capital's share of income will lead to a larger share of income for that 5%.</p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/misallocation-and-growth-reading-list/">
+      <span class="page-title">(Mis)Allocation and Growth Reading List</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/who-cares-how-fast-gdp-grows/">
+       <span class="page-title">Who cares how fast GDP grows?</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/piketty-and-income-shares/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

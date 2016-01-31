@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>What does Real GDP Measure? | Dietrich Vollrath</title>
+	<meta name="description" content="Nearly all cross-country work on growth and development uses, if only for motivation, Penn World Table (PWT) estimates of real GDP for countries. And the PWT...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/what-does-real-gdp-measure/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">What does Real GDP Measure?</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">29 Aug 2014</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>Nearly all cross-country work on growth and development uses, if only for motivation, Penn World Table (<a href="http://www.rug.nl/research/ggdc/data/penn-world-table">PWT</a>) estimates of real GDP for countries. And the PWT generates a single measure of "real GDP" for each country. How do they do this? Before I answer, let me say that much of what I'm going to say is said more thoroughly in <a href="http://ideas.repec.org/a/aea/aejmac/v2y2010i4p1-35.html">Deaton and Heston</a> (2010). So check that out if you're into cross-national real GDP comparisons.</p>
+<p>
+To start, let's simplify and think just about two countries, A and B. To compare real GDP in the two countries, we'd want to value the quantities of goods they produce at some common set of prices. So say phones are &#036;50, and haircuts are &#036;10, and then for each country multiple the quantitify of phones times 50 and add the quantity of haircuts times 10. But what are the right prices to use? Why 50 and 10? Why not 60 and 5? You can imagine that we want the prices we use to be somewhat meaningful, and at least related to the observed prices in countries. </p>
+<p>
+So here's where it gets weird. We could say, whatever, let's just use the prices from country B. I just need to pick one set of prices, right? But if you measure country A's GDP using country B's prices, then country A will look relatively rich compared to country B. This doesn't mean it makes country A look absolutely richer than country B, just that country A now looks better in comparison. This works if you flip them around. If you measure country B's GDP using country A's prices, then country B will look relatively rich compared to country A. This isn't a mathematical certainty, but reflects what actually happens if you use the prices underlying the PWT.</p>
+<p>
+Let's take the U.S. and Nigeria as an example. If we measure real GDP in both the US and Nigeria using <i>Nigerian</i> prices, then the US will appear to have an incredibly large lead over Nigeria in GDP per capita. If we measure real GDP in both the US and Nigeria using <i>US</i> prices, then the gap will appear smaller as this will make Nigeria look particularly good. </p>
+<p>
+This doesn't necessarily have to happen, it's not some mathematical rule. But the data underlying the Penn World Tables shows that this is the case almost universally. So what is going on? It means that country A has (relatively) high prices for what country B has a lot of, and country A has (relatively) low prices for what country B has little of.</p>
+<p>
+It's easiest to see this in an example. So let the US produce ${Q^{US}_{phones} = 100}$ and ${Q^{US}_{haircuts} = 10}$. The US produces a lot of phones relative to haircuts. And in the US, ${P^{US}_{phones} = 10}$ and ${P^{US}_{haircuts} = 10}$, or haircuts and phones cost the same. [<i>No, this doesn't have to be a realistic relative price for this to work</i>]. At US prices, real GDP in the US is
+<p align="center">$$  GDP^{US} = Q^{US}_{phones} P^{US}_{phones} + Q^{US}_{haircuts} P^{US}_{haircuts} = 100 \times 10 + 10 \times 10 = 1100. $$</p>
+<p>
+In Nigeria, we have ${Q^{N}_{phones} = 10}$ and ${Q^{N}_{haircuts} = 100}$, or Nigeria has very few phones, but lots of haircuts. And the prices in Nigeria reflect this, with ${P^{N}_{phones} = 100}$ and ${P^{N}_{haircuts} = 10}$. At Nigeria's prices, real GDP in Nigeria is
+<p align="center">$$  GDP^{N} = Q^{N}_{phones} P^{N}_{phones} + Q^{N}_{haircuts}  P^{N}_{haircuts} = 10 \times 100 + 100 \times 10 = 2000. $$</p>
+<p> Now, those two numbers are not comparable because they use different absolute prices to value the goods. To do a fair comparison of output in the two countries, we have to use the same prices.</p>
+<p>
+Let's value Nigeria's output using the US prices
+<p align="center">$$  GDP^{N}_{P-US} = Q^{N}_{phones} P^{US}_{phones} + Q^{N}_{haircuts} P^{US}_{haircuts} = 10 \times 10 + 100 \times 10 = 1100. $$</p>
+<p> So using US prices, Nigeria looks really good. Their GDP is 1100, exactly equal to the US. They achieve this with lots of haircuts and few phones, so utility could be different in the two places, but their measured real GDP is as high as the US.</p>
+<p>
+But we could equally argue that we should use Nigerian prices to value GDP in both countries. So for the US we get
+<p align="center">$$  GDP^{US}_{P-N} = Q^{US}_{phones} P^{N}_{phones} + Q^{US}_{haircuts} P^{N}_{haircuts} = 100 \times 100 + 10 \times 10 = 10100. $$</p>
+<p> The US now has GDP of 10,100, while Nigeria (at its own prices) only has a GDP of 2000. The US is roughly 5 times richer than Nigeria, when valued at Nigerian prices. Why? Because the US produces a lot of what Nigerians find expensive (phones), and little of what they don't (haircuts). </p>
+<p>
+Which comparison is right? Neither. There is nothing that says we should use the US prices or the Nigerian prices. For real GDP we simply need to pick <i>some</i> set of prices, and use them consistently across all countries. So much of the work in the Penn World Tables is to come up with a common price index. And the nature of this singular set of prices will matter a lot for real GDP comparisons. If the PWT uses prices that look alot like US prices, then this will make Nigeria (and other developing countries) look relatively well off compared to rich countries. But if the PWT used prices that look like Nigerian prices, then this will exaggerate the gap. </p>
+<p>
+In practice, what do they do? They try to construct some kind of weighted average of the price of each good across all countries. The weights are in the PWT are calculated using what is called a Gheary-Khamis method, which essentially weights the prices from different countries by their share of total spending on that good. For phones, the weight for the U.S. is ${100/(100+10) = 0.91}$ because they produce/use 91&#037; of all the phones. For haircuts, the weight for the U.S. is ${10/(100+10) = 0.09}$ because they produce/use about 9&#037; of all haircuts.</p>
+<p>
+Now in my simple example the weights are basically symmetric, because the US has most of the phones, and Nigeria has most of the haircuts. But in the real data, the US has far more phones <i>and</i> more haircuts than Nigeria. So in practice in the PWT, the weights are very large on U.S. prices, and very small on Nigerian prices. When they do these calculations across all countries, the weights on the US, Western Europe, and Japan dominate because they consume most of the stuff out there in the world. So the prices used by the PWT are really similar to a relatively rich Western nation [<em>People have argued that the prices roughly correspond to Italy's</em>]. </p>
+<p>
+Which all means that every country in the PWT is getting valued at rich country prices. As we saw above, this inflates the real GDP of very poor countries, and makes them look "good" compared to rich countries. That is, the gap between the U.S. and Nigeria is much smaller using rich country (e.g. US) prices than Nigerian prices. So the PWT overall makes poor countries look very good. The true gaps in real GDP are likely larger (much larger?) than what the PWT captures.</p>
+<p>
+This is not some kind of deliberate subterfuge by the PWT. "It does what it says on the tin" is a phrase that comes to mind. But that doesn't mean it has some cosmic truth to it. The PWT isn't doing anything <i>wrong</i>, but they are running up against the real fundamental problem: there is no set of prices that gives us a true measure of real living standards across countries. </p>
+<p>
+What we'd like is some number that tells us that living standards in Nigeria are one-tenth, or one-twentieth, or one-fifth of those in the U.S. But what do you mean by living standards? No measure of real GDP captures actual welfare. Even if - as we'd assume was the case in a perfectly competitive market - relative prices capture relative marginal utilities, real GDP doesn't measure welfare. </p>
+<p>
+Multiplying the <i>total</i> quantity times the <i>marginal</i> utility of a good doesn't tell me anything about the total utility that people enjoy from that good. The marginal utility of a 3rd car in my family is essentially zero, but that doesn't mean that we get no utility from having 2. So even if there were some "right" set of prices we could use to value real GDP, it still wouldn't measure welfare.</p>
+<p>
+I think what would be useful for the PWT would be to have the full distribution of real GDP estimates for a country. That is, show me Nigeria's real GDP valued at the prices found in every single other country in the PWT. I could plot that distribution of real GDP's in Nigeria against the same distribution of real GDP's for the U.S. This would at least show me something about the noise in the relative standing in real GDP for these countries. This sounds like something I can make a grad student do.</p>
+<p>
+One last note about these comparisons. Recall that the result that measuring country A's GDP in country B's prices makes country A look relatively rich is not a certainty. It holds because there is a specific correlation of prices and quantities in the data. In each country, goods that are produced in large quantities (e.g. haircuts in Nigeria) tend to have low relative prices, and goods produced in small quantities (e.g. phones in Nigeria) tend to have high relative prices. In other words, price and quantity are negatively related. This implies that the main differences between countries are <i>supply</i> differences, not <i>demand</i> differences.</p>
+<p>
+If Nigeria didn't have a lot of phones because Nigerians didn't <i>like</i> phones, then phones in Nigeria would be cheap compared to haircuts. And then valuing Nigeria's output at the U.S. prices, which also has cheap phones compared to haircuts, wouldn't make Nigeria look so rich. It might make them look poorer, in fact. So the empirical fact that valuing Nigeria's output at U.S. prices makes Nigeria look relatively rich is evidence that Nigeria and the U.S. have different supply curves for phones and haircuts, not different demand curves [<i>Yes, demand is probably different too. But relative to supply differences, these appear to be small</i>].</p></p></p></p></p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/housing-productivity-and-nerds/">
+      <span class="page-title">Housing, Productivity, and Nerds</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/total-factor-productivity-as-a-measure-of-welfare/">
+       <span class="page-title">Total Factor Productivity as a Measure of Welfare</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/what-does-real-gdp-measure/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

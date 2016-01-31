@@ -1,0 +1,49 @@
+---
+layout: post
+title: Why Information Industrial Classification Diversity Grows
+date: 2015-08-20 19:53:21.000000000 -05:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _oembed_1157e462ac60e18c20c5381542f8246b: '{{unknown}}'
+  _rest_api_published: '1'
+  _rest_api_client_id: '-1'
+  _publicize_job_id: '13926830159'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:9521866;s:59:"https://twitter.com/DietzVollrath/status/634453187655680000";}}
+  _publicize_done_9476337: '1'
+  _wpas_done_9521866: '1'
+  publicize_twitter_user: DietzVollrath
+  _oembed_35740c27579ff8d28caafced5c87fd72: '{{unknown}}'
+  _oembed_8cdb760ecafc829fb212d03e7b15b8d2: '{{unknown}}'
+  _oembed_087d5652c4a52337041a8d5f3ed9c175: '{{unknown}}'
+  _oembed_8e577bf0879a6b57a83ef4b2db4e3f3e: '{{unknown}}'
+  _oembed_3ca5ddb3fb5eb90e7476da7eb21edf2f: '{{unknown}}'
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p>I read Cesar Hidalgo's <a href="http://amzn.to/1K93hVV">Why Information Grows</a>. Going into it, I really wanted to like it. I really wanted it to give me some insight into one of those fundamental growth questions: what drives the speed of knowledge acquisition? </p>
+<p>
+This is not that book. The beginning is fun for describing basic information theory, and its relationship to entropy. It has some neat examples of how we end up "saving" information from entropy by encoding it in solids like cars, houses, or even the organized binary digits on my computer. But when it comes to translating this into an explanation for why economies grow, there is a breath-taking amount of hand-waving. I could feel the breeze whistling out of my Kindle as I read it. </p>
+<p>
+In the end, Hidalgo says some places are rich because they have complex production structures, meaning they produce goods or services that require a large number of people or firms to interact in some kind of network. These networks embody the "knowledge and knowhow" of the economy. I haven't quite decided whether this is tautological, but it's close. </p>
+<p>
+He attempts to offer evidence in favor of his claims by appealing to the data he <a href="http://www.pnas.org/content/106/26/10570.full">built</a> with Ricardo Hausmann. This uses detailed export data to build up a measure of how complex (read: diverse) is the number of exports a country produces.</p>
+<p>
+There are a few issues with trying to use this data on complexity with any explanation of economic growth, much less information theory. </p>
+<p>1. The measures of complexity are built on export data. That's because you can get data on exports that is very fine-grained in terms of products, "6-digit" for those in the business. 6-digit classification means you've got things like 312120 - Breweries, or 424810 - Beer and Ale Wholesalers. Export data is also great because you can get it bilaterally for a lot of countries. You have data on how much beer Belgium exports to the US, and how much beer the US exports to Belgium. 	 	</p>
+<p>Export data is available at this level of detail because the transactions get funneled through customs procedures, usually in a limited number of geographic points (i.e. ports), that let you track them closely. You cannot get similar data for an entire economy because there is no equivalent to customs houses tracking the minutiae of all your day to day purchases. Yes, conceptually that data is out there in Target's or Whole Food's computers, but we don't track domestic transactions at that level centrally. 	 	Which leads to the first issue. Just because you don't export a diverse set of products doesn't mean you don't have a complex economy. The vast, vast, vast majority of economic transactions are domestic-to-domestic, even in countries with large export sectors. So while I buy that an index of complexity built on export data is highly correlated with actual complexity, it doesn't necessarily measure total complexity. 	 	</p>
+<p>2. What is more of a problem is that the measure of complexity is built on the given <a href="http://www.census.gov/eos/www/naics/">NAICs</a> system of coding products. As I've mentioned <a href="https://growthecon.wordpress.com/2015/04/29/there-is-more-to-life-than-manufacturing/">before</a>, these kind of industrial classifications are skewed towards tracking manufactured goods, and have not caught up to the complexity of services and the like. The 6-digit code 541511 is "Custom Computer Programming Services". That is essentially all types of software work: web design, sys admins, app designers, legacy COBOL programmers, etc.. </p>
+<p>In comparison, code 541511 is "Dog and Cat Food Manufacturing". 311119 is "Other Animal Food Manufacturing", like rabbit, bird, and fish food. So we are careful to track the difference in economic activity based on whether processed lumps of food goo are served to dogs as opposed to bunnies. But we do not distinguish between someone designing Flappy Birds from someone doing back-end server maintenance. 	 	</p>
+<p>This means that your level of complexity depends simply on now detailed NAICs gets. Take two towns. In one, they have a single factory that produces both dog and rabbit food, and they export both. This town looks complex because it exports in two separate NAICs categories. In a second town, they have several firms that do outsourcing for major companies, with different firms doing web design, server maintenance, custom C++ programming, and say three of four other activities. Because all those programming activities fall under a single NAICs category, this second town appears to have a less complex economy. The "knowledge and knowhow" in the second town is likely larger, but NAICs cannot capture this. 	 	</p>
+<p>This is like saying that bacteria are less genetically diverse than eukaryotes because bacteria are all in one kingdom, while we happen to classify eukaryotes into 5: protozoa, algae, plants, fungus, and animals. But bacteria are known to be more genetically diverse across species than eukaryotes. If you focus on the arbitrary divisions, things can look more or less diverse based solely on your choice of those divisions. 	 	</p>
+<p>3. Leave all the complaints about the measure of complexity aside. Hidalgo tries to show how important this is for explaining economic growth by.....running a growth regression. He doesn't call it that. He plots GDP per capita against economic complexity in 1985, and there is a positive relationship. He then says that countries with GDP per capita below the level expected given their complexity in 1985 grew faster from 1985 to 2000, and that this justifies his theory. But that is just a growth regression, except without any explicit coefficient estimate or standard error. 	 	</p>
+<p>Several issues here. First, he doesn't bother to mention whether this is statistically significant or not. Second, we've spent twenty years in growth complaining about exactly these kinds of regressions because they are <i>completely unidentified</i>. He doesn't even bother to try and control for any of the obvious omitted variables like savings rates or population growth rates. Most likely, complexity is just another of the long list of things that are correlated with high incomes - institutions, savings, a lack of corruption, etc.. - without having any idea whether they are causal or not. </p>
+<p>
+Somewhere in there, perhaps invisible behind the blur of waving hands, is some kind of insight into how information expands and builds upon itself. That would have been an interesting contribution to our thinking on growth. But the book, as it is, fails to provide it.</p></p></p>

@@ -1,0 +1,62 @@
+---
+layout: post
+title: Focused or Broad-based Growth?
+date: 2014-11-06 18:13:23.000000000 -06:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- inequality
+- model
+- productivity
+meta:
+  _wpas_skip_facebook: '1'
+  _wpas_skip_google_plus: '1'
+  _wpas_skip_twitter: '1'
+  _wpas_skip_linkedin: '1'
+  _wpas_skip_tumblr: '1'
+  _wpas_skip_path: '1'
+  _edit_last: '8005175'
+  geo_public: '0'
+  _publicize_pending: '1'
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p>Do we care if productivity growth is "broad-based", meaning that all sectors or firms tend to be getting more productive? Or is it better to have a few sectors or firms experience massive productivity increases, even at the expense of other sectors? Think of it as an allocation problem - I've got a fixed amount of resources to spend on R&amp;D, so should I spread those out across sectors or spend them all in one place? </p>
+<p>
+The answer depends on how willing we are to substitute across the output of different types of goods. If we are willing to substitute, then it would be better to just load up and focus on a single sector. Make it as productive as possible, and just don't consume anything else. On the other hand, if we are unwilling to substitute, then we would prefer to spread around the productivity growth so that all sectors produce goods more cheaply. </p>
+<p>
+That's the intuition. Here's the math, which you can skip past if you're not interested. Let the price people will pay for output from sector ${j}$ be ${P_j = Y_j^{-\epsilon}}$, so that ${\epsilon}$ is the price elasticity (in absolute value). As ${\epsilon}$ goes to one, demand is inelastic, and the price is very responsive to output. As ${\epsilon}$ goes to zero, demand is elastic, and in fact fixed at ${P_j = 1}$.</p>
+<p>
+There are ${J}$ total sectors. Each one produces with a function of
+<p align="center">$$  Y_j = \Omega_j Z_j^{1-\alpha} $$</p>
+<p> where ${\Omega_j}$ is a given productivity term for the sector. ${Z_j}$ is the factor input to production in sector ${j}$. ${Z_j}$ can capture labor, human capital, and/or some physical capital. Raising it to ${1-\alpha}$ just means there are diminishing marginal returns to moving factors into sector ${j}$. There is some total stock of ${Z}$, and units of ${Z}$ are homogenous, so they can be used in any sector. So you could think of an element of ${Z}$ being a laptop, and this can be used by someone to do work in any sector. If ${Z}$ is labor, then this says that workers are equally capable of working in any sector. There are no sector-specific skills.</p>
+<p>
+Now we can ask what the optimal allocation of ${Z}$ is across the different sectors. By "optimal", I mean the allocation that maximizes the total earnings of the ${Z}$ factor. Each sector is going to pay ${w}$, the "wage", for each unit of ${Z}$ that it uses. What maximizes total earnings, ${wZ}$?</p>
+<p>
+Within each sector, set the marginal product of ${Z_j}$ equal to the wage ${w}$, which each sector takes as given. This allows you to solve for the optimal allocation of ${Z_j}$ to each sector. Intuitively, the higher is productivity ${\Omega_j}$, the more of the input a sector will employ. If we put the optimal allocations together, we can solve for the following,
+<p align="center">$$  wZ = \left(\sum_j \Omega_j^{(1-\epsilon)/(1-(1-\alpha)(1-\epsilon))}\right)^{1-(1-\alpha)(1-\epsilon)} Z^{1-\alpha} $$</p>
+<p> which is an unholy mess. But this mess has a few important things to tell us. Total output consists of a productivity term (the sum of the ${\Omega_j}$ stuff) multiplied through by the total stock of inputs, ${Z}$. Total earnings are increasing with any ${\Omega_j}$. That is, real earnings are higher if any of the sectors get more productive. We knew that already, though. The question is whether it would be worth having one of the ${\Omega_j}$ terms be really big relative to the others.</p>
+<p>
+The summation term over the ${\Omega_j}$'s depends on the distribution of the ${\Omega_j}$ terms. Specifically, if
+<p align="center">$$  \frac{1-\epsilon}{1-(1-\alpha)(1-\epsilon)} &gt; 1 $$</p>
+<p> then ${wZ}$ will be higher with an extreme distribution of ${\Omega_j}$ terms. That is, we're better off with one really, really productive sector, and lots of really unproductive ones. </p>
+<p>
+Re-arrange that condition above into
+<p align="center">$$  (1-\alpha) &gt; \frac{\epsilon}{1-\epsilon}. $$</p>
+<p> For a given ${\alpha}$, it pays to have concentrated productivity if the price elasticity of output in each sector is particularly low, or demand is elastic. What is going on? Elastic demand means that you are willing to substitute between sectors. So if one sector is really productive, you can just load up all your ${Z}$ into that sector and enjoy the output of that sector. </p>
+<p>
+On the other hand, if your demand is inelastic (${\epsilon}$ is close to one), then you are unwilling to substitute between sectors. Think of Leontief preferences, where you demand goods in very specific bundles. Now having one really productive sector does you no good, because even though you can produce lots of agricultural goods (for example) cheaply, no one wants them. You'd be better off with all sectors having similar productivity levels, so that each was about equally cheap. </p>
+<p>
+So where are we? Well, I'd probably argue that across major sectors, people are pretty unwilling to substitute. <a href="https://ideas.repec.org/a/aea/aecrev/v103y2013i7p2752-89.html">Herrendorf, Rogerson, and Valentinyi</a> (2013) estimate that preferences over value-added from U.S. sectors is essentially Leontief. Eating six bushels of corn is not something I'm going to do in lieu of binge-watching House of Cards, no matter how productive U.S. agriculture gets. With inelastic demand, it is better to have productivity in all sectors be similar. I'd even trade off some productivity from high-productivity sectors (ag?) if it meant I could jack up productivity in low-productivity sectors (services?). I don't know how one does that, but that's the implication of inelastic demand.</p>
+<p>
+But while demand might be inelastic, that doesn't mean <i>prices</i> are necessarily inelastic. If we can trade the output of different sectors, then the prices are fixed by world markets, and it is as if we have really elastic demand. We can buy and sell as much output of each sector as we like. In this case, it's like ${\epsilon=0}$, and now we really want to have concentrated productivity. I'm better off with one sector that is hyper-productive, while letting the rest dwindle. If I could, I would invest everything in raising productivity in one single sector. So a truly open economy that traded everything would want to load all of its R&amp;D activity into one sector, make that as productive as possible, and just export that good to import everything else it wants. </p>
+<p>
+Now, we do have lots of open trade in the world, but for an economy like the U.S. the vast majority of GDP is still produced domestically. So we're in the situation where we'd like to spread productivity gains out across all sectors and/or firms. </p>
+<p>
+Part of productivity is the level of human capital in the economy. If aggregate productivity is highest when productivity improvements are spread across lots of sectors, then we want to invest in broad-based human capital that is employable anywhere. That is, we don't want to put all our money into training a few nuclear engineers with MD's and an MBA, we want to upgrade the human capital of the whole range of workers. I think this is an argument for more basic education, as opposed to focusing so heavily on getting a few people through college, but I'm not sure if that is just an outcome of some implicit assumption I've made.</p></p></p></p></p></p></p>

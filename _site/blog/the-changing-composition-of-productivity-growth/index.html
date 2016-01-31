@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>The Changing Composition of Productivity Growth | Dietrich Vollrath</title>
+	<meta name="description" content="After the post I did recently on profit shares and productivity calculations, I've been picking around the BLS, OECD, and Penn World Tables methodologies for...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/the-changing-composition-of-productivity-growth/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">The Changing Composition of Productivity Growth</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">21 Nov 2015</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>After the <a href="https://growthecon.wordpress.com/2015/09/26/labors-share-profits-and-the-productivity-slowdown/">post</a> I did recently on profit shares and productivity calculations, I've been picking around the BLS, OECD, and Penn World Tables methodologies for calculating productivity growth. This has generated several interesting facts. Interesting in the sense that they raise even more questions than I had starting out. Today's post is just one of those things that I dug up,and will throw out there in case anyone has some ideas about how to explain this.</p>
+<p>The BLS provides a measure of private business-sector multi-factor productivity (MFP). "Multi-factor productivity" is what I'd call "total factor productivity" (TFP), but to be consistent I'll refer to it as MFP here. Because the BLS is working only with information on private business sector output and inputs, they can do more detailed work building up capital stocks and labor inputs. The cost is that they exclude the government (all labor, no capital) and housing services (all capital, no labor) from their measures of output. So the BLS productivity number isn't going to line up exactly with a measure of productivity based on aggrete GDP, capital, and labor stocks.</p>
+<p>That caveat aside - and that caveat may be part of the explanation for the interesting fact I outline below - here's the BLS series on MFP growth over the long and short run. I apologize for the x-axis in these - it was hard to get Stata to format these into a readable font size.</p>
+<p><img src="/assets/fig_mfp_growth_1960.png" alt="LF MFP Growth" /></p>
+<p><img src="/assets/fig_mfp_growth_1995.png" alt="SR MFP Growth" /></p>
+<p>The basic story is familiar. MFP growth was relatively high from 1960. MFP growth has been relatively slow in the last 8 years, and I'd guess that when we have final numbers for 2014 and 2015 they'll look similar. A decade of relatively low productivity growth.</p>
+<p>Why?</p>
+<p>What I'm going to work through here is not a causal explanation, but simply an accounting one. But it may be a useful accounting exercise just because it highlights that the composition of productivity growth in the last decade, and in particular for the last few years, has been different than in the past.</p>
+<p>To get started, we need to establish how exactly you measure MFP growth. We can write growth in multi-factor productivity (MFP) as the difference between growth in output per worker and growth in inputs per worker,</p>
+<p align="center">$$ g_{MFP} = g_{Y/L} - \alpha g_{K/L}. $$</p>
+<p>By itself, this is pretty straightforward. If output per worker has a high growth rate, but inputs per worker has a low growth rate, then it must be that MFP is growing quickly. We are getting more output per worker even though we aren't adding lots of inputs per worker.</p>
+<p>There are two things about this calculation that are going to be important for understanding MFP growth in the last decade:</p>
+<ul>
+<li>${\alpha}$ is the weight on inputs (${K}$) in the production function, which we are assuming is Cobb-Douglas. If ${\alpha}$ were zero, then inputs like ${K}$ don't matter at all, and all growth in output per worker is, by definition, driven by growth in MFP. The size of ${\alpha}$ influences how much the growth rate of MFP depends on the growth rate of inputs per worker.</li>
+<li>If ${g_{K/L}&lt;0}$, then notice this <i>adds</i> to MFP growth. If we have some growth in output per worker, ${g_{Y/L}}$, but we used fewer inputs to get it, then by implication it must be that MFP was growing very quickly.</li>
+</ul>
+<p>Look at what happened to ${g_{K/L}}$ over the last few years. The figure below is the growth rate of ${K/L}$ year-to-year, from 1996 until now. You can see that we have this atypical <i>shrinking</i> of capital per worker in this period.</p>
+<p><img src="/assets/fig_kl_growth_1995.png" alt="Growth of K/L 1995-2013" /></p>
+<p>If you extend the series out to 1961, you get a similar message. It is pretty atypical for ${K/L}$ to shrink, and unprecendented in the post-war era for it to shrink 4 years in a row.</p>
+<p><img src="/assets/fig_kl_growth_1960.png" alt="Growth of K/L" /></p>
+<p>Flip over to look at ${\alpha}$. Here, I have to dip in and remind everyone that this weight is not something that we can observe. We can infer it from capital's share of <i>costs</i>. One reason working with the BLS data is nice is that they specifically report capital's share of costs, not just capital's share of output (that's a different question for a different post). Take a look at what happens to ${\alpha}$ in the last few years.</p>
+<p><img src="/assets/fig_cap_share.png" alt="Growth of cap share" /></p>
+<p>There is a clear, completely out of the ordinary, surge in capital's share of costs in the last few years. Thus the ${\alpha}$ that goes into the calculation of MFP growth is rising. This means that whatever is happening to input per worker is getting amplified in it's effect on MFP growth.</p>
+<p>Combine those two facts: ${g_{K/L}&lt;0}$ and ${\alpha}$ rising. What do you get? You get a distinct <i>positive</i> effect on MFP growth. The composition of MFP growth is different than it used to be.</p>
+<p>What we've got going on in the last few years is that MFP growth reflects our economy using fewer inputs to produce the same output, rather than producing more output using our existing inputs. You can see the difference in these figures. I've plotted ${g_{Y/L}}$ (blue bars) and ${\alpha g_{K/L}}$ (red bars) for each year. The difference between these bars is MFP growth.</p>
+<p><img src="/assets/fig_mfp_calc_1995.png" alt="MFP calc 1995" /></p>
+<p><img src="/assets/fig_mfp_calc_1960.png" alt="MFP growth 1960" /></p>
+<p>Up until about 2005, we generally had high input per worker growth. MFP growth allowed us to use inputs more efficiently, and we took advantage of that by using our increasing inputs to increase output by a lot. In the last few years, though,we have taken advantage of MFP growth by shedding inputs while increasing output only a little. Those red bars below zero from 2009-2013 all imply positive MFP growth.</p>
+<p>There is nothing inherently right or wrong about this change. But it is different. A good question is whether this is something that represents a temporary change, or whether we've entered on a long-run path towards lower and lower input use while output per worker only grows slowly.</p>
+<p>From a pure welfare perspective, there is nothing to say that lowering input use makes us worse off. We have to provide fewer inputs, which is nice. But an economy that is shedding inputs rather than expanding output sure seems like a different animal. What does it imply for asset prices, for example, if we are actively letting capital stocks run down?</p>
+<p>It is one of those asset stocks that may play a role in explaining what is going on here, by the way. Remember that caveat I made above. The BLS excludes housing services from it's measure of output, and by housing services I mean the implicit flow of rents that home-owners receive. However, the BLS does, according to their documentation, include residential capital as part of their measure of ${K}$. The decline in housing investment since 2006/07 is going to actively drag down ${K}$, perhaps so much that it explains most of the ${g_{K/L}&lt;0}$ - I can't find the detailed breakdown from the BLS to be sure.</p>
+<p>If the decline in housing stock is responsible for ${g_{K/L}&lt;0}$, then it is implicitly responsible for a large part of the measured MFP growth that we have enjoyed in the last few years. Will that continue? It's hard to think of a decline in the housing stock as a permanent state of affairs, so it may be a temporary deviation.</p>
+<p>As an aside, this could imply that measured MFP growth in the early 2000's may have been <i>lower</i> because of the run-up of housing capital in that period. </p>
+<p>Regardless, it seems odd that the BLS uses residential capital in their calculation of ${K}$, while excluding housing services from their calculation of ${Y}$. I'd love to see some kind of alternative series of MFP growth where residential capital is excluded from ${K}$.</p>
+<p>But if the change in the nature of MFP growth is true regardless of how we treat residential capital, then there is something very odd going on. Remember, I didn't make any causal claim, solely an accounting claim. The composition of MFP growth has changed demonstrably, and now reflects declining input use per worker. Could it represent a change in the kind of technological change that we pursue or are exposed to? Are we now inventing things to eliminate the need for inputs, where before we used to invent things that made inputs more valuable? If yes, that represents a real change from several decades (and probably even longer) of productivity growth.</p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/tyler-noah-and-bob-walk-into-a-chinese-bar/">
+      <span class="page-title">Tyler, Noah, and Bob walk into a Chinese bar...</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/describing-the-decline-of-capital-per-worker/">
+       <span class="page-title">Describing the Decline of Capital per Worker</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/the-changing-composition-of-productivity-growth/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

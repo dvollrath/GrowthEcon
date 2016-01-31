@@ -1,0 +1,53 @@
+---
+layout: page
+title: Research
+permalink: /research/
+---
+
+<div class="post">
+
+<ul>
+<h3>Refereed Publications</h3>
+  	{% for post in site.categories.paper %}
+    	{% if post.url %}
+    		{% if post.replicate %}
+        	<li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.journal }} [<a href="{{ post.pdf }}">PDF</a>] [<a href="{{ post.replicate }}">Data</a>]</li>	
+        	{% else %}
+        	<li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.journal }} [<a href="{{ post.pdf }}">PDF</a>]</li>
+        	{% endif %}
+    	{% endif %}
+  	{% endfor %}
+</ul>
+</div>
+
+<div class="post">
+
+<ul>
+<h3>Other Publications</h3>
+  	{% for post in site.categories.other %}
+    	{% if post.url %}
+    		{% if post.replicate %}
+        	<li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.journal }} [<a href="{{ post.pdf }}">PDF</a>] [<a href="{{ post.replicate }}">Data</a>]</li>	
+        	{% else %}
+        	<li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.journal }} [<a href="{{ post.pdf }}">PDF</a>]</li>
+        	{% endif %}
+    	{% endif %}
+  	{% endfor %}
+</ul>
+</div>
+
+<div class="post">
+
+<ul>
+<h3>Working Papers</h3>
+  	{% for post in site.categories.working %}
+    	{% if post.url %}
+    		{% if post.replicate %}
+        	<li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.journal }} [<a href="{{ post.pdf }}"> PDF </a>] [<a href="{{ post.replicate }}"> Data </a>]</li>	
+        	{% else %}
+        	<li><a href="{{ post.url }}">{{ post.title }}</a>  {{ post.journal }} [<a href="{{ post.pdf }}"> PDF </a>]</li>
+        	{% endif %}
+    	{% endif %}
+  	{% endfor %}
+</ul>
+</div>

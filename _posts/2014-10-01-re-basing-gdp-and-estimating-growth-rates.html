@@ -1,0 +1,35 @@
+---
+layout: post
+title: Re-basing GDP and Estimating Growth Rates
+date: 2014-10-01 19:32:14.000000000 -05:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- empirics
+- GDP
+- growth
+- PWT
+- real GDP
+meta:
+  _edit_last: '8005175'
+  geo_public: '0'
+  _publicize_pending: '1'
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p>Leandro Prado de la Escosura recently <a href="http://www.voxeu.org/article/mismeasuring-long-run-growth">posted</a> a voxeu column about splicing real GDP series after re-basing. Re-basing of real GDP means adopting a new set of reference prices to value output in each year. Think of what Nigeria did last year, when they re-based from 1990 prices to using 2010 prices, and all of the sudden measured real GDP was about twice as big. </p>
+<p>de la Escosura's point is that when we re-base and "retrocast" real GDP numbers to past years, we may obscure evidence of rapid economic growth. You should go read his post, and his associated paper, to understand his point in full. But let's use the Nigerian 2013 re-basing to get the basic idea. Let's say that in 1990 Nigeria produced 1000 units of food, and zero motorcycles. In 2010 Nigeria produced 1000 units of food again, but produced 200 motorcycles. So there clearly is real growth in output.</p>
+<p>In 1990, the price of food was 1 naira per unit and motorcycles were 500 naira. 1990 real GDP in 1990 prices is 1000(1) + 0(500) = 1000. 2010 real GDP in 1990 prices is 1000(1) + 200(500) = 101,000. This is a dramatic growth rate of real GDP (10,100% actually). </p>
+<p>After re-basing, what do we get? In 2010 the price of food was 2 naira per unit, and motorcycles were 100 naira each. So 1990 real GDP in 2010 prices is 1000(2) + 0(100) = 2000. 2010 real GDP in 2010 prices is 1000(2) + 200(100) = 22,000. Still a lot of growth, but only 1100%. The growth rate of real GDP between 1990 and 2010 went from over 10,000% to about 1100%, an order of magnitude drop. Growth looks much slower in Nigeria after re-basing.</p>
+<p>Why? Because with dramatic economic growth came dramatic changes in relative prices. Motorcycles dropped severely in price, while food went up slightly. Combined, this makes food look more valuable compared to motorcycles by 2010. So valuing 1990 output in 2010 prices tends to make 1990 look pretty good, because in 1990 they had lots of food relative to motorcycles. </p>
+<p>de la Escosura's argument is that in 1990, for sure, the 1990 prices are the right way to value real GDP. Similarly, in 2010, for sure, the 2010 prices are the right way to value real GDP. So leave those years priced in their own prices. For the nineteen intervening years, 1991-2009 inclusive, compute their real GDP in both 1990 and 2010 prices. Then average those two estimates depending on how far from each year we are. </p>
+<p>So for 1991, let real GDP be (1991 GDP at 1990 prices)(18/19) + (1991 GDP at 2010 prices)(1/19). For 1992, let real GDP be (1992 GDP at 1990 prices)(17/19) + (1992 GDP at 2010 prices)(2/19), and so forth. For de la Escosura, this better captures the growth in real GDP over time. For our example, 1990 real GDP in 1990 prices is 1000, and 2010 real GDP in 2010 prices is 22,000, and the growth rate is 2,200%. It essentially splits the difference of the two different benchmarks, preserving some of the rapid growth seen using the 1990 prices. </p>
+<p>This isn't necessarily a new concept. <a href="http://ideas.repec.org/p/cgd/wpaper/191.html">Johnson, Larson, Papageorgiou, and Subramanian</a> discuss this issue in their paper on the Penn World Tables. Their suggestion for a chained PWT price index amounts to a similar suggestion. </p>
+<p>The big point is that by re-basing you are necessarily screwing with the implied growth rate of real GDP because you are screwing with the value of real GDP in the first year (1990 in our example). If there has been a lot of economic growth and relative prices have changed, then almost certainly the first year will have a higher measured real GDP when we re-base. With a higher initial level of GDP, the growth rate will necessarily be smaller. </p>
+<p>If your worry about computing <em>growth rates</em>, then this is an issue you have to worry about a lot, and something like de la Escosura's method or the Johnson et al suggestion is what you should do. If you worry about comparing <em>income levels</em> across countries, then this critique is not crucial (although you have other things to worry about). </p>

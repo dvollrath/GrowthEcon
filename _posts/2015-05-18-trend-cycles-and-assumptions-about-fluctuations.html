@@ -1,0 +1,66 @@
+---
+layout: post
+title: Trend, Cycles, and Assumptions about Fluctuations
+date: 2015-05-18 17:26:25.000000000 -05:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _rest_api_published: '1'
+  _rest_api_client_id: '-1'
+  publicize_twitter_user: DietzVollrath
+  publicize_twitter_url: http://t.co/Dsi60oxejm
+  _wpas_done_9521866: '1'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:2895016273;b:1;}}
+  _oembed_f48e6ce50d3997b34734324ee2e67f9f: '{{unknown}}'
+  _oembed_aa76682d77cd4691e493b7389366b028: '{{unknown}}'
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p>I am kind of veering off of the typical growth topic in this post (although not as badly as the last <a href="https://growthecon.wordpress.com/2015/05/13/so-i-wrote-a-book/" title="So I Wrote a Book">post</a>). I was playing around trying to write questions for the first-year macro comp next month, and ended up thinking about how we distinguish trend from cycle in GDP. In particular, how do the assumptions built in to how we decompose GDP into trend and cycle tie into how we conceive of fluctuations? </p>
+<p>
+Let's take the simplest set-up, where log GDP follows a linear trend
+<p align="center">$$  \ln{GDP}_t = \alpha + g t + u_t, $$</p>
+<p> and ${g}$ is the growth rate. ${\alpha}$ is the intercept, and it fixes the level of GDP in period 0. What I'm going to say below is all related to this linear trend assumption, but the concepts would follow even if you allowed for some polynomial in ${t}$ on the right-hand side, or if you did some kind of fancy filtering, like Hodrik-Prescott.</p>
+<p>
+How do I do the decomposition? First, I get the estimated values ${\hat{\alpha}}$ and ${\hat{g}}$ from the data by running an ordinary least squares regression. I get the cycle as the deviations of log GDP from the estimated trend using these values. The cyclical deviations are just the residuals of that regression,
+<p align="center">$$  \hat{u}_t = \ln{GDP}_t - \hat{\alpha} - \hat{g}t. $$</p>
+<p> Voila. You have a trend/cycle decomposition of GDP. Now that I've extracted the trend, I can write down a model to explain business cycles and try to match the information in ${\hat{u}_t}$. </p>
+<p>
+This seems really sensible as an approach. But there is a lot embedded in this procedure, and I think it has consequences (intended or unintended) for how people think about cycles. </p>
+<p>
+The first mathematical condition for running an ordinary least squares regression is
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = 0. $$</p>
+<p> It always seems like a bit of a throw-away assumption when you teach econometrics. Yes, you say, make sure the errors add up to zero. If that were <i>not</i> true, then we could just adjust the intercept term until that assumption <i>was</i> true. </p>
+<p>
+But this is not an innocuous assumption from an economic standpoint. If you use this when you try to estimate trend GDP, then you are asserting that deviations of GDP from trend must <i>by necessity</i> cancel out over time. That is, after you have estimated trend GDP and recovered your cyclical component (${\hat{u}_t}$), the booms <i>must</i> be <i>exactly</i> offset by busts. </p>
+<p>
+If you build a theory of business cycles around this trend/cycle decomposition, then you are limited to a theory that only admits symmetrical deviations. You are pushed towards using symmetrical, (log)-normally distributed shocks to create cycles, for example. </p>
+<p>
+You are also nudged towards treating ``booms'' as a pathology similar in every aspect to ``busts'', only with the signs reversed. In particular, you are pushed towards the belief that busts are <i>necessary</i> to offset the booms. It suggests that we must ``pay for'' the excesses of the boom period with lower GDP in some other period. </p>
+<p>
+This is wrong. Statistically, the fact that the best way to fit a line requires deviations to add up to zero does not mean that booms and busts must be perfectly symmetric. The economy does not have a lifetime budget constraint, which is what this symmetry implies. It has a <i>dynamic</i> budget constraint which simply says that real spending in one period has to add up to real production in that period. But the fact that you have a dynamic budget constraint does not mean that you can roll this up into a fixed lifetime budget constraint.</p>
+<p>
+An example is helpful here. I have a dynamic budget constraint relating my real expenditure of calories on a given day to my real supply of calories on that day. The expenditure is all my basic metabolism plus whatever I burn going to the gym. The supply is whatever I eat plus the stock of calories I've got stored up (i.e. the flabby parts). The dynamic budget constraint says that the calories I burned today at the gym have to come from somewhere. </p>
+<p>
+But this dynamic budget constraint doesn't have any implication for how much I can burn over the course of my life. Now that classes are over, I've gone to the gym a few extra mornings, and expended more calories than normal. Does that mean I - by necessity - have to exercise <i>less</i> at some point in the future? Of course not. If I have just made a fundamental change in my exercise habits, then I can continue to hit the gym 5 days a week rather than 3 until I die. I can stay ``above trend'' forever. Similarly, if I decide to say ``f*** it'' and stop going to the gym, my calorie expenditure will fall below trend. And it can stay there forever. If I don't exercise today, there is nothing about my dynamic budget constraint that requires me to go exercise tomorrow to make up for it. On this point many an exercise plan has failed.</p>
+<p>
+GDP is like calorie expenditures. Yes, real expenditures must add up to real production in a given period. Great. But that doesn't mean that GDP must conform to some infinite-period constraint. So if GDP is ``above trend'' for a while, that does <i>not</i> imply that it must fall ``below trend'' in order to balance that infinite-period constraint. Similarly, if we fall ``below trend'' for a while, there is nothing that requires us to necessarily have a boom in order to make up for the lost production. There is no lifetime budget constraint for GDP.</p>
+<p>
+Back to the decomposition. The assumption that
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = 0 $$</p>
+<p> says that there <i>is</i> a lifetime budget constraint. It says that all deviations above trend must be precisely and exactly offset by deviations below trend. </p>
+<p>
+But that need not be the right assumption. Remember, our goal as economists is not to minimize the sum of squared residuals here, but to explain economic fluctuations from trend. So why not assume
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = -.03 \times T, $$</p>
+<p> which would imply that the typical period is 3&#037; below trend. That is, booms are <i>more</i> than offset over time by busts. You could set the summation to a larger number, and get that the economy is continually below trend, and never experiences a boom. Why not? Friedman proposed a ``<a href="http://employees.oxy.edu/mcintyre/Econ361-Spr07/Friedman-Plucking-Model.pdf">plucking model</a>'' of fluctuations, where there are occasional negative deviations from trend/potential GDP, but these are not necessarily offset by symmetrical booms.</p>
+<p>
+The point here is that the statistical techniques used to recover measures of cyclical deviations embed an assumption that is not true. The GDP of an economy is not subject to a lifetime budget constraint. Therefore, booms and busts are not required to cancel each other out. What is the right assumption to make? I have no idea. Maybe it's the -3&#037; assumption I mentioned above. Maybe it's -2&#037;, or +5&#037;.</p>
+<p>
+I am sure that someone can tell me that ``there is literature on this!!'' already. Which is great. But that literature is not part of the standard toolkit that I am familiar with for first-year graduate macro. And I have downloaded and read a lot of lecture notes from first-year courses. I've never seen this discussed. Happy to see or hear of alternatives.</p></p></p></p></p></p></p></p>

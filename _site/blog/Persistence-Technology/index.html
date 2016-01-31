@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>The Persistence of Technology | Dietrich Vollrath</title>
+	<meta name="description" content=", , One of the papers I use to introduce several ideas into my graduate growth and development course is by Diego Comin, Bill Easterly, and Erick Gong, titled &q...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/Persistence-Technology/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">The Persistence of Technology</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">30 Jan 2016</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>One of the papers I use to introduce several ideas into my graduate growth and development course is by <a href="https://ideas.repec.org/a/aea/aejmac/v2y2010i3p65-97.html">Diego Comin, Bill Easterly, and Erick Gong</a>, titled &quot;Was the Wealth of Nations Determined in 1000BC?&quot;. If we were being strict about things, the answer is no. But the longer answer is &quot;Well, not really 1000BC. But there is a surprising amount of explanatory power in technology measures from 1500AD&quot;.  </p>
+
+<p>What CEG document is that technology levels are incredibly persistent, and that technology levels reaching back centuries retain some predictive power for explaining variation in income per capita in 2002. I&#39;ll hit back below on this idea of predictive power, and how that differs from &quot;causal explanation&quot;. For the moment, focus on that word &quot;persistent&quot; and think about what it means. </p>
+
+<p>We need to think about two kinds of persistence. What I&#39;ll call &quot;time-series persistence&quot; is the idea that for a given country or economy, their technology level in the past is highly predictive of their technology level today. This is different than &quot;cross-sectional persistence&quot;, which is the idea that gaps between countries persist over time. You could have time-series persistence without cross-sectional persistence (e.g. slow convergence to a common technology level) or cross-sectional without time-series (e.g. fixed level differences in technology). </p>
+
+<p>CEG are going to, in the end, provide some evidence of both kinds of persistence. Let&#39;s start with the cross-sectional persistence, which is the main theme of their paper. Here let&#39;s stop to describe exactly how they measure &quot;technology&quot;. CEG use several sources, including the Murdock Ethnographic Atlas, to pull out binary measures of technological use for different ethnic/cultural groups. Did your group use wheeled wagons in 1500? Yes? You get a 1. Did you use paper? No? You get a zero. Did you produce steel? No? You get a zero. Average these 0/1 measures across the different measures of technology, and you get an overall score that lies between 0/1 based on how many of these technologies you had. There is no intensive measure here (i.e. how widespread the use of the technology was within your group), only a coding for whether you used it at all.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/ceg_figure1.png" alt="Figure 2"></p>
+
+<p>Their Figure 2 gives you essentially the whole thrust of the paper. They use the ethnic group technology measures, assign each country a technology level based on the highest scoring ethnic group in their country, and then adjust the country level scores based on the fact that country populations are different in 2002 from in 1500 (see <a href="https://ideas.repec.org/p/bro/econwp/2008-15.html">Putterman and Weil, 2002</a>. Thus they have &quot;migration-adjusted technology in 1500AD&quot; on the x-axis, and log income per capita in 2002 on the y-axis. There is a strong positive relationship. The higher the technology in 1500AD, the higher the expected level of income per capita in 2002. </p>
+
+<p>A few open questions I have is whether this is robust to (a) using the minimum, average, or median ethnic group technology level for a country, rather than the maximum, (b) using all the ethnic group technology data, and run that through the Putterman/Weil matrix to find a country&#39;s technology level.</p>
+
+<p>Their empirical results are in the following table. When they regress 2002 current income per capita on technology levels in past years, they find significant effects. This holds for technology in 1000BC, 0AD, and 1500AD. Note that the coefficients rise as the time span becomes shorter. This isn&#39;t surprising, as technology levels are imperfectly persistent. </p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6823742/ceg_table8.png" alt="Table 8A"></p>
+
+<p>The size of the effect is surprising. Take the 1500AD result in column (3). The coefficient is 3.261, which means that if the technology index goes from 0 (no technologies) to 1 (all the original technologies), log income per capita goes up by 3.261 log points, or by a factor of $exp(3.261) = 26$ times. Technology doesn&#39;t vary between 0 and 1 in their index, but this gives you a sense of how strong the effect is. </p>
+
+<p>Also notice the R-squared, which is 50% for the 1500AD results. That&#39;s a big number. Half the variation in income per capita in 2002 is associated with variation in technology in 1500AD. It is worth stopping here to say something about what CEG are saying empirically. This is not a &quot;policy experiment&quot; paper, and I don&#39;t think it is appropriate to evaluate it as such. This is a paper about forecasting, basically. What their result says is that if you tell me the level of technology in 1500AD, I can predict with a good amount of accuracy your income per capita in 2002. </p>
+
+<p>That&#39;s different than saying that if one could increase technology in 1500AD by &quot;1 unit&quot;, you could raise income per capita today by a factor of 26. First, as is obvious, there is no way to actually do that. Second, this isn&#39;t the interesting research question here. CEG are trying to establish that old technology levels have predictive power for current income per capita. They are not looking for explanatory power, or forecasting power, and not a strict causal effect.</p>
+
+<p><em>Should</em> they be looking for a strict causal impact? That&#39;s a fair question, but one without an obvious answer. Ultimately, you might want to argue that we want strict causal explanations for why some countries are rich in 2002. But an explanatory paper like this is valuable to that search. Knowing that <em>anything</em> in 1500AD has strong predictive power for incomes today is informative. It tells us that we have to look back to 1500AD for at least some of those causal forces. Even if it turns out that technology in 1500AD is just a proxy for institutions, or geography, or culture, or whatever, this is a time period we should be looking at.</p>
+
+<p>All this means that CEG have evidence of cross-sectional persistence. Gaps in technology in 1500AD appear to persist for centuries. This doesn&#39;t mean the gaps are perfectly persistent (i.e. will last forever), just that they take a loooooong time to dissipate. Is this surprising? Perhaps not, if you think that there is a lot of <em>time-series</em> persistence in technology. </p>
+
+<p>And CEG provide some evidence of that time-series persistence. Not just in their baseline results from the table I showed, but in a secondary analysis that uses the fact that they have multiple categories of technology. With multiple categories, they have multiple observations on each country in each year. Which means they can look at technology-level regressions while pulling out country-time effects (i.e. England in 1500 and England in 2000 just happened to both be lucky) and technology-country effects (i.e. England is just really good at transport technologies). Here, I need to be clear that their measure of technology in 2000 is <em>not</em> the same as their measure in 1500AD. The measure in 2000 comes from other work by <a href="https://ideas.repec.org/p/hbs/wpaper/10-035.html">Comin and Bart Hobijn</a> that is richer in measuring how many modern technologies a country has adopted.</p>
+
+<p>Regardless, they show that if a country-technology level is high in 1500AD, then it also tends to be high in 2000. Given the fixed effects included, that is saying that if a technology in England in 1500 was slightly about the average tech level in England in 1500, then it also tends to be above average in 2000. This is a little stronger evidence of time-series persistence, because they are not actually comparing one country to another any more, but one country to itself.</p>
+
+<p>All well and good. But like I said above, time-series persistence doesn&#39;t imply cross-sectional persistence. Why do we see so much cross-sectional persistence. CEG provide a list of theories of time-series persistence, but I don&#39;t know that this is really adapted to the job of explaining the cross-sectional persistence. Many of the theories they document posit no limits on the flow of ideas (spillovers, complementarities, recombinations, etc..) between sectors, people, or technologies. And this makes sense in explaining time-series persistence. But if the ideas can flow, then why not over borders?</p>
+
+<p>For cross-sectional persistence, you need something that actually limits the flow of ideas to different populations/countries. For cross-sectional persistence, it seems unlikely that it really is an inability to invent or copy new technologies; they are out there, easy to see. You need some friction that lies outside of a narrow view of technology. And I think that this pushes you towards theories that are based on culture and institutions (both loosely defined). It seems there must be non-technological factors that prevent adoption of technologies, perhaps because of norms (&quot;we refuse to use things invented by infidels&quot;) or entrenched interests (&quot;we refuse to use things that threaten our monopoly power&quot;). </p>
+
+<p>In that sense, it isn&#39;t the technology in 1500AD <em>per se</em> that matters in the CEG regressions, this is an indicator of some kind of variation in culture or institutions (or something else?) that matters. To return to the earlier discussion, it seems likely that their results won&#39;t ultimately turn out to be causal, but the predictive power is telling us to something about how powerful those cultural/institutional factors are.</p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/Welcome/">
+      <span class="page-title">Welcome to GrowthEcon</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/Persistence-Technology/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

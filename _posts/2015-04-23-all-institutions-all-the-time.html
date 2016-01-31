@@ -1,0 +1,56 @@
+---
+layout: post
+title: All Institutions, All the Time?
+date: 2015-04-23 22:26:45.000000000 -05:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- development
+- empirics
+- history
+- institutions
+meta:
+  _rest_api_published: '1'
+  _rest_api_client_id: '-1'
+  publicize_twitter_user: DietzVollrath
+  publicize_twitter_url: http://t.co/7Uh10KBI6E
+  _wpas_done_9521866: '1'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:2895016273;b:1;}}
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p>Wolfgang Keller and Carol Shiue just released a working paper on "<a href="http://spot.colorado.edu/~kellerw/mmig.pdf">Market Integration as a Mechanism for Growth</a>". They are looking at growth in Germany during the 19th century, and proxy for growth by using city population growth, on the presumption that people only flood into cities that are booming economically. They examine the explanatory power of both market integration and institutions for city population growth, and hence for economic growth. </p>
+<p>
+To measure market integration KS use the spread in wheat prices between pairs of cities. The smaller the spread, the more integrated the cities are. Larger price spreads indicate either high transportation costs and/or some kind of other barrier to transactions that keeps trade from reducing this spread. Why wheat? Because it is widely traded, homogenous, and they have good data on it.</p>
+<p>
+For institutions, KS use three different measures, all binary indicators: abolition of guilds, equality before the law, and the ability to redeem feudal lands. The very <i>good</i> part about their measures are that they are binary, and this conforms to the historical situation. As Napoleon conquered German territories, he imposed some very specific institutional change in these places. So one can reasonably code a 0/1 variable for whether a specific city had abolished guilds, or had imposed equality before the law (that is, adopted the Napoleonic code), or allowed redemption of feudal lands. There is natural variation across German cities in when (or if) these institutional changes took place, based on Napoleon's activity. (This empirical set-up is drawn from <a href="https://ideas.repec.org/a/aea/aecrev/v101y2011i7p3286-3307.html">Acemoglu, Cantoni, and Robinson</a>). </p>
+<p>
+The binary indicators are fine as they are. But KS then do a <i>bad</i> thing, and average these measures. Regular readers of this blog know <a href="https://growthecon.wordpress.com/2014/11/18/the-skeptics-guide-to-institutions-part-1/" title="The Skeptics Guide to Institutions – Part 1">how I feel</a> about arbitrary indexes of institutions, and averaging creates an arbitrary index. Their main specification averages the first two (guilds and legal equality). This effectively presumes that abolishing guilds and legal equality have <i>precisely</i> the same effect. A city that abolished guilds but did not adopt legal equality has an institutional level <i>exactly equal</i> to one that did not abolish guilds but did adopt legal equality. Why should this be identical in effect? These are clearly not institutional substitutes. They potentially have wildly different effects on economic activity. If you want to use different measures of institutions in this kind of study, then you should incorporate these measures separately in your regressions. </p>
+<p>
+That gripe aside, what do KS do? First, they realize that if they just regress city population growth on their institutional measure and their measure of price gaps, then this is subject to all sorts of objections regarding endogeneity and omitted variables. So KS come up with instruments. They use a dummy for French rule to instrument for institutions, as only those places conquered by Napoleon necessarily adopted the institutional reforms (this is also the Acemoglu et al strategy). They then use a geographic measure of the slope of terrain surrounding a city as an instrument for market integration. This is because the cost of shipping by rail increases with the slope of the terrain (gravity is a bitch). They make an argument that both French rule and the slope characteristics are exogenous to city population growth, and serve as valid instruments. </p>
+<p>
+They're using IV, so you could also chuck rocks at the instruments and claim they don't work. If you're going to do that, you need to have some <i>plausible</i> story for why the IV's aren't exogenous. I don't have a good story like that, so I'm going to take their IV strategy as solid. </p>
+<p>
+What do they find? They find that city population is significantly and negatively related to market integration (price gaps) and insignificantly (but positively) related to institutions. Cities that had smaller price gaps with other cities, and so were more integrated into the wider economy, experienced more rapid city population growth over the 19th century. Cities with better institutions may have had higher city population growth, but the evidence is too noisy to know for sure. For future reference, their 2nd-stage regression has an R-squared of 68&#037;, which includes the impact of city and year fixed effects. The regression also predicts 73&#037; of the actual city growth in the mean city. So they have what I would consider a lot of explanatory power (although a bunch could just be due to fixed effects).</p>
+<p>
+Here is where I start to get confused by the paper. I look at this and think, "Looks like institutions - at least the abolition of guilds and the Napoleonic code - didn't have a big impact on city growth. Holding those institutions constant, more integrated cities grew faster." But KS seem determined to find an interpretation of these results that preserves the primacy of institutions as an explanation for growth. They take this result and say it does <i>not</i> tell us about the relative importance of institutions, meaning those two or three very specific institutions of guild abolition, legal equality, and feudal redemption. </p>
+<p>
+They argue that what you should <i>really</i> be doing is not looking at the lack of significance on institutions in this regression, but do some different counter-factuals. So they do two different regressions. They regress city population growth on market integration only, with market integration instrumented by only the geography instruments. This is their "mechanisms" model, and it is intended to capture just the pure effect of market integration. That specification yields an R-squared of 49&#037;, and predicts 44&#037; of actual city growth in the mean city. Again, these numbers include any influence of the city and time fixed effects, so this isn't all due to market integration.</p>
+<p>
+They then do the mirror image of this. They regress city population growth on institutions, instrumented with only the French rule instrument. This is their "institutions" model, and is intended to capture the pure effect of institutions. That gives them an R-squared of 15&#037;, and predicts 13&#037; of actual city growth in the mean city. Again, these numbers reflect the explanatory power of institutions <i>and</i> the city and time fixed effects. </p>
+<p>
+Unsurprisingly, both of these separate regressions have less explanatory power than the combined specification. But it sure seems as if market integration is far more important that institutions, doesn't it? The R-squared is 49&#037; versus 15&#037;, and remember that those both include the explanatory power of the city and time fixed effects. So it could well be that the explanatory power of institutions was <i>zero</i>, and the explanatory power of market integration is like 34&#037;. (This is knowable, by the way, and I'd suggest they report the partial R-squared's in the paper.)</p>
+<p>
+KS press on, though, to keep institutions a central part of the story. They argue that we should view institutions as fundamental, and that institutions led to market integration, which led to further growth. In support of this, they use their first-stage results from the main specification. This shows that market integration is significantly related to both the French rule dummy and the geographic variables affecting rail costs. On the other hand, the institutions measure is only significantly related to the French rule dummy. From this, they conclude that "Institutional change led to gains in the integration of markets, but market integration did not, at least in the short run, affect institutions." Institutions are more fundamental, so to speak.</p>
+<p>
+I don't think this follows from those first stages. Market integration is related to the French rule dummy, which is <i>not</i> a measure of institutions. It is a measure of whether the French ever ruled that particular city. It captures <i>everything</i> about French rule, not just those three particular institutional reforms. It captures, in part, whether Napoleon thought the city was worth taking over, and I would venture to guess this depended a lot on whether the city was well-connected with the rest of Germany. He needed to move troops around, so cities that were already well-integrated to other areas via roads would be particularly attractive. The French rule dummy does not tell me that institutions matter for market integration. They tell me that places conquered by Napoleon were better connected to other cities.</p>
+<p>
+I'm not sure why it is so crucial to establish that these particular institutions in this time frame were important for growth. KS have a really cool paper here, with an impressive collection of data, an interesting time period to analyze, and a lot of results that stand up by themselves as interesting facts. Why shove it through the pin-hole of institutions?</p>
+<p>
+I think KS could have easily written this paper as evidence that market integration matters more than the three institutions they study. And that would be okay. It doesn't mean INSTITUTIONS don't matter for growth, it means that guild abolition, legal equality, and feudal redemption were not important for growth. That leaves approximately an infinity of other institutions that could be important for growth. Given the ambiguous definition of institution, market integration is an institution itself, even if it depends on (gasp!) geography. Eliminating some institutions as relevant would be helpful at this stage, as the literature has to this point (miraculously?) found that every single institutional structure studied really matters for growth. Have we reached the point where publication requires finding each and every single institution relevant for growth? </p></p></p></p></p></p></p></p>

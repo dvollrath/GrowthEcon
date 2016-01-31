@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Market Power versus Price-taking in Economic Growth | Dietrich Vollrath</title>
+	<meta name="description" content="I'm sure you've been breathlessly following along with the discussion on "mathiness" that Paul Romer kicked off (see here, here, here). Romer used several gr...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/market-power-versus-price-taking-in-economic-growth/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Market Power versus Price-taking in Economic Growth</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">05 Jun 2015</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>I'm sure you've been breathlessly following along with the discussion on "mathiness" that Paul Romer kicked off (see <a href="http://paulromer.net/illustrating-mathiness-code-analogy/">here</a>, <a href="http://paulromer.net/more-cowbell/">here</a>, <a href="http://paulromer.net/mathiness-and-academic-identity/">here</a>). Romer used several growth models to illustrate his point about "mathiness", and his critique centered around the assumption of price-taking by firms and/or individuals in these papers. His argument was that these papers used "mathiness" as a kind of camouflage for their price-taking assumptions. Romer argues that the reasonable way to understand growth is to allow for market power by some firms and/or individuals over their ideas. </p>
+<p>
+From what I can see, the heart of this is about replication. What Romer has asserted is that <i>any</i> aggregate production function must have constant returns to scale (i.e. be homogenous of degree one) in its <i>rival</i> inputs. The mental exercise here is the following. Imagine that tomorrow there was a perfect replica of the Earth floating next to this one. What would be the output of the alternative Earth? It would be exactly the same as output here, right? It would have to be. It is an exact replica. </p>
+<p>
+What we did was replicate the rival inputs (land, capital, people, education, etc..) and held constant the ideas/plans/technologies. As the output of the alternative Earth is exactly equal to the output of the current Earth, the production function has constant returns to scale with respect to the rival inputs, the things we duplicated. We doubled Earth, and got double the output. It follows that if I doubled Earth's rival inputs <i>and</i> doubled the ideas/plans/technologies, then I'd get <i>more</i> than double the output. In short, I'd have increasing returns to scale.</p>
+<p>
+What does this imply about market structure? Write down a production function that depends both on rival inputs (${X}$, standing in for all the stocks of capital and people and land) and non-rival inputs (${A}$, standing in for ideas/plans/technologies),
+<p align="center">$$  F(A,X). $$</p>
+<p> What the replication argument says is that this function has constant returns to scale in terms of ${X}$, or ${\lambda F(A,X) = F(A,\lambda X)}$. This in turn implies that the following must be true
+<p align="center">$$  F(A,X) = \frac{\partial F(A,X)}{\partial X} X. $$</p>
+<p> The above says that total output can be calculated as the marginal product of rival inputs (the derivative) times the total amount of rival inputs, ${X}$. This is just Euler's theorem for homogenous functions.</p>
+<p>
+What we <i>also</i> know has to be true about this production function is that the total amount paid to all the factors of production - rival and non-rival - can only add up to total output. In other words, we've got
+<p align="center">$$  F(A,X) = Profits + wX $$</p>
+<p> where ${Profits}$ are whatever we pay (possibly zero) to the owners of the ideas/plans/technologies. ${w}$ is the "wage" paid to a rival factor ${X}$. If we had lots of rival factors, then we'd have lots of these terms with things like wages, rents paid to owners of land, rents paid to owners of capital, etc.. etc.. </p>
+<p>
+Both the two expressions I've shown have to hold, and this is where we get to the problem. If we want to assume that there is price-taking, then all the rival factors would be paid their marginal product. If they were underpaid, then other firms could pay them more, and use all the inputs from the original firm. But if wages are equal to marginal products, then ${w = \partial F(A,X)/\partial X}$. And if this is true, then the only possible way for the second expression to hold is if ${Profits = 0}$. If rival factors of production are paid their marginal products, there is nothing left over to pay out as profits.</p>
+<p>
+If you have ${Profits&gt;0}$, then you must have that ${w&lt;\partial F(A,X)/\partial X}$, or rival factors of production are paid less than their marginal product. And the only way for this to be the equilibrium outcome is if there is <i>not</i> price-taking. If other firms could pay more, they would, and would equate the wage and marginal product. So positive profits imply some kind of market power (possibly a patent, or a legal monopoly, or some kind of brand identity that cannot be mimicked) for firms. </p>
+<p>
+Romer's 1990 <a href="https://ideas.repec.org/a/ucp/jpolec/v98y1990i5ps71-102.html">paper</a> argues that this second situation is the only one that makes sense for explaining long-run growth. If ${Profits}$ did equal zero, then no one would bother to undertake innovative activity. What would be the point? So firms that innovate must earn some profits to incent them to undertake the innovation. This doesn't mean they are gouging people, by the way. The positive profits may simply be sufficient to offset a fixed cost of innovating. But once you accept that innovation takes place in large part as a deliberate economic activity, Romer's argument is that this inevitably implies that firms have some market power and rival factors are not being paid their marginal products. You have to be careful here. Romer is not arguing that this is how the world <i>should</i> work. He's arguing that this is how it <i>does</i> work.</p>
+<p>
+This framework makes it easier to understand what is going on in papers that assume price-taking or perfect competition. Take the Solow model, which implicitly has price-taking by firms. In the Solow model, technology ${A}$ just falls out of the sky, and no deliberate activity is necessary to make it grow. So ${Profits=0}$, because there is no one to remunerate for innovating. Hence we can have price-taking by firms. </p>
+<p>
+Learning by doing, a la Ken Arrow, makes a similar assumption. Arrow doesn't have ${A}$ exactly fall out of the sky. ${A}$ is strictly proportional to ${X}$ in a learning-by-doing model, so it grows only as fast as ${X}$ grows. But similar to Solow, no one has to take any deliberate effort to make this happen. It's a pure externality of the production process, and no one even realizes that it is occurring, so no one earns any profits on it. </p>
+<p>
+Note that this concept is pretty crazy in terms of the replication argument. Arrow's learning by doing model implies that when the alternate Earth shows up, we more than double output because all those additional rival factors generate some kind of ..... well, it's not clear exactly how this is supposed to work. Presumably you'd have some kind of gains from trade type argument? The two Earth's could trade with each other, and so we could let Earth 1 produce Lego and Earth 2 produce Diet Coke. But remember, these Earth's are identical, so relative prices are identical, and so there isn't any incentive to trade in the first place.</p>
+<p>
+What of more modern models of price-taking and growth? I mentioned the McGrattan/Prescott (2010) <a href="https://ideas.repec.org/a/aea/aecrev/v100y2010i4p1493-1522.html">paper</a> in the last <a href="https://growthecon.wordpress.com/2015/05/29/more-on-mathiness/">post</a>, and effectively they assume that ${F(A,X)}$ is constant returns to scale over <i>both</i> ${A}$ and ${X}$. Formally, ${\lambda F(A,X) = F(\lambda A, \lambda X)}$. This means that the production function is <i>decreasing returns to scale</i> with respect to rival inputs, and
+<p align="center">$$  F(A,X) &gt; \frac{\partial F(A,X)}{\partial X} X. $$</p>
+<p> Now, given this, we could easily have price-taking (${w = \partial F(A,X)/\partial X}$) and still have ${Profits &gt; 0}$. </p>
+<p>
+But does this assumption make sense? Well, what happens when the alternate Earth shows up? In the MP setting, when the alternate Earth arrives total output across our two planets is <i>less</i> than double what we produce today. But alternate Earth is an exact replica of our planet. So how could it possibly produce less than us? Or maybe alternate Earth produces the same amount, but its arrival somehow made us less productive here on the original Earth? </p>
+<p>
+MP aren't exactly after a model of endogenous growth, but <a href="https://ideas.repec.org/a/eee/moneco/v55y2008i3p435-453.html">Boldrin and Levine</a> (2008) explicitly write down a model that is meant to show that perfect competition is compatible with firms/people making deliberate innovation decisions. It's taken me a few days to get my head around how their work fits (or does not fit) in with Romer's. BL don't write a model that uses a standard production function, so it's difficult to map it into the terms I've used above. </p>
+<p>
+In the end, though, a (the?) key point is that BL assume that ideas are in fact rival goods. A working paper version of this paper mentions the following in the abstract: "We argue that ideas have value only insofar as they are embodied in goods or people, ..." By assuming that ideas have no productive value by themselves, the production function is essentially just ${F(X)}$, and is constant returns to scale in the ${X}$ rival inputs. Hence price-taking is something that could happen. Innovation in BL means providing more inputs (i.e. better inputs) into the production function, raising ${X}$. BL assume that the profits accruing to ideas themselves are zero. BL is similar to a model like <a href="https://ideas.repec.org/a/eee/moneco/v22y1988i1p3-42.html">Lucas</a> (1988), where all innovation is embodied in human capital.</p>
+<p>
+In BL, the incentives to innovate (i.e. to accumulate a new kind of input) come because you own a rival good that is scarce. Innovators in BL are like landlords in a classic Ricardian model. They have a fixed factor of production, and they earn rents on it. If those rents outweigh the cost of coming up with the idea in the first place (producing the 1st copy), then people will innovate.</p>
+<p>
+Does the BL version make sense? It depends on how you conceive of technological progress. Is it embodied (and hence rival) or not (and so it is non-rival)? If <i>all</i> technological progress is embodied, then it is possible that all firms or persons are price-takers. But if <i>any</i> deliberate technological progress is non-rival (disembodied), then there are <i>at least some</i> firms or people with market power. Note that this doesn't mean that <i>all</i> markets are imperfect, but firms that own non-rival ideas and have some ability to exclude others from using them (e.g. a patent) will charge more than marginal cost. </p>
+<p>
+The important difference here is the <i>all</i> vs. <i>any</i>, I think. Everyone could be price-takers if <i>all</i> technology is embodied (and hence rival). That is a strong condition. It means there is literally no such thing as a non-rival idea. One way to think about this is kind of the opposite of the replication argument. What if tomorrow everyone who knew Linux was wiped off the face of the Earth? Would Linux be gone? Would we have to wait for some new pseudo-Torvalds to arrive and re-write it? I don't think so. Someone could figure it out by reading manuals left behind. Would they learn it quickly? Maybe not. But the idea of Linux is clearly non-rival. And so long as there are <i>any</i> non-rival ideas that are useful, then if you want there to be economic incentives to produce them, there has to be some market power that allows firms to capture those rents.</p>
+<p>
+By the way, BL use their model to argue that intellectual monopolies (like patents, copyright, etc..) may be counter-productive in fostering innovation. That can be true even if you have non-rival ideas. The fact that profits exist for non-rival ideas don't require that intellectual monopolies be made eternal and absolute. Within any Romer-style model there is some sweet spot of IP protection that fosters innovation without incurring too much deadweight loss due to the monopolies provided. We certainly could be well past that sweet spot in reality, and be over-protecting IP with patents that are too strong and/or too long. But if you eliminated all IP protection, then the Romer-style setting would tell you that we would effectively shut down innovation in non-rival ideas, as they could not otherwise be compensated. </p></p></p></p></p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/monday-growth-links/">
+      <span class="page-title">Monday Growth Links</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/what-assumptions-matter-for-growth-theory/">
+       <span class="page-title">What Assumptions Matter for Growth Theory?</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/market-power-versus-price-taking-in-economic-growth/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

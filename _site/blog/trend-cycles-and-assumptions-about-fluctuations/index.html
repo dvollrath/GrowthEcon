@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Trend, Cycles, and Assumptions about Fluctuations | Dietrich Vollrath</title>
+	<meta name="description" content="I am kind of veering off of the typical growth topic in this post (although not as badly as the last post). I was playing around trying to write questions fo...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/trend-cycles-and-assumptions-about-fluctuations/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Trend, Cycles, and Assumptions about Fluctuations</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">18 May 2015</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>I am kind of veering off of the typical growth topic in this post (although not as badly as the last <a href="https://growthecon.wordpress.com/2015/05/13/so-i-wrote-a-book/" title="So I Wrote a Book">post</a>). I was playing around trying to write questions for the first-year macro comp next month, and ended up thinking about how we distinguish trend from cycle in GDP. In particular, how do the assumptions built in to how we decompose GDP into trend and cycle tie into how we conceive of fluctuations? </p>
+<p>
+Let's take the simplest set-up, where log GDP follows a linear trend
+<p align="center">$$  \ln{GDP}_t = \alpha + g t + u_t, $$</p>
+<p> and ${g}$ is the growth rate. ${\alpha}$ is the intercept, and it fixes the level of GDP in period 0. What I'm going to say below is all related to this linear trend assumption, but the concepts would follow even if you allowed for some polynomial in ${t}$ on the right-hand side, or if you did some kind of fancy filtering, like Hodrik-Prescott.</p>
+<p>
+How do I do the decomposition? First, I get the estimated values ${\hat{\alpha}}$ and ${\hat{g}}$ from the data by running an ordinary least squares regression. I get the cycle as the deviations of log GDP from the estimated trend using these values. The cyclical deviations are just the residuals of that regression,
+<p align="center">$$  \hat{u}_t = \ln{GDP}_t - \hat{\alpha} - \hat{g}t. $$</p>
+<p> Voila. You have a trend/cycle decomposition of GDP. Now that I've extracted the trend, I can write down a model to explain business cycles and try to match the information in ${\hat{u}_t}$. </p>
+<p>
+This seems really sensible as an approach. But there is a lot embedded in this procedure, and I think it has consequences (intended or unintended) for how people think about cycles. </p>
+<p>
+The first mathematical condition for running an ordinary least squares regression is
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = 0. $$</p>
+<p> It always seems like a bit of a throw-away assumption when you teach econometrics. Yes, you say, make sure the errors add up to zero. If that were <i>not</i> true, then we could just adjust the intercept term until that assumption <i>was</i> true. </p>
+<p>
+But this is not an innocuous assumption from an economic standpoint. If you use this when you try to estimate trend GDP, then you are asserting that deviations of GDP from trend must <i>by necessity</i> cancel out over time. That is, after you have estimated trend GDP and recovered your cyclical component (${\hat{u}_t}$), the booms <i>must</i> be <i>exactly</i> offset by busts. </p>
+<p>
+If you build a theory of business cycles around this trend/cycle decomposition, then you are limited to a theory that only admits symmetrical deviations. You are pushed towards using symmetrical, (log)-normally distributed shocks to create cycles, for example. </p>
+<p>
+You are also nudged towards treating ``booms'' as a pathology similar in every aspect to ``busts'', only with the signs reversed. In particular, you are pushed towards the belief that busts are <i>necessary</i> to offset the booms. It suggests that we must ``pay for'' the excesses of the boom period with lower GDP in some other period. </p>
+<p>
+This is wrong. Statistically, the fact that the best way to fit a line requires deviations to add up to zero does not mean that booms and busts must be perfectly symmetric. The economy does not have a lifetime budget constraint, which is what this symmetry implies. It has a <i>dynamic</i> budget constraint which simply says that real spending in one period has to add up to real production in that period. But the fact that you have a dynamic budget constraint does not mean that you can roll this up into a fixed lifetime budget constraint.</p>
+<p>
+An example is helpful here. I have a dynamic budget constraint relating my real expenditure of calories on a given day to my real supply of calories on that day. The expenditure is all my basic metabolism plus whatever I burn going to the gym. The supply is whatever I eat plus the stock of calories I've got stored up (i.e. the flabby parts). The dynamic budget constraint says that the calories I burned today at the gym have to come from somewhere. </p>
+<p>
+But this dynamic budget constraint doesn't have any implication for how much I can burn over the course of my life. Now that classes are over, I've gone to the gym a few extra mornings, and expended more calories than normal. Does that mean I - by necessity - have to exercise <i>less</i> at some point in the future? Of course not. If I have just made a fundamental change in my exercise habits, then I can continue to hit the gym 5 days a week rather than 3 until I die. I can stay ``above trend'' forever. Similarly, if I decide to say ``f*** it'' and stop going to the gym, my calorie expenditure will fall below trend. And it can stay there forever. If I don't exercise today, there is nothing about my dynamic budget constraint that requires me to go exercise tomorrow to make up for it. On this point many an exercise plan has failed.</p>
+<p>
+GDP is like calorie expenditures. Yes, real expenditures must add up to real production in a given period. Great. But that doesn't mean that GDP must conform to some infinite-period constraint. So if GDP is ``above trend'' for a while, that does <i>not</i> imply that it must fall ``below trend'' in order to balance that infinite-period constraint. Similarly, if we fall ``below trend'' for a while, there is nothing that requires us to necessarily have a boom in order to make up for the lost production. There is no lifetime budget constraint for GDP.</p>
+<p>
+Back to the decomposition. The assumption that
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = 0 $$</p>
+<p> says that there <i>is</i> a lifetime budget constraint. It says that all deviations above trend must be precisely and exactly offset by deviations below trend. </p>
+<p>
+But that need not be the right assumption. Remember, our goal as economists is not to minimize the sum of squared residuals here, but to explain economic fluctuations from trend. So why not assume
+<p align="center">$$  \sum_{t=0}^T \hat{u}_t = -.03 \times T, $$</p>
+<p> which would imply that the typical period is 3&#037; below trend. That is, booms are <i>more</i> than offset over time by busts. You could set the summation to a larger number, and get that the economy is continually below trend, and never experiences a boom. Why not? Friedman proposed a ``<a href="http://employees.oxy.edu/mcintyre/Econ361-Spr07/Friedman-Plucking-Model.pdf">plucking model</a>'' of fluctuations, where there are occasional negative deviations from trend/potential GDP, but these are not necessarily offset by symmetrical booms.</p>
+<p>
+The point here is that the statistical techniques used to recover measures of cyclical deviations embed an assumption that is not true. The GDP of an economy is not subject to a lifetime budget constraint. Therefore, booms and busts are not required to cancel each other out. What is the right assumption to make? I have no idea. Maybe it's the -3&#037; assumption I mentioned above. Maybe it's -2&#037;, or +5&#037;.</p>
+<p>
+I am sure that someone can tell me that ``there is literature on this!!'' already. Which is great. But that literature is not part of the standard toolkit that I am familiar with for first-year graduate macro. And I have downloaded and read a lot of lecture notes from first-year courses. I've never seen this discussed. Happy to see or hear of alternatives.</p></p></p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/so-i-wrote-a-book/">
+      <span class="page-title">So I Wrote a Book</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/mathiness-versus-science-in-growth-economics/">
+       <span class="page-title">Mathiness versus Science in Growth Economics</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/trend-cycles-and-assumptions-about-fluctuations/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

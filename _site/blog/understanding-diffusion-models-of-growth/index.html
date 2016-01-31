@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Understanding Diffusion Models of Growth | Dietrich Vollrath</title>
+	<meta name="description" content="There has been a recent bloom of research that studies the diffusion of ideas and economic growth. Alvarez, Buera, and Lucas (2013), Lucas (2009), Lucas and ...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/understanding-diffusion-models-of-growth/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Understanding Diffusion Models of Growth</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">13 Jul 2015</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>There has been a recent bloom of research that studies the diffusion of ideas and economic growth. <a href="https://ideas.repec.org/p/nbr/nberwo/19667.html">Alvarez, Buera, and Lucas</a> (2013), <a href="https://ideas.repec.org/a/bla/econom/v76y2009i301p1-19.html">Lucas</a> (2009), <a href="https://ideas.repec.org/a/ucp/jpolec/doi10.1086-674363.html">Lucas and Moll</a> (2014), and <a href="https://ideas.repec.org/a/ucp/jpolec/doi10.1086-674362.html">Perla and Tonetti</a> (2014) are some of the most prominent examples. In each case, firms or individuals learn new techniques after meeting other firms or individuals with better ideas. The papers show the assumptions under which this type of diffusion or imitation process will lead to constant, sustained growth. </p>
+<p>
+I've been trying to get my head around what these models teach me about the process of economic growth. I'm going to use Perla and Tonetti (PT) as a specific example in this post, but that's only because I need an example, and it was the last one I read.</p>
+<p>
+Here's a quick verbal summary of the model of imitation in PT:</p>
+<blockquote><p>
+There are a bunch of risk-neutral firms, each with an individual level of productivity. The firm can produce using its own productivity level, or it can shut down for a period and search for better productivity to imitate. If it searches, it is randomly matched with another firm that is producing, and imitates that firms productivity level for free. Searching firms compare the expected value of productivity they get from imitating to the cost of shutting down, and only low-productivity firms search and imitate. Firm productivity is Pareto-distributed. The average level of productivity is rising over time because low-productivity firms imitate high-productivity terms. Because of the specific nature of the Pareto, the distribution remains Pareto even as the average rises.
+</p></blockquote>
+<p>The PT model delivers sustained growth through this search and match process, while maintaining a distribution of firm-level productivities. But that isn't due to the economics of imitation, that is due to the specific mathematical structure assumed. To see this, compare the PT model to my newly created model of growth:</p>
+<blockquote><p>
+There are a bunch of risk-neutral villages, each with an individual level of Tecknologie. The village can consume what it produces, or it can sacrifice all of that production as a sacrifice to the glorious Hephaestus, God of craftsmen, in the hopes that he will bestow on them insight into a new type of Tecknologie. Hephaestus is fickle, like many of the Gods, and his ways are mysterious to mortals. Hence, if the village offers the sacrifice, the new Tecknologie that Hephaestus grants them is unknown, but is equal to the Tecknologie in one of the other villages around them. Villages compare the expected level of Tecknologie from Hephaestus to the cost of sacrifice, so only low-Tecknologie villages perform sacrifices. Village Tecknologie is Pareto-distributed. The average level of Tecknologie is rising over time because low-Tecknologie villages sacrifice and are blessed by Hephaestus. Because of the specific nature of the Pareto, the distribution remains Pareto even as the average rises.
+</p></blockquote>
+<p>
+These models are mathematically identical. With a sophisticated use of search-and-replace I could rewrite PT to be a paper on the growth implications of Hephaestus worship in ancient Greece. </p>
+<p>
+The point is that we can call "draw productivity from a Pareto distribution matching currently producing units (DPFAPDMCPU)" anything we want. PT call it "imitation". In my little story I call it "blessings from Hephaestus". You could call it "R&amp;D", or you could call it an "externality" or "diffusion" if you wanted. DPFAPDMCPU is just an assumption about how innovations arrive.</p>
+<p>
+This isn't to say that DPFAPDMCPU is wrong, or even a bad assumption to make. Every growth model makes some kind of unsupported assumption about how productivity arrives. Solow assumed that productivity grew exponentially, which led to constant growth in steady state. Aghion and Howitt said new innovations arrive as a Poisson process, but the productivity bump you get is always the same. In expectation, or if you have lots of sectors, you get constant growth in steady state. In a standard Romer model, the productivity bump you get from innovation is proportional to the effort you put into R&amp;D, and growth is constant in steady state.</p>
+<p>
+PT isn't really a model of <i>imitation</i> and growth. It is a model of DPFAPDMCPU and growth. And DPFAPDMCPU has a clever implication, which is that the distribution of firm (or village) productivities stays Pareto forever even though we have all this churning in the distribution going on. That's something that other assumptions about how innovations arrive can't capture.</p>
+<p>
+And PT get this distinction. This paragraph is from their conclusion:</p>
+<blockquote><p>
+This paper contributes an analytically tractable mechanism for analyzing growth and the evolution of the productivity distribution, with both the evolution of the productivity distribution and the technology adoption decision jointly endogenously determined in equilibrium. Thus, we can analyze the effect the productivity distribution has on adoption incentives, the effect of adoption behavior in generating the productivity distribution, and the corresponding growth implications of this feedback loop. We develop a solution technique that obtains closed-form expressions for all equilibrium objects—including the growth factor—as a function of intrinsic parameters.
+</p></blockquote>
+<p>Here they've dropped any use of the word "imitation" and talk about a generic process of "technology adoption", which could be anything from R&amp;D to Hephaestus-worship. PT state they have figured out how to use DPFAPDMCPU as the mathematical structure to model the arrival of new technologies to adopt, all while still ending up with a constant growth rate. </p>
+<p>
+The question now is why or when DPFAPDMCPU is a better choice than other structures. In what situations, or for what types of products, or in what markets, is it reasonable to think of DPFAPDMCPU as the way that innovations arrive? </p>
+<p>
+"Imitation" or "diffusion" doesn't seem to cut it as motivation. If we take imitation seriously, then the DPFAPDMCPU structure has several issues: </p>
+<ul>
+<li> Searching firms are randomly matched with producing firms. Why random? If you're searching for someone to imitate, then wouldn't you search for someone with particularly high productivity? The firms are assumed to have perfect foreknowledge of the distribution of productivity, so how come they do not know which firms are the best to imitate?
+</li>
+<li> Why is matching one-to-one? If you can imitate a firm, then why can't all of us imitate one firm? Why can't we all imitate the best firm?
+</li>
+<li> Search costs resources, but imitation is free. That is, the searcher has to give up production to look for someone to imitate. But once they match, they can copy the productivity level for free. So productivity techniques are absolutely non-excludable. But knowing that imitation is happening, why wouldn't high-productivity firms hold out and demand some kind of side-payment for being imitated?
+</li>
+</ul>
+<p>
+In short, I'm struggling at this point to see the specific economic context for these models of diffusion/imitation that use DPFAPDMCPU or something similar. Am I missing some kind of obvious examples here? If I am, is there a reason to think that <i>most</i> of the innovation that occurs is due to non-excludable imitation? </p>
+<p>
+Lots of models deliver a prediction of constant growth in steady state, so why are these that use the DPFAPDMCPU assumption a better description of why that happens? I think this literature would benefit from providing a clearer answer to that question.</p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/the-glacial-speed-of-institutional-change/">
+      <span class="page-title">The Glacial Speed of Institutional Change</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/you-cant-reform-your-way-to-rapid-growth/">
+       <span class="page-title">You Can't Reform Your Way to Rapid Growth</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/understanding-diffusion-models-of-growth/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

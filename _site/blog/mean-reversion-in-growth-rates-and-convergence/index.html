@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Mean-Reversion in Growth Rates and Convergence | Dietrich Vollrath</title>
+	<meta name="description" content="Brad DeLong posted about the recent paper by Pritchett and Summers (PS) on "Asiaphoria" and mean-reversion in growth rates. PS found several things:  Growth ...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/mean-reversion-in-growth-rates-and-convergence/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Mean-Reversion in Growth Rates and Convergence</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">18 Dec 2014</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p><a href="http://equitablegrowth.org/2014/12/15/convergence-daily-focus/">Brad DeLong</a> posted about the recent paper by <a href="http://www.voxeu.org/article/growth-slowdowns-middle-income-trap-vs-regression-mean">Pritchett and Summers</a> (PS) on "Asiaphoria" and mean-reversion in growth rates. PS found several things: </p>
+<ul>
+<li> Growth rates are not persistent. The growth rate over the last 10 years has very little information about the growth rate over the next 10 years. Growth rates "regress to the mean" as PS say.
+</li>
+<li> Growth in developing countries tends to take place in bursts of growth and bursts of stagnation. This is different from rich countries where growth variation tends to consist of mild variation around a trend rate.
+</li>
+<li> There is no reason to believe that rapidly growing economies today (China and India) will necessarily continue to grow rapidly.
+</li>
+</ul>
+<p>
+Brad's response is to take their evidence as a fundamental challenge to the standard Solow model explanation for why growth rates differ. </p>
+<blockquote><p>
+Lant Pritchett and Larry Summers are now trying to blow this up: to say that just as the neoclassical aggregate production function is a very bad guide to understanding the business cycle, as the generation-old failure of RBC models tells us, so the neoclassical aggregate production function and the Solow growth model built on top of it is a bad guide to issues of growth and development as well.
+</p></blockquote>
+<p>This is an overreaction. The mean-reversion and "bursts" that PS find are perfectly consistent with a Solow model including shocks.</p>
+<p>
+Let's start with the finding that regressing decadal growth rates on prior-decadal growth rates gives you a coefficient of something like 0.2-0.3. PS call this mean-reversion. I think it's an artifact of convergence. Let's imagine an economy that is following the Solow model precisely. It is very poor in 1960, and growth from 1960-1970 is about 10&#037; per year. By 1970 it is much better off, and so growth from 1970-1980 slows to 5&#037; per year. By 1980 this has gotten the country to steady state, so from 1980-1990 it grows at 2&#037; per year. From 1990-2000 it is still at steady state, so grows at 2&#037; a year again. </p>
+<p>
+Now regress decadal growth rates (5,2,2) on prior-decade growth rates (10,5,2). What do you get? A line with a slope of about 0.397. Why? Because growth rates slow down as you approach steady state. Play with the numbers a little and you can make the slope 0.3 if you want to. The point is that convergence will generate just such a pattern in growth rates.</p>
+<p>
+What about the unpredictability of growth rates? PS find that the correlation of growth rates across periods is very low. This is more problematic for convergence, on the face of it. If convergence is true, then growth rates across decades should be tightly correlated. In other words, even if the slope of the toy regression I ran above is less than one, the R-squared should be large.</p>
+<p>
+In my toy example, the country systematically converges to 2&#037; growth, and the R-squared of my little regression is 0.86. PS find much smaller R-squares in their work. The conclusion is that growth rates in the next decade are very unpredictable. So does this mean that convergence and the Solow model are wrong? No. The reason is that once you allow for any kind of meaningful shocks to GDP per capita, the <i>short-run growth rates</i> get very noisy, and you lose track of the convergence. It doesn't mean it isn't there, it just is hard to see.</p>
+<p>
+Let me give you a clearer demonstration of what I mean. I'm going to build an economy that strictly obeys convergence, with the growth rate related to the difference between actual GDP per capita and trend GDP per capita. </p>
+<p>
+More formally, let
+<p align="center">$$  y_{t+1} = (1+g)\left[\lambda y^{\ast}_t + (1-\lambda)y_t \right] + \epsilon_{t+1} $$</p>
+<p> where ${g}$ is the long-run growth rate of potential GDP, ${y^{\ast}_t}$ is potential GDP in year ${t}$, ${y_t}$ is actual GDP in year ${t}$, and ${\epsilon_{t+1}}$ are random shocks to GDP in year ${t+1}$. This formula mechanically captures convergence to trend GDP per capita, but with the additional wrinkle of shocks occurring in any given period that push you either further away or closer to trend. ${\lambda}$ is the convergence parameter, which I said in some <a href="https://growthecon.wordpress.com/2014/12/08/the-limited-effect-of-reforms-on-growth/" title="The Limited Effect of Reforms on Growth">recent posts</a> was about 0.02, meaning that 2&#037; of the gap between actual and trend GDP per capita closes every period.</p>
+<p>
+I simulated this over 100 periods, with ${g=0.02}$, ${\lambda=0.02}$, ${y^{\ast}_0 = 20}$ and ${y_0 = 5}$. The country starts well below potential. I then let there be a shock to ${y}$ every period, drawn from a normal with mean 0, variance 0.25. Here are the results of one run of that simulation.</p>
+<p>
+First, look at the 10-year growth rates over time. There is a downward trend if you look at it, but this is masked by a lot of noise in the growth rate. You have what look distinctly like two growth booms, about period 25 and period 50. </p>
+<p><img src="/assets/conv_g.png" alt="10-year Growth Rates" /></p>
+<p>Second, look at the correlation of the average growth rate in one "decade" and the average growth rate in the prior "decade". This is essentially what Pritchett and Summers do. I've also included the fitted regression line, so you can see the relationship. There is none. The coefficient on the prior-decade growth rate is 0.05, so pretty severe mean-reversion. The R-squared is something like 0.16. A high growth rate one decade does not indicate high growth the following decade, and the current decadal growth rate provides very little information on growth over the next decade.</p>
+<p><img src="/assets/conv_corr.png" alt="Correlation of Growth Rates over time" /></p>
+<p>But this model has mechanical convergence built into it, just with some extra noise dropped on top to make things interesting. And with sufficient noise, things are really interesting. If you looked at this plot, you'd start talking about growth accelerations and growth slowdowns. What happened in period 25 to boost growth? Did this economy democratize? Was there an opening to trade? And what about the bust around period 40? For a poor country, that is low growth. Was there a coup? We see plenty of "bursts" of growth and "bursts" of stagnation (or low growth) here. It's a function of the noise I built in, not a failure of convergence.</p>
+<p>
+By the way, take a look at the log of output per worker over time. This shows a bumpy but steady upward trend. The volatility of the growth rate doesn't look as dramatic here.</p>
+<p><img src="/assets/conv_y.png" alt="Log output per worker" /></p>
+<p>If I turned up the variance of the noise term, I'd be able to get even wilder swings in output, and wilder swings in growth rates. In a couple simulations I played with, you get a negative relationship of current growth rates to past growth rates - but in every case there was convergence going on.</p>
+<p>
+Why are growth rates so un-forecastable, as PS find? Because of convergence, the noise doesn't just cancel out over time. If a country gets a big negative shock today, then the growth rate is going to be low this year. But now the country is particularly far below trend GDP per capita, and so convergence kicks in and makes the growth rate <i>larger</i> than it normally would be. And because convergence works slowly, it will be larger than normal for several periods afterwards. There is a natural tendency for growth rates to be uncorrelated in the presence of shocks, but that is again partly because of convergence, not evidence of its absence. There are lots of reasons that the Solow model could be the wrong way to look at growth. But this isn't one of them.</p>
+<p>
+I think the issue here is that convergence gets "lost" behind all the noise in the data. Over long periods of time, convergence wins out. [<em>"The arc of history is long, but it bends towards Robert Solow"? Too much?</em>] Growth rates start relatively high and end up asymptoting towards the trend growth rate. But for any small window of time - say 10 years - noise in GDP per capita can swamp the convergence effects. In the growth literature we tend to look at differences of 5 or 10 years to "smooth out" fluctuations. That's not sufficient if one wants to think about convergence, which operates over much longer time periods.</p>
+<p>
+PS are absolutely right that we cannot simply extrapolate out China and India's recent growth rates and assume they'll continue indefinitely. We should, as growth economists, account for the gravitational pull that convergence puts on growth rates as time goes forward. But just like gravity, convergence is a relatively weak force on growth rates. It can be overcome in the short-run by any reasonably-sized shock to GDP per capita. </p>
+<p>
+You don't think "Oh my God, gravity is broken!" every time you see an airplane overhead. So don't take abnormal growth rates or uncorrelated growth rates as evidence that convergence isn't occurring.</p></p></p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/why-did-consumption-tfp-stagnate/">
+      <span class="page-title">Why Did Consumption TFP Stagnate?</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/last-links-of-2014/">
+       <span class="page-title">Last Links of 2014</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/mean-reversion-in-growth-rates-and-convergence/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>These are Not the (Modeling Assumptions About) Droids You are Looking For | Dietrich Vollrath</title>
+	<meta name="description" content="Let me start by saying that all future arguments about robots should use the word "droids" instead so that we can use more Star Wars references.Benzell, Kotl...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/these-are-not-the-modeling-assumptions-about-droids-you-are-looking-for/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">These are Not the (Modeling Assumptions About) Droids You are Looking For</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">19 Feb 2015</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>Let me start by saying that all future arguments about robots should use the word "droids" instead so that we can use more Star Wars references.</p>
+<p>
+Benzell, Kotlikoff, LaGarda, and Sachs (BKLS) have a new <a href="http://www.nber.org/papers/w20941">NBER working paper</a> out on robots (sorry, I don't see an ungated version). They are attempting to do what needs to be done: provide a baseline model of economic growth that explicitly accounts for the ability of software in the form of robots to replace human workers. With such a baseline model we could then see under what conditions we get what they call "immiserating growth" where we are actually made worse off by inventing robots. Perhaps we could then use the model to test out different policies and see how to alleviate or prevent such immiserating growth.</p>
+<p>
+Thus I am totally on board with the <i>goals</i> of the paper. But I don't know that this particular model is the right way to think about how robots will affect us in the future. There are several reasons:</p>
+<p>
+<strong>Wealth Distribution</strong>. The model has skilled workers and unskilled workers, yes, but does not distinguish between those with high initial wealth (capable of saving a lot in the form of robots) from those with little or none. This eliminates the possibility of having wealthy robot owners run the wage down so far that no human is employable anymore. While I don't think that is going to happen, the model should <i>allow</i> for it so we can see under what conditions that might be right or wrong. </p>
+<p>
+<strong>Modeling Code</strong>. The actual model of how capital (robots) and code work together seems too crude. Essentially, robots and code work together in a production function. Code today is equal to some fraction of the code from yesterday (the rest presumably becomes incompatible) plus whatever new code we hire skilled workers to write. The ``shock'' that BKLS study is a dramatic increase in the fraction of code that lasts from one period to the next. In their baseline, zero percent of the code lasts, meaning that to work with capital we have to continually reprogram them. Robotics, or AI, or whatever it is that they are intending to capture then shocks this percent up to 70&#037;. </p>
+<p>
+Is this how we should think about code? Perhaps it is a stock variable we could think about, sure. But is the coming of robots really a positive shock to the persistence of that code? I feel like I can tell an equally valid story about how robots and AI will mean that code becomes <i>less</i> persistent over time, and that we will continually be reprogramming them to suit our needs. Robots, by operating as general purpose machines, can easily be re-programmed every day with new tasks. A hammer, on the other hand, is ``programmed'' once into a heavy object useful for hitting things and then is stuck doing that forever. The code embedded in our current non-robot tools is very, very persistent because they are built for single tasks. Hammers don't even have USB ports, for crying out loud. </p>
+<p>
+<strong>Treating Code as a Rival Good</strong>. Leaving aside the issue of code's persistence, their choice of production function for goods does not seem to make sense for how code operates. The production function depends on robots/capital (K) and code (A). Given their assumed parameters, the production function is
+<p align="center">$$  Y = K^{\alpha}A^{1-\alpha}, $$</p>
+<p> and code is treated like any other rival, exclusive factor of production. Their production function assumes that if I hold the amount of code constant, but increase the number of robots, then code-per-robot <i>falls</i>. Each new robot means existing ones will have less code to work with? That seems obviously wrong, doesn't it? Every time Apple sells an iPhone I don't have to sacrifice an app so that someone else can use it. </p>
+<p>
+The beauty of code is precisely that it is non-rival and non-exclusive. If one robot uses code, all the other robots can use it too. This isn't a problem with treating code as a "stock variable". That's fine. We can easily think of the stock of code depreciating (people get tired of apps, it isn't compatible with new software) and accumulating (coders write new code). But to treat it like a rival, exclusive, physical input seems wrong. </p>
+<p>
+You're going to think this looks trivial, but the production function should look like the following
+<p align="center">$$  Y = K^{\alpha} A. $$</p>
+<p> I ditched the ${(1-\alpha)}$ exponent. So what? But this makes all the difference. This modified production function has <i>increasing returns to scale</i>. If I double both robots and the amount of code, output more than doubles. Why? Because the code can be shared across <i>all</i> robots equally, and they don't degrade each other's capabilities. </p>
+<p>
+This is going to change a lot in their model, because now even if I have a long-run decline in the stock of robots ${K}$, the increase in ${A}$ can more than make up for it. I can have fewer robots, but with all that code they are all super-capable of producing goods for us. The original BKLS model assumes that won't happen because if one robot is using the code, another one cannot. </p>
+<p>
+But I'm unlikely to have a long-run decline in robots (or code) because with IRS the marginal return to robots is <i>rising</i> with the number of robots, and the marginal return to code is <i>rising</i> with the amount of code. The incentives to build more robots and produce more code are <i>rising</i>. Even if code persists over time, adding new code will always be worth it because of the IRS. More robots and more code mean more goods produced in the long-run, not fewer as BKLS find.</p>
+<p>
+Of course, this means we'll have produced so many robots that they become sentient and enslave us to serve as human batteries. But that is a different kind of problem entirely.</p>
+<p>
+<strong>Valuing Consumption</strong>. Leave aside all the issues with production and how to model code. Does their baseline simulation actually indicate immiseration? Their measure of "national income" isn't defined clearly, so I'm not sure what to do with that number. But they do report the changes in consumption of goods and services. We can back out a measure of consumption per person from that. They index the initial values of service and good consumption to 100. Then, in the "immiserating growth" scenario, service consumption rises to 127, but good consumption falls to 72. </p>
+<p>
+Is this good or bad? Well, to value both initial and long-run total consumption, we need to pick a relative price for the two goods. BKLS index the relative price of services to 100 in the initial period, and the relative price falls to 43 in the long-run. </p>
+<p>
+But we don't want the indexed price, we want the <i>actual</i> relative price. This matters a lot. If the relative price of services is 1 in the initial period, then initial real consumption is
+<p align="center">$$  C = P_s Q_s + Q_g = 1 \times 100 + 100 = 200. $$</p>
+<p> In the long-run we need to use the <i>same</i> relative price so that we can compare real consumption over time. In the long-run, with a relative price of services of 1, real consumption is
+<p align="center">$$  C = 1 \times 127 + 72 = 199. $$</p>
+<p> Essentially identical, and my guess is that the difference is purely due to rounding error. </p>
+<p>
+Note what this means. With a relative price of services of 1, real consumption is unchanged after the introduction of robots in their model. This is not immiserating growth. </p>
+<p>
+But wait, who said that the relative price of services had to be 1? What if the initial price of services was 10? Then initial real consumption would be ${C = 10 \times 100 + 100 = 1100}$, and long-run real consumption would be ${C = 10 \times 127 + 72 = 1342}$, and real consumption has <i>risen</i> by 22&#037; thanks to the robots! </p>
+<p>
+Or, if you feel like being pessimistic, assume the initial relative price of services is 0.1. Then initial real consumption is ${C = .1 \times 100 + = 110}$, and long-run consumption is ${C = .1 \times 127 + 72 = 84.7}$, a drop of 23&#037;. Now we've got immiserating growth.</p>
+<p>
+The point is that the conclusion depends entirely on the choice of the actual relative price of services. What is the actual relative price of services in their simulation? They don't say anywhere that I can find, they only report the indexed value is 100 in the initial period. So I don't know how to evaluate their simulation. I do know that their having service consumption rise by 27&#037; and good consumption fall by 28&#037; does not <i>necessarily</i> imply that we are worse off.</p>
+<p>
+Their model is too disconnected from reality (as are most models, this isn't a BKLS failing) that we cannot simply look at a series from the BLS on service prices to get the right answer here. But we do know that the relative price of services to goods rose a bunch from 1950 to 2010 (see <a href="https://ideas.repec.org/a/aea/aecrev/v103y2013i7p2752-89.html">here</a>). From an arbitrary baseline of 1 in 1950, the price of services relative to manufacturing was about 4.33 in 2010. You can't just plug in 4.33 to the above calculation, but it gives you a good idea of how expensive services are compared to manufacturing goods. On the basis of this, I would lean towards assuming that the relative price of services is bigger than 1, and probably significantly bigger, and that the effect of the BKLS robots is an <i>increase</i> in real consumption in the long-run.</p>
+<p>
+<strong>Valuing Welfare</strong>. BKLS provide some compensating differential measurements for their immiserating scenario, which are negative. This implies that people would be willing to pay to avoid robots. They are worse off.</p>
+<p>
+This valuation depends entirely on the weights in the utility function, and those weights seem wrong. The utility function they use is ${U = 0.5 \ln{C_s} + 0.5 \ln{C_g}}$, or equal weights on the consumption of both services and goods. With their set-up, people in the BKLS model will spend exactly 50&#037; of their income on services, and 50&#037; on goods.</p>
+<p>
+But that isn't what expenditure data look like. In the US, services take up about 70-80&#037; of expenditure, and goods only the remaining 20-30&#037;. So the utility function should probably look like ${U = 0.75 \ln{C_s} + 0.25 \ln{C_g}}$. And this changes the welfare impact of the arrival of robots. </p>
+<p>
+Let ${C_g}$ and ${C_s}$ both equal 1 in the baseline, pre-robots. Then for BKLS baseline utility is 0, and in my alternative utility is also 0. So we start at the same value. </p>
+<p>
+With robots, goods consumption falls to 0.72 and service consumption rises to 1.27. For BKLS this gives utility of ${U = 0.5 \ln{1.27} + 0.5 \ln{0.72} = -.045}$. Welfare goes down with the robots. With my weights, utility is ${U = 0.75 \ln{1.27} + 0.25 \ln{0.72} = 0.097}$. Welfare goes <i>up</i> with the robots.</p>
+<p>
+Which is right? It depends again on assumptions about how to value services versus goods. If you overweight goods versus services, then yes, the reduction of goods production in the BKLS scenario will make things look bad. But if you flip that around and overweight services, things look great. I'll argue that overweighting services seems more plausible given the expenditure data, but I can't know for sure. I am wary, though, of the BKLS conclusions because their assumptions are not inconsequential to their findings. </p>
+<p>
+<strong>What Do We Know</strong>. If it seems like I'm picking on this paper, it is because the question they are trying to answer is so interesting and important, and I spent a lot of time going through their model. As I said above, we need some kind of baseline model of how future hyper-automated production influences the economy. BKLS should get a lot of credit for taking a swing at this. I disagree with some of the choices they made, but they are doing what needs to be done. I do think that you have to allow for IRS in production involving code, though. It just doesn't make sense to me to do it any other way. And if you do that goods production is going to go up, not down, as they find.</p>
+<p>The thing that keeps bugging me is that I have this suspicion that you can't eliminate the measurement problem with real consumption or welfare entirely. This isn't a failure of BKLS in particular, but probably an issue with any model of this kind. We don't know the "true" utility function, so there is no way we'll ever be able to say for sure whether robots will or will not raise welfare. In the end it will always rest on assumptions regarding utility weights.</p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/significant-changes-in-gdp-growth/">
+      <span class="page-title">Significant Changes in GDP Growth</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/friday-growth-links/">
+       <span class="page-title">Friday Growth Links</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/these-are-not-the-modeling-assumptions-about-droids-you-are-looking-for/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

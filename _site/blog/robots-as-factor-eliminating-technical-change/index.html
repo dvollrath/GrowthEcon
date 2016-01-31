@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Robots as Factor-Eliminating Technical Change | Dietrich Vollrath</title>
+	<meta name="description" content="A really common thread running through the comments I've gotten on the blog involve the replacement of labor. This is tied into the question of the impact of...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/robots-as-factor-eliminating-technical-change/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Robots as Factor-Eliminating Technical Change</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">04 Sep 2014</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>A really common thread running through the comments I've gotten on the blog involve the replacement of labor. This is tied into the question of the impact of <a href="http://www.theguardian.com/technology/2014/apr/27/no-joke-robots-taking-over-replace-middle-classes-automatons">robots/IT</a> on labor market outcomes, and the stagnation of wages for lots of laborers. An intuition that a lot of people have is that robots are going to "replace" people, and this will mean that wages fall and more and more of output gets paid to the owners of the robots. Just today, I saw this figure (h/t to <a href="http://delong.typepad.com/">Brad DeLong</a>) from the <a href="http://www.cbpp.org/">Center on Budget and Policy Priorities</a> which shows wages for the 10th and 20th percentile workers in the U.S. being stagnant over the last 40 years.<br />
+<img src="/assets/CBPP_figure.jpg" alt="CBPP Wage Figure" /></p>
+<p>
+The possible counter-arguments to this are that even with robots, we'll just find new uses for human labor, and/or that robots will relieve us of the burden of working. We'll enjoy high living standards without having to work at it, so why worry? </p>
+<p>
+I'll admit that my usual reaction is the "but we will just find new kinds of jobs for people" type. Even though capital goods like tractors and combines replaced a lot of human labor in agriculture, we now employ people in other industries, for example. But this assumes that labor is somehow still relevant <i>somewhere</i> in the economy, and maybe that isn't true. So what does "factor-eliminating" technological change look like? As luck would have it, there's a paper by <a href="http://public.econ.duke.edu/~peretto/">Pietro Peretto</a> and <a href="http://www4.ncsu.edu/~jjseater/">John Seater</a> called .... "<a href="http://public.econ.duke.edu/~peretto/JME2013.pdf">Factor-eliminating Technical Change</a>". Peretto and Seater focus on the dynamic implications of the model for endogenous growth, and whether factor-eliminating change can produce sustained growth in output per worker. They find that it can under certain circumstances. But the model they set is also a really useful tool for thinking about what the arrival of robots (or further IT innovations in general) may imply for wages and income distribution.</p>
+<p>
+I'm going to ignore the dynamics that Peretto and Seater work through, and focus only on the firm-level decision they describe. </p>
+<p>
+****If you want to skip technical stuff - jump down to the bottom of the post for the punchline****</p>
+<p>
+Firms have a whole menu of available production functions to choose from. The firm-level functions all have the same structure, ${Y = A X^{\alpha}Z^{1-\alpha}}$, and vary only in their value of ${\alpha \in (0,\overline{\alpha})}$. ${X}$ and ${Z}$ are different factors of production (I'll be more specific about how to interpret these later on). ${A}$ is a measure of total factor productivity.</p>
+<p>
+The idea of having different production functions to choose from isn't necessarily new, but the novelty comes when Peretto/Seater allow the firm to use more than one of those production functions at once. A firm that has some amount of ${X}$ and ${Z}$ available will choose to do what? It depends on the amount of ${X}$ versus the amount of ${Z}$ they have. If ${X}$ is really big compared to ${Z}$, then it makes sense to only use the maximum ${\overline{\alpha}}$ technology, so ${Y = A X^{\overline{\alpha}}Z^{1-\overline{\alpha}}}$. This makes some sense. If you have lots of some factor ${X}$, then it only makes sense to use a technology that uses this factor really intensely - ${\overline{\alpha}}$. </p>
+<p>
+On the other hand, if you have a lot of ${Z}$ compared to ${X}$, then what do you do? You do the opposite - kind of. With a lot of ${Z}$, you want to use a technology that uses this factor intensely, meaning the technology with ${\alpha=0}$. But, if you use only that technology, then your ${X}$ sits idle, useless. So you'll run a ${X}$-intense plant as well, and that requires a little of the ${Z}$ factor to operate. So you'll use two kinds of plants at once - a ${Z}$ intense one and a ${X}$ intense one. You can see their paper for derivations, but in the end the production function when you have lots of ${Z}$ is
+<p align="center">$$  Y = A \left(Z + \beta X\right) $$</p>
+<p> where ${\beta}$ is a slurry of terms involving ${\overline{\alpha}}$. What Peretto and Seater show is that over time, if firms can invest in higher levels of ${\overline{\alpha}}$, then by necessity it will be the case that we have "lots" of ${Z}$ compared to little ${X}$, and we use this production function. </p>
+<p>
+What's so special about this production function? It's linear in ${Z}$ and ${X}$, so their marginal products do not decline as you use more of them. More importantly, their marginal products do not rise as you acquire more of the other input. That is, the marginal product of ${Z}$ is exactly ${A}$, no matter how much ${X}$ we have.</p>
+<p>
+What does this possibly have to do with robots, stagnant wages, and the labor market? Let ${Z}$ represent labor inputs, and ${X}$ represent capital inputs. This linear production function means that as we acquire more capital (${X}$), this has no effect on the marginal product of labor (${Z}$). If we have something resembling a competitive market for labor, then this implies that <i>wages</i> will be constant even as we acquire more capital. </p>
+<p>
+That's a big departure from the typical concept we have of production functions and wages. The typical model is more like Peretto and Seater's case where ${X}$ is really big, and ${Y = A X^{\overline{\alpha}}Z^{1-\overline{\alpha}}}$, a typical Cobb-Douglas. What's true here is that as we get more ${X}$, the marginal product of ${Z}$ goes up. In other words, if we acquire more capital, then wages should rise as workers get more productive. </p>
+<p>
+The Peretto/Seater setting says that, at some point, technology will progress to the point that wages <i>stop rising with the capital stock</i>. Wages can still go up with general total factor productivity, ${A}$, sure, but just acquiring new capital will no longer raise wages. </p>
+<p>
+While wages are stagnant, this doesn't mean that output per worker is stagnant. Labor productivity (${Y/Z}$) in this setting is
+<p align="center">$$  \frac{Y}{Z} = A \left(1 + \beta \frac{X}{Z}\right). $$</p>
+<p> If capital per worker (${X/Z}$) is rising, then so is output per worker. But wages will remain constant. This implies that labor's share of output is falling, as
+<p align="center">$$  \frac{wZ}{Y} = \frac{AZ}{A \left(Z + \beta X\right)} = \frac{Z}{\left(Z + \beta X\right)} = \frac{1}{1 + \beta X/Z}. $$</p>
+<p> With the ability to use multiple types of technologies, as capital is acquired labor's share of output falls. </p>
+<p>
+Okay, this Peretto/Seater model gives us an explanation for stagnant wages and a declining labor share in output. Why did I present this using ${X}$ for capital and ${Z}$ for labor, not their traditional ${K}$ and ${L}$? This is mainly because the definition of what counts as "labor", and what counts as "capital", are not fixed. "Capital" might include human as well as physical capital, and so "labor" might mean just unskilled labor. And we definitely see that unskilled labor's wage is stagnant, while college-educated wages have tended to rise. </p>
+<p>
+***** Jump back in here if you skipped the technical stuff *****</p>
+<p>
+The real point here is that whether technological change is good for labor or not depends on whether labor and capital (i.e. robots) are complements or substitutes. If they are complements (as in traditional conceptions of production functions), then adding robots will raise wages, and won't necessarily lower labor's share of output. If they are substistutes then adding robots will not raise wages, and will almost certainly lower labor's share of output. The factor-eliminating model from Peretto and Seater says that firms will always invest in more capital-intense production functions and that this will <i>inevitably</i> make labor and capital substitutes. We happen to live in the period of time in which this shift to being substitutes is taking place. Or one could argue that it already has taken place, as we see those stagnant wages for unskilled workers, at least, from 1980 onwards.</p>
+<p>
+What we should do about this is a different question. There is no equivalent mechanism or incentive here that would drive firms to make labor and capital complements again. From the firms perspective, having labor and capital as complements limits their flexibility, because they then depend on the other. They'd rather have the marginal product of robots and people independent of one other. So once we reach the robot stage of production, we're going to stay there, absent a policy that actively prohibits certain types of production. The only way to raise labor's share of output once we get the robots is through straight redistribution from robot owners to workers.</p>
+<p>
+Note that this doesn't mean that labor's real wage is falling. They still have jobs, and their wages can still rise if there is total factor productivity change. But that won't change the share of output that labor earns. I guess a big question is whether the increases in real wages from total factor productivity growth are sufficient to keep workers from grumbling about the smaller share of output that they earn. </p>
+<p>
+I for one welcome....you know the rest. </p>
+<p /></p></p></p></p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/total-factor-productivity-as-a-measure-of-welfare/">
+      <span class="page-title">Total Factor Productivity as a Measure of Welfare</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/is-progress-bad/">
+       <span class="page-title">Is Progress Bad?</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/robots-as-factor-eliminating-technical-change/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

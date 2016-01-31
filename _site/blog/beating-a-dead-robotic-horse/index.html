@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Beating a Dead Robotic Horse | Dietrich Vollrath</title>
+	<meta name="description" content="One of the recurring themes on this blog has been the consequences of robots, AI, or rapid technological change on labor demand. Will humans be put out of wo...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/beating-a-dead-robotic-horse/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Beating a Dead Robotic Horse</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">31 Dec 2015</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>One of the recurring themes on this blog has been the consequences of robots, AI, or rapid technological change on labor demand. Will humans be put out of work by robots, and will this mean paradise or destitution? I've generally argued that we should be optimistic about robots and AI and the like, but others have made coherent arguments for pessimism. I spent a chunk of this week reading over posts, both new and <a href="https://growthecon.wordpress.com/2014/10/03/meta-post-on-robots-and-jobs/">old</a>, and thinking more about these positions.</p>
+<p>
+If there is one distinct difference between the robo-pessimist and robo-optimist view, it is almost exclusively down to timing. The pessimists are worried that the rapid decline of human labor is occurring now, and in many cases has been occurring for a while already. The optimists believe that we have time in front of us to sort things out before human labor is replaced en masse.</p>
+<p>
+<a href="https://www.foreignaffairs.com/articles/2015-06-16/will-humans-go-way-horses">Brynjolfsson and McAfee</a>'s latest is a good example of this robo-optimist view. They concede that human labor is in danger of being replaced:  </p>
+<blockquote><p>
+But will there be enough demand, especially over the long term, for those two types of human labor: that which must be done by people and that which can’t yet be done by machines? There is a real possibility that the answer is no—that human labor will, in aggregate, decline in relevance because of technological progress, just as horse labor did earlier. If that happens, it will raise the specter that the world may not be able to maintain the industrial era’s remarkable trajectory of steadily rising employment prospects and wages for a growing population.
+</p></blockquote>
+<p>But at the same time they do not think this is imminent:  </p>
+<blockquote><p>
+But are our interpersonal abilities the only ones that will allow us to stave off economic irrelevance? Over at least the next decade, the answer is almost certainly no. That’s because recent technological progress, while moving surprisingly fast, is still not on track to allow robots and artificial intelligence to do everything better than humans can within the next few years. So another reason that humans won’t soon go the way of the horse is that humans can do many valuable things that will remain beyond the reach of technology.
+</p></blockquote>
+<p>
+On the robo-pessimism side, <a href="http://richardhserlin.blogspot.com">Richard Serlin</a> has a mega-post about the declining prospects for human labor and the possible consequences. What is interesting about Richard's post is that he essentially makes the case that the replacement of human labor by automation has been occurring for decades; we are already living with it. </p>
+<p>
+He cites a 2011 Miliken Institute report,  </p>
+<blockquote><p>
+Surely, the most astonishing statistic to be gleaned from the trend data is the deterioration in the market outcomes for men with less than a high school education. The median earnings of all men in this category have declined by 66 percent [not a misprint] [from 1969 to 2009]. At the same time, this group has experienced a 23 percentage point decline in the probability of having any labor-market earnings. Roughly 10 percentage points of the 23 percentage points is attributable to the fact that more men are reporting disabilities, even though work in physically demanding jobs has been declining for many decades. Men with just a high school diploma did only marginally better. Their wages declined by 47 percent and their participation in the labor force fell by 18 percentage points.
+</p></blockquote>
+<p>Richard's point is that demand for unskilled (male) labor has shrunk demonstrably over the last few decades, and that this is only going to continue as robots or AI or automation come online. Even if you include the increase in female labor force participation, we've seen in the last 20 years that labor force participation has flatlined and started to decrease.</p>
+<p>
+There isn't a lot of daylight between the robo-pessimists and robo-optimists. Both are wary of the replacement of human labor. The big difference is whether you think this is a present or a future problem. It is becoming hard to see what is optimistic about the robo-optimist viewpoint. </p>
+<p>
+I think it is helpful to get beyond the binary viewpoints. Let's divide things up as follows </p>
+<ul>
+<li> <b>Strong robo-pessimism:</b> Robots and AI will come no matter what we do. They will reduce demand for labor so much that the majority of humans will have no work to do, and we will be at the whim of the minority of robot/AI owners. The "horse argument" is a form of strong robo-pessimism. 	</li>
+<li> <b>Weak robo-pessimism:</b> I'd classify Richard Serlin here. Weak robo-pessimism thinks that labor is already being replaced, but there are things we can do to ameliorate this: education, redistribution. 	</li>
+<li> <b>Weak robo-optimism:</b> Brynjolfsson and McAfee are a good example of this viewpoint. Possibility that labor will be replaced, but this hasn't occurred yet. We have time to adapt to the distributional issues. 	</li>
+<li> <b>Strong robo-optimism:</b> Robots and AI will come no matter what we do. They will create a scenario of material wealth such that humans will no longer need to work, but if they want to they will always be able to invent something new to do.
+</li>
+</ul>
+<p>
+One of the issues in discussing these topics is that we often are not arguing with the right group. Weak robo-optimists use Strong robo-pessimists as their straw man. Weak robo-pessimists use Strong robo-optimists as their straw man. </p>
+<p>
+I am as guilty of this as anyone. I think the argument that humans are doomed because "look what happened to horses" is stupid. People are not horses, they are apes. And apes are intelligent, creative, and social. The last one is very important, because it means we have a built-in demand for being around other people. A demand that we routinely pay to have supplied. We will always find ways to pay other people to interact with us. </p>
+<p>
+The horse agument, though, is a form of strong robo-pessimism. When I go after it, it makes it seem as if I have a real distinct difference from someone like Richard, a weak robo-pessimist. I don't. I think I am a weak robo-optimist. </p>
+<p>
+And if you really get down to it, the implications of the weak forms are not really different. Read through Richard's post or the Brynjolfsson and McAfee post, or this article in the <a href="http://www.theguardian.com/business/2015/nov/07/artificial-intelligence-homo-sapiens-split-handful-gods">Guardian</a>, or this one in the <a href="http://ftalphaville.ft.com/2015/11/20/2145563/buiter-on-transferring-robot-incomes-to-the-people/">FT</a>, you get the same advice from weak robo-pessimists and weak robo-optimists. </p>
+<ul>
+<li> <strong>Training</strong>. We need to equip people with skills that allow them to move into jobs that are harder to replace, or at least to keep leapfrogging into jobs before robots replace them. Different people mean different things by "training", but it runs the gamut from pre-school to vocational school. 	</li>
+<li> <strong>Redistribution</strong>. Whether this is simply taxes on wealthy robot-owners, state ownership of robots, or some kind of robot share-ownership plan, the idea is the same. Spread the returns from owning robots around to everyone.
+</li>
+</ul>
+<p>
+One interesting thing I see is that the robo-pessimists tend to be more worried about training. You have to keep providing people with skills to compete with robots. But it is important that people work, or can work, or should work. </p>
+<p>
+Robo-optimists tend to be more worried about redistribution. How do we reallocate ownership or the proceeds of ownership so that everyone can maintain living standards?</p>
+<p>
+The more I thought about it this week, the more I think the important distinction between the optimists and pessimists is in their attitudes towards work. The optimists ultimately see the decline in working hours for humans as a good thing. Yes, there are issues with distribution, but those details can be attended to. How great will the world be when we all only have to work 5 hours a week?</p>
+<p>
+The pessimists see the decline in work hours as a distinct problem. This need not be because they have some Puritanical need to see people act busy, but rather because they don't see how we could solve the distributional issues necessary to ensure people can afford a basic living standard. The best we can do is to ensure that people can continue to work full time in order to meet their needs. How awful will the world be when we can all only work 5 hours a week? </p>
+<p>
+As I said above, I tend to be a weak robo-optimist. I, like Brynjolfsson and McAfee, completely agree that robots/AI will create a drag on the demand for human labor, and in particular unskilled labor. My robo-optimism isn't a belief about technology. It is a belief that we can figure out how to manage the glide path towards shorter work hours while maintaining living standards for everyone. It's a good thing that we'll have to work less.</p>
+<p>
+And there remains a little piece of strong robo-optimism lurking inside of me. I don't think <i>work less</i> is really well defined. We will likely have to spend less time working for wages to afford the basic material goods in our lives. But that doesn't mean we won't spend lots of our time "working" for each other doing other things. Whether that work is paid in wages or not is immaterial.</p>
+<p /></p></p></p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/roman-history-reading/">
+      <span class="page-title">Roman History Reading</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/iq-and-economic-growth/">
+       <span class="page-title">IQ and Economic Growth</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/beating-a-dead-robotic-horse/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

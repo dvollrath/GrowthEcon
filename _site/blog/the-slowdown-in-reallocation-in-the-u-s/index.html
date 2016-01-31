@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>The Slowdown in Reallocation in the U.S. | Dietrich Vollrath</title>
+	<meta name="description" content="One of the components of productivity growth is reallocation. From one perspective, we can think about the reallocation of homogenous factors (labor, capital...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/the-slowdown-in-reallocation-in-the-u-s/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">The Slowdown in Reallocation in the U.S.</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">09 Oct 2014</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>One of the components of productivity growth is reallocation. From one perspective, we can think about the reallocation of homogenous factors (labor, capital) from low-productivity firms to high-productivity firms, which includes low-productivity firms going out of business, and new firms getting started. A different perspective is to look more closely at the shuffling of heterogenous workers between (relatively) homogenous firms, with the idea being that workers may be more productive in one particular environment than in another (i.e. we want people good at doctoring to be doctors, not lawyers). Regardless of how exactly we think about reallocation, the more rapidly that we can shuffle factors into more productive uses, the better for aggregate productivity, and the higher will be GDP. However, evidence suggests that both types of reallocation have slowed down recently. </p>
+<p><a href="http://www.nber.org/papers/w20427.pdf">Foster, Grim, and Haltiwanger</a> have a recent NBER working paper on the "cleansing effect of recessions". This is the idea that in recessions, businesses fail. But it's the really crappy, low-productivity businesses that fail, so we come out of the recession with higher productivity. The authors document that in recessions prior to the Great Recession, downturns tend to be "cleansing". Job destruction rates rise appreciably, but job creation rates remain about the same. Unemployment occurs because it takes some time for those people whose jobs were destroyed to find newly created jobs. But the reallocation implied by this churn enhances productivity - workers are leaving low productivity jobs (generally) and then getting high productivity jobs (generally).</p>
+<p>But the Great Recession was different. In the GR, job destruction rose by a little, but much less than in prior recessions. Job creation in the GR fell demonstrably, much more than in prior recessions. So again, we have unemployment as the people who have jobs destroyed are not able to pick up newly created jobs. But because of the pattern to job creation and destruction, there is little of the positive reallocation going on. People are not losing low productivity jobs, becoming unemployed, and then getting high productivity jobs. People are staying in low productivity jobs, and new high productivity jobs are not being created. So the GR is not "cleansing". It is, in some ways, "sullying". The GR is pinning people into *low* productivity jobs. </p>
+<p>This holds for firm-level reallocation well. In recessions prior to the GR, low productivity firms tended to exit, and high productivity firms tended to grow in size. So again, we had productivity-enhancing recessions. But again, the GR is different. In the GR, the rate of firm exit for low productivity firms did not go up, and the growth rate of high-productivity firms did not rise. The GR is not "cleansing" on this metric either. </p>
+<p>Why is the GR so different? The authors don't offer an explanation, as their paper is just about documenting these changes. Perhaps the key is that a financial crash has distinctly different effects than a normal recession. A lack of financing means that new firms cannot start, and job creation falls, leading to lower reallocation effects. A "normal" recession doesn't involve as sharp a contraction in financing, so new firms can take advantage of others going out of business to get themselves going. Just an idea, I have no evidence to back that up.</p>
+<p>[<em>An aside: For the record, there is no reason that we need to have a recession for this kind of reallocation to occur. Why don't these crappy, low-productivity firms go out of business when unemployment is low? Why doesn't the market identify these crappy firms and compete them out of business? So don't take Foster, Grim, and Haltiwanger's work as some kind of evidence that we "need" recessions. What we "need" is an efficient way to reallocate factors to high productivity firms without having to make those factors idle (i.e. unemployed) for extended periods of time in between.</em>] </p>
+<p>In a related piece of work <a href="http://www.nber.org/papers/w20479.pdf">Davis and Haltiwanger</a> have a new NBER working paper that discusses changes in workers reallocations over the last few decades. They look at the rate at which workers turn over between jobs, and find that in general this rate has declined since 1980 to today. Some of this may be structural, in the sense that as the age structure and education breakdown of the workforce changes, there will be changes in reallocation rates. In general, reallocation rates go down as people age. 19-24 year olds cycle between jobs way faster than 55-65 year olds. Reallocation rates are also higher among high-school graduates than among college graduates. So as the workforce has aged and gotten more educated from 1980 to today, we'd expect some decline in job reallocation rates.</p>
+<p>But what Davis and Haltiwanger find is that even after you account for these forces, reallocation rates for workers are declining. No matter which sub-group you look at (e.g. 25-40 year old women with college degrees) you find that reallocation rates are falling over time. So workers are flipping between jobs *less* today than they did in the early 1980s. Which is probably somewhat surprising, as my guess is that most people feel like jobs are more fleeting in duration these days, due to declines in unionization, etc.. etc.. </p>
+<p>The worry that Davis and Haltiwanger raise is that lower rates of reallocation lower productivity growth, as mentioned at the beginning of this post. So what has caused this decline in reallocation rates across jobs (or across firms as the first paper described)? From a pure accounting perspective, Davis and Haltiwanger gives us several explanations. First, reallocation rates within the Retail sector have declined, and since Retail started out with one of the highest rates of reallocation, this drags down the average for the economy. Second, more workers tend to be with older firms, which have less turnover than young firms. Last, the above-mentioned shift towards an older workforce that tends to shift jobs less than younger workers.</p>
+<p>Fine, but what is the underlying explanation? Davis and Haltiwanger offer several possibilities. One is increased occupational licensing. In the 1950s, only about 5 % of workers needed a government (state or federal) license to do their job. In 2008, that is now 29%. So it can be incredibly hard to reallocate to a new job or sector of work if you have to fulfill some kind of licensing requirement (which could involve up to 2000 hours of training along with fees). Second is a decreased ability of firms to fire-at-will. Starting in the 1980s there were a series of court decisions that made it harder for firms to just fire someone, which makes it both less likely for people to leave jobs, and less likely for firms to hire new people. Both act to lower reallocation between jobs. Third is employer-provided health insurance, which generates some kind of "job lock" where people are unwilling to move jobs because they don't want to lose, or create a gap in, coverage. </p>
+<p>Last is the information revolution which may have had perverse effects on reallocation. We might expect that IT allows more efficient reallocation as people can look for jobs more easily (e.g. Monster.com, LinkedIn) and firms can cast a wider net for applicants. But IT also allows firms to screen much more effectively, as they have access to credit reports, criminal records, and the like, that would have been prohibitive to acquire in the past. </p>
+<p>So we appear to have, on two fronts, declining dynamic reallocation in the U.S. This certainly contributes to a slowdown in productivity growth, and may perhaps be a better explanation than "running out of ideas from the IT revolution" that <a href="http://growthecon.wordpress.com/2014/09/16/slow-growth-in-potential-gdp-for-the-u-s/" title="Slow Growth in Potential GDP for the U.S.?">Gordon</a> and <a href="http://growthecon.wordpress.com/2014/06/17/potential-potential-output-levels/" title="Potential “Potential Output” Levels">Fernald</a> talk about. The big worry is that, if it is regulation-creep, as Davis and Haltiwanger suspect, we don't know if or when the slowdown in reallocation would end. </p>
+<p>In summary, reading John Haltiwanger papers can make you have a bad day.</p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/meta-post-on-robots-and-jobs/">
+      <span class="page-title">Meta-post on Robots and Jobs</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/why-i-care-about-inequality/">
+       <span class="page-title">Why I Care about Inequality</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/the-slowdown-in-reallocation-in-the-u-s/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+---
+layout: post
+title: The Limited Effect of Reforms on Growth
+date: 2014-12-08 01:13:07.000000000 -06:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- GDP
+- growth
+- level
+- transition
+- US
+meta:
+  _edit_last: '8005175'
+  geo_public: '0'
+  publicize_twitter_user: DietzVollrath
+  publicize_twitter_url: http://t.co/JPJCmQ8a18
+  _wpas_done_9521866: '1'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:2895016273;b:1;}}
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p>I said in my <a href="http://growthecon.wordpress.com/2014/12/03/insert-policy-here-wont-boost-growth-rates/" title="[insert policy here] Won’t Boost Growth Rates">last post</a> that transitional growth is slow, and therefore changing potential GDP - as many of the recent <a href="http://www.cato.org/conference-forum/reviving-economic-growth">Cato Growth</a> proposals would do - could not add much to the growth rate of GDP in the near term. </p>
+<p>
+There were several questions that came up in the comments, so let me try to be more clear about distinguishing between influences of trend growth and short-run shocks. Output in period ${t+1}$ is
+<p align="center">$$  y_{t+1} = (1+g)y_t + (1+g)\lambda (y^{\ast}_t - y_t) $$</p>
+<p> where the first term on the right is the normal trend growth rate, and the second term is the additional transitional growth that occurs because the economy is not at potential GDP, ${y^{\ast}_t}$.</p>
+<p>
+We need to distinguish between changes in potential GDP and changes in current GDP. Let's take the above equation, plug in ${\lambda=0.02}$, and then use it to iterate forward from period 0 (today) until some arbitrary period ${t}$. You get
+<p align="center">$$  y_t = (1+g)^t \left[(1-0.98^t)y^{\ast}_0 + 0.98^t y_0 \right]. $$</p>
+<p> In period ${t}$, GDP will have grown by a factor of ${(1+g)^t}$ due to trend growth in GDP. The term in the brackets shows the cumulative effect of having ${y_0 \neq y^{\ast}_0}$ in the initial period. The 0.98 terms are just ${1-.02}$, and capture the changing role of this transitional growth over time. Note that as ${t}$ goes up, ${0.98^t}$ goes to zero and the effect of initial GDP ${y_0}$ falls to nothing. As ${t}$ gets big, the economy reaches potential GDP. </p>
+<p>
+Now let's assume that period 0 is 2014. Potential GDP is 17 trillion and actual GDP is 16 trillion, and the trend growth rate is 2&#037;. Let's consider two alternative policies to enact today that take effect in 2015. </p>
+<ul>
+<li> Policy A: a short run spending surge sufficient to make GDP in 2015 equal to potential GDP. Policy A immediately eliminates the gap between actual and potential GDP, but has no other long term effect. 	</li>
+<li> Policy B: raises potential GDP by 1 trillion dollars, but adds no immediate spending to GDP. The effect on potential GDP is permanent.
+</li>
+</ul>
+<p>
+For Policy A, GDP in 2015 (period 1) is
+<p align="center">$$  y_1 = (1.02)^1\left[(1-0.98)\times 17 + 0.98 \times 17 \right] = 17.34. $$</p>
+<p> The <i>growth rate</i> of GDP from 2014 to 2015 is ${(17.34 - 16)/16 = 0.084}$ or about 8.4&#037;. That's a massive GDP growth rate for a developed economy like the US. But it is a one-time shock to the growth rate. From 2015 to 2016, and from 2016-2017, and every year thereafter, the growth rate will be exactly 2&#037; because the economy is precisely back on trend. Policy A gives a one-year gigantic boost to the growth rate. </p>
+<p>
+What about Policy B? GDP in 2015 here is
+<p align="center">$$  y_1 = (1.02)^1\left[(1-0.98)\times 18 + 0.98 \times 16 \right] = 16.36. $$</p>
+<p> This is nearly 1 trillion less than Policy A. The <i>growth rate</i> of GDP from 2014 to 2015 is ${(16.36 - 16)/16 = 0.023}$. As the prior post noted, reforms that raise potential GDP don't have big effects on growth rates. But while the effect on growth is small, it is persistent. From 2015-2016, the growth rate of GDP will be roughly...0.023. It's actually minutely smaller than from 2014-2015, but rounding makes them look the same. It will take a few years before the <i>growth rate</i> declines appreciably. Fifty years from now the growth rate will still be almost 0.021. Changing potential GDP, like with Policy B, is like turning an oil tanker with a tug boat. It doesn't go fast, but it goes on for a long time.</p>
+<p>
+So is Policy B worse than Policy A? It depends entirely on your time preferences. In 2015 GDP under Policy A is nearly 1 trillion dollars higher than with policy B. But 100 years from now, GDP will be nearly 1 trillion dollars higher with <i>Policy B</i>. We can actually figure out how soon it will be before Policy B passes Policy A. Set
+<p align="center">$$  (1.02)^t \left[(1-0.98^t)17 + 0.98^t 17 \right] = (1.02)^t \left[(1-0.98^t)18 + 0.98^t 16 \right] $$</p>
+<p> and solve for ${t}$. This turns out to be roughly 34 years from now, in 2048. It takes a long, long, time for changes in potential GDP to really pay off. If you want to increase the level of GDP in the near term, and hence raise near-term growth rates by implication, then you have to, you know, <i>boost GDP</i>. GDP is a measure of current spending, so raising GDP means raising current spending. There isn't a trick to get around this.</p>
+<p>
+Now, could I be underselling Policy B as a <i>near-term</i> boost to growth rates and GDP? Let's consider a few possibilities: </p>
+<ul>
+<li> I'm underestimating the size of ${\lambda}$. As I mentioned last time, there is lots of empirical evidence that this is pretty small. But okay, let's make ${\lambda = 0.05}$, more than double my 0.02 value. Now in 2015 policy B yields GDP of 16.4 trillion and a growth rate of 2.6&#037;. Yes, it helps policy B, but doesn't get it anywhere close to Policy A. It is still 14 years before GDP under Policy B is larger than under Policy A.
+</li>
+<li> I'm underestimating the boost to potential GDP that Policy B can deliver. So let's ask, given ${\lambda = 0.05}$, how much would ${y^{\ast}_0}$ have to go up to match the 8.4&#037; growth rate of Policy A? Potential GDP would have to jump to roughly 36 trillion, meaning it has to roughly **double** in size thanks to the policy. I think it is totally fair to say that this is implausible in a country like the US.
+</li>
+<li> But China was able to do it. Right, when China opened up, made reforms, etc.., it was able to raise its potential GDP by a large amount. You could probably plausibly argue that it raised potential GDP by a factor of something like 8-10. But the rapid growth in China over the last 30 years is not some victory lap for good state-led policy reforms, it's a testament to just how screwed up Maoism was as an economic system. <em>[Egad! An institutions explanation!</em>]
+</li>
+<li> What if Policy B raised the trend growth rate, ${g}$? If it changed ${g}$ appreciably, then Policy B would be something really special. Let's review for a moment a few of the changes that did <i>not</i> change the long-run growth rate in the US: the introduction of electricity, the income tax, the Great Depression, the New Deal, Medicare, higher tax rates, the Cold War, the oil crisis, lower tax rates, de-regulation, the IT revolution, and New Coke. There have been shifts in the <i>level</i> of potential GDP, such as the IT revolution shifting up potential GDP and inducing a period of relatively rapid transitional growth in the 1990's. But it's hard - if not impossible if you take <a href="https://ideas.repec.org/a/ucp/jpolec/v103y1995i4p759-84.html">Chad Jones</a>' semi-endogenous growth idea seriously - to fundamentally alter ${g}$. It is dictated by changes in the scale of the global economy, not by policy effects within the US.
+</li>
+</ul>
+<p>
+I'm all for policy reforms that raise potential GDP, and several of those proposed in the Cato forum would probably do that. We might want to undertake several of them at once to counteract the drags on potential GDP that Robert Gordon has outlined.</p>
+<p>
+But we can't be fooled into thinking that any of them would make a really appreciable difference to economic growth <i>today</i>. You can revolutionize education, or corporate taxation, or urban planning, or immigration all you want, but the gains those changes induce will take decades to manifest themselves. </p></p></p></p></p>

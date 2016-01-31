@@ -1,0 +1,68 @@
+---
+layout: post
+title: Understanding Diffusion Models of Growth
+date: 2015-07-13 17:29:37.000000000 -05:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- growth
+- theory
+meta:
+  _rest_api_published: '1'
+  _rest_api_client_id: '-1'
+  _publicize_job_id: '12692046994'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:9521866;s:59:"https://twitter.com/DietzVollrath/status/620646276040802305";}}
+  _publicize_done_9476337: '1'
+  _wpas_done_9521866: '1'
+  publicize_twitter_user: DietzVollrath
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p>There has been a recent bloom of research that studies the diffusion of ideas and economic growth. <a href="https://ideas.repec.org/p/nbr/nberwo/19667.html">Alvarez, Buera, and Lucas</a> (2013), <a href="https://ideas.repec.org/a/bla/econom/v76y2009i301p1-19.html">Lucas</a> (2009), <a href="https://ideas.repec.org/a/ucp/jpolec/doi10.1086-674363.html">Lucas and Moll</a> (2014), and <a href="https://ideas.repec.org/a/ucp/jpolec/doi10.1086-674362.html">Perla and Tonetti</a> (2014) are some of the most prominent examples. In each case, firms or individuals learn new techniques after meeting other firms or individuals with better ideas. The papers show the assumptions under which this type of diffusion or imitation process will lead to constant, sustained growth. </p>
+<p>
+I've been trying to get my head around what these models teach me about the process of economic growth. I'm going to use Perla and Tonetti (PT) as a specific example in this post, but that's only because I need an example, and it was the last one I read.</p>
+<p>
+Here's a quick verbal summary of the model of imitation in PT:</p>
+<blockquote><p>
+There are a bunch of risk-neutral firms, each with an individual level of productivity. The firm can produce using its own productivity level, or it can shut down for a period and search for better productivity to imitate. If it searches, it is randomly matched with another firm that is producing, and imitates that firms productivity level for free. Searching firms compare the expected value of productivity they get from imitating to the cost of shutting down, and only low-productivity firms search and imitate. Firm productivity is Pareto-distributed. The average level of productivity is rising over time because low-productivity firms imitate high-productivity terms. Because of the specific nature of the Pareto, the distribution remains Pareto even as the average rises.
+</p></blockquote>
+<p>The PT model delivers sustained growth through this search and match process, while maintaining a distribution of firm-level productivities. But that isn't due to the economics of imitation, that is due to the specific mathematical structure assumed. To see this, compare the PT model to my newly created model of growth:</p>
+<blockquote><p>
+There are a bunch of risk-neutral villages, each with an individual level of Tecknologie. The village can consume what it produces, or it can sacrifice all of that production as a sacrifice to the glorious Hephaestus, God of craftsmen, in the hopes that he will bestow on them insight into a new type of Tecknologie. Hephaestus is fickle, like many of the Gods, and his ways are mysterious to mortals. Hence, if the village offers the sacrifice, the new Tecknologie that Hephaestus grants them is unknown, but is equal to the Tecknologie in one of the other villages around them. Villages compare the expected level of Tecknologie from Hephaestus to the cost of sacrifice, so only low-Tecknologie villages perform sacrifices. Village Tecknologie is Pareto-distributed. The average level of Tecknologie is rising over time because low-Tecknologie villages sacrifice and are blessed by Hephaestus. Because of the specific nature of the Pareto, the distribution remains Pareto even as the average rises.
+</p></blockquote>
+<p>
+These models are mathematically identical. With a sophisticated use of search-and-replace I could rewrite PT to be a paper on the growth implications of Hephaestus worship in ancient Greece. </p>
+<p>
+The point is that we can call "draw productivity from a Pareto distribution matching currently producing units (DPFAPDMCPU)" anything we want. PT call it "imitation". In my little story I call it "blessings from Hephaestus". You could call it "R&amp;D", or you could call it an "externality" or "diffusion" if you wanted. DPFAPDMCPU is just an assumption about how innovations arrive.</p>
+<p>
+This isn't to say that DPFAPDMCPU is wrong, or even a bad assumption to make. Every growth model makes some kind of unsupported assumption about how productivity arrives. Solow assumed that productivity grew exponentially, which led to constant growth in steady state. Aghion and Howitt said new innovations arrive as a Poisson process, but the productivity bump you get is always the same. In expectation, or if you have lots of sectors, you get constant growth in steady state. In a standard Romer model, the productivity bump you get from innovation is proportional to the effort you put into R&amp;D, and growth is constant in steady state.</p>
+<p>
+PT isn't really a model of <i>imitation</i> and growth. It is a model of DPFAPDMCPU and growth. And DPFAPDMCPU has a clever implication, which is that the distribution of firm (or village) productivities stays Pareto forever even though we have all this churning in the distribution going on. That's something that other assumptions about how innovations arrive can't capture.</p>
+<p>
+And PT get this distinction. This paragraph is from their conclusion:</p>
+<blockquote><p>
+This paper contributes an analytically tractable mechanism for analyzing growth and the evolution of the productivity distribution, with both the evolution of the productivity distribution and the technology adoption decision jointly endogenously determined in equilibrium. Thus, we can analyze the effect the productivity distribution has on adoption incentives, the effect of adoption behavior in generating the productivity distribution, and the corresponding growth implications of this feedback loop. We develop a solution technique that obtains closed-form expressions for all equilibrium objects—including the growth factor—as a function of intrinsic parameters.
+</p></blockquote>
+<p>Here they've dropped any use of the word "imitation" and talk about a generic process of "technology adoption", which could be anything from R&amp;D to Hephaestus-worship. PT state they have figured out how to use DPFAPDMCPU as the mathematical structure to model the arrival of new technologies to adopt, all while still ending up with a constant growth rate. </p>
+<p>
+The question now is why or when DPFAPDMCPU is a better choice than other structures. In what situations, or for what types of products, or in what markets, is it reasonable to think of DPFAPDMCPU as the way that innovations arrive? </p>
+<p>
+"Imitation" or "diffusion" doesn't seem to cut it as motivation. If we take imitation seriously, then the DPFAPDMCPU structure has several issues: </p>
+<ul>
+<li> Searching firms are randomly matched with producing firms. Why random? If you're searching for someone to imitate, then wouldn't you search for someone with particularly high productivity? The firms are assumed to have perfect foreknowledge of the distribution of productivity, so how come they do not know which firms are the best to imitate?
+</li>
+<li> Why is matching one-to-one? If you can imitate a firm, then why can't all of us imitate one firm? Why can't we all imitate the best firm?
+</li>
+<li> Search costs resources, but imitation is free. That is, the searcher has to give up production to look for someone to imitate. But once they match, they can copy the productivity level for free. So productivity techniques are absolutely non-excludable. But knowing that imitation is happening, why wouldn't high-productivity firms hold out and demand some kind of side-payment for being imitated?
+</li>
+</ul>
+<p>
+In short, I'm struggling at this point to see the specific economic context for these models of diffusion/imitation that use DPFAPDMCPU or something similar. Am I missing some kind of obvious examples here? If I am, is there a reason to think that <i>most</i> of the innovation that occurs is due to non-excludable imitation? </p>
+<p>
+Lots of models deliver a prediction of constant growth in steady state, so why are these that use the DPFAPDMCPU assumption a better description of why that happens? I think this literature would benefit from providing a clearer answer to that question.</p></p></p></p></p></p>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" class="js">
+<!--<![endif]-->
+  
+
+	
+
+	
+<head>
+	<meta charset="utf-8">
+	<title>Measuring Misallocation across Firms | Dietrich Vollrath</title>
+	<meta name="description" content="One of the most active area of research in macro development (let's not call it growth economics, I guess) is on misallocations. This is the concept that a m...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="/css/post.style.css">
+
+	<script type='text/javascript' src="/js/jquery.js"></script>
+	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+
+	<!--Favicon-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+	<!-- Canonical -->
+	<link rel="canonical" href="https://growthecon.com/blog/measuring-misallocation-across-firms/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+
+	<!-- MathJax -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  		tex2jax: {
+    	inlineMath: [['$','$'], ['\\(','\\)']],
+    	processEscapes: true
+  		}
+		});
+	</script>
+	<script type="text/javascript" async
+  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<!-- Enforce HTTPS -->
+	<script type="text/javascript">
+    var host = "growthecon.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+	</script>
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-72839737-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+
+	<script type="text/javascript">
+    var host = "dvollrath.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</head>
+
+	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
+		<div id="page-container">
+    		<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="/">
+				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
+				Dietrich Vollrath
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="/">
+							Home
+						</a>
+					</li>
+					
+					
+					<li>
+						<a class="page-link" href="/blog/">
+							 Blog 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/book/">
+							 Book 
+						</a>
+					</li>
+					
+					
+					
+					<li>
+						<a class="page-link" href="/classes/">
+							 Classes 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+						<a class="page-link" href="/research/">
+							 Research 
+						</a>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">
+<li>
+	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/dvollrath" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
+
+    		<div id="et-main-area">
+      			
+
+	
+
+	
+
+<article >
+  <header style="background-image: url('')">
+    <h1 class="title">Measuring Misallocation across Firms</h1>
+    <p id="subtitletrans" class="subtitlecontainer">
+
+    
+      <a class="subtitle">25 Sep 2014</a>
+    
+    </p>
+  </header>
+  <section class="post-content">
+  <p>One of the most active area of research in macro development (let's not call it growth economics, I guess) is on misallocations. This is the concept that a major explanation for why some countries are rich, while others are poor, is that rich countries do a good job of allocating factors of production in an efficient manner across firms (or sectors, if you like). Poor countries do a bad job of this, so that unproductive firms use a lot of labor and capital up, while high productivity firms are too small. </p>
+<p>
+One of the baseline papers in this area is by <a href="http://ideas.repec.org/a/red/issued/07-48.html">Diego Restuccia and Richard Rogerson</a>, who showed that you could theoretically generate big losses to aggregate measures of productivity if you introduced firm-level distortions that acted like subsidies to unproductive firms and taxes on produtive firms. This demonstrated the possible effects of misallocation. A paper by <a href="http://ideas.repec.org/a/tpr/qjecon/v124y2009i4p1403-1448.html">Hsieh and Klenow</a> (HK) took this idea seriously, and applied the basic logic to data on firms from China, India and the U.S. to see how big of an effect misallocations actually have. </p>
+<p>
+We just went over this paper in my grad class this week, and so I took some time to get more deeply into the paper. The one flaw in the paper, from my perspective, was that it ran backwards. That is, HK start with a detailed model of firm-level activity and then roll this up to find the aggregate implications. Except that I think you can get the intuition of their paper much more easily by thinking about how you measure the aggregate implications, and then asking yourself how you can get the requisite firm-level data to make the aggregate calculation. So let me give you my take on the HK paper, and how to understand what they are doing. If you're seriously interested in studying growth and development, this is a paper you'll need to think about at some point, and perhaps this will help you out.</p>
+<p>
+<strong>This is dense with math and quite long. You were warned.</strong></p>
+<p>
+What do HK want to do? They want to compare the actual measured level of TFP in sector ${s}$, ${TFP_s}$, to a hypothetical level of TFP in sector ${s}$, ${TFP^{\ast}_s}$, that we would measure if we allocated all factors efficiently between firms.</p>
+<p>
+Let's start by asking how we can measure ${TFP_s}$ given observable data on firms. This is
+<p align="center">$$  TFP_s = \frac{Y_s}{K_s^{\alpha}L_s^{1-\alpha}}, $$</p>
+<p> which is just measuring ${TFP_s}$ for a sector as a Solow residual. ${TFP_s}$ is not a pure measure of ``technology'', it is a measure of residual productivity, capturing everything that influences how much output (${Y_s}$) we can get from a given bundle of inputs (${K_s^{\alpha}L_s^{1-\alpha}}$). It includes not just the physical productivity of individual firms in this sector, but also the efficiency of the distribution of the factors across those firms.</p>
+<p>
+Now, the issue is that we cannot measure ${Y_s}$ directly. For a sector, this is some kind of measure of real output (e.g. units of goods), but there is no data on that. The data we have is on revenues of firms within the sector (e.g. dollars of goods sold). So what HK are going to do is use this revenue data, and then make some assumptions about how firms set prices to try and back out the real output measure. It's actually easier to see in the math. First, just write ${TFP_s}$ as
+<p align="center">$$  TFP_s =\frac{P_s Y_s}{K_s^{\alpha}L_s^{1-\alpha}}\frac{1}{P_s} = \overline{TFPR}_s \frac{1}{P_s} $$</p>
+<p> which just multiplies and divides by the price index for sector ${s}$. The first fraction is <i>revenue productivity</i>, or ${\overline{TFPR}_s}$, of sector ${s}$. This is a residual measure as well, but measures how produtive sector ${s}$ is at producing dollars, rather than at producing units of goods. The good thing about ${TFPR_s}$ is that we can calculate this from the data. Take the revenues of all the firms in sector ${s}$, and that is equal to total revenues ${P_s Y_s}$. We can add up the reported capital stocks across all firms, and labor forces across all firms, and get ${K_s}$ and ${L_s}$, respectively. We can find a value for ${\alpha}$ based on the size of wage payments relative revenues (which should be close to ${1-\alpha}$). So all this is conceptually measurable.</p>
+<p>
+The second fraction is one over the price index ${P_s}$. We do <i>not</i> have data on this price index, because we don't know the individual prices of each firms output. So here is where the assumptions regarding firm behavior come in. HK assume a monopolistically competitive structure for firms within each sector. This means that each firm has monopoly power over producing its own brand of good, but people are willing to substitute between those different brands. As long as the brands aren't perfectly substitutable, then each firm can charge a price a little over the marginal cost of production. We're going to leave aside the micro-economics of that structure for the time being. For now, just trust me that if these firms are monopolistically competitive, then the price index can be written as
+<p align="center">$$  P_s = \left(\sum_i P_i^{1-\sigma} \right)^{1/(1-\sigma)} $$</p>
+<p> where ${P_i}$ are the individual prices from each firm, and ${\sigma}$ is the elasticity of substitution between different firms goods. </p>
+<p>
+Didn't I just say that we do not observe those individual firm prices? Yes, I did. But we don't need to observe them. For any individual firm, we can also think of <i>revenue productivity</i> as opposed to their <i>physical productivity</i>, denoted ${A_i}$. That is, we can write
+<p align="center">$$  TFPR_i = P_i A_i. $$</p>
+<p> The firms productivity at producing dollars (${TFPR_i}$) is the price they can charge (${P_i}$) times their physical productivity (${A_i}$). We can re-arrange this to be
+<p align="center">$$  P_i = \frac{TFPR_i}{A_i}. $$</p>
+<p> Put this expression for firm-level prices into the price index ${P_s}$ we found above. You get
+<p align="center">$$  P_s = \left(\sum_i \left[\frac{TFPR_i}{A_i}\right]^{1-\sigma} \right)^{1/(1-\sigma)} $$</p>
+<p> which depends only on firm-level measure of ${TFPR_i}$ and physical productivity ${A_i}$. We no longer need prices.</p>
+<p>
+For the sector level ${TFP_s}$, we now have
+<p align="center">$$  TFP_s = \overline{TFPR}_s \frac{1}{P_s} = \frac{\overline{TFPR}_s}{\left(\sum_i \left[\frac{TFPR_i}{A_i}\right]^{1-\sigma} \right)^{1/(1-\sigma)}}. $$</p>
+<p> At this point, there is just some slog of algebra to get to the following
+<p align="center">$$  TFP_s = \left(\sum_i \left[A_i \frac{\overline{TFPR}_s}{TFPR_i}\right]^{\sigma-1} \right)^{1/(\sigma-1)}. $$</p>
+<p> If you're following along at home, just note that the exponents involving ${\sigma}$ flipped sign, and that can hang you up on the algebra if you're not careful. </p>
+<p>
+Okay, so now I have this description of how to measure ${TFP_s}$. I need information on four things. (1) Firm-level physical productivities, ${A_i}$, (2) sector-level revenue productivity, ${\overline{TFPR}_s}$, (3) firm-level revenue productivities, ${TFPR_i}$, and (4) a value for ${\sigma}$. Of these, we can appeal to the literature and assume a value of ${\sigma}$, say something like a value of 5, which implies goods are fairly substitutable. We can measure sector-level and firm-level revenue productivities directly from the firm-level data we have. The one big piece of information we don't have is ${A_i}$, the physical productivity of each firm. </p>
+<p>
+Before describing how we're going to find ${A_i}$, just consider this measurement of ${TFP_s}$ for a moment. What this equation says is that ${TFP_s}$ is a weighted sum of the individual firm level physical productivity terms, ${A_i}$. That makes some sense. Physical productivity of a sector must depend on the productivity of the firms in that sector.</p>
+<p>
+Mechanically, ${TFP_s}$ is a concave function of all the stuff in the parentheses, given that ${1/(\sigma-1)}$ is less than one. Meaning that ${TFP_s}$ goes up as the values in the summation rise, but at a decreasing rate. More importantly, for what HK are doing, this implies that the greater the variation in the individual firm-level terms of the summation, the <i>lower</i> is ${TFP_s}$. That is, you'd rather have two firms that have similar productivity levels than one firm with a really big productivity level and one firm with a really small one. Why? Because we have imperfect substitution between the output of the firms. Which means that we'd like to consume goods in somewhat rigid proportions (think Leontief perfect complements). For example, I really like to consume one pair of pants and one shirt at the same time. If the pants factory is really, really productive, then I can lots of pants for really cheap. If the shirt factory is really un-productivie, I can only get a few shirts for a high price. To consume pants/shirts in the desired 1:1 ratio I will end up having to shift factors away from the pants factor and towards the shirt factory. This lowers my sector level productivity.</p>
+<p>
+There is nothing that HK can or will do about variation in ${A_i}$ across firms. That is taken as a given. Some firms are more productive than others. But what they are interested in is the variation driven by the ${TFPR_i}$ terms. Here, we just have the extra funkiness that the summation depends on these inversely. So a firm with a really high ${TFPR_i}$ is like having a really physically unproductive firm. Why? Think in terms of the prices that firms charge for their goods. A high ${TFPR_i}$ means that firms are charging a relatively high price compared to the rest of the sector. Similarly, a firm with a really low ${A_i}$ (like our shirt factory above) would also be charging a relatively high price compared to the rest of the sector. So having variation in ${TFPR_i}$ across firms is like having variation in ${A_i}$, and this variation lowers ${TFP_s}$.</p>
+<p>
+However, as HK point out, if markets are operating efficiently then there should be <i>no</i> variation in ${TFPR_i}$ across firms. While a high ${TFPR_i}$ is similar to a low ${A_i}$ in its effect on ${TFP_s}$, the high ${TFPR_i}$ arises for a fundamentally different reason. The only reason a firm would have a high ${TFPR_i}$ compared to the rest of the sector is if it faced higher input costs and/or higher taxes on revenues than other firms. In other words, firms would only be charging more than expected if they had higher costs than expected or were able to keep less of their revenue. </p>
+<p>
+In the absence of different input costs and/or different taxes on revenues, then we'd expect all firms in the sector to have identical ${TFPR_i}$. Because if they didn't, then firms with high ${TFPR_i}$ could bid away factors of production from low ${TFPR_i}$ firms. But as high ${TFPR_i}$ firms get bigger and produce more, the price they can charge will get driven down (and vice versa for low ${TFPR_i}$ firms), and eventually the ${TFPR_i}$ terms should all equate. </p>
+<p>
+For HK, then, the level of ${TFP_s}$ that you could get if all factors were allocated efficiently (meaning that firms didn't face differential input costs or revenue taxes) is one where ${TFPR_i = \overline{TFPR}_s}$ for all firms. Meaning that
+<p align="center">$$  TFP^{\ast}_s = \left(\sum_i A_i^{\sigma-1} \right)^{1/(\sigma-1)}. $$</p>
+<p> So what HK do is calculate both ${TFP^{\ast}_s}$ and ${TFP_s}$ (as above), and compare.</p>
+<p>
+To do this, I already mentioned that the one piece of data we are missing is the ${A_i}$ terms. We need to know the actual physical productivity of firms. How do we get that, since we cannot measure physical output at the firm level? HK's assumption about market structure will allow us to figure that out. So hold on to the results of ${TFP_s}$ and ${TFP^{\ast}_s}$ for a moment, and let's talk about firms. For those of you comfortable with monopolistic competition models using CES aggregators, this is just textbook stuff. I'm going to present it without lots of derivations, but you can check my work if you want. </p>
+<p>
+For each firm, we assume the production function is
+<p align="center">$$  Y_i = A_i K_i^{\alpha}L_i^{1-\alpha} $$</p>
+<p> and we'd like to back out ${A_i}$ as
+<p align="center">$$  A_i = \frac{Y_i}{K_i^{\alpha}L_i^{1-\alpha}} $$</p>
+<p> but we don't know the value of ${Y_i}$. So we'll back it out from revenue data.</p>
+<p>
+Given that the elasticity of substitution across firms goods is ${\sigma}$, and all firms goods are weighted the same in the utility function (or final goods production function), then the demand curve facing each firm is
+<p align="center">$$  P_i = Y_i^{(\sigma-1)/\sigma - 1} X_s $$</p>
+<p> where ${X_s}$ is a demand shifter that depends on the amount of the other goods consumed/produced. We going to end up carrying this term around with us, but it's exact derivation isn't necessary for anything. Total revenues of the firm are just
+<p align="center">$$  (P_i Y_i) = Y_i^{(\sigma-1)/\sigma} X_s. $$</p>
+<p> Solve this for ${Y_i}$, leaving ${(P_i Y_i)}$ together as revenues. This gives you
+<p align="center">$$  Y_i = \left(\frac{P_i Y_i}{X_s}\right)^{\sigma/(\sigma-1)}. $$</p>
+<p> Plug this in our equation for ${A_i}$ to get
+<p align="center">$$  A_i = \frac{1}{X_s^{\sigma/(\sigma-1)}}\frac{\left(P_i Y_i\right)^{\sigma/(\sigma-1)}}{K_i^{\alpha}L_i^{1-\alpha}}. \ \ \ \ \ (15)$</p>
+<p>
+This last expression gives us a way to back out ${A_i}$ from observable data. We know revenues, ${P_i Y_i}$, capital, ${K_i}$, and labor, ${L_i}$. The only issue is this ${X_s}$ thing. But ${X_s}$ is identical for each firm - it's a sector-wide demand term - so we don't need to know it. It just scales up or down all the firms in a sector. Both ${TFP_s}$ and ${TFP^{\ast}_s}$ will be proportional to ${X_s}$, so when comparing them ${X_s}$ will just cancel out. We don't need to measure it.</p>
+<p>
+What is our ${A_i}$ measure picking up? Well, under the assumption that firms in fact face a demand curve like we described, then ${A_i}$ is picking up their physical productivity. If physical ouput, ${Y_i}$, goes up then so will revenues, ${P_i Y_i}$. But not proportionally, as with more output the firm will charge a lower price. Remember, the pants factory has to get people to buy all those extra pants, even though they kind of don't want them because there aren't many shirts around. So the price falls. Taking revenues to the ${\sigma/(\sigma-1)}$ power captures that effect.</p>
+<p>
+Where are we? We now have a firm-level measure of ${A_i}$, and we can measure it from observable data on revenues, capital stocks, and labor forces at the firm level. This allows us to measure both actual ${TFP_s}$, and the hypothetical ${TFP^{\ast}_s}$ when each firm faces identical factor costs and revenues taxes. HK compare these two measures of TFP, and find that in China ${TFP^{\ast}_s}$ is about 86-115&#037; higher than ${TFP_s}$, or that output would nearly double if firms all faced the same factor costs and revenue taxes. In India, the gain is on the order of 100-120&#037;, and for the U.S. the gain is something like 30-43&#037;. So substantial increases all the way around, but much larger in the developing countries. Hence HK conclude that misallocations - meaning firms facing different costs and/or taxes and hence having different ${TFPR_i}$ - could be an important explanation for why some places are rich and some are poor. Poor countries presumably do a poor job (perhaps through explicit policies or implicit frictions) in allocating resources efficiently between firms, and low-productivity firms use too many inputs. </p>
+<p>
+<strong>* A note on wedges *</strong> For those of you who know this paper, you'll notice I haven't said a word about ``wedges'', which are the things that generate differences in factor costs or revenues for firms. That's because from a purely computational standpoint, you don't need to introduce them to get HK's results. It's sufficient just to measure the ${TFPR_i}$ levels. If you wanted to play around with removing just the factor cost wedges or just the revenue wedges, you would then need to incorporate those explicitly. That would require you to follow through on the firms profit maximization problem and solve for an explicit expression for ${TFPR_i}$. In short, that will give you this:
+<p align="center">$$  TFPR_i = \frac{\sigma}{\sigma-1} MC_s \frac{(1+\tau_{Ki})^{\alpha}}{1-\tau_{Yi}}. \ \ \ \ \ (16)$</p>
+<p> The first fraction, ${\sigma/(\sigma-1)}$, is the markup charged over marginal cost by the firm. As the elasticity of substitution is assumed to be constant, this markup is identical for each firm, so generates no variation in ${TFPR_i}$. The second term, ${MC_s}$, is the marginal cost of a bundle of inputs (capital and labor). The final fraction are the ``wedges''. ${(1+\tau_{Ki})}$ captures the additional cost (or subsidy if ${\tau_{Ki}&lt;0}$) of a unit of capital to the firm relative to other firms. ${(1-\tau_{Yi})}$ captures the revenue wedge (think of a sales tax or subsidy) for a firm relative to other firms. If either of those ${\tau}$ terms are not equal to zero, then ${TFPR_i}$ will deviate from the efficient level.</p>
+<p>
+<strong>* A note on multiple sectors *</strong> HK do this for all manufacturing sectors. That's not a big change. Do what I said for each separate sector. Assume that each sector has a constant share of total expenditure (as in a Cobb-Douglas utility function). Then
+<p align="center">$$  \frac{TFP^{\ast}_{all}}{TFP_{all}} = \left(\frac{TFP^{\ast}_1}{TFP_1}\right)^{\theta_1} \times \left(\frac{TFP^{\ast}_2}{TFP_2}\right)^{\theta_2} \times ... \ \ \ \ \ (17)$</p>
+<p> where ${\theta_s}$ is the expenditure share of sector ${s}$. </p></p></p></p></p></p></p></p></p></p></p></p></p>
+
+  </section>
+  
+</article>
+
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
+  <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Add to Pocket"><img src="/img/Pocket.png"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
+</ul>
+</center>
+
+
+<!-- Post navigation -->
+
+  <!-- Check if navigation turned on-->
+  
+  <div id="post-nav">
+    
+    <a id="prev-post" href="/blog/productivity-pessimism-from-productivity-optimists/">
+      <span class="page-title">Productivity Pessimism from Productivity Optimists</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> 
+      </span>
+    </a>
+    
+    
+    <a id="next-post" href="/blog/age-structure-experience-productivity-and-france/">
+       <span class="page-title">Age Structure, Experience, Productivity...... and France!</span>
+       <span class="nav-label">
+         <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
+    
+  </div>
+  
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+	this.page.url = /blog/measuring-misallocation-across-firms/; // Replace PAGE_URL with your page's canonical URL variable
+/*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//growthecon.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+    		</div> <!-- #et-main-area -->
+		</div> <!-- #page-container -->
+		
+
+
+<footer id="page-footer-trans" class="page-footer">
+	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+</p>-->
+	Copyright &copy; 2016 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
+ All Rights Reserved. 
+	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+</footer>
+
+
+    
+<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
+    <script type="text/javascript">
+        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
+        soundManager.url = '/plugins/soundmanager2.swf';
+        function play_mp3(flg, ids, mp3url, volume, loops)
+        {
+            //Check the file URL parameter value
+            var pieces = mp3url.split("|");
+            if (pieces.length > 1) {//We have got an .ogg file too
+                mp3file = pieces[0];
+                oggfile = pieces[1];
+                //set the file URL to be an array with the mp3 and ogg file
+                mp3url = new Array(mp3file, oggfile);
+            }
+
+            soundManager.createSound({
+                id: 'btnplay_' + ids,
+                volume: volume,
+                url: mp3url
+            });
+
+            if (flg == 'play') {
+                    soundManager.play('btnplay_' + ids, {
+                    onfinish: function() {
+                        if (loops == 'true') {
+                            loopSound('btnplay_' + ids);
+                        }
+                        else {
+                            document.getElementById('btnplay_' + ids).style.display = 'inline';
+                            document.getElementById('btnstop_' + ids).style.display = 'none';
+                        }
+                    }
+                });
+            }
+            else if (flg == 'stop') {
+    //soundManager.stop('btnplay_'+ids);
+                soundManager.pause('btnplay_' + ids);
+            }
+        }
+        function show_hide(flag, ids)
+        {
+            if (flag == 'play') {
+                document.getElementById('btnplay_' + ids).style.display = 'none';
+                document.getElementById('btnstop_' + ids).style.display = 'inline';
+            }
+            else if (flag == 'stop') {
+                document.getElementById('btnplay_' + ids).style.display = 'inline';
+                document.getElementById('btnstop_' + ids).style.display = 'none';
+            }
+        }
+        function loopSound(soundID)
+        {
+            window.setTimeout(function() {
+                soundManager.play(soundID, {onfinish: function() {
+                        loopSound(soundID);
+                    }});
+            }, 1);
+        }
+        function stop_all_tracks()
+        {
+            soundManager.stopAll();
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].id.indexOf("btnplay_") == 0) {
+                    inputs[i].style.display = 'inline';//Toggle the play button
+                }
+                if (inputs[i].id.indexOf("btnstop_") == 0) {
+                    inputs[i].style.display = 'none';//Hide the stop button
+                }
+            }
+        }
+    </script>
+    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
+<script type='text/javascript' src="/js/custom.js"></script>
+<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
+<script type='text/javascript' src="/js/waypoints.min.js"></script>
+<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
+  </body>
+</html>

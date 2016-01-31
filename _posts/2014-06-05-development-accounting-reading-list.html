@@ -1,0 +1,40 @@
+---
+layout: post
+title: Development Accounting Reading List
+date: 2014-06-05 20:53:47.000000000 -05:00
+type: post
+published: true
+status: publish
+categories: []
+tags:
+- accounting
+- capital
+- development
+- growth
+- productivity
+- reading
+meta:
+  _edit_last: '8005175'
+  geo_public: '0'
+  _publicize_pending: '1'
+author:
+  login: dvollrath
+  email: dietz.vollrath@gmail.com
+  display_name: dvollrath
+  first_name: ''
+  last_name: ''
+---
+<p>This group of papers is one of the first that I cover in class, because it's useful to frame much of the growth/development research. The concept is that real GDP per capita is produced using a function something like ${y = A F(k,h)}$. Real GDP thus depends on total factor productivity (${A}$), capital (${k}$), and human capital/labor (${h}$). So variation in real GDP per capita depends on variation in ${A}$, ${k}$, and ${h}$ across countries. All your favorite theories about institutions, geography, culture, innovation, etc.. must operate through one of these three proximate factors. To focus ourselves on what is important, we'd like to know which of the three proximate factors are actually responsible for the variation in real GDP per capita we see. </p>
+<p>
+One way to do this is to first assume a Cobb-Douglas production function for ${F()}$ and take logs
+<p align="center">$$  \ln{y}_i = \ln A_i + \alpha \ln{k}_i + \beta \ln{h}_i. $$</p>
+<p> Conceptually, one could then run a regression of ${y_i}$ (the ${i}$ index specifies the country) on ${k_i}$ and ${h_i}$. We don't have information on ${A_i}$ directly, so we could treat that as the error term. We could get even fancier and replace ${k_i}$ and ${h_i}$ with some terms based on savings rates or human capital accumulation rates, consistent with theory. Regardless, we'd then look at the R-squared or partial R-squared's to tell us how important each factor was. This is, in a nutshell, what Mankiw, Romer, and Weil (1992) are up to. </p>
+<p>
+One problem with this is that TFP (${A}$) is not uncorrelated with ${k}$ and ${h}$, so the regression estimates of ${\alpha}$ and ${\beta}$ are going to be biased, and hence so are our R-squares. I wrote a whole post about this <a href="http://growthecon.wordpress.com/2014/04/10/is-capital-important/" title="Is Capital Important?">here</a>.</p>
+<p>
+So rather than run the regression, we could pull values for ${\alpha}$ and ${\beta}$ from some other source and just calculate the R-squares without actually running the regression. This is essentially what the development accounting literature is doing, with Hall and Jones (1999) and Klenow and Rodriguez-Clare (1997) being the classic examples. The upshot of these papers is that variation in ${A}$ accounts for at least 50&#037; of the differences in ${y}$ across countries, and maybe more. ${k}$ accounts for maybe 30-40&#037;, and ${h}$ only 10-20&#037;. So TFP is the most important proximate factor.</p>
+<p>
+The other papers are then riffs on this basic idea. Gollin (2002) is about whether ${\alpha}$ or ${\beta}$ themselves vary across countries (they do) and whether they are correlated with real GDP per capita (they are not). Caselli (2005) shows that differences in how exactly you account for ${k}$ and ${h}$ are not necessarily important for overall result that TFP matters most. You can also do this kind of accounting for a single country over time, to see the sources of growth. The Young (1995) and Hsieh (2002) papers are a back and forth over how to do this for several East Asian countries, differing in technique and data sources. Hsieh and Klenow (2007) is included in this section of the class because it helps establish that domestic savings rates do not vary much across countries, and so we cannot expect capital variation to matter a lot either.</p>
+<p>
+The reading list here is light on human capital. I talk about Hendricks (2002) work on trying to measure ${h}$ more accurately using immigrant data from the U.S., and Weil's (2007) paper on including health as part of human capital. The reason for the light coverage is that <a href="http://www.germancubas.com/">German Cubas</a>, one of our junior faculty, is going to be teaching a graduate course this year that focuses a lot of human capital. So I only touch on it in my course.</p>
+<p>As usual, PDF and Bibtex files with the reading lists are on the "<a href="http://growthecon.wordpress.com/papers/" title="Papers">Papers</a>" page.</p></p></p>
