@@ -18,7 +18,8 @@ layout: default
     {% elsif page.course %}
       <a class="subtitle">{{ page.course }}</a>
     {% else %}
-      <a class="subtitle">{{ page.date | date_to_string }}</a>
+      <a class="subtitle">{{ page.date | date_to_string }}</a> &nbsp; &nbsp;
+      <a href="{{ page.url }}#disqus_thread"></a>
     {% endif %}
     </p>
   </header>

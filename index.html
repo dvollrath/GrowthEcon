@@ -32,7 +32,7 @@ layout: default
 		      </a>
 		    </h2>
 		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">{{ post.date | date_to_string }}</a>
+		      <a class="subtitle">{{ post.date | date_to_string }}</a> &nbsp; &nbsp; <a href="{{ post.url }}#disqus_thread"></a>
 		    <!--  {% if post.author %} | <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
 		      {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %} -->
 		    </p>
