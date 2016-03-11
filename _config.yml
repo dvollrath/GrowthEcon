@@ -5,6 +5,9 @@ enforce_ssl: growthecon.com
 imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https://unsplash.it/2600/500?random"
 timezone: America/Chicago
 
+# Dropbox public link
+dropbox: https://dl.dropboxusercontent.com/u/6823742
+
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
@@ -48,9 +51,6 @@ theme:
   wordpress:
   youtube:
 
-  # Dropbox public link
-  dropbox: https://dl.dropboxusercontent.com/u/6823742
-
   # Scripts
   google_analytics: UA-72839737-1
   disqus_shortname: growthecon
@@ -82,6 +82,18 @@ sechby:
   category:   #in
   tag:   #with
 
+# Jekyll Scholar SETTINGS
+scholar:
+  style: chicago-author-date
+  sort_by: author, year
+  order: ascending, descending
+  bibliography: growthbib
+  bibtex_filters: 
+    - latex
+    - dietz
+  bibliography_list_tag: ul
+  bibliography_template: bib
+
 # BUILD SETTINGS
 markdown: redcarpet
 highlighter: pygments
@@ -89,5 +101,4 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-gems:
-  - jekyll-paginate
+gems: [jekyll-paginate]

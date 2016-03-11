@@ -5,7 +5,59 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Sun, 28 Feb 2016 09:28:48 -0600</pubDate>
+    <pubDate>Mon, 07 Mar 2016 12:12:11 -0600</pubDate>
+    
+      <item>
+        <title>You Saved What?</title>
+        <link>https://growthecon.com/blog/Savings/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Savings/</guid>
+        <description>&lt;p&gt;Nick Rowe just had a &lt;a href=&quot;http://worthwhile.typepad.com/worthwhile_canadian_initi/2016/02/does-saving-count-towards-gdp.html#more&quot;&gt;post&lt;/a&gt; about the effect of savings on GDP. I&amp;#39;m paraphrasing, but a student asks him whether &amp;quot;saving an extra \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100&amp;quot; raises GDP (or not), because the national income product accounts can be written as\inline&quot;/&gt;Y = C + S + T&lt;img src=&quot;http://latex.codecogs.com/png.latex?. I think Nick nails the issue, which is that you &lt;em&gt;must&lt;/em&gt; specify &amp;quot;instead of what?&amp;quot; when you say you &amp;quot;save an extra \\inline&quot;/&gt;100&amp;quot;. &lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve run into the same question before, and I&amp;#39;ve gone back and forth on how best to explain the answer (which, strictly speaking, is &amp;quot;it depends&amp;quot;). This also gives me a chance to rant a little about my pet peeve of measuring GDP in dollars.&lt;/p&gt;
+
+&lt;p&gt;The problem we have is that &amp;quot;save an extra \$100&amp;quot; means &amp;quot;keep 100 slips of green paper in my wallet rather than spending them&amp;quot; to any normal human being. This is a statement about how you use the medium of exchange. It&amp;#39;s a statement inherently related to the turnover of that medium of exchange.&lt;/p&gt;
+
+&lt;p&gt;But the word &amp;quot;savings&amp;quot; and the symbol &amp;quot;S&amp;quot; are also used as a concept in national income product accounts to stand for &amp;quot;the value of goods and services that are neither consumed nor handed over to the government as taxes&amp;quot;. Because you typically measure the value of good and services using dollars, this creates confusion. But &amp;quot;\&lt;img src=&quot;http://latex.codecogs.com/png.latex?100 of S&amp;quot; is a statement that uses dollars as a unit of account, and has nothing to do with \\inline&quot;/&gt;100 of the medium of exchange. &amp;quot;\&lt;img src=&quot;http://latex.codecogs.com/png.latex?100 of S&amp;quot; means that you purchased \\inline&quot;/&gt;100 worth of goods and services, &lt;em&gt;and then saved those goods and services&lt;/em&gt;. It does not mean you kept 100 slips of green paper in your wallet.&lt;/p&gt;
+
+&lt;p&gt;So the question from Nick&amp;#39;s student isn&amp;#39;t easy to answer, and it should be easier. He wants to know the effect on GDP if he &amp;quot;saves an extra \$100&amp;quot;, and right now the answer gets confusing because of this confusion in medium of exchange and unit of account.&lt;/p&gt;
+
+&lt;p&gt;This would be clearer if we didn&amp;#39;t insist on measuring GDP (and its components like S) in units of dollars. Yes, we tell everyone they are &amp;quot;2005 dollars&amp;quot; or something like that, but we all hear &amp;quot;dollars!&amp;quot; in our head and think of little slips of green paper. I really think a better way to do this would be to just measure GDP as physical units of output. You can do this in a crude (but effective) way by just measuring GDP as the equivalent number of cans of Diet Cokes (e.g. divide nominal GDP by \$0.85, the price in our department vending machine). Or if you insist on being more accurate, divide nominal GDP by the actual dollar value of the CPI basket, and you&amp;#39;ll get &amp;quot;number of CPI baskets produced&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Regardless, if GDP is in real terms - Diet Cokes or CPI baskets - then we no longer have this confusion of the medium of exchange (dollars) and the unit of account (DC or CPI baskets). When you say you &amp;quot;save an extra \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100&amp;quot;, I think it now becomes obvious that you &lt;em&gt;must&lt;/em&gt; complete that statement with &amp;quot;...instead of buying \\inline&quot;/&gt;100 of Diet Cokes or CPI baskets&amp;quot;. It is clear what you are doing. &lt;/p&gt;
+
+&lt;p&gt;But we&amp;#39;re not totally out of the woods. GDP is a flow concept, not a stock. So it&amp;#39;s impossible to specify the effect of &amp;quot;saving an extra \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100 instead of buying \\inline&quot;/&gt;100 of Diet Coke&amp;quot; without saying precisely &lt;em&gt;how long&lt;/em&gt; you plan to save that money for. It is March 6th. If you &amp;quot;save an extra \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100&amp;quot; today by not spending it, and don&amp;#39;t spend it until April 13th, then &lt;em&gt;first quarter GDP&lt;/em&gt; goes down by at least \\inline&quot;/&gt;100. At least. You not spending that \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100 means someone else didn&amp;#39;t earn that \\inline&quot;/&gt;100, and they cannot spend the \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100, and so there may be a whole chain of transactions that don&amp;#39;t occur because you saved an extra \\inline&quot;/&gt;100. &lt;/p&gt;
+
+&lt;p&gt;If you &amp;quot;save an extra \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100&amp;quot; on March 6th, but then spend that \\inline&quot;/&gt;100 on March 8th, first quarter GDP might not got down at all. You still spent the \$100 in the first quarter, and all the subsequent transactions that might be keyed off of your spending still have time to occur. Maybe the 2 day delay means that someone 15 transactions down the line doesn&amp;#39;t get a chance to buy a Snickers bar until April 1st, and now that transaction is not counted in first quarter GDP any more. &lt;/p&gt;
+
+&lt;p&gt;But this &lt;em&gt;still&lt;/em&gt; doesn&amp;#39;t solve our problem, because we didn&amp;#39;t account for the fact that maybe the producers will respond to our lack of spending by changing prices. If you &amp;quot;save an extra \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100 instead of buying \\inline&quot;/&gt;100 of Diet Coke&amp;quot; on March 6th, then the DC distributor might notice that 117.67 cans of DC are still on the shelf on March 7th that they expected to be gone. They figure this represents lower demand, so to clear their inventory they lower the price. By March 31st, even though &lt;em&gt;you&lt;/em&gt; didn&amp;#39;t spend \$100 on Diet Cokes, somebody bought those cheaper Diet Cokes and hence real GDP (the number of Diet Cokes sold) is the same as if you hadn&amp;#39;t saved that money at all. &lt;/p&gt;
+
+&lt;p&gt;I don&amp;#39;t know that there is a simple way to teach this stuff. I think you could probably spend a whole semester just going over (and over and over) the difference between GDP and the money supply. Let me take a crack at a relatively simple way of accomodating a question about what happens when you &amp;quot;save an extra \$100&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;The key here is the Quantity Theory of Money. It is an identity that tells us how to determine nominal GDP. You know the formula, &lt;img src=&quot;http://latex.codecogs.com/png.latex?MV = PY\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;When someone says &amp;quot;save an extra \$100&amp;quot;, they mean &amp;quot;lower velocity&amp;quot; by some amount. They are turning over their actual dollars more slowly (e.g. waiting until April 13th to spend them). How much velocity goes down is a question of (a) how long they wait to spend the money and (b) how crucial that spending is for everyone else&amp;#39;s spending. &lt;/p&gt;
+
+&lt;p&gt;Now, because V has gone down, it must be that either M goes up, or PY has gone down. If we assume that M stays constant, then it has to be that PY goes down. &lt;/p&gt;
+
+&lt;p&gt;What happens to &lt;em&gt;real&lt;/em&gt; GDP - cans of Diet Coke - Y? That depends on how flexible you think prices are. If P can adjust easily (the DC distributor notices quickly and lowers prices), then Y may be unaffected by your decision to &amp;quot;save an extra \&lt;img src=&quot;http://latex.codecogs.com/png.latex?100&amp;quot;. But if prices are sticky, then your decision to save \\inline&quot;/&gt;100 has to lower Y by an amount proportional to how much velocity goes down.&lt;/p&gt;
+
+&lt;p&gt;But what about that whole NIPA accounting equation &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y = C + S + T\inline&quot;/&gt;? Well, what about it? S is a classification of real GDP. S is the number of Diet Cokes that you &lt;em&gt;buy&lt;/em&gt;, but do not actually &lt;em&gt;drink&lt;/em&gt;. S is &amp;quot;GDP that is neither consumed nor given to the government&amp;quot;. Yes, the BEA calls that &amp;quot;savings&amp;quot;, but that is a crappy term that just causes confusion. If we measured GDP in real units, and stopped using the term &amp;quot;savings&amp;quot; both for &amp;quot;dollars not spent&amp;quot; and &amp;quot;goods and services not consumed&amp;quot;, we wouldn&amp;#39;t have to keep rehashing these questions again and again every year with a new set of students.&lt;/p&gt;
+
+&lt;p&gt;Of course, I might have read Nick&amp;#39;s post wrong, and maybe the student was asking about spending 100 gold pieces to raise his &lt;em&gt;saving throw&lt;/em&gt; from a 17 to an 18. Easy mistake to make.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
+      </item>
+    
+      <item>
+        <title>Growth References</title>
+        <link>https://growthecon.com/blog/New-References/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/New-References/</guid>
+        <description>&lt;p&gt;A very quick post just to alert you that I&amp;#39;ve added a new page of &lt;a href=&quot;https://growthecon.com/references/&quot;&gt;references&lt;/a&gt; to the site. It is essentially a dump of my own BibTeX file, broken down by topic area. &lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s incomplete, but as I clean up and add to the references over time, they&amp;#39;ll populate to that page. Of course, I&amp;#39;ll probably be in my 70&amp;#39;s before I get around to it, but maybe announcing it publicly will act as a commitment device. It can&amp;#39;t make me go any &lt;em&gt;slower&lt;/em&gt; at fixing up my BibTeX file, that&amp;#39;s for sure.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>How to Accelerate Growth Rates</title>
