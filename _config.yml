@@ -84,7 +84,7 @@ sechby:
 
 # Jekyll Scholar SETTINGS
 scholar:
-  style: chicago-author-date
+  style: harvard1
   sort_by: author, year
   order: ascending, descending
   bibliography: growthbib
