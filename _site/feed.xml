@@ -5,7 +5,665 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Sun, 01 May 2016 09:05:26 -0500</pubDate>
+    <pubDate>Wed, 11 May 2016 13:46:06 -0500</pubDate>
+    
+      <item>
+        <title>More on Decomposing US Productivity Growth</title>
+        <link>https://growthecon.com/blog/More-Decomp/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/More-Decomp/</guid>
+        <description>&lt;p&gt;Tables, tables, tables. There are going to be lots of tables today. My last &lt;a href=&quot;https://growthecon.com/blog/Decomposition/&quot;&gt;post&lt;/a&gt; was about the decomposition of aggregate productivity growth into different components. “Within” growth occurs because labor productivity within sectors is growing. “Across” growth occurs because workers move from one sector to another. For the US recently, this “across” growth has been negative, meaning that people are shifting from high to low productivity sectors. Finally, there is “covariance” growth, which captures whether workers are moving into (or out of) sectors that have high productivity &lt;em&gt;growth&lt;/em&gt;. This tends to be negative, meaning that workers are tending to move to sectors with low productivity growth.&lt;/p&gt;
+
+&lt;p&gt;I did that decomposition using data at the 10-sector level, meaning it is very high level (Agriculture, Manufacturing, Construction, etc..). To dig a little deeper, in this post I’ve pulled down BEA data on industry-level output and full time equivalents (FTE) that is at a finer level of disaggregation. I end up with 70 industries, but I can only cover the time period of 1998 to 2014. For the geeks out there, this means I’m using this sort of bastardized NAICS 2 and 3 digit classification to match up with what the BEA reports. (Because &lt;strong&gt;GOD FORBID&lt;/strong&gt; that the BEA uses precisely the same classification scheme for both output and FTE). Anyway, the data files I’m using, and a script to recreate what you see in this post, are linked at the bottom of this post. So feel free to play around.&lt;/p&gt;
+
+&lt;p&gt;Anyway, the data means that I can calculate labor productivity at the industry level for those 70 industries. I’ll call this “productivity” from now own to save myself some typing. But productivity here is just output divided by FTE. So for each industry I know their productivity level and their share of total FTE’s in the economy. That gives me all the information I need to do the within/across/covariance decomposition.&lt;/p&gt;
+
+&lt;p&gt;I’ll get to the overall decomposition below, but before that I think it’s interesting to pick through the individual sectors themselves to see which ones are contributing positively and negatively to those different components of growth.&lt;/p&gt;
+
+&lt;p&gt;I’m ultimately going to look at the growth of aggregate productivity for the 4 years 2010-2014. So to be consistent with the calculations, to start with we can look at the level of productivity and FTE shares in 2010. Here are the top 10 industries in terms of productivity in 2010, where productivity is measured in millions of 2009 dollars per FTE.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Prod Level&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Funds, trusts, and other fina..&lt;/td&gt;
+      &lt;td&gt;5.72&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Real estate&lt;/td&gt;
+      &lt;td&gt;1.3753&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Oil and gas extraction&lt;/td&gt;
+      &lt;td&gt;1.0038&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Petroleum and coal products&lt;/td&gt;
+      &lt;td&gt;0.9037&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Utilities&lt;/td&gt;
+      &lt;td&gt;0.5026&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pipeline transportation&lt;/td&gt;
+      &lt;td&gt;0.4325&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chemical products&lt;/td&gt;
+      &lt;td&gt;0.4263&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Motion picture and sound record..&lt;/td&gt;
+      &lt;td&gt;0.3476&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mining, except oil and gas&lt;/td&gt;
+      &lt;td&gt;0.3470&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Rental and leasing services a..&lt;/td&gt;
+      &lt;td&gt;0.3342&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I don’t know exactly what “Funds, trusts, and other..” is, but it is hard to get the image of Scrooge McDuck swimming in his money out of my head. Anyway, the level of productivity here is off the charts compared to other industries. Which is great, but will end up being irrelevant for us because it effectively employs zero people. The other industries here are perhaps not surprsing: utilities, oil and gas, chemicals, mining. I guess I’m surprsed that “Real Estate” (think your broker, not your general contractor) is so high in productivity. But that’s what you get earning 6% on every home transaction that takes place, I guess.&lt;/p&gt;
+
+&lt;p&gt;Here are the bottom 10 industries in productivity:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Prod Level&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Administrative and support se..&lt;/td&gt;
+      &lt;td&gt;.0614&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Apparel and leather and allie..&lt;/td&gt;
+      &lt;td&gt;.0603&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food and beverage stores&lt;/td&gt;
+      &lt;td&gt;.0587&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Other services, except government&lt;/td&gt;
+      &lt;td&gt;.0581&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Amusements, gambling, and rec..&lt;/td&gt;
+      &lt;td&gt;.0577&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Educational services&lt;/td&gt;
+      &lt;td&gt;.0575&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;General merchandise stores&lt;/td&gt;
+      &lt;td&gt;.0471&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Nursing and residential care ..&lt;/td&gt;
+      &lt;td&gt;.0430&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Social assistance&lt;/td&gt;
+      &lt;td&gt;.0390&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food services and drinking pl..&lt;/td&gt;
+      &lt;td&gt;.0388&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Food services is, just for scale purposes, roughly 10 times less productive per FTE than “Chemical products” or “Motion picture and sound recording”. [&lt;em&gt;Also down here is educational services, and perhaps the inter-tubes can help me here. I can’t find definitely where public-school teachers get reported. Are they here, or are they in “State/local government”?&lt;/em&gt;] These are generally all service industries, which perhaps not surprsing. It’s also not an indictment of services, by the way. These industries don’t produce anything, but do provide their time, and hence you can’t raise productivity by lowering the time input (like in manufacturing).&lt;/p&gt;
+
+&lt;p&gt;Last, here are the top 10 industries in 2010 in terms of their share of FTEs.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;FTE Share&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;General State/Local&lt;/td&gt;
+      &lt;td&gt;.1242&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food services and drinking pl..&lt;/td&gt;
+      &lt;td&gt;.0608&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Administrative and support se..&lt;/td&gt;
+      &lt;td&gt;.0538&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Other retail&lt;/td&gt;
+      &lt;td&gt;.0504&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Other services, except government&lt;/td&gt;
+      &lt;td&gt;.0463&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Construction&lt;/td&gt;
+      &lt;td&gt;.0450&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ambulatory health care services&lt;/td&gt;
+      &lt;td&gt;.0445&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Wholesale trade&lt;/td&gt;
+      &lt;td&gt;.0438&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Miscellaneous professional, s..&lt;/td&gt;
+      &lt;td&gt;.0390&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hospitals&lt;/td&gt;
+      &lt;td&gt;.0365&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The biggest users of FTE are again generally service industries. You can’t get too jazzed up about that, because one of the reasons this looks this way is that the BEA sub-divides manufacturing down to very small levels, but leaves “General State/local government” as one giant category. If we broke down that category into “Police”, “Fire”, “DMV”, etc. then this wouldn’t show up as 12%.&lt;/p&gt;
+
+&lt;p&gt;Anyway, that gives you some idea of what the static distribution of FTE and productivity across industries looks like. But we’re really interested in productivity &lt;em&gt;growth&lt;/em&gt;, and so what will matter for that are the &lt;em&gt;changes&lt;/em&gt; in productivity and FTE shares from 2010 to 2014.&lt;/p&gt;
+
+&lt;p&gt;To start, here are the 10 industries with the highest total growth in productivity for that 4-year period. There are not percentages, these are absolute changes in productivity. Again Scrooge McDuck has an outsized number here, and again it is going to be irrelevant for us ultimately.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Prod Change&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Funds, trusts, and other..&lt;/td&gt;
+      &lt;td&gt;1.18&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Oil and gas extraction&lt;/td&gt;
+      &lt;td&gt;.2692&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Water transportation&lt;/td&gt;
+      &lt;td&gt;.0904&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pipeline transportation&lt;/td&gt;
+      &lt;td&gt;.0725&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Broadcasting and telecommu..&lt;/td&gt;
+      &lt;td&gt;.0706&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mining, except oil and gas&lt;/td&gt;
+      &lt;td&gt;.0579&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Computer and electronic ..&lt;/td&gt;
+      &lt;td&gt;.0389&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Petroleum and coal produ..&lt;/td&gt;
+      &lt;td&gt;.0253&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Rental and leasing servi..&lt;/td&gt;
+      &lt;td&gt;.0249&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data processing, internet ..&lt;/td&gt;
+      &lt;td&gt;.0238&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;“Computer and Electronic products” is the manufacturing of those goods. The rest are relatively self-explanatory. Remember that these represent the change over four years. So “Pipeline transportation” raised productivity by approximately 72,500 dollars per FTE between 2010-2014, or about 18,125 per year.&lt;/p&gt;
+
+&lt;p&gt;Those sectors were doing well in terms of productivity. At the other end of the scale are the following 10 industries, which had the lowest productivity growth in the same period of time.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Prod Change&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food and beverage stores&lt;/td&gt;
+      &lt;td&gt;-.0134&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Miscellaneous manufacturing&lt;/td&gt;
+      &lt;td&gt;-.0142&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Utilities&lt;/td&gt;
+      &lt;td&gt;-.0149&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food and beverage and tobacco..&lt;/td&gt;
+      &lt;td&gt;-.0160&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Legal services&lt;/td&gt;
+      &lt;td&gt;-.0176&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Securities, commodity contrac..&lt;/td&gt;
+      &lt;td&gt;-.0180&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Real estate&lt;/td&gt;
+      &lt;td&gt;-.0189&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Waste management and remediat..&lt;/td&gt;
+      &lt;td&gt;-.0282&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Motion picture and sound record..&lt;/td&gt;
+      &lt;td&gt;-.0399&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chemical products&lt;/td&gt;
+      &lt;td&gt;-.0585&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Chemical products had it bad in this period, and apparently so did movie studios. Maybe a surprise that securities and legal services had such poor productivity growth? I’m not going to start speculating on underlying causes for any of these numbers.&lt;/p&gt;
+
+&lt;p&gt;The big point of the prior post was that while these numbers on raw productivity growth are interesting, they are not the whole story. We have to consider these alongside the allocation of workers across those sectors. Like I said above, the fact that “Funds, trusts, and other” is so productive will be essentially meaningless, but the decline in productivity in “Legal services” will be meaningful, because it employs a lot of people.&lt;/p&gt;
+
+&lt;p&gt;So let’s look at the raw change in the share of FTE’s employed by industry in the same 4-year period. Here are the 10 industries that had the biggest change in their FTE share.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Chg. FTE Share&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Other retail&lt;/td&gt;
+      &lt;td&gt;.0044&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Administrative and support se..&lt;/td&gt;
+      &lt;td&gt;.0038&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Social assistance&lt;/td&gt;
+      &lt;td&gt;.0037&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food services and drinking pl..&lt;/td&gt;
+      &lt;td&gt;.0035&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Construction&lt;/td&gt;
+      &lt;td&gt;.0027&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food and beverage stores&lt;/td&gt;
+      &lt;td&gt;.0022&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Motor vehicle and parts dealers&lt;/td&gt;
+      &lt;td&gt;.0022&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;General merchandise stores&lt;/td&gt;
+      &lt;td&gt;.0019&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Computer systems design and r..&lt;/td&gt;
+      &lt;td&gt;.0016&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ambulatory health care services&lt;/td&gt;
+      &lt;td&gt;.0013&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;What this tells us is that “Other Retail”’s share of total FTE in the economy rose by 4.4-tenths of one percentage point. The other thing that shows up here is that none of these industries with rapidly growing shares of FTE also show up on the table of top productivity growth. In fact, “Food and beverage stores” is growing in the share of FTE, but it was in the &lt;em&gt;bottom&lt;/em&gt; ten of productivity growth in the prior table. This is an example of an industry with a negative covariance contribution - it is growing in FTE, but shrinking in productivity.&lt;/p&gt;
+
+&lt;p&gt;At the other end of the rankings are the 10 industries that lost FTE’s the fastest. Here they are:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Chg. FTE Share&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;State/Local Gov Enterprise&lt;/td&gt;
+      &lt;td&gt;-.0009&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Federal Gov Enterprise&lt;/td&gt;
+      &lt;td&gt;-.0009&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Other services, except government&lt;/td&gt;
+      &lt;td&gt;-.0010&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Computer and electronic produ..&lt;/td&gt;
+      &lt;td&gt;-.0010&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Federal Reserve banks, credit..&lt;/td&gt;
+      &lt;td&gt;-.0014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Broadcasting and telecommunicat..&lt;/td&gt;
+      &lt;td&gt;-.0016&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;National defense&lt;/td&gt;
+      &lt;td&gt;-.0018&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Federal Civilian&lt;/td&gt;
+      &lt;td&gt;-.0020&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hospitals&lt;/td&gt;
+      &lt;td&gt;-.0021&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;General State/Local&lt;/td&gt;
+      &lt;td&gt;-.0109&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;What is interesting here is that the list is dominated by public employees. “State/Local gov enterprises”, “Federal gov enterprises”, “National defense”, “Federal civilian”, and “General state/local” are all industries under the general “Government” heading. The big drop in state and local employment here is obvious. One other quick note is that “Federal Reserve banks, ..” refers to the banking sector in general (those banks supervised by the Fed), and not specifically to the Federal Reserve banks themselves. One last interesting note is that “Broadcasting and telecommunications” shows up as another industry with a negative covariance contribution - it has growing productivity, but is shrinking in FTE.&lt;/p&gt;
+
+&lt;p&gt;If you are still awake, then this still doesn’t help us out much, because the changes in FTE themselves could be good or bad for aggregate productivity depending on whether they are high or low productivity industries to begin with. So let me show you some more tables that list the top/bottom 10 indutries in terms of their actual “within” or “across” contribution.&lt;/p&gt;
+
+&lt;p&gt;To remind you, the decomposition of aggregate productivity looks like this:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta y_t = \sum_{j=1}^J \Delta y_{jt} s_{j0} + \sum_{j=1}^J \Delta s_{jt} y_{j0} + \sum_{j=1}^J \Delta y_{jt} \Delta s_{jt}.&lt;/script&gt;
+
+&lt;p&gt;The first summation is the “within” term, with &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_{jt}\inline&quot;/&gt; being productivity in sector &lt;img src=&quot;http://latex.codecogs.com/png.latex?j\inline&quot;/&gt;, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_{j0}\inline&quot;/&gt; their share of FTE in 2010. The second summation is the “across” term, and the final summation is the “covariance” term.&lt;/p&gt;
+
+&lt;p&gt;Start with the within terms. Here are the top 10 industries in “within” contribution over the last 4 years. Each of the numbers in the table is an individual &lt;img src=&quot;http://latex.codecogs.com/png.latex?\Delta y_{jt} s_{j0}\inline&quot;/&gt; in the first summation above.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Within&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Broadcasting and telecommunicat..&lt;/td&gt;
+      &lt;td&gt;.0007&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Oil and gas extraction&lt;/td&gt;
+      &lt;td&gt;.0004&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Computer and electronic produ..&lt;/td&gt;
+      &lt;td&gt;.0003&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Management of companies and ent..&lt;/td&gt;
+      &lt;td&gt;.0003&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Wholesale trade&lt;/td&gt;
+      &lt;td&gt;.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Motor vehicles, bodies and tr..&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Publishing industries, except i..&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Computer systems design and r..&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Rental and leasing services a..&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Insurance carriers and relate..&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Note that the rankings are not identical to the first table, which was just about productivity growth. This table is productivity growth &lt;em&gt;times&lt;/em&gt; the industry’s share of total FTE. You can see that “Funds, trusts, …” have disappeared, as I mentioned, because they employ so few people. “Wholesale trade” appears here not because it has ridiculously high productivity growth, but because it employs a relatively big share of FTE.&lt;/p&gt;
+
+&lt;p&gt;And here are the bottom 10,&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Within&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Social assistance&lt;/td&gt;
+      &lt;td&gt;-.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Securities, commodity contrac..&lt;/td&gt;
+      &lt;td&gt;-.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Legal services&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;General merchandise stores&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Real estate&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food and beverage and tobacco..&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Other retail&lt;/td&gt;
+      &lt;td&gt;-.0003&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food and beverage stores&lt;/td&gt;
+      &lt;td&gt;-.0003&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Construction&lt;/td&gt;
+      &lt;td&gt;-.0003&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chemical products&lt;/td&gt;
+      &lt;td&gt;-.0004&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;This list looks similar to the one based purely on productivity, because these 10 industries all employ pretty big shares of FTE in the US. When the “Construction” industry experiences negative productivity growth, for example, this has a relatively big aggregate effect because it employs a lot of people. That’s the “within” term at work.&lt;/p&gt;
+
+&lt;p&gt;Now, look at the top/bottom 10 industries in terms of their “across” contribution. This is the change in their share of FTE &lt;em&gt;times&lt;/em&gt; their initial level of productivity, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\Delta s_{jt} y_{j0}\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Across&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Other retail&lt;/td&gt;
+      &lt;td&gt;.0003&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Construction&lt;/td&gt;
+      &lt;td&gt;.0003&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Administrative and support se..&lt;/td&gt;
+      &lt;td&gt;.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Motor vehicle and parts dealers&lt;/td&gt;
+      &lt;td&gt;.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Computer systems design and r..&lt;/td&gt;
+      &lt;td&gt;.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Motor vehicles, bodies and tr..&lt;/td&gt;
+      &lt;td&gt;.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Social assistance&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food services and drinking pl..&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Food and beverage stores&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ambulatory health care services&lt;/td&gt;
+      &lt;td&gt;.0001&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The fact that these are positive means only that people are moving &lt;em&gt;into&lt;/em&gt; these sectors. The terms could be large either because lots of people are moving in but an industry is low productivity (“Other Retail”) or because a few people are moving in and the industry is high productivity (“Motor vehicles, bodies..”). Regardless, this table gives you an idea of which industries are expanding their contribution to aggregate productivity growth.&lt;/p&gt;
+
+&lt;p&gt;At the other end, the bottom ten in “across” contribution are:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;BEA Industry&lt;/th&gt;
+      &lt;th&gt;Across&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Legal services&lt;/td&gt;
+      &lt;td&gt;-.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chemical products&lt;/td&gt;
+      &lt;td&gt;-.0001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hospitals&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Utilities&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Federal Reserve banks, credit..&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Federal Civilian&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Computer and electronic produ..&lt;/td&gt;
+      &lt;td&gt;-.0002&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;National defense&lt;/td&gt;
+      &lt;td&gt;-.0004&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Broadcasting and telecommunicat..&lt;/td&gt;
+      &lt;td&gt;-.0005&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;General State/Local&lt;/td&gt;
+      &lt;td&gt;-.0009&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;These industries are losing FTE for sure. Banks, utilities, broadcasting, and government employment are shrinking. Yet because they also happen to be relatively high productivity, so this subtracts a lot from aggregate growth. As you can start to sniff out from these tables, the negatives in the bottom 10 outweight the positives in the top 10 of “across” terms. And this is where that aggregate negative for “across” contribution comes from. FTE is leaving sectors that are relatively high productivity, and flowing into sectors with relatively low productivity.&lt;/p&gt;
+
+&lt;p&gt;The last component of productivity is the covariance term. These are all so close to zero that they are not terribly interesting. And since there are already a ridiculous number of tables, let’s just stop there.&lt;/p&gt;
+
+&lt;p&gt;What does this all lead to? We can add up the 70 individual within terms, the 70 individual across terms, and the 70 individual covariance terms to arrive at aggregate growth in productivity (remember, output per FTE). I did this for the 4-year period from 2010-2014, but also for all 4-year periods up to 2014. And that is what is in the following figure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_decomp_4.png&quot; alt=&quot;US 4-year Decomposition&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Similar to the last post, you can see that the combined “across” terms are negative recently. This drags down aggregate growth. The shift of workers out of government, legal services, hospitals, etc.. and into construction, admin, and retail pulls down aggregate growth. What we also see is that recently the “within” components are declining appreciably. While there are sectors that have growing productivity, this is largely offset by sectors where productivity growth is negative.&lt;/p&gt;
+
+&lt;p&gt;Is that a sign of a permanent change? There is nothing here to tell us that. Some of this is a function of looking at a relatively short 4-year time frame. If I did 10-year calculations, then there is nothing particularly funny-looking about 2014, it is just part of a general decline in “within” industry growth since about 2001.&lt;/p&gt;
+
+&lt;p&gt;One other thing to keep in mind when staring at the dip in “within” growth in 2014 and pondering whether this means we are inevitably doomed to be replaced by robots is that alot of this is driven by a surge in FTE in 2010-2014. This is easiest to see in a figure. Here’s the 4-year rolling growth rates of value-added (output) separate from the 4-year rolling growth rate of FTE’s.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_growth_4.png&quot; alt=&quot;US FTE and VA&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What you can see is that part of the slowdown in growth in productivity (value-added per FTE) is due to the striking growth in FTE reported by the BEA between 2010-2014. The economy is adding workers, or hours, or both very rapidly, while output growth is not growing any more rapidly than normal. This makes productivity fall. If you look at individual industries (I’ll spare you any more tables) you get a similar story. Many industries - including ones with high productivity to start with - have FTE growth that far outweighs their value-added growth, which makes their “within” productivity term negative. Why are industries adding FTE if they are not getting more out of them?&lt;/p&gt;
+
+&lt;p&gt;Is this just a prelude to a burst of growth in value-added as these workers get up to speed? Or is this an example of the economy pulling back in relatively low-productivity &lt;em&gt;workers&lt;/em&gt;. We’re now beyond anything I can do with the data I have here. Check back in a few years, and we can see whether this was just a temporary blip, or a real slowdown in “within” industry productivity growth.&lt;/p&gt;
+
+&lt;p&gt;Last, here are the promised data files and Stata script.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/6823742/bea_ip_data.dta&quot;&gt;BEA Value-added&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/6823742/bea_fte_data.dta&quot;&gt;BEA FTE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/6823742/2016-05-10-BEA-Setup.do&quot;&gt;Stata do-file&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 11 May 2016 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Technology versus the Distribution of Workers in Aggregate Productivity</title>
@@ -811,37 +1469,6 @@ N                              72
 
 </description>
         <pubDate>Thu, 28 Jan 2016 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>The Declining Marginal Product of Capital</title>
-        <link>https://growthecon.com/blog/the-declining-marginal-product-of-capital/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/the-declining-marginal-product-of-capital/</guid>
-        <description>&lt;p&gt;A few weeks ago I &lt;a href=&quot;https://growthecon.wordpress.com/2015/11/24/describing-the-decline-of-capital-per-worker/&quot;&gt;posted&lt;/a&gt; about the recent decline in capital per worker in the U.S. The short summary is that from 2009-2013 capital per worker has been &lt;i&gt;shrinking&lt;/i&gt;, and this is at odds with most of historical experience. This shrinking capital per worker contributes to higher measured productivity growth.&lt;/p&gt;
-&lt;p&gt;The illustrious &lt;a href=&quot;http://www.bus.lsu.edu/achanda/&quot;&gt;Areendam Chanda&lt;/a&gt; asked, in response, what the marginal product of capital looked like given the decline in capital per worker in this series. This is straightforward to calculate given the BLS data, and it shows what I think is an interesting pattern.&lt;/p&gt;
-&lt;p&gt;First, I calculate the MPK as&lt;/p&gt;
-&lt;p align=&quot;center&quot;&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?MPK = \alpha \frac{Y}{K}&quot; alt=&quot;MPK = \alpha \frac{Y}{K}&quot; /&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?{\alpha}\inline&quot;/&gt; is capital&#39;s share of output. If the world is roughly Cobb-Douglas, this should describe for us the extra amount of output we could get from one additional unit of capital. This is an aggregate concept, and doesn&#39;t necessarily map to any specific use of capital (e.g. the marginal product of a laptop can be different than the marginal product of a shovel). This is the marginal product of dumping an extra unit of homogenous ``capital&#39;&#39; into the economy.&lt;/p&gt;
-&lt;p&gt;Here&#39;s the figure showing the time path from 1960 to 2013:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/fig_MPK_1960.png&quot; alt=&quot;Marginal Product of Capital&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;In terms of the recent decline in capital per worker, the uptick in the actual series (black line) from 2000-2013 makes some sense. Declining capital per worker should be associated with a higher return on capital. But what appears to be true is that the recent uptick in MPK is driven by a change in capital&#39;s share in output. I plotted in gray an alternative MPK that assumes capital&#39;s share is constant at 0.31 (a rough long-run average), and as you can see this continues the downward trend of the prior decades. The uptick is due almost entirely to the increase in capital&#39;s share of output.&lt;/p&gt;
-&lt;p&gt;What seems far more interesting in this figure is the general drift downward in the MPK since 1960. I can come up with two different interpretations of this, which depend a lot on the time frame you consider.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Secular shift in MPK:&lt;/b&gt; Essentially, interpret this as evidence of some kind of sustained, secular change in the US economy. The drift down in the MPK isn&#39;t consistent with the US being on a balanced growth path (BGP). As a quick reminder, traditionally a BGP is a situation where GDP per worker is growing at a roughly constant rate, the return on capital (MPK) is constant over time, and the share of output going to capital is constant over time.&lt;/p&gt;
-&lt;p&gt;And we almost always presume that the US is on a BGP. I will be telling my undergrads this in a week or so, I&#39;m sure. Almost every growth model is written so that it delivers a BGP eventually, because people feel that this represents what we see in the data. And when they say ``BGP&#39;&#39; in their model, they almost always mean that the MPK is constant.&lt;/p&gt;
-&lt;p&gt;In a standard Solow model, the steady state is a BGP, and the model tells us what determines the MPK on that BGP.&lt;/p&gt;
-&lt;p align=&quot;center&quot;&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?MPK = \alpha\frac{n + g + \delta}{s}&quot; alt=&quot;MPK = \alpha\frac{n + g + \delta}{s}&quot; /&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?{\alpha}\inline&quot;/&gt; is capital&#39;s share of output, &lt;img src=&quot;http://latex.codecogs.com/png.latex?{n}\inline&quot;/&gt; is population growth, &lt;img src=&quot;http://latex.codecogs.com/png.latex?{g}\inline&quot;/&gt; is productivity growth, &lt;img src=&quot;http://latex.codecogs.com/png.latex?{\delta}\inline&quot;/&gt; is the depreciation rate, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?{s}\inline&quot;/&gt; is the savings rate. Note, this equation is for the MPK in steady state, not necessarily at any given point in time, but it is useful for thinking about what might drive the decline in MPK.&lt;/p&gt;
-&lt;p&gt;The steady decline in the MPK over time is consistent with declining &lt;img src=&quot;http://latex.codecogs.com/png.latex?{n}\inline&quot;/&gt; (because capital&#39;s marginal product is lower when there are fewer people around), declining &lt;img src=&quot;http://latex.codecogs.com/png.latex?{g}\inline&quot;/&gt; (slower productivity growth), and higher &lt;img src=&quot;http://latex.codecogs.com/png.latex?{s}\inline&quot;/&gt; (more savings). In this story we are transitioning from the immediate post-war era of relatively rapid population and technological change, to a new era of relatively low population and technological growth.&lt;/p&gt;
-&lt;p&gt;It&#39;s worth remembering here that the MPK is calculated using the BLS data, which excludes the government sector and the residential housing stock. So this represents a decline in the non-residential-housing MPK.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Return of MPK to Long-run trend:&lt;/b&gt; But from a long, long-term perspective, maybe the decline in MPK since 1960 is just a reversion to a steady state value? The MPK should be roughly a proxy for the return on capital. One other rough proxy for that is the earnings yield on the S&amp;amp;P 500, which represents how much you get in earnings for buying a ``unit&#39;&#39; of capital by purchasing a basket of stocks. The figure below, which I grabbed from Brad DeLong&#39;s &lt;a href=&quot;http://www.bradford-delong.com/2015/02/i-understand-where-martin-feldstein-starts-i-do-not-understand-where-he-ends-up-focus.html&quot;&gt;site&lt;/a&gt;, plots this earnings yield from 1880 until today.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/fig_yield.png&quot; alt=&quot;SP Earnings Yield&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;From this it seems to me that the earnings yield has a ``normal&#39;&#39; level of about 6%, and that while there are sustained deviations from this value, it always appears to head back to 6%. The first figure shows that MPK has been declining from 1960 until now, matching the decline in the earnings yield from rouhgly 1970 until today. Was the MPK just on walkabout, and is coming back to its long-run BGP level? And no, I&#39;m not terribly worried about the fact that the MPK is always higher than the earnings yield. They are both proxies, so the fact they don&#39;t agree on levels isn&#39;t terribly meaningful.&lt;/p&gt;
-&lt;p&gt;The earnings yields suggests that what is abnormal about the figure for MPK is the high values in the 60&#39;s and 70&#39;s, not the low values now. The S&amp;amp;P evidence is consistent with that, although the match-up is imperfect. Why was the MPK so high in the 1960&#39;s, while the earnings yield didn&#39;t rise until the 1970&#39;s?&lt;/p&gt;
-&lt;p&gt;Regardless, in this interpretation, the steady state MPK has stayed roughly the same, but for some reason we deviated in the 60&#39;s and 70&#39;s to having a high MPK. Perhaps it was atypical shocks to productivity (over and above the regular trend growth rate &lt;img src=&quot;http://latex.codecogs.com/png.latex?{g}\inline&quot;/&gt;), or atypical shocks to population growth (Baby Boomers?), and we&#39;re now coming back down to normal.&lt;/p&gt;
-&lt;p&gt;The caveat here is that the S&amp;amp;P earnings yield might be a bad comparison for the MPK. But given that the MPK is ex-residential-housing-capital and ex-government, perhaps not.&lt;/p&gt;
-&lt;p&gt;I don&#39;t know that there is a way to distinguish between the two stories, not without doing more research that I don&#39;t have time to do right now. Without taking a firm stand on this, one important point here is that the explanation depends crucially on what you take to be ``normal&#39;&#39;. And that depends in part on how far back you graph the data. The S&amp;amp;P data suggests a different story than the MPK series (and the MPK series doesn&#39;t go back any further because the BLS doesn&#39;t have the requisite data any further back). I guess it is a caution that the starting point of your data series is not necessarily the same thing as the ``starting point&#39;&#39; of the economy.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 20 Jan 2016 21:17:16 -0600</pubDate>
       </item>
     
   </channel>
