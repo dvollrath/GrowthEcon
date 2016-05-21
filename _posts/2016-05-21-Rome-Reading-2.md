@@ -1,0 +1,22 @@
+---
+layout: post
+title: Roman History Reading List II
+published: true
+category: feed
+---
+
+A quick follow-up to last December's original [Roman History Reading List](https://growthecon.com/blog/roman-history-reading/), which turned out to be pretty popular. As before, this is "hobby reading" for me, and I make no claims about these lists being definitive. But if you are interested in dipping into this area, the lists will be helpful. 
+
+1. Theodor Mommsen's [The History of Rome](http://amzn.to/1ORh3Rr) is one of the all-time classics. I found his writing riveting, and as a general overview of the events leading up to the end of the Republic it is a fantastic place to start. Some of Mommsen's conclusions have not held up to scrutiny, but that is a small price to pay here. The link is to a translation that abridges Mommsen to the era of the end of the Republic (133BC to roughly 31BC), and abridges further when the translators feel the details are not necessary. Not having read Mommsen before, I didn't mind. One day I want to go for the ["full Mommsen"](http://amzn.to/1W8JxIE), but that might have to wait a few years.
+
+2. Erich Gruen's [The Last Generation of the Roman Republic](http://amzn.to/1Tr0qbQ) is another excellent book. More narrowly focused than others, it concentrates on the supposed "inevitability" of the end of the Roman Republic. He comes to the conclusion that it was more a horrific mistake like the onset of WWI than the result of a creeping internal rot. While you can easily skim a few of the middle chapters, the blow by blow account of the political wrangling going on in the months leading up to Caesar crossing the Rubicon is unmatched. I was physically tense reading it.
+
+3. Adrian Goldsworthy's [Caesar: Life of a Colossus](http://amzn.to/1NDYQq4) obviously digs into Caesar's individual story more deeply. The one very redeeming quality of this book is the consistent reminder that no one knew Caesar was going to be, well, Caesar. He studiously avoids looking for "signs" in Caesar's youth that foreshadow his inevitable rise. On the down side, this is very much the work of a military historian, so for me the narrative drags as he dissects the tactics of various Gallic battles.
+
+4. Sallust's [The Catiline Conspiracy](http://amzn.to/1NDZns0) is one of the more accessible ancient texts (or at least this translation is). You do have to keep reminding yourself that Sallust has an agenda. I'm not even sure I know what it is, but he is writing to try and establish a narrative about what actually happened leading up to the fall of the Republic. 
+
+5. Robert Harris's [Imperium](http://amzn.to/25fc7xb), [Conspirata](http://amzn.to/1NDZBiT), and [Dictator](http://amzn.to/1YMhsEY) are historical fiction that presumes to tell Cicero's story from the perspective of his main servant, Tiro. One of the big advantages of reading history this way is that it cements the characters in your head more solidly. I have much better recall of secondary players in this era thanks to Harris. And the books are fun, given that they don't feel compelled to be exhaustive. But they do contribute to the overall inflation of Cicero's importance. Cicero is more George Will than George Washington in the grand scheme of things.
+
+6. Dan Carlin did an epic series of [podcasts](http://www.dancarlin.com/product/hardcore-history-death-throes-of-the-republic-series/) telling the story of the fall of the Roman Republic. Carlin is a *great* story-teller, and given that this runs probably 10 hours in total, it is fantastic for a long trip. This isn't original history, this is Carlin consolidating lots of the secondary analyses I've linked to. Much of the podcast is like an extended reading of Tom Holland's [Rubicon](http://amzn.to/25fd5cZ), but that is no crime as the book is excellent.
+
+It has become nearly impossible to *not* draw analogies between this period of Roman history and the current political climate in the U.S. I won't pretend to have some kind of grand insight given the reading I've done. But if you are looking to finish the sentence "Trump is just like....", then the answer you are looking for is not Caesar, Pompey, Brutus, or other big names in the story. You're looking for Clodius Pulcher. Read the Gruen book for an excellent discussion of the underlying motivations of Clodius' supporters and his ability to use that support to his advantage.
