@@ -5,7 +5,62 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Mon, 04 Jul 2016 16:16:35 -0500</pubDate>
+    <pubDate>Mon, 25 Jul 2016 12:22:37 -0500</pubDate>
+    
+      <item>
+        <title>Evidence on Violence and Ethnic Groups in Africa</title>
+        <link>https://growthecon.com/blog/Ethnic/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Ethnic/</guid>
+        <description>&lt;p&gt;At the rate I’m going this summer, I will soon be down to one blog post a year, and it will be about a paper that came out in 2008. I swear to my coauthors that this is because I’m working &lt;em&gt;so damn hard&lt;/em&gt; on [fill in name of joint project here], and will soon have those [tables/drafts] prepared.&lt;/p&gt;
+
+&lt;p&gt;A few things have recently caused me to come up for air, and one was a little back and forth that took place on Twitter over a paper by Stelios Michalopoulos and Elias Papaioannou (MP) on “&lt;a href=&quot;https://www.aeaweb.org/articles?id=10.1257/aer.20131311&quot;&gt;The Long-run Effects of the Scramble for Africa&lt;/a&gt;”. Bill Easterly linked to a brief &lt;a href=&quot;https://t.co/zbQ75Ri41J&quot;&gt;write-up&lt;/a&gt; of the paper from the AER, where it was just published. This led to several responses from others critical of several aspects of the MP paper. I had a brief back and forth with some people myself.&lt;/p&gt;
+
+&lt;p&gt;First, a disclaimer. I am friendly with both Stelios and Elias. I see them at conferences, I ask about their kids, they ask about mine. I can spell their names without checking online. Stelios and I overlapped at grad school for four years. I believe I’m going to give you a fair assessment of their paper and the mini-controversy about it. But you have full information.&lt;/p&gt;
+
+&lt;p&gt;One point that was made about the paper was that the use of the term “homeland” is problematic, particularly in Africa. Economists, and I know I do this, tend to get exapserated by people picking over the semantics. Who cares what they call them? MP define exactly what they mean by “homeland” in the paper. But there are connotations to words, and no matter how precisely you define something in a paper, those connotations exist. “Homeland” was a term used by the South African apartheid government for the areas where black Africans were allowed to live. Referring to “homelands” in Africa can make it sound like there are places where certain groups are supposed to live, forever and always. It was a poor choice by MP to use it.&lt;/p&gt;
+
+&lt;p&gt;More broadly, the issue with “homelands” bleeds into criticism of the idea that it is possible to fix boundaries on an ethnicity at all. I don’t have the knowledge or time to work through the history of thought on this, but suffice it to say that today if you asked scholars working on Africa (I did e-mail with a few) about ethnic homelands, they’d all say - paraphrasing - “that’s not a thing”.&lt;/p&gt;
+
+&lt;p&gt;And yet MP find what they find. Poor language choices don’t invalidate the data. Empirically, it helps to separate MP’s work into two pieces. First, split ethnicities have predictive power for incidents of violence. Second, we can interpret this as a &lt;em&gt;causal&lt;/em&gt; impact of splitting an ethnicity. Asserting the first does not imply the second. And denying the second does not invalidate the first. But it will be worth thinking more about what exactly they mean when they say a split ethnicity. More on that as we go.&lt;/p&gt;
+
+&lt;p&gt;On predictive power, their succession of regressions is hard to ignore. MP look at 1,212 ethnic/country observations. There is one observation for the Lobi in the Ivory Coast, and a separate observation for the Lobi in Burkina Faso, for example. The mapping of ethnic groups to countrys comes from a map done by Murdock (1957), and that has been used extensively by these authors and others in studying African development. An ethnic group that is fully contained within a country would have one observation only. Then MP use the &lt;a href=&quot;http://www.acleddata.com&quot;&gt;ACLED&lt;/a&gt; database, which has information on political violence in Africa from 1997 to 2013. Importantly, it contains location information, and MP use that to assign acts of political violence to the ethnic areas defined by Murdock.&lt;/p&gt;
+
+&lt;p&gt;Each ethnic/country observation gets a variable called SPLIT, which is 1 for both partitioned groups. So the Lobi/Ivory Coast observation would have a 1, and so would the Lobi/Burkina Faso. A group wholly contained in a country would get a zero. Then MP run a series of regressions of different measures of political violence against this SPLIT variable, controlling for lots of other things.&lt;/p&gt;
+
+&lt;p&gt;MP are not looking only at incidents of violence that occur in partitioned groups, they are comparing the amount of violence in partitioned groups to non-partitioned groups. It’s helpful here to remember that “running a regression” essentially means “compare the average outcome for two sets of observations”. The average level of political violence in partitioned groups/countries (SPLIT = 1) is higher than the level of political violence in non-partitioned groups/countries (SPLIT = 0). “Controlling for lots of other things” means that the average level of political violence is still higher in partitioned groups even if you only look at group/countries that all share a common set of characteristics (other than being partitioned). An important control here are the country fixed effects, which means their results show that there is more political violence in partitioned groups in a country compared to other non-partitioned groups in that same country.&lt;/p&gt;
+
+&lt;p&gt;Those measures of political violence are things like: the count of violent incidents, the number of deadly incidents, the total casualties from political violence, the amount of civil violence, or the number of more formal battles (but not necesseraily riots). In each case, partitioned groups had higher levels of violence in this time period.&lt;/p&gt;
+
+&lt;p&gt;What would be nice to see is the predictive power of just the SPLIT variable. MP’s full regressions have adjusted R-squares of about 45%, of they explain about half of the variation in political violence - but that is the explanatory power of &lt;em&gt;all&lt;/em&gt; the variables. How important is SPLIT by itself?&lt;/p&gt;
+
+&lt;p&gt;Regardless of that answer, it’s crucial to remember that saying there is a statistically significant effect of partitioning, or saying that MP can explain 45% of the variation in violence, does not mean &lt;em&gt;all&lt;/em&gt; partitioned groups are &lt;em&gt;by definition&lt;/em&gt; more violent. The Twitter dicussion was thick with examples of partioned groups that did not tend to have violence occur. Okay, great. MP aren’t saying that partitioning forces you to have violence, they are saying that partitioned places are more likely to exhibit violence. It’s a probability statement.&lt;/p&gt;
+
+&lt;p&gt;If you want to criticize MP’s work on the predictive power of ethnic partitioning, then I think the main issue would be with Murdock’s underlying map. We don’t exactly know what Murdock used to define these borders, and if you look at his map, they can seem as arbitrarily drawn as any political boundary. Maybe he got these wrong, and what MP take to be “ethnic homelands” are not indicative of actual ethnic groupings now (or in 1957 for that matter). This reaches back to the point from the beginning - maybe Murdock’s boundaries don’t indicate anything real about ethnic groups.&lt;/p&gt;
+
+&lt;p&gt;Does that change the interpretation of MP? Sure. Their regressions show that areas defined by George Murdock that are divided by political boundaries are prone to violence. Does that necessarily mean that this is due to ethnic-based conflict? Perhaps Murdock drew his groups based on some observed characteristic of violence in 1957, and so those places were bound to be violent anyway? MP can offer some evidence on this, as when they use alternative data on ethnic-based conflicts (from the &lt;a href=&quot;http://www.epr.ucla.edu&quot;&gt;EPR&lt;/a&gt; database) it shows that partitioned Murdock-groups do indeed have more ethnic-based conflict.&lt;/p&gt;
+
+&lt;p&gt;And nothing about MP’s results is contingent on the ethnic population of Murdock’s groups being tied to that specific geographic location over time. The violence within one of Murdock’s partitioned group could be from an entirely different group moving in over time, and no one from the original group even lives there any more. Ethnic groups can be fluidly moving across borders, within countries, and all over the place. But there is something about partitioned areas from Murdock’s map that tends to have more violence than other places.&lt;/p&gt;
+
+&lt;p&gt;Alright, let’s say that MP have established the predictive power of partitioning for future conflict. Does their work imply that the partitioning was &lt;em&gt;causal&lt;/em&gt;. That is, was it the partitioning itself that created the violence. You might imagine that partitioning would make a border &lt;em&gt;less&lt;/em&gt; violent, as the people on either side are closely related. So it isn’t obvious how the causality would go here.&lt;/p&gt;
+
+&lt;p&gt;MP argue that their results do show a causal impact of partitioning, based on the arguemnt that the partitioning was done quasi-randomly by European colonists starting with the Berlin Conference in 1884-85. The money quote for them is from Robert Cecil.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We have been engaged in drawing lines upon maps where no white man’s feet have ever trod; we have been giving away mountains and rivers and lakes to each other, only hindered by the small impediment that we never knew exactly where the mountains and rivers and lakes were.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thus, for MP the partitioning of one of Murdock’s ethnic groups was done blindly by Europeans without any knowledge of the location of those groups to begin with. From the perspective of the groups, this was done randomly. Hence the characteristics of partitioned and non-partitioned ethnicities do not vary systematically - which MP verify on several geographic and historical dimensions - and hence the estimated effect of partitioning is in fact causal.&lt;/p&gt;
+
+&lt;p&gt;If you take this seriously, then finding that this is causal is another strong piece of evidence in the “history matters” or “path dependence” literature that finds persistent effects of historical choices on current development. Which is a polite way of saying that colonization - the historical choice made by colonizers to exploit certain areas of the globe and not others - created lasting damage to colonies. That damage may be in terms of depressed investment in human/physical capital, or may be in institutions and political structures that are built for corruption rather than development. In this MP case, the damage was from arbitrarily dividing some ethnic groups, creating frictions across borders, leading to violence that disrupts development.&lt;/p&gt;
+
+&lt;p&gt;If you want to stay skeptical of the MP causality claim, then again I think your target is Murdock. While the Berlin Conference made decisions blindly, Murdock knew those boundaries to a large extent, and may have drawn his lines specifically with them in mind. Perhaps he retrofitted the ethnic mapping to the boundaries, and he presumed that violent areas must be partitioned?&lt;/p&gt;
+
+&lt;p&gt;I think that’s a stretch, but even if you want to dismiss the causality claims, that doesn’t negate the predictive power of the MP regressions. If you want to tell me that a more contextual study of these conflicts will indicate that they are not ethnicity-based at all, but due to fights over limited resources, or instigation from outside sources, or just randomly bad luck, fine. But you still have to explain why these things tend to occur (but not always) in areas where Murdock’s groups were partitioned. The data indicates that there is only about a 5-10% chance that this is just a coincidence.&lt;/p&gt;
+
+&lt;p&gt;Yes, the context of the individual conflicts is vastly more important than MP’s paper, if what you are trying to do is solve a specific conflict. You wouldn’t call them to negotiate a cease-fire between militants and the government in, well, any country anywhere. But understanding that partitioning of the Murdock groups is associated with violence is informative - without invalidating any of the contextual information.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Jul 2016 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>The Early Transformation of Britain&#39;s Economy</title>
@@ -1403,144 +1458,6 @@
 &lt;p&gt;Perhaps not a “Duh” question after all.&lt;/p&gt;
 </description>
         <pubDate>Thu, 18 Feb 2016 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>Making Inferences about Tropics, Germs, and Crops</title>
-        <link>https://growthecon.com/blog/oid-test/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/oid-test/</guid>
-        <description>&lt;p&gt;One of the long-running arguments in growth is “geography versus institutions”. A lot of ink and a tiny amount of computing power was thrown at this question. The early stages of this involved a lot of cross-country regressions that attempted to figure out empirically whether measures of institutions or geography had explanatory power for GDP per capita. (By the way, I’m talking here just about the economic growth literature’s take on this. The general question goes back centuries.)&lt;/p&gt;
-
-&lt;p&gt;A tweet by &lt;a href=&quot;https://twitter.com/GarettJones&quot;&gt;Garett Jones&lt;/a&gt; recently reminded me of one of the entries in this literature, Bill Easterly and Ross Levine’s “&lt;a href=&quot;https://ideas.repec.org/a/eee/moneco/v50y2003i1p3-39.html&quot;&gt;Tropics, Germs, and Crops&lt;/a&gt;” paper. EL want to assess the role of geography in explaining cross-country incomes per capita. Their main questions are summed up nicely in the abstract.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Does economic development depend on geographic endowments like temperate instead of tropical location, the ecological conditions shaping diseases, or an environment good for grains or certain cash crops? Or do these endowments of tropics, germs, and crops affect economic development only through institutions or policies?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Their conclusion is that geography has no effect, other than through its relationship to institutions. This conclusion, though, doesn’t follow from the empirical tests they run. Let’s run through the empirics on these questions, and see how to answer them.&lt;/p&gt;
-
-&lt;p&gt;I’m going to do this with precisely the dataset that EL use. I don’t recall when or where I picked up the data, but I believe it was from Easterly’s old website, where he had a nice set of links to datasets. Regardless, it’s the right dataset because I can perfectly replicate their results. You can download my version &lt;a href=&quot;https://dl.dropboxusercontent.com/u/6823742/east_levine_2003.dta&quot;&gt;here&lt;/a&gt; and play around with it yourself.&lt;/p&gt;
-
-&lt;h3 id=&quot;is-geography-even-related-to-gdp-per-capita&quot;&gt;Is geography even related to GDP per capita?&lt;/h3&gt;
-&lt;p&gt;First we have to establish that geography has a relationship to income per capita in the first place. If it doesn’t, the answers are clear. EL’s three primary measures of geography: (log) settler mortality, latitude, and a dummy for being landlocked.&lt;/p&gt;
-
-&lt;p&gt;All these are questionable as measures of “geography”, and they are certainly incomplete. But for the purposes of this exercise, we’ll stick with them. Settler mortality is from &lt;a href=&quot;https://ideas.repec.org/a/aea/aecrev/v91y2001i5p1369-1401.html&quot;&gt;Acemoglu, et al&lt;/a&gt;, and is intended to capture the nature of the disease environment (of Europeans, at least). Latitude is supposed to capture whether the country is tropical or not, and landlocked is there to account roughly for access to shipping. The “Crops” of the title of the paper could be added by including a series of dummies for producing different crops, but including those doesn’t really change the point of this post, so I’m going to skip them for brevity’s sake.&lt;/p&gt;
-
-&lt;p&gt;Regress log income per capita on the three geography measures. You get&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;------------------------------------
-                              .   
-Dep var: GDP p.c.            b/se   
-------------------------------------
-Log Settler Mortality      -0.610***
-                          (0.111)   
-Landlocked                 -0.711   
-                          (0.359)   
-Absolute Latitutde          2.377*  
-                          (1.027)   
-Constant                    9.695***
-                          (0.612)   
-------------------------------------
-R-squared                   0.509   
-N                              72   
-------------------------------------
-* p&amp;lt;0.05, ** p&amp;lt;0.01, *** p&amp;lt;0.001
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;A quick apology that the results aren’t formatted better. That aside, in case you aren’t familiar, the first number listed for each variable is the estimated effect (e.g. -0.610 for settler mortality), and the number in parentheses is the standard error of that estimate. The stars show you whether the estimated effect is statistically significant. So settler mortality is significant at less than 1/10th of 1 percent.&lt;/p&gt;
-
-&lt;p&gt;Anyway, we see a clear effect of two measures of geography: settler mortality and latitude. The R-squared for this regression is 50.9%, meaning half of the variation in GDP per capita is associated with variation in “geography”. At a minimum, it suggests that geography &lt;em&gt;could&lt;/em&gt; explain varation in incomes. But of course we don’t know if this acts only through institutions, or is a direct of geography.&lt;/p&gt;
-
-&lt;h3 id=&quot;is-there-an-indepdent-effect-of-geography-outside-of-institutions&quot;&gt;Is there an indepdent effect of geography outside of institutions?&lt;/h3&gt;
-&lt;p&gt;That’s our second question. This has a clear empirical set-up. Regress GDP per capita on geography &lt;em&gt;and&lt;/em&gt; a measure of institutions. Look at the estimated effect of geography. Is it significant, even with institutions in the regression?&lt;/p&gt;
-
-&lt;p&gt;This is entirely straightforward. The whole point of regressions is to do this kind of thing: separate out the effect of one variable from another. I ran that regression, using the EL measure of institutions, which is pulled from &lt;a href=&quot;http://info.worldbank.org/governance/wgi/pdf/govind.pdf&quot;&gt;Kaufman, Kraay, and Zoido-Lobaton&lt;/a&gt;. This is an averaged index of 6 different measures of “institutions”. I’ve made my views on the silliness of these indices &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-1/&quot;&gt;before&lt;/a&gt;, so I won’t belabor the point here. We’ll just accept it as is for this post.&lt;/p&gt;
-
-&lt;p&gt;Here’s the result:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;------------------------------------
-                            .   
-Dep var: GDP p.c.            b/se   
-------------------------------------
-Log Settler Mortal~y       -0.302** 
-                      (0.102)   
-Landlocked                 -0.530   
-                      (0.291)   
-Absolute Latitutde          0.698   
-                      (0.870)   
-Institutions                1.163***
-                      (0.189)   
-Constant                    8.639***
-                      (0.521)   
-------------------------------------
-R-squared                   0.682   
-N                              72   
-------------------------------------
-* p&amp;lt;0.05, ** p&amp;lt;0.01, *** p&amp;lt;0.001
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can see that institutions are indeed significant (three stars!!). But so is settler mortality (at 1%), and landlocked is actually significant at 10% (but no stars for you!). “Geography matters” here, even after you control for institutions.&lt;/p&gt;
-
-&lt;p&gt;The effect size of geography is definitely smaller than before. Look at the coefficient on settler mortality, which dropped from -0.610 to -0.302. This is showing that some of the effect of mortality on GDP per capita in my first regression was actually just picking up the effect of institutions (and by implication, mortality and institutions are negatively related, as AJR would suggest). But what the regression also shows is that the remaining effect of mortality is still statistically significant. Yes, there is an independent effect of geography on GDP per capita, even controlling for geography’s correlation with institutions.&lt;/p&gt;
-
-&lt;p&gt;Whether the estimate of “Institutions” here is in fact a causal estimate is a different question. We might be concerned that institutions are endogenous, either because GDP per capita improves institutions, or because we’ve left out some other control variable that institutions is picking up on (culture, etc..). And if the estimate of institutions is wrong, then the conclusion about the geography variables could be wrong too.&lt;/p&gt;
-
-&lt;p&gt;So…..&lt;/p&gt;
-
-&lt;h3 id=&quot;does-geography-still-matter-even-if-institutions-are-instrumented&quot;&gt;Does geography still matter even if institutions are instrumented?&lt;/h3&gt;
-&lt;p&gt;Because of this concern about institutions being endogenous, we’d like to find some pure exogenous variation in institutions to use in our empirical analysis. In other words, we’d like to find another variable that both (a) (imperfectly) predicts the level of institutions and (b) is unrelated to the problematic unobserved variation in GDP per capita. We want an instrument.&lt;/p&gt;
-
-&lt;p&gt;If we had such an instrument (IV), the process here is clear. We’d regress institutions on that IV and get the fitted values, which would represent variation in institutions that is &lt;em&gt;by assumption&lt;/em&gt; unrelated to the problematic unobserved variation in GDP per capita. Regress GDP per capita on this fitted value of institutions, and &lt;em&gt;et voila&lt;/em&gt;, we’ve got a true estimate of the effect of institutions. We could run the regression with the geography variables included as well, and see if geography matters for GDP per capita once we control for &lt;em&gt;instrumented&lt;/em&gt; institutions.&lt;/p&gt;
-
-&lt;p&gt;The problem is we need an instrument, and this is where EL run into a problem. The instrument for institutions that they propose to use is exactly the measures of geography: settler mortality, landlocked, and latitude. Which means they &lt;strong&gt;assume&lt;/strong&gt; that these three measures have no relationship to GDP per capita outside of their influence on institutions.&lt;/p&gt;
-
-&lt;p&gt;They answered their question by assuming the answer was no. There is no getting around the fact that condition (b) above is an assumption. There is literally &lt;strong&gt;nothing&lt;/strong&gt; you can do to test if it is true or not. To use settler mortality, landlocked, and latitude as IV’s, you are, without fail, assuming they have no independent effect on GDP per capita.&lt;/p&gt;
-
-&lt;p&gt;But what about this over-identification (OID) test that EL use? Isn’t that evidence that their assumption is correct, and in fact geography has no effect on GDP per capita outside of institutions?&lt;/p&gt;
-
-&lt;p&gt;No.&lt;/p&gt;
-
-&lt;p&gt;Here’s why. The OID test has the following null hypothesis: settler mortality, landlocked, and latitude are &lt;em&gt;jointly&lt;/em&gt; unrelated to unobserved variation in GDP per capita. If you find enough evidence to reject this null, then you have evidence that one or more of your instruments are related to the unobserved variation in GDP per capita. In other words, your assumption is wrong.&lt;/p&gt;
-
-&lt;p&gt;But EL do not reject the null. EL report that they fail to reject the null.&lt;/p&gt;
-
-&lt;p&gt;Repeat after me. Failure to reject the null does not mean the null is true. Failure to reject the null does not mean the null is true. Failure to reject the null does not mean the null is true. Failure to reject the null does not mean the null is true. Failure to reject the null does not mean the null is true. Failure to reject the null does not mean the null is true. Failure to reject the null does not mean the null is true. Failure to reject the null does not mean the null is true.&lt;/p&gt;
-
-&lt;p&gt;This is not evidence that geography does not matter. It’s not. It’s not even kinda-sorta evidence, and well, you know, it probably means that geography doesn’t matter. That’s not how statistics work. There is no evidence, so there is &lt;strong&gt;no&lt;/strong&gt; conclusion to draw. A failure to reject is an absence of information, so you cannot infer anything from it.&lt;/p&gt;
-
-&lt;h3 id=&quot;so-geography-totally-matters-right&quot;&gt;So geography totally matters, right?&lt;/h3&gt;
-&lt;p&gt;Maybe. We don’t know. We haven’t solved the problem we had in the 2nd regression I ran. Our estimated effect of institutions might be biased.&lt;/p&gt;
-
-&lt;p&gt;What is true is that &lt;strong&gt;if&lt;/strong&gt; the true effect of institutions were larger (say a coefficient of 2.22 versus 1.16), then the estimated effects of geography would end up statistically insignificant. How do I know that? Because I can run a regression where I force the coefficient on institutions to be 2.22, and see what happens to the geography variables. Here you go:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;------------------------------------
-                                .   
-Dep var: GDP p.c.            b/se   
-------------------------------------
-Institutions                2.220   
-                              (.)   
-Log Settler Mortal~y       -0.022   
-                          (0.107)   
-Landlocked                 -0.366   
-                          (0.348)   
-Absolute Latitutde         -0.828   
-                          (0.994)   
-Constant                    7.681***
-                          (0.592)   
-------------------------------------
-R-squared                           
-N                              72   
-------------------------------------
-* p&amp;lt;0.05, ** p&amp;lt;0.01, *** p&amp;lt;0.001
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can see that all the geography variables are not statistically significant (no stars!). Why does this happen? Because institutions are now explaining so much, there really isn’t anything “left over” for geography to explain.&lt;/p&gt;
-
-&lt;p&gt;2.22 is the value that EL actually find for the effect of institutions. But how do they get that? By running an IV regression that assumes geography has not effect. It’s circular. If they assume that geography doesn’t matter, then they find a big effect of institutions. And then they use this big effect of institutions to conclude that geography doesn’t matter.&lt;/p&gt;
-
-&lt;p&gt;Take the hypothesis: “Geography does not matter outside of its influence on institutions.”” I can’t prove that hypothesis wrong, certainly not with this data. But using the OID test from the El regressions doesn’t prove that this statement is right.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 07 Feb 2016 00:00:00 -0600</pubDate>
       </item>
     
   </channel>
