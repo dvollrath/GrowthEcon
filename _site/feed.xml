@@ -5,7 +5,90 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Mon, 25 Jul 2016 12:22:37 -0500</pubDate>
+    <pubDate>Wed, 03 Aug 2016 10:25:28 -0500</pubDate>
+    
+      <item>
+        <title>Did Real Manufacturing Output Grow Faster than We Thought?</title>
+        <link>https://growthecon.com/blog/Manuf-Share/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Manuf-Share/</guid>
+        <description>&lt;p&gt;Writing this post was kind of depressing, because all it did was highlight for me how &lt;em&gt;many&lt;/em&gt; things I’ve got in my reading list to think about and digest. I was reading Brad DeLong’s recent &lt;a href=&quot;http://equitablegrowth.org/equitablog/expenditure-shares-price-measurement-and-true-relative-labor-productivity-growth-in-post-wwii-manufacturing-what-the-aggregate-deta-suggest/&quot;&gt;post&lt;/a&gt; on manufacturing’s share in output, and realized that I’ve got about four more posts from Brad stacked up in the queue, along with all the other stuff I’ve been meaning to read more carefully. So, respectfully, Brad, please stop saying interesting things related to growth. I need time to catch up. How about a nice run of posts about the history of monetary policy or something like that?&lt;/p&gt;
+
+&lt;p&gt;DeLong’s motivating fact(s) are about manufacturing’s share of output, both in nominal and real terms. He grabbed the following from the BEA&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/delong1.png&quot; alt=&quot;DeLong Manuf Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and developed the path of the real share by making a crude calculation. As he freely admits in the post, this isn’t exactly how one would want to calculate the real share of manufacturing in output. But, for the purposes of his post, I don’t think it makes a huge difference.&lt;/p&gt;
+
+&lt;p&gt;Anyway, he establishes three main facts that he wants to understand. First, note that the nominal share of manufacturing in nominal output has been declining steadily since the late 1940’s. He gets a value of -1.4% per year as the growth rate of the nominal share. Second, the relative price of manufactured goods (compared to aggregate output) has been declining by -1.4% per year as well. This gives us the final fact, that the real share of manufacturing in real output has not grown (or shrunk) over time, as you can see in the figure.&lt;/p&gt;
+
+&lt;p&gt;DeLong then proceeds to ask himself how to reconcile all of these three facts. What must be true about demand and/or technological change to explain this? And he will come to a conclusion that we are probably not measuing the price decline, and hence the real share of manufacturing, correctly. That will in turn imply that real economic growth has probably been understated over this entire period of time.&lt;/p&gt;
+
+&lt;p&gt;I think DeLong is too quick to make that conclusion, and that there is in fact a way to understand his three facts that does not imply economic growth has been understated. My brain moves a little slower than DeLong’s, so here’s how I worked through his reasoning. First, let the following be the demand curve for real manufacturing goods, in log terms&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln Q^M = \epsilon_I \ln Y - \epsilon_P \ln P^M + \ln D^M&lt;/script&gt;
+
+&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?Q^M\inline&quot;/&gt; is the quantity of real manufactured goods, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y\inline&quot;/&gt; is real income, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?P^M\inline&quot;/&gt; is the relative price of manufactured goods. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_I\inline&quot;/&gt; is the income elasticity of demand for manufactured goods, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_P\inline&quot;/&gt; the price elasticity of demand. &lt;img src=&quot;http://latex.codecogs.com/png.latex?D\inline&quot;/&gt; is just a “demand shifter” to account for anything changing demand for manufactured goods that isn’t related to either real income or the relative price.&lt;/p&gt;
+
+&lt;p&gt;Add &lt;img src=&quot;http://latex.codecogs.com/png.latex?\ln P^M\inline&quot;/&gt; to both sides, and subtract &lt;img src=&quot;http://latex.codecogs.com/png.latex?\ln Y\inline&quot;/&gt; from both sides. That leaves me with&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln Q^M + \ln P^M - \ln Y = (\epsilon_I-1) \ln Y + (1 - \epsilon_P) \ln P^M + \ln D^M.&lt;/script&gt;
+
+&lt;p&gt;The left-hand side is, if you combine the log terms, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\ln Q^M P^M/Y\inline&quot;/&gt;, or the log of manufacturing’s share in nominal income. Also, it’s important to note that the left-hand side can be written as &lt;img src=&quot;http://latex.codecogs.com/png.latex?\ln Q^M/Y + \ln P^M\inline&quot;/&gt;. This is the log of manufacturing’s share of &lt;em&gt;real&lt;/em&gt; income, plus the relative price level of manufactured goods. So it has both the nominal and real share of manufacturing in it.&lt;/p&gt;
+
+&lt;p&gt;To work with this in DeLong’s terms, it will be easiest to talk about growth rates of all of these items. And with everything written in log terms, getting growth rates is straightforward. Let &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{q}^M\inline&quot;/&gt; indicate the growth rate of real manufacturing goods, and define a similar “hat” term for each element of the equation. We’ve got&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + (1 - \epsilon_P) \hat{p}^M + \hat{d}^M.&lt;/script&gt;
+
+&lt;p&gt;Notice that I’ve done a little rearranging there. Inside the parentheses on the left is the growth rate of manufacturing’s &lt;em&gt;real&lt;/em&gt; share of &lt;em&gt;real&lt;/em&gt; income. That gets added to the growth rate of the relative price of manufacturing to deliver the growth rate of manufacturing’s share of nominal income.&lt;/p&gt;
+
+&lt;p&gt;Let’s go back to DeLong’s pieces of information. First, the growth rate of the nominal share of manufacturing is -1.4% per year. This means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) + \hat{p}^M = -0.014\inline&quot;/&gt;. Second, he says that the growth rate of the relative price of manufactured goods is also -1.4% per year, meaning that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{p}^M = -0.014\inline&quot;/&gt;. Last, the data said that the growth rate of the manufacturing’s real share of real output was zero, meaning that &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) = 0\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then he goes to work trying to understand how all of those facts can be true at the same time, given the above equation. Here are two possibilities that DeLong dismisses as not making sense - and I think he’s right to dismiss these possibilities.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;If the income elasticity is 1 and the price elasticity is 1, then &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) + \hat{p}^M = \hat{d}^M\inline&quot;/&gt;. Which means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?0 + -0.014 = \hat{d}^M\inline&quot;/&gt;. In other words, there must have been a sustained shift in the demand curve for manufactured goods over the last 70 years. We just decided we didn’t like manufactured stuff as much any more. DeLong says this doesn’t make sense. That’s probably right, but hold onto that thought about a shift in the demand for manufactured goods - it will show up again later in the post.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If the income elasticity is 1 and the price elasticity is 0, then &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) + \hat{p}^M  = \hat{p}^M + \hat{d}^M\inline&quot;/&gt;. Then, plugging in the facts, we have that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{d}^M = 0\inline&quot;/&gt;. DeLong says this helps, because it doesn’t require us to assume any kind of exogenous shift in demand for manufactured goods. But, it does require us to assume that the price elasticity is zero, which DeLong says doesn’t make sense because manufactured stuff is useful, so you’d expect that demand would go up if the price fell. That’s probably right, too - the price elasticity probably isn’t zero.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;DeLong then asks how this is all supposed to work if we instead assume that the income elasticity is 1, the price elasticity is something more reasonable like 1/2, and we dismiss the idea of a purely exogenous shift in manufacturing demand. And this leads him to a problem with reconciling the data. With those assumptions, it means that the growth rate equation is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{q}^M - \hat{y}) + \hat{p}^M  = 0.5 \hat{p}^M.&lt;/script&gt;
+
+&lt;p&gt;In this equation, it is impossible for DeLong’s facts to all be true simultaneously. That is, we can’t have the growth rate of the real share (in the parentheses) be zero, the growth rate of the nominal share (the entire left-hand side) be equal to -0.014, while at the same time &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{p}^M = -0.014\inline&quot;/&gt; on the right-hand side.&lt;/p&gt;
+
+&lt;p&gt;How to fix this? DeLong suggests that both his second and third facts are probably wrong. If the relative price of manufacturing actually fell by 2.8% per year, so &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{p}^M = -0.028\inline&quot;/&gt;, and the &lt;em&gt;real&lt;/em&gt; share of manufacturing actually &lt;em&gt;grew&lt;/em&gt; by 1.4% a year, so &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) = 0.014\inline&quot;/&gt;, then everything works out. Specifically, &lt;img src=&quot;http://latex.codecogs.com/png.latex?0.014 + -0.028 = 0.5\times-0.028\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;So if we assume a reasonable price elasticity of 1/2, and if we take the growth rate of the nominal share of manufacturing (which is relatively easy to measure) as given, then we cannot do anything but conclude that the growth rate of the real share of manufacturing was in fact 1.4% per year, not zero. Over the roughly 70 years DeLong is talking about, that means the real share of manufacturing should be about 2.5 times higher than we observe in his graph. It would be about 28% of real output today, not 12%.&lt;/p&gt;
+
+&lt;p&gt;With the relative price of manufacturing falling twice as fast as we thought, and real manufacturing output growing relative to real output, this implies that we really are better off than we thought. I won’t get into the mechanics of this calculation here, as the post is already getting long, but it would imply that real output growth was actually about 0.3 percentage points higher per year over this period. Real output grew at about 3 percent per year, so that’s a pretty big difference.&lt;/p&gt;
+
+&lt;p&gt;But here is where I think DeLong’s gone one step too far. He focuses on the price elasticity, but assumes the &lt;em&gt;income&lt;/em&gt; elasticity is equal to one in all cases. His alternative scenario where growth in the real manufacturing share and faster true growth in real output is contingent on this assumption. Let me propose an alternative way of reconciling the numbers that doesn’t imply anything is mismeasured.&lt;/p&gt;
+
+&lt;p&gt;Let’s use DeLong’s price elasticity of 1/2. I don’t have any strong reason to quibble with that number. And let’s retain the assumption that there is no exogenous demand shift. But rather than assuming the income elasticity is one, let’s leave it as a free variable. So now the growth rate equation is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + 0.5 \hat{p}^M.&lt;/script&gt;
+
+&lt;p&gt;Take the original facts as correct, and let me add one additional fact. The growth rate of real income reported by the BEA over the same time period as DeLong is working with is 3% per year. This is the growth rate of aggregate real income, not per capita. Putting all this in our equation gives me&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;0 + -0.014 = (\epsilon_I-1) 0.03 + 0.5 \times -0.014&lt;/script&gt;
+
+&lt;p&gt;and everything makes sense if &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_I = 0.77\inline&quot;/&gt;. That is, if the income elasticity of demand for manufactured goods is a little less than one. An elasticity less than one means that if your income goes up by 10%, your expenditure on manufactured goods rises by less than 10%. It goes up, but not by a similar percent. This income elasticity less than one acts a lot like the “demand shift” that DeLong dismisses in his first scenario. If you like, I’ve just given a very specific form to that demand shift.&lt;/p&gt;
+
+&lt;p&gt;Is that reasonable? I sure think it is. It’s entirely consistent with the literature on structural change for rich countries like the US. Income elasticities for manufacturing less than one reflect people’s preferences having some kind of “limit” on the amount of manufactured goods they want to consume. I’ve used the refrigerator example before. If we get even more productive at producing refrigerators, then they will become less costly and/or become higher quality. But that doesn’t mean I’ll buy another one. I’ve got two at my house already, and it would take a &lt;em&gt;massive&lt;/em&gt; drop in price or increase in quality to get me to buy another one, even just to replace the existing ones. Similarly, my income is due to go up in October thanks to the raise pool at UH this year. I’m not using it to buy a fridge, or probably many manufactured goods at all. I’ll use it to help pay for a trip we’re taking in December.&lt;/p&gt;
+
+&lt;p&gt;So the original facts that DeLong lays out are entirely consistent, including the fact that the real share of manufacturing in output has stayed constant over time. We don’t need to assume that prices fell faster than we thought, or that real manufacturing output grew faster than we thought. And thus output growth isn’t understated.&lt;/p&gt;
+
+&lt;p&gt;DeLong could still be right, of course. This is all dependent on competing assumptions about the size of elasticities. If the income elasticity is actually one, then DeLong’s story is more plausible than mine. I think I’m on the right track, but I don’t have the time at the moment to collect various references to back up my income elasticity argument.&lt;/p&gt;
+
+&lt;p&gt;One last interesting note. The income elasticity doesn’t have to be constant over time. In fact, I’d guess it was closer to one, if not &lt;em&gt;higher&lt;/em&gt; than one, back in the early part of the period DeLong considers, the 1940’s and 1950’s. If the income elasticity is bigger than one, then this means DeLong’s adjustments for that period would be even bigger than what he calculated in his post. I have to think harder about this, but I’m wondering if this is some way to reconcile/explain Robert Gordon’s facts about rapid measured productivity growth in those decades relative to the current period of time. Stay tuned.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 03 Aug 2016 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Evidence on Violence and Ethnic Groups in Africa</title>
@@ -1423,41 +1506,6 @@
 &lt;p&gt;What all this means is that you cannot just look at the projected growth rate of a plan to assess it. Friedman isn’t wrong because he projects 5% growth, but he’s probably wrong because he is assuming AS policies are going to have big current effects. Kocherlakota isn’t wrong because he projects 5% growth either, but his plan is more plausible because it is based in large part on AD policies. Jeb! wasn’t wrong because he proposed 4% growth, he was wrong because of how he proposed to get there. You can accelerate growth in the short run, but you have to use AD policies to do that. AS policies deliver higher living standards in the long run, but it takes them a long time to ramp up to that higher level.&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 Feb 2016 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>Absolute Changes in Living Standards</title>
-        <link>https://growthecon.com/blog/Absolute-Growth/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Absolute-Growth/</guid>
-        <description>&lt;p&gt;This may or may not be interesting, I’m not entirely sure myself. But I got a question from an undergrad in my economic growth course, and it was one of those questions that kind of catches you off guard because you hadn’t really thought about it. The question was - paraphrasing - “Why do we look at growth rates rather than how much GDP per capita actually changed?”.&lt;/p&gt;
-
-&lt;p&gt;“Duh, it’s a course on growth” is what I did &lt;strong&gt;not&lt;/strong&gt; say. But it did take me a moment to shake that feeling. In his defense, the answer isn’t obvious. Why do we focus on growth rates - percentage changes - as opposed to absolute changes in GDP per capita? Growth rates maks major differences in the absolute change in GDP per capita. For example, a growth rate of 2% implies an absolute change of 1000 in an economy with a GDP per capita of 50,000, and only a change of 200 in an economy with GDP per capita of 10,000.&lt;/p&gt;
-
-&lt;p&gt;First, what does the distribution of aboslute changes in GDP per capita even look like? I had no idea. So I calculated the absolute growth in real GDP per capita per year for each country in the PWT. Then I plotted the kernel densities of these absolute changes for several countries. You can see the results below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_abs_growth.png&quot; alt=&quot;Densities for Absolute Growth&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Kernel densities are basically smoothed histograms, so the height of the density curve indicates how often absolute growth in GDP per capita of a given amount occurred. As you can see, for India (the black dashed line) absolute growth tended to be very small. On average, from 1950 to 2011, GDP per capita rose by 51 dollars per year in India. The median was 42 dollars. Despite these small absolute changes, the percentage growth rate in could actually be quite high because GDP per capita is very low to begin with.&lt;/p&gt;
-
-&lt;p&gt;Compare that to the United States, where the density is much flatter and covers much larger values (both positive and negative). For the US, average absolute growth in GDP per capita was 482 dollars, with a median of 617 dollars. Of course, those large changes in GDP per capita reflect very small percentage growth rates in the US, because GDP per capita is already so large.&lt;/p&gt;
-
-&lt;p&gt;From the perspective of growth rates, the US isn’t growing very quickly compared to India, at least over the last 25 years. But in absolute terms, the increase in living standards in the US is about 10 times higher than in India in a given year.&lt;/p&gt;
-
-&lt;p&gt;Should we care about these absolute changes? The answer hinges on your view on how GDP per capita translates to welfare, the utility function. It is really common to assume “log utility”, or welfare is the log of GDP per capita (or consumption per capita, or something else proportional to GDP per capita). Log utility has the very particular property that the same &lt;em&gt;growth rate&lt;/em&gt; of GDP per capita yields the same &lt;em&gt;absolute&lt;/em&gt; change in welfare. If India and the US both have growth rates of 3%, then welfare in both countries rises by 3%, even though the absolute change in GDP per capita in the US is much larger. The figure above doesn’t have any information about welfare gains, in other words.&lt;/p&gt;
-
-&lt;p&gt;The reason for this is simply diminishing marginal utility. But log utility specifies that the diminishing happens in such a way that growth rates translate directly to absolute changes in welfare. Now what if utility is “more curved” than log? That is, what if marginal utility falls very quickly as GDP per capita goes up? Then even if two countries have the same growth rate, they do not have the same absolute change in welfare. In fact, the richer country would have a &lt;em&gt;smaller&lt;/em&gt; change in welfare than the poorer country. So 3% growth in India generates &lt;em&gt;more&lt;/em&gt; welfare than 3% growth in the US, even though the absolute change in GDP per capita is much smaller in India.&lt;/p&gt;
-
-&lt;p&gt;But we could go the other direction, and look at utility that is “less curved” than log, or where marginal utility diminishes very slowly. Now, if there are two countries with identical growth rates, the richer country has a higher gain in welfare. The limit case here is linear utility, where marginal utility doesn’t decline at all as you get richer. Then the absolute change in GDP per capita is all that matters, and the US has (on average) much larger gains in welfare every year than India.&lt;/p&gt;
-
-&lt;p&gt;An argument for thinking of utility as “more curved” than log is subsistence constraints. That is, let’s say that you only get utility from GDP per capita over and above a minimum level; GDP per capita at that minimum level is what we call subsistence, and it doesn’t provide any welfare, it just keeps you alive. If you have subsistence constraints, then marginal utility is incredibly high close to this constraint, and marginal utility falls very quickly as you move away from it. So India experiences much bigger gains in welfare - despite their small absolute gains in GDP per capita - because those extra 51 dollars get you farther away from that subsistence constraint. The US gets relatively little utility from its 482 dollar change, because we’re already so far above that subsistence constraint.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, habit formation would be a force pushing towards “less curved” utility. In short, imagine that the subsistence constraint itself is rising as we get richer. The “minimum level” of GDP per capita that people need to meet is higher in the US than in India. If you believe that, then it is quite possible that the higher absolute growth of GDP per capita in the US is delivering bigger gains in absolute welfare.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, then, I think the answer to the students question is that we think there is diminishing marginal utility, and so growth rate rates make sense because they tell us something about absolute changes in welfare. But…who said utility of GDP per capita has to be as curved as log? What if there are significant habit effects? Maybe the gap in welfare between places like the US and India is actually &lt;em&gt;growing&lt;/em&gt; over time, even though India’s GDP per capita is catching up slowly.&lt;/p&gt;
-
-&lt;p&gt;Perhaps not a “Duh” question after all.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 18 Feb 2016 00:00:00 -0600</pubDate>
       </item>
     
   </channel>
