@@ -5,7 +5,85 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Tue, 06 Sep 2016 12:31:12 -0500</pubDate>
+    <pubDate>Wed, 07 Sep 2016 11:40:08 -0500</pubDate>
+    
+      <item>
+        <title>Balanced growth in theory</title>
+        <link>https://growthecon.com/blog/BGP/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/BGP/</guid>
+        <description>&lt;p&gt;The last post was on the empirics behind balanced growth paths (BGP), the key organizing principle of economic growth models. I was skeptical of these empirics, and it looked like only weak evidence was there to support the idea of BGP’s.&lt;/p&gt;
+
+&lt;p&gt;As I said in that post, essentially all the models of growth written down in the last half-century work very hard to ensure they have a BGP. Here, I want to show that this generates a set of pretty tight restrictions about how you can model the world. And hence it generates a set of pretty tight restrictions on how you think the world actually works. So tight that perhaps it seems implausible. Like I said in the prior post, I’m trying to be highly skeptical of these claims, in order to test my own beliefs.&lt;/p&gt;
+
+&lt;h3 id=&quot;uzawa-and-bgps&quot;&gt;Uzawa and BGP’s&lt;/h3&gt;
+&lt;p&gt;Leave aside the questions regarding the Kaldor facts from the last post entirely. Let’s assume that you do want your model of growth to have a BGP. What does this imply about how growth works?&lt;/p&gt;
+
+&lt;p&gt;The key paper here is by &lt;a href=&quot;http://www.jstor.org.ezproxy.lib.uh.edu/stable/2296180&quot;&gt;Uzawa&lt;/a&gt; (1961), but I highly suggest you not read it. It is baffling. I suggest you take a look at &lt;a href=&quot;http://web.stanford.edu/~chadj/ss301.pdf&quot;&gt;Jones and Scrimgeour&lt;/a&gt; who have written a much more accessible explanation.&lt;/p&gt;
+
+&lt;p&gt;Let me try to give you a flavor of Uzawa’s theorem. I’m going to try a different tactic than Jones and Scrimgeour, because I think I can keep it more accessible to a blog audience. There is math, but I hope nothing too terribly awful.&lt;/p&gt;
+
+&lt;p&gt;To start, we’re going to assume that we have some kind of constant returns to scale production function. That CRS is crucial is necessary for BGP’s to exist. Let y be output per worker, and k be capital per worker. Let B denote the capital-augmenting technology - think of this as an index of how useful capital each unit of capital is for production. Let A denote labor-augmenting technology - again an index of how useful labor is for production. Okay, then let’s write the growth of output per worker as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{y} = \epsilon_K \hat{B} + \epsilon_K \hat{k} + \epsilon_L \hat{A}&lt;/script&gt;
+
+&lt;p&gt;where the “hats” on a variable denote its growth rate. The values &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt; are the elasticity of output with respect to that specific input. Because of constant returns, it must be that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K + \epsilon_L = 1\inline&quot;/&gt;, and that will prove useful in a moment.&lt;/p&gt;
+
+&lt;p&gt;What the equation says is that growth in output per worker is a weighted sum of capital-augmenting technological progress, labor-augmenting technological progress, and growth in capital per worker. The weights are the elasticities, which tell us how important capital and labor are to production.&lt;/p&gt;
+
+&lt;p&gt;Now, one of the conditions for a BGP is that the rate of return on capital is constant. If you remember the prior post, we said that the rate of return could be calculated as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;r = s_K \frac{y}{k}&lt;/script&gt;
+
+&lt;p&gt;or capital’s share in output, &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_K\inline&quot;/&gt;, times the output/capital ratio. The BGP also requires that the capital share is constant over time. So for the return, r, to be constant it must be that the ratio y/k is also constant. Which implies that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{y} = \hat{k}\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;Go back to the growth rate equation knowing this. Plugging in for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{k} = \hat{y}\inline&quot;/&gt;, rearranging, and using the assumption that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K + \epsilon_L = 1\inline&quot;/&gt;, we have that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{y} = \frac{\epsilon_K}{1-\epsilon_K} \hat{B} + \hat{A}.&lt;/script&gt;
+
+&lt;p&gt;The growth rate of output per worker depends only on the two types of technological progress. I didn’t have to say anything about exactly how capital is accumulated, but if we are insisting that the return on capital is constant, then it has to be that capital and output grow at the same rate, which means the growth rate of output per worker is dependent on only the growth rate of the technology.&lt;/p&gt;
+
+&lt;p&gt;Ok, what does this leave us with? Along a BGP, the growth rate of output per worker is supposed to be constant. There are two ways to make this happen:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cobb-Douglas production, constant labor- and capital-augmenting progress.&lt;/strong&gt; &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{B}\inline&quot;/&gt; can be non-zero, but then we have to ensure that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; is constant as well. This restricts the production function to be a Cobb-Douglas, where the capital and labor elasticities never change. In this case, the fact that we call it “capital-augmenting” or “labor-augmenting” progress is irrelevant, as mathematically they are equivalent.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Non-Cobb-Douglas production, but &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{B} = 0\inline&quot;/&gt;.&lt;/strong&gt; When production isn’t Cobb-Douglas, the elasticity &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; will change if &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{B}\inline&quot;/&gt; is non-zero. So the only way for this to work without a Cobb-Douglas production function is if capital-augmenting progress is exactly zero. Here, there really is a difference between “capital-augmenting” and “labor-augmenting” progress, and we have to have zero capital-augmenting progress.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These are pretty restrictive. If you think an economy has a BGP, then what Uzawa indicates is that you have to think it either has a very specific production function (Cobb-Douglas) or a very specific rate of progress in capital-augmenting technology (zero).&lt;/p&gt;
+
+&lt;p&gt;It feels implausible that the real world actually would have the &lt;em&gt;exact right&lt;/em&gt; conditions for a BGP to happen. Taking a step back, maybe production isn’t even constant returns to scale in capital and labor in the first place. Are the empirics behind the BGP so strong that they should compel us to buy the theoretical restrictions they imply?&lt;/p&gt;
+
+&lt;h3 id=&quot;relaxing-uzawa&quot;&gt;Relaxing Uzawa&lt;/h3&gt;
+&lt;p&gt;Well, maybe Uzawa’s restrictions aren’t necessary or aren’t as knife-edged as they seem. Here’s a few examples. Grossman, Helpman, Oberfield, Sampson, who got me going on this whole topic, propose one &lt;a href=&quot;http://scholar.harvard.edu/files/helpman/files/balanced_growth_despite_uzawa_110815gg.pdf&quot;&gt;solution&lt;/a&gt;. What GHOS suggest is that human capital growth may be sufficient to break the strict nature of Uzawa’s conditions. That is, they can write down a model of economic growth that doesn’t require Cobb-Douglas production, has a positive growth rate of capital-augmenting technological change, and yet still has a BGP.&lt;/p&gt;
+
+&lt;p&gt;Chad Jones has a different &lt;a href=&quot;http://web.stanford.edu/~chadj/JonesQJE2005.pdf&quot;&gt;approach&lt;/a&gt;, and he establishes conditions by which the &lt;em&gt;aggregate&lt;/em&gt; production function may be Cobb-Douglas, even though the underlying technical production functions of firms are not. This makes a BGP a reasonable outcome.&lt;/p&gt;
+
+&lt;p&gt;But this all presumes that we want to rescue the BGP - that economic growth necessarily involves a constant long-run growth rate, a stable capital share, and a constant return to capital. Given the information in the prior post, the question remains whether in fact the BGP is worth rescuing.&lt;/p&gt;
+
+&lt;h3 id=&quot;structural-change&quot;&gt;Structural Change&lt;/h3&gt;
+&lt;p&gt;Let me give an example of where the dependence on BGP’s is possibly a problem. A lot of effort has been expended writing down models of economic growth that explicitly allow for multiple sectors (agriculture, manufacturing, services, for example) but that also display a BGP. You can think of there being an ancillary Kaldor fact that these papers want to explain, which is that there has been significant shifts of labor between sectors (generally, ag to manufacturing to services) over time in most economies.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ideas.repec.org/a/ucp/jpolec/v116y2008i3p467-498.html&quot;&gt;Acemoglu and Guerrieri&lt;/a&gt;, &lt;a href=&quot;https://ideas.repec.org/a/oup/restud/v68y2001i4p869-882..html&quot;&gt;Kongsamut, Rebelo, and Xie&lt;/a&gt;, &lt;a href=&quot;https://ideas.repec.org/a/aea/aecrev/v97y2007i1p429-443.html&quot;&gt;Ngai and Pissarides&lt;/a&gt;, among others, are built to deliver both structural change and a BGP. To do so is not trivial, so these models are quite clever in how they set things up to make this work out. In some way, they are writing down new versions of Uzawa that also allow them to account for structural change. They establish conditions for preferences or production functions that allow for economic activity to wax and wane in different sectors, but in aggregate continues to be consistent with Kaldor’s facts.&lt;/p&gt;
+
+&lt;p&gt;The danger here is presuming the original Kaldor facts are required. They work very hard to show that structural change can happen while the growth rate of output per capita remains constant in the long run. But what if the growth rate of output per capita isn’t constant in the long run? Or, if you don’t want to abandon the concept of a BGP altogether, what if there are different BGP’s depending on what stage of structural change you are in?&lt;/p&gt;
+
+&lt;p&gt;Remember the French figure from the prior post. You could argue that France had both a pre-WWII BGP (with relatively low levels of GDP per capita and a low growth rate) and a post-WWII BGP (with a higher level and growth rate). Who is to say that this kind of shift to a different BGP, perhaps with a lower growth rate, isn’t possible in a country like the US today? Who is to say that level shifts in the BGP, perhaps up or down, are not possible in the future based on structural change?&lt;/p&gt;
+
+&lt;h3 id=&quot;are-we-missing-the-point&quot;&gt;Are we missing the point?&lt;/h3&gt;
+&lt;p&gt;Existing models that assume a BGP cannot, by design, deliver the kinds of jumps seen in the French example, or in cases like South Korea or Japan as they developed. Yes, those countries appeared to go from one BGP to another, so the existing models are good at capturing the dynamics within each BGP. But they have no way of explaining why it was that South Korea took off for a different BGP in about 1960, or why France’s growth rate shot up after World War II. These shifts are completely exogenous in these models.&lt;/p&gt;
+
+&lt;p&gt;Let me ask it this way. If I could write down a model that could predict the conditions under which a country would accelerate like South Korea from poverty to rich-country living standards, would I discard it just because it failed to predict a strict BGP in the long run? I hope I wouldn’t, because a model that could identify those conditions would be incredibly valuable. But there is a tendency for growth economists to be skeptical of anything that doesn’t have a BGP in the end.&lt;/p&gt;
+
+&lt;p&gt;To take it from the other side, it may be that even if BGP’s are not strictly true in the data, that models with BGP’s are effective in capturing most of the interesting dynamics. The strict assumptions behind them need not be exactly true in real life, but are useful for simplifying our analysis. But the danger here is that we go too far, assert these strict assumptions are true because they deliver a BGP, and that would appear to be going in the wrong direction.&lt;/p&gt;
+
+&lt;p&gt;I’ve been operating in full skepticism mode, and so I should probably stop now before I manage to insult everyone who has done growth work in the last few decades. That, and I don’t want to discourage everyone from buying my &lt;a href=&quot;https://growthecon.com/book/&quot;&gt;textbook&lt;/a&gt; with Chad Jones that talks very explicitly about BGP’s and models that deliver them.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Sep 2016 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Is there evidence of balanced growth?</title>
@@ -1622,47 +1700,6 @@
 
 </description>
         <pubDate>Thu, 24 Mar 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>You Saved What?</title>
-        <link>https://growthecon.com/blog/Savings/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Savings/</guid>
-        <description>&lt;p&gt;Nick Rowe just had a &lt;a href=&quot;http://worthwhile.typepad.com/worthwhile_canadian_initi/2016/02/does-saving-count-towards-gdp.html#more&quot;&gt;post&lt;/a&gt; about the effect of savings on GDP. I’m paraphrasing, but a student asks him whether “saving an extra &lt;img src=&quot;http://latex.codecogs.com/png.latex?100” raises GDP (or not), because the national income product accounts can be written as\inline&quot;/&gt;Y = C + S + T&lt;img src=&quot;http://latex.codecogs.com/png.latex?. I think Nick nails the issue, which is that you &lt;em&gt;must&lt;/em&gt; specify “instead of what?” when you say you “save an extra\inline&quot;/&gt;100”.&lt;/p&gt;
-
-&lt;p&gt;I’ve run into the same question before, and I’ve gone back and forth on how best to explain the answer (which, strictly speaking, is “it depends”). This also gives me a chance to rant a little about my pet peeve of measuring GDP in dollars.&lt;/p&gt;
-
-&lt;p&gt;The problem we have is that “save an extra $100” means “keep 100 slips of green paper in my wallet rather than spending them” to any normal human being. This is a statement about how you use the medium of exchange. It’s a statement inherently related to the turnover of that medium of exchange.&lt;/p&gt;
-
-&lt;p&gt;But the word “savings” and the symbol “S” are also used as a concept in national income product accounts to stand for “the value of goods and services that are neither consumed nor handed over to the government as taxes”. Because you typically measure the value of good and services using dollars, this creates confusion. But “&lt;img src=&quot;http://latex.codecogs.com/png.latex?100 of S” is a statement that uses dollars as a unit of account, and has nothing to do with\inline&quot;/&gt;100 of the medium of exchange. “&lt;img src=&quot;http://latex.codecogs.com/png.latex?100 of S” means that you purchased\inline&quot;/&gt;100 worth of goods and services, &lt;em&gt;and then saved those goods and services&lt;/em&gt;. It does not mean you kept 100 slips of green paper in your wallet.&lt;/p&gt;
-
-&lt;p&gt;So the question from Nick’s student isn’t easy to answer, and it should be easier. He wants to know the effect on GDP if he “saves an extra $100”, and right now the answer gets confusing because of this confusion in medium of exchange and unit of account.&lt;/p&gt;
-
-&lt;p&gt;This would be clearer if we didn’t insist on measuring GDP (and its components like S) in units of dollars. Yes, we tell everyone they are “2005 dollars” or something like that, but we all hear “dollars!” in our head and think of little slips of green paper. I really think a better way to do this would be to just measure GDP as physical units of output. You can do this in a crude (but effective) way by just measuring GDP as the equivalent number of cans of Diet Cokes (e.g. divide nominal GDP by $0.85, the price in our department vending machine). Or if you insist on being more accurate, divide nominal GDP by the actual dollar value of the CPI basket, and you’ll get “number of CPI baskets produced”.&lt;/p&gt;
-
-&lt;p&gt;Regardless, if GDP is in real terms - Diet Cokes or CPI baskets - then we no longer have this confusion of the medium of exchange (dollars) and the unit of account (DC or CPI baskets). When you say you “save an extra &lt;img src=&quot;http://latex.codecogs.com/png.latex?100”, I think it now becomes obvious that you &lt;em&gt;must&lt;/em&gt; complete that statement with “…instead of buying\inline&quot;/&gt;100 of Diet Cokes or CPI baskets”. It is clear what you are doing.&lt;/p&gt;
-
-&lt;p&gt;But we’re not totally out of the woods. GDP is a flow concept, not a stock. So it’s impossible to specify the effect of “saving an extra &lt;img src=&quot;http://latex.codecogs.com/png.latex?100 instead of buying\inline&quot;/&gt;100 of Diet Coke” without saying precisely &lt;em&gt;how long&lt;/em&gt; you plan to save that money for. It is March 6th. If you “save an extra &lt;img src=&quot;http://latex.codecogs.com/png.latex?100” today by not spending it, and don’t spend it until April 13th, then &lt;em&gt;first quarter GDP&lt;/em&gt; goes down by at least\inline&quot;/&gt;100. At least. You not spending that &lt;img src=&quot;http://latex.codecogs.com/png.latex?100 means someone else didn’t earn that\inline&quot;/&gt;100, and they cannot spend the &lt;img src=&quot;http://latex.codecogs.com/png.latex?100, and so there may be a whole chain of transactions that don’t occur because you saved an extra\inline&quot;/&gt;100.&lt;/p&gt;
-
-&lt;p&gt;If you “save an extra &lt;img src=&quot;http://latex.codecogs.com/png.latex?100” on March 6th, but then spend that\inline&quot;/&gt;100 on March 8th, first quarter GDP might not got down at all. You still spent the $100 in the first quarter, and all the subsequent transactions that might be keyed off of your spending still have time to occur. Maybe the 2 day delay means that someone 15 transactions down the line doesn’t get a chance to buy a Snickers bar until April 1st, and now that transaction is not counted in first quarter GDP any more.&lt;/p&gt;
-
-&lt;p&gt;But this &lt;em&gt;still&lt;/em&gt; doesn’t solve our problem, because we didn’t account for the fact that maybe the producers will respond to our lack of spending by changing prices. If you “save an extra &lt;img src=&quot;http://latex.codecogs.com/png.latex?100 instead of buying\inline&quot;/&gt;100 of Diet Coke” on March 6th, then the DC distributor might notice that 117.67 cans of DC are still on the shelf on March 7th that they expected to be gone. They figure this represents lower demand, so to clear their inventory they lower the price. By March 31st, even though &lt;em&gt;you&lt;/em&gt; didn’t spend $100 on Diet Cokes, somebody bought those cheaper Diet Cokes and hence real GDP (the number of Diet Cokes sold) is the same as if you hadn’t saved that money at all.&lt;/p&gt;
-
-&lt;p&gt;I don’t know that there is a simple way to teach this stuff. I think you could probably spend a whole semester just going over (and over and over) the difference between GDP and the money supply. Let me take a crack at a relatively simple way of accomodating a question about what happens when you “save an extra $100”.&lt;/p&gt;
-
-&lt;p&gt;The key here is the Quantity Theory of Money. It is an identity that tells us how to determine nominal GDP. You know the formula, &lt;img src=&quot;http://latex.codecogs.com/png.latex?MV = PY\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;When someone says “save an extra $100”, they mean “lower velocity” by some amount. They are turning over their actual dollars more slowly (e.g. waiting until April 13th to spend them). How much velocity goes down is a question of (a) how long they wait to spend the money and (b) how crucial that spending is for everyone else’s spending.&lt;/p&gt;
-
-&lt;p&gt;Now, because V has gone down, it must be that either M goes up, or PY has gone down. If we assume that M stays constant, then it has to be that PY goes down.&lt;/p&gt;
-
-&lt;p&gt;What happens to &lt;em&gt;real&lt;/em&gt; GDP - cans of Diet Coke - Y? That depends on how flexible you think prices are. If P can adjust easily (the DC distributor notices quickly and lowers prices), then Y may be unaffected by your decision to “save an extra &lt;img src=&quot;http://latex.codecogs.com/png.latex?100”. But if prices are sticky, then your decision to save\inline&quot;/&gt;100 has to lower Y by an amount proportional to how much velocity goes down.&lt;/p&gt;
-
-&lt;p&gt;But what about that whole NIPA accounting equation &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y = C + S + T\inline&quot;/&gt;? Well, what about it? S is a classification of real GDP. S is the number of Diet Cokes that you &lt;em&gt;buy&lt;/em&gt;, but do not actually &lt;em&gt;drink&lt;/em&gt;. S is “GDP that is neither consumed nor given to the government”. Yes, the BEA calls that “savings”, but that is a crappy term that just causes confusion. If we measured GDP in real units, and stopped using the term “savings” both for “dollars not spent” and “goods and services not consumed”, we wouldn’t have to keep rehashing these questions again and again every year with a new set of students.&lt;/p&gt;
-
-&lt;p&gt;Of course, I might have read Nick’s post wrong, and maybe the student was asking about spending 100 gold pieces to raise his &lt;em&gt;saving throw&lt;/em&gt; from a 17 to an 18. Easy mistake to make.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 05 Mar 2016 00:00:00 -0600</pubDate>
       </item>
     
   </channel>
