@@ -5,7 +5,56 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Wed, 21 Sep 2016 17:03:22 -0500</pubDate>
+    <pubDate>Sat, 15 Oct 2016 13:46:17 -0500</pubDate>
+    
+      <item>
+        <title>Labor Recovery and the Productivity Slowdown</title>
+        <link>https://growthecon.com/blog/Labor-Prod/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Labor-Prod/</guid>
+        <description>&lt;p&gt;Everyone loves talking about productivity, and how it doesn’t grow as fast as it used to. Very low productivity growth rates, in same cases negative, have been used very recently as evidence of this long-run slowdown and why perhaps it will get worse. But inferring something about long-run trends in productivity growth from a few years of data, especially years that represent a recovery from a deep recession, is probably unwise. Now that I have the 2015 BEA data on sector-specific output and employment, let me try to illustrate what I mean.&lt;/p&gt;
+
+&lt;p&gt;Productivity growth is just output (value-added) growth minus input (however measured) growth. In this post I’m working with BEA data on value-added and full-time equivalents, so when I say productivity that is short-hand for “value-added per full-time equivalent”, which some might refer to as a measure of labor productivity.&lt;/p&gt;
+
+&lt;p&gt;The point of the post is really just to point out that a notable feature of the slow growth in productivity in 2013 and 2014 was the incredibly &lt;em&gt;rapid&lt;/em&gt; growth in full-time equivalents. Aggregate value-added growth did not drop off appreciably. Rather, the growth rate of full-time equivalents was high, and hence measured productivity growth was very low.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Aggregate.png&quot; alt=&quot;Aggregate prod growth&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure shows the growth rate of productivity (value-added per FTE) as the thick black line, and then also includes the separate growth rates of value-added (thin gray line) and FTE’s (thin dashed line). What you can see in 2013, and in 2014 especially, is that productivity growth dropped to about -2% per year. But value-added growth was still about &lt;em&gt;positive&lt;/em&gt; 2% per year, and the entire reason for the decline in productivity growth was that FTE growth was over 3%. Compare that to the numbers from the rest of the time period I plotted, and that is an exceptional number. Labor force growth drove the decline in productivity, purely from an accounting perspective.&lt;/p&gt;
+
+&lt;p&gt;In 2015, once the growth in FTE’s ebbs to only about 1%, and there is a slight uptick in the growth rate of value-added, we see productivity growth rise to positive 1%. It sure looks like the drop in productivity growth in 2013/14 was temporary and driven almost entirely by the acceleration of growth in FTE’s as the economy starts to recover.&lt;/p&gt;
+
+&lt;p&gt;Using the BEA data, I can dig backwards into the sector-by-sector contributions to productivity growth. And there are a few select sectors that appear to be driving this phenomenon. First, take a look at “Government”, which includes federal as well as state and local government spending.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Government.png&quot; alt=&quot;Government&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The growth rate of value-added declines noticeably from 2008 to 2013 before experiencing a slight uptick in 2014 (the light gray line). The growth rate of FTE’s in government also bottoms out in 2011 at about -1.5%. After that, the growth rate recovered, and by 2014 FTE’s in government were growing at 1% per year. As long as FTE’s are growing faster than value-added, productivity growth will be negative, and you can see the precipitous drop in productivity growth for government in the 2013/14. In 2015, with a smaller growth rate of FTE’s in government, productivity growth recovers closer to zero, but is still negative.&lt;/p&gt;
+
+&lt;p&gt;One side note about “value-added” for government. This is going to include both salaries for public employees like teachers, cops, and fireman, and also capital spending like roads, bridges, and other infrastructure. The effect you see in the overall government sector is driven almost entirely by state and local governments. They shed workers like crazy after the recession, and in 2014 that reversed dramatically. Growth in state/local FTE’s went from -1.5% in about 2011 to +2% in 2014.&lt;/p&gt;
+
+&lt;p&gt;Retail is another sector with a dramatic acceleration of the FTE growth rate in 2014, illustrating this point. In this case the discrepancy between value-added growth (consistently around 2% per year) and FTE growth in 2014 (pushing 15%!) is very stark. The massive addition of labor to retail in 2014 explains everything about the massive &lt;em&gt;negative&lt;/em&gt; growth rate of productivity in retail, about -11%. And as retail work makes up about 20% of aggregate FTE’s, this negative growth rate of productivity puts a big drag on aggregate productivity growth. In 2014, the negative growth rate of retail productivity can essentially explain &lt;em&gt;all&lt;/em&gt; of the negative growth in aggregate productivity in the same year. But this is all due to the massive expansion of employment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Retail.png&quot; alt=&quot;Retail&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In 2015, with the reversal of FTE growth (-10%), productivity growth bounces up to positive 12%, which means it contributes about 2.4 percentage points to aggregate productivity growth. But these fluctuations are entirely due to the fluctuations in the FTE growth rate in retail. Note that growth in value-added remains roughly constant in these last few years.&lt;/p&gt;
+
+&lt;p&gt;The one other sector with a pattern is construction. Again, productivity growth is negative in 2014 (and 2013), but this is driven almost entirely by the higher growth rates of FTEs in construction in those years. In 2015, as FTE growth abates in construction, productivity growth looks positive again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Construction.png&quot; alt=&quot;Construction&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Other sectors have this effect present, but it looks pretty small (Manufacturing, Utilities, Wholesale trade). Some, like transportation and mining, have similarly large shifts in FTE’s, but these tend to act in the opposite direction to those in retail and construction. That is, in 2013/14, the growth in FTE’s was &lt;em&gt;negative&lt;/em&gt;, and so calculated productivity growth was very &lt;em&gt;positive&lt;/em&gt;. In 2015 recovery in the FTE growth in both sectors is associated with much lower productivity growth, as in both cases value-added growth doesn’t change a lot.&lt;/p&gt;
+
+&lt;p&gt;One response to these figures is that this reflects some error in calculation or reporting. And believe me, I’ve gone back and forth with the BEA website to confirm that this is really what they are reporting for 2014 and 2015, and that I’m using the right data. I’ve picked over my Stata code a few times to see if I’m getting this wrong somehow, but this is what the data say. If I was calculating things wrong, you’d expect to see some &lt;em&gt;other&lt;/em&gt; odd surges in growth rates in other years, at least for some sectors. And since we don’t, I believe I’m accurately reporting the right growth rates given the BEA data provided.&lt;/p&gt;
+
+&lt;p&gt;So on the assumption that these figures are a good representation of what was going on with productivity growth, what does it tell us? The first reaction I have is that this is precisely why you shouldn’t get worked about a single year’s productivity growth rate. In 2014, it was negative in the aggregate thanks in part to retail and government as well as several other sectors. But given that this was driven entirely by a surge in FTE growth associated with a recovering labor market, I don’t know that there is any long-run information here. It certainly doesn’t provide any evidence that innovation is slowing down. Productivity is just a residual, so short-run productivity growth rates will always be subject to surges in short-run FTE growth.&lt;/p&gt;
+
+&lt;p&gt;A second reaction may be, if these industries are adding all these FTE’s, then why isn’t value-added rising faster? Does this make sense for firms to hire these people (or raise their hours) if they are not getting more value-added? Perhaps the people they are hiring are relatively low-skill and low-productivity? Think of the Roy model idea I mentioned in a recent &lt;a href=&quot;https://growthecon.com/blog/Roy/&quot;&gt;post&lt;/a&gt; about Alwyn Young’s recent paper. If the people who are being added are relatively bad at working in their sectors - because all the good people already work there - then putting them to work may not boost value-added growth.&lt;/p&gt;
+
+&lt;p&gt;If you were feeling optimistic, you might look at this as evidence that innovation &lt;em&gt;is&lt;/em&gt; occurring. Perhaps firms have been adding labor quickly because they anticipate needing them over the next few years due to innovations coming on-line. They presumably are somewhat forward-looking, and so maybe this represents firms investing in building up a labor force in anticipation of new markets and new customers? Note that the drop in FTE growth in 2015 does not wipe out the FTE gains of the prior two years. FTE’s are still growing at the aggregate level in 2015, just at a slower rate. For Retail, FTE’s actually did fall in 2015 relative to 2015, but are still higher than in 2013.&lt;/p&gt;
+
+&lt;p&gt;Whatever you might take away regarding innovation, these graphs suggest that perhaps the drop in productivity growth in 2014 was really an aberration. If FTE growth returns to more typical rates, then productivity growth - remember, just a residual - would return to more typical rates as well. And just a note, this doesn’t provide an explanation for why long-run productivity growth has been lower over the last few decades, but simply an explanation for why very recent productivity growth looks weak. I think the message is to not get hung up on year-to-year productivity growth rates.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Oct 2016 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Soooo...maybe the service sector isn&#39;t a drag on productivity growth after all?</title>
@@ -1555,177 +1604,6 @@
 &lt;p&gt;Ultimately, and this is my impression, not some kind of established fact, concentration likely lowers innovative activity. Put it this way, the null hypothesis should probably be that concentration lowers innovation. An individual industry needs to provide evidence they are on the “right side of the curve” in the first AAH figure to believe concentration would be good for productivity growth in the long run.&lt;/p&gt;
 </description>
         <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Productivity versus Technology in American Growth</title>
-        <link>https://growthecon.com/blog/Gordon-TFP/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Gordon-TFP/</guid>
-        <description>&lt;p&gt;I just &lt;a href=&quot;https://growthecon.com/blog/Gordon-Review/&quot;&gt;reviewed&lt;/a&gt; Bob Gordon’s book on the rise and fall of American growth. A quick recap of Gordon’s thesis is that we experienced an anomalous burst of technological progress during the 1930’s and 1940’s, bleeding a little into the 1950’s and 60’s. Prior to that period, and since that period, technological progress was relatively slow, and Gordon expects that slow technological progress to be the norm for the foreseeable future.&lt;/p&gt;
-
-&lt;p&gt;This thesis is based in large part on evidence of differences in TFP growth decade-by-decade. Gordon’s Figure 16-5 is probably the key graph in his book, as it shows TFP growth of 3.5% per year during the 1940’s, well above the norm for other decades. Even without the 1940’s, TFP growth around 1.5% per year in the 30’s, 50’s, and 60’s. In contrast, TFP growth was below 1% per year in the 1900’s, 10’s, and 20’s, as well as the 1980’s, 90’s, and 2000’s.&lt;/p&gt;
-
-&lt;p&gt;But TFP growth is measured as a residual, and is not necessarily equal to a measure of technology. I’ve made this point &lt;a href=&quot;https://growthecon.com/blog/labors-share-profits-and-the-productivity-slowdown/&quot;&gt;before&lt;/a&gt; on this blog, but it is worth revisiting in light of Gordon’s book. In short, do Gordon’s TFP growth rates really indicate significant differences in &lt;em&gt;technological&lt;/em&gt; growth by decade?&lt;/p&gt;
-
-&lt;h3 id=&quot;residuals-and-technology&quot;&gt;Residuals and Technology&lt;/h3&gt;
-
-&lt;p&gt;To start, we have to establish how TFP and technology are related. The residual measure of TFP that Gordon uses is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;R = \frac{Y}{K^{1-s_L}L^{s_L}}&lt;/script&gt;
-
-&lt;p&gt;which is a completely standard way of doing this. The &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_L\inline&quot;/&gt; is labor’s share of revenues (GDP). As is typical, Gordon assumes there are constant returns to scale so that capital’s share is mechanically &lt;img src=&quot;http://latex.codecogs.com/png.latex?1-s_L\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;Output is actually defined by&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y = A K^{\alpha} L^{\beta},&lt;/script&gt;
-
-&lt;p&gt;where I’ve left open the possibility that the elasticities on capital and labor add up to something other than one. If &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha+\beta&amp;gt;1\inline&quot;/&gt;, then you have increasing returns to scale. If &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha+\beta=1\inline&quot;/&gt;, you have constant returns. The term &lt;img src=&quot;http://latex.codecogs.com/png.latex?A\inline&quot;/&gt; is the actual measure of technology. The residual measure Gordon uses is thus capturing the following&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;R = A \frac{K^{\alpha - s_K}}{L^{\beta - s_L}}.&lt;/script&gt;
-
-&lt;p&gt;It is pretty clear that &lt;img src=&quot;http://latex.codecogs.com/png.latex?R\inline&quot;/&gt; need not necessarily be equal to &lt;img src=&quot;http://latex.codecogs.com/png.latex?A\inline&quot;/&gt;. In terms of growth rates, which is what Gordon is focused on, we can write this as&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\dot{R}}{R} = \frac{\dot{A}}{A} + (\alpha - 1 + s_L)\frac{\dot{K}}{K} + (\beta-s_L) \frac{\dot{L}}{L},&lt;/script&gt;
-
-&lt;p&gt;and the growth rate of the residual is not necessarily equal to the growth rate of technology. It all depends on whether the revenue shares, &lt;img src=&quot;http://latex.codecogs.com/png.latex?1-s_L\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_L\inline&quot;/&gt;, are in fact equal to the elasticities, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;To get some structure to understand why they might differ, we can make the minimal assumption that firms are cost-minimizers. In that case it will be true that&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha + \beta = \mu(1-s_{\pi}).&lt;/script&gt;
-
-&lt;p&gt;This equation says that the returns to scale, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha + \beta\inline&quot;/&gt;, are equal to the markup of prices over marginal cost, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu \geq 1\inline&quot;/&gt;, times the share of revenues that are paid to factors of production. That share is one minus the share of revenues paid out as profits, &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_{\pi}\inline&quot;/&gt;. Note that &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_{\pi} &amp;gt; 0\inline&quot;/&gt; means that the shares of output paid to capital and labor need not add up to one - but in Gordon’s calculation they have to add up to one. Gordon’s assumption is very typical, but it is one way of the things that will generate a possible divergence between the measure of productivity and the measure of technology. If you’re interested at all in how to derive all this, the ideas come from &lt;a href=&quot;#hall1988&quot;&gt;(Hall 1988; Hall 1989; Basu &amp;amp; Fernald 2002)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Which brings us back to the residual measure. If you plug in the scale, markup, profit relationship into the growth rate of the residual, and rearrange, you can come up with the following&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\dot{R}}{R} = \frac{\dot{A}}{A} + (\mu(1-s_{\pi}) -1)\frac{\dot{K}}{K} + s_L(\mu-1)\left[\frac{\dot{L}}{L} - \frac{\dot{K}}{K}\right].&lt;/script&gt;
-
-&lt;p&gt;This isn’t the only way to write this, as you can manipulate the equation into different forms. But I think this is a useful way to look at things. This says that there is a difference between the growth rate of TFP, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\dot{R}/R\inline&quot;/&gt;, and the growth rate of technology, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\dot{A}/A\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;The first part of this difference is the term involving &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_{\pi}\inline&quot;/&gt;, and this is picking up any effects of increasing returns to scale. If there are IRS, then this term will be non-zero. The increase in scale associated with a larger capital stock generates higher measured productivity growth, even if technology isn’t growing any faster than normal.&lt;/p&gt;
-
-&lt;p&gt;The second part of this difference is the last term involving &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_L(\mu-1)\inline&quot;/&gt;. This captures the fact that assuming capital’s share in output is &lt;img src=&quot;http://latex.codecogs.com/png.latex?1-s_L\inline&quot;/&gt; may be wrong. If it is wrong, which would show up as &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu&amp;gt;1\inline&quot;/&gt; in some way, then the growth rate of TFP isn’t going to be equal to the growth rate of technology.&lt;/p&gt;
-
-&lt;h3 id=&quot;do-these-adjustments-matter&quot;&gt;Do these adjustments matter?&lt;/h3&gt;
-
-&lt;p&gt;What Gordon is relying on is that the residual TFP measure is in fact a good gauge of technological growth. In other words, that the two adjustments I outlined above are close to zero. That will be true if we have constant returns to scale, so &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha+\beta = 1\inline&quot;/&gt;, &lt;em&gt;and&lt;/em&gt; firms have no market power so that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu=1\inline&quot;/&gt;. These assumptions are commonly made, so it isn’t like Gordon is doing anything sneaky. Even if he is wrong about those precise values, if firms had a &lt;em&gt;little&lt;/em&gt; market power, so that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu=1.02\inline&quot;/&gt;, or there were mild IRS, so &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha+\beta=1.01\inline&quot;/&gt;, then the adjustments would be insignificant. Gordon’s measures of TFP growth are good measures of technological growth if we think that production is constant returns and markups are sufficiently close to one.&lt;/p&gt;
-
-&lt;p&gt;What if they are not, though? The period of time that has the biggest spike in TFP growth is the 1940’s, which seems to have a number of odd features that make me wary of the assumption about markups and returns being close to one. First, there were guaranteed markups given to firms producing defense goods (which Gordon mentions himself on page 553). Second, there were clearly some massive economies of scale in production during this decade. The U.S. didn’t build B-24 bombers at a bunch of mom-and-pop bomber assembly shops. They were built in a single location, Willow Run, at a peak rate of 432 &lt;em&gt;per month&lt;/em&gt; in 1944. It seems hard to believe that there weren’t economies of scale at work in the economy of the 1940’s.&lt;/p&gt;
-
-&lt;p&gt;But does that have a meaningful quantitative impact on the measurement of technology growth? I’m eyeballing numbers here from Gordon’s graphs, so this is fuzzy, but I think it can give an idea of what was going on. First, we need a measure of capital growth, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\dot{K}/K\inline&quot;/&gt;, and labor growth, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\dot{L}/L\inline&quot;/&gt;. For capital growth, I used Gordon’s table A-2, which shows his adjusted capital stock data for several select years, including 1941 and 1950. Using those, it looks like capital grew at 1.7% per year in the 1940’s. That feels low, given the war, but isn’t really any different than the growth rate reported by the BEA. I have no real reasons to question the rate. For labor, I did go back to an NBER publication by &lt;a href=&quot;http://papers.nber.org/books/kend61-1&quot;&gt;Kendrick&lt;/a&gt; that Gordon uses, and tried to dig up the growth in hours he uses. Combining that with the adjustment for labor quality growth that Gordon pulled from &lt;a href=&quot;http://s3.amazonaws.com/zanran_storage/www.hup.harvard.edu/ContentPages/50365105.pdf&quot;&gt;Goldin and Katz&lt;/a&gt;, Table 1.3, I get a total growth rate of labor of 1.8% per year for the 1940’s.&lt;/p&gt;
-
-&lt;p&gt;With those, I need a markup, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu\inline&quot;/&gt;. For the moment, let’s try to see how big of an effect I can have, and choose &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu=1.5\inline&quot;/&gt;. That’s big, with 50% markups over marginal cost. But if there really were massive economies of scale, then this kind of markup may not be that implausible. The last things to plug in are the share of revenues for labor, &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_L\inline&quot;/&gt;, and profits, &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_{\pi}\inline&quot;/&gt;. For &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_L\inline&quot;/&gt;, I use Gordon’s number, 0.7. For profits? I don’t know. It is quite plausible that firms in the 40’s charged markups, but that those were to cover fixed costs. So perhaps true economic profits are zero? Again, I’m trying to see how big of an effect these adjustments might have, so let’s set &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_{\pi} =0\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;Finally, from Gordon’s figure 16-5 we know that measured TFP growth in the 1940’s was about 3.3% per year. So put this all together and we have&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;0.033 = \frac{\dot{A}}{A} + (1.5(1-0)-1)0.017 + 0.7(1.5-1)(0.018-0.017) = \frac{\dot{A}}{A} + 0.00885.&lt;/script&gt;
-
-&lt;p&gt;In other words, the residual growth rate &lt;em&gt;overstates&lt;/em&gt; technological growth by about 0.85 percentage points per year. Technological growth was 0.033 - 0.00885 = 0.02415, or 2.42% per year, not 3.3% per year. That is a pretty sizable adjustment. But it is still very high compared to all other decades.&lt;/p&gt;
-
-&lt;p&gt;In addition, we’d have to make this adjustment to all those other decades as well. Would that lower their implied technology growth as well? That depends on (a) the growth rate of inputs in those decades, and (b) what you assume about the markup in those years. I think you could make the case that the adjustment would be much smaller in other decades. First, the growth rate of inputs is slower. The labor measure Gordon uses combines hours worked with an adjustment for growth in quality of labor. Labor quality (i.e. schooling) is growing more slowly now, and labor hours are not rising as fast due to both demographics and shorter work weeks. So it could easily be that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\dot{K}/K &amp;gt; \dot{L}/L\inline&quot;/&gt;, and the growth rate of TFP &lt;em&gt;understates&lt;/em&gt; technological growth.&lt;/p&gt;
-
-&lt;p&gt;Second, maybe IRS was something unique to the 40’s (or other mid-century decades), which would eliminate the first adjustment due to scale. The transition towards services would certainly be one reason to believe that we do not have as much possibility of IRS in aggregate production. The 40’s may have been unique in having a large fraction of output produced by IRS industries.&lt;/p&gt;
-
-&lt;p&gt;I played around with several other decades, with the idea of seeing if any adjustments are even &lt;em&gt;possible&lt;/em&gt; that could eliminate the gap in technological growth from the 1940’s. But there is no plausible way I see to make adjustments to their productivity growth that deliver “real” technological growth close to 2.42% per year. The adjustments are not big enough to change Gordon’s main thesis. The 1940’s appear to be an outlier(s) in terms of technology growth.&lt;/p&gt;
-
-&lt;p&gt;That said, some of the observed productivity growth in the 1940’s is probably not technology growth, per se, but rather reaping the benefits of increasing returns to scale. One way of interpreting Gordon’s thesis is that the WWII era was special because it incorporated IRS production into the economy, and that really was a one-time thing. But now that we’ve added those industries - and because there is ultimately limited demand for their output - we no longer reap the benefits of those IRS. If you pushed this far enough, then I think you would be worried less about Gordon’s “headwinds”. It isn’t that we are somehow failing to match the technological growth of an earlier period, it’s that we simply outgrew the stage at which IRS boosted measured productivity growth.&lt;/p&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
-&lt;ul class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;basufernald&quot;&gt;Basu, S. &amp;amp; Fernald, J., 2002. Aggregate Productivity and Aggregate Technology. &lt;i&gt;European Economic Review&lt;/i&gt;, 46, pp.963–991.&lt;/span&gt;  
-
-&lt;div id=&quot;materials&quot;&gt;
-&lt;ul style=&quot;list-style: none;&quot;&gt;
-	
-		&lt;li&gt;&lt;details&gt;
-		&lt;summary&gt;Abstract&lt;/summary&gt;
-		&lt;p&gt;Aggregate productivity and aggregate technology are meaningful but distinct concepts. We show that a slightly-modified Solow productivity residual measures changes in economic welfare, even when productivity and technology differ because of distortions such as imperfect competition. We then present a general accounting framework that identifies several new non-technological gaps between productivity and technology, gaps reflecting imperfections and frictions in output and factor markets. Empirically, we find that these gaps are important, even though we abstract from variations in factor utilization and estimate only small average sectoral markups. Compared with productivity growth, our measured technology shocks are significantly less correlated with output, and are essentially uncorrelated with inputs. Our results imply that calibrating dynamic general equilibrium models as if Solow residuals were technology shocks confuses impulses and propagation mechanisms.&lt;/p&gt;
-		&lt;/details&gt;&lt;/li&gt;
-	
-		&lt;li&gt;&lt;details&gt;
-		&lt;summary&gt;BibTeX&lt;/summary&gt;
-		&lt;pre&gt;@article{basufernald,
-  author = {Basu, Susanto and Fernald, John},
-  date-added = {2013-04-20 00:29:41 +0000},
-  date-modified = {2016-04-06 20:40:58 +0000},
-  journal = {European Economic Review},
-  keywords = {alloc},
-  pages = {963-991},
-  title = {Aggregate Productivity and Aggregate Technology},
-  volume = {46},
-  year = {2002}
-}
-&lt;/pre&gt;
-		&lt;/details&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;hall1988&quot;&gt;Hall, R.E., 1988. The Relation between Price and Marginal Cost in U.S. Industry. &lt;i&gt;Journal of Political Economy&lt;/i&gt;, 96(5), pp.921–47. Available at: &lt;a href=&quot;https://ideas.repec.org/a/ucp/jpolec/v96y1988i5p921-47.html&quot;&gt;Link&lt;/a&gt;.&lt;/span&gt;  
-
-&lt;div id=&quot;materials&quot;&gt;
-&lt;ul style=&quot;list-style: none;&quot;&gt;
-	
-		&lt;li&gt;&lt;details&gt;
-		&lt;summary&gt;Abstract&lt;/summary&gt;
-		&lt;p&gt; An examination of data on output and labor input reveals that some U.S. industries have marginal cost well below price. The conclusion rests on the finding that cyclical variations in labor input are small compared with variations in output. In booms, firms produce substantially more output and sell it for a price that exceeds the costs of the added inputs. This paper documents the disparity between price and marginal cost, where marginal cost is estimated from annual variations in cost. It considers a variety of explanations of the findings that are consistent with competition, but none is found to be completely plausible. Copyright 1988 by University of Chicago Press.&lt;/p&gt;
-		&lt;/details&gt;&lt;/li&gt;
-	
-		&lt;li&gt;&lt;details&gt;
-		&lt;summary&gt;BibTeX&lt;/summary&gt;
-		&lt;pre&gt;@article{hall1988,
-  author = {Hall, Robert E},
-  date-added = {2016-04-06 20:43:33 +0000},
-  date-modified = {2016-04-06 20:45:58 +0000},
-  journal = {Journal of Political Economy},
-  keywords = {account,alloc},
-  month = oct,
-  number = {5},
-  pages = {921-47},
-  title = {{The Relation between Price and Marginal Cost in U.S. Industry}},
-  url = {https://ideas.repec.org/a/ucp/jpolec/v96y1988i5p921-47.html},
-  volume = {96},
-  year = {1988},
-  bdsk-url-1 = {https://ideas.repec.org/a/ucp/jpolec/v96y1988i5p921-47.html}
-}
-&lt;/pre&gt;
-		&lt;/details&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;hall1989&quot;&gt;Hall, R.E., 1989. &lt;i&gt;Invariance Properties of Solow’s Productivity Residual&lt;/i&gt;, National Bureau of Economic Research. Available at: &lt;a href=&quot;http://www.nber.org/papers/w3034&quot;&gt;Link&lt;/a&gt;.&lt;/span&gt;  
-
-&lt;div id=&quot;materials&quot;&gt;
-&lt;ul style=&quot;list-style: none;&quot;&gt;
-	
-		&lt;li&gt;&lt;details&gt;
-		&lt;summary&gt;Abstract&lt;/summary&gt;
-		&lt;p&gt;In 1957, Robert Solow published a paper that provided the theoretical foundation for almost all subsequent work on productivity measurement. Although most applications of Solow’s method have measured trends over fairly long time periods, the method also has important uses at higher frequencies. Under constant returns to scale and competition, the Solow residual measures the pure shift of the production function. Shifts in product demand and factor supplies should have no effect on the residual. Tests of this invariance property show that it fails in a great many industries. Though other explanations may deserve some weight, it appears that the leading cause of the failure of invariance is increasing returns and market power. The empirical findings give some support to the theory of monopolistic competition.&lt;/p&gt;
-		&lt;/details&gt;&lt;/li&gt;
-	
-		&lt;li&gt;&lt;details&gt;
-		&lt;summary&gt;BibTeX&lt;/summary&gt;
-		&lt;pre&gt;@techreport{hall1989,
-  author = {Hall, Robert E.},
-  date-added = {2016-04-06 20:45:30 +0000},
-  date-modified = {2016-04-06 20:47:29 +0000},
-  doi = {10.3386/w3034},
-  institution = {National Bureau of Economic Research},
-  keywords = {alloc, account},
-  month = jul,
-  number = {3034},
-  series = {Working Paper Series},
-  title = {Invariance Properties of Solow&#39;s Productivity Residual},
-  type = {Working Paper},
-  url = {http://www.nber.org/papers/w3034},
-  year = {1989},
-  bdsk-url-1 = {http://www.nber.org/papers/w3034},
-  bdsk-url-2 = {http://dx.doi.org/10.3386/w3034}
-}
-&lt;/pre&gt;
-		&lt;/details&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 30 Mar 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
