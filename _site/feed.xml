@@ -5,7 +5,93 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Sat, 15 Oct 2016 13:46:17 -0500</pubDate>
+    <pubDate>Thu, 27 Oct 2016 16:46:31 -0500</pubDate>
+    
+      <item>
+        <title>Productivity measures productivity ... that&#39;s it</title>
+        <link>https://growthecon.com/blog/Manufacturing/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Manufacturing/</guid>
+        <description>&lt;p&gt;Justin Fox at Bloomberg put up a few articles (&lt;a href=&quot;https://www.bloomberg.com/view/articles/2016-10-19/no-u-s-manufacturing-isn-t-really-booming&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://www.bloomberg.com/view/articles/2016-10-26/manufacturing-s-productivity-myth&quot;&gt;here&lt;/a&gt;) recently digging into trends in productivity in the US manufacturing sector. The overarching theme of the two articles is that claims regarding the success of the manufacturing sector in the US (he cites Binyamin Applebaum’s &lt;a href=&quot;http://mobile.nytimes.com/2016/10/09/magazine/why-are-politicians-so-obsessed-with-manufacturing.html?referer=https://t.co/vEnqUjWznf&quot;&gt;article&lt;/a&gt; specifically) are overstated. Fox’s first article is titled “No, U.S. Manufacturing isn’t Really Booming”.&lt;/p&gt;
+
+&lt;p&gt;I’m not going to tell you that manufacturing &lt;em&gt;is&lt;/em&gt; booming. I’m also not going to tell you that Fox is right about it &lt;em&gt;not&lt;/em&gt; booming. I am going to tell you that making claims about the business or financial success of manufacturing based on things like multi-factor productivity (MFP) or labor productivity, as Fox does, is using these measures incorrectly. The “health” or “success” or “boominess” of manfucturing are not things one can infer from productivity statistics.&lt;/p&gt;
+
+&lt;p&gt;I’ll pick on Fox’s articles here because they were recent, not because he’s done something especially egregious. They are two of many examples of how measures like MFP and labor productivity get misused to make points about financial or business performance.&lt;/p&gt;
+
+&lt;p&gt;The message is that you all need to just let productivity &lt;em&gt;be&lt;/em&gt; productivity, you know?&lt;/p&gt;
+
+&lt;h3 id=&quot;mfp-is-about-value-added-not-numbers-of-goods&quot;&gt;MFP is about value-added, not numbers of goods&lt;/h3&gt;
+&lt;p&gt;Fox takes issue with the measures of manufacuring multi-factor productivity because they involve quality adjustments made the BLS.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… the numbers are skewed by huge gains in real output in computer and electronics manufacturing that mainly reflect quality adjustments made by government statisticians, not increases in real-world sales.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are couple of problems with this. One reflects some ambiguity. When Fox says “increase in real-world sales”, is he asking for a measure of business performance? I think, although I’m not sure, he means “increases in the number of physical &lt;em&gt;things&lt;/em&gt; shipped”. And if he means increases in the number of physical things, then this is precisely &lt;em&gt;why&lt;/em&gt; the BLS makes these quality adjustments.&lt;/p&gt;
+
+&lt;p&gt;Multi-factor productivity is simply a ratio of value-added to an index of inputs. Value-added in the manufacturing sector is a mesure of the economic value of all the goods produced. Not the physical number, the economic value. And hence manufacturing MFP is a measure of how much economic value that sector produces - not the physical number of goods - per unit of input used. I know this paragraph was redundant, but it is crucial to keep the distinction between value-added and the actual number of things clear.&lt;/p&gt;
+
+&lt;p&gt;If all we were doing was counting units, then no quality adjustments would be necessary. But we are trying to measure value-added, so they are. You cannot just add the 50 or so million iPhone 7’s that will be sold this quarter to the 20 million or so iPhone 6’s that will be sold to get 70 million phones. That ignores the fact that these items are different goods. And this problem gets exacerbated when I try to compare value-added over time. How do I compare the 50 million iPhone 7’s to the 5 million IBM PC’s produced in 1986? The BLS makes these adjustments to try and make the measure of value-added - and hence the measure of MFP - comparable over time.&lt;/p&gt;
+
+&lt;p&gt;You could quibble with their exact method - I think an iPhone 7 is roughly equivalent to 400 IBM PC’s, but the BLS thinks it’s equivalent to 500 - but without these quality adjustments, MFP would be uniquely scaled in each year. It would be impossible to compare MFP in 2016 to MFP in 2015, and hence to know if it grew or not. While imperfect, you can’t skip the quality adjustment if you want to make any comparisons over time.&lt;/p&gt;
+
+&lt;p&gt;The other sectors are not “more real” than computer equipment because they have smaller adjustment factors. You could easily argue that the &lt;em&gt;other&lt;/em&gt; sectors are “less real” because they have improper quality adjustments. The BLS could be missing all the wonderful innovations we’ve made in refrigerator construction, for example, and understating MFP growth in that sub-sector.&lt;/p&gt;
+
+&lt;p&gt;Ignoring computer equipment in MFP does not give you a better read on what is “really happening” in the manufacturing sector. MFP is what is really happening to …. MFP. If you mean “are manufacturing firms profitable or successful or expanding or exporting”, then you mean something different than MFP.&lt;/p&gt;
+
+&lt;h3 id=&quot;mfp-has-nothing-to-do-with-corporate-accounting&quot;&gt;MFP has nothing to do with corporate accounting&lt;/h3&gt;
+&lt;p&gt;The prior section hints at how people make the mistake of evaluating the economy as if it were a business. The following quote shows what I mean.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… but the adjustments do raise questions about what exactly the productivity numbers signify. They don’t necessarily mean, for example, that computer and electronics manufacturers in the U.S. are actually growing, or succeeding in international competition.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No, they don’t. They’re not intended to. MFP is not a measure of whether firms or industries are “succeeding”, in any corporate or financial sense of that word. MFP is a measure of how much value-added the manufacturing sector produced for a given set of inputs. That’s it.&lt;/p&gt;
+
+&lt;p&gt;Value-added is not profits, in any financial accounting sense. The &lt;em&gt;closest&lt;/em&gt; you can get to an analog in financial accounts is to take revenues minus cost of goods sold. And revenues minus cost of goods sold is &lt;em&gt;not&lt;/em&gt; profits. Why? Because the firm still has to pay wages, interest costs, taxes, and dividends, among other things. So firms could easily be losing money, either in the sense of having negative net profits or a negative cash flow, even though their value-added is positive. Or maybe they are making money, and then good for them. But it is &lt;em&gt;irrelevant&lt;/em&gt; to MFP whether the firms are making money or not. MFP and firm or industry “success” are fundemantally different things. One implies nothing about the other.&lt;/p&gt;
+
+&lt;p&gt;To get back to the prior section, the BLS is not trying to produce a quality adjustment so that their numbers reflect the financial accounting position of manufacturing firms. They are producing a quality adjustment so that MFP reflects a measure of how much value-added we get per unit of inputs. If their MFP number doesn’t mesh with your intuition or knowledge of the financial position of manufacturing as a sector, then … so? It’s not intended to.&lt;/p&gt;
+
+&lt;h3 id=&quot;mfp-is-not-about-competitiveness&quot;&gt;MFP is not about competitiveness&lt;/h3&gt;
+&lt;p&gt;Fox quotes Michael Mandel, of the Progressive Policy Institute, on why one should pay attention to MFP as opposed to labor productivity,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Because it includes a wider scope of inputs and costs, multifactor productivity is a better indicator of how innovative and competitive an industry really is.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No, it’s not. It has precisely zero to do with how competitive an industry is. First of all, “competitive” is a word devoid of meaning. “Competitive” could mean “cheap”, like textile firms in Southeast Asia, which have lower MFP than US firms. “Competitive” could mean “very low profits can be made” because entry of competitors is easy, like gas stations or coffee shops. That has nothing to do with whether MFP is high is low in those industries. “Competitive” could mean “produces a product that has an export market”, but that could just mean that the industry holds patents or other IP that makes it hard for others to replicate their product. And having intellectual property rights over a product doesn’t mean your MFP is large or small.&lt;/p&gt;
+
+&lt;p&gt;What Mandel probably means is “profitable” or “growing in revenues”, but I don’t know for sure. If his meaning is along those lines, then MFP doesn’t tell us anything about that, for the reasons I outline in the prior section. MFP is not a measure of profitability or market size.&lt;/p&gt;
+
+&lt;p&gt;It also isn’t a measure of how innovative an industry is, because as I’ve mentioned before on this blog, MFP is not a pure measure of technology or innovation. MFP is a garbage dump for everything we don’t know how to measure, including technology. So MFP can be stagnant even if an industry is innovative, or vice versa. If there is any imperfect competition in the industry so that markups exist, then MFP is affected by the growth rate of labor and capital, and the direction of this effect is indeterminate without knowing more about input growth. If there are re-allocations of inputs across firms within industries, then this influences MFP, and again the effect is indeterminate until you know which firm is shedding inputs and which one is gaining them.&lt;/p&gt;
+
+&lt;h3 id=&quot;mfp-is-a-ratio-not-a-story&quot;&gt;MFP is a ratio, not a story&lt;/h3&gt;
+&lt;p&gt;Because they are ratios, both MFP and labor productivity can rise because the numerator (value added) rises or because the denominator (all inputs or just labor) falls. It doesn’t matter which one moves.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On the whole, the U.S. manufacturing sector does not appear to have been a hotbed of innovation and productivity gains in recent years. It has gotten by with fewer workers, but in many cases that seems to have been more about managing decline through layoffs and plant shutdowns than boldly leaping into the automated future.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As we’ve learned, you cannot say anything about “innovation” from looking at MFP. But this is accurate that manufacturing has not been a hotbed of MFP or labor productivity growth in recent years. But then there are a couple things to unpack in the last sentence of this quote.&lt;/p&gt;
+
+&lt;p&gt;If MFP is stagnant but the manufacturing sector has shed workers, then this means either value added in manufacturing has fallen (it has not) or the other inputs like capital have risen (they must have). This indicates that labor productivity, value-added divided by number of workers only, must be rising.&lt;/p&gt;
+
+&lt;p&gt;But that’s it. We’re done. It is irrelevant to MFP or labor productivity what the story is behind the decline in labor and the increase in capital. The fact that you cannot attribute the decline of labor to lasers or robots or AI or hologram technology doesn’t change the fact that labor use declined, labor productivity went up, and MFP stayed stagnant. Closing a plant reduces labor in manufacturing, and if value-added doesn’t fall by enough, labor productivity in manufacturing just went up. It’s irrelevant for productivity that this is layoffs or shutdowns versus automated whatever.&lt;/p&gt;
+
+&lt;p&gt;Just let productivity be productivity. It measures value-added - not profits, not sales, not cash flow - relative to inputs, and therefore tells us how effectively the economy - not businesses - turns inputs into value-added. Slower MFP growth means slower MFP growth, not anything about competitiveness or the future business success/failure of US manufacturing. Heck, it doesn’t even tell us anything about the &lt;em&gt;past&lt;/em&gt; business success or failures of US manufacturing.&lt;/p&gt;
+
+&lt;h3 id=&quot;coda-manufacturing-is-a-relatively-small-sector&quot;&gt;Coda: Manufacturing is a relatively small sector&lt;/h3&gt;
+&lt;p&gt;This last point isn’t directly related to the main post, but I like to harp on this, and its my blog, so you’re kind of stuck with it. Manufacturing represents a small slice of economic activity in the United States. And there is no reason why we should be particularly worried or concerned with productivity in this sector relative to other sectors, many of which employ more people and are responsible for larger portions of value-added.&lt;/p&gt;
+
+&lt;p&gt;Manufacturing used about 9% of the hours worked in the US in 2015 (all numbers from the BLS). That makes it about as important, in employment terms, to retail (10%) and the recreation, accommodation, food service sector (9%). It employs less than education and health (15%), government (15%), and profession and business services (14%). But no one seems to write articles worrying about the MFP numbers in any of those other sectors.&lt;/p&gt;
+
+&lt;p&gt;Drilling down, durable goods manufaturing - like, you know, “real” economic output - employed about 6% of hours worked in 2015. That means it is as large as … administrative and waste services (6%) and profession and scientific services (6%), and slightly ahead of the “other retail” sector (5%) and construction (5%). It’s behind accomodation and food (8%) and state and local government (12%). The vast majority of hours, and workers, are employed doing anything &lt;em&gt;except&lt;/em&gt; putting together durable goods.&lt;/p&gt;
+
+&lt;p&gt;In terms of value-added, manufacturing accounts for about 11% of the aggregate, comparable to profession and business services (13%) and government (12%), and well less than finance and real estate (20%).&lt;/p&gt;
+
+&lt;p&gt;Manufacturing is not the dominant origin of employment or value-added. Which means that any action in labor productivity or MFP in manufacturing has a small effect on aggregate labor productivity of MFP. For labor productivity, you’d use the share of hours worked to weight manufacturing, and for MFP, you’d use the share of value-added. So as a rule of thumb, the reported change in manufacturing only counts for about 1/10 of that in the aggregate. Labor productivity rises by 3% in manufacturing? Then this adds about 0.3% to aggregate labor productivity. Manufacturing MFP falls by 1%? Then aggregate MFP falls by about 0.1%. There is nothing magic or special about manufacturing that priviledges its hours or value-added above other sectors in the aggregate calculations. It’s a relatively small part of the pie.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Oct 2016 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Labor Recovery and the Productivity Slowdown</title>
@@ -1561,49 +1647,6 @@
 &lt;p&gt;This has now gotten so long that I need to wrap it up. Let me try to do that by essentially repeating my summary from above. You cannot talk about aggregate productivity growth without talking about both technology &lt;em&gt;and&lt;/em&gt; the distribution of workers across sectors. Anecdotes - positive or negative - about individual technologies are not informative about the aggregate level of productivity growth.&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 May 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Concentration and Growth</title>
-        <link>https://growthecon.com/blog/Comp-Growth/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Comp-Growth/</guid>
-        <description>&lt;p&gt;A whole raft of posts and articles (&lt;a href=&quot;http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2612047&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://promarket.org/are-we-all-rent-seeking-investors/&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;http://equitablegrowth.org/what-are-the-factors-behind-high-economic-rents/&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;http://www.nybooks.com/articles/2015/12/17/robert-reich-challenging-oligarchy/#fnr-5&quot;&gt;here&lt;/a&gt;) has shown up recently regarding “rent-seeking”. This is kind of a catch-all for increased concentration within industries, more lenient anti-trust enforcement, and the increasing share of corporate profits in output. This is then tied to the slowdown in wages over the last few decades, increasing inequality, and even to slower aggregate growth.&lt;/p&gt;
-
-&lt;p&gt;The arguments made by those &lt;em&gt;doing&lt;/em&gt; the concentrating and profit-making is that they are promoting efficiency, productivity, and hence growth. Do we know whether concentration or rent-seeking would be good or bad?&lt;/p&gt;
-
-&lt;p&gt;I’m going to draw a lot on one of my professors in grad school, Peter Howitt, who along with Philippe Aghion is really one of the godfathers of studying competition and growth. They have a really nice &lt;a href=&quot;http://www.nber.org/papers/w18824.pdf&quot;&gt;paper&lt;/a&gt; with Ufuk Akcigit regarding their “Schumpeterian theory” and how it connects to the data. Schumpeterian theory, for the uninitiated, is growth theory that explicitly deals with firms replacing each other by innovating. This “creative destruction” is what gives the theory its moniker.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/aah1.png&quot; alt=&quot;Competition and innovation&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The AAH paper provides a few sets of empirical results culled from various work done by the authors. One of the most interesting is in the figure posted above, using British industry data, which plots patent activity by firms against the level of competition in their industry. Competition is measured by the ratio of marginal costs to price; the inverse of the markup a firm can charge. A higher ratio means MC and P are very close together in the industry, and hence it is very competitive.&lt;/p&gt;
-
-&lt;p&gt;What you can see is that patent activity, a proxy for innovation, has this inverted U-shape with respect to competition. That is, increasing competition doesn’t necessary mean more innovation. Why? Because at some point it isn’t worth it to the firms. If you have little market power, what incentive do you have to innovate? In contrast, if you have a &lt;em&gt;lot&lt;/em&gt; of market*, then you also are less inclined to innovate, because why bother? You already control market share, and R&amp;amp;D is just a cost.&lt;/p&gt;
-
-&lt;p&gt;The “neck-and-neck” industries are just those in which the leading firms are very close in productivity level. They have an additional incentive to innovate (which shows up as their curve being shifted up) because these firms want to try and shed their main competitor.&lt;/p&gt;
-
-&lt;p&gt;Regardless, what this figure implies for concentration and growth is that it depends. Concentration and consolidation mean that industries are moving to the &lt;em&gt;left&lt;/em&gt; along the x-axis, with less competition. Now, if that industry were already very competitive (close to 1, say), the consolidation may actually increase innovation. But if the industry is already consolidated to some degree, then decreasing competition is going to lower innovation and growth. I have in my head the difference between Marriott consolidating hotel chains around the country in the 70s and 80s, reaping some economies of scale, and investing in improved hotel quality, and Marriott in 2016, buying Starwood. Marriott will probably want to argue that they will still innovate more, but the worry is that they are on the “wrong side of the curve” in AAH’s diagram.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/aah2.png&quot; alt=&quot;Entry and Growth&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A second result AAH focus on deals with frontier versus backward firms. Here, they again look at British firms, but along the x-axis is the degree of competition measured by the entry of foreign firms into their industry.&lt;/p&gt;
-
-&lt;p&gt;For “frontier” firms, meaning those who have productivity levels close to the maximum in the industry, increased competition leads to &lt;em&gt;higher&lt;/em&gt; productivity growth. These firms respond to the foreign competition by getting better. But for “non-frontier” firms, the increased entry means they innovate &lt;em&gt;less&lt;/em&gt;. Their productivity growth rate actually falls. They don’t try as hard to innovate.&lt;/p&gt;
-
-&lt;p&gt;The question with this result is what it implies for concentration. If concentration means less competition (going left on the x-axis) then this implies frontier firms will innovate &lt;em&gt;less&lt;/em&gt;, while non-frontier firms will innovate &lt;em&gt;more&lt;/em&gt;. But of course concentration implies that firms are buying up one another (or forcing one another out of business). It seems likely that it is the frontier firms pushing the non-frontier firms out of business with concentration. Hence the lower competition would lower the growth rate of productivity in the frontier, and now larger, firms.&lt;/p&gt;
-
-&lt;p&gt;A very nice, specific, example of the effect of competition on productivity is in one of my favorite &lt;a href=&quot;http://web.stanford.edu/~klenow/Schmitz.pdf&quot;&gt;papers&lt;/a&gt;, by James Schmitz. He studies the reaction of the US and Canadian iron ore industries to competition from Brazilian suppliers. They responded by massively upgrading productivity relative to its level in the prior decades. His figure shows the jump in labor productivity in the US industry around the early 1980’s, when Brazil came online.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/schmitz.png&quot; alt=&quot;Iron Ore Productivity&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;What’s interesting about this paper is that Schmitz documents how nearly all of the improvement in productivity came through work practices. There was not any massive technical innovation at play here. The competition changed behavior at the producers of iron ore, and essentially got capital utilization rates (i.e. hours of use per day of machines) way up over prior levels. Productivity improvements are not necessarily a function of R&amp;amp;D, these firms could have made those improvements for decades before Brazil entered. But they had a dominant market position, and didn’t need to.&lt;/p&gt;
-
-&lt;p&gt;In short, yes, the increasing concentration of industry and rent-seeking, may well be having a demonstrable drag on productivity growth. If this concentration has reduced the need to innovate to stay ahead, because no one can compete with you any more, then this is a negative for growth. Industries, like the iron ore industry prior to the 80’s, that have concentrated market structures with little competition, may not implement even obvious productivity improvements.&lt;/p&gt;
-
-&lt;p&gt;If there has been a long-run increase in concentration, decline in entry, and consolidation of market power, then this could be part of the productivity slow-down of the late 20th century/early 21st. Ryan Decker, John Haltiwanger, Javier Miranda, and Ron Jarmin, have been banging on the subject of declining “dynamism” for a while. Ryan’s &lt;a href=&quot;http://www.rdecker.net/research&quot;&gt;website&lt;/a&gt; is probably the easiest place to find this research all centralized. While I expressed &lt;a href=&quot;https://growthecon.com/blog/economic-dynamism-and-productivity-growth/&quot;&gt;caution&lt;/a&gt; that declining new business formation is, by itself, necessarily a sign of slower innovation, the whole body of evidence they have about slower gross flows of workers between firms and firms into/out of existence suggests something is quite different over the last few decades.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, and this is my impression, not some kind of established fact, concentration likely lowers innovative activity. Put it this way, the null hypothesis should probably be that concentration lowers innovation. An individual industry needs to provide evidence they are on the “right side of the curve” in the first AAH figure to believe concentration would be good for productivity growth in the long run.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
