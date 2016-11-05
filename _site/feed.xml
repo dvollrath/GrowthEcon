@@ -5,7 +5,78 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Thu, 27 Oct 2016 16:46:31 -0500</pubDate>
+    <pubDate>Sat, 05 Nov 2016 14:32:16 -0500</pubDate>
+    
+      <item>
+        <title>GDP, Productivity, and Financial Performance</title>
+        <link>https://growthecon.com/blog/Accounting/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Accounting/</guid>
+        <description>&lt;p&gt;In my last &lt;a href=&quot;https://growthecon.com/blog/Manufacturing/&quot;&gt;post&lt;/a&gt;, I got upset because people were using measures of productivity as measures of firm or industry financial performance. And as part of that, I made the point that GDP (which is part of measuring productivity) has nothing to do with profits, or financial success in any way. A few people asked me about this, because it wasn’t obvious to them.&lt;/p&gt;
+
+&lt;p&gt;I think part of the issue is that lots of people interested in economics are business literate, meaning they understand what is on financial statements, and want to translate those concepts to the economy as a whole.&lt;/p&gt;
+
+&lt;p&gt;The problem is that the economy as a whole is not just one big aggregate business. But, you can get some insight into what GDP is actually measuring by building it up from business accounts. So let’s give that a try.&lt;/p&gt;
+
+&lt;p&gt;This is a stylized example of an income statement you could find from any firm:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Rev - COGS - Exp - Wage - Int - Div - Rent - Dep - Tax - Bull = Earn&lt;/script&gt;
+
+&lt;p&gt;The individual items are as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Rev&lt;/strong&gt;: Revenues&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;COGS&lt;/strong&gt;: Cost of goods sold. Think of raw materials.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Exp&lt;/strong&gt;: Expenses, specifically those which are paid to other firms, like advertising costs, legal costs, and the like.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Wage&lt;/strong&gt;: Salaries and wages.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Int&lt;/strong&gt;: Interest payments on any loans or bonds.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Div&lt;/strong&gt;: Dividends.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Rent&lt;/strong&gt;: Rent on property and/or items of intellectual property like patents or copyrights.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dep&lt;/strong&gt;: Depreciation of fixed assets.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tax&lt;/strong&gt;: Corporate income taxes. It’s important here to note these are &lt;em&gt;not&lt;/em&gt; sales taxes or excise taxes like tariffs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bull&lt;/strong&gt;: All sorts of other bulls%&amp;amp;^ that firms use to limit the earnings they need to pay taxes on.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Earn&lt;/strong&gt;: Reported net earnings.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In evaluating a firm, you probably look first at &lt;em&gt;Earn&lt;/em&gt;, which indicates wow much money did they made. &lt;em&gt;Earn&lt;/em&gt; is the number you would use in a P/E ratio if you were evaluating the a public firm’s stock. You might also look at different concepts of earnings, like EBIDTA, which would be like &lt;em&gt;Earn + Int + Dep + Tax + Bull&lt;/em&gt;. Regardless, the purpose of this income statement is to evaluate the financial success of the company. You are interested in the bottom line number, earnings.&lt;/p&gt;
+
+&lt;p&gt;Let’s take this and use it to build up GDP. All that’s required is basic addition and subtraction. First, rearrange the income statement in the following way&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(Rev - COGS - Exp) - (Wage + Int + Div + Rent + Dep) = Earn + Bull + Tax&lt;/script&gt;
+
+&lt;p&gt;There are two groupings on the left-hand side, and we’ll get to those in a moment. Before that, note that I’ve put &lt;em&gt;Earn + Bull + Tax&lt;/em&gt; together on the right-hand side. I’m going to rename this combined term as &lt;em&gt;Profits&lt;/em&gt;.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(Rev - COGS - Exp) - (Wage + Int + Div + Rent + Dep) = Profits&lt;/script&gt;
+
+&lt;p&gt;There are a couple of questions here. Why is &lt;em&gt;Bull&lt;/em&gt; part of &lt;em&gt;Profits&lt;/em&gt;? Because &lt;em&gt;Bull&lt;/em&gt; is purely accounting gimmick stuff to mitigate taxes. So while they list it like any other expense, we will not. Next, why is &lt;em&gt;Tax&lt;/em&gt; part of &lt;em&gt;Profits&lt;/em&gt;? Because what happens to those profits after they are made is a different question than how big those profits actually are. &lt;em&gt;Profits&lt;/em&gt; is really &lt;em&gt;Profits before corporate income taxes&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, move that grouping of wages and interest and other items over to the right-hand side.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Rev - COGS - Exp = Wage + Int + Div + Rent + Dep + Profits&lt;/script&gt;
+
+&lt;p&gt;The term on the left-hand side is called &lt;em&gt;value-added&lt;/em&gt;. The firm sells goods and services for &lt;em&gt;Rev&lt;/em&gt;, and that is the total value of those goods and services. But those goods and services required the value of &lt;em&gt;COGS&lt;/em&gt; and &lt;em&gt;Exp&lt;/em&gt; to produce, so the &lt;em&gt;value-added&lt;/em&gt; of the firm is the difference of their revenues and these expenses. Now we’ve got:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;ValueAdded = Wage + Int + Div + Rent + Dep + Profits&lt;/script&gt;
+
+&lt;p&gt;Great. At a firm level, we have that their value-added is, by definition, equal to their wages, interest payments, dividends, rents, depreciation, and profits. Whether that &lt;em&gt;Profits&lt;/em&gt; term is positive or negative is unknowable without knowing the other terms.&lt;/p&gt;
+
+&lt;p&gt;Now, this equation holds for all the firms in the economy. It holds even for those firms who don’t produce formal financial statements, like your local food truck. It holds for federal, state, and local governments, who differ in how they assign money to different categories. Sum up both sides of the equation across all firms or entities that produce value added.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;GDP = \sum Wage + \sum Int + \sum Div + \sum Rent + \sum Dep + \sum Profits&lt;/script&gt;
+
+&lt;p&gt;The left-hand side is GDP, because GDP is the sum of value-added across all firms, by definition. Go backwards, and note how GDP is built up. It is the sum of value-added across firms. Value-added is &lt;em&gt;Rev - COGS - Exp&lt;/em&gt;, which does not tell you anything about profits at the firm level.&lt;/p&gt;
+
+&lt;p&gt;GDP can be decomposed among all those things on the right-hand side. And in fact the BEA reports exactly the right hand side in their Gross Domestic Income (GDI) estimate, which is equal to GDP except for a small statistical discrepancy (because adding up all these things across firms is hard).&lt;/p&gt;
+
+&lt;p&gt;GDP (or GDI) tells you nothing about the financial health or success of firms. &lt;em&gt;Profits&lt;/em&gt; could be big, or small, or negative, or positive. As a company, Amazon lost about 240 million dollars in 2014. But that doesn’t mean the services it provided didn’t count in GDP. They provided about 26 billion in value-added the same year. Sears Holding Company lost 1.13 billion dollars in 2015, which was better than the 1.68 billion they lost in 2014. At the same time, Sears Holding contributed about 5.8 billion to GDP in 2015, and 7.1 billion to GDP in 2014. It is not GDP’s problem that Sears seems to have more combined costs, like wages, rent, and interest, than can be covered by their value-added. It doesn’t change the fact that Sears provided goods and services to the economy.&lt;/p&gt;
+
+&lt;p&gt;Is this a problem with GDP? The answer to that depends entirely on what you are trying to measure. If you are interested in knowing the value of all the goods and services produced in an economy, then GDP is what you want. To borrow a British phrase, it does what it says on the tin.&lt;/p&gt;
+
+&lt;p&gt;But if you are interested in knowing if firms (or industries) in the economy are “doing well” or “successful” or “healthy”, then you should look at firm financial statements, and things like net earnings, or EBIDTA, or net income from continuing operations, or operating income, or gross profit, or whatever is your favorite financial indicator. Using those, you might decide that Amazon or Sears will go out of business in the future because they lose money. Or decide to sell or buy stock in those companies. Or decide to sue their CEO, or vote for a new board. But GDP isn’t here to tell you those things. GDP doesn’t care.&lt;/p&gt;
+
+&lt;p&gt;Which is why productivity measures like multi-factor productivity (MFP) or labor productivity are &lt;em&gt;not&lt;/em&gt; measures of firm health, success, or financial performance. These measures take GDP (in aggregate, or at the industry level) and divide it by numbers of inputs used. As GDP is not a measure of firm financial success, productivity cannot be a measure of firm financial success either.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Nov 2016 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Productivity measures productivity ... that&#39;s it</title>
@@ -1571,82 +1642,6 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 11 May 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Technology versus the Distribution of Workers in Aggregate Productivity</title>
-        <link>https://growthecon.com/blog/Decomposition/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Decomposition/</guid>
-        <description>&lt;p&gt;There was a recent &lt;a href=&quot;https://artir.wordpress.com/2016/04/25/no-great-technological-stagnation/&quot;&gt;post&lt;/a&gt; by an engineer rebutting Robert Gordon’s (and others) thesis that technological change was slowing down. The evidence cited is a series of plots and figures showing how specific technologies (battery storage, energy efficiency, computer speed, etc..) are advancing just as fast as they have for decades, if not faster. And there were a number of responses along the lines of “See, Gordon is wrong!”.&lt;/p&gt;
-
-&lt;p&gt;The mistake here is that this doesn’t constitute evidence that Gordon is wrong. But the mistake is partly forgivable because Gordon himself indulges in these kinds of anecdotal arguments to advance his thesis, and so it seems as if you could refute his conclusions by offereing alternative anecdotes.&lt;/p&gt;
-
-&lt;p&gt;But the important part of Gordon’s argument is not that specific technologies are or are not advancing. It is that &lt;em&gt;aggregate productivity growth&lt;/em&gt; is slowing down. And aggregate productivity growth depends not only on individual technologies, but crucially on the distribution of workers using those technologies. Arguing about only those individual technologies is like using an increase in the price of milk to argue that inflation must be high.&lt;/p&gt;
-
-&lt;p&gt;Aggregate productivity growth depends on what we can call “within-sector” growth, which is going to be tied closely to those individual technologies. But it also depends on “across-sector” growth, which is tied to the movement of workers from one sector (or job) to another. If workers are shifting from high- to low-productivity sectors or jobs, then aggregate productivity growth may fall even though nothing happened to actual technological change.&lt;/p&gt;
-
-&lt;p&gt;I’ll make this more clear below, but here’s a quick summary of what I’ll try to establish. Gordon’s critics could well be right about their individual technologies, and yet wrong about this having anything to do with aggregate growth, because those sectors may not employ many people. And Gordon can be right about aggregate growth, but wrong about individual technologies stagnating, because the movement of workers to low-productivity sectors may be dragging down growth. In short, you cannot talk about aggregate productivity growth without talking about both technology &lt;em&gt;and&lt;/em&gt; the distribution of workers across sectors.&lt;/p&gt;
-
-&lt;h3 id=&quot;gruesome-detail&quot;&gt;Gruesome Detail&lt;/h3&gt;
-&lt;p&gt;Yes, there is math. Gordon’s argument is about the growth rate of total factor productivity (TFP). But sector and industry level data on TFP isn’t available for the time frames I want, so I’m going to look instead at value-added per hour, a measure of labor productivity. TFP and value-added per hour are going to be highly correlated, but not perfectly.&lt;/p&gt;
-
-&lt;p&gt;Value-added per hour, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y\inline&quot;/&gt;, is the summation across all &lt;img src=&quot;http://latex.codecogs.com/png.latex?J\inline&quot;/&gt; sectors of the economy&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;y = \sum_{j=1}^J s_j y_j&lt;/script&gt;
-
-&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_j\inline&quot;/&gt; is the share of total hours worked in sector &lt;img src=&quot;http://latex.codecogs.com/png.latex?j\inline&quot;/&gt;, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_j\inline&quot;/&gt; is the value-added per hour in sector &lt;img src=&quot;http://latex.codecogs.com/png.latex?j\inline&quot;/&gt;. With that definition, the &lt;em&gt;change&lt;/em&gt; in value-added per hour from time 0 to time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt; can be written as&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta y_t = \sum_{j=1}^J s_{jt} y_{jt} - \sum_{j=1}^J s_{j0} y_{j0}.&lt;/script&gt;
-
-&lt;p&gt;This isn’t very informative by itself, but by rearranging the terms in those two summations, adding and subtracting some other common terms, and a little algebra, we can get&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta y_t = \sum_{j=1}^J \Delta y_{jt} s_{j0} + \sum_{j=1}^J \Delta s_{jt} y_{j0} + \sum_{j=1}^J \Delta y_{jt} \Delta s_{jt}.&lt;/script&gt;
-
-&lt;p&gt;A couple of notes on this equation. First, this is the absolute change in value-added per hour. This isn’t the growth rate. You could divide by sides by &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0\inline&quot;/&gt; to get a growth rate, but as written the equation looks simpler. Second, I’ve made precisely zero assumptions about behavior to get this. This is pure accounting.&lt;/p&gt;
-
-&lt;p&gt;The three separate summations on the right-hand side can be nicely interpreted.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Within-sector growth&lt;/strong&gt;: &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sum_{j=1}^J \Delta y_{jt} s_{j0}\inline&quot;/&gt; holds constant the allocation of hours seen at time zero. This is the growth we’d get if all that happened was that each sector got more productive, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\Delta y_{jt}\inline&quot;/&gt;, but we did not allow anyone to change jobs. The idea is to measure just improvements in labor productivity within sectors.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Across-sector growth&lt;/strong&gt;: &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sum_{j=1}^J \Delta s_{jt} y_{j0}\inline&quot;/&gt; holds constant the value-added per hour seen at time zero. This is the growth we’d get if all that happened was that workers (and their hours of work) moved between jobs. Note that this will be positive if people move from low- to high-productivity jobs, or negative if they move from high- to low-.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Covariance&lt;/strong&gt;: &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sum_{j=1}^J \Delta y_{jt} \Delta s_{jt}\inline&quot;/&gt; captures the fact that not only do sectors vary in their time-zero level of productivity, but differ in their productivity growth. This term captures whether or not people are moving into sectors where productivity is &lt;em&gt;growing&lt;/em&gt;, which would show up as a positive value. A negative means that workers are moving to sectors where productivity is shrinking.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To illustrate the role of these three effects, I pulled down sector-level data from the &lt;a href=&quot;http://www.rug.nl/research/ggdc/data/10-sector-database&quot;&gt;Groningen 10-sector database&lt;/a&gt; for the U.S., from 1950-2010. The 10 sectors are broad - agriculture, manufacturing, construction, etc. - but have the advantage of spanning a long time frame. I can pull data from the BLS at a much finer industry level at the cost of only going back to 1987. From what I found, the BLS data confirm the story I’ll tell with the Groningen data, so let’s stick with that.&lt;/p&gt;
-
-&lt;p&gt;In each year, I calculated the three terms in the above equation, looking backward 10 years each time. So I have the rolling 10-year growth in value-added per hour (VAPH), as well as how it breaks down into within, across, and covariance terms. What I’ve plotted below is the total growth rate, not an annualized rate, so that everything still adds up exactly.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_us_decomp_10.png&quot; alt=&quot;US Decomposition&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;What is pretty clear is that within-sector growth is the dominant force in VAPH. And you can see the early high reported rates of growth of within-sector growth in the 1960’s (which capture growth from the 50’s into the 60’s). There is a clear slowdown in within sector growth from about 1975 to 1990, consistent with all the other evidence, and then things recover not quite back to the 1960’s level. The dip in 2009 and 2010 indicates that growth in VAPH from about 1999/2000 to 2009/2010 has been relatively slow, again consistent with our priors.&lt;/p&gt;
-
-&lt;p&gt;Now look at the contributions of across-sector growth and the covariance term. Across-sector growth is consistently positive throughout most of this period, but starts declining significantly around 1990, so that over the last ten years across-sector growth is &lt;em&gt;negative&lt;/em&gt; for overall growth in VAPH. That means between 2000 and 2010 workers were moving out of sectors with high productivity (in 2000), and into sectors with low productivity (in 2000). Without any slowdown in actual productivity growth, &lt;em&gt;measured&lt;/em&gt; aggregate productivity growth is going to be lower.&lt;/p&gt;
-
-&lt;p&gt;The negative contribution of the covariance term tells a similar story of negative effects, although this appears to be a consistent issue. Workers are not only moving into low productivity sectors to begin with, but into sectors with low productivity &lt;em&gt;growth&lt;/em&gt;. This also drags down measured aggregate productivity growth.&lt;/p&gt;
-
-&lt;p&gt;The 10-year growth rate, starting in the 1990’s (which means the effects started in the early 80’s), no longer lies &lt;em&gt;above&lt;/em&gt; the within-sector growth rate. In other words, starting in the 80’s, we see the across-sector and covariance effects of structural change producing a negligible or even negative effect on VAPH growth. This is most apparent in those final few years of the graph.&lt;/p&gt;
-
-&lt;p&gt;For Gordon’s critics, they can be right that individual technologies are still growing quickly, but what they do not account for is that labor may be moving &lt;em&gt;out&lt;/em&gt; of those sectors and hence aggregrate growth could still be low. If we could get finer and finer levels of industry data, it is quite possible that what looks like a decline in within-sector growth in 2009/2010 is really just negative across-industry growth at those finer levels of industry. Gordon being wrong about whether specific technologies are improving does not make him wrong about aggregate growth declining.&lt;/p&gt;
-
-&lt;p&gt;At the same time, the fact that aggregate growth was high in the 40’s and 50’s doesn’t necessarily mean that individual technologies were improving faster than they are today.I don’t have the data, but I’d be fascinated to know what this figure looks like going backwards in the 1950’s and 1940’s, during Gordon’s golden age of productivity growth. Were those decades really a time of amazing “true” technological growth - which might be proxied by the within-sector effect - or did they benefit as much from strong across-sector and covariance terms?&lt;/p&gt;
-
-&lt;p&gt;One plausible reason for strong across-sector and covariance terms is the hump-shaped nature of demand for manufactured goods. In the 40’s and 50’s and 60’s, there was within-sector productivity growth in durable goods - refrigerators, TVs, cars - for sure. But this also generated large movements of people &lt;em&gt;into&lt;/em&gt; those sectors, which would have produced big positive across-sector and covariance terms. Why? Because Americans didn’t own lots of refrigerators, cars, and TVs. Higher within-sector productivity would have lowered prices, and a high elasticity of demand would have meant those sectors pulled labor into those sectors.&lt;/p&gt;
-
-&lt;p&gt;But by the 70’s and later, higher within-sector productivity growth in durables and other manufatures may not have generated the same across-sector and covariance effects. Why? Because there are limits to durable good demand. Once everyone has a refrigerator, they tend to want to buy other things, and not &lt;em&gt;another&lt;/em&gt; refrigerator. I know that’s not totally true; I have a 2nd fridge in my garage that serves as a strategic beer reserve. But in general, demand for durable goods becomes less elastic as we get richer. Which means that within-sector productivity gains don’t pull workers into manufacturing employment, it actively pushes them &lt;em&gt;out&lt;/em&gt;. And because the sectors that labor is moving into are relatively low productivity, and have low productivity growth, we get negative across-sector and covariance terms. By the way, there is nothing here that William Baumol couldn’t have told you thirty years ago.&lt;/p&gt;
-
-&lt;p&gt;A comparison with South Korea is interesting, because they are several decades behind the US in this transformation. In the figure below I plotted the same rolling 10-year growth rates as for the US. It shows the big across-sector contribution to growth in South Korea in the 80’s and 90’s, as they were industrializing heavily and the elasticity of demand for those kinds of durable goods was still large. Compare the figures, and you’ll see that while the US may have had 8% total growth in VAPH due to across-sector effects at the maximum, in South Korea this maximum is closer to 40%. As South Korea got richer, this across-sector contribution has been falling, but is still adding about 6% to total growth in VAPH. The example of South Korea is why I think that part of the explanation for the rapid productivity growth in the US during the 40’s and 50’s could be across-sector effects, and not just a higher rate of innovation or technological change.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_kor_decomp_10.png&quot; alt=&quot;SK Decomposition&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This has now gotten so long that I need to wrap it up. Let me try to do that by essentially repeating my summary from above. You cannot talk about aggregate productivity growth without talking about both technology &lt;em&gt;and&lt;/em&gt; the distribution of workers across sectors. Anecdotes - positive or negative - about individual technologies are not informative about the aggregate level of productivity growth.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 01 May 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
