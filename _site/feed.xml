@@ -5,7 +5,55 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Thu, 24 Nov 2016 09:58:14 -0600</pubDate>
+    <pubDate>Wed, 30 Nov 2016 13:25:37 -0600</pubDate>
+    
+      <item>
+        <title>Employment Going South. Literally.</title>
+        <link>https://growthecon.com/blog/Jobs/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Jobs/</guid>
+        <description>&lt;p&gt;From 1990 to 2015, the US economy as a whole increased employment by about 30 million (30,056,664 according to the BLS). Employment in 1990 was 118,900,000, so that meant that there was a roughly 25% increase in employment over that 25 year period, with a little more than 1 million jobs added per year, on average.&lt;/p&gt;
+
+&lt;p&gt;I’m not going to surprise anyone by saying that these 30 million jobs were not spread equally across the entire US. What I didn’t have a good sense of, personally, was how disparate the change in employment was across the US. This post is just some documentation about the absolute size of the change in job distribution across the US. I don’t know that I have a broader point, but I don’t really internalize the information until I play with it, so this is me trying to internalize the information on shifts in jobs within the US over time.&lt;/p&gt;
+
+&lt;p&gt;The BLS provides county-level employment totals for 1990-2015, hence the time frame I’m looking at. And I can calculate the change in total employment in that 25 year period for each county. I could use the size of the labor force instead (employed plus unemployed) but the patterns I’m going to show you here don’t change appreciably.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/county_loss.png&quot; alt=&quot;Binary job gain loss&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First, of the 3,133 counties for which I have data, 909 of them &lt;em&gt;lost&lt;/em&gt; jobs in absolute terms from 1990 to 2015. The map highlights those 909 counties in pink. The location of these counties are not terribly surprising, although I don’t think I realized how much upstate New York’s employment numbers had dropped over time. You can see the smudge of pink in coal country of West Virginia and Kentucky, along with a big set of job-losing counties in the deep, deep south of Mississippi, northern Louisiana, and southern Arkansas. Downstate Illinois and a swath across the Great Plains also saw absolute declines in the number of employees over 25 years. In total, those counties saw employment fall by 1,471,436 jobs in this period, from a base of about 19.5 million jobs to just over 18 million jobs.&lt;/p&gt;
+
+&lt;p&gt;Beyond the 909 counties that lost jobs in absolute terms, a number of counties lost jobs in relative terms. What I mean by relative loss is as follows. Total employment in the US grew by 25% from 1990 to 2015. If the distribution of jobs across counties stayed fixed at the 1990 distribution, then all counties should have seen job growth of 25% as well. A county that had job growth below 25% then saw a relative decline in employment compared to the rest of the country, and one with job growth above 25% saw a relative increase in emploment.&lt;/p&gt;
+
+&lt;p&gt;There were 2,188 counties that saw a &lt;em&gt;relative&lt;/em&gt; decline in employment over this period, or roughly two-thirds of the counties in the US, and includes the 909 counties with absolute losses. Those counties started with roughly 73 million jobs, and finished with 78.4 million in 2015, an increase of about 5.4 million jobs, or about 7.4%. If those counties had instead grown at 25%, like the US as a whole, they would have had about 91 million jobs, an increase of 18 million jobs.&lt;/p&gt;
+
+&lt;p&gt;These 2,188 counties fell about 13 million jobs “short” of what we’d expect given the 1990 distribution of jobs. Which means that jobs moved out of those 2,188 counties, and moved into the other 944 counties that gained in &lt;em&gt;relative&lt;/em&gt; terms.&lt;/p&gt;
+
+&lt;p&gt;Those 944 counties started with 45.5 million jobs in 1990, and ended in 2015 with 70.5 million jobs, for a gain of about 25 million jobs, which is a percent gain of 55%. The 944 counties that gained in relative terms over this period gained 13 million &lt;em&gt;more&lt;/em&gt; jobs than we would expect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/county_scale.png&quot; alt=&quot;Relative job bins&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The map here plots the relative job change, in number of jobs, for each county in the US over this period. I didn’t include the legend because it got too busy, and shrinking it down made it unreadable. The darker green the county, the more jobs, in relative terms, that it gained over this period. The darker the pink/red the county, the more jobs, in relative terms, that it lost over this period.&lt;/p&gt;
+
+&lt;p&gt;Harris county (Houston), where I live, is a dark green smudge down on the Gulf Coast of Texas. It gained 663,757 jobs over 1990-2015. That is 291,540 more jobs than you would have guessed based on the 1990 distribution of employment, the relative job change. Other counties with big relative gains include Maricopa County, AZ (Phoenix) with 566,974 extra jobs, Clark County, NV (Vegas) with 477,942 extra jobs, and Riverside County, CA (greater LA) with 341,434 extra jobs. You’ll also see dark green counties in North Carolina (Charlotte and Raleigh), Texas (Dallas, San Antonia, Austin), Colorado (Denver), and Florida (basically everything but the panhandle).&lt;/p&gt;
+
+&lt;p&gt;The biggest relative losers in job terms are generally older cities. LA County came in 628,796 jobs under what you would have thought - it gained only 441,710 jobs but we would have guessed it should have gained over 1 million based on the distribution in 1990. Cook County, IL (Chicago) lost 558,190 jobs in relative terms. Wayne County, MI (Detroit) lost 378,043 jobs in relative terms. Cuyahoga County, OH (Cleveland) lost 225,300 in relative terms. Other big relative losses happened in Philadelphia, Milwaukee, Pittsburgh, St. Louis, Baltimore, Hartford, and big swaths of upstate New York (Buffalo and Rochester, mainly).&lt;/p&gt;
+
+&lt;p&gt;These big losses are dominated by big cities because they start with big populations. We can look instead at scaled relative change of jobs. That is, take the relative change in jobs (e.g. -225,300 relative jobs lost in Cuyahoga County) and divide by the initial level of jobs in that county in 1990 (e.g. 642,367 in Cuyahoga County) for a scaled loss (e.g. -0.35 for Cuyahoga).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/county_perc.png&quot; alt=&quot;Scaled changes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The map shows these scaled changes, and the message is similar to before. It was relative loss in the Upper Midwest, Northeast, and some core parts of the South and relative gains in very concentrated urban areas that generally lie in the Sunbelt, plus Denver. So it is not only&lt;/p&gt;
+
+&lt;p&gt;Again, I’m not claiming that this is some kind of revelation here. The movement of population, and hence jobs, from the Northeast/Midwest to the Sunbelt is well known. What I found interesting was putting some tangible numbers of the shift. The little counter-factual I’m doing here is not very rigorous; there is no particular reason to believe that the 1990 distribution is the “right” distribution of jobs to compare against. But the 1990 distribution does have the feature of being prior to NAFTA and prior to China’s accession to the WTO, both of which are at times cited as sources of manufacturing job losses in the upper Midwest and Northeast.&lt;/p&gt;
+
+&lt;p&gt;The scale of the relative job changes, though, indicates that more of the losses have to do with free trade &lt;em&gt;within&lt;/em&gt; the US than free trade &lt;em&gt;outside&lt;/em&gt; of the US. The areas with relative decline lost 13 million jobs compared to the 1990 distribution of jobs. In total the US shed 6 million manufacturing jobs from 1990 to 2015 (18 million to 12 million, roughly). So this relative decline cannot possibly be a function only of manufacturing and international trade in manufactured goods. There is just too much relative movement out of the declining counties to attribute to this. This is a sloppy way of thinking about how this would work counter-factually (I’m ignoring spillovers entirely), but if you magically added 6 million extra jobs to those counties in relative decline, &lt;em&gt;they would still be in relative decline&lt;/em&gt; compared to the Sunbelt in terms of jobs. They’d have 84.4 million jobs (as opposed to 78.4 million), but you’d expect them to have 95.6 million based on the 1990 distribution, so they would still be 11.2 million jobs off the pace.&lt;/p&gt;
+
+&lt;p&gt;The breadth of relative loss, though, seems striking, and is the one thing I did not appreciate prior to looking at this data. 909 counties &lt;em&gt;lost&lt;/em&gt; jobs in absolute terms, which is 29% of all counties. Another 1,279 counties, 41% of all counties, gained jobs in absolute terms buy lost in relative terms. 944 counties, 30%, gained in relative terms. Just as many counties gained in relative terms as lost in absolute terms. The winning locations - Houston, Dallas, Atlanta, Miami, Phoenix, Denver, Vegas - won big, but the losing was spread across a wide area.&lt;/p&gt;
+
+&lt;p&gt;More jobs in 2015 are still located in places in relative decline (78.4 million) than are in places in relative ascent (70.5 million). Of those 78.4 million, 18 million (or about 12% of jobs) are in counties that experienced absolute job losses over the last 25 years. &lt;em&gt;Most&lt;/em&gt; jobs are still in places that look to be losing out to Sunbelt cities over time. To the extent that your local economy plays a role in forming your opinions, this seems relevant, although I am going to stop now before I try to do any amateur political science or sociology.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 30 Nov 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Ethnic fractionalization and growth</title>
@@ -949,94 +997,6 @@
 &lt;p&gt;It has become nearly impossible to &lt;em&gt;not&lt;/em&gt; draw analogies between this period of Roman history and the current political climate in the U.S. I won’t pretend to have some kind of grand insight given the reading I’ve done. But if you are looking to finish the sentence “Trump is just like….”, then the answer you are looking for is not Caesar, Pompey, Brutus, or other big names in the story. You’re looking for Clodius Pulcher. Read the Gruen book for an excellent discussion of the underlying motivations of Clodius’ supporters and his ability to use that support to his advantage.&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 May 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Can we get rich by &quot;Doing Business&quot; better?</title>
-        <link>https://growthecon.com/blog/Business-Indicators/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Business-Indicators/</guid>
-        <description>&lt;p&gt;John Cochrane wrote a &lt;a href=&quot;http://www.wsj.com/articles/ending-americas-slow-growth-tailspin-1462230818&quot;&gt;piece&lt;/a&gt; for the Wall Street Journal’s &lt;s&gt;Confirmation Bias&lt;/s&gt; Opinion page. It used the World Bank’s Doing Business index to suggest that the US could achieve massive gains in economic growth by adopting policies that pushed up our Doing Business score.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.bradford-delong.com/2016/05/this-is-extraordinarily-unprofessional.html&quot;&gt;Brad DeLong&lt;/a&gt; and &lt;a href=&quot;http://evansoltas.com/2016/05/07/pro-business-reform-pro-growth/&quot;&gt;Evan Soltas&lt;/a&gt; had at the post. DeLong saying that Cochrane’s attempt to forecast out of sample the relationship of the DB index and GDP per capita was flawed. Soltas took a look at distinct shocks to the DB index in a attempt to alleviate the obvious “correlation is not causation” problem inherent in Cochrane’s piece.&lt;/p&gt;
-
-&lt;p&gt;I wasn’t planning on saying anything else about this, but Cochrane posted &lt;a href=&quot;http://johnhcochrane.blogspot.com/2016/05/regulations-and-growth.html&quot;&gt;another&lt;/a&gt; piece on his blog that included a figure pulled from my book with Chad Jones. Which got me looking more closely at his original piece. Which frustrated me. So here we are.&lt;/p&gt;
-
-&lt;h3 id=&quot;growth-economics-with-nigel-tufnel&quot;&gt;Growth Economics with Nigel Tufnel&lt;/h3&gt;
-&lt;p&gt;Below I’m going to get to the gory details of why the Doing Business (DB) indicators generally suck as a measure of anything useful. But let me start with this note. The DB index Cochrane uses is a “distance to the frontier” index. Meaning you get a number that tells you how close to best practices in business conditions a country gets. If you are at the best practices in all categories, you’d get a 100.&lt;/p&gt;
-
-&lt;p&gt;Cochrane says, and I quote, “If America could improve on the best seen in other countries by 10%, a 110 score would generate $400,000 income per capita…”. Stew on that for a moment. Think about how that DB &lt;em&gt;frontier index&lt;/em&gt; is constructed.&lt;/p&gt;
-
-&lt;p&gt;Cochrane went there. He said it could go to 11.&lt;/p&gt;
-
-&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/KOO5S4vxi0o&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;apples-and-oranges&quot;&gt;Apples and Oranges&lt;/h3&gt;
-&lt;p&gt;But there is a more basic problem, one which DeLong and Soltas implicitly concede to Cochrane. And that is in believing the DB distance to the frontier is a meaningful way of measuring …. doing business, I guess.&lt;/p&gt;
-
-&lt;p&gt;The distance to the frontier number is attempting to aggregate imcomparable quantities. Channeling my inner Nick Rowe, let’s use fruit to make a point. Alice has 10 apples and 5 oranges. Bob has 3 apples and 4 oranges. How would the World Bank calculate the “Doing Fruit” distance to the frontier index? First, we have to establish both the best and worst performance by fruit. For apples, this is easy. The frontier amount of apples is 10, the worst amount of apples is 3. But we can’t do that for oranges, because the WB has arbitrarily set up standards that imply that the frontier amount of oranges is 7, while the lower bound is zero.&lt;/p&gt;
-
-&lt;p&gt;According to the WB &lt;a href=&quot;http://www.doingbusiness.org/~/media/GIAWB/Doing%20Business/Documents/Annual-Reports/English/DB16-Chapters/DB16-DTF-and-DBRanking.pdf&quot;&gt;procedures&lt;/a&gt;, Alice’s distance to the frontier in apples is (3 - 10)/(3 - 10) = 1. That is, Alice is at the frontier. Alice’s distance to the frontier in oranges is (0 - 5)/(0 - 7) = 0.714. She’s 71% of the way to the (arbitrary) frontier. For Bob, his apple distance is (3 - 3)/(3 - 3) = 0, and his orange distance is (0 - 4)/(0 - 7) = 0.571.&lt;/p&gt;
-
-&lt;p&gt;Now, the overall distance to the frontier just averages the two distance measures for each person. So Alice’s overall distance to the frontier is (1 + 0.714)/2 = 0.857. Bob’s distance is (0 + .571)/2 = 0.286. Let’s say we plot their GDP per capita against the “Doing Fruit” index and find a positive relationship. We could publish this as an op-ed in the &lt;a href=&quot;http://fruitgrowersnews.com&quot;&gt;Fruit Growers News&lt;/a&gt;, and argue for policy changes in the number of apples and oranges to boost living standards.&lt;/p&gt;
-
-&lt;p&gt;But does that relationship actually mean anything? Not really. What happens to the “Doing Fruit” index, and presumably to GDP per capita, if the following happen?&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Bob raises his apple count to 9.&lt;/strong&gt; Nothing happens. You can go figure it out if you want, but so long as Bob has fewer apples than Alice, his number defines the lower bound, and hence he is &lt;em&gt;always&lt;/em&gt; at the lower bound, which means he always gets a zero in apples. Bob had a reform but didn’t change his “Doing Fruit” distance to the frontier. Does this mean Bob’s reform wouldn’t raise GDP per capita?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Alice lowers her apple count to 9.&lt;/strong&gt; Nothing happens. Similar reasoning as above. She defines the top end, so lowering her apple total doesn’t change her distance to the frontier. She is the frontier. Does this mean that Alice could lower her apple total without affecting GDP per capita?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;The WB raises the lower bound on oranges to 2.&lt;/strong&gt; Alice’s index drops to 0.8, Bob’s drops to 0.2. So according to the WB, they both just got farther from the frontier, even though all we changed was the arbitrary lower limit to oranges. Do they both get poorer?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Introduce a new person.&lt;/strong&gt; If Charlie, with only 2 apples but 7 oranges, joins the party, then Bob’s “Doing Fruit” index rises to 0.473, because he’s now above the lower limit in apples. Nice job, Bob! Does Bob’s GDP per capita go up in response, even though nothing changed in Bob’s fruit totals?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;The 3-body Problem.&lt;/strong&gt; With Charlie involved, Alice has an 0.857, Bob an 0.473, and Charlie an 0.500. If Alice’s number of apples falls to 8, then we get Alice with an 0.857 (again), Bob with a 0.535, and Charlie with a 0.500. So by changing Alice’s frontier total of apples we just made Bob look better. So good, in fact, that he has now passed Charlie. The decline in Alice’s apple total leaves her &lt;em&gt;own&lt;/em&gt; GDP per capita unaffected, but makes Bob richer than Charlie?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Marginal fruit changes.&lt;/strong&gt; With Charlie involved, what happens if Bob raises his apple total by 1? His DF index goes up by 0.062, and presumably he gets richer because of this reform. If he raises his orange total by 1, his DF goes up by 0.071, and thus increasing oranges is better for GDP per capita than increasing apples. Oh, unless Charlie happens to have 4 apples, in which case it totally is better to increase apples than oranges on the margin.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I could go on, but I think I’ve made the point. Adding up across indicators like apples and oranges results in indices that have no meaning. With sufficient time, I could come up with my own abitrary reweighting of the individual components of the Doing Business indicators and make the relationship between the index and GDP per capita go to zero, or go to infinity.&lt;/p&gt;
-
-&lt;p&gt;Without the means of valuing the different business indicators against each other, we end up having no idea how to assess institutional changes. For example, within the “Dealing with Construction Permits” section of the DB indicators, there is both a measure of the time (days) to get a construction permit and a “Building quality control index” which is an arbitrary classification that runs from 0-15 (in whole numbers).&lt;/p&gt;
-
-&lt;p&gt;Going up one category in quality control (e.g, from 9 to 10) increases your overall “Dealing with Construction Permits” score by 0.067 (i.e. 1/15th). By construction, this has an identical effect on your overall score as lowering the number of days to register a permit by 23 days (actually, 23.13 days). From the perspective of a business owner, do we think that dropping the days to permit a building by 23 is &lt;em&gt;exactly&lt;/em&gt; equivalent to raising the quality control index by 1? Should I believe they would have identical effects on GDP per capita?&lt;/p&gt;
-
-&lt;p&gt;And what is this quality control index anyway? It’s the sum of a bunch of roughly binary indicators. So going from 9 to 10 could represent having a licensed engineer be required to review the plans (yes, that makes doing business easier in this index). Or it could be because construction companies become legally liable for structural flaws. Or it could be because construction supervisors are now required to have university degrees. These (and a host of other things) all contribute &lt;em&gt;identically&lt;/em&gt; to the “Building quality control index”. But are they all equally worthwhile to doing business? Are they even good for doing business? Should I believe they all contribute similarly to raising GDP per capita - if they even do?&lt;/p&gt;
-
-&lt;p&gt;The point is that all the curve-fitting in the world won’t change the fact that the Doing Business index contains effectively no information. The individual indicators themselves can be useful, but as an aggregate it doesn’t make sense.&lt;/p&gt;
-
-&lt;h3 id=&quot;it-gets-worse&quot;&gt;It Gets Worse&lt;/h3&gt;
-&lt;p&gt;In the follow up &lt;a href=&quot;http://johnhcochrane.blogspot.com/2016/05/regulations-and-growth.html&quot;&gt;post&lt;/a&gt;, Cochrane appeals to a graph from my textbook with Chad Jones. An updated version using data from 2008 shows the relationship of an index of “social infrastructure” and TFP.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/figure_7_3.png&quot; alt=&quot;TFP and SI&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This index of “social infrastructure” is even more useless than the DB index. How do I know? Because I calculated it, graphed it, and stuck it on the slide that Cochrane linked to. I simply scaled and averaged the 6 different components of the World Bank’s governance indicators, much like the DB index. It has all the issues I described above, except worse.&lt;/p&gt;
-
-&lt;p&gt;This figure tells us very little. Which is why in the book we immediately say that you cannot infer anything causal from it, and then go on to talk about some of the better studies done looking at specific institutions and their effects on economic outcomes.&lt;/p&gt;
-
-&lt;h3 id=&quot;short-run-growth-versus-long-run-growth&quot;&gt;Short-Run Growth versus Long-Run Growth&lt;/h3&gt;
-&lt;p&gt;Let’s concede the issues - barring the “go to 11” one - to Cochrane; there really is a causal relationship between the DB index and GDP per capita, and his original fitted curve is the right one. Does it follow that we could get 6% growth, as Cochrane suggests here?&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A score of 100—labeled Frontier—is certainly possible… [and] generates $163,000 of income per capita, 209% better than the U.S., or 6% additional annual growth for 20 years&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;No. Why? We’ve been through this before on this &lt;a href=&quot;https://growthecon.com/blog/you-cant-reform-your-way-to-rapid-growth/&quot;&gt;blog&lt;/a&gt;. I’ll let you jump to that post to see the exact math. Assume a baseline growth rate of GDP per capita of 1.0% per year, a convergence speed of 2% (meaning 2% of any gap between current and potential GDP is closed each period), and that potential GDP per capita really does go up by 209%. This would result in growth of 5.2% in 2017. That’s pretty good, but below Cochrane’s 6%. And the growth rate would decline in every year after 2017 until it reached 1% again. Technically that would take until infinity; practically you wouldn’t be able to tell the difference after about 50 years.&lt;/p&gt;
-
-&lt;p&gt;This is like the dark side of compounding. It only takes small changes in percentage growth rates to generate really big changes in levels of GDP over a sufficiently long time. Convergence is slow. Even a massive shock to potential GDP doesn’t boost growth that much.&lt;/p&gt;
-
-&lt;p&gt;Why do I assert that it takes so long to reach potential GDP (i.e. why is the convergence speed 2%)? First, that’s what we estimate from the data. Second, the adjustment costs to a significant change in the rules and regulations underlying the DB indicators mean that it could take a long time to reach the new potential GDP.&lt;/p&gt;
-
-&lt;p&gt;Let’s say that boosting our DB index to 100 really is a fundamental reduction in regulatory red tape. This is like a productivity increase &lt;em&gt;in compliance and government&lt;/em&gt;. We can generate the same “output” of regulation with far fewer people. So all those private employees who do compliance work are not necessary, nor are the public employees who check their work. This work may be bullshit, unnecessary, and fundamentally useless - but those people make a living doing it. They are like redundant assembly line workers after the introduction of a robot. They won’t seamlessly melt back into the workforce. What’s a 50-year old safety professional specializing in OSHA compliance for a construction company supposed to do when he gets let go? As we’ve seen before as industries get destroyed, it can take a long time for ex-workers to adapt, if they ever do. That adaptation of the human capital stock is part of the slow convergence speed.&lt;/p&gt;
-
-&lt;p&gt;And recall that many of the characteristics that would boost your DB index score - like the requirements on construction inspections and the education requirements for those inspectors - in fact involve &lt;em&gt;more&lt;/em&gt; regulation and time spent on compliance, not less. So should I even believe that these changes are positive for potential GDP at all?&lt;/p&gt;
-
-&lt;h3 id=&quot;does-it-matter&quot;&gt;Does it matter?&lt;/h3&gt;
-&lt;p&gt;After all that, be careful not to draw the &lt;em&gt;opposite&lt;/em&gt; conclusion, which is that business regulations do not matter at all. That’s not what I’m saying, and not what the criticisms of Cochrane imply. The point is that we cannot infer how much they matter from the DB index, or a cross-sectional plot of that against GDP per capita. And forecasting the effect of improving the DB index - seriously, 11? - is a lost cause.&lt;/p&gt;
-
-&lt;p&gt;For a country like the US, the marginal effect of regulatory changes are almost certainly mild. Not zero. Not negative. But probably small. We have no good evidence of effects large enough to really move the GDP growth needle.&lt;/p&gt;
-
-&lt;p&gt;It isn’t even clear we are really behind the frontier in business regulation. Singapore is held out as an example of a place with a great business environment, and is one of the data points suggesting that having a high DB index is associated with high GDP per captia. But Singapore has high GDP per capita in large part because it is just a single city.&lt;/p&gt;
-
-&lt;p&gt;If you compare single US cities to Singapore, they look just fine, if not better. Brookings did a &lt;a href=&quot;http://www.brookings.edu/research/reports2/2015/01/22-global-metro-monitor&quot;&gt;ranking&lt;/a&gt; of cities by 2014 GDP per capita. Singapore is 14th, with a (PPP-adjusted) GDP per capita of 66,684. But Hartford is at 83K, San Jose at 82K, Boston at 76K, Houston at 74K, Bridgeport at 73K, Washington at 73K, Seattle at 73K, San Francisco at 72K, and New York at 69K. There isn’t some kind of low-regulation Utopia out there that we are missing out on.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 15 May 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
