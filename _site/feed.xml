@@ -5,7 +5,49 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Wed, 30 Nov 2016 13:25:37 -0600</pubDate>
+    <pubDate>Sat, 03 Dec 2016 21:01:46 -0600</pubDate>
+    
+      <item>
+        <title>Would you pay to save a job?</title>
+        <link>https://growthecon.com/blog/Trade/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Trade/</guid>
+        <description>&lt;p&gt;Mike Konczal has a nice &lt;a href=&quot;https://medium.com/@rortybomb/learning-from-trump-in-retrospect-dce431b23ed0#.70zws6ugy&quot;&gt;article&lt;/a&gt; about how important it is to distinguish “jobs” from “the economy”, and how Trump used that to his advantage. Noah Smith had a &lt;a href=&quot;https://www.bloomberg.com/view/articles/2016-12-02/a-job-is-more-than-a-paycheck&quot;&gt;summary&lt;/a&gt; of the idea that a job is “more than a paycheck”. In my head, this is a complement to the arguments that Dani Rodrik has been making for years, as in his 1997 book &lt;a href=&quot;http://amzn.to/2gzJqH4&quot;&gt;Has Globalization Gone too Far?&lt;/a&gt;. In economist terms, the easiest way to say this is that having a job actually enters the utility function separately from the real wage it generates.&lt;/p&gt;
+
+&lt;p&gt;I have one idea to add to this, which is that even the “winners” of trade (or technological shocks) are unhappy about other people losing their jobs. If you like, the job status of others has an effect on the utility function of those &lt;em&gt;with jobs&lt;/em&gt;. And it means they are willing to trade off some other source of utility (real wages) in order to give those people jobs.&lt;/p&gt;
+
+&lt;p&gt;As I’m not sure I’m explaining this terribly well, let me give you an example of a choice I posed to a number of “regular people” in my neighborhood, and during the after-game-beer-drinking phase of my hockey league. I’ve been doing this for a year or two, but recent events have made the responses more salient.&lt;/p&gt;
+
+&lt;p&gt;I’m not claiming that I had some sort of insight a few years ago. This all started because of a random conversation with Kenny, one of the guys in my hockey league, which led to him saying that he’d “absolutely” pay $100 more for a TV if it meant more American workers didn’t have to go on welfare. After that, I started posing the same kind of question to others in an ad hoc manner. I realize that this all has a very David Brooks-ish bullshit man-on-the-street vibe. Feel free to discount accordingly.&lt;/p&gt;
+
+&lt;p&gt;This is the essence of the choice I posed to people regarding a hypothetical trade deal (I typically didn’t use such precise numbers, but this gives you a concrete idea of what I was asking):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Option A&lt;/strong&gt;. With the trade deal, let’s say that the income of a winner - people who stay employed - is 1000. The price index with trade is 0.8. Let’s say there are four winners for every loser - the ones who lose jobs - but we organize a redistribution of the gains from trade to make sure the losers are compensated. We tax every winner 200, and use that to give every loser 800. The winners, after their tax of 200, are also making 800. With an price index of 0.8, every person - winners and losers - has a real wage of 800/0.8 = 1000.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Option B&lt;/strong&gt;. Don’t do the trade deal. Everyone is still employed, but their income is 700, which is lower than what a winner makes under the trade deal, and means that in aggregate, total income is lower than with the trade deal. Also, the price index is higher without trade, because we don’t get cheap imports. So let the price index be 1, and every person has a real wage of 700/1 = 700.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Which option would you choose? The pure economist answer is A, because obviously everyone is better off in terms of real consumption, with a real wage of 1000 versus 700. Noah’s post was about how job losers would probably prefer B. Most people would rather take the lower real wage of 700 with an actual job, versus a transfer with a real value of 1000. If you want to call this a form of money illusion, fine, but that doesn’t make it wrong. It is easy to say that their utility function puts more weight on income that is received from working versus income received as a hand out. It is not a stretch to get your head around this. I have spent years trying to instill this &lt;em&gt;exact&lt;/em&gt; preference set into my kids.&lt;/p&gt;
+
+&lt;p&gt;What was more interesting in posing this question to various people I knew was the response of “winners”. Most of the time, I told people that they should imagine that they would be a “winner” under the deal. And for the most part, the people I was talking to were already winners with respect to trade, or were professionals relatively immune from the effects (e.g. doctors or lawyers). Regardless, &lt;em&gt;even winners preferred B&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Why would potential winners prefer B? Anecdotally, they don’t like the idea of having to hand over some of their own wages to subsidize people who are &lt;em&gt;not working&lt;/em&gt;. They know these people lost their jobs due to the trade deal or technological change, and a number of people I spoke with said they would be in favor of some kind of subsidy for the losers, but only for a very limited time. But it doesn’t seem fair to them that the job losers don’t have to do &lt;em&gt;anything&lt;/em&gt;, even if it wasn’t the job losers fault in the first place. People care about the job status of others. This is, I would venture, some of the reason that individuals care about their &lt;em&gt;own&lt;/em&gt; job status in the first place.&lt;/p&gt;
+
+&lt;p&gt;The hypothetical winners also tend to express a sort of endowment effect. Once you pay them 1000, it is much more tangible to them that they are giving up some of “their” money to subsidize job losers. On the other hand, under plan B they pay the subsidy implicitly through higher prices and lower nominal wages, and there is no endowment effect for them. And the people I asked this question are completely aware, like Kenny, of the fact that they are paying a subsidy through higher prices. The winners are for redistribution, but they care a lot about how that redistibution takes place. Again, this sounds like money illusion, but that doesn’t make it wrong.&lt;/p&gt;
+
+&lt;p&gt;I think the answers I got are in line with what Konczal, Smith, and Rodrik (and others) have said before about the value of jobs versus GDP. I’d suggest that even those with secure employment have preferences that would lead them to support jobs &lt;em&gt;for others&lt;/em&gt; at the cost of some GDP.&lt;/p&gt;
+
+&lt;p&gt;Does this mean we should scrap every trade deal? No. The implication of my little study is that people are willing to trade off &lt;em&gt;some&lt;/em&gt; of the gains from trade to keep more people employed. That doesn’t mean they are willing to trade off &lt;em&gt;all&lt;/em&gt; of the gains from trade. If Option B were to scrap all trade deals and lower the real wage of everyone to 200, rather than 700, you would probably get a different answer from both potential winners and losers. And given the embedded nature of imports in supply chains, you could well make the case that the losses would be astronomical, and thus not worth it.&lt;/p&gt;
+
+&lt;p&gt;Other policies relating to job creation would face the same questions. Noah brought up the idea of incentives for long-term contracts, and noted the worry that you can take this too far. If you incentivize long-term contracts, do you gum up the labor market so much that new firms cannot afford to get stated or grow, and old ones cannot afford to shut down? Or do you end up getting the same issues we have now with trade; a class of “winners” that get long-term contracts and a class of “losers” that do not?&lt;/p&gt;
+
+&lt;p&gt;From the perspective of doing economics, I’m not sold that building the concept of this job preference into models would amount to much more than slapping some math around. I think our job is a little more humble. Be really clear about the economic costs and benefits of Options A and B on things like real wages and GDP that we have some hope of actually quantifying, and then let people decide if they are willing to pay those costs to save jobs or not.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Dec 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Employment Going South. Literally.</title>
@@ -965,38 +1007,6 @@
 &lt;p&gt;The Baumol story - as opposed to my re-interpretation of Gordon - is probably the right null hypothesis to have in your head. Services have a built-in limit on their productivity growth, because we cannot innovate and get “more time” in the way we can innovate and get “more stuff” with goods. With services and goods being complements, this means overall productivity growth is restricted to the pace of service quality growth, and hence is slowing down. This would be true even if we measured productivity perfectly; if we could actually measure utility per hour. The measured productivity slowdown can be “real” and yet that does not mean we cannot or have not innovated. The complementary nature of the preferences matter here in a material way.&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Jun 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Roman History Reading List II</title>
-        <link>https://growthecon.com/blog/Rome-Reading-2/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Rome-Reading-2/</guid>
-        <description>&lt;p&gt;A quick follow-up to last December’s original &lt;a href=&quot;https://growthecon.com/blog/roman-history-reading/&quot;&gt;Roman History Reading List&lt;/a&gt;, which turned out to be pretty popular. As before, this is “hobby reading” for me, and I make no claims about these lists being definitive. But if you are interested in dipping into this area, the lists will be helpful.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Theodor Mommsen’s &lt;a href=&quot;http://amzn.to/1ORh3Rr&quot;&gt;The History of Rome&lt;/a&gt; is one of the all-time classics. I found his writing riveting, and as a general overview of the events leading up to the end of the Republic it is a fantastic place to start. Some of Mommsen’s conclusions have not held up to scrutiny, but that is a small price to pay here. The link is to a translation that abridges Mommsen to the era of the end of the Republic (133BC to roughly 31BC), and abridges further when the translators feel the details are not necessary. Not having read Mommsen before, I didn’t mind. One day I want to go for the &lt;a href=&quot;http://amzn.to/1W8JxIE&quot;&gt;“full Mommsen”&lt;/a&gt;, but that might have to wait a few years.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Erich Gruen’s &lt;a href=&quot;http://amzn.to/1Tr0qbQ&quot;&gt;The Last Generation of the Roman Republic&lt;/a&gt; is another excellent book. More narrowly focused than others, it concentrates on the supposed “inevitability” of the end of the Roman Republic. He comes to the conclusion that it was more a horrific mistake like the onset of WWI than the result of a creeping internal rot. While you can easily skim a few of the middle chapters, the blow by blow account of the political wrangling going on in the months leading up to Caesar crossing the Rubicon is unmatched. I was physically tense reading it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Adrian Goldsworthy’s &lt;a href=&quot;http://amzn.to/1NDYQq4&quot;&gt;Caesar: Life of a Colossus&lt;/a&gt; obviously digs into Caesar’s individual story more deeply. The one very redeeming quality of this book is the consistent reminder that no one knew Caesar was going to be, well, Caesar. He studiously avoids looking for “signs” in Caesar’s youth that foreshadow his inevitable rise. On the down side, this is very much the work of a military historian, so for me the narrative drags as he dissects the tactics of various Gallic battles.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Sallust’s &lt;a href=&quot;http://amzn.to/1NDZns0&quot;&gt;The Catiline Conspiracy&lt;/a&gt; is one of the more accessible ancient texts (or at least this translation is). You do have to keep reminding yourself that Sallust has an agenda. I’m not even sure I know what it is, but he is writing to try and establish a narrative about what actually happened leading up to the fall of the Republic.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Robert Harris’s &lt;a href=&quot;http://amzn.to/25fc7xb&quot;&gt;Imperium&lt;/a&gt;, &lt;a href=&quot;http://amzn.to/1NDZBiT&quot;&gt;Conspirata&lt;/a&gt;, and &lt;a href=&quot;http://amzn.to/1YMhsEY&quot;&gt;Dictator&lt;/a&gt; are historical fiction that presumes to tell Cicero’s story from the perspective of his main servant, Tiro. One of the big advantages of reading history this way is that it cements the characters in your head more solidly. I have much better recall of secondary players in this era thanks to Harris. And the books are fun, given that they don’t feel compelled to be exhaustive. But they do contribute to the overall inflation of Cicero’s importance. Cicero is more George Will than George Washington in the grand scheme of things.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Dan Carlin did an epic series of &lt;a href=&quot;http://www.dancarlin.com/product/hardcore-history-death-throes-of-the-republic-series/&quot;&gt;podcasts&lt;/a&gt; telling the story of the fall of the Roman Republic. Carlin is a &lt;em&gt;great&lt;/em&gt; story-teller, and given that this runs probably 10 hours in total, it is fantastic for a long trip. This isn’t original history, this is Carlin consolidating lots of the secondary analyses I’ve linked to. Much of the podcast is like an extended reading of Tom Holland’s &lt;a href=&quot;http://amzn.to/25fd5cZ&quot;&gt;Rubicon&lt;/a&gt;, but that is no crime as the book is excellent.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;It has become nearly impossible to &lt;em&gt;not&lt;/em&gt; draw analogies between this period of Roman history and the current political climate in the U.S. I won’t pretend to have some kind of grand insight given the reading I’ve done. But if you are looking to finish the sentence “Trump is just like….”, then the answer you are looking for is not Caesar, Pompey, Brutus, or other big names in the story. You’re looking for Clodius Pulcher. Read the Gruen book for an excellent discussion of the underlying motivations of Clodius’ supporters and his ability to use that support to his advantage.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 21 May 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
