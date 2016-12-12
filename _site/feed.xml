@@ -5,7 +5,43 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Sat, 03 Dec 2016 21:01:46 -0600</pubDate>
+    <pubDate>Mon, 12 Dec 2016 08:31:14 -0600</pubDate>
+    
+      <item>
+        <title>Growth links of interest</title>
+        <link>https://growthecon.com/blog/Links-1612/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Links-1612/</guid>
+        <description>&lt;p&gt;A quick post to vent some of the pressure from my reading list before it explodes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Greg Ip has an &lt;a href=&quot;http://www.wsj.com/articles/the-economys-hidden-problem-were-out-of-big-ideas-1481042066&quot;&gt;extensive piece&lt;/a&gt; in the WSJ on being “out of big ideas”. One quality of this article is that it gives some plausible ideas for &lt;em&gt;why&lt;/em&gt; the pace of innovation may have slowed down in some areas. We may be plowing resources into things like medical research that have apparently small returns in terms of years of life saved. But, given our relative wealth, this may be entirely optimal. Adding a week to a cancer victims life may be worth more than inventing a better dishwasher. One quibble. Ip states early on that despite historically high number of scientists and engineers, “None of this has translated into meaningful advances in Americans’ standard of living.” We don’t know that. It may not appear to have generated advances in the growth rate of GDP per capita, GDP per capita need not be the same thing as meaningful advances in standards of living.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;One of the benefits of Twitter (yes, they exist) is following very smart people as they argue a point. I fell behind during an on-going discussion of Robert Allen’s concept of a “high-wage economy” in England driving the adoption of machines leading to the industrial revolution. &lt;a href=&quot;https://notesonliberty.com/2016/12/07/the-high-wage-economy-hypothesis/&quot;&gt;Vincent Geloso&lt;/a&gt; did the Lord’s work in providing a fair summary of Allen’s position and some of the associated Twitter-commentary, and then catches you up on the possible holes in Allen’s argument. As a place to start reading about Allen’s hypothesis, this is quite nice, and provides many links to research questioning the assumptions behind Allen’s ideas. Then follow it up with &lt;a href=&quot;https://pseudoerasmus.com/2016/12/01/allen/&quot;&gt;Pseudoerasmus’&lt;/a&gt; post on the same subject, and with a similar, honest, approach.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MIT is starting a “micro-masters” &lt;a href=&quot;http://news.mit.edu/2016/mitx-micromasters-program-development-economics-masters-degree-1205&quot;&gt;program in development&lt;/a&gt;. Low-cost enrollment on-line for students in developing countries, with the possibility for exceptional students being offered physical positions at MIT. As a means of expanding the availability of education, this is great. As a way of tightening the net that excellent students may slip through, it is even better. I do admissions for the PhD program at UH, and I am sure that I have let slip students who would be incredible economists. But their applications just cannot show that. Giving students a low-cost way of signalling their quality ahead of time is the way to go.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Piketty, Saez, Zucman machine rolls on, with their &lt;a href=&quot;http://equitablegrowth.org/research-analysis/economic-growth-in-the-united-states-a-tale-of-two-countries/&quot;&gt;new paper&lt;/a&gt; trying to reconcile national income accounts (GDP, etc..) with individual wealth/income distribution data. If you are reading this blog, you likely already have perused the paper or summaries based on it. It’s stark in how the fortunes of various percentiles of the income distribution have fared over time. What I also would like to applaud these authors for is writing papers that are about simple accounting. This the kind of economic research that you could explain to your neighbor in about 20 minutes, and that should be seen as a feature, not a bug.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://voxeu.org/article/production-fragmentation-and-global-trade-slowdown&quot;&gt;Timmer, Los, Stehrer, De Vries&lt;/a&gt; have a nice post of their current research regarding the change in trade over the last 15 years. In short, if I’m getting this right, the surge in trade from 2000-2008 was in large part due to the increasing fragmentation of production in goods - lots of parts coming from lots of different countries - and then this trend stopped after the crisis in 2008. Trade growth is slowing down because production is not increasing the number of sources for parts any more, to again over-simplify. Some of this slowdown in fragmenting of production appears due to demand effects, as countries (incl. China) shift demand towards goods (or services) that use fewer differentiated parts as inputs. Baumol strikes again?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Useless, but fun. Selected &lt;a href=&quot;http://www.freepatentsonline.com/crazy.html&quot;&gt;stupid patents&lt;/a&gt; that have actually been granted.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Another &lt;a href=&quot;http://voxeu.org/article/piketty-s-housing-capital-results-new-us-facts&quot;&gt;piece of evidence&lt;/a&gt; that much of the increase in capital’s share of income over time is due to housing. Gianni La Cava narrows it down further to an increase in the share of income going to owner-occupied housing. Now, this income is imputed from the value of housing, so La Cava is finding that the run-up in the value of the housing stock is creating a noticeable shift in the distribution of income towards capital. Here’s a good question, then, which I may try to tackle at some point. What is the capital/labor split of income &lt;em&gt;without&lt;/em&gt; housing - or any other imputed value - included? Is the labor share shrinking as well?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A nice &lt;a href=&quot;https://timeline.com/robots-have-been-about-to-take-all-the-jobs-for-more-than-200-years-5c9c08a2f41d#.6kz8o2jlp&quot;&gt;timeline&lt;/a&gt; of various reporting on the possibility that machines will steal all the jobs.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 12 Dec 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Would you pay to save a job?</title>
@@ -930,83 +966,6 @@
 
 </description>
         <pubDate>Mon, 04 Jul 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Is productivity the victim of it&#39;s own success?</title>
-        <link>https://growthecon.com/blog/Baumol/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Baumol/</guid>
-        <description>&lt;p&gt;I didn’t really intend to take such a long break from blogging, but I kind of looked up and realized it had been a month or so. There was (at least from my standpoint) a flurry of posts regarding productivity, the slowdown in productivity, reasons for the slowdown in productivity, and responses to the slowdown in productivity.&lt;/p&gt;
-
-&lt;p&gt;Ezra Klein does an &lt;a href=&quot;http://www.vox.com/a/new-economy-future/technology-productivity&quot;&gt;overview&lt;/a&gt; of a lot of these topics, so if you need to dive into the concept of the productivity slowdown, this is a good place to start. Klein gets into the question of mis-measurement of productivity - perhaps we are underestimating it. Edward Luce &lt;a href=&quot;http://www.ft.com/intl/cms/s/0/315f8b88-2364-11e6-9d4d-c11776a5124d.html?siteedition=intl&amp;amp;ftcamp=published_links%2Frss%2Fcomment%2Ffeed%2F%2Fproduct#axzz4BUveXHlE&quot;&gt;picks up&lt;/a&gt; goes the other way, wondering if we are overestimating productivity by mismeasuring labor inputs to gig work. Chad Syverson has recently issued a &lt;a href=&quot;http://www.nber.org/papers/w21974?utm_campaign=ntw&amp;amp;utm_medium=email&amp;amp;utm_source=ntw&quot;&gt;working paper&lt;/a&gt; that tries to work through the “mismeasurement” question, and comes to the conclusion that this really can’t account for much, if any, of the slowdown in productivity growth over the last few decades. Timothy B. Lee &lt;a href=&quot;http://timothyblee.com/2016/05/07/some-thoughts-on-the-end-of-economic-growth/&quot;&gt;lists&lt;/a&gt; some thoughts on the future of innovation in general, coming out somewhat pessimistic about it. There was a &lt;a href=&quot;http://www.brookings.edu/about/projects/bpea/papers/2016/byrne-et-al-productivity-measurement&quot;&gt;paper&lt;/a&gt; by Byrne, Fernald, and Reinsdorf in March that covers some of the same ground. Gavyn Davies &lt;a href=&quot;http://blogs.ft.com/gavyndavies/2016/06/12/why-hasnt-the-productivity-crisis-caused-a-bear-market-yet/&quot;&gt;asks&lt;/a&gt; why the slowdown hasn’t shown up in asset prices (yet).&lt;/p&gt;
-
-&lt;p&gt;There are a lot of threads running through these posts and others. So some of what I’m writing here is just me trying to get a simple mental framework in place to think about things. If I’m lucky, it will also serve as a useful way of explaining these threads to others. But I promise nothing, as this is definitely me thinking out loud. Here goes:&lt;/p&gt;
-
-&lt;h3 id=&quot;goods-and-services&quot;&gt;Goods and Services&lt;/h3&gt;
-
-&lt;p&gt;Let’s think of the economy as producing two kinds of things: services and goods. Services are provided purely as time. Think of hours of lawyering from a lawyer, or hours of teaching from a teacher, or hours of training from a personal trainer. To a large extent, you buy chucks of time from other people with services. Goods are provided as physical things: TV’s, apples, or cars. Obviously lots of products are mixes of the two - restaurant meals combine physical goods with someones time - but that’s okay. I’m not trying to say that all things are uniquely services or goods, just that these are the two types of things we produce.&lt;/p&gt;
-
-&lt;p&gt;I’m going to assume that services and goods are enjoyed as perfect complements to each other. That is, we like bundles of goods and services, and are completely unwilling to substitute one for the other. It’s like saying that I’d refuse to go to the &lt;a href=&quot;http://saltlickbbq.com&quot;&gt;Salt Lick&lt;/a&gt; if I had to actually walk up and get a second order of brisket myself. Which is ridiculous, but then again it can be physically impossible to walk after the first order.&lt;/p&gt;
-
-&lt;p&gt;In math, let’s say that utility is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;U = min(\alpha_S S, \alpha_G G)&lt;/script&gt;
-
-&lt;p&gt;where S are the hours of services I get, and G are the number of goods I get. The &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt; terms are weights on how much I like the two things, and thus also serve as a way of measuring quality. Higher &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt; means that it gives me more utility.&lt;/p&gt;
-
-&lt;p&gt;Now, let’s say that services are produced with time &lt;em&gt;only&lt;/em&gt;. I’m also going to say that goods are produced using &lt;em&gt;NO&lt;/em&gt; time. They may need capital and resources, but no time. If you like, they’re put together by robots. Which makes my little struture here a useful way of thinking about any possible Skynet/HAL future of robot AI manufacturing. There are a total of H units of time available in the economy. Think of these as working hours. Given my assumption, S = H.&lt;/p&gt;
-
-&lt;p&gt;Further, I’m interested in measuring productivity, so I really want to measure U/H, or utility per hour. So I’m going to divide through the utility function by H. Here it is worth stopping to note a few things. First, I am completely eliminating any discrepancy between measured economic output (GDP) and utility (U). I’m assuming I can measure the utility function directly. Or if you like, I’m assuming that GDP has a one-to-one mapping to utility. I’m not doing this because I think GDP is perfect, but I want to make points about how productivity changes even if we were to measure it perfectly. Second, I’m measuring U/H here, which “labor productivity”, but if I wanted “total factor productivity” I could divide by some bundle of inputs involving H as well as capital. But that is going to be beside the point here.&lt;/p&gt;
-
-&lt;p&gt;This gives me&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;Prod = \frac{U}{H} = min \left(\alpha_S, \alpha_G G/H \right)&lt;/script&gt;
-
-&lt;p&gt;as my measure of productivity. And with this I can start thinking about productivity issues.&lt;/p&gt;
-
-&lt;p&gt;Let’s start with services:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Services only contribute to productivity through their quality. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_S\inline&quot;/&gt; is the only thing that shows up in the measure of productivity. Which is related to …&lt;/li&gt;
-  &lt;li&gt;There is no extensive margin in services. Because we are trying to measure utility &lt;em&gt;per hour&lt;/em&gt;, and services are provided using &lt;em&gt;time&lt;/em&gt;, we can’t raise productivity by getting “more” services per hour. I can’t work 65 minutes per hour. Which implies that …&lt;/li&gt;
-  &lt;li&gt;New services cannibalize time from old services. If I come up with a new way to use worker’s time, by necessity it must subtract from the time they spend doing something else. Perhaps there is some margin along which workers would enter or exit the labor force that would allow for getting more services, but in practical terms that is probably very small.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Compare this to goods:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The quality of goods contributes to productivity. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_G\inline&quot;/&gt; is &lt;em&gt;one&lt;/em&gt; way for goods to add to productivity, but ….&lt;/li&gt;
-  &lt;li&gt;There is an extensive margin in goods. That is, &lt;img src=&quot;http://latex.codecogs.com/png.latex?G\inline&quot;/&gt; can go up over time. Holding constant quality, we can produce more of those goods. Unlike hours, there is no finite number of goods we can produce. Which implies …&lt;/li&gt;
-  &lt;li&gt;New goods need not cannibalize old goods. If someone invents a new good, this doesn’t necessarily mean that we buy fewer of the old goods (there’s a GoT joke in here somewhere about the “old goods and the new”).&lt;/li&gt;
-  &lt;li&gt;No, it doesn’t matter that it is G/H in there, even though I assumed goods don’t require time. We’re measuring productivity &lt;em&gt;per hour&lt;/em&gt;, so what matters is how many goods we produce per hour, whether or not hours matter for production.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;baumol-and-the-slowdown&quot;&gt;Baumol and the slowdown&lt;/h3&gt;
-&lt;p&gt;This setup means we can talk about one theory for the productivity slowdown. Because goods and services are perfect complements, eventually productivity (and productivity growth) will be determined solely by the &lt;em&gt;slowest&lt;/em&gt;-growing sector. Productivity is a minimum of the two sectors, and hence the faster growing sector will eventually always surpass the slower growing sector, and we’re stuck at the minimum.&lt;/p&gt;
-
-&lt;p&gt;This captures the essence of what William Baumol suggested decades ago. “Strong Baumolism” would be the case where services are assumed to have &lt;em&gt;zero&lt;/em&gt; quality growth, and hence productivity growth will go to zero eventually. “Weak Baumolism” would just be that services have a lower rate of quality growth than the growth of the combined goods term.&lt;/p&gt;
-
-&lt;p&gt;One reason for services to grow so slow is related to the points I made above. Services only grow through quality improvements, because they depend on time. Goods, in contrast, can grow in both quality and quantity, so this gives them more possibilities for growth. The productivity slowdown we are witnessing is thus just us reaching the point where &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_S &amp;lt; \alpha_G G/H\inline&quot;/&gt;, and now productivity only grows as fast as &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_S\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;Note that one implication of this is that the productivity growth rate of &lt;em&gt;goods&lt;/em&gt; is likely to fall as well. Why? Because there is no longer any marginal value to new goods when &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_S &amp;lt; \alpha_G G/H\inline&quot;/&gt;. We have “too many” goods, in this setup, and so the marginal value of a new good is zero. Hence the profits you could expect to earn from new goods, or better goods, is relatively small. And hence little effort is put into innovating in goods production. With some kind of endogenous innovation concept, you’d expect that the growth rate of goods productivity - the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_G G\inline&quot;/&gt; term - would fall. Perhaps even lower than the growth rate of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_S\inline&quot;/&gt;, for so long as &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_S &amp;lt; \alpha_G G/H\inline&quot;/&gt; there is no incentive to innovate in goods.&lt;/p&gt;
-
-&lt;p&gt;Clearly this is really stark, but that’s the value of the simple model. It suggests not only why we might have hit a productivity slowdown (services), but why that could drag down innovation rates in goods.&lt;/p&gt;
-
-&lt;p&gt;It also suggests why all sorts of super-cool innovations that &lt;em&gt;do&lt;/em&gt; get made in goods production don’t seem to show up in the productivity statistics. With perfect complements, those new goods have essentially no value on the margin, and hence add little or nothing to productivity. This is why I said that productivity may be a victim of its own success. Massive improvements in goods-producing technology have pushed us into the Baumol situation, where further goods-producing technologies have little (zero in my model) value.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-case-for-services&quot;&gt;The case for services?&lt;/h3&gt;
-&lt;p&gt;It wouldn’t be economics if there weren’t a different way of interpreting the same situation. What if in fact services are growing in quality very rapidly? So fast, in fact, that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_S &amp;gt; \alpha_G G/H\inline&quot;/&gt;? Then productivity growth is limited by growth in the goods-producing sector. Any new innovations in service quality would have exactly zero impact on measured productivity &lt;em&gt;even if we measure productivity perfectly&lt;/em&gt;. It’s not that we haven’t captured the value of Facebook or Uber in our statistics, it’s that they really do have zero marginal value because they are so frickin awesome already. Given the perfect complements assumption, we’re always held back by our slower-growing sector, and in this case it is goods. So yes innovations are occurring rapidly in services, but it is irrelevant to measured productivity.&lt;/p&gt;
-
-&lt;p&gt;You could squeeze Bob Gordon’s book into this scenario. Take his argument that we kind of exhausted these scale-intensive opportunities for productivity growth in manufacturing and infrastructure. That would explain why the productivity growth coming from goods is slower now. But it would also jive with his contention about the relatively small measured productivity contribution of innovations in services in the last few decades. It isn’t that services are not getting better, it is that this improvement doesn’t add to productivity because services are operating ahead of goods at this point, with &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_S &amp;gt; \alpha_G G/H\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;eliminating-possibilities&quot;&gt;Eliminating possibilities&lt;/h3&gt;
-&lt;p&gt;“Productivity is mis-measured” is probably wrong, even though people have lots of evidence of technological innovations. Most likely what is happening is that those innovations are happening in a sector that is already more productive than others. Because sectors are complements, innovation in the high-productivity sector is going to &lt;em&gt;necessarily&lt;/em&gt; contribute little to measured productivity growth. It doesn’t matter if you think that high-productivity sector is services or goods here.&lt;/p&gt;
-
-&lt;p&gt;I think the “we’ve run out of cool things to invent” argument is probably wrong, too. But maybe we’ve run out of &lt;em&gt;incentives&lt;/em&gt; to actually invent things, particularly in the goods sector. In the Baumol setting, with services being the limiting factor on productivity growth, the goods sector has little incentive to innovate. Why bother? So the fact that goods-sector productivity growth is slow doesn’t mean we used up all the good ideas, it just means there isn’t a big rush to bring those ideas to the market.&lt;/p&gt;
-
-&lt;p&gt;The Baumol story - as opposed to my re-interpretation of Gordon - is probably the right null hypothesis to have in your head. Services have a built-in limit on their productivity growth, because we cannot innovate and get “more time” in the way we can innovate and get “more stuff” with goods. With services and goods being complements, this means overall productivity growth is restricted to the pace of service quality growth, and hence is slowing down. This would be true even if we measured productivity perfectly; if we could actually measure utility per hour. The measured productivity slowdown can be “real” and yet that does not mean we cannot or have not innovated. The complementary nature of the preferences matter here in a material way.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Jun 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
