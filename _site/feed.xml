@@ -5,7 +5,52 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Mon, 12 Dec 2016 08:31:14 -0600</pubDate>
+    <pubDate>Fri, 16 Dec 2016 09:27:03 -0600</pubDate>
+    
+      <item>
+        <title>Can you do historical counter-factuals?</title>
+        <link>https://growthecon.com/blog/Causality/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Causality/</guid>
+        <description>&lt;p&gt;&lt;em&gt;Warning: rank speculation lies ahead&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Last weekend I fell hopelessly behind in an on-going Twitter-storm surrounding history and economics, and how the two fields think of causality and counterfactuals. The culprits filling up my notifications page included &lt;a href=&quot;https://twitter.com/pseudoerasmus&quot;&gt;Pseudoerasmus&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/leah_boustan&quot;&gt;Leah Platt Boustan&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/RichardALJones&quot;&gt;Richard Jones&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/kevinhorourke&quot;&gt;Kevin O’Rourke&lt;/a&gt;. This is my uber-Tweet response, and I’m going to leave the 140 character limit in the dust.&lt;/p&gt;
+
+&lt;p&gt;The origin of the Twittering was an article in the Chronicle of Higher Education by Marc Parry that on a battle between economists and historians. He speaks with historian Eric Foner, and says “Foner considers counterfactuals absurd. A historian’s job is not to speculate about alternative universes, he says. It’s to figure out what happened and why.”&lt;/p&gt;
+
+&lt;p&gt;For the record, the context of the article is about the debate between economists and historians on the role of slavery in supporting capitalism, with (some) historians implying capitalism was impossible without slavery and (some) economists responding that capitalism would have proceeded just fine without it. You can see a little summary in the Economist &lt;a href=&quot;http://www.economist.com/blogs/freeexchange/2016/12/pain-past&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What appeared to get people going on Twitter was the idea that Foner “considers counterfactuals absurd”. The response to this is best summarized by the immortal Inigo Montoya: “I do not think that word means what you think it means.” The criticism is that &lt;em&gt;of course&lt;/em&gt; historians do counterfactuals when they suggest that factor X (e.g. slavery) caused Y (e.g. capitalism). By saying X caused Y, you are saying that if X failed to exist/happen - which would be counter to the facts of history - Y would not have existing/happened.&lt;/p&gt;
+
+&lt;p&gt;Why are the economists (many of them) so comfortable with, and happy to think about, counterfactuals? And why are historians (some of them) not happy with the concept? My proposal here is that the economists approach these questions from the perspective of a standard empirical setting with lots of observations, and they extend that to thinking about history.&lt;/p&gt;
+
+&lt;p&gt;Think of a big cross-sectional dataset on individuals, let’s say with information on wages, education, and the like. It also has a dummy variable for gender: 0 for males, 1 for females. You could run a regression of (log) wages on years of education, age, lots of other control variables, and the gender dummy variable.&lt;/p&gt;
+
+&lt;p&gt;An economist trained in empirics will look at this and say that the gender dummy variable indicates the counter-factual effect of gender on wages. That is, if you could take a man, and counter-factually make them a woman while holding everything else about them the same, how much would their wage fall? Or vice versa.&lt;/p&gt;
+
+&lt;p&gt;Now, this is of course ridiculous as an actual policy change. You cannot simply flip someone’s gender, and even if you could, the other variables related to this person would likely change as well. If you could go back and change the gender of a person at birth, they would have almost certainly have had different education experiences, different job experiences, different health outcomes, etc.&lt;/p&gt;
+
+&lt;p&gt;But with a large cross-sectional dataset, we could page through the data and find a woman with the same, or very similar characteristics, to the man we started looking at. And then we could just compare the man to the woman with similar characteristics, and look at their wage difference. That is plausible in an intuitive way. And when economists think of doing a counter-factual, this plausible comparison is what they often have in mind. Or at least, this is what empirical training has embedded in their brains.&lt;/p&gt;
+
+&lt;p&gt;And we take that kind of counter-factual to historical studies, where the plausible intuitive way doesn’t make sense. Studying slavery and capitalism, for example, we do not have thousands of different societies or cultures to page through to find one that looks &lt;em&gt;almost exactly&lt;/em&gt; like the Anglo-American industrializing societies, but doesn’t have slavery. We cannot compare like to like, and do the plausible counter-factual comparison like we did with gender.&lt;/p&gt;
+
+&lt;p&gt;We only have the more dramatic counter-factual. What if we took the observed Anglo-American industrializing societies and somehow “switched off” slavery, just like taking the man in the wage data and “switching” his gender to female. The experience and implications of slavery are entwined with every other aspect of the industrializing societies, and pulling it out would entail massive shocks to all these other aspects. “Doing the counterfactual” looks like a big mess, and perhaps this is what Foner is objecting to because it sounds like writing some sort of alternative history novel. And it would be pure speculation to write such a novel.&lt;/p&gt;
+
+&lt;p&gt;It would, but this is a second point at which concepts drawn from large dataset empirics make economists more comfortable with counter-factuals. We don’t have to think about writing down an alternative history novel. We need to think about lots and lots of possible novels in which slavery did not exist, and lots and lots in which it did.&lt;/p&gt;
+
+&lt;p&gt;And based on those thousands of alternative history novels, is it true that when slavery remains present into the 1800’s, that capitalism develops? And is it true that when slavery fails to persist (or maybe never really exists?) that capitalism fails to develop? We wouldn’t even have to be strict about the relationship between one and the other, we could ask if - statistically speaking - alternative histories without slavery tended to be without capitalism, and alternative histories with slavery tended to have capitalism. When economists are talking about historical counterfactuals, I think this is what they have in mind. At least, it is what I have in mind to make sense of claims like “slavery was necessary for capitalism”, or any claim that “X was necessary for Y”.&lt;/p&gt;
+
+&lt;p&gt;The claim that slavery was &lt;em&gt;not&lt;/em&gt; necessary for capitalism is not meant to be an iron-clad statement of truth. At least I hope that those who make the claim do not mean it this way, because that would be wrong. What it does mean is that of all the alternative histories we could have gotten, the ones without slavery most likely would still have gotten capitalism anyway. And the proposed explanations for that - Indian and Egyptian supply responses, alternative labor arrangements in the US South - are arguments about the probability of capitalism occurring in those thousands of alternative histories.&lt;/p&gt;
+
+&lt;p&gt;I see why this can be frustrating to those coming at this from the history side of things. This seems to reduce historical work, which is in part the patient documentation of the particular, to a sideline. How could you possibly conceive of thousands of different alternative histories, when we as yet know so little about this one? The economist’s approach appears dismissive. Much the same way that telling someone who failed to find a good job after college, and is getting by working part-time at Pizza Hut, that their wages are approximately 50% higher in expectation because of their degree. Guess your particular error term draw just sucked. ¯_(ツ)_/¯&lt;/p&gt;
+
+&lt;p&gt;Despite this, one advantage of thinking explicitly about this in terms of many-alternative-histories is that you can avoid falling into arguements about mono-causality. If you say that slavery is necessary for capitalism, and then say that in a counterfactual history without slavery capitalism would not have existed, you a careening perilously close to saying that slavery was the &lt;em&gt;single&lt;/em&gt; cause of capitalism. You might try to swerve to avoid this by saying that speculating about that counterfactuals is silly in the first place.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, if you think about many alternative histories, it is much easier to avoid making mono-causal statements. Saying, “If we compared histories with slavery and without slavery, I believe that a statistically significant difference would exist between them in the appearance of capitalism” is wishy-washy, poor writing, and not exactly attention-getting. But it is clear that slavery is not the &lt;em&gt;only&lt;/em&gt; possible cause of capitalism, because you are allowing for the idea that some non-slave histories could have found their way to capitalism anyway.&lt;/p&gt;
+
+&lt;p&gt;I cannot get my head around asking “why”, as Foner does, without being able to undertake any kind of counter-factual exercise, whether in the data or in my head. But perhaps the concept of thinking in terms of many-alternative-histories, rather than feeling you must commit to a single one, is a way of making the idea of counterfactuals more palatable.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Dec 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Growth links of interest</title>
@@ -914,58 +959,6 @@
 &lt;p&gt;Yes, the context of the individual conflicts is vastly more important than MP’s paper, if what you are trying to do is solve a specific conflict. You wouldn’t call them to negotiate a cease-fire between militants and the government in, well, any country anywhere. But understanding that partitioning of the Murdock groups is associated with violence is informative - without invalidating any of the contextual information.&lt;/p&gt;
 </description>
         <pubDate>Mon, 25 Jul 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>The Early Transformation of Britain&#39;s Economy</title>
-        <link>https://growthecon.com/blog/Britain-Shares/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Britain-Shares/</guid>
-        <description>&lt;p&gt;There’s a nice working paper out by &lt;a href=&quot;http://www.lse.ac.uk/economicHistory/workingPapers/2016/WP240.pdf&quot;&gt;Patrick Wallis, Justin Colson, and David Chilosi&lt;/a&gt; called “Puncturing the Malthus Delusion: Structural Change in the British Economy before the Industrial Revolution, 1500-1800”. The big project they undertake here is to mine the probate inventories (along with several other sources) from Britain in this period to build up a picture of the rough allocation of workers across sectors. They do a very nice job of walking through their data sources, and the limitations, in the paper, so let me leave those details aside. In short, they use the reported occupations in wills to back out a picture of the sectoral structure, finding it consistent with other sources based on apprentice records, as well as prior estimates from specific years.&lt;/p&gt;
-
-&lt;p&gt;Let’s get to the good stuff. Here is their Figure 7,&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/WCC_fig7.png&quot; alt=&quot;Sector Shares over time&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The dots refer to prior point estimates from other sources. The lines show their inferred sectoral distribution over time if they force the pattern of structural change to hit the point estimates from other established sources. For those interested, what this establishes is that alternative point estimates (labels with C or M) are basically consistent with the main points estimates (labels with ST or B), based on the authors time pattern of change. That is both a neat way of evaluating your data, with the benefit of not pissing off any potential referee’s.&lt;/p&gt;
-
-&lt;p&gt;But that aside, there are a few things about this figure that are very informative:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Britain was already incredibly non-agricultural in 1550. Only about 60% of workers in Britain in the late 16th century worked on farms in some capacity. For comparison, in 2010 India had a employment share in agriculture of about 54%, Nigeria 61%, and Malawi 65%. Ethiopia was still at 75% in 2010.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Britain experienced a substantial structural shift &lt;em&gt;out&lt;/em&gt; of agriculture between 1550 and 1750. From about 60% agricultural to about 40% agricultural. 40% puts Britain in 1750 at about the 2010 level of Thailand (38%), Indonesia (38%), or Ghana (42%). Thus Britain in 1750 is about 260 years ahead of those three countries in terms of the structural transformation out of agriculture.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Britain’s structural shift was &lt;em&gt;really slow&lt;/em&gt; compared to contemporary developing countries. It took Britain 200 years to drop 20 percentage points from its agricultural labor share. In comparison, Ghana dropped 20 percentage points in the 50 years from 1960 to 2010, Tanzania had a similar drop. South Africa, Peru, Mexico, Egypt, Columbia, and Brazil all saw drops of more than 30 percentage points in those same 50 years.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;meaning-what&quot;&gt;Meaning What?&lt;/h3&gt;
-&lt;p&gt;The WCC paper is very nice because it builds up a strong base of support for the spotty point estimates that were out there before. Which means we can be a little less hesitant in drawing conclusions, or at least forming hypotheses. Then again, now that Brad DeLong has said some &lt;a href=&quot;http://equitablegrowth.org/equitablog/must-read-dietrich-vollrath-2/&quot;&gt;nice things&lt;/a&gt; about me, maybe I can just start spouting off and you’ll all believe me anyway. I’ll let you figure out what is what.&lt;/p&gt;
-
-&lt;p&gt;Your Bayesian prior on “the probability the Great Divergence had its origins prior to the Industrial Revolution” should get updated to a higher number. Brad’s link from above was about a post I did on the persistence of technological change. &lt;a href=&quot;https://growthecon.com/blog/Persistence-Technology/&quot;&gt;That post’s&lt;/a&gt; point was that a lot of evidence points to 1500 &lt;em&gt;or earlier&lt;/em&gt; as a time frame for when we can start to predict which countries will end up rich, and which poor. The fact that Britain in 1550 is already as un-agricultural as India is in 2010 says that something in 1550 was already “going right” in Britain. Again, we should be digging backwards for explanations. (By the way, digging backward for explanations does not mean digging backwards for policy recommendations.)&lt;/p&gt;
-
-&lt;p&gt;These numbers are bad news if you have “Glorious Revolution” in the “monocausal origins of economic growth” office pool. The data reinforce the argument that the Glorious Revolution was as much a &lt;em&gt;response&lt;/em&gt; to economic change, as it was a &lt;em&gt;cause&lt;/em&gt; of economic change. WCC provide a rough estimate of output per worker based on their labor allocations and estimates of output from others.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/WCC_fig11.png&quot; alt=&quot;Output per worker&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can see that there is a distinct surge upwards in all three sectors starting early in the 1600’s, well before the Glorious Revolution (1688-89) and the supposed origin of growth-friendly institutions. Britain seemed to be figuring out its economic game well before they imported a Dutch king willing to share power with merchants.&lt;/p&gt;
-
-&lt;h3 id=&quot;malthusian-structural-change&quot;&gt;Malthusian Structural Change&lt;/h3&gt;
-&lt;p&gt;While it is in the title, the authors spend very little time talking about how their data “punctures the Malthusian Delusion”. In fact, the terms “Malthus” or “Maltusian” is not used in the main text of the paper a single time. I’m guessing they take as a given that structural change out of agriculture constitutes non-Malthusian economic activity. Hence the puncturing referred to in the title.&lt;/p&gt;
-
-&lt;p&gt;But there is nothing about structural change that implies Malthusian forces have been banished, overcome, or left behind. Yes, (too) many papers talking about Malthus give the impression that output in these economies is homogenously made up of subsistence goods like food. But that is just a modeling simplification used to elide the discussion of how labor gets allocated across different activities. An economy operating under Malthusian conditions - a positive relationship of population growth and living standards, and those living standards depending negatively on population size - need not be 100% agricultural.&lt;/p&gt;
-
-&lt;p&gt;You could have an economy that had 95% of labor in industry and services, and yet was Malthusian because output was tied to some fixed natural resources (say agricultural land to grow cotton and supplies of coal to heat up the thingies that make the cotton into underpants and tablecloths). You could even get Malthusian forces arising &lt;em&gt;because&lt;/em&gt; of urbanization. Your standard urban economics model will imply that stable city sizes occur when the costs of congestion outweight the benefits of agglomeration, meaning that adding more people to a city lowers living standards. Remi Jedwab and I have a &lt;a href=&quot;https://dl.dropboxusercontent.com/u/6823742/jv2016_megacity.pdf&quot;&gt;working paper&lt;/a&gt; using this concept to think about the origin of poor mega-cities.&lt;/p&gt;
-
-&lt;p&gt;The point (aside from self-citation) is that Malthusian economies can have rich structural characteristics and dynamics. “Stagnation in living standards over many centuries” does not mean “Everyone living on a farm barely scraping by at the biological minimum requirements for life”.&lt;/p&gt;
-
-&lt;p&gt;Britain experiencing a structural change from 1550 to 1750 does not mean it was already experiencing sustained growth. The growth experienced in that period may well have been snuffed out by Malthusian forces of population growth in time. But perhaps that structural change helped bring on the changes in demographic behavior that allowed sustained growth to occur? This structural shift bleeds directly into the Industrial Revolution, which bleeds directly into the demographic shifts involved with sustained growth. Whether this implies a chain of causality is too much to make of this evidence.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 04 Jul 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>

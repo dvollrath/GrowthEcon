@@ -1,0 +1,44 @@
+---
+layout: post
+title: Can you do historical counter-factuals?
+published: true
+category: feed
+---
+
+*Warning: rank speculation lies ahead*
+
+Last weekend I fell hopelessly behind in an on-going Twitter-storm surrounding history and economics, and how the two fields think of causality and counterfactuals. The culprits filling up my notifications page included [Pseudoerasmus](https://twitter.com/pseudoerasmus), [Leah Platt Boustan](https://twitter.com/leah_boustan), [Richard Jones](https://twitter.com/RichardALJones), and [Kevin O'Rourke](https://twitter.com/kevinhorourke). This is my uber-Tweet response, and I'm going to leave the 140 character limit in the dust.
+
+The origin of the Twittering was an article in the Chronicle of Higher Education by Marc Parry that on a battle between economists and historians. He speaks with historian Eric Foner, and says "Foner considers counterfactuals absurd. A historian’s job is not to speculate about alternative universes, he says. It’s to figure out what happened and why."
+
+For the record, the context of the article is about the debate between economists and historians on the role of slavery in supporting capitalism, with (some) historians implying capitalism was impossible without slavery and (some) economists responding that capitalism would have proceeded just fine without it. You can see a little summary in the Economist [here](http://www.economist.com/blogs/freeexchange/2016/12/pain-past).
+
+What appeared to get people going on Twitter was the idea that Foner "considers counterfactuals absurd". The response to this is best summarized by the immortal Inigo Montoya: "I do not think that word means what you think it means." The criticism is that *of course* historians do counterfactuals when they suggest that factor X (e.g. slavery) caused Y (e.g. capitalism). By saying X caused Y, you are saying that if X failed to exist/happen - which would be counter to the facts of history - Y would not have existing/happened. 
+
+Why are the economists (many of them) so comfortable with, and happy to think about, counterfactuals? And why are historians (some of them) not happy with the concept? My proposal here is that the economists approach these questions from the perspective of a standard empirical setting with lots of observations, and they extend that to thinking about history.
+
+Think of a big cross-sectional dataset on individuals, let's say with information on wages, education, and the like. It also has a dummy variable for gender: 0 for males, 1 for females. You could run a regression of (log) wages on years of education, age, lots of other control variables, and the gender dummy variable.
+
+An economist trained in empirics will look at this and say that the gender dummy variable indicates the counter-factual effect of gender on wages. That is, if you could take a man, and counter-factually make them a woman while holding everything else about them the same, how much would their wage fall? Or vice versa.
+
+Now, this is of course ridiculous as an actual policy change. You cannot simply flip someone's gender, and even if you could, the other variables related to this person would likely change as well. If you could go back and change the gender of a person at birth, they would have almost certainly have had different education experiences, different job experiences, different health outcomes, etc.
+
+But with a large cross-sectional dataset, we could page through the data and find a woman with the same, or very similar characteristics, to the man we started looking at. And then we could just compare the man to the woman with similar characteristics, and look at their wage difference. That is plausible in an intuitive way. And when economists think of doing a counter-factual, this plausible comparison is what they often have in mind. Or at least, this is what empirical training has embedded in their brains.
+
+And we take that kind of counter-factual to historical studies, where the plausible intuitive way doesn't make sense. Studying slavery and capitalism, for example, we do not have thousands of different societies or cultures to page through to find one that looks *almost exactly* like the Anglo-American industrializing societies, but doesn't have slavery. We cannot compare like to like, and do the plausible counter-factual comparison like we did with gender.
+
+We only have the more dramatic counter-factual. What if we took the observed Anglo-American industrializing societies and somehow "switched off" slavery, just like taking the man in the wage data and "switching" his gender to female. The experience and implications of slavery are entwined with every other aspect of the industrializing societies, and pulling it out would entail massive shocks to all these other aspects. "Doing the counterfactual" looks like a big mess, and perhaps this is what Foner is objecting to because it sounds like writing some sort of alternative history novel. And it would be pure speculation to write such a novel.
+
+It would, but this is a second point at which concepts drawn from large dataset empirics make economists more comfortable with counter-factuals. We don't have to think about writing down an alternative history novel. We need to think about lots and lots of possible novels in which slavery did not exist, and lots and lots in which it did. 
+
+And based on those thousands of alternative history novels, is it true that when slavery remains present into the 1800's, that capitalism develops? And is it true that when slavery fails to persist (or maybe never really exists?) that capitalism fails to develop? We wouldn't even have to be strict about the relationship between one and the other, we could ask if - statistically speaking - alternative histories without slavery tended to be without capitalism, and alternative histories with slavery tended to have capitalism. When economists are talking about historical counterfactuals, I think this is what they have in mind. At least, it is what I have in mind to make sense of claims like "slavery was necessary for capitalism", or any claim that "X was necessary for Y". 
+
+The claim that slavery was *not* necessary for capitalism is not meant to be an iron-clad statement of truth. At least I hope that those who make the claim do not mean it this way, because that would be wrong. What it does mean is that of all the alternative histories we could have gotten, the ones without slavery most likely would still have gotten capitalism anyway. And the proposed explanations for that - Indian and Egyptian supply responses, alternative labor arrangements in the US South - are arguments about the probability of capitalism occurring in those thousands of alternative histories.
+
+I see why this can be frustrating to those coming at this from the history side of things. This seems to reduce historical work, which is in part the patient documentation of the particular, to a sideline. How could you possibly conceive of thousands of different alternative histories, when we as yet know so little about this one? The economist's approach appears dismissive. Much the same way that telling someone who failed to find a good job after college, and is getting by working part-time at Pizza Hut, that their wages are approximately 50% higher in expectation because of their degree. Guess your particular error term draw just sucked. ¯\_(ツ)_/¯
+
+Despite this, one advantage of thinking explicitly about this in terms of many-alternative-histories is that you can avoid falling into arguements about mono-causality. If you say that slavery is necessary for capitalism, and then say that in a counterfactual history without slavery capitalism would not have existed, you a careening perilously close to saying that slavery was the *single* cause of capitalism. You might try to swerve to avoid this by saying that speculating about that counterfactuals is silly in the first place. 
+
+On the other hand, if you think about many alternative histories, it is much easier to avoid making mono-causal statements. Saying, "If we compared histories with slavery and without slavery, I believe that a statistically significant difference would exist between them in the appearance of capitalism" is wishy-washy, poor writing, and not exactly attention-getting. But it is clear that slavery is not the *only* possible cause of capitalism, because you are allowing for the idea that some non-slave histories could have found their way to capitalism anyway.
+
+I cannot get my head around asking "why", as Foner does, without being able to undertake any kind of counter-factual exercise, whether in the data or in my head. But perhaps the concept of thinking in terms of many-alternative-histories, rather than feeling you must commit to a single one, is a way of making the idea of counterfactuals more palatable. 
