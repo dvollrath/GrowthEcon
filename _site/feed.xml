@@ -5,7 +5,67 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Fri, 16 Dec 2016 09:27:03 -0600</pubDate>
+    <pubDate>Tue, 27 Dec 2016 10:38:26 -0600</pubDate>
+    
+      <item>
+        <title>The returns to societal capital</title>
+        <link>https://growthecon.com/blog/Society-Dividend/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Society-Dividend/</guid>
+        <description>&lt;p&gt;Brad DeLong had a &lt;a href=&quot;http://equitablegrowth.org/equitablog/regional-policy-and-distributional-policy-in-a-world-where-people-want-to-ignore-the-value-and-contribution-of-knowledge-and-network-based-increasing-returns/&quot;&gt;recent post&lt;/a&gt; that contained a number of ideas regarding how we view redistribution in a market economy. I picked up on some comments he made towards the end of that post, in which he points out that much of our prosperity comes from a stock of societal capital that we unknowingly rely on every day. And because that societal capital is unseen and uncompensated, we are all in some way overpaid for what we do.&lt;/p&gt;
+
+&lt;p&gt;When he says societal capital, I think of it in two broad categories:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Trust&lt;/strong&gt;: I think this is much of what DeLong has in mind. We are lucky to be in the “trust” or “cooperate” equilibrium in our repeated game of exhanging goods and services. If you like, call it the “stag hunt” equilibrium &lt;a href=&quot;http://worthwhile.typepad.com/worthwhile_canadian_initi/2016/12/staghunt-and-the-irs.html&quot;&gt;Nick Rowe&lt;/a&gt; talks about. Regardless, we benefit from the decisions of our ancestors to play this equilibrium, so that it is the default. If you want to say this is due to some institutions, or culture, or pure luck, it doesn’t matter. We’ve found our way to the trust equilibrium, and benfit from that immensely.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Scale&lt;/strong&gt;: He doesn’t mention this explicitly, but I think it is as relevant as trust. Scale influences the potential profits from innovations, and so is crucial to growth. Bigger market, more profits, more incentives to innovate. But scale is not the same thing as trust, or institutions, or culture. If you doubt that, ask yourself why no firm is spending millions to get into New Zealand, paragon of free market institutions, but they are falling all over themselves to do business in China. Living in the US, or EU, or China, is to reap the benefits of living with scale.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The heart of DeLong’s point is that neither trust nor scale are things that are owned by any firm or individual. You could say that we inherited them from our ancestors, or you could say these are emergent properties, or you could say that they are designed by the institutions we choose for ourselves. Regardless, trust and scale are “ideas” in the broadest sense, and are inputs into the production process in that trust and scale mean our set of rival inputs (labor, capital) can produce more with them than without.&lt;/p&gt;
+
+&lt;p&gt;How is it that scale and trust mean we are overpaid? Here I’ll borrow an idea from DeLong, and “hoist one from the archives” of this &lt;a href=&quot;https://growthecon.com/blog/what-assumptions-matter-for-growth-theory/&quot;&gt;blog&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Just to refresh, a production function tells us that output is determined by some combination of non-rival inputs and rival inputs. Non-rival inputs are things like ideas that can be used by many firms or people at once without limiting the use by others. Think of blueprints. Rival inputs are things that can only be used by one person or firm at a time. Think of nails. The income earned by both rival and non-rival inputs has to add up to total output. Okay, given all that setup, here are three statements that &lt;em&gt;could&lt;/em&gt; be true.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Output is constant returns to scale in &lt;em&gt;rival&lt;/em&gt; inputs&lt;/li&gt;
+    &lt;li&gt;Non-rival inputs receive some portion of output&lt;/li&gt;
+    &lt;li&gt;Rival inputs receive output equal to their marginal product&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pick two.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The ideas of trust and scale are non-rival inputs to production. If we assume that output is constant returns to scale in rival inputs (point 1), then we have to pick wither 2 or 3. As neither trust nor scale receive payments, we have essentially chosen 3. And in that sense DeLong means that rival inputs (our labor and our capital) are overpaid. We are not compensating anyone for the trust and scale that we inherited or created as a group.&lt;/p&gt;
+
+&lt;p&gt;A first aside is that in my set-up choosing 3 implies that rival inputs earn their marginal products, and DeLong is saying that our labor is earning &lt;em&gt;more&lt;/em&gt; than its marginal product. I don’t think this is actually a meaningful difference. DeLong is saying that labor is overpaid because it earns returns that could be going to ideas like trust and scale. Whether we say that what it earns is the marginal product or not is irrelevant.&lt;/p&gt;
+
+&lt;p&gt;A second aside is that it isn’t really as stark as saying we chose option 3. Some ideas - the patent for an iPhone, the trademark on Coca-Cola - are protected and receive compensation. All I’m saying here is that scale and trust are ideas that are &lt;em&gt;not&lt;/em&gt; receiving compensation, and in that sense rival inputs like labor are overpaid.&lt;/p&gt;
+
+&lt;p&gt;A third aside is you may be wondering how the increasing returns to scale that DeLong mentions fits in here. Note that point 1 only says production is constant returns to scale in rival inputs (labor and capital). In terms of &lt;em&gt;all&lt;/em&gt; inputs (labor, capital, and ideas) production is increasing returns to scale. If I doubled all of them, output would more than double.&lt;/p&gt;
+
+&lt;p&gt;Back to the main story. What DeLong does with this is to provide what I found to be a unique justification for the public sector. That is, taxes are a way of collecting the royalties on trust and scale that we inherited and/or create ourselves. Taxes are the rents to idea of playing “cooperate” or having scale. And the proper use of those rents, if I am reading him correctly, is in ensuring that those endowments are perpetuated and handed off to our own children.&lt;/p&gt;
+
+&lt;p&gt;What does it mean to perpetuate trust and scale? Part of it, I think, is in providing the insurance against the fluctuations that are the necessary corrollary of the markets we create with trust and scale. Those fluctuations play havoc with local communities and ways of life, a la Polyani. Hence individuals or communities may be tempted to defect from the cooperate/trust equilibria, or hive themselves off on their own and reduce the scale of the economy. If we spend the rents of trust and scale supporting those communities, we can incent them to stay in the good equilibrium.&lt;/p&gt;
+
+&lt;p&gt;The issue with this, as DeLong spends most of his post working out, is that simply handing out those rents to people creates issues for everyone involved. Those paying taxes feel that they are being taken as suckers. Those receiving the rents - the members of disrupted communities - feel like deadbeats. No one wants to be in either of those positions. We have built-in preferences that make deviation from trust and scale look attractive. Which is why being in the good equilibrium is such a delicate thing.&lt;/p&gt;
+
+&lt;p&gt;How then, do you justify the collection of the rents that, arguably, rightfully belong to all of us, and ensure that we pass on the trust and scale necessary for prosperity to the next generation? And do so in a way that is palatable to all parties?&lt;/p&gt;
+
+&lt;p&gt;One idea is that you can use the idea of rents or royalties as a positive justifcation of taxation. We are collecting on the royalties due to us as a citizenry for our trust and scale, the same way that Apple collects royalties due to them as a designer of useful touchscreen emoji delivery machines. In this concept, taxation is not theft, or a necessary evil, but rather the enforcement of our intellectual property rights over trust and scale.&lt;/p&gt;
+
+&lt;p&gt;On the other end, the distribution of those rents is perhaps more palatable when seen not as a handout (which makes people feel like a deadbeat) but as something like a dividend on shared ownership of an asset. I feel like this would be one way to think of how a universal basic income could be framed - everyone is getting their share of the collective dividend payment due to the owners of the “ideas” of trust and scale. It is a sign of ownership, not dependence.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Dec 2016 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Can you do historical counter-factuals?</title>
@@ -904,61 +964,6 @@
 
 </description>
         <pubDate>Wed, 03 Aug 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Evidence on Violence and Ethnic Groups in Africa</title>
-        <link>https://growthecon.com/blog/Ethnic/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Ethnic/</guid>
-        <description>&lt;p&gt;At the rate I’m going this summer, I will soon be down to one blog post a year, and it will be about a paper that came out in 2008. I swear to my coauthors that this is because I’m working &lt;em&gt;so damn hard&lt;/em&gt; on [fill in name of joint project here], and will soon have those [tables/drafts] prepared.&lt;/p&gt;
-
-&lt;p&gt;A few things have recently caused me to come up for air, and one was a little back and forth that took place on Twitter over a paper by Stelios Michalopoulos and Elias Papaioannou (MP) on “&lt;a href=&quot;https://www.aeaweb.org/articles?id=10.1257/aer.20131311&quot;&gt;The Long-run Effects of the Scramble for Africa&lt;/a&gt;”. Bill Easterly linked to a brief &lt;a href=&quot;https://t.co/zbQ75Ri41J&quot;&gt;write-up&lt;/a&gt; of the paper from the AER, where it was just published. This led to several responses from others critical of several aspects of the MP paper. I had a brief back and forth with some people myself.&lt;/p&gt;
-
-&lt;p&gt;First, a disclaimer. I am friendly with both Stelios and Elias. I see them at conferences, I ask about their kids, they ask about mine. I can spell their names without checking online. Stelios and I overlapped at grad school for four years. I believe I’m going to give you a fair assessment of their paper and the mini-controversy about it. But you have full information.&lt;/p&gt;
-
-&lt;p&gt;One point that was made about the paper was that the use of the term “homeland” is problematic, particularly in Africa. Economists, and I know I do this, tend to get exapserated by people picking over the semantics. Who cares what they call them? MP define exactly what they mean by “homeland” in the paper. But there are connotations to words, and no matter how precisely you define something in a paper, those connotations exist. “Homeland” was a term used by the South African apartheid government for the areas where black Africans were allowed to live. Referring to “homelands” in Africa can make it sound like there are places where certain groups are supposed to live, forever and always. It was a poor choice by MP to use it.&lt;/p&gt;
-
-&lt;p&gt;More broadly, the issue with “homelands” bleeds into criticism of the idea that it is possible to fix boundaries on an ethnicity at all. I don’t have the knowledge or time to work through the history of thought on this, but suffice it to say that today if you asked scholars working on Africa (I did e-mail with a few) about ethnic homelands, they’d all say - paraphrasing - “that’s not a thing”.&lt;/p&gt;
-
-&lt;p&gt;And yet MP find what they find. Poor language choices don’t invalidate the data. Empirically, it helps to separate MP’s work into two pieces. First, split ethnicities have predictive power for incidents of violence. Second, we can interpret this as a &lt;em&gt;causal&lt;/em&gt; impact of splitting an ethnicity. Asserting the first does not imply the second. And denying the second does not invalidate the first. But it will be worth thinking more about what exactly they mean when they say a split ethnicity. More on that as we go.&lt;/p&gt;
-
-&lt;p&gt;On predictive power, their succession of regressions is hard to ignore. MP look at 1,212 ethnic/country observations. There is one observation for the Lobi in the Ivory Coast, and a separate observation for the Lobi in Burkina Faso, for example. The mapping of ethnic groups to countrys comes from a map done by Murdock (1957), and that has been used extensively by these authors and others in studying African development. An ethnic group that is fully contained within a country would have one observation only. Then MP use the &lt;a href=&quot;http://www.acleddata.com&quot;&gt;ACLED&lt;/a&gt; database, which has information on political violence in Africa from 1997 to 2013. Importantly, it contains location information, and MP use that to assign acts of political violence to the ethnic areas defined by Murdock.&lt;/p&gt;
-
-&lt;p&gt;Each ethnic/country observation gets a variable called SPLIT, which is 1 for both partitioned groups. So the Lobi/Ivory Coast observation would have a 1, and so would the Lobi/Burkina Faso. A group wholly contained in a country would get a zero. Then MP run a series of regressions of different measures of political violence against this SPLIT variable, controlling for lots of other things.&lt;/p&gt;
-
-&lt;p&gt;MP are not looking only at incidents of violence that occur in partitioned groups, they are comparing the amount of violence in partitioned groups to non-partitioned groups. It’s helpful here to remember that “running a regression” essentially means “compare the average outcome for two sets of observations”. The average level of political violence in partitioned groups/countries (SPLIT = 1) is higher than the level of political violence in non-partitioned groups/countries (SPLIT = 0). “Controlling for lots of other things” means that the average level of political violence is still higher in partitioned groups even if you only look at group/countries that all share a common set of characteristics (other than being partitioned). An important control here are the country fixed effects, which means their results show that there is more political violence in partitioned groups in a country compared to other non-partitioned groups in that same country.&lt;/p&gt;
-
-&lt;p&gt;Those measures of political violence are things like: the count of violent incidents, the number of deadly incidents, the total casualties from political violence, the amount of civil violence, or the number of more formal battles (but not necesseraily riots). In each case, partitioned groups had higher levels of violence in this time period.&lt;/p&gt;
-
-&lt;p&gt;What would be nice to see is the predictive power of just the SPLIT variable. MP’s full regressions have adjusted R-squares of about 45%, of they explain about half of the variation in political violence - but that is the explanatory power of &lt;em&gt;all&lt;/em&gt; the variables. How important is SPLIT by itself?&lt;/p&gt;
-
-&lt;p&gt;Regardless of that answer, it’s crucial to remember that saying there is a statistically significant effect of partitioning, or saying that MP can explain 45% of the variation in violence, does not mean &lt;em&gt;all&lt;/em&gt; partitioned groups are &lt;em&gt;by definition&lt;/em&gt; more violent. The Twitter dicussion was thick with examples of partioned groups that did not tend to have violence occur. Okay, great. MP aren’t saying that partitioning forces you to have violence, they are saying that partitioned places are more likely to exhibit violence. It’s a probability statement.&lt;/p&gt;
-
-&lt;p&gt;If you want to criticize MP’s work on the predictive power of ethnic partitioning, then I think the main issue would be with Murdock’s underlying map. We don’t exactly know what Murdock used to define these borders, and if you look at his map, they can seem as arbitrarily drawn as any political boundary. Maybe he got these wrong, and what MP take to be “ethnic homelands” are not indicative of actual ethnic groupings now (or in 1957 for that matter). This reaches back to the point from the beginning - maybe Murdock’s boundaries don’t indicate anything real about ethnic groups.&lt;/p&gt;
-
-&lt;p&gt;Does that change the interpretation of MP? Sure. Their regressions show that areas defined by George Murdock that are divided by political boundaries are prone to violence. Does that necessarily mean that this is due to ethnic-based conflict? Perhaps Murdock drew his groups based on some observed characteristic of violence in 1957, and so those places were bound to be violent anyway? MP can offer some evidence on this, as when they use alternative data on ethnic-based conflicts (from the &lt;a href=&quot;http://www.epr.ucla.edu&quot;&gt;EPR&lt;/a&gt; database) it shows that partitioned Murdock-groups do indeed have more ethnic-based conflict.&lt;/p&gt;
-
-&lt;p&gt;And nothing about MP’s results is contingent on the ethnic population of Murdock’s groups being tied to that specific geographic location over time. The violence within one of Murdock’s partitioned group could be from an entirely different group moving in over time, and no one from the original group even lives there any more. Ethnic groups can be fluidly moving across borders, within countries, and all over the place. But there is something about partitioned areas from Murdock’s map that tends to have more violence than other places.&lt;/p&gt;
-
-&lt;p&gt;Alright, let’s say that MP have established the predictive power of partitioning for future conflict. Does their work imply that the partitioning was &lt;em&gt;causal&lt;/em&gt;. That is, was it the partitioning itself that created the violence. You might imagine that partitioning would make a border &lt;em&gt;less&lt;/em&gt; violent, as the people on either side are closely related. So it isn’t obvious how the causality would go here.&lt;/p&gt;
-
-&lt;p&gt;MP argue that their results do show a causal impact of partitioning, based on the arguemnt that the partitioning was done quasi-randomly by European colonists starting with the Berlin Conference in 1884-85. The money quote for them is from Robert Cecil.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;We have been engaged in drawing lines upon maps where no white man’s feet have ever trod; we have been giving away mountains and rivers and lakes to each other, only hindered by the small impediment that we never knew exactly where the mountains and rivers and lakes were.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Thus, for MP the partitioning of one of Murdock’s ethnic groups was done blindly by Europeans without any knowledge of the location of those groups to begin with. From the perspective of the groups, this was done randomly. Hence the characteristics of partitioned and non-partitioned ethnicities do not vary systematically - which MP verify on several geographic and historical dimensions - and hence the estimated effect of partitioning is in fact causal.&lt;/p&gt;
-
-&lt;p&gt;If you take this seriously, then finding that this is causal is another strong piece of evidence in the “history matters” or “path dependence” literature that finds persistent effects of historical choices on current development. Which is a polite way of saying that colonization - the historical choice made by colonizers to exploit certain areas of the globe and not others - created lasting damage to colonies. That damage may be in terms of depressed investment in human/physical capital, or may be in institutions and political structures that are built for corruption rather than development. In this MP case, the damage was from arbitrarily dividing some ethnic groups, creating frictions across borders, leading to violence that disrupts development.&lt;/p&gt;
-
-&lt;p&gt;If you want to stay skeptical of the MP causality claim, then again I think your target is Murdock. While the Berlin Conference made decisions blindly, Murdock knew those boundaries to a large extent, and may have drawn his lines specifically with them in mind. Perhaps he retrofitted the ethnic mapping to the boundaries, and he presumed that violent areas must be partitioned?&lt;/p&gt;
-
-&lt;p&gt;I think that’s a stretch, but even if you want to dismiss the causality claims, that doesn’t negate the predictive power of the MP regressions. If you want to tell me that a more contextual study of these conflicts will indicate that they are not ethnicity-based at all, but due to fights over limited resources, or instigation from outside sources, or just randomly bad luck, fine. But you still have to explain why these things tend to occur (but not always) in areas where Murdock’s groups were partitioned. The data indicates that there is only about a 5-10% chance that this is just a coincidence.&lt;/p&gt;
-
-&lt;p&gt;Yes, the context of the individual conflicts is vastly more important than MP’s paper, if what you are trying to do is solve a specific conflict. You wouldn’t call them to negotiate a cease-fire between militants and the government in, well, any country anywhere. But understanding that partitioning of the Murdock groups is associated with violence is informative - without invalidating any of the contextual information.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 25 Jul 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
