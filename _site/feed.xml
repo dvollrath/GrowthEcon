@@ -5,7 +5,74 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Thu, 19 Jan 2017 12:47:58 -0600</pubDate>
+    <pubDate>Tue, 24 Jan 2017 18:20:59 -0600</pubDate>
+    
+      <item>
+        <title>Yes, ideas are harder to find. Don&#39;t panic yet.</title>
+        <link>https://growthecon.com/blog/Idea-TFP/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Idea-TFP/</guid>
+        <description>&lt;p&gt;Nick Bloom, Chad Jones, John van Reenen, and Michael Webb have a new &lt;a href=&quot;http://web.stanford.edu/~chadj/IdeaPF.pdf&quot;&gt;paper&lt;/a&gt; on how productive we are at producing “ideas”, which one can argue are the ultimate source of all economic growth.&lt;/p&gt;
+
+&lt;p&gt;The splash graphic from the paper, which I believe made a brief tour of the Twitter-verse a month or so ago, is shown below. It shows that the TFP growth rate (in blue) peaked around the 1940’s, and has declined since then. The axis measurement here is a big funky, as you could see more of the details of this line if they had made the left axis go up to say 5%, rather than 25%. Regardless, the TFP growth rate is smaller than it was in the past, following Robert Gordon’s numbers.&lt;/p&gt;
+
+&lt;p&gt;In green is the relative number of researchers compared to the number in 1930. This isn’t the &lt;em&gt;number&lt;/em&gt; of researchers, its a measure of &lt;em&gt;effective&lt;/em&gt; researchers, found by dividing total R and D spending by the nominal wage of high-skilled workers. Relative to 1930, we have almost 25 times as many (effective) researchers at work today. This leads to the author’s title question - “Are ideas getting harder to find?”. And the author’s answer is “Yes”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/jones_1.png&quot; alt=&quot;Idea TFP and TFP Growth&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;measuring-idea-tfp&quot;&gt;Measuring Idea TFP&lt;/h3&gt;
+&lt;p&gt;BJvRW measure how “hard” it is to find ideas by looking at what they call “idea TFP”. This is easy to back out from some data. Let’s write the growth rate of ideas (I) as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\dot{I}_t}{I_t} = \alpha_t S_t&lt;/script&gt;
+
+&lt;p&gt;where the left side is the growth rate of ideas at time t, and on the right-hand side we’ve got the determinants of that growth. &lt;img src=&quot;http://latex.codecogs.com/png.latex?S_t\inline&quot;/&gt; is research effort, and here think of the measure of effective researchers. How much work do we put into coming up with new ideas? The second term is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_t\inline&quot;/&gt;, which is the “idea TFP”. It tells you how much idea growth you get out of those researchers.&lt;/p&gt;
+
+&lt;p&gt;If you tell me the growth rate of ideas (the left) and the number of effective researchers (S), then I (well, the authors) can back out the measure of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_t\inline&quot;/&gt; year by year. And this is what BJvRW do, in a variety of contexts.&lt;/p&gt;
+
+&lt;p&gt;What they do first is to equate the growth rate of ideas with the growth rate of TFP (actual aggregate TFP in producing GDP). That doesn’t mean that each idea is equal to one “unit” of TFP, it just means that if the number of ideas grows by 10%, then TFP grows by 10%. This is a big leap - but let’s not get hung up on this. It isn’t important in this first context. With the data from the first graph on the TFP growth rate (&lt;img src=&quot;http://latex.codecogs.com/png.latex?\dot{I}/I\inline&quot;/&gt;), and the number of effective researchers (&lt;img src=&quot;http://latex.codecogs.com/png.latex?S_t\inline&quot;/&gt;), we can back out &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_t\inline&quot;/&gt;. This “idea TFP” is, awkwardly, the “TFP TFP”, or our productivity at producing TFP given a set of researchers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/jones_2.png&quot; alt=&quot;Idea TFP&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This second graph plots the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_t\inline&quot;/&gt; they back out, relative to 1930. You can see that it falls to about 1/64th of the level in 1930. Because we are 1/64th as effective at turning researchers into TFP, but we only have 32 times as many researchers, our growth rate of TFP is about 1/2 as high as it was in the 1930’s/1940’s. Hang on to the “why” question for a moment. For now, we’re just looking at the pure accounting.&lt;/p&gt;
+
+&lt;p&gt;This first exercise using (actual) TFP as the measure of ideas is a bit crude, and what BJvRW go on to do is examine individual industries or types of products to establish that the “idea TFP” is in fact falling within each of these as well. This is relevant because the first result using TFP does not tell us what is happening at the “micro” level. We could have constant (or even rising) “idea TFP” within individual industries or lines of research, and yet in aggregate falling “idea TFP”. It may be that ideas are not perfectly translated to TFP, or it may be that the we are spreading our research efforts over an ever-expanding list of industries or lines of research. In the latter case, idea growth in individual industries/lines may be falling because of the decline in numbers of researchers, not because of declining idea TFP. But in aggregate, this would look like declining idea TFP.&lt;/p&gt;
+
+&lt;p&gt;Thus looking at individual industries/lines will help us sort out what is happening. The first example is transistors, and the count of transistors per square inch on a chip. Famously, this appears to obey Moore’s Law, which is that the number of transistors per square inch doubles every 18 months. If we count the number of transistors per square inch as “ideas”, then this translates to a growth rate of 35% per year. At the same time, the effective number of researchers working at chip companies (Intel, AMD, etc..) has grown by a factor of about 80 since 1970. Plotting this together yields their next figure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/jones_4.png&quot; alt=&quot;Moores Law&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Relative to the first graph, there is no decline in the growth rate of transistors. But there also isn’t an increase, despite the increased number of researchers. What this means is that “transistor idea TFP” is falling over time, at about 10% per year. As they point out in the paper, Moore’s Law still holds, but it takes 78 times more researchers to figure out how to double transistor density than it did in 1970.&lt;/p&gt;
+
+&lt;p&gt;From here, the paper works through several other examples. I’ll leave it to you to look at the specifics. But overall, the message becomes clear. For crop yields, idea TFP is falling at between 3% and 9% per year, except for cotton, where it rose slightly over time. For “new molecular entities” (e.g. drugs) idea TFP has fallen to about 1/4 of its value in 1970, or about 3% per year. BJvRW also look at firm size, measured in different ways, which should be related to their productivity (and ideas). In each case, their size is not growing as fast as their RD spending, implying their idea TFP is falling at about 8-15% per year.&lt;/p&gt;
+
+&lt;h3 id=&quot;implications-for-economic-growth&quot;&gt;Implications for Economic Growth&lt;/h3&gt;
+&lt;p&gt;The looming question here is whether this implies economic growth is due to slow down to zero. And the answer is “No”. It is possible for ideas to have a constant growth rate (and GDP per capita to have a constant growth rate as well) even if idea TFP is falling over time. For “semi-endogenous growth theory”, a term often associated with Chad Jones, this falling idea TFP is consistent with constant, positive growth in GDP per capita.&lt;/p&gt;
+
+&lt;p&gt;This is what is in the Jones/Vollrath &lt;a href=&quot;http://amzn.to/2k0pcbz&quot;&gt;textbook&lt;/a&gt; (buy 1, buy 10, buy 1000!) when we teach how ideas accumulate. Modify that first equation I showed you to look like the following&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\dot{I}_t}{I_t} = \frac{\alpha}{I_t^{\beta}} S_t.&lt;/script&gt;
+
+&lt;p&gt;where idea TFP is now the ratio of a constant, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt;, and the number of ideas, &lt;img src=&quot;http://latex.codecogs.com/png.latex?I_t\inline&quot;/&gt;, raised to the power &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;. The value of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; is quite important. If &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta=0\inline&quot;/&gt;, then the level of ideas has no effect on idea TFP, and idea TFP should be constant. This is what was in the original Romer model, by the way. What Jones did was to say that this implies a very knife-edge condition, and there was no reason to assume that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta=0\inline&quot;/&gt;. When &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta&amp;gt;0\inline&quot;/&gt;, as we accumulate more ideas, the growth rate of ideas falls - idea TFP goes down.&lt;/p&gt;
+
+&lt;p&gt;But just because idea TFP falls as we get more ideas doesn’t mean the &lt;em&gt;growth rate&lt;/em&gt; of ideas (the left hand side) is falling. Why? Because &lt;img src=&quot;http://latex.codecogs.com/png.latex?S_t\inline&quot;/&gt; is rising over time due to population growth. If the share of people working as researchers is constant, then their absolute number is rising over time. In that case, there is a growth rate of ideas such that the growth rate of ideas stays constant over time, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\dot{I}/I = n/\beta\inline&quot;/&gt;, where &lt;img src=&quot;http://latex.codecogs.com/png.latex?n\inline&quot;/&gt; is the growth rate of population (and hence of researchers). Idea growth need not slow down just because idea TFP falls over time.&lt;/p&gt;
+
+&lt;p&gt;Hence the “don’t panic yet” comment in the title. Falling idea TFP may well be the natural course of things, without resulting in lower actual TFP growth. The observed fall in actual TFP growth would have to come from some other forces involved in generating research effort. Start with an explanation that might imply a permanent fall in the TFP growth rate:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;The growth rate of the effective population has fallen&lt;/strong&gt;. If the population that provides researchers (and it is best here to think of the total population of advanced countries, not just the US) starts to grow more slowly, then S grows more slowly, and the long-run growth rate of ideas is going to be lower. Maybe the slowdown in TFP growth is due to slower population growth in developed countries. A counterargument would be that this is offset by the increasing shares of Chinese and Indian populations that are in the pool of possible researchers. A counter-counterargument would be that age distributions matter too, and we’ve got too many stodgy old people, and not enough inventive young whipper-snappers.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Other explanations might imply that the drop in the TFP growth rate will be temporary:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;A downward shift in the share of that population that is doing research&lt;/strong&gt;. This would generate a lower measured short-run growth rate of ideas because S would have a lower short-run growth rate for a while as we moved to a lower share of people doing research. This doesn’t appear to be true in the data, where an increasing share of workers are reported as doing RD work over time - and that should be pushing &lt;em&gt;up&lt;/em&gt; the short-run growth rate of ideas.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;An exogenous drop in the level of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt;&lt;/strong&gt;. In this case, the growth rate of ideas would eventually rise back up to what it was before, after we had lower measured TFP growth for a while on our way to a new equilibrium. If we’re going to argue about the value of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt;, though, then we should start over with our theory about how ideas get generated, as saying “it was a random exogenous shock” ends up being kind of useless.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And of course, maybe semi-endogenous growth theory is wrong. Maybe this just isn’t the way to look at things. Alternative theories might say idea growth could be affected by policies (subsidies for basic research, tax policy regarding treatment of RD spending, etc..) and what we’ve seen is a continuous deterioration of the policies supporting idea generation. This one is a little hard to square, though, just because it seems odd that there would be such growth in the number of researchers if the returns to that research at the firm or individual level were going down so much. I can see how taxes on RD would lower the resources devoted to it, but why would that affect how effective RD efforts are? You’d have to argue that policies were incenting companies to work on useless ideas.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 24 Jan 2017 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>The returns to societal capital</title>
@@ -881,89 +948,6 @@
 &lt;p&gt;How big is that effect? That’s a different question, and something that I’m playing around with at getting a better handle on. Stay tuned.&lt;/p&gt;
 </description>
         <pubDate>Mon, 15 Aug 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Did Real Manufacturing Output Grow Faster than We Thought?</title>
-        <link>https://growthecon.com/blog/Manuf-Share/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Manuf-Share/</guid>
-        <description>&lt;p&gt;Writing this post was kind of depressing, because all it did was highlight for me how &lt;em&gt;many&lt;/em&gt; things I’ve got in my reading list to think about and digest. I was reading Brad DeLong’s recent &lt;a href=&quot;http://equitablegrowth.org/equitablog/expenditure-shares-price-measurement-and-true-relative-labor-productivity-growth-in-post-wwii-manufacturing-what-the-aggregate-deta-suggest/&quot;&gt;post&lt;/a&gt; on manufacturing’s share in output, and realized that I’ve got about four more posts from Brad stacked up in the queue, along with all the other stuff I’ve been meaning to read more carefully. So, respectfully, Brad, please stop saying interesting things related to growth. I need time to catch up. How about a nice run of posts about the history of monetary policy or something like that?&lt;/p&gt;
-
-&lt;p&gt;DeLong’s motivating fact(s) are about manufacturing’s share of output, both in nominal and real terms. He grabbed the following from the BEA&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/delong1.png&quot; alt=&quot;DeLong Manuf Graph&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and developed the path of the real share by making a crude calculation. As he freely admits in the post, this isn’t exactly how one would want to calculate the real share of manufacturing in output. But, for the purposes of his post, I don’t think it makes a huge difference.&lt;/p&gt;
-
-&lt;p&gt;Anyway, he establishes three main facts that he wants to understand. First, note that the nominal share of manufacturing in nominal output has been declining steadily since the late 1940’s. He gets a value of -1.4% per year as the growth rate of the nominal share. Second, the relative price of manufactured goods (compared to aggregate output) has been declining by -1.4% per year as well. This gives us the final fact, that the real share of manufacturing in real output has not grown (or shrunk) over time, as you can see in the figure.&lt;/p&gt;
-
-&lt;p&gt;DeLong then proceeds to ask himself how to reconcile all of these three facts. What must be true about demand and/or technological change to explain this? And he will come to a conclusion that we are probably not measuing the price decline, and hence the real share of manufacturing, correctly. That will in turn imply that real economic growth has probably been understated over this entire period of time.&lt;/p&gt;
-
-&lt;p&gt;I think DeLong is too quick to make that conclusion, and that there is in fact a way to understand his three facts that does not imply economic growth has been understated. My brain moves a little slower than DeLong’s, so here’s how I worked through his reasoning. First, let the following be the demand curve for real manufacturing goods, in log terms&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln Q^M = \epsilon_I \ln Y - \epsilon_P \ln P^M + \ln D^M&lt;/script&gt;
-
-&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?Q^M\inline&quot;/&gt; is the quantity of real manufactured goods, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y\inline&quot;/&gt; is real income, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?P^M\inline&quot;/&gt; is the relative price of manufactured goods. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_I\inline&quot;/&gt; is the income elasticity of demand for manufactured goods, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_P\inline&quot;/&gt; the price elasticity of demand. &lt;img src=&quot;http://latex.codecogs.com/png.latex?D\inline&quot;/&gt; is just a “demand shifter” to account for anything changing demand for manufactured goods that isn’t related to either real income or the relative price.&lt;/p&gt;
-
-&lt;p&gt;Add &lt;img src=&quot;http://latex.codecogs.com/png.latex?\ln P^M\inline&quot;/&gt; to both sides, and subtract &lt;img src=&quot;http://latex.codecogs.com/png.latex?\ln Y\inline&quot;/&gt; from both sides. That leaves me with&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln Q^M + \ln P^M - \ln Y = (\epsilon_I-1) \ln Y + (1 - \epsilon_P) \ln P^M + \ln D^M.&lt;/script&gt;
-
-&lt;p&gt;The left-hand side is, if you combine the log terms, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\ln Q^M P^M/Y\inline&quot;/&gt;, or the log of manufacturing’s share in nominal income. Also, it’s important to note that the left-hand side can be written as &lt;img src=&quot;http://latex.codecogs.com/png.latex?\ln Q^M/Y + \ln P^M\inline&quot;/&gt;. This is the log of manufacturing’s share of &lt;em&gt;real&lt;/em&gt; income, plus the relative price level of manufactured goods. So it has both the nominal and real share of manufacturing in it.&lt;/p&gt;
-
-&lt;p&gt;To work with this in DeLong’s terms, it will be easiest to talk about growth rates of all of these items. And with everything written in log terms, getting growth rates is straightforward. Let &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{q}^M\inline&quot;/&gt; indicate the growth rate of real manufacturing goods, and define a similar “hat” term for each element of the equation. We’ve got&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + (1 - \epsilon_P) \hat{p}^M + \hat{d}^M.&lt;/script&gt;
-
-&lt;p&gt;Notice that I’ve done a little rearranging there. Inside the parentheses on the left is the growth rate of manufacturing’s &lt;em&gt;real&lt;/em&gt; share of &lt;em&gt;real&lt;/em&gt; income. That gets added to the growth rate of the relative price of manufacturing to deliver the growth rate of manufacturing’s share of nominal income.&lt;/p&gt;
-
-&lt;p&gt;Let’s go back to DeLong’s pieces of information. First, the growth rate of the nominal share of manufacturing is -1.4% per year. This means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) + \hat{p}^M = -0.014\inline&quot;/&gt;. Second, he says that the growth rate of the relative price of manufactured goods is also -1.4% per year, meaning that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{p}^M = -0.014\inline&quot;/&gt;. Last, the data said that the growth rate of the manufacturing’s real share of real output was zero, meaning that &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) = 0\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;Then he goes to work trying to understand how all of those facts can be true at the same time, given the above equation. Here are two possibilities that DeLong dismisses as not making sense - and I think he’s right to dismiss these possibilities.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;If the income elasticity is 1 and the price elasticity is 1, then &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) + \hat{p}^M = \hat{d}^M\inline&quot;/&gt;. Which means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?0 + -0.014 = \hat{d}^M\inline&quot;/&gt;. In other words, there must have been a sustained shift in the demand curve for manufactured goods over the last 70 years. We just decided we didn’t like manufactured stuff as much any more. DeLong says this doesn’t make sense. That’s probably right, but hold onto that thought about a shift in the demand for manufactured goods - it will show up again later in the post.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If the income elasticity is 1 and the price elasticity is 0, then &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) + \hat{p}^M  = \hat{p}^M + \hat{d}^M\inline&quot;/&gt;. Then, plugging in the facts, we have that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{d}^M = 0\inline&quot;/&gt;. DeLong says this helps, because it doesn’t require us to assume any kind of exogenous shift in demand for manufactured goods. But, it does require us to assume that the price elasticity is zero, which DeLong says doesn’t make sense because manufactured stuff is useful, so you’d expect that demand would go up if the price fell. That’s probably right, too - the price elasticity probably isn’t zero.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;DeLong then asks how this is all supposed to work if we instead assume that the income elasticity is 1, the price elasticity is something more reasonable like 1/2, and we dismiss the idea of a purely exogenous shift in manufacturing demand. And this leads him to a problem with reconciling the data. With those assumptions, it means that the growth rate equation is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{q}^M - \hat{y}) + \hat{p}^M  = 0.5 \hat{p}^M.&lt;/script&gt;
-
-&lt;p&gt;In this equation, it is impossible for DeLong’s facts to all be true simultaneously. That is, we can’t have the growth rate of the real share (in the parentheses) be zero, the growth rate of the nominal share (the entire left-hand side) be equal to -0.014, while at the same time &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{p}^M = -0.014\inline&quot;/&gt; on the right-hand side.&lt;/p&gt;
-
-&lt;p&gt;How to fix this? DeLong suggests that both his second and third facts are probably wrong. If the relative price of manufacturing actually fell by 2.8% per year, so &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{p}^M = -0.028\inline&quot;/&gt;, and the &lt;em&gt;real&lt;/em&gt; share of manufacturing actually &lt;em&gt;grew&lt;/em&gt; by 1.4% a year, so &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\hat{q}^M - \hat{y}) = 0.014\inline&quot;/&gt;, then everything works out. Specifically, &lt;img src=&quot;http://latex.codecogs.com/png.latex?0.014 + -0.028 = 0.5\times-0.028\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;So if we assume a reasonable price elasticity of 1/2, and if we take the growth rate of the nominal share of manufacturing (which is relatively easy to measure) as given, then we cannot do anything but conclude that the growth rate of the real share of manufacturing was in fact 1.4% per year, not zero. Over the roughly 70 years DeLong is talking about, that means the real share of manufacturing should be about 2.5 times higher than we observe in his graph. It would be about 28% of real output today, not 12%.&lt;/p&gt;
-
-&lt;p&gt;With the relative price of manufacturing falling twice as fast as we thought, and real manufacturing output growing relative to real output, this implies that we really are better off than we thought. I won’t get into the mechanics of this calculation here, as the post is already getting long, but it would imply that real output growth was actually about 0.3 percentage points higher per year over this period. Real output grew at about 3 percent per year, so that’s a pretty big difference.&lt;/p&gt;
-
-&lt;p&gt;But here is where I think DeLong’s gone one step too far. He focuses on the price elasticity, but assumes the &lt;em&gt;income&lt;/em&gt; elasticity is equal to one in all cases. His alternative scenario where growth in the real manufacturing share and faster true growth in real output is contingent on this assumption. Let me propose an alternative way of reconciling the numbers that doesn’t imply anything is mismeasured.&lt;/p&gt;
-
-&lt;p&gt;Let’s use DeLong’s price elasticity of 1/2. I don’t have any strong reason to quibble with that number. And let’s retain the assumption that there is no exogenous demand shift. But rather than assuming the income elasticity is one, let’s leave it as a free variable. So now the growth rate equation is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{q}^M - \hat{y}) + \hat{p}^M  = (\epsilon_I-1) \hat{y} + 0.5 \hat{p}^M.&lt;/script&gt;
-
-&lt;p&gt;Take the original facts as correct, and let me add one additional fact. The growth rate of real income reported by the BEA over the same time period as DeLong is working with is 3% per year. This is the growth rate of aggregate real income, not per capita. Putting all this in our equation gives me&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;0 + -0.014 = (\epsilon_I-1) 0.03 + 0.5 \times -0.014&lt;/script&gt;
-
-&lt;p&gt;and everything makes sense if &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_I = 0.77\inline&quot;/&gt;. That is, if the income elasticity of demand for manufactured goods is a little less than one. An elasticity less than one means that if your income goes up by 10%, your expenditure on manufactured goods rises by less than 10%. It goes up, but not by a similar percent. This income elasticity less than one acts a lot like the “demand shift” that DeLong dismisses in his first scenario. If you like, I’ve just given a very specific form to that demand shift.&lt;/p&gt;
-
-&lt;p&gt;Is that reasonable? I sure think it is. It’s entirely consistent with the literature on structural change for rich countries like the US. Income elasticities for manufacturing less than one reflect people’s preferences having some kind of “limit” on the amount of manufactured goods they want to consume. I’ve used the refrigerator example before. If we get even more productive at producing refrigerators, then they will become less costly and/or become higher quality. But that doesn’t mean I’ll buy another one. I’ve got two at my house already, and it would take a &lt;em&gt;massive&lt;/em&gt; drop in price or increase in quality to get me to buy another one, even just to replace the existing ones. Similarly, my income is due to go up in October thanks to the raise pool at UH this year. I’m not using it to buy a fridge, or probably many manufactured goods at all. I’ll use it to help pay for a trip we’re taking in December.&lt;/p&gt;
-
-&lt;p&gt;So the original facts that DeLong lays out are entirely consistent, including the fact that the real share of manufacturing in output has stayed constant over time. We don’t need to assume that prices fell faster than we thought, or that real manufacturing output grew faster than we thought. And thus output growth isn’t understated.&lt;/p&gt;
-
-&lt;p&gt;DeLong could still be right, of course. This is all dependent on competing assumptions about the size of elasticities. If the income elasticity is actually one, then DeLong’s story is more plausible than mine. I think I’m on the right track, but I don’t have the time at the moment to collect various references to back up my income elasticity argument.&lt;/p&gt;
-
-&lt;p&gt;One last interesting note. The income elasticity doesn’t have to be constant over time. In fact, I’d guess it was closer to one, if not &lt;em&gt;higher&lt;/em&gt; than one, back in the early part of the period DeLong considers, the 1940’s and 1950’s. If the income elasticity is bigger than one, then this means DeLong’s adjustments for that period would be even bigger than what he calculated in his post. I have to think harder about this, but I’m wondering if this is some way to reconcile/explain Robert Gordon’s facts about rapid measured productivity growth in those decades relative to the current period of time. Stay tuned.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 03 Aug 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
