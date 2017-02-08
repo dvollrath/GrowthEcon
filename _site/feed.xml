@@ -5,7 +5,81 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Wed, 01 Feb 2017 17:01:42 -0600</pubDate>
+    <pubDate>Wed, 08 Feb 2017 16:36:38 -0600</pubDate>
+    
+      <item>
+        <title>Who are you calling Malthusian?</title>
+        <link>https://growthecon.com/blog/Malthus/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Malthus/</guid>
+        <description>&lt;p&gt;I recently had a student ask me if I was a “Malthusian”. It’s not the first time someone has asked me that, and I’m never quite sure what to make of it. It’s always asked in a way that implies it is a belief system, similar to “Christian”, “Muslim”, or “Packer Fan”.&lt;/p&gt;
+
+&lt;p&gt;I’m not sure how to reply. I’m not a Malthusian “believer”, because that isn’t a thing. But I do think that several of Malthus’ assumptions about how economies function, in particular prior to the onset of sustained growth during the 1800’s, are well founded. And those assumptions have implications that help make sense of the world in that period of time. Some of the assumptions Malthus made may still be relevant today, too.&lt;/p&gt;
+
+&lt;p&gt;This post is therefore an attempt to lay out what I think Malthusian means, and then I’ll touch on a few alternate uses of the term that are not quite right.&lt;/p&gt;
+
+&lt;h3 id=&quot;stagnation-in-living-standards&quot;&gt;Stagnation in living standards&lt;/h3&gt;
+&lt;p&gt;My concept of a Malthusian economy involves two characteristics. First, living standards are negatively related to the &lt;em&gt;size&lt;/em&gt; of population. This would occur if we had some sort of fixed factor of production. Typically, one might say it was agricultural land, but you could just say resources if you like. It isn’t even important that they are truly fixed. So long as the resources are inelastic, whether due to a physical limit or because bringing them into use is prohibitively expensive, you’d satisfy the first characteristic of a Malthusian economy.&lt;/p&gt;
+
+&lt;p&gt;I don’t know that there is much controversy around whether this holds, in particular in the era prior to sustained growth. I cribbed the figure shown here from Oded Galor’s book, which took if from Greg Clark. When population crashes after the Black Death, wages spike. They stay high while population is low, and then fall once population rises again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/clark2001.png&quot; alt=&quot;Clark wage and population&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second characteristic is that population growth is positively related to living standards. This may be because kids are a normal good, and so fertility rises when people have higher incomes. Or it may be because health is a normal good, so people take better care of themselves (and their kids) when they have higher income. Higher fertility and/or lower mortality rates would lead to more rapid population growth.&lt;/p&gt;
+
+&lt;p&gt;Or maybe people don’t make concious choices like that. Maybe it is purely biological, and women with higher living standards (e.g. healthier diets) will bring more babies to term, and those babies will be more likely to survive to become parents themselves. It isn’t important here whether the fertility and mortality outcomes are subject to rational calculation or not.&lt;/p&gt;
+
+&lt;p&gt;Malthus’ original work involved this positive relationship, and he seemed to have in mind a combination of choice and biology. His preventative checks were choices made by people to have fewer children, or marry later, in response to poor living standards (hence living standards and fertility are positively related). His positive checks were lower fertility and higher mortality that would occur somewhat automaticallywhen living standards fell sufficiently far.&lt;/p&gt;
+
+&lt;p&gt;Compared to the first characteristic, the evidence for the second is ambiguous. The major issue is that there is little data available on fertility and mortality at the individual level from the period prior to 1800, and so it is difficult to test the relationship of those demographics with living standards. England is one of the places that has some data, and hence the debate on this tends to be over English demographics. &lt;a href=&quot;https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0022050712000678&quot;&gt;Kelly and O Grada&lt;/a&gt; (2012) find evidence of preventive checks (i.e. marriage rates), and &lt;a href=&quot;http://www.cesifo-group.de/DocDL/cesifo1_wp6167.pdf&quot;&gt;Cinnirella, Klemp, and Weisdorf&lt;/a&gt; (2016) find evidence that births were spaced in response to living standards. But there are a number of studies that conclude the marriage rates were not responsive to living standards. &lt;a href=&quot;http://wrap.warwick.ac.uk/28332/&quot;&gt;Crafts and Mills&lt;/a&gt; (2009), for example, conclude there is no positive check operating, and that preventive checks break down by the 1700’s. If you are looking for reasons to “dis-believe” Malthusian economics, then this is the spot. Perhaps population growth isn’t positively related to living standards after all.&lt;/p&gt;
+
+&lt;p&gt;But if this characteristic holds, then you’ve got what I’d call a Malthusian economy. At this point, everything else follows. If there are only a few people, then from the first characteristic we know that living standards are high because the resources per person are high. But high living standards mean high population growth rates, so the number of people expands, and this pushes down resources per person, and hence pushes down living standards.&lt;/p&gt;
+
+&lt;p&gt;If there are a lot of people, then the opposite logic holds. Things are crowded, so living standards are low. Low living standards means slow population growth. When things are sufficiently crowded, it will mean negative population growth, and the population falls. Falling population means more resources per person, and so living standards rise.&lt;/p&gt;
+
+&lt;p&gt;Everything in the system is pushing back towards some middle ground where the resource per person, and hence the living standard, is at just the right level so that population growth is zero. With no change in population, there is no change in living standards, so there is no change in population growth, so there is again no change in population. The economy becomes &lt;em&gt;stagnant&lt;/em&gt; at the living standard which delivers zero population growth. If you’d like a nice treatment of this mathematically, I think &lt;a href=&quot;https://www.aeaweb.org/articles?id=10.1257/aer.101.5.2003&quot;&gt;Ashraf and Galor&lt;/a&gt; (2011) is the cleanest description you’ll get.&lt;/p&gt;
+
+&lt;p&gt;Since I’m rambling on about Malthusian economics, let me offer a few observations that are not immediately obvious from what I just described.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The stagnant level of living standards is not necessarily at a biological minimum.&lt;/strong&gt; Malthus, being something of an eternal pessimist, thought that living standards would be driven down to some bare minimum to survive. This isn’t a necessary conclusion from his two assumptions. Population growth can respond positively to living standards, even if the living standard at which population growth is zero is quite high. It all depends on preferences for kids. All Malthusian economies do not stagnate at the same level of living standards.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Shocks to technology/productivity will only temporarily raise living standards, but will permanently raise population size.&lt;/strong&gt; Positive shocks to productivity raise living standards immediately for those alive, but this induces them to have more kids (or induces their kids to not die as quickly, so to speak), leading to population growth, which lowers living standards. Variation in productivity across countries will thus show up in higher population, but not necessarily in higher living standards. This is what Ashraf and Galor (2011) showed in the data.&lt;/p&gt;
+
+&lt;p&gt;The first shows that population density is positively related to a measure of land productivity across countries in 1500 CE, consistent with the long-run effect of productivity on population size.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/ashrafgalor2011a.png&quot; alt=&quot;AGone&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second shows that living standards (GDP per capita) are not related to the same measure of land productivity across countries in 1500 CE, consistent with no long-run effect of productivity on living standards.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/ashrafgalor2011b.png&quot; alt=&quot;AGtwo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The adjustment back to the stagnant level of living standards can take a long time&lt;/strong&gt;. This means that a given Malthusian economy may have living standards that wander all over the place in the data. Nippe Lagerlof has a recent &lt;a href=&quot;http://www.nippelagerlof.com/research/happening/Waves_August_2016_post.pdf&quot;&gt;paper&lt;/a&gt; showing that a Malthusian economy with random shocks to productivity and a realistic age structure will display living standards that do look Malthusian in the sense of being fixed and close to some stagnant level, but display waves of growth and collapse.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/nippe2017.png&quot; alt=&quot;nippe&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nippe has built a tendency for all economies to move towards sustained growth, but the point is that the four different economies have waves of growth and collapse that last for decades, even though they have the exact same underlying Malthusian structure. The random shocks to living standards persist over time because of the effect on age structure.&lt;/p&gt;
+
+&lt;p&gt;So if you ask me if I’m a Malthusian, then I guess the answer is yes, if you mean everything I just said in this section. Now what about other uses of the term Malthusian? Let’s take a look.&lt;/p&gt;
+
+&lt;h3 id=&quot;population-and-factor-prices&quot;&gt;Population and factor prices&lt;/h3&gt;
+&lt;p&gt;The term Malthusian has been applied at times to people who assert that changes in population size, acting through factor prices, influence social relationships. Historians like Postan and Le Roy Ladurie advance this kind of thesis, but I think that &lt;a href=&quot;http://amzn.to/2kIGVT9&quot;&gt;North and Thomas&lt;/a&gt; in &lt;em&gt;The Rise of the Western World&lt;/em&gt; may be the purest example of this, and the most known to economists. North and Thomas argue that changes in population, by changing relative wages and the bargaining power of peasants, were instrumental in changing institutions in Western Europe prior to the Industrial Revolution.&lt;/p&gt;
+
+&lt;p&gt;People like Robert Brenner and Guy Bois took issue with this explanation (and each other), arguing that Postan and Le Roy Ladurie (and North and Thomas by extension) were ignoring the issue of class in explaining changes in relative wages and the institutions governing labor. Glossing this “Brenner Debate” is well beyond the scope of this post, so suffice it to say that Brenner and Bois argue that changes in population are not sufficient to change institutions. The effect of population changes on labor conditions depended on the actual political power of peasants, which was not necessarily affected by population. See the compilation &lt;a href=&quot;http://amzn.to/2lp39Zh&quot;&gt;here&lt;/a&gt; for all you’d ever want to know about this debate.&lt;/p&gt;
+
+&lt;p&gt;Whatever the details of that argument, and it is a fascinating read, Brenner and Bois use the term Malthusian to describe their opponents and their theories. And to me, this is an incorrect use of Malthusian. The concept that population size influences wages is not Malthusian, it is economics-ian. There is nothing Malthusian about Postan, Le Roy Ladurie, and North and Thomas, at least when it comes to their explanation of institutional change. This doesn’t make Brenner and Bois wrong. It makes them semantically confusing.&lt;/p&gt;
+
+&lt;h3 id=&quot;limits-to-growth&quot;&gt;Limits to Growth&lt;/h3&gt;
+&lt;p&gt;The third way I think Malthusian gets used is in terms of &lt;a href=&quot;http://amzn.to/2kIQ269&quot;&gt;limits to growth&lt;/a&gt;, environmental collapse, and the like. Here, the authors or speakers believe firmly that there is a fixed supply of resources available, and hence living standards must be negatively related to population size.&lt;/p&gt;
+
+&lt;p&gt;You can class the limits to growth people into two groups. The first takes population growth as given, and doesn’t think much about whether it responds to living standards. The fact that population growth is positive - at the global level - is sufficient to create declining living standards, and thus we need to either conserve resources or exert some kind of birth control policy. The second group has internalized the post-demographic transition &lt;em&gt;negative&lt;/em&gt; relationship of living standards and population growth. Once the planet gets so crowded that living standards fall, this will &lt;em&gt;raise&lt;/em&gt; the population growth rate, and we’ll be in a death spiral towards misery.&lt;/p&gt;
+
+&lt;p&gt;The view, of either group, is often called Malthusian because of the negative effect of population on living standards. And that, it seems, is only about half right. There is no stagnation in the sense that I described above, as in either case population growth continues (slowly or in an accelerating manner) until the living standard is zero. Which I guess would be stagnant, if it stayed at zero.&lt;/p&gt;
+
+&lt;p&gt;Regardless, I don’t consider myself a Malthusian in this sense of the word, and that is because the finite limit of resources gets progressively looser over time. This post is already stretched out too long, so I don’t want to get into a lot of detail here. But there are two reasons for this. First, because technological change will make some resource constraints less binding or eliminate the need for certain resources. Second, because the income elasticity of demand for resource-intense goods is low, our use of those resources will not grow as fast as limits to growth types would suggest.&lt;/p&gt;
+
+&lt;p&gt;Note that my original description of Malthusian economies ignores this second effect, coming through income elasticities. Ashraf and Galor’s model, for example, would suggest that no matter how high productivity got, we are always producing goods using the same resource-intense production function. That may be fine if you are just describing the stagnant economies prior to sustained growth - or maybe it isn’t fine, if you read Lemin Wu’s &lt;a href=&quot;http://behl.berkeley.edu/files/2015/02/WP2015-01_Wu.pdf&quot;&gt;paper&lt;/a&gt; - but breaks down if you allow for any appreciable non-resource based sector (e.g. services of any kind).&lt;/p&gt;
+</description>
+        <pubDate>Wed, 08 Feb 2017 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>Yes, ideas are harder to find. Don&#39;t panic yet.</title>
@@ -858,96 +932,6 @@
 
 </description>
         <pubDate>Tue, 06 Sep 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>More on Measured Productivity and the Labor Share</title>
-        <link>https://growthecon.com/blog/Cake/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Cake/</guid>
-        <description>&lt;p&gt;Last week, &lt;a href=&quot;https://twitter.com/mattyglesias&quot;&gt;Matt Yglesias&lt;/a&gt; dug up an old &lt;a href=&quot;https://growthecon.com/blog/labors-share-profits-and-the-productivity-slowdown/&quot;&gt;post&lt;/a&gt; of mine about labor’s share of output and the measurement of productivity. The short version was that the decline in labor’s share may be part of the explanation for why measured productivity growth has slowed down in the same period of time. The original post was a bit math-heavy, and several people on Twitter were looking for a more intuitive explanation of what was going on. I was at the beach (sorry, &lt;em&gt;down the shore&lt;/em&gt;) last week, so this response is coming in a little late, but here’s my attempt at explaining how this works. No math.&lt;/p&gt;
-
-&lt;h3 id=&quot;let-them-measure-cake&quot;&gt;Let them measure cake&lt;/h3&gt;
-&lt;p&gt;Productivity is just output divided by input(s). “Labor productivity” is output divided by the number of workers (or hours worked). “Total factor productivity” (TFP) or “multifactor productivity” is output divided by an index that measures a combination of inputs, like labor and capital. But it is always output divided by some measure of inputs.&lt;/p&gt;
-
-&lt;p&gt;The issue we have is in measuring inputs. For TFP, we divide by an index of inputs. How do you form that index? If it doesn’t conform exactly to how inputs are used in production, then our measure of TFP is going to be influenced by the amount of the inputs we use.&lt;/p&gt;
-
-&lt;p&gt;The analogy I like here is that GDP is like cake, and inputs are like ingredients. It’s easy to measure “total ingredient productivity” (TIP) by dividing the volume of cake by an index of the various ingredients included. Let’s say that index of ingredients is very crude, just the total weight of ingredients used. Add the weight of flour to the weight of the eggs and so on.&lt;/p&gt;
-
-&lt;p&gt;If I add another cup of flour - which should be around 120 grams - then my index of inputs goes up by 120 grams. My cake volume will probably increase very slightly, and it will end up being kind of crispy and dry. My TIP falls due to a change in the use of one of the inputs. There was no technological change (e.g. no new step in the recipe), and yet TIP changed.&lt;/p&gt;
-
-&lt;p&gt;This happens because my index of ingredient inputs does not treat flour the same way that the actual recipe (the production function) treats flour. My index treats flour as a perfect substitute for other ingredients, and the cake production function uses flour as something close to a perfect complement to other ingredients. Because of this mismatch, my measure of TIP is mechanically influenced by the amount of ingredients I use.&lt;/p&gt;
-
-&lt;p&gt;It is this kind of mismatch that makes our measure of TFP mechanically influenced by the amount of labor and capital we use. The production function for GDP uses inputs in a way slightly different from how we incorporate them the index of inputs that we divide by to get TFP. Labor’s share of revenue matters here because we often use it to guide us in how to incorporate labor (and implicitly capital) into our index of inputs.&lt;/p&gt;
-
-&lt;p&gt;If labor’s share of revenues is low (affecting our index of inputs), but labor’s role in production is high (affecting GDP), then measured TFP is affected as well. The low labor revenue share means our input index is &lt;em&gt;understates&lt;/em&gt; labor’s role in production, and hence some of the growth in labor inputs gets picked up as measured TFP growth.&lt;/p&gt;
-
-&lt;p&gt;Because of how we typically construct the input index, if we understate labor’s role, then we &lt;em&gt;overstate&lt;/em&gt; capital’s role. This means we falsely attribute some productivity growth to capital accumulation, and hence measured TFP growth is lower because of our overstatement of capital’s role.&lt;/p&gt;
-
-&lt;p&gt;As the labor share falls, this exacerbates the issue. Because capital tends to accumulate faster than labor (except maybe &lt;a href=&quot;https://growthecon.com/blog/describing-the-decline-of-capital-per-worker/&quot;&gt;not any more?&lt;/a&gt;), the drag on measured TFP growth from overstating capital’s role is bigger than the boost to measured TFP growth from understating labor’s role. So as labor’s share of revenue falls, so does measured TFP growth.&lt;/p&gt;
-
-&lt;p&gt;In the original post I went through all this stuff about markups and how those are related to labor’s share. That isn’t necessary to make the direct point that if we misstate labor’s (and capital’s) importance in our input index, then inputs matter for measured TFP.&lt;/p&gt;
-
-&lt;h3 id=&quot;more-technical-but-still-no-math&quot;&gt;More technical, but still no math&lt;/h3&gt;
-&lt;p&gt;If you’re happy with the above explanation, feel free to stop there. This section just gives you a little better idea of what I mean by “misstating” labor and capital’s role in production, and how that influences measured TFP.&lt;/p&gt;
-
-&lt;p&gt;Start with labor productivity, GDP divided by labor. I think most readers would be fine with the idea that both technological improvements &lt;em&gt;and&lt;/em&gt; increases in capital raise labor productivity. The first is using a better “recipe”, and the second is increasing the other ingredients besides labor.&lt;/p&gt;
-
-&lt;p&gt;Intuitively, it seems obvious that capital matters for labor productivity, because we have this notion that they are complements to some extent. But the mechanical reason it matters is that GDP - the numerator in labor productivity - has some positive elasticity with respect to capital. At the same time, the denominator in labor productivity - labor - has a zero elasticity with respect to capital. Hence our measure of labor productivity responds positively to changes in the amount of capital, as the numerator rises while the denominator doesn’t change.&lt;/p&gt;
-
-&lt;p&gt;Technology improvements also increase GDP holding constant inputs, so labor productivity also rises due to technological improvements. This would be like coming up with a better recipe for cake (whisk the egg whites separately?) that used the same inputs as the old recipe.&lt;/p&gt;
-
-&lt;p&gt;When we measure labor productivity, we are thus measuring some combination of capital accumulation and technological improvement. If capital accumulation slowed down (which it looks like it did recently), so would measured growth in labor productivity, and vice versa. Labor productivity isn’t a pure measure of technological improvement. And this is because the elasticity of output with respect to capital in the numerator is different than the elasticity of the input, labor, with respect to capital.&lt;/p&gt;
-
-&lt;p&gt;Okay, now let’s take on total factor productivity (TFP). Recall that all this involves is dividing GDP by an index of inputs, rather than just labor. When we form that index of inputs, we have to specify the elasticity of the index with respect to each input.&lt;/p&gt;
-
-&lt;p&gt;If we pick exactly the right elasticity for capital in our input index, then in reponse to an increase in capital, our index in the denominator will rise by exactly the same percent as GDP rises in the numerator. The effects will cancel, and there will be no effect of the increase in capital on our measured TFP. This same logic works for labor as well.&lt;/p&gt;
-
-&lt;p&gt;Given the exact right elasticities in our index of inputs, TFP will &lt;em&gt;only&lt;/em&gt; respond to changes in technology. It wouldn’t tell us exactly what the new technology involved (whisk the egg whites separately?), but it would tell us that this new technology raised GDP holding all inputs constant.&lt;/p&gt;
-
-&lt;p&gt;Before we even talk about whether we get these elasticities right, what happens if we get them &lt;em&gt;wrong&lt;/em&gt;? Then the elasticity of GDP with respect to an input (in the numerator) doesn’t match the elasticity of our index with respect to the input (in the denominator), and our measure of TFP is not neutral with respect to changes in that input.&lt;/p&gt;
-
-&lt;p&gt;If we understate an elasticity in our index, then any increase in the associated input will increase measured TFP. This is the exact analogue of the situation I described with capital growth and labor productivity. There, we understated the elasticity with respect to capital in our denominator (i.e. we set it to zero), and so more capital meant higher measured labor productivity.&lt;/p&gt;
-
-&lt;p&gt;Similarly, if we overstate an elasticity in our index, than an increase in the associated input will &lt;em&gt;decrease&lt;/em&gt; measured TFP. If our index says that the elasticity for labor is 0.8, but the elasticity of GDP with respect to labor is actually 0.6, then measured TFP will &lt;em&gt;fall&lt;/em&gt; (with an elasticity of -0.2) as we add workers.&lt;/p&gt;
-
-&lt;p&gt;Note that getting the elasticities in our index wrong means that measured TFP deviates from true technological growth. But it doesn’t mean that technological growth itself is affected.&lt;/p&gt;
-
-&lt;p&gt;So why might we be getting the elasticities in our index wrong? For several reasons. The elasticities embedded in the numerator, GDP, are the actual elasticities of output with respect to each input. The elasticities are like a number than captures the nature of the chemical reactions between flour, baking powder, sugar, milk, eggs, and the other inputs. In the cake example we might be able to figure these out by doing a bunch of chemistry experiments. In the economy, we’d have to know the exact engineering specifications for every business in the country.&lt;/p&gt;
-
-&lt;p&gt;Since we don’t know the exact elasticities, we try to infer them from what we can observe. This is like trying to infer the chemical reactions involved in baking from observing how different cakes come out of the oven. Based on some minimal economic theorizing - namely that firms try to minimize their costs and face competitive factor markets - we think that the elasticity for an input should be equal to its share of total costs. If total wages are 60% of total costs, then this would imply the elasticity was 0.6, for example.&lt;/p&gt;
-
-&lt;p&gt;There are a whole lot of reasons this might be getting things wrong. If factor markets are not competitive, then the share of costs paid to an input would not necessarily equal its elasticity. If firms are not cost minimizing, then we’d have the same problem. We might substitute an input’s share of &lt;em&gt;revenues&lt;/em&gt; in place of it’s share of &lt;em&gt;costs&lt;/em&gt;, and this would only be correct if we also assumed firms were competitive and earned zero profits. We might assume that capital’s share of revenues was just one minus labor’s share, which again only works if firms are competitive and earn zero profits.&lt;/p&gt;
-
-&lt;p&gt;There is almost no way that we are getting the elasticities in our index of inputs exactly right. Even the BLS, who tries really hard to get good estimates of labor’s share of costs, isn’t getting them right. And because we are not getting the elasticities in our index right, our measures of TFP growth are influenced by growth in capital and labor.&lt;/p&gt;
-
-&lt;p&gt;What I did in the original post was to look at a particular way in which we are not getting the elasticities right. The crucial part of that was assuming that capital’s elasticity in our input index was equal to one minus labor’s elasticity. Now we’re back to the situation I described in the prior section, where if labor’s share in revenues is low, then we are probably understating labor’s role in our input index, and overstating capital’s role in our input index.&lt;/p&gt;
-
-&lt;p&gt;Because capital tends to grow faster than labor, the effect of overstating capital’s role (which lowers TFP growth) outweighs the effect of understating labor’s role (which raises TFP growth). Hence TFP growth is lowered by some amount, and as labor’s share falls, this gets worse. TFP growth will be smaller than technological growth, and the gap will grow as labor’s share falls. Slower TFP growth doesn’t necessarily imply that technological growth is slow. It may be that our measure of TFP growth isn’t just picking up technology, but also changes in inputs.&lt;/p&gt;
-
-&lt;h3 id=&quot;but-we-probably-care-anyway&quot;&gt;But we probably care anyway&lt;/h3&gt;
-&lt;p&gt;From everything I described, it sounds like measured TFP growth is just wrong, so why should we care about it? If we could generate an index of inputs that used the right elasticities, then our measure of TFP would be exactly equal to a measure of technology. And that’s what we care about, right?&lt;/p&gt;
-
-&lt;p&gt;Not necessarily. Susanto Basu and John Fernald theorized in a &lt;a href=&quot;https://ideas.repec.org/a/eee/eecrev/v46y2002i6p963-991.html&quot;&gt;paper&lt;/a&gt; that we should actually care about measured TFP even if it is not exactly a measure of technology. In their setting, we have information on both labor’s share of revenues and capital’s share of revenues (so we are not just assuming it is one minus labor’s share). If we use these revenue shares as our estimates of the elasticities in our input index, then they will be less than the elasticities in the production function for GDP, and given this understatement, &lt;em&gt;both&lt;/em&gt; capital and labor growth will add to measured TFP growth.&lt;/p&gt;
-
-&lt;p&gt;This sounds wrong again, just in a different way. But what Basu and Fernald point out is that while not a good measure of technological growth, measured TFP growth would be a good measure of &lt;em&gt;welfare&lt;/em&gt; growth. Their theory is that what matters for welfare is both the quantity of consumption goods we provide (which comes from generating GDP) but also the cost of providing the inputs (spending time working, or saving output rather than consuming it).&lt;/p&gt;
-
-&lt;p&gt;The revenue shares of labor and capital may not accurately reflect their role in production, but they do accurately reflect the cost of providing those inputs. A low labor share means lower wages, for example, which means that the benefit of providing labor is low and we get less labor provided. Similarly for capital. If the revenue share is low then the benefit of providing capital is low, and hence we get less capital accumulation.&lt;/p&gt;
-
-&lt;p&gt;However, we do get welfare from the things that labor and capital help produce. And what Basu and Fernald point out is that the value of those things is higher than the cost of providing the inputs when the revenue shares are low. Which means that any additional provision of labor or capital actually adds to welfare, even if it doesn’t change technology. Measured TFP picks up this benefit of providing additional inputs on welfare, and hence is more important than just technological growth.&lt;/p&gt;
-
-&lt;p&gt;What do I mean that the value of output is higher than the cost of providing inputs? Think of when we have increasing returns to scale. If we doubled our input provision, we’d get more than twice as much output, and hence we get more value in output than we paid in costs of input. In my setting here, with IRS the elasticities in the production function add up to more than one, while the revenue shares used in the input index can only ever add up to one. And hence measured TFP captures both technological improvement as well as some adjustment for increasing supplies of inputs.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, we might not have increasing returns, but we may have firms with market power. In that case, firms are charging a markup over marginal cost, meaning the price you pay for output is higher than the marginal cost of producing it. Again, if we added inputs, the value of output produced would be higher than the cost of providing it. In terms of accounting, the elasticities in the production function may add up to one (constant returns), but with markups some of the output is paid out as profits/rents, so the revenue shares of labor and capital have to add up to less than one. Again, we understate the elasticities in our input index, and measured TFP rises with additional inputs of either capital or labor.&lt;/p&gt;
-
-&lt;p&gt;Regardless of the source, measured TFP growth is a better metric for welfare growth than just technological growth. With either IRS or market power, we &lt;em&gt;want&lt;/em&gt; to use a measure of TFP that is “wrong” in order to capture welfare gains.&lt;/p&gt;
-
-&lt;p&gt;In this case, a falling labor share could also lower measured TFP growth (and hence welfare growth), but it is a little fuzzier whether this follows for sure. It depends on how markups respond, and whether the lower labor share is offset by increased profit shares or increased capital shares.&lt;/p&gt;
-
-&lt;p&gt;The - very long in coming - conclusion is that measured TFP growth is not “wrong”. There is information in measured TFP growth even if it does not precisely measure technology growth. And measured TFP growth can be influenced by the labor share. When that falls, it can pull down measured TFP growth.&lt;/p&gt;
-
-&lt;p&gt;How big is that effect? That’s a different question, and something that I’m playing around with at getting a better handle on. Stay tuned.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 15 Aug 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
