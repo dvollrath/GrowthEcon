@@ -2,7 +2,8 @@
 baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
 url: "https://growthecon.com" # the base hostname & protocol for your site
 enforce_ssl: growthecon.com
-imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https://unsplash.it/2600/500?random"
+#imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https://unsplash.it/2600/500?random"
+imageurl: "/assets/map_lights.jpg" #"https://unsplash.it/2600/500?random"
 timezone: America/Chicago
 
 # Dropbox public link
