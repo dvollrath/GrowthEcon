@@ -11,7 +11,7 @@ Productivity growth is just output (value-added) growth minus input (however mea
 
 The point of the post is really just to point out that a notable feature of the slow growth in productivity in 2013 and 2014 was the incredibly *rapid* growth in full-time equivalents. Aggregate value-added growth did not drop off appreciably. Rather, the growth rate of full-time equivalents was high, and hence measured productivity growth was very low.
 
-![Aggregate prod growth](https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Aggregate.png)
+![Aggregate prod growth](/assets/fig_bea_fteprod_Aggregate.png)
 
 The figure shows the growth rate of productivity (value-added per FTE) as the thick black line, and then also includes the separate growth rates of value-added (thin gray line) and FTE's (thin dashed line). What you can see in 2013, and in 2014 especially, is that productivity growth dropped to about -2% per year. But value-added growth was still about *positive* 2% per year, and the entire reason for the decline in productivity growth was that FTE growth was over 3%. Compare that to the numbers from the rest of the time period I plotted, and that is an exceptional number. Labor force growth drove the decline in productivity, purely from an accounting perspective.
 
@@ -19,7 +19,7 @@ In 2015, once the growth in FTE's ebbs to only about 1%, and there is a slight u
 
 Using the BEA data, I can dig backwards into the sector-by-sector contributions to productivity growth. And there are a few select sectors that appear to be driving this phenomenon. First, take a look at "Government", which includes federal as well as state and local government spending. 
 
-![Government](https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Government.png)
+![Government](/assets/fig_bea_fteprod_Government.png)
 
 The growth rate of value-added declines noticeably from 2008 to 2013 before experiencing a slight uptick in 2014 (the light gray line). The growth rate of FTE's in government also bottoms out in 2011 at about -1.5%. After that, the growth rate recovered, and by 2014 FTE's in government were growing at 1% per year. As long as FTE's are growing faster than value-added, productivity growth will be negative, and you can see the precipitous drop in productivity growth for government in the 2013/14. In 2015, with a smaller growth rate of FTE's in government, productivity growth recovers closer to zero, but is still negative. 
 
@@ -27,13 +27,13 @@ One side note about "value-added" for government. This is going to include both 
 
 Retail is another sector with a dramatic acceleration of the FTE growth rate in 2014, illustrating this point. In this case the discrepancy between value-added growth (consistently around 2% per year) and FTE growth in 2014 (pushing 15%!) is very stark. The massive addition of labor to retail in 2014 explains everything about the massive *negative* growth rate of productivity in retail, about -11%. And as retail work makes up about 20% of aggregate FTE's, this negative growth rate of productivity puts a big drag on aggregate productivity growth. In 2014, the negative growth rate of retail productivity can essentially explain *all* of the negative growth in aggregate productivity in the same year. But this is all due to the massive expansion of employment.
 
-![Retail](https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Retail.png)
+![Retail](/assets/fig_bea_fteprod_Retail.png)
 
 In 2015, with the reversal of FTE growth (-10%), productivity growth bounces up to positive 12%, which means it contributes about 2.4 percentage points to aggregate productivity growth. But these fluctuations are entirely due to the fluctuations in the FTE growth rate in retail. Note that growth in value-added remains roughly constant in these last few years.
 
 The one other sector with a pattern is construction. Again, productivity growth is negative in 2014 (and 2013), but this is driven almost entirely by the higher growth rates of FTEs in construction in those years. In 2015, as FTE growth abates in construction, productivity growth looks positive again.
 
-![Construction](https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Construction.png)
+![Construction](/assets/fig_bea_fteprod_Construction.png)
 
 Other sectors have this effect present, but it looks pretty small (Manufacturing, Utilities, Wholesale trade). Some, like transportation and mining, have similarly large shifts in FTE's, but these tend to act in the opposite direction to those in retail and construction. That is, in 2013/14, the growth in FTE's was *negative*, and so calculated productivity growth was very *positive*. In 2015 recovery in the FTE growth in both sectors is associated with much lower productivity growth, as in both cases value-added growth doesn't change a lot.
 

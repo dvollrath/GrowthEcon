@@ -2,7 +2,7 @@
 layout: post
 title: Land Tenure, Population, and Long-run Growth
 journal: Journal of Population Economics, 2012, 25(3):833-852.
-pdf: https://dl.dropboxusercontent.com/u/6823742/JPopE_final.pdf
+pdf: /assets/JPopE_final.pdf
 category: paper
 
 ---

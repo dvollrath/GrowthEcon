@@ -218,7 +218,7 @@ At the other end, the bottom ten in "across" contribution are:
 
  What does this all lead to? We can add up the 70 individual within terms, the 70 individual across terms, and the 70 individual covariance terms to arrive at aggregate growth in productivity (remember, output per FTE). I did this for the 4-year period from 2010-2014, but also for all 4-year periods up to 2014. And that is what is in the following figure.
 
- ![US 4-year Decomposition](https://dl.dropboxusercontent.com/u/6823742/fig_bea_decomp_4.png)
+ ![US 4-year Decomposition](/assets/fig_bea_decomp_4.png)
 
  Similar to the last post, you can see that the combined "across" terms are negative recently. This drags down aggregate growth. The shift of workers out of government, legal services, hospitals, etc.. and into construction, admin, and retail pulls down aggregate growth. What we also see is that recently the "within" components are declining appreciably. While there are sectors that have growing productivity, this is largely offset by sectors where productivity growth is negative. 
 
@@ -226,7 +226,7 @@ At the other end, the bottom ten in "across" contribution are:
 
  One other thing to keep in mind when staring at the dip in "within" growth in 2014 and pondering whether this means we are inevitably doomed to be replaced by robots is that alot of this is driven by a surge in FTE in 2010-2014. This is easiest to see in a figure. Here's the 4-year rolling growth rates of value-added (output) separate from the 4-year rolling growth rate of FTE's.
 
- ![US FTE and VA](https://dl.dropboxusercontent.com/u/6823742/fig_bea_growth_4.png)
+ ![US FTE and VA](/assets/fig_bea_growth_4.png)
 
  What you can see is that part of the slowdown in growth in productivity (value-added per FTE) is due to the striking growth in FTE reported by the BEA between 2010-2014. The economy is adding workers, or hours, or both very rapidly, while output growth is not growing any more rapidly than normal. This makes productivity fall. If you look at individual industries (I'll spare you any more tables) you get a similar story. Many industries - including ones with high productivity to start with - have FTE growth that far outweighs their value-added growth, which makes their "within" productivity term negative. Why are industries adding FTE if they are not getting more out of them? 
 
@@ -234,6 +234,6 @@ At the other end, the bottom ten in "across" contribution are:
 
  Last, here are the promised data files and Stata script.
 
- 1. [BEA Value-added](https://dl.dropboxusercontent.com/u/6823742/bea_ip_data.dta)
- 2. [BEA FTE](https://dl.dropboxusercontent.com/u/6823742/bea_fte_data.dta)
- 3. [Stata do-file](https://dl.dropboxusercontent.com/u/6823742/2016-05-10-BEA-Setup.do)
+ 1. [BEA Value-added](/assets/bea_ip_data.dta)
+ 2. [BEA FTE](/assets/bea_fte_data.dta)
+ 3. [Stata do-file](/assets/2016-05-10-BEA-Setup.do)

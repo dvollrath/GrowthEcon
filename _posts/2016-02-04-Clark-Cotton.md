@@ -11,7 +11,7 @@ The key to the paper is that Clark can compare outcomes across different countri
 
 To do this, Clark works comes at the problem from a slightly different direction than the typical macro/growth paper would. Take a look at Clark's Table 1, which contains most of the information we need to talk about the story here. 
 
-![Clark Table 1](https://dl.dropboxusercontent.com/u/6823742/clark_tab1.png)
+![Clark Table 1](/assets/clark_tab1.png)
 
 Let's start with Clark's method, and then below I'm going to compare that to the macro/growth approach. He asks two questions, one kind of obvious and one not so obvious.
 
@@ -43,7 +43,7 @@ Let's start with two things that do not explain the differences across countries
 
 Now we get to the heart of Clark's explanation, worker efficiency. He shows, in his Table 3 copied below, that the amount of capital per worker was very different across countries. His original question assumed it was identical (Leontief). 
 
-![Clark Table 3](https://dl.dropboxusercontent.com/u/6823742/clark_tab3.png)
+![Clark Table 3](/assets/clark_tab3.png)
 
 You can see that English (and US/Canada) used far more machines per worker than China or India or other countries. So the labor cost for China was in fact very different than England. Paying a Chinese laborer 0.54 didn't get you the same amount of work as paying an English laborer 5.0. In England, to operate 2.04 machines, you hired one worker. In China, to operate 2.04 machines you had to hire 2.04/0.48 = 4.25 workers. And so the true labor cost in China was 4.25*0.54 = 2.3. 
 

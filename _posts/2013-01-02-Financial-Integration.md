@@ -2,7 +2,7 @@
 layout: post
 title: How Big are the Gains from Financial Integration?
 journal: Journal of Development Economics, 2013, 103:90-98. With Indrit Hoxha and Sebnem Kalemli-Ozcan.
-pdf: https://dl.dropboxusercontent.com/u/6823742/DEVEC1757.pdf
+pdf: /assets/DEVEC1757.pdf
 category: paper
 
 ---

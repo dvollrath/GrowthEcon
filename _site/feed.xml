@@ -5,7 +5,7 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Tue, 07 Mar 2017 18:54:34 -0600</pubDate>
+    <pubDate>Sun, 19 Mar 2017 19:08:24 -0500</pubDate>
     
       <item>
         <title>Profits and Productivity</title>
@@ -91,7 +91,7 @@
 
 &lt;p&gt;I don’t know that there is much controversy around whether this holds, in particular in the era prior to sustained growth. I cribbed the figure shown here from Oded Galor’s book, which took if from Greg Clark. When population crashes after the Black Death, wages spike. They stay high while population is low, and then fall once population rises again.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/clark2001.png&quot; alt=&quot;Clark wage and population&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/clark2001.png&quot; alt=&quot;Clark wage and population&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The second characteristic is that population growth is positively related to living standards. This may be because kids are a normal good, and so fertility rises when people have higher incomes. Or it may be because health is a normal good, so people take better care of themselves (and their kids) when they have higher income. Higher fertility and/or lower mortality rates would lead to more rapid population growth.&lt;/p&gt;
 
@@ -115,15 +115,15 @@
 
 &lt;p&gt;The first shows that population density is positively related to a measure of land productivity across countries in 1500 CE, consistent with the long-run effect of productivity on population size.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/ashrafgalor2011a.png&quot; alt=&quot;AGone&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/ashrafgalor2011a.png&quot; alt=&quot;AGone&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The second shows that living standards (GDP per capita) are not related to the same measure of land productivity across countries in 1500 CE, consistent with no long-run effect of productivity on living standards.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/ashrafgalor2011b.png&quot; alt=&quot;AGtwo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/ashrafgalor2011b.png&quot; alt=&quot;AGtwo&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;The adjustment back to the stagnant level of living standards can take a long time&lt;/strong&gt;. This means that a given Malthusian economy may have living standards that wander all over the place in the data. Nippe Lagerlof has a recent &lt;a href=&quot;http://www.nippelagerlof.com/research/happening/Waves_August_2016_post.pdf&quot;&gt;paper&lt;/a&gt; showing that a Malthusian economy with random shocks to productivity and a realistic age structure will display living standards that do look Malthusian in the sense of being fixed and close to some stagnant level, but display waves of growth and collapse.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/nippe2017.png&quot; alt=&quot;nippe&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/nippe2017.png&quot; alt=&quot;nippe&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Nippe has built a tendency for all economies to move towards sustained growth, but the point is that the four different economies have waves of growth and collapse that last for decades, even though they have the exact same underlying Malthusian structure. The random shocks to living standards persist over time because of the effect on age structure.&lt;/p&gt;
 
@@ -160,7 +160,7 @@
 
 &lt;p&gt;In green is the relative number of researchers compared to the number in 1930. This isn’t the &lt;em&gt;number&lt;/em&gt; of researchers, its a measure of &lt;em&gt;effective&lt;/em&gt; researchers, found by dividing total R and D spending by the nominal wage of high-skilled workers. Relative to 1930, we have almost 25 times as many (effective) researchers at work today. This leads to the author’s title question - “Are ideas getting harder to find?”. And the author’s answer is “Yes”.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/jones_1.png&quot; alt=&quot;Idea TFP and TFP Growth&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/jones_1.png&quot; alt=&quot;Idea TFP and TFP Growth&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;measuring-idea-tfp&quot;&gt;Measuring Idea TFP&lt;/h3&gt;
 &lt;p&gt;BJvRW measure how “hard” it is to find ideas by looking at what they call “idea TFP”. This is easy to back out from some data. Let’s write the growth rate of ideas (I) as&lt;/p&gt;
@@ -173,7 +173,7 @@
 
 &lt;p&gt;What they do first is to equate the growth rate of ideas with the growth rate of TFP (actual aggregate TFP in producing GDP). That doesn’t mean that each idea is equal to one “unit” of TFP, it just means that if the number of ideas grows by 10%, then TFP grows by 10%. This is a big leap - but let’s not get hung up on this. It isn’t important in this first context. With the data from the first graph on the TFP growth rate (&lt;img src=&quot;http://latex.codecogs.com/png.latex?\dot{I}/I\inline&quot;/&gt;), and the number of effective researchers (&lt;img src=&quot;http://latex.codecogs.com/png.latex?S_t\inline&quot;/&gt;), we can back out &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_t\inline&quot;/&gt;. This “idea TFP” is, awkwardly, the “TFP TFP”, or our productivity at producing TFP given a set of researchers.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/jones_2.png&quot; alt=&quot;Idea TFP&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/jones_2.png&quot; alt=&quot;Idea TFP&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This second graph plots the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha_t\inline&quot;/&gt; they back out, relative to 1930. You can see that it falls to about 1/64th of the level in 1930. Because we are 1/64th as effective at turning researchers into TFP, but we only have 32 times as many researchers, our growth rate of TFP is about 1/2 as high as it was in the 1930’s/1940’s. Hang on to the “why” question for a moment. For now, we’re just looking at the pure accounting.&lt;/p&gt;
 
@@ -181,7 +181,7 @@
 
 &lt;p&gt;Thus looking at individual industries/lines will help us sort out what is happening. The first example is transistors, and the count of transistors per square inch on a chip. Famously, this appears to obey Moore’s Law, which is that the number of transistors per square inch doubles every 18 months. If we count the number of transistors per square inch as “ideas”, then this translates to a growth rate of 35% per year. At the same time, the effective number of researchers working at chip companies (Intel, AMD, etc..) has grown by a factor of about 80 since 1970. Plotting this together yields their next figure.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/jones_4.png&quot; alt=&quot;Moores Law&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/jones_4.png&quot; alt=&quot;Moores Law&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Relative to the first graph, there is no decline in the growth rate of transistors. But there also isn’t an increase, despite the increased number of researchers. What this means is that “transistor idea TFP” is falling over time, at about 10% per year. As they point out in the paper, Moore’s Law still holds, but it takes 78 times more researchers to figure out how to double transistor density than it did in 1970.&lt;/p&gt;
 
@@ -410,7 +410,7 @@
 
 &lt;p&gt;The BLS provides county-level employment totals for 1990-2015, hence the time frame I’m looking at. And I can calculate the change in total employment in that 25 year period for each county. I could use the size of the labor force instead (employed plus unemployed) but the patterns I’m going to show you here don’t change appreciably.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/county_loss.png&quot; alt=&quot;Binary job gain loss&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/county_loss.png&quot; alt=&quot;Binary job gain loss&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;First, of the 3,133 counties for which I have data, 909 of them &lt;em&gt;lost&lt;/em&gt; jobs in absolute terms from 1990 to 2015. The map highlights those 909 counties in pink. The location of these counties are not terribly surprising, although I don’t think I realized how much upstate New York’s employment numbers had dropped over time. You can see the smudge of pink in coal country of West Virginia and Kentucky, along with a big set of job-losing counties in the deep, deep south of Mississippi, northern Louisiana, and southern Arkansas. Downstate Illinois and a swath across the Great Plains also saw absolute declines in the number of employees over 25 years. In total, those counties saw employment fall by 1,471,436 jobs in this period, from a base of about 19.5 million jobs to just over 18 million jobs.&lt;/p&gt;
 
@@ -422,7 +422,7 @@
 
 &lt;p&gt;Those 944 counties started with 45.5 million jobs in 1990, and ended in 2015 with 70.5 million jobs, for a gain of about 25 million jobs, which is a percent gain of 55%. The 944 counties that gained in relative terms over this period gained 13 million &lt;em&gt;more&lt;/em&gt; jobs than we would expect.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/county_scale.png&quot; alt=&quot;Relative job bins&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/county_scale.png&quot; alt=&quot;Relative job bins&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The map here plots the relative job change, in number of jobs, for each county in the US over this period. I didn’t include the legend because it got too busy, and shrinking it down made it unreadable. The darker green the county, the more jobs, in relative terms, that it gained over this period. The darker the pink/red the county, the more jobs, in relative terms, that it lost over this period.&lt;/p&gt;
 
@@ -432,7 +432,7 @@
 
 &lt;p&gt;These big losses are dominated by big cities because they start with big populations. We can look instead at scaled relative change of jobs. That is, take the relative change in jobs (e.g. -225,300 relative jobs lost in Cuyahoga County) and divide by the initial level of jobs in that county in 1990 (e.g. 642,367 in Cuyahoga County) for a scaled loss (e.g. -0.35 for Cuyahoga).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/county_perc.png&quot; alt=&quot;Scaled changes&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/county_perc.png&quot; alt=&quot;Scaled changes&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The map shows these scaled changes, and the message is similar to before. It was relative loss in the Upper Midwest, Northeast, and some core parts of the South and relative gains in very concentrated urban areas that generally lie in the Sunbelt, plus Denver. So it is not only&lt;/p&gt;
 
@@ -668,7 +668,7 @@
 
 &lt;p&gt;The point of the post is really just to point out that a notable feature of the slow growth in productivity in 2013 and 2014 was the incredibly &lt;em&gt;rapid&lt;/em&gt; growth in full-time equivalents. Aggregate value-added growth did not drop off appreciably. Rather, the growth rate of full-time equivalents was high, and hence measured productivity growth was very low.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Aggregate.png&quot; alt=&quot;Aggregate prod growth&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/fig_bea_fteprod_Aggregate.png&quot; alt=&quot;Aggregate prod growth&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The figure shows the growth rate of productivity (value-added per FTE) as the thick black line, and then also includes the separate growth rates of value-added (thin gray line) and FTE’s (thin dashed line). What you can see in 2013, and in 2014 especially, is that productivity growth dropped to about -2% per year. But value-added growth was still about &lt;em&gt;positive&lt;/em&gt; 2% per year, and the entire reason for the decline in productivity growth was that FTE growth was over 3%. Compare that to the numbers from the rest of the time period I plotted, and that is an exceptional number. Labor force growth drove the decline in productivity, purely from an accounting perspective.&lt;/p&gt;
 
@@ -676,7 +676,7 @@
 
 &lt;p&gt;Using the BEA data, I can dig backwards into the sector-by-sector contributions to productivity growth. And there are a few select sectors that appear to be driving this phenomenon. First, take a look at “Government”, which includes federal as well as state and local government spending.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Government.png&quot; alt=&quot;Government&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/fig_bea_fteprod_Government.png&quot; alt=&quot;Government&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The growth rate of value-added declines noticeably from 2008 to 2013 before experiencing a slight uptick in 2014 (the light gray line). The growth rate of FTE’s in government also bottoms out in 2011 at about -1.5%. After that, the growth rate recovered, and by 2014 FTE’s in government were growing at 1% per year. As long as FTE’s are growing faster than value-added, productivity growth will be negative, and you can see the precipitous drop in productivity growth for government in the 2013/14. In 2015, with a smaller growth rate of FTE’s in government, productivity growth recovers closer to zero, but is still negative.&lt;/p&gt;
 
@@ -684,13 +684,13 @@
 
 &lt;p&gt;Retail is another sector with a dramatic acceleration of the FTE growth rate in 2014, illustrating this point. In this case the discrepancy between value-added growth (consistently around 2% per year) and FTE growth in 2014 (pushing 15%!) is very stark. The massive addition of labor to retail in 2014 explains everything about the massive &lt;em&gt;negative&lt;/em&gt; growth rate of productivity in retail, about -11%. And as retail work makes up about 20% of aggregate FTE’s, this negative growth rate of productivity puts a big drag on aggregate productivity growth. In 2014, the negative growth rate of retail productivity can essentially explain &lt;em&gt;all&lt;/em&gt; of the negative growth in aggregate productivity in the same year. But this is all due to the massive expansion of employment.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Retail.png&quot; alt=&quot;Retail&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/fig_bea_fteprod_Retail.png&quot; alt=&quot;Retail&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In 2015, with the reversal of FTE growth (-10%), productivity growth bounces up to positive 12%, which means it contributes about 2.4 percentage points to aggregate productivity growth. But these fluctuations are entirely due to the fluctuations in the FTE growth rate in retail. Note that growth in value-added remains roughly constant in these last few years.&lt;/p&gt;
 
 &lt;p&gt;The one other sector with a pattern is construction. Again, productivity growth is negative in 2014 (and 2013), but this is driven almost entirely by the higher growth rates of FTEs in construction in those years. In 2015, as FTE growth abates in construction, productivity growth looks positive again.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/fig_bea_fteprod_Construction.png&quot; alt=&quot;Construction&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/fig_bea_fteprod_Construction.png&quot; alt=&quot;Construction&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Other sectors have this effect present, but it looks pretty small (Manufacturing, Utilities, Wholesale trade). Some, like transportation and mining, have similarly large shifts in FTE’s, but these tend to act in the opposite direction to those in retail and construction. That is, in 2013/14, the growth in FTE’s was &lt;em&gt;negative&lt;/em&gt;, and so calculated productivity growth was very &lt;em&gt;positive&lt;/em&gt;. In 2015 recovery in the FTE growth in both sectors is associated with much lower productivity growth, as in both cases value-added growth doesn’t change a lot.&lt;/p&gt;
 
@@ -745,7 +745,7 @@
 
 &lt;p&gt;Young provides a table where he recovers the true productivity growth rates in each sector. This depends on the value of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\xi\inline&quot;/&gt;, and his estimates suggest that this parameter is somewhere between -0.5 and -1.0.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/6823742/young.png&quot; alt=&quot;Young&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/young.png&quot; alt=&quot;Young&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Looking at the table, the first row just gives the regularly reported values for productivity growth in the US and the EU for manufacturing and service productivity growth. In the US, manufacturing (goods) has reported productivity growth of 1.57 percent per year, and services only 0.73. However, if Young’s estimate of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\xi\inline&quot;/&gt; of -0.5 is right, then in fact true productivity growth is more like 1.10 in manufacturing and 0.84 in services. If -0.75 is right, then services have a small advantage at 0.90 percent per year, manufacturing has 0.87, and they are basically equal. You get a similar pattern for the EU, where manufacturing and services show similar productivity growth once the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\xi\inline&quot;/&gt; parameter is big enough in size.&lt;/p&gt;
 

@@ -2,7 +2,7 @@
 layout: post
 title: The Dual Economy in Long-run Development
 journal: Journal of Economic Growth, 2009, 14(4):287-312
-pdf: https://dl.dropboxusercontent.com/u/6823742/joeg_pub.pdf
+pdf: /assets/joeg_pub.pdf
 category: paper
 
 ---

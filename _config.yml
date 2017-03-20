@@ -6,7 +6,8 @@ imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https:/
 timezone: America/Chicago
 
 # Dropbox public link
-dropbox: https://dl.dropboxusercontent.com/u/6823742
+# dropbox: https://dl.dropboxusercontent.com/u/6823742
+dropbox: /assets
 
 # THEME-SPECIFIC CONFIGURATION
 theme:

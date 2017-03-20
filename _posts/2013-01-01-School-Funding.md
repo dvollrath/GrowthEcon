@@ -2,7 +2,7 @@
 layout: post
 title: School Funding and Inequality in the Rural United States, 1890
 journal: Explorations in Economic History, 2013, 50:267-284
-pdf: https://dl.dropboxusercontent.com/u/6823742/tax_published.pdf
+pdf: /assets/tax_published.pdf
 category: paper
 
 ---

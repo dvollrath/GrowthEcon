@@ -9,7 +9,7 @@ Writing this post was kind of depressing, because all it did was highlight for m
 
 DeLong's motivating fact(s) are about manufacturing's share of output, both in nominal and real terms. He grabbed the following from the BEA
 
-![DeLong Manuf Graph](https://dl.dropboxusercontent.com/u/6823742/delong1.png)
+![DeLong Manuf Graph](/assets/delong1.png)
 
 and developed the path of the real share by making a crude calculation. As he freely admits in the post, this isn't exactly how one would want to calculate the real share of manufacturing in output. But, for the purposes of his post, I don't think it makes a huge difference. 
 

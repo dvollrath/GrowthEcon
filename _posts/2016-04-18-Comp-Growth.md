@@ -11,7 +11,7 @@ The arguments made by those *doing* the concentrating and profit-making is that 
 
 I'm going to draw a lot on one of my professors in grad school, Peter Howitt, who along with Philippe Aghion is really one of the godfathers of studying competition and growth. They have a really nice [paper](http://www.nber.org/papers/w18824.pdf) with Ufuk Akcigit regarding their "Schumpeterian theory" and how it connects to the data. Schumpeterian theory, for the uninitiated, is growth theory that explicitly deals with firms replacing each other by innovating. This "creative destruction" is what gives the theory its moniker.
 
-![Competition and innovation](https://dl.dropboxusercontent.com/u/6823742/aah1.png)
+![Competition and innovation](/assets/aah1.png)
 
 The AAH paper provides a few sets of empirical results culled from various work done by the authors. One of the most interesting is in the figure posted above, using British industry data, which plots patent activity by firms against the level of competition in their industry. Competition is measured by the ratio of marginal costs to price; the inverse of the markup a firm can charge. A higher ratio means MC and P are very close together in the industry, and hence it is very competitive. 
 
@@ -21,7 +21,7 @@ The "neck-and-neck" industries are just those in which the leading firms are ver
 
 Regardless, what this figure implies for concentration and growth is that it depends. Concentration and consolidation mean that industries are moving to the *left* along the x-axis, with less competition. Now, if that industry were already very competitive (close to 1, say), the consolidation may actually increase innovation. But if the industry is already consolidated to some degree, then decreasing competition is going to lower innovation and growth. I have in my head the difference between Marriott consolidating hotel chains around the country in the 70s and 80s, reaping some economies of scale, and investing in improved hotel quality, and Marriott in 2016, buying Starwood. Marriott will probably want to argue that they will still innovate more, but the worry is that they are on the "wrong side of the curve" in AAH's diagram.
 
-![Entry and Growth](https://dl.dropboxusercontent.com/u/6823742/aah2.png)
+![Entry and Growth](/assets/aah2.png)
 
 A second result AAH focus on deals with frontier versus backward firms. Here, they again look at British firms, but along the x-axis is the degree of competition measured by the entry of foreign firms into their industry. 
 
@@ -31,7 +31,7 @@ The question with this result is what it implies for concentration. If concentra
 
 A very nice, specific, example of the effect of competition on productivity is in one of my favorite [papers](http://web.stanford.edu/~klenow/Schmitz.pdf), by James Schmitz. He studies the reaction of the US and Canadian iron ore industries to competition from Brazilian suppliers. They responded by massively upgrading productivity relative to its level in the prior decades. His figure shows the jump in labor productivity in the US industry around the early 1980's, when Brazil came online.
 
-![Iron Ore Productivity](https://dl.dropboxusercontent.com/u/6823742/schmitz.png)
+![Iron Ore Productivity](/assets/schmitz.png)
 
 What's interesting about this paper is that Schmitz documents how nearly all of the improvement in productivity came through work practices. There was not any massive technical innovation at play here. The competition changed behavior at the producers of iron ore, and essentially got capital utilization rates (i.e. hours of use per day of machines) way up over prior levels. Productivity improvements are not necessarily a function of R&D, these firms could have made those improvements for decades before Brazil entered. But they had a dominant market position, and didn't need to. 
 

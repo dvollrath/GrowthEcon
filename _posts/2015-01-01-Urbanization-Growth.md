@@ -2,7 +2,7 @@
 layout: post
 title: Urbanization without Growth in Historical Perspective
 journal: Explorations in Economic History, 2015, 58:1-21. With Remi Jedwab.
-pdf: https://dl.dropboxusercontent.com/u/6823742/JOEG_GJV_2015.pdf
+pdf: /assets/JOEG_GJV_2015.pdf
 category: paper
 
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: The Agricultural Basis of Comparative Development
 journal: Journal of Economic Growth, 2011, 16(4):343-370
-pdf: https://dl.dropboxusercontent.com/u/6823742/JOEG_basis.pdf
+pdf: /assets/JOEG_basis.pdf
 category: paper
 
 ---

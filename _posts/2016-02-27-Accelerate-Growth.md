@@ -15,19 +15,19 @@ To be a little more concrete about my distinction of AD and AS policies, think o
 
 To try and illustrate the difference, let me try some diagrams that should be familiar to anyone who has taken intermediate macro. These are basic AS/AD diagrams, but with an additional feature that comes from growth economics. Rather than one long-run AS curve (LRAS), we have two. The first is the current LRAS, and the second is the potential LRAS curve. In terms of the Solow model, the current LRAS is based on our current capital stock and productivity, while the potential LRAS is the steady state LRAS (To be really true to growth models, we'd say that the potential LRAS curve is slowly moving to the right due to trend growth). 
 
-![Basic AS/AD](https://dl.dropboxusercontent.com/u/6823742/adas0.png)
+![Basic AS/AD](/assets/adas0.png)
 
 Y is the current level of GDP, determined by the intersection of the AD curve with the *short-run* AS curve, SRAS. I've drawn the diagram such that we are in a situation where GDP is below current potential. I did this to be clear. Being below steady state in a growth model (Current LRAS < Potential LRAS) is a different thing than having "slack" in the economy (Y < Current LRAS). 
 
 With this I can think through the differences in policies that attempt to accelerate growth, meaning that Y starts to "move to the right" quickly in my diagram. Start with AS policies. These push the *potential* LRAS curve to the right, but have little immediate effect on the current LRAS or the current SRAS. Over time, the current LRAS will converge to the potential LRAS, but as I've talked about before that takes a long time to occur. Note that the fact that the current and potential LRAS are far apart in my diagram to start with is irrelevant. The policies will shift the potential LRAS curve, and we'll still have to wait for the current LRAS curve to catch up.
 
-![LRAS Shift](https://dl.dropboxusercontent.com/u/6823742/adas2.png)
+![LRAS Shift](/assets/adas2.png)
 
 Because AS policies don't shift the current LRAS and SRAS curves by much, the increase in Y is small, and hence there is only a small effect on the growth rate. In the long run, these policies can have a massive effect on living standards, but it can take decades for that to manifest itself. 
 
 Constrast that with AD policies. These shift the AD curve directly, and close to immediately. I'm perfectly willing to concede that there is some kind of lag in when the AD curve shifts out, but that's measured in quarters, not decades. Because this AD shift happens immediately, and because the SRAS curve slopes upwards, there is a big effect on GDP from Y to Y'. Note that this depends crucially on the assumption that the SRAS curve is upward sloping. Without that, the AD shift would have no effect.
 
-![AD Shift](https://dl.dropboxusercontent.com/u/6823742/adas1.png)
+![AD Shift](/assets/adas1.png)
 
 At the same time, the AD policy has no effect on either potential or current LRAS. And while I've drawn the SRAS curve as a line, it probably becomes vertical at some point when GDP is high enough, so you cannot just use AD policies to push up GDP arbitrarily. But if you want to boost growth *now*, then the AD policies are more effective. A last point is that the size of the effect depends on how far away Y is from the current LRAS curve. Part of the Romer's critique of Friedman is that he overstates that gap, which thus overstats the power of AD policy.
 

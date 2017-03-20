@@ -2,8 +2,8 @@
 layout: post
 title: Inequality in Land Ownership, the Emergence of Human Capital Promoting Institutions, and the Great Divergence
 journal: Review of Economic Studies, 2009, 76:143-179. With Oded Galor and Omer Moav
-pdf: https://dl.dropboxusercontent.com/u/6823742/roes_506.pdf
-replicate: https://dl.dropboxusercontent.com/u/6823742/roes_data.zip
+pdf: /assets/roes_506.pdf
+replicate: /assets/roes_data.zip
 category: paper
 
 ---

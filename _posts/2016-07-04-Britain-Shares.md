@@ -9,7 +9,7 @@ There's a nice working paper out by [Patrick Wallis, Justin Colson, and David Ch
 
 Let's get to the good stuff. Here is their Figure 7,
 
-![Sector Shares over time](https://dl.dropboxusercontent.com/u/6823742/WCC_fig7.png)
+![Sector Shares over time](/assets/WCC_fig7.png)
 
 The dots refer to prior point estimates from other sources. The lines show their inferred sectoral distribution over time if they force the pattern of structural change to hit the point estimates from other established sources. For those interested, what this establishes is that alternative point estimates (labels with C or M) are basically consistent with the main points estimates (labels with ST or B), based on the authors time pattern of change. That is both a neat way of evaluating your data, with the benefit of not pissing off any potential referee's.
 
@@ -28,7 +28,7 @@ Your Bayesian prior on "the probability the Great Divergence had its origins pri
 
 These numbers are bad news if you have "Glorious Revolution" in the "monocausal origins of economic growth" office pool. The data reinforce the argument that the Glorious Revolution was as much a *response* to economic change, as it was a *cause* of economic change. WCC provide a rough estimate of output per worker based on their labor allocations and estimates of output from others. 
 
-![Output per worker](https://dl.dropboxusercontent.com/u/6823742/WCC_fig11.png)
+![Output per worker](/assets/WCC_fig11.png)
 
 You can see that there is a distinct surge upwards in all three sectors starting early in the 1600's, well before the Glorious Revolution (1688-89) and the supposed origin of growth-friendly institutions. Britain seemed to be figuring out its economic game well before they imported a Dutch king willing to share power with merchants.
 
@@ -37,7 +37,7 @@ While it is in the title, the authors spend very little time talking about how t
 
 But there is nothing about structural change that implies Malthusian forces have been banished, overcome, or left behind. Yes, (too) many papers talking about Malthus give the impression that output in these economies is homogenously made up of subsistence goods like food. But that is just a modeling simplification used to elide the discussion of how labor gets allocated across different activities. An economy operating under Malthusian conditions - a positive relationship of population growth and living standards, and those living standards depending negatively on population size - need not be 100% agricultural. 
 
-You could have an economy that had 95% of labor in industry and services, and yet was Malthusian because output was tied to some fixed natural resources (say agricultural land to grow cotton and supplies of coal to heat up the thingies that make the cotton into underpants and tablecloths). You could even get Malthusian forces arising *because* of urbanization. Your standard urban economics model will imply that stable city sizes occur when the costs of congestion outweight the benefits of agglomeration, meaning that adding more people to a city lowers living standards. Remi Jedwab and I have a [working paper](https://dl.dropboxusercontent.com/u/6823742/jv2016_megacity.pdf) using this concept to think about the origin of poor mega-cities. 
+You could have an economy that had 95% of labor in industry and services, and yet was Malthusian because output was tied to some fixed natural resources (say agricultural land to grow cotton and supplies of coal to heat up the thingies that make the cotton into underpants and tablecloths). You could even get Malthusian forces arising *because* of urbanization. Your standard urban economics model will imply that stable city sizes occur when the costs of congestion outweight the benefits of agglomeration, meaning that adding more people to a city lowers living standards. Remi Jedwab and I have a [working paper](/assets/jv2016_megacity.pdf) using this concept to think about the origin of poor mega-cities. 
 
 The point (aside from self-citation) is that Malthusian economies can have rich structural characteristics and dynamics. "Stagnation in living standards over many centuries" does not mean "Everyone living on a farm barely scraping by at the biological minimum requirements for life". 
 

@@ -2,7 +2,7 @@
 layout: post
 title: The Efficiency of Human Capital Allocations in Developing Countries
 journal: Journal of Development Economics, 2014, 108:106-118
-pdf: https://dl.dropboxusercontent.com/u/6823742/DEVEC1872.pdf
+pdf: /assets/DEVEC1872.pdf
 category: paper
 
 ---

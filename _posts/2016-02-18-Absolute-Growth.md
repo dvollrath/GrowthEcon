@@ -11,7 +11,7 @@ This may or may not be interesting, I'm not entirely sure myself. But I got a qu
 
 First, what does the distribution of aboslute changes in GDP per capita even look like? I had no idea. So I calculated the absolute growth in real GDP per capita per year for each country in the PWT. Then I plotted the kernel densities of these absolute changes for several countries. You can see the results below.
 
-![Densities for Absolute Growth](https://dl.dropboxusercontent.com/u/6823742/fig_abs_growth.png)
+![Densities for Absolute Growth](/assets/fig_abs_growth.png)
 
 Kernel densities are basically smoothed histograms, so the height of the density curve indicates how often absolute growth in GDP per capita of a given amount occurred. As you can see, for India (the black dashed line) absolute growth tended to be very small. On average, from 1950 to 2011, GDP per capita rose by 51 dollars per year in India. The median was 42 dollars. Despite these small absolute changes, the percentage growth rate in could actually be quite high because GDP per capita is very low to begin with.
 

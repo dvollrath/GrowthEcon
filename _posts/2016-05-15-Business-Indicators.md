@@ -51,7 +51,7 @@ The point is that all the curve-fitting in the world won't change the fact that 
 ### It Gets Worse
 In the follow up [post](http://johnhcochrane.blogspot.com/2016/05/regulations-and-growth.html), Cochrane appeals to a graph from my textbook with Chad Jones. An updated version using data from 2008 shows the relationship of an index of "social infrastructure" and TFP. 
 
-![TFP and SI](https://dl.dropboxusercontent.com/u/6823742/figure_7_3.png)
+![TFP and SI](/assets/figure_7_3.png)
 
 This index of "social infrastructure" is even more useless than the DB index. How do I know? Because I calculated it, graphed it, and stuck it on the slide that Cochrane linked to. I simply scaled and averaged the 6 different components of the World Bank's governance indicators, much like the DB index. It has all the issues I described above, except worse.
 

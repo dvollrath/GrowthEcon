@@ -2,7 +2,7 @@
 layout: post
 title: Land Distribution and International Agricultural Productivity
 journal: American Journal of Agricultural Economics, 2007, 89(1):202-216
-pdf: https://dl.dropboxusercontent.com/u/6823742/ajae_2007.pdf
+pdf: /assets/ajae_2007.pdf
 category: paper
 
 ---

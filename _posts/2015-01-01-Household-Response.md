@@ -2,7 +2,7 @@
 layout: post
 title: The Household Response to Government Debt. Evidence from Life Insurance Holdings
 journal: Journal of Money, Credit, and Banking, 2015, 47(5):819-845. With Steven Craig and Edward Hoang.
-pdf: https://dl.dropboxusercontent.com/u/6823742/CRAIG_et_al-2015.pdf
+pdf: /assets/CRAIG_et_al-2015.pdf
 category: paper
 
 ---

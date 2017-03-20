@@ -50,7 +50,7 @@ To illustrate the role of these three effects, I pulled down sector-level data f
 
 In each year, I calculated the three terms in the above equation, looking backward 10 years each time. So I have the rolling 10-year growth in value-added per hour (VAPH), as well as how it breaks down into within, across, and covariance terms. What I've plotted below is the total growth rate, not an annualized rate, so that everything still adds up exactly.
 
-![US Decomposition](https://dl.dropboxusercontent.com/u/6823742/fig_us_decomp_10.png)
+![US Decomposition](/assets/fig_us_decomp_10.png)
 
 What is pretty clear is that within-sector growth is the dominant force in VAPH. And you can see the early high reported rates of growth of within-sector growth in the 1960's (which capture growth from the 50's into the 60's). There is a clear slowdown in within sector growth from about 1975 to 1990, consistent with all the other evidence, and then things recover not quite back to the 1960's level. The dip in 2009 and 2010 indicates that growth in VAPH from about 1999/2000 to 2009/2010 has been relatively slow, again consistent with our priors. 
 
@@ -70,6 +70,6 @@ But by the 70's and later, higher within-sector productivity growth in durables 
 
 A comparison with South Korea is interesting, because they are several decades behind the US in this transformation. In the figure below I plotted the same rolling 10-year growth rates as for the US. It shows the big across-sector contribution to growth in South Korea in the 80's and 90's, as they were industrializing heavily and the elasticity of demand for those kinds of durable goods was still large. Compare the figures, and you'll see that while the US may have had 8% total growth in VAPH due to across-sector effects at the maximum, in South Korea this maximum is closer to 40%. As South Korea got richer, this across-sector contribution has been falling, but is still adding about 6% to total growth in VAPH. The example of South Korea is why I think that part of the explanation for the rapid productivity growth in the US during the 40's and 50's could be across-sector effects, and not just a higher rate of innovation or technological change.
 
-![SK Decomposition](https://dl.dropboxusercontent.com/u/6823742/fig_kor_decomp_10.png)
+![SK Decomposition](/assets/fig_kor_decomp_10.png)
 
 This has now gotten so long that I need to wrap it up. Let me try to do that by essentially repeating my summary from above. You cannot talk about aggregate productivity growth without talking about both technology *and* the distribution of workers across sectors. Anecdotes - positive or negative - about individual technologies are not informative about the aggregate level of productivity growth.

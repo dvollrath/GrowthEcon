@@ -13,7 +13,7 @@ Perhaps the main organizing principle in growth economics over the last sixty ye
 2. The rate of return on capital is constant over time
 3. The share of output paid to capital is constant over time
 
-These three conditions are part of the the "Kaldor Facts" established in by [Nicolas Kaldor](https://dl.dropboxusercontent.com/u/6823742/Kaldor_1957.pdf) in 1957. There are really six stylized facts in his article, but you can kind of boil them down to these three easily. These facts were supported by relatively sparse information gleaned from the period running from the late 19th century up to the 1920's, and for most of them Kaldor ignored major changes that occurred in the Great Depression. For example, the fact regarding the rate of return is based largely on the 44 years from 1870 to 1914 in the UK. Saying that output per worker was rising steadily was inferred from several (uncited by Kaldor) sources in 1957, when the concept of national income accounting was only about two decades old. This was not a robust empirical exercise, is what I'm trying to say.
+These three conditions are part of the the "Kaldor Facts" established in by [Nicolas Kaldor](/assets/Kaldor_1957.pdf) in 1957. There are really six stylized facts in his article, but you can kind of boil them down to these three easily. These facts were supported by relatively sparse information gleaned from the period running from the late 19th century up to the 1920's, and for most of them Kaldor ignored major changes that occurred in the Great Depression. For example, the fact regarding the rate of return is based largely on the 44 years from 1870 to 1914 in the UK. Saying that output per worker was rising steadily was inferred from several (uncited by Kaldor) sources in 1957, when the concept of national income accounting was only about two decades old. This was not a robust empirical exercise, is what I'm trying to say.
 
 Regardless, the question for growth economists became: how must the economy work such that these three are all true in the long run? Subsequently, essentially every model of growth that has been written down has constricted itself to matching these facts. The term BGP is thus something of shorthand notation for saying that a model fits the Kaldor Facts, at least in the long run. 
 
@@ -26,17 +26,17 @@ As I go through this, I'm trying to take the most skeptical viewpoint I can on b
 ### Is growth of output per worker constant over time?
 Maybe the most prevalent figure in growth economics plots log GDP per worker in the US over time, usually from 1870 to until roughly 1990-2015, depending on the vintage of the paper you're talking about. I probably have six or seven versions of it on my laptop in various folders, and one is included below. 
 
-![US GDP per capita](https://dl.dropboxusercontent.com/u/6823742/cbo_fit_postall.png)
+![US GDP per capita](/assets/cbo_fit_postall.png)
 
 The remarkable thing about this figure is how consistent the slope is, and the slope (given that this graphs the log of GDP per capita against time) is just the growth rate. That is the first Kaldor fact, presented visually. Even after the disruption of the Great Depression and WWII, the US returned right back to the same trend line (the "linear prediction" dashed line) from before. So for the US, it seems there is very powerful evidence for the first Kaldor fact. 
 
 But, as is the case with far too many stylized facts, this is just the US. Not every country has such a consistent trend line. The figure below shows four major economies including the US, and you can see that Japan and Germany do not have this same consistent trend (while the UK does). Now, while this makes the first Kaldor fact strictly untrue, this doesn't necessarily spell the end of the idea of a BGP. As I implied above, a BGP is really a statement about what happens in the long run. Like Germany or Japan after World War II, you could be off of the BGP, but as you can see with both countries they eventually settle into a situation of constant growth rates. 
 
-![Other Countries](https://dl.dropboxusercontent.com/u/6823742/figure_3_3.png)
+![Other Countries](/assets/figure_3_3.png)
 
 France is a further departure, because it displays not only a shift in the level of the BGP, like Japan, but also a change in the slope. After World War II France move up to a higher level of output per capita (the intercept of the dashed line rose) but also a higher slope, meaning the growth rate was permanently higher. Now, one can still argue that the two separate dashed lines represent BGP's, but what France demonstrates is that the growth rate itself along a BGP could change. And if it can change for one country, why can't it change for others? 
 
-![France](https://dl.dropboxusercontent.com/u/6823742/france.png)
+![France](/assets/france.png)
 
 Two colleagues of mine, David Papell and Ruxandra Prodan, wrote a [paper](http://www.sciencedirect.com/science/article/pii/S026499931400251X) recently that looked at the presence of BGP's more formally. For 26 countries they look at whether their path of GDP per capita follows a strict BGP, meaning that over the 139 years of data there is no shift in the level or growth rate of GDP per capita. In essence, they are asking if those 26 countries have graphs that look like the one for the US. 
 
@@ -53,37 +53,37 @@ Does the return on capital persist over longer periods of time? The issue with a
 
 You can replicate this with newer data from the BLS. I posted [something](https://growthecon.com/blog/the-declining-marginal-product-of-capital/) a while back on this very series, and the clear decline in the MPK over the last fifty years. 
 
-![MPK](https://dl.dropboxusercontent.com/u/6823742/fig_MPK_1960.png)
+![MPK](/assets/fig_MPK_1960.png)
 
 The two series in the figure differ in how I calculated the share of output going to capital, but the same story emerges regardless. There was a distinct decline in the return to capital over the post-war period. There is also a distinct level difference in the return with Kuznets. The BLS data indicate a return of 15%-ish in the 1960's, and the decline still leaves the return at 10% currently, compared to Kuznets' 3%. 
 
 Ok, maybe this isn't the right way to measure the return to capital (although it is the way that any model of growth would measure it internally). Kuznets compared his return calculation to bond yields. I grabbed the seasoned corporate Baa bond yield from FRED as a comparison. 
 
-![Baa](https://dl.dropboxusercontent.com/u/6823742/fig_corp_baa_yield.png)
+![Baa](/assets/fig_corp_baa_yield.png)
 
 Again, it isn't clear that this is constant. If you wanted to say there was a tendency for the corporate rate here to be about 5% over the long run, okay. But that 40-year deviation from 5% between about 1970 and 2010 seems like an abuse of the word "tendency".
 
 You have more luck with the S&P earnings yield, which perhaps we could think of as a better measure of the return to capital. I think I got this graph from a Brad DeLong post a while ago, but I don't have the underlying data. 
 
-![SP](https://dl.dropboxusercontent.com/u/6823742/fig_yield.png)
+![SP](/assets/fig_yield.png)
 
 This travels around a lot as well, but it is easier to squint and see something that looks like a tendency to be around 6-8% over the long run, with a distinct dip in the recent few years. 
 
 Last, Piketty's book contained a wealth (see what I did there?) of data on capital/output ratios, which are a key component of calculating the return to capital as in Kuznets. Here's his plot of the capital/output ratio.
 
-![Pik cap output](https://dl.dropboxusercontent.com/u/6823742/piketty_ky.png)
+![Pik cap output](/assets/piketty_ky.png)
 
 This obviously shows a lot of variation. And unless the share of output paid to capital changes demonstrably over time and in just the right way, this implies that the return to capital showed a significant amount of variation as well. 
 
 At the same time, Piketty's evidence on the return to capital shows, at least for the UK, a remarkable stability over long periods of time.
 
-![Pik return](https://dl.dropboxusercontent.com/u/6823742/piketty_r.png)
+![Pik return](/assets/piketty_r.png)
 
 What is noticeable here is that it really is the post-war period that is an anomaly, and so maybe the US is in the same boat. Perhaps the decline in the rate of return I showed in the US MPK is just part of recovering back to this long-run flat trend like in the UK. 
 
 For France, the evidence is less clear about stability, but you can convince yourself, I think, that there is no distinct trend to the return.
 
-![Pik return France](https://dl.dropboxusercontent.com/u/6823742/piketty_r_france.png)
+![Pik return France](/assets/piketty_r_france.png)
 
 Overall, it isn't obvious what to make of Kaldor's fact regarding rates of return. Are there clear *trends* in rates of return? That depends a lot on the time frame you look at. For the US post-war, it sure looks like there is a downward trend. But for the UK and France over time, there are fluctuations but not a clear trend. 
 
@@ -92,15 +92,15 @@ I don't know that a qualified "Yes" is quite right. This seems like a weaker set
 ### Is the share of output paid to capital constant over time?
 Let's stick with Piketty for the moment. Part of the story about returns mentioned above involved the share of output paid to capital. And Kaldor took as a fact that this share was roughly constant, or at least did not display a clear trend. Piketty has come data on these shares for several rich countries. 
 
-![Piketty](https://dl.dropboxusercontent.com/u/6823742/piketty_share.png)
+![Piketty](/assets/piketty_share.png)
 
 This looks as if the capital share is rising over the last 40 years for all these countries. I pulled BLS data for the US to go back farther, and you can see a similar story.
 
-![US cap share](https://dl.dropboxusercontent.com/u/6823742/fig_cap_share.png)
+![US cap share](/assets/fig_cap_share.png)
 
 The inverse of this is the decline in labor shares. Karabarbounis and Neiman (working paper [here](https://www.dropbox.com/s/gp14879nzbarzju/depreciation.pdf?dl=1)) have investigated both if and why this is occurring. Grabbing a graph from their paper, you can see the decline.
 
-![KN labor share](https://dl.dropboxusercontent.com/u/6823742/kn_labor.png)
+![KN labor share](/assets/kn_labor.png)
 
 So we've got something that suggests the capital share is not constant over time. Whether these deviations are temporary or not is unclear.
 

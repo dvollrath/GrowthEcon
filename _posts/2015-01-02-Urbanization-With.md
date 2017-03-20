@@ -2,7 +2,7 @@
 layout: post
 title: Urbanization with and without Industrialization
 journal: Journal of Economic Growth, forthcoming. With Douglas Gollin and Remi Jedwab.
-pdf: https://dl.dropboxusercontent.com/u/6823742/JOEG_GJV_2015.pdf
+pdf: /assets/JOEG_GJV_2015.pdf
 category: paper
 
 ---
