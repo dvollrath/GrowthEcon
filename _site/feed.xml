@@ -5,7 +5,76 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Sun, 19 Mar 2017 20:12:40 -0500</pubDate>
+    <pubDate>Fri, 24 Mar 2017 18:04:24 -0500</pubDate>
+    
+      <item>
+        <title>Is Housing Driving the Rise in Profits?</title>
+        <link>https://growthecon.com/blog/Profit-Accounting/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Profit-Accounting/</guid>
+        <description>&lt;p&gt;Um, this has nothing to do with health care or repealing the ACA. Sorry.&lt;/p&gt;
+
+&lt;p&gt;My last &lt;a href=&quot;https://growthecon.com/blog/Markups/&quot;&gt;post&lt;/a&gt; was on the profit share in GDP. I drew on some work by &lt;a href=&quot;http://home.uchicago.edu/~barkai/&quot;&gt;Barkai&lt;/a&gt;, who calculated that the profit share in GDP had been rising steadily over the last thirty years. To save you the bother of clicking any links, here is his figure showing the profit share over time, rising from about 2.5% of GDP in 1985 to over 15% in 2014.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/barkai3.png&quot; alt=&quot;Barkai figure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A while back, I also did some &lt;a href=&quot;https://growthecon.com/blog/the-changing-composition-of-productivity-growth/&quot;&gt;posts&lt;/a&gt; about how the BLS calculates multi-factor productivity. As part of that the BLS also provides a breakdown of GDP into payments to labor, capital, and profits. Here’s that figure, which runs back to 1950.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_output_share.png&quot; alt=&quot;BLS figure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The format of the two figures isn’t the same, but I don’t believe it is too hard to see that there is a significant difference in the profit share of output in the two analyses. There is, for all intents and purposes, no increase in the profit share using the BLS data, while Barkai finds that dramatic increase.&lt;/p&gt;
+
+&lt;p&gt;What can explain the difference? To answer that, I have to dig into how both sources construct their estimates of the profit share. The method is similar between the two, but they differ in the data they use, so it turns out that the difference is all in the data, and that will have an interesting implication.&lt;/p&gt;
+
+&lt;h3 id=&quot;calculating-profits-share-of-output&quot;&gt;Calculating Profits Share of Output&lt;/h3&gt;
+&lt;p&gt;First, let me outline the method they use, and why. Both the BLS and Barkai want to decompose output into something like &lt;strong&gt;Output = Wages + Capital Payments + Profits&lt;/strong&gt;. This would be easy if national income accounts reported those three separate components, but they don’t. National accounts will tell you that &lt;strong&gt;Output = Wages + Proprietors Income + Rental Income + Corporate Profits + Net Interest + Taxes on production&lt;/strong&gt;. Accounting-wise, it must be that &lt;strong&gt;Capital Payments + Profits = Proprietors Income + Rental Income + Corporate Profits + Net Interest + Taxes on production&lt;/strong&gt;, but there is no way to know how big Capital Payments and Profits are from this. No, “Corporate Profits” are not equal to Profits. The former is &lt;em&gt;accounting&lt;/em&gt; profits, and the latter refers to &lt;em&gt;economic&lt;/em&gt; profits.&lt;/p&gt;
+
+&lt;p&gt;For both the BLS and Barkai, the solution to getting economic profits is to combine data on the total capital stock, K, with an assumption about the return to capital, R. The Capital Payments are then defined as RK, and once you know the Capital Payments, you can back out the Profits. In other words, &lt;strong&gt;Profits = Output - Wages - RK&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For Barkai, the value of K is taken directly from the BEA. That stock of capital, K, is broken down into a lot of categories and sub-categories are structures, equipment, and intellectual property. Structures include non-residential structures like warehouses, lodging (e.g. hotels), and amusement and recreation (e.g. Six Flags), among others. Structures also include residential structures like single family homes and apartment buildings. Intellectual property includes things like software, as well as (as of 2013), a capitalized value of R/D spending by different industries. Finally, equipment includes all the things that you normally think of as capital, like computer equipment, engines and turbines, metalworking equipment, ships, railroad, oil wells, and photocopiers (which get their own sub-category under “information processing equipment”, which I find humorous for some reason).&lt;/p&gt;
+
+&lt;p&gt;For R, he constructs an implicit rate of return, something like what you’d do if you tried to come up with the implicit rent an owner pays themselves if they own their home. He follows &lt;a href=&quot;https://web.stanford.edu/~rehall/Tax-Policy-AER-June-1967.pdf&quot;&gt;Hall and Jorgenson&lt;/a&gt; (1967), which assumes that investment decisions are not made randomly, but rather must reflect some economic logic, and so the rate of return R is described by &lt;strong&gt;R = i - g + d&lt;/strong&gt;. i is the nominal interest rate. g is the growth rate of the price of the capital good (capital gains), and d is depreciation. The intuition of the effect of these three terms is straightforward if you spin this around into &lt;strong&gt;i = R + g - d&lt;/strong&gt;. Think of a firm borrowing money to buy a capital good. They pay i as a nominal interest rate. That asset yields a return of R to them for using it, plus they get the capital gain (or loss) that goes along with the asset. The asset also depreciates at the rate d. In equilibrium, the cost of borrowing (i) should be equal to the benefit (R + g - d).&lt;/p&gt;
+
+&lt;p&gt;Barkai makes some assumptions to solve for R. He uses the interest rate on triple-A rated corporate bonds to stand in for the nominal interest rate i. He uses the observed inflation in the price of capital goods, available from the BEA’s data, to get his value for g. And the BEA also provides a number for the depreciation rate of different types of capital goods, based on their expected years of service, which he can use to get d. He solves for R for each of the three main types of capital goods - structures, equipment, and intellectual property - allowing each to have different values for g and d. At that point he can calculate RK for each type of capital, and then add up those total payments to get aggregate payments to capital.&lt;/p&gt;
+
+&lt;p&gt;Once he knows the capital payments, he can back out the Profits. And once he knows Profits, he simply calculates Profits/GDP to get profits share of output, which is what you see plotted in that first figure. There is nothing that immediately jumps out about Barkai’s method that would suggest it is wrong. Could you use a different series for the nominal interest rate? Sure. But if you jump onto the FRED database, and look at any series of nominal interest rates over time, they decline sharply from the early 1980’s until today. Is the required return to capital, R, not related to i + g - d? Maybe. But it would be weird if somehow the return paid to capital deviated a lot from that value. If the R value were in fact much &lt;em&gt;lower&lt;/em&gt; than what Barkai calculates, then this would lower the Capital Payments even further, and in turn make profits share rise by even more, and the deviation from the BLS data would be more pronounced.&lt;/p&gt;
+
+&lt;p&gt;Regardless, to solve for the profit share you need to infer something about the payments to capital. What the BLS does is quite similar to Barkai. They use some different values for i, g, and d, but that isn’t what is really driving the difference in the results.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-drives-the-difference&quot;&gt;What drives the difference?&lt;/h3&gt;
+&lt;p&gt;The key distinction is in the overall scope of their analysis. For Barkai, &lt;strong&gt;Output = GDP&lt;/strong&gt;. For the BLS, &lt;strong&gt;Output = Private Business Output&lt;/strong&gt;. The distinction is, very roughly, &lt;strong&gt;GDP = Private Business Output + Government + Imputed GDP from Owner-Occupied Housing&lt;/strong&gt;. The concept of output is wider for Barkai than it is for the BLS.&lt;/p&gt;
+
+&lt;p&gt;This difference carries through to the capital stock that the BLS uses. For the BLS, the capital stock is a subset of the capital stock that Barkai uses. The BLS uses equipment, intellectual property, and tenant-occupied housing (e.g. apartment buildings). They exclude the stock of owner-occupied housing, which is included in Barkai’s calculations.&lt;/p&gt;
+
+&lt;p&gt;Mechanically the reason Barkai gets a rising profit share is that he finds a fall in the share of GDP going to Capital Payments over time. For the BLS, the share of output going to capital, as you can see in the second figure, does not change much - and when it changes, it is offset by changes in the labor share, and so there is no big change in the profit share.&lt;/p&gt;
+
+&lt;p&gt;Why does Barkai find a fall in the capital share compared to the BLS? It may be due to an increase in the imputed value of housing in GDP. This is going to be more clear if I drop in a real equation, so here we go&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{(RK)^{BLS}}{Y^{BLS}} &gt; \frac{(RK)^{BLS} + (RK)^{Houses}}{Y^{BLS} + Y^{Houses}}&lt;/script&gt;
+
+&lt;p&gt;The fraction on the right is the capital share in output calculated by the BLS, where &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y^{BLS}\inline&quot;/&gt; stands for private business output. This fraction is bigger than the fraction on the right, which is meant to capture what Barkai is calculating as the capital share. In the numerator, he has both the return on capital that the BLS would capture, but also the return on capital going to owner-occupied housing. In the denominator, Barkai has “GDP”, which is - very roughly - the sum of &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y^{BLS}\inline&quot;/&gt; and the imputed flow of GDP from owner-occupied housing, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y^{Houses}\inline&quot;/&gt;. For this inequality to be true, we need that the payments to capital for houses are not “too big”, but the imputed flow of GDP from owner-occupied housing, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y^{Houses}\inline&quot;/&gt; are “very big”.&lt;/p&gt;
+
+&lt;p&gt;Here’s the thing. If the imputed GDP from owner-occupied housing is very high, but the payments to capital required by housing are small, then by implication the &lt;em&gt;profits&lt;/em&gt; on owner-occupied housing are high. The rise in profits share seen in the Barkai paper could well be driven by the market power of house owners, and not by the market power of corporations, which is the intuitive response.&lt;/p&gt;
+
+&lt;h3 id=&quot;profits-on-housing&quot;&gt;Profits on housing&lt;/h3&gt;
+
+&lt;p&gt;This seems to jive with other information. The figure below is from Matt Rognlie’s &lt;a href=&quot;http://mattrognlie.com/brookings_capitalshare.pdf&quot;&gt;work&lt;/a&gt;. Rognlie is looking not at the separate shares of output going to profits and capital, but rather their sum. If you like, he is interested in the share of GDP &lt;em&gt;not&lt;/em&gt; going to labor. What he did was to decompose this total non-labor share into a part accounted for by housing, and for a part accounted for by non-housing. As you can see in the figure, the share of GDP going to housing (either as a return to capital or as profits) was increasing from 1950 to today. It rose from about 3% of GDP to about 10% in this period of time, while the share of GDP going to non-housing capital (either as a return to capital or as profits) was declining slightly. Combined, these two trends lead to a rise in the share of GDP going to capital as a whole, and was one of the key elements of Piketty’s book.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/rognlie.png&quot; alt=&quot;Rognlie&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rognlie’s decomposition is consistent with the story about rising profits in owner-occupied housing. The total amount of GDP getting paid to owners of homes is rising over time (Rognlie). But at the same time, the required rate of return on capital is falling (Barkai and BLS), which means that the &lt;em&gt;profits&lt;/em&gt; on owner-occupied housing must be rising.&lt;/p&gt;
+
+&lt;p&gt;What do I mean by profits? Remember that these are &lt;em&gt;economic&lt;/em&gt; profits, not accounting profits. Owners of homes are not seeing an increase in their cash flow. As a home owner, I can assure you that my house does nothing but suck &lt;em&gt;in&lt;/em&gt; cash, as opposed to producing it. Those economic profits are coming in the form of a higher imputed flow of GDP from my house over time. This implicit flow of value, a rent I’m charging myself, is getting cranked upwards over time, even if I don’t see it.&lt;/p&gt;
+
+&lt;p&gt;To think about how this works out as an economic profit, consider the following example. Let’s say you can take out a mortgage at 4%. That’s the nominal interest rate i. Let’s say houses depreciate at 1% per year, and you expect capital gains on your house to be something like 2% per year. Then the required rate of return to break even would be &lt;strong&gt;R = 4 - 2 + 1 = 3%&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If your house is worth 500,000, a 3% return would mean charging 15,000 in rent per year, or 1,250 per month. Now, if you look out at the market and find out that you could actually rent your house out for 2,000 per month, you are making 750 in &lt;em&gt;economic&lt;/em&gt; profit. The price you can charge for your house, 2,000, is higher than the marginal cost to you, 1,250. Profits!&lt;/p&gt;
+
+&lt;p&gt;It doesn’t matter if you are paying &lt;em&gt;yourself&lt;/em&gt; that rent or not. If your house can rent for more than the marginal cost, then you are making profits. The rise in the profit share in the Barkai analysis may be driven in part - or maybe mostly? - by the rise in the imputed value of rents going to owner occupied housing. If the BEA is overstating the value of the flows going to home-owners, fine, but then the implied increase in the profit share in Barkai’s analysis is overstated as well.&lt;/p&gt;
+
+&lt;p&gt;The implications of an increasing profit share coming from owner-occupied housing are a lot different from the implications of an increasing profit share coming from corporate market power or concentration. I need to think a lot harder about housing, it seems.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Mar 2017 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Profits and Productivity</title>
@@ -803,84 +872,6 @@
 
 </description>
         <pubDate>Wed, 14 Sep 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Balanced growth in theory</title>
-        <link>https://growthecon.com/blog/BGP/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/BGP/</guid>
-        <description>&lt;p&gt;The last post was on the empirics behind balanced growth paths (BGP), the key organizing principle of economic growth models. I was skeptical of these empirics, and it looked like only weak evidence was there to support the idea of BGP’s.&lt;/p&gt;
-
-&lt;p&gt;As I said in that post, essentially all the models of growth written down in the last half-century work very hard to ensure they have a BGP. Here, I want to show that this generates a set of pretty tight restrictions about how you can model the world. And hence it generates a set of pretty tight restrictions on how you think the world actually works. So tight that perhaps it seems implausible. Like I said in the prior post, I’m trying to be highly skeptical of these claims, in order to test my own beliefs.&lt;/p&gt;
-
-&lt;h3 id=&quot;uzawa-and-bgps&quot;&gt;Uzawa and BGP’s&lt;/h3&gt;
-&lt;p&gt;Leave aside the questions regarding the Kaldor facts from the last post entirely. Let’s assume that you do want your model of growth to have a BGP. What does this imply about how growth works?&lt;/p&gt;
-
-&lt;p&gt;The key paper here is by &lt;a href=&quot;http://www.jstor.org.ezproxy.lib.uh.edu/stable/2296180&quot;&gt;Uzawa&lt;/a&gt; (1961), but I highly suggest you not read it. It is baffling. I suggest you take a look at &lt;a href=&quot;http://web.stanford.edu/~chadj/ss301.pdf&quot;&gt;Jones and Scrimgeour&lt;/a&gt; who have written a much more accessible explanation.&lt;/p&gt;
-
-&lt;p&gt;Let me try to give you a flavor of Uzawa’s theorem. I’m going to try a different tactic than Jones and Scrimgeour, because I think I can keep it more accessible to a blog audience. There is math, but I hope nothing too terribly awful.&lt;/p&gt;
-
-&lt;p&gt;To start, we’re going to assume that we have some kind of constant returns to scale production function. That CRS is crucial is necessary for BGP’s to exist. Let y be output per worker, and k be capital per worker. Let B denote the capital-augmenting technology - think of this as an index of how useful capital each unit of capital is for production. Let A denote labor-augmenting technology - again an index of how useful labor is for production. Okay, then let’s write the growth of output per worker as&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{y} = \epsilon_K \hat{B} + \epsilon_K \hat{k} + \epsilon_L \hat{A}&lt;/script&gt;
-
-&lt;p&gt;where the “hats” on a variable denote its growth rate. The values &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt; are the elasticity of output with respect to that specific input. Because of constant returns, it must be that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K + \epsilon_L = 1\inline&quot;/&gt;, and that will prove useful in a moment.&lt;/p&gt;
-
-&lt;p&gt;What the equation says is that growth in output per worker is a weighted sum of capital-augmenting technological progress, labor-augmenting technological progress, and growth in capital per worker. The weights are the elasticities, which tell us how important capital and labor are to production.&lt;/p&gt;
-
-&lt;p&gt;Now, one of the conditions for a BGP is that the rate of return on capital is constant. If you remember the prior post, we said that the rate of return could be calculated as&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;r = s_K \frac{y}{k}&lt;/script&gt;
-
-&lt;p&gt;or capital’s share in output, &lt;img src=&quot;http://latex.codecogs.com/png.latex?s_K\inline&quot;/&gt;, times the output/capital ratio. The BGP also requires that the capital share is constant over time. So for the return, r, to be constant it must be that the ratio y/k is also constant. Which implies that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{y} = \hat{k}\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;Go back to the growth rate equation knowing this. Plugging in for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{k} = \hat{y}\inline&quot;/&gt;, rearranging, and using the assumption that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K + \epsilon_L = 1\inline&quot;/&gt;, we have that&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{y} = \frac{\epsilon_K}{1-\epsilon_K} \hat{B} + \hat{A}.&lt;/script&gt;
-
-&lt;p&gt;The growth rate of output per worker depends only on the two types of technological progress. I didn’t have to say anything about exactly how capital is accumulated, but if we are insisting that the return on capital is constant, then it has to be that capital and output grow at the same rate, which means the growth rate of output per worker is dependent on only the growth rate of the technology.&lt;/p&gt;
-
-&lt;p&gt;Ok, what does this leave us with? Along a BGP, the growth rate of output per worker is supposed to be constant. There are two ways to make this happen:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cobb-Douglas production, constant labor- and capital-augmenting progress.&lt;/strong&gt; &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{B}\inline&quot;/&gt; can be non-zero, but then we have to ensure that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; is constant as well. This restricts the production function to be a Cobb-Douglas, where the capital and labor elasticities never change. In this case, the fact that we call it “capital-augmenting” or “labor-augmenting” progress is irrelevant, as mathematically they are equivalent.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Non-Cobb-Douglas production, but &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{B} = 0\inline&quot;/&gt;.&lt;/strong&gt; When production isn’t Cobb-Douglas, the elasticity &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; will change if &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{B}\inline&quot;/&gt; is non-zero. So the only way for this to work without a Cobb-Douglas production function is if capital-augmenting progress is exactly zero. Here, there really is a difference between “capital-augmenting” and “labor-augmenting” progress, and we have to have zero capital-augmenting progress.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;These are pretty restrictive. If you think an economy has a BGP, then what Uzawa indicates is that you have to think it either has a very specific production function (Cobb-Douglas) or a very specific rate of progress in capital-augmenting technology (zero).&lt;/p&gt;
-
-&lt;p&gt;It feels implausible that the real world actually would have the &lt;em&gt;exact right&lt;/em&gt; conditions for a BGP to happen. Taking a step back, maybe production isn’t even constant returns to scale in capital and labor in the first place. Are the empirics behind the BGP so strong that they should compel us to buy the theoretical restrictions they imply?&lt;/p&gt;
-
-&lt;h3 id=&quot;relaxing-uzawa&quot;&gt;Relaxing Uzawa&lt;/h3&gt;
-&lt;p&gt;Well, maybe Uzawa’s restrictions aren’t necessary or aren’t as knife-edged as they seem. Here’s a few examples. Grossman, Helpman, Oberfield, Sampson, who got me going on this whole topic, propose one &lt;a href=&quot;http://scholar.harvard.edu/files/helpman/files/balanced_growth_despite_uzawa_110815gg.pdf&quot;&gt;solution&lt;/a&gt;. What GHOS suggest is that human capital growth may be sufficient to break the strict nature of Uzawa’s conditions. That is, they can write down a model of economic growth that doesn’t require Cobb-Douglas production, has a positive growth rate of capital-augmenting technological change, and yet still has a BGP.&lt;/p&gt;
-
-&lt;p&gt;Chad Jones has a different &lt;a href=&quot;http://web.stanford.edu/~chadj/JonesQJE2005.pdf&quot;&gt;approach&lt;/a&gt;, and he establishes conditions by which the &lt;em&gt;aggregate&lt;/em&gt; production function may be Cobb-Douglas, even though the underlying technical production functions of firms are not. This makes a BGP a reasonable outcome.&lt;/p&gt;
-
-&lt;p&gt;But this all presumes that we want to rescue the BGP - that economic growth necessarily involves a constant long-run growth rate, a stable capital share, and a constant return to capital. Given the information in the prior post, the question remains whether in fact the BGP is worth rescuing.&lt;/p&gt;
-
-&lt;h3 id=&quot;structural-change&quot;&gt;Structural Change&lt;/h3&gt;
-&lt;p&gt;Let me give an example of where the dependence on BGP’s is possibly a problem. A lot of effort has been expended writing down models of economic growth that explicitly allow for multiple sectors (agriculture, manufacturing, services, for example) but that also display a BGP. You can think of there being an ancillary Kaldor fact that these papers want to explain, which is that there has been significant shifts of labor between sectors (generally, ag to manufacturing to services) over time in most economies.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ideas.repec.org/a/ucp/jpolec/v116y2008i3p467-498.html&quot;&gt;Acemoglu and Guerrieri&lt;/a&gt;, &lt;a href=&quot;https://ideas.repec.org/a/oup/restud/v68y2001i4p869-882..html&quot;&gt;Kongsamut, Rebelo, and Xie&lt;/a&gt;, &lt;a href=&quot;https://ideas.repec.org/a/aea/aecrev/v97y2007i1p429-443.html&quot;&gt;Ngai and Pissarides&lt;/a&gt;, among others, are built to deliver both structural change and a BGP. To do so is not trivial, so these models are quite clever in how they set things up to make this work out. In some way, they are writing down new versions of Uzawa that also allow them to account for structural change. They establish conditions for preferences or production functions that allow for economic activity to wax and wane in different sectors, but in aggregate continues to be consistent with Kaldor’s facts.&lt;/p&gt;
-
-&lt;p&gt;The danger here is presuming the original Kaldor facts are required. They work very hard to show that structural change can happen while the growth rate of output per capita remains constant in the long run. But what if the growth rate of output per capita isn’t constant in the long run? Or, if you don’t want to abandon the concept of a BGP altogether, what if there are different BGP’s depending on what stage of structural change you are in?&lt;/p&gt;
-
-&lt;p&gt;Remember the French figure from the prior post. You could argue that France had both a pre-WWII BGP (with relatively low levels of GDP per capita and a low growth rate) and a post-WWII BGP (with a higher level and growth rate). Who is to say that this kind of shift to a different BGP, perhaps with a lower growth rate, isn’t possible in a country like the US today? Who is to say that level shifts in the BGP, perhaps up or down, are not possible in the future based on structural change?&lt;/p&gt;
-
-&lt;h3 id=&quot;are-we-missing-the-point&quot;&gt;Are we missing the point?&lt;/h3&gt;
-&lt;p&gt;Existing models that assume a BGP cannot, by design, deliver the kinds of jumps seen in the French example, or in cases like South Korea or Japan as they developed. Yes, those countries appeared to go from one BGP to another, so the existing models are good at capturing the dynamics within each BGP. But they have no way of explaining why it was that South Korea took off for a different BGP in about 1960, or why France’s growth rate shot up after World War II. These shifts are completely exogenous in these models.&lt;/p&gt;
-
-&lt;p&gt;Let me ask it this way. If I could write down a model that could predict the conditions under which a country would accelerate like South Korea from poverty to rich-country living standards, would I discard it just because it failed to predict a strict BGP in the long run? I hope I wouldn’t, because a model that could identify those conditions would be incredibly valuable. But there is a tendency for growth economists to be skeptical of anything that doesn’t have a BGP in the end.&lt;/p&gt;
-
-&lt;p&gt;To take it from the other side, it may be that even if BGP’s are not strictly true in the data, that models with BGP’s are effective in capturing most of the interesting dynamics. The strict assumptions behind them need not be exactly true in real life, but are useful for simplifying our analysis. But the danger here is that we go too far, assert these strict assumptions are true because they deliver a BGP, and that would appear to be going in the wrong direction.&lt;/p&gt;
-
-&lt;p&gt;I’ve been operating in full skepticism mode, and so I should probably stop now before I manage to insult everyone who has done growth work in the last few decades. That, and I don’t want to discourage everyone from buying my &lt;a href=&quot;https://growthecon.com/book/&quot;&gt;textbook&lt;/a&gt; with Chad Jones that talks very explicitly about BGP’s and models that deliver them.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 07 Sep 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
