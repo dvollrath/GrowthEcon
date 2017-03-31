@@ -5,7 +5,52 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Fri, 24 Mar 2017 18:04:24 -0500</pubDate>
+    <pubDate>Fri, 31 Mar 2017 11:31:17 -0500</pubDate>
+    
+      <item>
+        <title>An Update on the Profits from Housing</title>
+        <link>https://growthecon.com/blog/Ricardian-Housing/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Ricardian-Housing/</guid>
+        <description>&lt;p&gt;In the last &lt;a href=&quot;https://growthecon.com/blog/Profit-Accounting/&quot;&gt;post&lt;/a&gt; I used some findings by &lt;a href=&quot;http://home.uchicago.edu/~barkai/&quot;&gt;Simcha Barkai&lt;/a&gt; and the BLS to infer that housing may a major source of the rise in the share of profits in GDP. I got an e-mail from Simcha regarding the post, and the upshot is that I’m wrong. First, and foremost, it turns out that I got confused reading his paper, and all his calculations &lt;em&gt;exclude&lt;/em&gt; residential housing. This means that my inference from comparing the BLS profit share to his profit share is invalid. You cannot conclude that residential housing profits are driving a rise in profits share of aggregate GDP, because there is no information on housing in Barkai’s number. He documents that the profit share of the non-financial corporate sector is rising over time.&lt;/p&gt;
+
+&lt;p&gt;So, my bad on that. Simcha also made a point in his e-mail about how the BLS calculates profit shares, and it makes me lean towards his calculations as being correct. But let’s leave that for another day and post. For the time being, you should go forth and freak out about the increasing profit share in the non-financial corporate sector, whatever your preferred explanation for that may be.&lt;/p&gt;
+
+&lt;p&gt;I still had housing on the brain, though, so I wanted to figure whether I was wrong about profits rising in the housing sector. Effectively, I’d like to recreate Barkai’s analysis, but now for the housing sector only. To figure that out, I need to look at the data on the stock of residential housing capital (K), and the imputed flow of value-added from housing (Y). The other thing I need to calculate is the required rate of return on housing (R).&lt;/p&gt;
+
+&lt;p&gt;Let’s start with the stock and flow, which I pulled down from FRED. The stock, K, is the “Current-Cost Net Stock of Fixed Assets: Residential” from the national income accounts. That includes all privately owned residential assets, which encompasses both owner-occupied and tenant-occupied. The flow, Y, is “Gross housing value added”, which comes from Table 1.3.5 of the national accounts. This is the BEA’s estimate of the total flow of housing services (including imputed rents for owner-occupied housing) minus the cost of any intermediate goods. Those intermediates would include maintenance and repairs on your house, or the cost of property management services if you owned a rental building.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_housing_ky.png&quot; alt=&quot;Housing YK&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first figure is the ratio of Y/K, or roughly the average product of housing capital. On average, the flow of housing services is equal to around 8% of the stock of housing. But there are clear fluctuations, with a big dip after WWII, and then subsequent dips around 1980 and 2009. But there is also a tendency for the ratio Y/K to rise from WWII to today, from maybe 6% to 9%. This tendency of Y/K to &lt;em&gt;rise&lt;/em&gt; means that the ratio of K/Y is going to &lt;em&gt;fall&lt;/em&gt;, and that is going to matter in my little profit share calculation.&lt;/p&gt;
+
+&lt;p&gt;I want profit’s share of the flow of housing output. I’m going to assume that no labor is used in providing housing services. Don’t get freaked out by that, the flow of housing services is not the same thing as construction. Construction - which does use lots of labor - is the flow of &lt;em&gt;new&lt;/em&gt; housing (or other structures) into the stock. What we’re talking about here is the flow of services provided by &lt;em&gt;existing&lt;/em&gt; housing, which does not involve much labor at all.&lt;/p&gt;
+
+&lt;p&gt;This means I am assuming that the flow of housing can be split as follows, &lt;strong&gt;Y = RK + Profits&lt;/strong&gt;. In shares, this is just &lt;strong&gt;1 = RK/Y + Profits/Y&lt;/strong&gt;. If I know RK/Y, I can figure out the profit share easily. Note that RK/Y depends on K/Y, which was falling over time, based on the prior figure. So that, by itself, suggests the profit share was rising.&lt;/p&gt;
+
+&lt;p&gt;In addition, it seems likely that R was falling over time. If you remember from the prior post, we could write &lt;strong&gt;R = i - g + d&lt;/strong&gt;, where R is the return on capital, i is the nominal interest rate, g is the expected inflation in the capital price, and d is depreciation. For i, the obvious choice here is the mortgage rate. I (or rather FRED) does not have mortgage rate data going back as far as 1930, but it does have it for the 1970’s forward.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_housing_mort.png&quot; alt=&quot;Housing Mortgage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s not a big surprise that mortgage rates have fallen over time, much like any other nominal interest rate. They’re under 5% now, from a high of around 17% in 1981. By itself, this is going to drive R lower over time.&lt;/p&gt;
+
+&lt;p&gt;The other information I need is on g and d. I’ve played around a lot with these, and I can’t come up with any reasonable assumptions about them that can overcome the drop in nominal mortgage rates over time. That is, if you really wanted to make R go &lt;em&gt;up&lt;/em&gt; over time, you’d need people to believe that housing prices were going to &lt;em&gt;fall&lt;/em&gt; significantly (so g&amp;lt;0) or that depreciation rates on houses have risen significantly over time. I can’t get my head around how either of those could be true.&lt;/p&gt;
+
+&lt;p&gt;For the figure I’ll show below, I’m assuming that g = 3% at all times (not true) and d = 1% at all times (not true). I’m not going to get hung up on the actual numbers, because what we’re interested in is the change in R over time, not the actual level. It’s also a blog post, not a paper. So take the data on the mortgage rate, and combine that with my assumption on g and d to get a measure of R over time. Use that R, and combine it with the data on K/Y, and you’ve got a time series for RK/Y. With that time series, you can solve for &lt;strong&gt;Profits/Y = 1 - RK/Y&lt;/strong&gt;, and I’ve got my profit share in housing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_housing_profit.png&quot; alt=&quot;Housing Mortgage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s hard to get your eyes off the gigantic negative number in 1981. According to this calculation, the profit share on housing was negative 100%. To be more concrete, what this is saying is that the rent you could get on a house (Y) in 1981 was equal to about half of the cost of the mortgage (RK). You were implicitly losing money owning a home, but if it was owner-occupied, you were losing money to yourself. That dramatic negative profit share is a function of the spike in mortgage rates during the Volcker disinflation, and as I said, it is hard to see around it in the figure. But notice that the profit share started to climb around 1990.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_housing_profit90.png&quot; alt=&quot;Housing Mortgage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I pulled the 1990-2016 period out to show the evolution of the profit share more clearly. Here the rise in the profit share is apparent, from about 20 to about 80% from 1990 to 2016. I don’t want to get too stuck on the precise level of these numbers, which depend in part on my assumption regarding 3% expected house price inflation and 1% depreciation. But the trend is clear. Because of the decline in the mortgage rate, the cost of owning a home fell, but the flow of output produced by houses did not. In essence, you can rent out your owner-occupied home for more than you’d pay in mortgage costs, and you are profiting. You may be paying those profits to yourself, but there is a profit involved.&lt;/p&gt;
+
+&lt;p&gt;Let’s round this back to the discussion of profit shares in the wider economy. Barkai found that the profit share is rising in the private, non-housing, sector. My mini-analysis here suggests that the profit share in the housing sector is rising as well. Combined, that means the profit share in aggregate GDP is rising.&lt;/p&gt;
+
+&lt;p&gt;The difference from the last post is that the rise in housing profits is not mutually exclusive with the rise in profts in the private, non-housing, sector. The source of the rise in profits is similar in both cases, as it turns out. The drop in nominal interest rates means that the required return for capital (housing or non-housing) is falling over time, but the flow of output produced in part by that capital is not, so the profit share is rising.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Mar 2017 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Is Housing Driving the Rise in Profits?</title>
@@ -828,50 +873,6 @@
 
 </description>
         <pubDate>Wed, 21 Sep 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Hobsbawm on relative decline and social disruption</title>
-        <link>https://growthecon.com/blog/Hobsbawm/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Hobsbawm/</guid>
-        <description>&lt;p&gt;I recently re-read Eric Hobsbawm’s &lt;em&gt;&lt;a href=&quot;http://amzn.to/2cJTPNr&quot;&gt;Industry and Empire&lt;/a&gt;&lt;/em&gt;. I didn’t have a reason, other than that it was shelved near something else I was looking for in the library, and caught my eye. It was definitely before graduate school that I last read it, so it seemed worth revisiting now that I’ve got my fancy-schmancy education in economics.&lt;/p&gt;
-
-&lt;p&gt;It’s a bit of a mess as far as history goes. Yes, it deals with events and people that happened long ago. But so does Star Wars. It is a narrative informed occassionally by some vague stylized facts. It is pure interpretation. To my point, I’ll just note that Hobsbawm has a section of figures and tables, in the appendix. That appendix is prefaced by the following quote: “It is not easy to include a sufficient selection of quantitative data in a text without making it unreadable.” Well, it may not be easy, but it is possible. Instead, Hobsbawm’s book is all about the narrative.&lt;/p&gt;
-
-&lt;p&gt;His main thesis is as follows:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The relative decline of Britain is, broadly speaking, due to its early and long-sustained start as an industrial power.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Well, okay. But I think the immediate reaction to this should be “no kidding”. This is like saying that the relative decline of my height compared to my daughters is, broadly speaking, due to my early and long-sustained start at being alive.&lt;/p&gt;
-
-&lt;p&gt;Spending at least a little time thinking about the processes involved in economic growth, even intuitively, will suggest that this relative decline is going to be almost inevitable for the country who industrializes first. It is easier to copy technologies than invent them, so countries behind Britain (the US, Germany, etc.) are able to catch up quickly. Or, if you believe - wrongly - that growth is limited by stocks of natural resources, then Britain has no particular advantage over continental Europe, much less the US, so it would be impossible to sustain an early lead.&lt;/p&gt;
-
-&lt;p&gt;Hobsbawm doesn’t even give you a clear notion of what he means by “relative decline”. In what? GDP per capita? Wages? Some measure of human well-being like health? Number of stripes on flags? He seems to have in mind some ambiguous concept like “dynamism”, which fits well in a narrative but of course is a completely empty term.&lt;/p&gt;
-
-&lt;p&gt;His own review of the history of Britain belies the idea that Britain lacked dynamism, by which I mean the growth of new sectors or industries. While Germany and the US were ratcheting up their own manufacturing sectors, Britain was moving into services like insurance and finance, and shedding low margin work to those countries. But Hobsbawm appears to fall into the same trap as many of fetishizing manufaturing work over all else. So Britain’s continued use of older-generation spinning machines or blast furnaces compared to Germany is some kind of indictment of not just the economy, but British society. There was, according to Hobsbawm, a “genuine loss of impetus and efficiency”. Not that we are treated to a single piece of evidence regarding this assertion, or even told what impetus is supposed to refer to, or what is the definition of efficiency he has in mind.&lt;/p&gt;
-
-&lt;p&gt;One explanation offered for the relative decline of Britain is the empire. This provided an effectively closed market for manufactured goods, and British industry was thus able to survive without having to be competitive with newer German and US firms. There is probably an interesting argument to be made regarding the role of empire in British industrial growth, but that argument would involve, you know, data. And this isn’t necessarily the same argument as the one involving the relative decline of Britain.&lt;/p&gt;
-
-&lt;p&gt;This is quite harsh on my part. But for all that, there are some ideas in Hobsbawm worth thinking hard about. From his Chapter 4 (The Human Results of the Industrial Revolution), consider the following quote.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Those classes whose lives were least transformed were also, normally, those which benefitted most obviously in material terms (and vice versa), and their failure to grasp what was troubling the rest, or to do anything effective about it, was due not only to material but also to moral contentment. Nobody is more complacent than a well-off or successful man who is also at ease in a world which seems to have been constructed precisely with persons like him in mind.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Hobsbawm was talking about the aristocracy and “business class” of Britain during the early IR, who not only were made better off, but did not find themselves socially disrupted. The source of their money may have started changing, but they had a clear idea of where they fit in (i.e. schools, clubs, political positions). In contrast, the mass of people who were being drawn into industrial work were generally being asked to trade one low-paying occupation (farming or home craft work) for another (factory work) that had an entirely different set of social conditions. They were employees, not self-employed. They were subject to the clock, not the calendar. They were expected to live in cities, not the country. Think of this last one; what would it be like to go from living among familiar faces with the occassional stranger, to living among strangers with the occassional familiar face? Even if your material standard of living was unchanged, or even higher, it would be socially difficult to adapt.&lt;/p&gt;
-
-&lt;p&gt;Whatever the merits of &lt;em&gt;Industry and Empire&lt;/em&gt; as an actual history, it left me thinking about the social transformations that are part of structural change to this day. The lingering move &lt;em&gt;out&lt;/em&gt; of manufacturing and into services, and from certain services (trade, transport) into others (education, health), also involves social disruption. It even involves the movement of people from relatively rural - or small-town - environments to larger urban areas.&lt;/p&gt;
-
-&lt;p&gt;And to Hobsbawm’s point, I find it highly likely that I do not appreciate the amount of disruption involved in these changes. My inclination would be to say that the transition we’re involved in now isn’t nearly as socially disruptive as the original industrial revolution. But how do I know? I am part of the “class” whose life has transformed very little in response to the decline of manufacturing and rise of “softer” services. I fit very nicely into a world that values educational achievement and professional skills. If anything, these economic changes mean that it is getting easier for me to find my way.&lt;/p&gt;
-
-&lt;p&gt;Which leaves me wondering how complacent I am regarding these disruptions. Complacency, as Hobsbawm suggested for Britain, has consequences. &lt;a href=&quot;http://amzn.to/2cYKxwg&quot;&gt;Polyani&lt;/a&gt; makes a set of similar points. For something more recent, I think you can do a lot worse than revisiting some of what Dani Rodrik has written, say &lt;a href=&quot;http://rodrik.typepad.com/dani_rodriks_weblog/2016/06/brexit-and-the-globalization-trilemma.html&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://www.project-syndicate.org/commentary/anti-globalization-backlash-from-right-by-dani-rodrik-2016-07&quot;&gt;here&lt;/a&gt;, about the reactions to globalization over the last two decades. That backlash certainly smell similar to the reactions that Hobsbawm tracks in Britain around 1820 to 1850-ish: Luddites, Chartists, and the like. Were the complacent classes of Britain as surprised by these reactions - but why would they smash those looms? - as the complacent classes of today are surprised by similar reactions - but why would they vote to leave the EU?&lt;/p&gt;
-
-&lt;p&gt;I have no way to neatly wrap up this post. I’ve written six different final paragraphs, but none that do anything other than stray into my own Hobsbawm-sian data-free narrative building exercise. Let me just offer up that if one includes social disruption in the accounting, then structural shifts between sectors/industries/locations are perhaps the most important aspect of economic growth to consider, even more than the growth rate itself.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 14 Sep 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
