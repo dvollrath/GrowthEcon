@@ -3,6 +3,7 @@ layout: post
 title: Is Housing Driving the Rise in Profits?
 published: true
 category: feed
+tags: #post
 ---
 
 Um, this has nothing to do with health care or repealing the ACA. Sorry. 
