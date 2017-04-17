@@ -8,10 +8,9 @@ permalink: /research/
 
 {% bibliography -q @unpublished[keywords ~= me] %}
 
-
 <h3>Published Articles</h3>
 
-{% bibliography -q @article[keywords ~= me] --sort_by year --order descending %}
+{% bibliography -q @article[keywords ~= me] --group_by year --group_order descending %}
 
 <h3>External Links</h3>
 
