@@ -3,17 +3,13 @@
 {{ reference }} {% if entry.paper %} &nbsp; <a href="{{ site.dropbox }}/{{ entry.paper }}">Paper</a> {% endif %} {% if entry.data %} &nbsp; <a href="{{ site.dropbox }}/{{ entry.data }}">Data</a> {% endif %}
 
 <div id="materials">
-<ul style="list-style: none;">
+
 	{% if entry.abstract %}
+		<ul style="list-style: none;">
 		<li><details>
 		<summary>Abstract</summary>
 		<p>{{ entry.abstract }}</p>
 		</details></li>
+		</ul>
 	{% endif %}
-<!--		<li><details>
-		<summary>BibTeX</summary>
-		<pre>{{ entry.bibtex }}</pre>
-		</details></li>
--->		
-</ul>
 </div>
