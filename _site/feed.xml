@@ -5,7 +5,36 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Fri, 21 Apr 2017 14:43:10 -0500</pubDate>
+    <pubDate>Fri, 21 Apr 2017 14:47:30 -0500</pubDate>
+    
+      <item>
+        <title>Topics in Economic Growth</title>
+        <link>https://growthecon.com/blog/Topics-Pages/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Topics-Pages/</guid>
+        <description>&lt;p&gt;Less of a post, and more of an announcement. I just created some new pages here at Growthecon.com that collect resources and materials related to specific topics regarding growth. See the &lt;a href=&quot;https://growthecon.com/topics/&quot;&gt;Topics&lt;/a&gt; link in the header of the webpage.&lt;/p&gt;
+
+&lt;p&gt;This was an exercise in intellectual housecleaning, and a way to organize some materials for possible use in classes in the future. Each topic has links to my own posts on the subject, links to other web articles or resources, and some selected academic citations. The topics are thus more accessible, but less comprehensive, then the pages of &lt;a href=&quot;https://growthecon.com/references/&quot;&gt;references&lt;/a&gt; that are also posted on this site.&lt;/p&gt;
+
+&lt;p&gt;Right now, the topics include&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Are-We-Rich/&quot;&gt;Are we rich?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Converge-Reform/&quot;&gt;Can you reform your way to higher growth?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Comp-Assumptions/&quot;&gt;Does growth depend on competition?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Dev-Growth/&quot;&gt;Does economic growth mean economic development?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Productivity-Slowdown/&quot;&gt;Productivity slowdown&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Manuf-Special/&quot;&gt;Is manufacturing special?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Robots-Jobs/&quot;&gt;Robots and jobs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Inst-Geography/&quot;&gt;Deep determinants of development&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Growth-Nature/&quot;&gt;Does economic growth harm the environment?&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;It’s a decent start, and there may be a few more topics to show up. The first job is probably to split the topic on productivity slowdown into separate pieces, maybe just on measuring TFP, and then on the Baumol effects.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Apr 2017 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Aggregate Productivity versus Aggregate Technology ... Again</title>
@@ -845,55 +874,6 @@
 &lt;p&gt;Manufacturing is not the dominant origin of employment or value-added. Which means that any action in labor productivity or MFP in manufacturing has a small effect on aggregate labor productivity of MFP. For labor productivity, you’d use the share of hours worked to weight manufacturing, and for MFP, you’d use the share of value-added. So as a rule of thumb, the reported change in manufacturing only counts for about 1/10 of that in the aggregate. Labor productivity rises by 3% in manufacturing? Then this adds about 0.3% to aggregate labor productivity. Manufacturing MFP falls by 1%? Then aggregate MFP falls by about 0.1%. There is nothing magic or special about manufacturing that priviledges its hours or value-added above other sectors in the aggregate calculations. It’s a relatively small part of the pie.&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Oct 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Labor Recovery and the Productivity Slowdown</title>
-        <link>https://growthecon.com/blog/Labor-Prod/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Labor-Prod/</guid>
-        <description>&lt;p&gt;Everyone loves talking about productivity, and how it doesn’t grow as fast as it used to. Very low productivity growth rates, in same cases negative, have been used very recently as evidence of this long-run slowdown and why perhaps it will get worse. But inferring something about long-run trends in productivity growth from a few years of data, especially years that represent a recovery from a deep recession, is probably unwise. Now that I have the 2015 BEA data on sector-specific output and employment, let me try to illustrate what I mean.&lt;/p&gt;
-
-&lt;p&gt;Productivity growth is just output (value-added) growth minus input (however measured) growth. In this post I’m working with BEA data on value-added and full-time equivalents, so when I say productivity that is short-hand for “value-added per full-time equivalent”, which some might refer to as a measure of labor productivity.&lt;/p&gt;
-
-&lt;p&gt;The point of the post is really just to point out that a notable feature of the slow growth in productivity in 2013 and 2014 was the incredibly &lt;em&gt;rapid&lt;/em&gt; growth in full-time equivalents. Aggregate value-added growth did not drop off appreciably. Rather, the growth rate of full-time equivalents was high, and hence measured productivity growth was very low.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_bea_fteprod_Aggregate.png&quot; alt=&quot;Aggregate prod growth&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The figure shows the growth rate of productivity (value-added per FTE) as the thick black line, and then also includes the separate growth rates of value-added (thin gray line) and FTE’s (thin dashed line). What you can see in 2013, and in 2014 especially, is that productivity growth dropped to about -2% per year. But value-added growth was still about &lt;em&gt;positive&lt;/em&gt; 2% per year, and the entire reason for the decline in productivity growth was that FTE growth was over 3%. Compare that to the numbers from the rest of the time period I plotted, and that is an exceptional number. Labor force growth drove the decline in productivity, purely from an accounting perspective.&lt;/p&gt;
-
-&lt;p&gt;In 2015, once the growth in FTE’s ebbs to only about 1%, and there is a slight uptick in the growth rate of value-added, we see productivity growth rise to positive 1%. It sure looks like the drop in productivity growth in 2013/14 was temporary and driven almost entirely by the acceleration of growth in FTE’s as the economy starts to recover.&lt;/p&gt;
-
-&lt;p&gt;Using the BEA data, I can dig backwards into the sector-by-sector contributions to productivity growth. And there are a few select sectors that appear to be driving this phenomenon. First, take a look at “Government”, which includes federal as well as state and local government spending.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_bea_fteprod_Government.png&quot; alt=&quot;Government&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The growth rate of value-added declines noticeably from 2008 to 2013 before experiencing a slight uptick in 2014 (the light gray line). The growth rate of FTE’s in government also bottoms out in 2011 at about -1.5%. After that, the growth rate recovered, and by 2014 FTE’s in government were growing at 1% per year. As long as FTE’s are growing faster than value-added, productivity growth will be negative, and you can see the precipitous drop in productivity growth for government in the 2013/14. In 2015, with a smaller growth rate of FTE’s in government, productivity growth recovers closer to zero, but is still negative.&lt;/p&gt;
-
-&lt;p&gt;One side note about “value-added” for government. This is going to include both salaries for public employees like teachers, cops, and fireman, and also capital spending like roads, bridges, and other infrastructure. The effect you see in the overall government sector is driven almost entirely by state and local governments. They shed workers like crazy after the recession, and in 2014 that reversed dramatically. Growth in state/local FTE’s went from -1.5% in about 2011 to +2% in 2014.&lt;/p&gt;
-
-&lt;p&gt;Retail is another sector with a dramatic acceleration of the FTE growth rate in 2014, illustrating this point. In this case the discrepancy between value-added growth (consistently around 2% per year) and FTE growth in 2014 (pushing 15%!) is very stark. The massive addition of labor to retail in 2014 explains everything about the massive &lt;em&gt;negative&lt;/em&gt; growth rate of productivity in retail, about -11%. And as retail work makes up about 20% of aggregate FTE’s, this negative growth rate of productivity puts a big drag on aggregate productivity growth. In 2014, the negative growth rate of retail productivity can essentially explain &lt;em&gt;all&lt;/em&gt; of the negative growth in aggregate productivity in the same year. But this is all due to the massive expansion of employment.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_bea_fteprod_Retail.png&quot; alt=&quot;Retail&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In 2015, with the reversal of FTE growth (-10%), productivity growth bounces up to positive 12%, which means it contributes about 2.4 percentage points to aggregate productivity growth. But these fluctuations are entirely due to the fluctuations in the FTE growth rate in retail. Note that growth in value-added remains roughly constant in these last few years.&lt;/p&gt;
-
-&lt;p&gt;The one other sector with a pattern is construction. Again, productivity growth is negative in 2014 (and 2013), but this is driven almost entirely by the higher growth rates of FTEs in construction in those years. In 2015, as FTE growth abates in construction, productivity growth looks positive again.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_bea_fteprod_Construction.png&quot; alt=&quot;Construction&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Other sectors have this effect present, but it looks pretty small (Manufacturing, Utilities, Wholesale trade). Some, like transportation and mining, have similarly large shifts in FTE’s, but these tend to act in the opposite direction to those in retail and construction. That is, in 2013/14, the growth in FTE’s was &lt;em&gt;negative&lt;/em&gt;, and so calculated productivity growth was very &lt;em&gt;positive&lt;/em&gt;. In 2015 recovery in the FTE growth in both sectors is associated with much lower productivity growth, as in both cases value-added growth doesn’t change a lot.&lt;/p&gt;
-
-&lt;p&gt;One response to these figures is that this reflects some error in calculation or reporting. And believe me, I’ve gone back and forth with the BEA website to confirm that this is really what they are reporting for 2014 and 2015, and that I’m using the right data. I’ve picked over my Stata code a few times to see if I’m getting this wrong somehow, but this is what the data say. If I was calculating things wrong, you’d expect to see some &lt;em&gt;other&lt;/em&gt; odd surges in growth rates in other years, at least for some sectors. And since we don’t, I believe I’m accurately reporting the right growth rates given the BEA data provided.&lt;/p&gt;
-
-&lt;p&gt;So on the assumption that these figures are a good representation of what was going on with productivity growth, what does it tell us? The first reaction I have is that this is precisely why you shouldn’t get worked about a single year’s productivity growth rate. In 2014, it was negative in the aggregate thanks in part to retail and government as well as several other sectors. But given that this was driven entirely by a surge in FTE growth associated with a recovering labor market, I don’t know that there is any long-run information here. It certainly doesn’t provide any evidence that innovation is slowing down. Productivity is just a residual, so short-run productivity growth rates will always be subject to surges in short-run FTE growth.&lt;/p&gt;
-
-&lt;p&gt;A second reaction may be, if these industries are adding all these FTE’s, then why isn’t value-added rising faster? Does this make sense for firms to hire these people (or raise their hours) if they are not getting more value-added? Perhaps the people they are hiring are relatively low-skill and low-productivity? Think of the Roy model idea I mentioned in a recent &lt;a href=&quot;https://growthecon.com/blog/Roy/&quot;&gt;post&lt;/a&gt; about Alwyn Young’s recent paper. If the people who are being added are relatively bad at working in their sectors - because all the good people already work there - then putting them to work may not boost value-added growth.&lt;/p&gt;
-
-&lt;p&gt;If you were feeling optimistic, you might look at this as evidence that innovation &lt;em&gt;is&lt;/em&gt; occurring. Perhaps firms have been adding labor quickly because they anticipate needing them over the next few years due to innovations coming on-line. They presumably are somewhat forward-looking, and so maybe this represents firms investing in building up a labor force in anticipation of new markets and new customers? Note that the drop in FTE growth in 2015 does not wipe out the FTE gains of the prior two years. FTE’s are still growing at the aggregate level in 2015, just at a slower rate. For Retail, FTE’s actually did fall in 2015 relative to 2015, but are still higher than in 2013.&lt;/p&gt;
-
-&lt;p&gt;Whatever you might take away regarding innovation, these graphs suggest that perhaps the drop in productivity growth in 2014 was really an aberration. If FTE growth returns to more typical rates, then productivity growth - remember, just a residual - would return to more typical rates as well. And just a note, this doesn’t provide an explanation for why long-run productivity growth has been lower over the last few decades, but simply an explanation for why very recent productivity growth looks weak. I think the message is to not get hung up on year-to-year productivity growth rates.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Oct 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>

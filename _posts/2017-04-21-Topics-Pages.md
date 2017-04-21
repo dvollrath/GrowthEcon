@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Topics in Economic Growth
-published: false
+published: true
 category: feed
 ---
 
@@ -11,12 +11,16 @@ This was an exercise in intellectual housecleaning, and a way to organize some m
 
 Right now, the topics include
 
-1. [Are we rich?](http://localhost:4000/blog/Are-We-Rich/)
-2. [Can you reform your way to higher growth?](http://localhost:4000/blog/Converge-Reform/)
-3. [Does growth depend on competition?](http://localhost:4000/blog/Comp-Assumptions/)
-4. [Does economic growth mean economic development?](http://localhost:4000/blog/Dev-Growth/)
-5. [Productivity slowdown](http://localhost:4000/blog/Productivity-Slowdown/)
-6. [Is manufacturing special?](http://localhost:4000/blog/Manuf-Special/)
-7. [Robots and jobs](http://localhost:4000/blog/Robots-Jobs/)
-8. [Deep determinants of development](http://localhost:4000/blog/Inst-Geography/)
-9. [Does economic growth harm the environment?](http://localhost:4000/blog/Growth-Nature/)
+1. [Are we rich?](https://growthecon.com/blog/Are-We-Rich/)
+2. [Can you reform your way to higher growth?](https://growthecon.com/blog/Converge-Reform/)
+3. [Does growth depend on competition?](https://growthecon.com/blog/Comp-Assumptions/)
+4. [Does economic growth mean economic development?](https://growthecon.com/blog/Dev-Growth/)
+5. [Productivity slowdown](https://growthecon.com/blog/Productivity-Slowdown/)
+6. [Is manufacturing special?](https://growthecon.com/blog/Manuf-Special/)
+7. [Robots and jobs](https://growthecon.com/blog/Robots-Jobs/)
+8. [Deep determinants of development](https://growthecon.com/blog/Inst-Geography/)
+9. [Does economic growth harm the environment?](https://growthecon.com/blog/Growth-Nature/)
+
+It's a decent start, and there may be a few more topics to show up. The first job is probably to split the topic on productivity slowdown into separate pieces, maybe just on measuring TFP, and then on the Baumol effects.
+
+Enjoy!
