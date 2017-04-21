@@ -3,6 +3,7 @@ layout: post
 title: Absolute Changes in Living Standards
 published: true
 category: feed
+tags: rich
 ---
 
 This may or may not be interesting, I'm not entirely sure myself. But I got a question from an undergrad in my economic growth course, and it was one of those questions that kind of catches you off guard because you hadn't really thought about it. The question was - paraphrasing - "Why do we look at growth rates rather than how much GDP per capita actually changed?".

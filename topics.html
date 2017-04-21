@@ -1,0 +1,22 @@
+---
+layout: page
+title: Topics
+permalink: /topics/
+---
+
+The following pages are collections of posts from this blog, external links, and academic papers that are related by some common theme. The materials are not intended to be exhaustive, and will evolve over time as I add more references and links.
+
+<div class="posts">
+<ul>
+  {% for post in site.categories.topic %}
+    {% if post.url %}
+        <li>
+         <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+          </a>
+        </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>
+

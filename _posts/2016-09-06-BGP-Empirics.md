@@ -3,6 +3,7 @@ layout: post
 title: Is there evidence of balanced growth?
 published: true
 category: feed
+tags: converge
 ---
 
 I had the pleasure of attending the [DEGIT](https://www.nottingham.ac.uk/gep/documents/conferences/2015-16/degit/degit-programme.pdf) conference in Nottingham, UK last week. One of the plenary speakers was Gene Grossman, who talked about a [paper](http://scholar.harvard.edu/files/helpman/files/balanced_growth_despite_uzawa_110815gg.pdf) he is working on with Elhanan Helpman, Ezra Oberfield, and Thomas Sampson. The paper is about "balanced growth". I spent a good portion of the flight home thinking about the questions they posed, and ended up generating what will probably be two long posts on the subject. This first one was drafted in large part on that flight, having not slept the night before, so bear with me if I ramble a little.

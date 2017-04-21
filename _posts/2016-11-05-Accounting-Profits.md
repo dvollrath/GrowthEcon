@@ -3,6 +3,7 @@ layout: post
 title: GDP, Productivity, and Financial Performance
 published: true
 category: feed
+tags: rich
 ---
 
 In my last [post](https://growthecon.com/blog/Manufacturing/), I got upset because people were using measures of productivity as measures of firm or industry financial performance. And as part of that, I made the point that GDP (which is part of measuring productivity) has nothing to do with profits, or financial success in any way. A few people asked me about this, because it wasn't obvious to them.

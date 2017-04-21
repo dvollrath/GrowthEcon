@@ -3,6 +3,7 @@ layout: post
 title: More on Decomposing US Productivity Growth
 published: true
 category: feed
+tags: prod
 ---
 
 Tables, tables, tables. There are going to be lots of tables today. My last [post](https://growthecon.com/blog/Decomposition/) was about the decomposition of aggregate productivity growth into different components. "Within" growth occurs because labor productivity within sectors is growing. "Across" growth occurs because workers move from one sector to another. For the US recently, this "across" growth has been negative, meaning that people are shifting from high to low productivity sectors. Finally, there is "covariance" growth, which captures whether workers are moving into (or out of) sectors that have high productivity *growth*. This tends to be negative, meaning that workers are tending to move to sectors with low productivity growth. 

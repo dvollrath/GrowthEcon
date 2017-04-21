@@ -5,4 +5,4 @@ published: true
 category: bibliography
 ---
 
-{% bibliography -q @*[keywords ~= inst] %}
+{% bibliography -q @article[keywords ~= inst] %}

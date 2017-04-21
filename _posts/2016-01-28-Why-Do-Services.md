@@ -3,6 +3,7 @@ layout: post
 title: Why Do Services Slow Productivity Growth?
 published: false
 category: feed
+tags: prod
 ---
 
 Let's say I have preferences over beer and yoga classes. My reaction to productivity growth depends on my exact preferences over these two things. 

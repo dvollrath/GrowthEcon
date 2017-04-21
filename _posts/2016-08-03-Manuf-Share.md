@@ -3,6 +3,7 @@ layout: post
 title: Did Real Manufacturing Output Grow Faster than We Thought?
 published: true
 category: feed
+tags: manuf
 ---
 
 Writing this post was kind of depressing, because all it did was highlight for me how *many* things I've got in my reading list to think about and digest. I was reading Brad DeLong's recent [post](http://equitablegrowth.org/equitablog/expenditure-shares-price-measurement-and-true-relative-labor-productivity-growth-in-post-wwii-manufacturing-what-the-aggregate-deta-suggest/) on manufacturing's share in output, and realized that I've got about four more posts from Brad stacked up in the queue, along with all the other stuff I've been meaning to read more carefully. So, respectfully, Brad, please stop saying interesting things related to growth. I need time to catch up. How about a nice run of posts about the history of monetary policy or something like that? 

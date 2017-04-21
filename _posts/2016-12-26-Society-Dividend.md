@@ -3,7 +3,7 @@ layout: post
 title: The returns to societal capital
 published: true
 category: feed
-tags: #post
+tags: 
 ---
 
 Brad DeLong had a [recent post](http://equitablegrowth.org/equitablog/regional-policy-and-distributional-policy-in-a-world-where-people-want-to-ignore-the-value-and-contribution-of-knowledge-and-network-based-increasing-returns/) that contained a number of ideas regarding how we view redistribution in a market economy. I picked up on some comments he made towards the end of that post, in which he points out that much of our prosperity comes from a stock of societal capital that we unknowingly rely on every day. And because that societal capital is unseen and uncompensated, we are all in some way overpaid for what we do. 
