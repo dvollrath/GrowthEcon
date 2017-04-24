@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep Determinants of Development
+title: Why isn't every country rich?
 published: true
 category: topic
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Does Economic Growth Harm the Environment?
+title: Does economic growth harm the environment?
 published: true
 category: topic
 ---

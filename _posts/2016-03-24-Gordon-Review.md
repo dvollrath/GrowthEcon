@@ -3,7 +3,7 @@ layout: post
 title: Reviewing the Rise and Fall of American Growth
 published: true
 category: feed
-tags: prod
+tags: innov
 ---
 
 I finished reading Robert Gordon's [The Rise and Fall of American Growth](http://amzn.to/1Sb860J) a while ago, but finally found the time to write down an extended review. I'm way behind the curve. [Tyler Cowen](https://www.foreignaffairs.com/reviews/review-essay/2016-02-15/innovation-over) has an excellent review, and [Ryan Decker](https://twitter.com/UpdatedPriors) sort of live-tweeted his way through the book recently.
