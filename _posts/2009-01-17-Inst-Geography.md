@@ -28,4 +28,4 @@ There are two big questions floating around here. First, are countries (or popul
 
 ### Academic References
 
-{% bibliography -q @article[keywords ~= deep] @book[keywords ~= deep] @techreport[keywords ~= deep] -max 50 %}
+{% bibliography -q @article[keywords ~= deep] @book[keywords ~= deep] %}

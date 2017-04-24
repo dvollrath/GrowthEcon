@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Does Growth Require Competition?
+title: Does growth require competition?
 published: true
 category: topic
 ---

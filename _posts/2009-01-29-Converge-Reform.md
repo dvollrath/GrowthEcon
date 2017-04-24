@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Can You Reform Your Way to Higher Growth?
+title: Can you reform your way to higher growth?
 published: true
 category: topic
 ---

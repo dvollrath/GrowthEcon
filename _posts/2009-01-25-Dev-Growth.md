@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Does Economic Growth Mean Economic Development?
+title: Does economic growth mean cconomic development?
 published: true
 category: topic
 ---

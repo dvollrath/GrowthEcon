@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Is Manufacturing Special?
+title: Is manufacturing special?
 published: true
 category: topic
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Are We Rich?
+title: Are we rich?
 published: true
 category: topic
 ---
