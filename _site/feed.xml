@@ -5,7 +5,68 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description>Dietrich Vollrath Economic Growth Blog</description>
-    <pubDate>Tue, 02 May 2017 10:04:59 -0500</pubDate>
+    <pubDate>Tue, 02 May 2017 16:15:10 -0500</pubDate>
+    
+      <item>
+        <title>Sigh....No, tax cuts won&#39;t boost growth</title>
+        <link>https://growthecon.com/blog/Taxes-Growth/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Taxes-Growth/</guid>
+        <description>&lt;p&gt;I guess we need to go over this again. No, cuts to corporate tax rates and/or the reforms/cuts proposed on individual income taxes will not boost economic growth in any appreciable way. Not to 4%, nor 4.5%, nor 5%. There is no evidence supporting this claim. And even theoretically, there is no reason to believe that these tax reforms/cuts can boost growth to those rates.&lt;/p&gt;
+
+&lt;h3 id=&quot;prima-facie-evidence&quot;&gt;Prima Facie Evidence&lt;/h3&gt;
+&lt;p&gt;Start with a simple smell test. The figure below plots two series: the backward-looking 5-year average growth rate of real GDP and the forward-looking 5-year growth rate of real GDP. For example, in 1981, the backward looking series is the average growth rate of real GDP from 1976-1981, and the forward looking series is the average growth rate of real GDP from 1981-1986. For any given year on the graph, we can compare the growth rate people had experienced in the recent past (backward looking) to what they would experience in the near future (forward looking).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_growth_tax.png&quot; alt=&quot;Growth and Taxes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Also on the figure are red lines indicating when significant tax legislation was passed, and whether it was considered a tax cut, or a tax increase. 1981 and 1986 are the “Reagan tax cuts”, 1990 is the Bush tax increase, 1993 is the Clinton budget agreement that raised top tax rates, 2001 and 2003 are the younger Bush tax cuts, and included the 2012 “fiscal cliff” agreement under Obama that raised taxes on those earning over 400,000 per year.&lt;/p&gt;
+
+&lt;p&gt;What you can look at is whether the forward-looking growth rate differed appreciably from the backward-looking one. If the argument about tax cuts stimulating growth is correct, then you’d expect to see that the forward-looking rate exceeds the backward-looking rate. In 1981, this looks true. Growth from 1981-1986 was about 3.5% per year, versus 2.8\% per year in 1976-1981. But examining the other tax cuts, you’ll see the opposite is true. In 1986, growth was slower &lt;em&gt;after&lt;/em&gt; the tax cut than before. In 2001 and 2003, growth is lower &lt;em&gt;after&lt;/em&gt; the tax cut than before. For the 2003 cut, the difference is very striking because of the onset of the financial crisis.&lt;/p&gt;
+
+&lt;p&gt;In contrast, look at the three tax increases. For Bush (the elder) in 1990, there was essentially no difference in the forward and backward growth rate. For the 1993 increase, growth was &lt;em&gt;much&lt;/em&gt; higher after the tax increase than before, and for the 2012 increase we’d need to get data through the end of 2017 to make the same comparison. But for what it is worth, growth in the four years from 2012-2016 has been a shade over 2%, meaning it is much higher than the five years prior to the tax increase.&lt;/p&gt;
+
+&lt;p&gt;You cannot take this as any kind of definitive proof of anything, of course. Tax cuts &lt;em&gt;may&lt;/em&gt; boost growth, but each time we passed a tax cut it just so happens that some other big negative shock hit the economy at the same time, masking those positive effects. That’s … possible. The more likely answer is just that substantial tax cuts have small effects on economic growth. On the other side, the last time we averaged 4% growth over a 5-year period was the late 1990’s, right after the tax increase of 1993.&lt;/p&gt;
+
+&lt;p&gt;Aside from the smell test, this isn’t a new question, and people have picked around at the relationship of tax rates and growth rates before. I reviewed a few studies in an &lt;a href=&quot;https://growthecon.com/blog/taxes-and-growth/&quot;&gt;early post&lt;/a&gt; here on the blog. Short answer, there is no relationship of the tax rate to the growth.&lt;/p&gt;
+
+&lt;p&gt;Taking this same question on from a narrower pespective, Menzie Chinn has a recurring series of posts tracking Kansas’ economic growth and employment since Brownback became governor and signed off on a massive tax cut. The short version of these posts is that employment and growth in Kansas has stagnated and/or outright fell since the cut. There are several similarities between the Kansas cut and the one proposed by the current administration. Most notably, lowering the tax rate on “pass-through” income from partnerships and proprietorships.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://econbrowser.com/archives/2017/04/kansas-employment-rises-to-0-3-below-previous-peak&quot;&gt;Kansas employment rises to 0.3% below peak&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://econbrowser.com/archives/2017/03/kansas-employment-decline-continues-2&quot;&gt;Kansas employment decline continues (part 2)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://econbrowser.com/archives/2016/12/trends-in-kansas-gdp&quot;&gt;Trends in Kansas GDP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://econbrowser.com/archives/2016/12/kansas-employment-decline-continues&quot;&gt;Kansas employment decline continues&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://econbrowser.com/archives/2016/10/the-kansas-economy-three-pictures&quot;&gt;The Kansas economy: three pictures&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://econbrowser.com/archives/2016/10/more-on-the-kansas-employment-collapse&quot;&gt;More on the Kansas employment collapse&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The lower tax rate on pass-through income was supposed to generate a burst of growth in Kansas. The TL;DR version of Menzie’s posts is that it hasn’t happened, which you can probably tell from the post titles.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-dont-tax-cuts-boost-growth-by-much&quot;&gt;Why don’t tax cuts boost growth by much?&lt;/h3&gt;
+&lt;p&gt;Ok, the evidence doesn’t support the idea that tax cuts boost growth, but at least &lt;em&gt;theoretically&lt;/em&gt; it’s true, right? Kinda sorta. Smarter people than I have tried to estimate how sensitive people’s work efforts are to income tax rates, and &lt;a href=&quot;https://eml.berkeley.edu/~saez/saez-slemrod-giertzJEL12.pdf&quot;&gt;they find&lt;/a&gt; very, very small effects. The main effect of changes in tax rates and/or reforms is that people with the means to do so shift the legal definition of their income (e.g. from personal income to profits at a proprietorship). The effect on hours worked is very small, and that is the margin we’d care about if we want to study economic growth. From the corporate side, there isn’t &lt;a href=&quot;https://eml.berkeley.edu/~yagan/DividendTax.pdf&quot;&gt;any evidence&lt;/a&gt; that the 2003 dividend tax cut had any effect on corporate investment, or on labor earnings. Rather, the dividend tax cut generated a substantial amount of payouts to existing shareholders.&lt;/p&gt;
+
+&lt;p&gt;But let’s say that these guys are all wrong, and &lt;em&gt;this&lt;/em&gt; tax reform/cut proposed by the current administration is * different&lt;em&gt;. For realsies, it is going to incent lots of firms to invest more, employ more people, and stimulate the economy. *That&lt;/em&gt; is going to boost growth to 4%, or maybe more, right?&lt;/p&gt;
+
+&lt;p&gt;Wrong. The issue is that the effects of any tax cut are going to take time to manifest themselves. In particular, corporate tax cuts that have the stated purpose of raising investment will need years or &lt;em&gt;decades&lt;/em&gt; to manifest themselves in higher GDP, assuming that the savings are actually used for investment spending.&lt;/p&gt;
+
+&lt;p&gt;I’ve been over this before on this blog, and now that I have my handy Topics pages, you can go see all the gory details &lt;a href=&quot;https://growthecon.com/blog/Converge-Reform/&quot;&gt;here&lt;/a&gt;. The short story is that tax cuts/reforms change &lt;em&gt;potential&lt;/em&gt; GDP (possibly), and it takes a long time for us to converge from today’s GDP to that potential GDP. The analogy is to think of GDP like your weight. If you cut “taxes” on your weight by exercising less, then you will gain weight. But not all at once. It will take months or years to reach your new potential, heavier, weight. The same thing happens with GDP.&lt;/p&gt;
+
+&lt;p&gt;Even if you think the effects of these tax cuts on potential GDP are massive, which is unlikely, you can’t generate significant changes in growth rates. There are several posts on the Topics page that do this, but let me repeat the basic calculation. Real GDP in the US is just about 17 trillion (2009 chained) dollars as of Q1 2017. A generous estimate of the current growth rate of real GDP would be about 2.5% per year, without the tax cuts. Now, let’s say the proposed corporate and individual tax cuts/reforms raised &lt;em&gt;potential&lt;/em&gt; GDP to something like 18 trillion dollars. In other words, what if there was 1 trillion in extra economic activity that was not taking place because a bunch of people have John Galt-ed themselves out of investing or working due to the current tax system?&lt;/p&gt;
+
+&lt;p&gt;How much faster would growth in real GDP be after the proposed tax cuts/reforms? To figure this out we need one extra piece of information, the convergence rate. This rate is the percent of the gap between current GDP and potential GDP that closes every year, and it is commonly estimated to be about 2%. In the weight example, if your current weight was 150 pounds, and your potential weight is 300 pounds thanks to your cut in exercise, then this 2% convergence rate says that in the first year, you will gain .02&lt;em&gt;(300-150) = 3 pounds. And next year, you’ll gain .02&lt;/em&gt;(300-153) = 2.94 pounds. And so on.&lt;/p&gt;
+
+&lt;p&gt;We can do the same calculation for GDP, and figure out the growth rate of GDP implied by this convergence. Current GDP is 17 trillion, and potential GDP is 18 trillion, so the economy should add an extra .02&lt;em&gt;(18-17) = .02 trillion, or about 20 billion in economic activity. Now, remember, GDP was going to grow at 2.5% anyway without the tax cut. So GDP next year was going to be 1.025&lt;/em&gt;17 = 17.425 trillion. Add the extra 20 billion on top of that, to get 17.445 trillion in economic activity next year. So overall growth in GDP would be 17.445/17 - 1 = .0262, or 2.62%.&lt;/p&gt;
+
+&lt;p&gt;That’s …. not 4%. Or really anywhere close. It is hard to move the growth rate of GDP, in the same way that it is hard to change the heading of an oil tanker. But maybe I’m just being pessimistic. So let’s play around with some numbers. What if the convergence rate is 4% per year? Then growth would be 2.73% next year. What if the convergence rate is 10%? 3.09% growth. Which is still not 4% per year, and there is no evidence that the convergence rate is 10%.&lt;/p&gt;
+
+&lt;p&gt;Perhaps you’re worried I’m underselling the effects of the tax cut itself. So let’s say that the proposed reforms raise the potential GDP of the US to 19 trillion - which is ridiculous by the way - but whatever. With a 2% convergence rate, that would lead to a growth rate of … 2.73%. How about potential GDP of 20 trillion, meaning that tax rates &lt;em&gt;alone&lt;/em&gt; are keeping GDP &lt;em&gt;three trillion&lt;/em&gt; under where it could. Then growth might hit … 2.85%.&lt;/p&gt;
+
+&lt;p&gt;The fundamental issue here is that it takes time for all that pent-up investment (if it exists) to manifest itself. Firms cannot expand production overnight. It takes time to generate the plans for a new location, or plant, or product. And this all assumes, contrary to the available evidence, that there are substantial effects of tax cuts or reforms on the willingness of firms to invest and/or people to work.&lt;/p&gt;
+
+&lt;p&gt;There is no magic elixir of tax rules that will generate 4% growth. You don’t need to see anything more than the one-page outline put out by the current administration to get to this conclusion. Filling in the details will not change the fact that their plan, if passed, will have no appreciable effect on economic growth in the next few years.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 02 May 2017 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Topics in Economic Growth</title>
@@ -788,92 +849,6 @@
 &lt;p&gt;Which is why productivity measures like multi-factor productivity (MFP) or labor productivity are &lt;em&gt;not&lt;/em&gt; measures of firm health, success, or financial performance. These measures take GDP (in aggregate, or at the industry level) and divide it by numbers of inputs used. As GDP is not a measure of firm financial success, productivity cannot be a measure of firm financial success either.&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Nov 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Productivity measures productivity ... that&#39;s it</title>
-        <link>https://growthecon.com/blog/Manufacturing/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Manufacturing/</guid>
-        <description>&lt;p&gt;Justin Fox at Bloomberg put up a few articles (&lt;a href=&quot;https://www.bloomberg.com/view/articles/2016-10-19/no-u-s-manufacturing-isn-t-really-booming&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://www.bloomberg.com/view/articles/2016-10-26/manufacturing-s-productivity-myth&quot;&gt;here&lt;/a&gt;) recently digging into trends in productivity in the US manufacturing sector. The overarching theme of the two articles is that claims regarding the success of the manufacturing sector in the US (he cites Binyamin Applebaum’s &lt;a href=&quot;http://mobile.nytimes.com/2016/10/09/magazine/why-are-politicians-so-obsessed-with-manufacturing.html?referer=https://t.co/vEnqUjWznf&quot;&gt;article&lt;/a&gt; specifically) are overstated. Fox’s first article is titled “No, U.S. Manufacturing isn’t Really Booming”.&lt;/p&gt;
-
-&lt;p&gt;I’m not going to tell you that manufacturing &lt;em&gt;is&lt;/em&gt; booming. I’m also not going to tell you that Fox is right about it &lt;em&gt;not&lt;/em&gt; booming. I am going to tell you that making claims about the business or financial success of manufacturing based on things like multi-factor productivity (MFP) or labor productivity, as Fox does, is using these measures incorrectly. The “health” or “success” or “boominess” of manfucturing are not things one can infer from productivity statistics.&lt;/p&gt;
-
-&lt;p&gt;I’ll pick on Fox’s articles here because they were recent, not because he’s done something especially egregious. They are two of many examples of how measures like MFP and labor productivity get misused to make points about financial or business performance.&lt;/p&gt;
-
-&lt;p&gt;The message is that you all need to just let productivity &lt;em&gt;be&lt;/em&gt; productivity, you know?&lt;/p&gt;
-
-&lt;h3 id=&quot;mfp-is-about-value-added-not-numbers-of-goods&quot;&gt;MFP is about value-added, not numbers of goods&lt;/h3&gt;
-&lt;p&gt;Fox takes issue with the measures of manufacuring multi-factor productivity because they involve quality adjustments made the BLS.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… the numbers are skewed by huge gains in real output in computer and electronics manufacturing that mainly reflect quality adjustments made by government statisticians, not increases in real-world sales.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;There are couple of problems with this. One reflects some ambiguity. When Fox says “increase in real-world sales”, is he asking for a measure of business performance? I think, although I’m not sure, he means “increases in the number of physical &lt;em&gt;things&lt;/em&gt; shipped”. And if he means increases in the number of physical things, then this is precisely &lt;em&gt;why&lt;/em&gt; the BLS makes these quality adjustments.&lt;/p&gt;
-
-&lt;p&gt;Multi-factor productivity is simply a ratio of value-added to an index of inputs. Value-added in the manufacturing sector is a mesure of the economic value of all the goods produced. Not the physical number, the economic value. And hence manufacturing MFP is a measure of how much economic value that sector produces - not the physical number of goods - per unit of input used. I know this paragraph was redundant, but it is crucial to keep the distinction between value-added and the actual number of things clear.&lt;/p&gt;
-
-&lt;p&gt;If all we were doing was counting units, then no quality adjustments would be necessary. But we are trying to measure value-added, so they are. You cannot just add the 50 or so million iPhone 7’s that will be sold this quarter to the 20 million or so iPhone 6’s that will be sold to get 70 million phones. That ignores the fact that these items are different goods. And this problem gets exacerbated when I try to compare value-added over time. How do I compare the 50 million iPhone 7’s to the 5 million IBM PC’s produced in 1986? The BLS makes these adjustments to try and make the measure of value-added - and hence the measure of MFP - comparable over time.&lt;/p&gt;
-
-&lt;p&gt;You could quibble with their exact method - I think an iPhone 7 is roughly equivalent to 400 IBM PC’s, but the BLS thinks it’s equivalent to 500 - but without these quality adjustments, MFP would be uniquely scaled in each year. It would be impossible to compare MFP in 2016 to MFP in 2015, and hence to know if it grew or not. While imperfect, you can’t skip the quality adjustment if you want to make any comparisons over time.&lt;/p&gt;
-
-&lt;p&gt;The other sectors are not “more real” than computer equipment because they have smaller adjustment factors. You could easily argue that the &lt;em&gt;other&lt;/em&gt; sectors are “less real” because they have improper quality adjustments. The BLS could be missing all the wonderful innovations we’ve made in refrigerator construction, for example, and understating MFP growth in that sub-sector.&lt;/p&gt;
-
-&lt;p&gt;Ignoring computer equipment in MFP does not give you a better read on what is “really happening” in the manufacturing sector. MFP is what is really happening to …. MFP. If you mean “are manufacturing firms profitable or successful or expanding or exporting”, then you mean something different than MFP.&lt;/p&gt;
-
-&lt;h3 id=&quot;mfp-has-nothing-to-do-with-corporate-accounting&quot;&gt;MFP has nothing to do with corporate accounting&lt;/h3&gt;
-&lt;p&gt;The prior section hints at how people make the mistake of evaluating the economy as if it were a business. The following quote shows what I mean.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… but the adjustments do raise questions about what exactly the productivity numbers signify. They don’t necessarily mean, for example, that computer and electronics manufacturers in the U.S. are actually growing, or succeeding in international competition.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;No, they don’t. They’re not intended to. MFP is not a measure of whether firms or industries are “succeeding”, in any corporate or financial sense of that word. MFP is a measure of how much value-added the manufacturing sector produced for a given set of inputs. That’s it.&lt;/p&gt;
-
-&lt;p&gt;Value-added is not profits, in any financial accounting sense. The &lt;em&gt;closest&lt;/em&gt; you can get to an analog in financial accounts is to take revenues minus cost of goods sold. And revenues minus cost of goods sold is &lt;em&gt;not&lt;/em&gt; profits. Why? Because the firm still has to pay wages, interest costs, taxes, and dividends, among other things. So firms could easily be losing money, either in the sense of having negative net profits or a negative cash flow, even though their value-added is positive. Or maybe they are making money, and then good for them. But it is &lt;em&gt;irrelevant&lt;/em&gt; to MFP whether the firms are making money or not. MFP and firm or industry “success” are fundemantally different things. One implies nothing about the other.&lt;/p&gt;
-
-&lt;p&gt;To get back to the prior section, the BLS is not trying to produce a quality adjustment so that their numbers reflect the financial accounting position of manufacturing firms. They are producing a quality adjustment so that MFP reflects a measure of how much value-added we get per unit of inputs. If their MFP number doesn’t mesh with your intuition or knowledge of the financial position of manufacturing as a sector, then … so? It’s not intended to.&lt;/p&gt;
-
-&lt;h3 id=&quot;mfp-is-not-about-competitiveness&quot;&gt;MFP is not about competitiveness&lt;/h3&gt;
-&lt;p&gt;Fox quotes Michael Mandel, of the Progressive Policy Institute, on why one should pay attention to MFP as opposed to labor productivity,&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Because it includes a wider scope of inputs and costs, multifactor productivity is a better indicator of how innovative and competitive an industry really is.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;No, it’s not. It has precisely zero to do with how competitive an industry is. First of all, “competitive” is a word devoid of meaning. “Competitive” could mean “cheap”, like textile firms in Southeast Asia, which have lower MFP than US firms. “Competitive” could mean “very low profits can be made” because entry of competitors is easy, like gas stations or coffee shops. That has nothing to do with whether MFP is high is low in those industries. “Competitive” could mean “produces a product that has an export market”, but that could just mean that the industry holds patents or other IP that makes it hard for others to replicate their product. And having intellectual property rights over a product doesn’t mean your MFP is large or small.&lt;/p&gt;
-
-&lt;p&gt;What Mandel probably means is “profitable” or “growing in revenues”, but I don’t know for sure. If his meaning is along those lines, then MFP doesn’t tell us anything about that, for the reasons I outline in the prior section. MFP is not a measure of profitability or market size.&lt;/p&gt;
-
-&lt;p&gt;It also isn’t a measure of how innovative an industry is, because as I’ve mentioned before on this blog, MFP is not a pure measure of technology or innovation. MFP is a garbage dump for everything we don’t know how to measure, including technology. So MFP can be stagnant even if an industry is innovative, or vice versa. If there is any imperfect competition in the industry so that markups exist, then MFP is affected by the growth rate of labor and capital, and the direction of this effect is indeterminate without knowing more about input growth. If there are re-allocations of inputs across firms within industries, then this influences MFP, and again the effect is indeterminate until you know which firm is shedding inputs and which one is gaining them.&lt;/p&gt;
-
-&lt;h3 id=&quot;mfp-is-a-ratio-not-a-story&quot;&gt;MFP is a ratio, not a story&lt;/h3&gt;
-&lt;p&gt;Because they are ratios, both MFP and labor productivity can rise because the numerator (value added) rises or because the denominator (all inputs or just labor) falls. It doesn’t matter which one moves.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;On the whole, the U.S. manufacturing sector does not appear to have been a hotbed of innovation and productivity gains in recent years. It has gotten by with fewer workers, but in many cases that seems to have been more about managing decline through layoffs and plant shutdowns than boldly leaping into the automated future.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As we’ve learned, you cannot say anything about “innovation” from looking at MFP. But this is accurate that manufacturing has not been a hotbed of MFP or labor productivity growth in recent years. But then there are a couple things to unpack in the last sentence of this quote.&lt;/p&gt;
-
-&lt;p&gt;If MFP is stagnant but the manufacturing sector has shed workers, then this means either value added in manufacturing has fallen (it has not) or the other inputs like capital have risen (they must have). This indicates that labor productivity, value-added divided by number of workers only, must be rising.&lt;/p&gt;
-
-&lt;p&gt;But that’s it. We’re done. It is irrelevant to MFP or labor productivity what the story is behind the decline in labor and the increase in capital. The fact that you cannot attribute the decline of labor to lasers or robots or AI or hologram technology doesn’t change the fact that labor use declined, labor productivity went up, and MFP stayed stagnant. Closing a plant reduces labor in manufacturing, and if value-added doesn’t fall by enough, labor productivity in manufacturing just went up. It’s irrelevant for productivity that this is layoffs or shutdowns versus automated whatever.&lt;/p&gt;
-
-&lt;p&gt;Just let productivity be productivity. It measures value-added - not profits, not sales, not cash flow - relative to inputs, and therefore tells us how effectively the economy - not businesses - turns inputs into value-added. Slower MFP growth means slower MFP growth, not anything about competitiveness or the future business success/failure of US manufacturing. Heck, it doesn’t even tell us anything about the &lt;em&gt;past&lt;/em&gt; business success or failures of US manufacturing.&lt;/p&gt;
-
-&lt;h3 id=&quot;coda-manufacturing-is-a-relatively-small-sector&quot;&gt;Coda: Manufacturing is a relatively small sector&lt;/h3&gt;
-&lt;p&gt;This last point isn’t directly related to the main post, but I like to harp on this, and its my blog, so you’re kind of stuck with it. Manufacturing represents a small slice of economic activity in the United States. And there is no reason why we should be particularly worried or concerned with productivity in this sector relative to other sectors, many of which employ more people and are responsible for larger portions of value-added.&lt;/p&gt;
-
-&lt;p&gt;Manufacturing used about 9% of the hours worked in the US in 2015 (all numbers from the BLS). That makes it about as important, in employment terms, to retail (10%) and the recreation, accommodation, food service sector (9%). It employs less than education and health (15%), government (15%), and profession and business services (14%). But no one seems to write articles worrying about the MFP numbers in any of those other sectors.&lt;/p&gt;
-
-&lt;p&gt;Drilling down, durable goods manufaturing - like, you know, “real” economic output - employed about 6% of hours worked in 2015. That means it is as large as … administrative and waste services (6%) and profession and scientific services (6%), and slightly ahead of the “other retail” sector (5%) and construction (5%). It’s behind accomodation and food (8%) and state and local government (12%). The vast majority of hours, and workers, are employed doing anything &lt;em&gt;except&lt;/em&gt; putting together durable goods.&lt;/p&gt;
-
-&lt;p&gt;In terms of value-added, manufacturing accounts for about 11% of the aggregate, comparable to profession and business services (13%) and government (12%), and well less than finance and real estate (20%).&lt;/p&gt;
-
-&lt;p&gt;Manufacturing is not the dominant origin of employment or value-added. Which means that any action in labor productivity or MFP in manufacturing has a small effect on aggregate labor productivity of MFP. For labor productivity, you’d use the share of hours worked to weight manufacturing, and for MFP, you’d use the share of value-added. So as a rule of thumb, the reported change in manufacturing only counts for about 1/10 of that in the aggregate. Labor productivity rises by 3% in manufacturing? Then this adds about 0.3% to aggregate labor productivity. Manufacturing MFP falls by 1%? Then aggregate MFP falls by about 0.1%. There is nothing magic or special about manufacturing that priviledges its hours or value-added above other sectors in the aggregate calculations. It’s a relatively small part of the pie.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 27 Oct 2016 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
