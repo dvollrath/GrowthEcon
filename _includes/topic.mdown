@@ -1,0 +1,22 @@
+### Blog Posts
+<div class="posts">
+<ul>
+  {% for post in site.tags.pass %}
+    {% if post.url %}
+        <li>
+         <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.date | date_to_string }} &nbsp; {{ post.title }}
+          </a>
+        </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>
+
+### External Links
+
+{% bibliography -q @url[keywords ~= pass] %}
+
+### Academic References
+
+{% bibliography -q @article[keywords ~= pass] @book[keywords ~= pass] @techreport[keywords ~= pass] -max 50 %}
