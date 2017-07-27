@@ -4,11 +4,38 @@ title: Research
 permalink: /research/
 ---
 
-<h2>Working Papers</h2>
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Research</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-{% bibliography -q @unpublished[keywords ~= me] %}
-
-<h2>Published Articles</h2>
-
-{% bibliography -q @article[keywords ~= me] --group_by year --group_order descending %}
-
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>Working Papers</h2>
+          </div>
+          <p>
+          {% bibliography -q @unpublished[keywords ~= me] %}
+          </p>
+          <div class="section-title">
+            <h2>Published Work</h2>
+          </div>
+          <p>
+          {% bibliography -q @article[keywords ~= me] --group_by year --group_order descending %}
+          </p>
+       </div>
+      </div><!-- .col-md-7 close -->
+    </div>
+  </div>
+</section>

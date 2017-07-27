@@ -4,21 +4,45 @@ title: References
 permalink: /references/
 ---
 
-What follows are links to separate "reading lists" of articles and books by broad topic. Sources will duplicate across lists if appropriate. There are BibTex records for each paper, abstracts when available, and links to Repec or direct downloads if I have them.
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>References</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-I make no claim that these lists are comprehensive. I know for sure that I am missing important references, but these lists represent the latest state of my BibTeX file. If you want the whole file, you can download it <a href="/assets/growthbib.bib">here</a>.
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="section-title">
+          </div>
+          <p>What follows are links to separate "reading lists" of articles and books by broad topic. Sources will duplicate across lists if appropriate. There are BibTex records for each paper, abstracts when available, and links to Repec or direct downloads if I have them.</p>
 
-<div class="posts">
-<ul>
-  {% for post in site.categories.bibliography %}
-    {% if post.url %}
-        <li>
-         <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-          </a>
-        </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-</div>
+        <p> I make no claim that these lists are comprehensive. I know for sure that I am missing important references, but these lists represent the latest state of my BibTeX file. If you want the whole file, you can download it <a href="/assets/growthbib.bib">here</a>.</p>
 
+        <p>
+        <ul>
+          {% for post in site.categories.bibliography %}
+            {% if post.url %}
+                <li>
+                 <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    {{ post.title }}
+                  </a>
+                </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        </p>
+        </div>
+      </div><!-- .col-md-7 close -->
+    </div>
+  </div>
+</section>

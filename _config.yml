@@ -1,90 +1,35 @@
-# SITE CONFIGURATION
-baseurl: "" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+# Site settings
+title: "Dietrich Vollrath"
+subtitle: "Growth Economics Blog"
 url: "https://growthecon.com" # the base hostname & protocol for your site
+baseurl: ""
+cover: "/img/slider-bg.jpg"
+logo: "/img/logo.png"
 enforce_ssl: growthecon.com
-#imageurl: "https://dl.dropboxusercontent.com/u/6823742/map_lights.jpg" #"https://unsplash.it/2600/500?random"
-imageurl: "/assets/map_lights.jpg" #"https://unsplash.it/2600/500?random"
-timezone: America/Chicago
 
-# Dropbox public link
-# dropbox: https://dl.dropboxusercontent.com/u/6823742
-dropbox: /assets
+# Build settings
+markdown: kramdown
+highlighter: pygments
 
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: Dietrich Vollrath
-  feedtitle: Growth Economics Blog
-  #avatar: avatar.png
-  hometitle: Home #display on navigation menu.
-  yoursitetitle: Dietrich Vollrath
-  gravatar: # Email MD5 hash
-  description: "Dietrich Vollrath Economic Growth Blog" # used by search engines
-  visiblewords: 200
-  # Header and footer text
-  header_text: > 
-     
+# Tracking ID's
+google_analytics: "UA-72839737-1"
+disqus_shortname: growthecon
 
-  header_text_feature_image: img/sample_feature_img.png
-  place_holder_image: img/sample_feature_img.png
-  footer_text: >
-   <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
-
-  # Icons
-  rss: true
-  email_address: "dietz.vollrath@gmail.com" # Full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github: "dvollrath"
-  weibo: 
-  google_plus:
-  instagram:
-  linkedin:  # Full URL
-  pinterest: 
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: "DietzVollrath"
-  wordpress:
-  youtube:
-
-  # Scripts
-  google_analytics: UA-72839737-1
-  disqus_shortname: growthecon
-  katex: false # Enable if using math markup
-
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  #str_next: "Next"
-  #str_prev: "Prev"
-  str_continue_reading: "Continue Reading..."
-
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: true
-
-# PAGINATION
-enforce_ssl: "dvollrath.github.io"
-paginate: 3
-paginate_path: "blog/page:num"
-permalink: blog/:title/ 
-
-# Posted in ... with ...
-sechby: 
-  category:   #in
-  tag:   #with
-
-# Jekyll Scholar SETTINGS
+# Jekyll Scholar settings
 scholar:
   style: harvard-cite-them-right #chicago-author-date
   sort_by: author, year
@@ -93,14 +38,14 @@ scholar:
   bibtex_filters: 
     - latex
     - dietz
-  bibliography_list_tag: ul
+  bibliography_list_tag: ol
   bibliography_template: bib
 
-# BUILD SETTINGS
-markdown: kramdown
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: :compressed
-
+# Pagination and preview
+paginate: 3
+paginate_path: "blog/page:num"
+permalink: blog/:title/ 
 gems: [jekyll-paginate]
+
+visiblewords: 20
+str_continue_reading: "Continue Reading..."

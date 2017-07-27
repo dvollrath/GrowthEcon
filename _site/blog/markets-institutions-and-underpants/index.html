@@ -1,445 +1,160 @@
 <!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" lang="zh-CN">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" lang="zh-CN">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" lang="zh-CN">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html lang="zh-CN" class="js">
-<!--<![endif]-->
-  
+<html class="no-js">
+  <head>
 
-	
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Markets, Institutions, and Underpants</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	
-<head>
-	<meta charset="utf-8">
-	<title>Markets, Institutions, and Underpants | Dietrich Vollrath</title>
-	<meta name="description" content="The title of this post is my proposed re-naming of Sven Beckert's Empire of Cotton: A Global History. Grabs the attention, right?The short recommendation is ...">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-Frame-Options" content="sameorigin">
-	<!-- CSS -->
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel='stylesheet' id='divi-style-css'  href="/css/style.css" type='text/css' media='all' />
-	<link rel="stylesheet" href="/css/post.style.css">
+<!-- CSS -->
+<link rel="stylesheet" href="/css/owl.carousel.css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/airspace.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/ionicons.min.css" />
+<link rel="stylesheet" href="/css/animate.css" />
+<link rel="stylesheet" href="/css/responsive.css" />
+<link rel="stylesheet" href="/css/syntax.css" />
 
-	<script type='text/javascript' src="/js/jquery.js"></script>
-	<script type='text/javascript' src="/js/soundmanager2-nodebug-jsmin.js"></script>
+<!-- Js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/min/waypoints.min.js"></script>
+<script src="/js/jquery.counterup.js"></script>
 
-	<!--Favicon-->
-	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	
-	<link href="/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
-	<link href="/favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
-	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
-	<!-- Canonical -->
-	<link rel="canonical" href="https://growthecon.com/blog/markets-institutions-and-underpants/">
 
-	<!-- RSS -->
-	<link rel="alternate" type="application/atom+xml" title="Dietrich Vollrath" href="https://growthecon.com/feed.xml" />
+<script src="/js/main.js"></script>
 
-	<!-- Font Awesome -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- RSS -->
+<link rel="alternate" type="application/atom+xml" title="" href="https://growthecon.com/feed.xml" />
 
-	<!-- Google Fonts -->
-	
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
-	
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+    }
+    });
+</script>
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
-	<!-- KaTeX -->
-	
+<!-- Enforce HTTPS -->
+<script type="text/javascript">
+var host = "growthecon.com";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
 
-	<!-- MathJax -->
-	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-  		tex2jax: {
-    	inlineMath: [['$','$'], ['\\(','\\)']],
-    	processEscapes: true
-  		}
-		});
-	</script>
-	<script type="text/javascript" async
-  	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-	</script>
+<!-- Google Analytics -->
 
-	<!-- Enforce HTTPS -->
-	<script type="text/javascript">
-    var host = "growthecon.com";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-	</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<!-- Google Analytics -->
-	
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-72839737-1', 'auto');
+ga('send', 'pageview');
+</script>
 
-	ga('create', 'UA-72839737-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-	
 
-	<script type="text/javascript">
-    var host = "dvollrath.github.io";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
-     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script type="text/javascript">
+var host = "growthecon.com";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
+ <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-72839737-1', 'auto');
+ga('create', '', 'auto');
 ga('send', 'pageview');
 
 </script>
  
-</head>
 
-	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
-		<div id="page-container">
-    		<header id="main-header" data-height-onload="66">
-	<div class="container clearfix et_menu_container">
-		<div class="logo_container">
-			<span class="logo_helper"></span>
-			<a href="/">
-				<!--img src="http://blog.ibireme.com/wp-content/uploads/2015/05/logo1.png" alt="Garan no dou" id="logo" data-height-percentage="54" /-->
-				Dietrich Vollrath
-			</a>
-		</div>
-		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
-			<nav id="top-menu-nav">
-				<ul id="top-menu" class="nav">
-					<li>
-						<a class="page-link" href="/">
-							Home
-						</a>
-					</li>
-					
-					
-					<li>
-						<a class="page-link" href="/blog/">
-							 Blog 
-						</a>
-					</li>
-					
-					
-					
-					<li>
-						<a class="page-link" href="/book/">
-							 Book 
-						</a>
-					</li>
-					
-					
-					
-					<li>
-						<a class="page-link" href="/classes/">
-							 Classes 
-						</a>
-					</li>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					<li>
-						<a class="page-link" href="/references/">
-							 References 
-						</a>
-					</li>
-					
-					
-					
-					<li>
-						<a class="page-link" href="/research/">
-							 Research 
-						</a>
-					</li>
-					
-					
-					
-					<li>
-						<a class="page-link" href="/topics/">
-							 Topics 
-						</a>
-					</li>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					<!-- Social icons from Font Awesome, if enabled -->
-					<li>
-						<a class="page-link" href="">Find Me</a>
-						<ul class="children">
-<li>
-	<a href="https://growthecon.com/feed.xml" title="Follow RSS feed">
-		<i class="fa fa-fw fa-rss"></i>
-	</a>
-</li>
+
+<!--
+/*
+ * Airspace
+ * Ported to Jekyll by Andrew Lee
+ * https://github.com/luminousrubyist/airspace-jekyll
+ * Designed and Developed by ThemeFisher
+ * https://themefisher.com/
+ *
+ */
+-->
+
+
+  </head>
+  <body>
+
+
+    <!-- Header Start -->
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- header Nav Start -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/book">Book</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/research">Research</a></li>
+                <li><a href="/references">References</a></li>
+                <li><a href="/topics">Topics</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header><!-- header close -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-<li>
-	<a href="https://github.com/dvollrath" title="Follow on GitHub">
-		<i class="fa fa-fw fa-github"></i>
-	</a>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-	<a href="https://twitter.com/DietzVollrath" title="Follow on Twitter">
-		<i class="fa fa-fw fa-twitter"></i>
-	</a>
-</li>
-
-
-
-
-
-
-
-<li>
-	<a href="mailto:dietz.vollrath@gmail.com" title="Email">
-		<i class="fa fa-fw fa-envelope"></i>
-	</a>
-</li>
-</ul>
-					</li>
-					
-				</ul>
-			</nav>
-
-			<div id="et_mobile_nav_menu">
-				<div class="mobile_nav closed">
-					<span class="select_page"></span>
-					<span class="mobile_menu_bar"></span>
-				</div>
-			</div>				
-		</div> <!-- #et-top-navigation -->
-	</div> <!-- .container -->
-	<div class="et_search_outer">
-		<div class="container et_search_form_container">
-			<form role="search" method="get" class="et-search-form" action="https://growthecon.com">
-			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
-			<span class="et_close_search_field"></span>
-		</div>
-	</div>
-</header> <!-- #main-header -->
-
-    		<div id="et-main-area">
-      			
-
-	
-
-	
-
-<article >
-  <header style="background-image: url('')">
-    <h1 class="title">Markets, Institutions, and Underpants</h1>
-    <p id="subtitletrans" class="subtitlecontainer">
-
-    
-      <a class="subtitle">03 Feb 2015</a> &nbsp; &nbsp;
-      <a href="/blog/markets-institutions-and-underpants/#disqus_thread"></a>
-    
-    </p>
-  </header>
-  <section class="post-content">
-  <p>The title of this post is my proposed re-naming of Sven Beckert's <a href="http://www.amazon.com/gp/product/B00KAFVOUA/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00KAFVOUA&amp;linkCode=as2&amp;tag=thegroecoblo-20&amp;linkId=4HOLIJYURQINJLZZ">Empire of Cotton: A Global History</a><img src="/assets/ir?t=thegroecoblo-20&amp;l=as2&amp;o=1&amp;a=B00KAFVOUA" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />. Grabs the attention, right?</p>
+    <div class="post">
+  <!-- Wrapper Start -->
+  <section id="intro" style="border: 1px dotted #ddd;">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="block">
+            <h1>Markets, Institutions, and Underpants</h1>
+            <div class="post-info-wrapper">
+              <p class="italic">By <span class="bold">{"login"=>"dvollrath", "email"=>"dietz.vollrath@gmail.com", "display_name"=>"dvollrath", "first_name"=>"", "last_name"=>""}</span> on <span class="bold">February 4, 2015</span></p>
+            </div>
+            <hr />
+            <p><p>The title of this post is my proposed re-naming of Sven Beckert's <a href="http://www.amazon.com/gp/product/B00KAFVOUA/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00KAFVOUA&amp;linkCode=as2&amp;tag=thegroecoblo-20&amp;linkId=4HOLIJYURQINJLZZ">Empire of Cotton: A Global History</a><img src="/assets/ir?t=thegroecoblo-20&amp;l=as2&amp;o=1&amp;a=B00KAFVOUA" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />. Grabs the attention, right?</p>
 <p>The short recommendation is that you should read this book if you are interested in economic history and growth. </p>
 <p>The long recommendation is that Beckert's is an entry in the "global history" genre, this time using cotton production, processing, and trade as the framing device. But it is not just another version of <a href="http://www.amazon.com/gp/product/B00BPDN33W/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00BPDN33W&amp;linkCode=as2&amp;tag=thegroecoblo-20&amp;linkId=SRZ5LF7TDMDSYJI4">Salt: A World History</a><img src="/assets/ir?t=thegroecoblo-20&amp;l=as2&amp;o=1&amp;a=B00BPDN33W" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, with a new commodity plugged in. Beckert actually has a larger point to make about how a "market" in a commodity is something that is created by people, sometimes explicitly and sometimes not. In that sense, this book is better at explaining how institutions shape economies than most books that are specifically about institutions. </p>
 <p>A key component of the story is the recognition that the global market for cotton was created prior to the Industrial Revolution, as part of what Beckert somewhat awkwardly calls "war capitalism". De Gama and Columbus created direct links between Europe, South Asia, Africa, and North America. Europeans then used a superior ability to coordinate firepower and capital to ship goods between these nodes. Cotton from India was sent to Africa for slaves or South-east Asia for spices. The slaves were sent from Africa to North America, the spices to Europe. One could refer to there being "markets" for these things, but only in the sense that Europeans were trading claims on these various people or goods amongst themselves. </p>
@@ -447,13 +162,26 @@ ga('send', 'pageview');
 <p>The consequences of the global market in cotton were far-reaching. The cotton factory, all spindles and chimneys, becomes the epitome of the Industrial Revolution. Beckert's implied story about innovation in this industry is <a href="https://growthecon.wordpress.com/2015/01/13/the-industrial-revolution-and-modern-development/" title="The Industrial Revolution and Modern Development">Allen-like</a>. The major costs of cotton trade were in spinning and weaving, not in growing. So innovation occurs in Britain where those costs are particularly high. But cotton also has far more scope for innovation in processing than the other major crops. It may be natural that cotton production was innovated on. There just isn't much innovation to do on sugar once it is refined. What are you going to do, make clothes out of it? This isn't the book to use in an argument about factor prices versus the enlightenment in generating the IR.</p>
 <p>The more interesting question that looms over Beckert's book is whether slavery, or the coercion of labor in any form, was necessary for the growth of the cotton trade and Industrial Revolution. Here you have to be careful about wording. Necessary? No. It was certainly possible that the global cotton trade could have evolved in a different way, perhaps with India and Egypt remaining major exporters and the American South a patchwork of small-holding cotton farmers. But did slavery and the coercion of labor accelerate the development of the global cotton trade and likely the Industrial Revolution? The answer seems to be yes. Ceteris paribus, slavery and coercion made the IR happen sooner rather than later. I think that's what Beckert would argue. I am leaning towards agreement with him, but I need some more information before I would come down hard one way or the other.</p>
 <p>Probably the most compelling thing I learned reading the book is about the layers of institutions that exist within economies. Beckert makes clear that there is no such thing as "English institutions" (or any other) that are constant across all transactions. Institutions are a characteristic of <em>two</em> entities (states, people, firms) and any given pair of entities will have its own set of institutions. So Liverpool and New Orleans cotton brokers had one set of institutions, Liverpool and Manchester brokers had another, while Liverpool and Bombay brokers a third. In some cases those institutions are "good", fostering cooperation and trust, while others are "bad", involving coercion. As is typical, institutions are really central to studying growth, but measuring or quantifying institutions without being extremely specific about the exact parties involved is probably hopeless.</p>
-
+</p>
+            <p class="center-text" style="padding: 30px;">
+            <a href="/blog">Back to blog</a>
+            </p>
+          </div>
+        </div><!-- .col-md-7 close -->
+      </div>
+    </div>
   </section>
-  
-</article>
+</div>
 
-<center>
-<ul class="share-buttons">
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Share and Discuss</h2>
+          <!-- Begin MailChimp Signup Form -->
+          <center>          
+              <ul class="nav navbar-nav">
   <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog" title="Share on Facebook" target="_blank"><img src="/img/Facebook.png"></a></li>
   <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fgrowthecon.com&text=Growth%20Economics%20Blog:%20http%3A%2F%2Fgrowthecon.com&via=DietzVollrath" target="_blank" title="Tweet"><img src="/img/Twitter.png"></a></li>
   <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgrowthecon.com" target="_blank" title="Share on Google+"><img src="/img/Google+.png"></a></li>
@@ -461,38 +189,11 @@ ga('send', 'pageview');
   <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fgrowthecon.com&title=Growth%20Economics%20Blog" target="_blank" title="Submit to Reddit"><img src="/img/Reddit.png"></a></li>
   <li><a href="http://wordpress.com/press-this.php?u=http%3A%2F%2Fgrowthecon.com&t=Growth%20Economics%20Blog&s=The%20Growth%20Economics%20Blog" target="_blank" title="Publish on WordPress"><img src="/img/Wordpress.png"></a></li>
 </ul>
-</center>
 
-
-<!-- Post navigation -->
-
-  <!-- Check if navigation turned on-->
-  
-  <div id="post-nav">
-    
-    <a id="prev-post" href="/blog/techno-neutrality/">
-      <span class="page-title">Techno-neutrality</span>
-      <span class="nav-label">
-        <i class="fa fa-chevron-left"></i> 
-      </span>
-    </a>
-    
-    
-    <a id="next-post" href="/blog/geography-is-kinda-sorta-destiny/">
-       <span class="page-title">Geography is Kinda-Sorta Destiny</span>
-       <span class="nav-label">
-         <i class="fa fa-chevron-right"></i>
-       </span>
-     </a>
-    
-  </div>
-  
-
-
-<!-- Disqus -->
-
-<div class="comments">
-  <div id="disqus_thread"></div>
+              <!-- Disqus -->
+              
+              <div class="container">
+                <div id="disqus_thread"></div>
 <script>
 /**
 * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -500,7 +201,7 @@ ga('send', 'pageview');
 */
 /*
 var disqus_config = function () {
-	this.page.url = /blog/markets-institutions-and-underpants/; // Replace PAGE_URL with your page's canonical URL variable
+	this.page.url = ; // Replace PAGE_URL with your page's canonical URL variable
 /*this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
@@ -514,109 +215,55 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-</div>
+              </div>
+              
+          </center>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-    		</div> <!-- #et-main-area -->
-		</div> <!-- #page-container -->
-		
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer Start -->
 
 <!-- Disqus comment count script -->
 <script id="dsq-count-scr" src="//growthecon.disqus.com/count.js" async></script>
 
-
-<footer id="page-footer-trans" class="page-footer">
-	<!--<p class="text"><a href="https://dvollrath.github.io">Dietz Vollrath</a> 
-</p>-->
-	Copyright &copy; 2017 <a href="https://dvollrath.github.io">Dietz Vollrath</a> 
- All Rights Reserved. 
-	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/book">Book</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/research">Research</a></li>
+                <li><a href="/references">References</a></li>
+                <li><a href="/topics">Topics</a></li>
+          </ul>
+        </div>
+        <p>Site theme developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 
-    
-<!-- WP Audio player plugin v1.9.3 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
-    <script type="text/javascript">
-        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
-        soundManager.url = '/plugins/soundmanager2.swf';
-        function play_mp3(flg, ids, mp3url, volume, loops)
-        {
-            //Check the file URL parameter value
-            var pieces = mp3url.split("|");
-            if (pieces.length > 1) {//We have got an .ogg file too
-                mp3file = pieces[0];
-                oggfile = pieces[1];
-                //set the file URL to be an array with the mp3 and ogg file
-                mp3url = new Array(mp3file, oggfile);
-            }
-
-            soundManager.createSound({
-                id: 'btnplay_' + ids,
-                volume: volume,
-                url: mp3url
-            });
-
-            if (flg == 'play') {
-                    soundManager.play('btnplay_' + ids, {
-                    onfinish: function() {
-                        if (loops == 'true') {
-                            loopSound('btnplay_' + ids);
-                        }
-                        else {
-                            document.getElementById('btnplay_' + ids).style.display = 'inline';
-                            document.getElementById('btnstop_' + ids).style.display = 'none';
-                        }
-                    }
-                });
-            }
-            else if (flg == 'stop') {
-    //soundManager.stop('btnplay_'+ids);
-                soundManager.pause('btnplay_' + ids);
-            }
-        }
-        function show_hide(flag, ids)
-        {
-            if (flag == 'play') {
-                document.getElementById('btnplay_' + ids).style.display = 'none';
-                document.getElementById('btnstop_' + ids).style.display = 'inline';
-            }
-            else if (flag == 'stop') {
-                document.getElementById('btnplay_' + ids).style.display = 'inline';
-                document.getElementById('btnstop_' + ids).style.display = 'none';
-            }
-        }
-        function loopSound(soundID)
-        {
-            window.setTimeout(function() {
-                soundManager.play(soundID, {onfinish: function() {
-                        loopSound(soundID);
-                    }});
-            }, 1);
-        }
-        function stop_all_tracks()
-        {
-            soundManager.stopAll();
-            var inputs = document.getElementsByTagName("input");
-            for (var i = 0; i < inputs.length; i++) {
-                if (inputs[i].id.indexOf("btnplay_") == 0) {
-                    inputs[i].style.display = 'inline';//Toggle the play button
-                }
-                if (inputs[i].id.indexOf("btnstop_") == 0) {
-                    inputs[i].style.display = 'none';//Hide the stop button
-                }
-            }
-        }
-    </script>
-    <script type='text/javascript' src="/js/frontend-builder-global-functions.js"></script>
-<script type='text/javascript' src="/js/custom.js"></script>
-<script type='text/javascript' src="/js/jquery.fitvids.js"></script>
-<script type='text/javascript' src="/js/waypoints.min.js"></script>
-<script type='text/javascript' src="/js/jquery.magnific-popup.js"></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var et_custom = {"ajaxurl":"http:\/\/blog.ibireme.com\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/blog.ibireme.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"ae39988568","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"\u4e0a\u4e00\u9875","next":"\u4e0b\u4e00\u9875","is_builder_plugin_used":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src="/js/frontend-builder-scripts.js"></script>
-  </body>
+    </body>
 </html>

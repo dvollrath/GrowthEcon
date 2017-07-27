@@ -1,16 +1,34 @@
 /*
-Theme Name: Divi
-Theme URI: http://www.elegantthemes.com/gallery/divi/
-Version: 2.5.3
-Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
-Author: Elegant Themes
-Author URI: http://www.elegantthemes.com
-License: GNU General Public License v2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
+ * This css file includes styles added in the jekyll port of this theme.
+ * To find the original style.css that ships with Airspace, read airspace.css
+ *
+ */
 
-/* Main Theme Styles */
-@import url("./main-styles.css");
+ .italic {
+   font-style: italic;
+ }
 
-/* Page Builder Modules Styles */
-@import url("./frontend-builder-style.css");
+ .bold {
+   font-weight: bold;
+ }
+
+ .center-text {
+   text-align: center;
+ }
+
+.post-area {
+  padding: 40px;
+  width: 100%;
+  min-height: 150px;
+  background-color: white;
+  border-bottom: 1px dotted #ddd;
+}
+
+.post-area a:link, .post-area a:visited {
+  font-size: 30px;
+  color: #333;
+}
+
+.post-area a:hover {
+  color: #0D0017;
+}

@@ -1,81 +1,137 @@
 ---
-layout: default
+layout: page
+title: Dietrich Vollrath
+permalink: /
 ---
-<div class="home">
-  <article class="home-feature-image" >
-  <div style="background-image: url('{{ site.baseurl }}/{{ site.theme.place_holder_image }}')"/>
-  <header style="background-image: url('{{ site.imageurl }}')">
-    <p class="call-out-content"> {{ site.theme.header_text }} </p>
-  </header>
-  </article>
 
-<article>
-    	<h2>Dietz Vollrath</h2>
-  		<ul>
-  		<li>I am an associate professor of economics at the <a href="http://www.uh.edu/class/economics/">University of Houston</a></li>
-  		<li>I have a <a href="book/">textbook</a> on economic growth with Chad Jones</li>
-  		<li>I write the Growth Economics <a href="blog/">Blog</a>. Latest posts below. Subscribe via <a href="feed.xml">RSS feed</a>, <a href="#mc_anchor">Email</a>, or <a href="https://twitter.com/DietzVollrath">Twitter</a></li>
-  		<li>Find my <a href="research/">research</a> and <a href="classes/">class</a> information here</li>
-  		<li>This is my current <a href="/assets/cv_current.pdf">CV</a></li>
-  		</ul>
-</article> 
- 
-
-	<div class="posts">
-	{% for post in paginator.posts %}
-		{% include post_tags_category.html %}
-		<div class="post-teaser">
-		  <header>
-		    <h2>
-		      <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-		        {{ post.title }}
-		      </a>
-		    </h2>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">{{ post.date | date_to_string }}</a> &nbsp; &nbsp; <a href="{{ post.url }}#disqus_thread"></a>
-		    <!--  {% if post.author %} | <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
-		      {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %} -->
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  {% assign num = post.content | number_of_words %}
-		  {% if  num  < site.theme.visiblewords %}
-		    {{ post.content }}
-		  {% else %}
-		    {{ post.content | truncatewords: site.theme.visiblewords }}
-		    <p>
-		    <a class="text" href="{{ post.url | prepend: site.baseurl }}">
-		      {{ site.theme.str_continue_reading }}
-		    </a>
-		    </p>
-		  {% endif %}
-		  </div>
-		</div>
-		{% endfor %}
-	</div>
-
-<center>
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:1000px;}
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<a name="mc_anchor"></a>
-<form action="//growthecon.us12.list-manage.com/subscribe/post?u=bc4921b82e22a7df72ab34622&amp;id=c99e71f9d7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Receive new posts via email</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bc4921b82e22a7df72ab34622_c99e71f9d7" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <div class="block">
+          <h1 class="animated fadeInUp">DIETRICH VOLLRATH <br> UNIVERSITY OF HOUSTON</h1>
+          <p class="animated fadeInUp">Professor of Economics </br></p>
+        </div>
+      </div>
     </div>
-</form>
-</div>
-</center>
+  </div>
+</section>
 
-<!--End mc_embed_signup-->
+<section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-2">
+      <h2>ABOUT ME</h2>
+      <p>I am a professor of economics at the <a href="http://www.uh.edu/class/economics/">University of Houston</p>
 
+      <p>I have a <a href="book/">textbook</a> on economic growth with Chad Jones</p>
+
+      <p>I write the Growth Economics <a href="blog/">Blog</a>. Subscribe via <a href="feed.xml">RSS feed</a>, <a href="#mc_anchor">Email</a>, or <a href="https://twitter.com/DietzVollrath">Twitter</a></p>
+
+      <p>Find my <a href="research/">research</a> here</p>
+
+      <p>This is my current <a href="/assets/cv_current.pdf">CV</a><p>
+    </div>
+  </div>
 </div>
+</section>
+
+<!-- Service Start -->
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Latest Posts</h2>
+      </div>
+    </div>
+  <div class="posts">
+      {% for post in site.posts limit:3 %}
+      <div class="post-area">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+        <p class="post-date">{{ post.date | date_to_long_string }}</p>
+        <p>
+          {{ post.content | strip_html | truncatewords: 20 }}
+        </p>
+      </div>
+      {% endfor %}
+</div>
+
+
+<!-- Service Start -->
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Resources</h2>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-android-bulb"></i>
+          <h4><a href="research/">Research</a></h4>
+          <p>Find my published and working papers here</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-compose"></i>
+          <h4><a href="classes/">Classes</a></h4>
+          <p>Most class information is on Blackboard (UH) or Canvas (Dartmouth), but some grad courses live here</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-ios-box"></i>
+          <h4><a href="topics/">Topics</a></h4>
+          <p>Collections of blog posts, web links, and papers on specific questions about economic growth </p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-ios-albums"></i>
+          <h4><a href="references/">References</a></h4>
+          <p>Bibliographic information for the economic growth literature, vaguely organized by subject </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Subscribe via Email</h2>
+          <!-- Begin MailChimp Signup Form -->
+          <center>          
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:1000px;}
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup">
+          <a name="mc_anchor"></a>
+          <form action="//growthecon.us12.list-manage.com/subscribe/post?u=bc4921b82e22a7df72ab34622&amp;id=c99e71f9d7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Receive new posts via email</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bc4921b82e22a7df72ab34622_c99e71f9d7" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+          </form>
+          </div>
+          </center>
+
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

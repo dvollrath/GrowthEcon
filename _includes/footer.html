@@ -1,14 +1,25 @@
-{% if site.theme.katex %}
-<script src="{{ "/js/katex_init.js" | prepend: site.baseurl }}"></script>
-{% endif %}
+<!-- footer Start -->
 
 <!-- Disqus comment count script -->
 <script id="dsq-count-scr" src="//growthecon.disqus.com/count.js" async></script>
 
-{% if site.theme.footer_text %}
-<footer id="page-footer-trans" class="page-footer">
-	<!--<p class="text">{{ site.theme.footer_text }}</p>-->
-	Copyright &copy; {{ site.time | date: '%Y' }} {{ site.theme.footer_text }} All Rights Reserved. 
-	<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/book">Book</a></li>
+                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/classes">Classes</a></li>
+                <li><a href="{{ site.baseurl }}/research">Research</a></li>
+                <li><a href="{{ site.baseurl }}/references">References</a></li>
+                <li><a href="{{ site.baseurl }}/topics">Topics</a></li>
+          </ul>
+        </div>
+        <p>Site theme developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
 </footer>
-{% endif %}
