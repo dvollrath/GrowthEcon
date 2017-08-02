@@ -20,6 +20,7 @@ baseurl: ""
 cover: "/img/slider-bg.jpg"
 logo: "/img/logo.png"
 enforce_ssl: growthecon.com
+storage: "/assets"
 
 # Build settings
 markdown: kramdown
