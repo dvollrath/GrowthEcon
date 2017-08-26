@@ -5,7 +5,122 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Mon, 21 Aug 2017 07:28:59 -0400</pubDate>
+    <pubDate>Sat, 26 Aug 2017 15:35:03 -0500</pubDate>
+    
+      <item>
+        <title>Rising Markups and Falling Productivity</title>
+        <link>https://growthecon.com/blog/DE-Markups/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/DE-Markups/</guid>
+        <description>&lt;p&gt;In between checking weather updates here in Houston, I finally got around to reading the new working paper by Jan De Loecker and Jan Eeckhout (DE), on “&lt;a href=&quot;http://www.janeeckhout.com/wp-content/uploads/RMP.pdf&quot;&gt;The Rise of Market Power and the Macroeconomic Implications&lt;/a&gt;”. The authors find that the markup of price over marginal cost charged by public US firms has been rising steadily since 1960, and in particular after 1980. It has generated a lot of commentary already, as in this &lt;a href=&quot;http://noahpinionblog.blogspot.com&quot;&gt;post&lt;/a&gt; by Noah Smith, this &lt;a href=&quot;https://niskanencenter.org/blog/markups-market-power/&quot;&gt;post&lt;/a&gt; by Karl Smith, and &lt;a href=&quot;http://marginalrevolution.com/marginalrevolution/2017/08/rise-market-power.html&quot;&gt;this&lt;/a&gt; from Tyler Cowen. A lot of the discussion so far has been about how to interpret their results, and whether it indicates a rise in “market power”, and that devolved somewhat into a discussion of how to define “market power” in the first place.&lt;/p&gt;
+
+&lt;p&gt;I want to jump in with some of my own thoughts on the paper, but I’m going to avoid getting into this “market power” interpretation thing. I’m more interested in what DE’s results have to say about the productivity slowdown. Let’s start with how DE get these numbers in the first place.&lt;/p&gt;
+
+&lt;h2 id=&quot;estimating-markups&quot;&gt;Estimating markups&lt;/h2&gt;
+
+&lt;p&gt;Here’s the thing; you can’t observe these markups. While the price of a specific good might be knowable, the marginal cost of that good is not. The average cost of producing that good - total costs divided by number of goods sold - is not the same thing as the marginal cost. I’d be willing to bet that a lot of firms would be hard-pressed themselves to tell you the marginal cost of an additional good. And that doesn’t even get into the issue with multi-product firms, where their aggregated financials cannot tell you about the specific prices and costs associated with specific products.&lt;/p&gt;
+
+&lt;p&gt;So when DE are talking about estimating markups, they are extracting the markup of a firms “price” over the firms “marginal cost”, where the price is some agglomeration of the prices of their various products, and the cost is some agglomeration of the cost of their various inputs. That’s not a knock on the approach, but it should be kept in mind.&lt;/p&gt;
+
+&lt;p&gt;How do you extract this markup if you don’t have the exact costs, or even prices? DE assume that firms are cost-minimizers, a less forceful assumption than strict profit maximization. Whether firms are pricing their goods to maximize profits or not is immaterial to DE, but they assume that firms are trying to produce their goods or services using the lowest-cost combination of inputs.&lt;/p&gt;
+
+&lt;p&gt;You can see the logic involved in the firm’s decision pretty easily. If a firm’s markup is the price relative to marginal cost, then for the marginal good it produces, it should be that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Rev = Markup \times MC \times Inputs&lt;/script&gt;
+
+&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?Rev\inline&quot;/&gt; is the revenue from that marginal good, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Markup\inline&quot;/&gt; is the … markup, &lt;img src=&quot;http://latex.codecogs.com/png.latex?MC\inline&quot;/&gt; is the cost of an additional bundle of inputs, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?Inputs\inline&quot;/&gt; are the bundles of inputs it takes to produce that marginal good. Simply rearrange this to&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Markup = \frac{Rev}{MC \times Inputs}&lt;/script&gt;
+
+&lt;p&gt;and you’ve got it. DE have data on firm-level revenues, and they have data on firm-level costs for inputs. There is an extra step, which is that this kind of condition should hold for each separate input (i.e. labor and capital) as opposed to “Inputs” the way I’ve described it. All this does is insert a parameter into this expression that weights revenues by how important that specific input is to production. If we were working with labor, for instance, we might say that the revenue &lt;em&gt;attributable to labor&lt;/em&gt; is only 60% of total revenues, and so divide 0.6 times revenues by the cost of labor to arrive at the markup. For the purposes of this post, though, I think you can easily stick with the idea that markups are obtained from ratios of revenues to costs.&lt;/p&gt;
+
+&lt;p&gt;DE do this for all the public firms they have data for, for all the years running from 1960 to recently. The figure below is the central result, which is that markups rose steadily from 1960’s - when they were about 1.18 on average - to today, when they are about 1.67 on average.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/DE_2017_Fig1.png&quot; alt=&quot;Evolution of Markups&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is one of those papers where it shocks you that no one has done this before. This paper takes some relatively off-the-shelf techniques, and uses them to generate an incredibly interesting set of estimates. Granted, the authors are some of the people who put those techniques up on the shelf in the first place, but the innovation in this paper is the application to the long panel of US public firms, not the techniques. The results in this figure are what have generated a lot of commentary.&lt;/p&gt;
+
+&lt;p&gt;Let’s start with the big empirical caveats. If you want to disbelieve DE’s results, then you’d have to think hard about the effect of these:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The sample is only public firms. Probably the biggest question mark. The average markup charged by &lt;em&gt;all&lt;/em&gt; firms in the economy may not have changed much over time, but if there was a distinct change in the choice to either go public, or stay public, starting around 1980, and that change was related to markup sizes, then this could just be sample selection. For example, you could argue that as investors became laser-focused on quarterly earnings, this meant that the only firms willing to go public or stay public were those with large markups that could generate the expected earnings growth. All the low markup firms are private, and so don’t show up in the DE dataset.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Industry production functions are assumed to be identical for all firms and over time. I mentioned above that DE actually use specific inputs in the calculation, and for that they need these weights (like the 60% for labor I mentioned). To get those, they estimate production functions for each industry using their data. And that estimation assumes that the weights are identical for all firms in an industry (i.e. American and United each have a weight of 44% on labor) and over time (i.e. United’s weight on labor is 44% every year from 1960 forward). DE have an appendix where they relax this assumption, and show that the growth in markups over time (but not their level) is unchanged, so this is unlikely to be driving the results.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cost minimization may not hold. This doesn’t seem like a strong assumption, and it is certainly weaker than assuming full profit maximization. But it &lt;em&gt;is&lt;/em&gt; an assumption. If the firms in the DE dataset are not operating to minimize costs (perhaps they just care about maximizing market share or executive compensation?) then the first order condition DE use would be picking up something other than the true markup. I don’t have a great sense of how the bias would work here, or a great sense of whether this could be a big or a small problem. But it could be a problem.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you are willing to take the DE results as indicative of what is happening in the US as a whole, then the second half of their paper is for you. Here, they break down several secular trends in the economy (e.g. declining labor shares, declining productivity growth) and show how the rise in markups can account for them. As the association of markups with productivity is something I’ve been banging around on for a few years - you could start with this &lt;a href=&quot;https://growthecon.com/blog/Cake/&quot;&gt;post&lt;/a&gt; and work backwards - let me focus on that.&lt;/p&gt;
+
+&lt;h2 id=&quot;productivity-accounting&quot;&gt;Productivity Accounting&lt;/h2&gt;
+
+&lt;p&gt;The presence of markups - and changes in markups - have implications for measured productivity growth. And DE corroborate that, while offering the data to be more precise about the effects. But they do it using a slightly different line of attack than I have in the past, so let me digress for a moment to try and link this all together.&lt;/p&gt;
+
+&lt;p&gt;There are two ways we could describe aggregate output. The first is using a production function, like&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y = T X&lt;/script&gt;
+
+&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?T\inline&quot;/&gt; is &lt;em&gt;technology&lt;/em&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?X\inline&quot;/&gt; is an index of &lt;em&gt;inputs&lt;/em&gt;. Technology, T, is the for-realisies measure of how good we are at transforming inputs into useful output. It is what we really would like to measure. Based on this production function, we could back out technology as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;T = \frac{Y}{X}.&lt;/script&gt;
+
+&lt;p&gt;Leave that aside for the moment, we’ll come back to it.&lt;/p&gt;
+
+&lt;p&gt;We can also describe aggregate output using incomes, meaning we can write&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y = \Pi + wX&lt;/script&gt;
+
+&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?\Pi\inline&quot;/&gt; are economic profits, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?w\inline&quot;/&gt; is the “wage” of inputs. For those wages, think of something like a weighted average of actual wages (to labor) and payments to capital and/or natural resource.&lt;/p&gt;
+
+&lt;p&gt;What are profits? Well, let’s assume that there is a markup, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu\inline&quot;/&gt;, which recall measures the ratio of price to marginal cost. If &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu = 1.5\inline&quot;/&gt;, then firms are charging 50% over cost. So profits are equal to 50% of costs. Another way of saying this is that profits are &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu - 1\inline&quot;/&gt; times costs,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y = (\mu - 1)wX + wX = \mu w X&lt;/script&gt;
+
+&lt;p&gt;or total output can be expressed as the markup times the wage times the inputs used. We’re still the world of pure accounting, by the way. No behavioral assumptions have been made.&lt;/p&gt;
+
+&lt;p&gt;Now, go back and compare the original production function version of output, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y = T X\inline&quot;/&gt;, to this markup version, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y = \mu w X\inline&quot;/&gt;. From these, it shows us that we could write&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;T = \mu w.&lt;/script&gt;
+
+&lt;p&gt;Or technology is equivalent to the markup times the wage. I like to think of this expression this way: technology (or an increase in technology) can be used for one of two things (a) raising the markup or (b) raising the wage paid to inputs. One quibble with DE is that they say something along the line of “if markups go up, this raises technology”, which should more accurately be phrased “if markups go up, this implies that tecnology was higher”, which eliminates the implicit causal statement.&lt;/p&gt;
+
+&lt;p&gt;So we’ve got two ways to backing out technology, T, from the data. Either use &lt;img src=&quot;http://latex.codecogs.com/png.latex?T = Y/X\inline&quot;/&gt;, or use &lt;img src=&quot;http://latex.codecogs.com/png.latex?T = \mu w\inline&quot;/&gt;. In terms of growth rates, the first says that the growth rate of technology (using little hats to denote growth rates) is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{T} = \hat{Y} - \hat{X}\inline&quot;/&gt;, and the second says that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{T} = \hat{\mu} + \hat{w}\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;That’s great, but when we go to the data is it quite plausible that we make mistakes. That is, we go to the data and calculate residual &lt;em&gt;productivity&lt;/em&gt;, P. And unless we are exactly right about how the world works, our measure of P may not be equal to T. Here’s what I mean. Take the production function version of things, which I’ve talked about a lot before.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{P} = \hat{Y} - \hat{X}^{wrong} = \hat{Y} - \hat{X} + (\hat{X} - \hat{X}^{wrong}) = \hat{T} + (\hat{X} - \hat{X}^{wrong})&lt;/script&gt;
+
+&lt;p&gt;The growth rate of productivity is the growth rate of output minus the growth rate of &lt;em&gt;a possibly mismeasured index of input use&lt;/em&gt;. This mismeasurement may be because we really don’t know how to count units of capital or human capital correctly, or because we are weighting those counts incorrectly. The point I’ve made in a few posts in the past is that by ignoring markups, you could may be making a weighting mistake, and this would lead to &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{X}^{wrong} &amp;gt; \hat{X}\inline&quot;/&gt;, so productivity growth understates technological growth.&lt;/p&gt;
+
+&lt;p&gt;If you instead were going to try and measure productivity growth using the real wage, then you could get something like&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{P} = \hat{\mu}^{wrong} + \hat{X} = (\hat{\mu}^{wrong} - \hat{\mu}) + \hat{\mu} +  \hat{X} = \hat{T} + (\hat{\mu}^{wrong} - \hat{\mu})&lt;/script&gt;
+
+&lt;p&gt;where you might be making an error about how fast markups are growing. If you do, and in particular if you assume &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{\mu}^{wrong} &amp;lt; \hat{\mu}\inline&quot;/&gt;, which you might do if you assumed markups were unchanging over time, then your productivity growth term understates technological growth.&lt;/p&gt;
+
+&lt;p&gt;And this is what DE essentially do in the very last part of the paper. They say that by falsely assuming markups are constant, productivity growth measured using changes in real wages is understating true technological growth. When they make an adjustment to allow for the real growth in markups they observe, they find that true technological growth was around 3-4% per year over the last few year, as opposed to almost 0% growth in measured productivity.&lt;/p&gt;
+
+&lt;p&gt;This is a massive difference, and suggests that (a) technological progress is clipping along very nicely, thank you, and (b) that almost all of the gains from this are being leveraged into higher markups rather than higher real wages to inputs like labor. Entirely consistent with stories of increased market power and concentration.&lt;/p&gt;
+
+&lt;p&gt;There isn’t a glaring issue with the analysis that DE do here, but they could go further with it. The papers that establish the discrepancies between growth in productivity, P, and technology, T, point out that much of the problem stems from trying to do this at the aggregate level alone. If you had individual firm-level (or plant-level) data on technological growth, then you could add those up directly (suitably weighted by their size), to arrive at &lt;img src=&quot;http://latex.codecogs.com/png.latex?T\inline&quot;/&gt; directly. No need to back it out from aggregate information on inputs used, or wages.&lt;/p&gt;
+
+&lt;p&gt;And DE have all the data to do this. When they estimate the production functions that allow them to recover the markups, they also recover an estimate of technology for each firm. It would be straightforward to find technological growth from the “bottom-up”, and compare it to what we get using aggregate methods. This would give us (a) a true(r) measure of technological growth and (b) help identify what precisely we are doing wrong with the aggregate measures of productivity growth. I’ll let DE add that to the near-infinite list of things that people have suggested they do with this data.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-are-markups-higher&quot;&gt;Why are markups higher?&lt;/h2&gt;
+
+&lt;p&gt;From the perspective of productivity, and for most of the other secular trends DE talk about, the &lt;em&gt;source&lt;/em&gt; of the markup is irrelevant. Arguing about whether markups represent market power or not, or whether monopolistic competition is equivalent to market power, adds nothing to the discussion of the implications. They would matter if we were talking about how to change markups. But at this stage DE are simply documenting the growth in markups and showing that these can be associated with a number of phenomena.&lt;/p&gt;
+
+&lt;p&gt;As much of the discussion about the markups has circled around market power, let me point out two additional possible sources of markups, and growth in markups. First, scale. If there are increasing returns to scale, then the markup will be above one. Think of a firm with big fixed costs. They have to charge above marginal cost in order to recover those fixed costs. You could imagine that what has changed over time is that the firms in the DE dataset invested in some fixed costs that gave them increasing returns to scale, and the markups are covering those costs. The problem with this explanation is that you wouldn’t expect labor’s and capital’s share of output to be declining over time in this case, which they are. So perhaps it doesn’t matter much.&lt;/p&gt;
+
+&lt;p&gt;Second, it could be us. That is, the markup could be rising because consumers are getting more particular about their bundle of purchases. Whether these firms are true monopolists, or involved in monopolistic competition, or compete in some kind of strategic game with one another, the more inelastic our demand gets for their product, the bigger the markups they can charge. I think of this as a caveat of structural change. As our basic material needs get met more easily over time, we get pickier about the goods and services we consume, making our demand more inelastic. This could explain some of the rise in markups.&lt;/p&gt;
+
+&lt;p&gt;If you take seriously the DE findings, then decomposing this rise in markups into different sources is the natural next step. The other step is to find ways to confirm that this rise in markups is robust to non-public, and possibly non-US, firms. Tracking similar changes across countries would help eliminate or confirm some explanations (US-specific anti-trust policies). Nevertheless, I found the DE paper an intriguing (and very large) step forwards.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Aug 2017 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Are some places &quot;More Malthusian&quot; than other?</title>
@@ -75,7 +190,7 @@
 
 &lt;p&gt;The application of this isn’t confined to historical development, either. For current developing countries, the tightness of the Malthusian constraint dictates the relative cost of urbanization versus density. We find very loose land constraints in tropical areas of Sub-Saharan Africa and Central America, perhaps offering some clue as to why they fell behind areas like East Asia, despite having similar starting conditions in the mid 20th century.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
+        <pubDate>Thu, 27 Jul 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -127,7 +242,7 @@
 &lt;p&gt;If the HHKLM study is replicated in other contexts - which may be a big “if” - then perhaps we need to walk back some of the changes in thinking that Schultz initiated fifty years ago. Perhaps we should take seriously the idea that peasants are really different, not just in their constraints (which the development literature has explored in great depth), but in their underlying preferences as well (which has been done far less).&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 28 Jun 2017 00:00:00 -0400</pubDate>
+        <pubDate>Wed, 28 Jun 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -211,7 +326,7 @@
 &lt;p&gt;While “cost disease” may not have been the best choice of names, Baumol has to be credited with anticipating the path of economic growth and structural change in developed countries over the late 20th century. He did this without resorting to any math beyond what I could use in an intermediate college course, and in language accessible to anyone. If you’re interested in economic growth, it is well worth finding some time to sit down are read through his body of work.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 15 May 2017 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 15 May 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -272,7 +387,7 @@
 &lt;p&gt;There is no magic elixir of tax rules that will generate 4% growth. You don’t need to see anything more than the one-page outline put out by the current administration to get to this conclusion. Filling in the details will not change the fact that their plan, if passed, will have no appreciable effect on economic growth in the next few years.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 02 May 2017 00:00:00 -0400</pubDate>
+        <pubDate>Tue, 02 May 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -301,7 +416,7 @@
 
 &lt;p&gt;Enjoy!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 21 Apr 2017 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 21 Apr 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -376,7 +491,7 @@
 
 &lt;p&gt;I think the lesson here is that you really cannot use only aggregate data if you want a measure of aggregate technology growth. You will always run into the garbage can issue. If you want a measure of aggregate technology growth, you should calculate technological growth for each individual unit (firm or sector) separately, and &lt;em&gt;then&lt;/em&gt; add those up, if you want any chance. Since I know you were hoping for another breakfast food analogy, imagine using a tweezers to pick up each individual crumb of waffle to ensure you do not touch any syrup.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 18 Apr 2017 00:00:00 -0400</pubDate>
+        <pubDate>Tue, 18 Apr 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -421,7 +536,7 @@
 
 &lt;p&gt;The difference from the last post is that the rise in housing profits is not mutually exclusive with the rise in profts in the private, non-housing, sector. The source of the rise in profits is similar in both cases, as it turns out. The drop in nominal interest rates means that the required return for capital (housing or non-housing) is falling over time, but the flow of output produced in part by that capital is not, so the profit share is rising.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Mar 2017 00:00:00 -0400</pubDate>
+        <pubDate>Tue, 28 Mar 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -490,7 +605,7 @@
 
 &lt;p&gt;The implications of an increasing profit share coming from owner-occupied housing are a lot different from the implications of an increasing profit share coming from corporate market power or concentration. I need to think a lot harder about housing, it seems.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 24 Mar 2017 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 24 Mar 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -559,7 +674,7 @@
 
 &lt;p&gt;To sum the whole post up, a documented rise in the profit share (either directly or as an implication of the rise in corporate savings) could well explain part of the slowdown in productivity and GDP growth of the last 20-30 years. Putting a firm number on this is beyond my ability at this point, but it seems to be worth exploring.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 06 Mar 2017 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 06 Mar 2017 00:00:00 -0600</pubDate>
       </item>
     
       <item>
@@ -633,7 +748,7 @@
 
 &lt;p&gt;Note that my original description of Malthusian economies ignores this second effect, coming through income elasticities. Ashraf and Galor’s model, for example, would suggest that no matter how high productivity got, we are always producing goods using the same resource-intense production function. That may be fine if you are just describing the stagnant economies prior to sustained growth - or maybe it isn’t fine, if you read Lemin Wu’s &lt;a href=&quot;http://behl.berkeley.edu/files/2015/02/WP2015-01_Wu.pdf&quot;&gt;paper&lt;/a&gt; - but breaks down if you allow for any appreciable non-resource based sector (e.g. services of any kind).&lt;/p&gt;
 </description>
-        <pubDate>Wed, 08 Feb 2017 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 08 Feb 2017 00:00:00 -0600</pubDate>
       </item>
     
       <item>
@@ -700,7 +815,7 @@
 &lt;p&gt;And of course, maybe semi-endogenous growth theory is wrong. Maybe this just isn’t the way to look at things. Alternative theories might say idea growth could be affected by policies (subsidies for basic research, tax policy regarding treatment of RD spending, etc..) and what we’ve seen is a continuous deterioration of the policies supporting idea generation. This one is a little hard to square, though, just because it seems odd that there would be such growth in the number of researchers if the returns to that research at the firm or individual level were going down so much. I can see how taxes on RD would lower the resources devoted to it, but why would that affect how effective RD efforts are? You’d have to argue that policies were incenting companies to work on useless ideas.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 24 Jan 2017 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 24 Jan 2017 00:00:00 -0600</pubDate>
       </item>
     
       <item>
@@ -760,7 +875,7 @@
 
 &lt;p&gt;On the other end, the distribution of those rents is perhaps more palatable when seen not as a handout (which makes people feel like a deadbeat) but as something like a dividend on shared ownership of an asset. I feel like this would be one way to think of how a universal basic income could be framed - everyone is getting their share of the collective dividend payment due to the owners of the “ideas” of trust and scale. It is a sign of ownership, not dependence.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 26 Dec 2016 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 26 Dec 2016 00:00:00 -0600</pubDate>
       </item>
     
       <item>
@@ -805,7 +920,7 @@
 
 &lt;p&gt;I cannot get my head around asking “why”, as Foner does, without being able to undertake any kind of counter-factual exercise, whether in the data or in my head. But perhaps the concept of thinking in terms of many-alternative-histories, rather than feeling you must commit to a single one, is a way of making the idea of counterfactuals more palatable.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 16 Dec 2016 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 16 Dec 2016 00:00:00 -0600</pubDate>
       </item>
     
       <item>
@@ -841,49 +956,7 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Mon, 12 Dec 2016 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Would you pay to save a job?</title>
-        <link>https://growthecon.com/blog/Trade/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Trade/</guid>
-        <description>&lt;p&gt;Mike Konczal has a nice &lt;a href=&quot;https://medium.com/@rortybomb/learning-from-trump-in-retrospect-dce431b23ed0#.70zws6ugy&quot;&gt;article&lt;/a&gt; about how important it is to distinguish “jobs” from “the economy”, and how Trump used that to his advantage. Noah Smith had a &lt;a href=&quot;https://www.bloomberg.com/view/articles/2016-12-02/a-job-is-more-than-a-paycheck&quot;&gt;summary&lt;/a&gt; of the idea that a job is “more than a paycheck”. In my head, this is a complement to the arguments that Dani Rodrik has been making for years, as in his 1997 book &lt;a href=&quot;http://amzn.to/2gzJqH4&quot;&gt;Has Globalization Gone too Far?&lt;/a&gt;. In economist terms, the easiest way to say this is that having a job actually enters the utility function separately from the real wage it generates.&lt;/p&gt;
-
-&lt;p&gt;I have one idea to add to this, which is that even the “winners” of trade (or technological shocks) are unhappy about other people losing their jobs. If you like, the job status of others has an effect on the utility function of those &lt;em&gt;with jobs&lt;/em&gt;. And it means they are willing to trade off some other source of utility (real wages) in order to give those people jobs.&lt;/p&gt;
-
-&lt;p&gt;As I’m not sure I’m explaining this terribly well, let me give you an example of a choice I posed to a number of “regular people” in my neighborhood, and during the after-game-beer-drinking phase of my hockey league. I’ve been doing this for a year or two, but recent events have made the responses more salient.&lt;/p&gt;
-
-&lt;p&gt;I’m not claiming that I had some sort of insight a few years ago. This all started because of a random conversation with Kenny, one of the guys in my hockey league, which led to him saying that he’d “absolutely” pay $100 more for a TV if it meant more American workers didn’t have to go on welfare. After that, I started posing the same kind of question to others in an ad hoc manner. I realize that this all has a very David Brooks-ish bullshit man-on-the-street vibe. Feel free to discount accordingly.&lt;/p&gt;
-
-&lt;p&gt;This is the essence of the choice I posed to people regarding a hypothetical trade deal (I typically didn’t use such precise numbers, but this gives you a concrete idea of what I was asking):&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Option A&lt;/strong&gt;. With the trade deal, let’s say that the income of a winner - people who stay employed - is 1000. The price index with trade is 0.8. Let’s say there are four winners for every loser - the ones who lose jobs - but we organize a redistribution of the gains from trade to make sure the losers are compensated. We tax every winner 200, and use that to give every loser 800. The winners, after their tax of 200, are also making 800. With an price index of 0.8, every person - winners and losers - has a real wage of 800/0.8 = 1000.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Option B&lt;/strong&gt;. Don’t do the trade deal. Everyone is still employed, but their income is 700, which is lower than what a winner makes under the trade deal, and means that in aggregate, total income is lower than with the trade deal. Also, the price index is higher without trade, because we don’t get cheap imports. So let the price index be 1, and every person has a real wage of 700/1 = 700.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Which option would you choose? The pure economist answer is A, because obviously everyone is better off in terms of real consumption, with a real wage of 1000 versus 700. Noah’s post was about how job losers would probably prefer B. Most people would rather take the lower real wage of 700 with an actual job, versus a transfer with a real value of 1000. If you want to call this a form of money illusion, fine, but that doesn’t make it wrong. It is easy to say that their utility function puts more weight on income that is received from working versus income received as a hand out. It is not a stretch to get your head around this. I have spent years trying to instill this &lt;em&gt;exact&lt;/em&gt; preference set into my kids.&lt;/p&gt;
-
-&lt;p&gt;What was more interesting in posing this question to various people I knew was the response of “winners”. Most of the time, I told people that they should imagine that they would be a “winner” under the deal. And for the most part, the people I was talking to were already winners with respect to trade, or were professionals relatively immune from the effects (e.g. doctors or lawyers). Regardless, &lt;em&gt;even winners preferred B&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Why would potential winners prefer B? Anecdotally, they don’t like the idea of having to hand over some of their own wages to subsidize people who are &lt;em&gt;not working&lt;/em&gt;. They know these people lost their jobs due to the trade deal or technological change, and a number of people I spoke with said they would be in favor of some kind of subsidy for the losers, but only for a very limited time. But it doesn’t seem fair to them that the job losers don’t have to do &lt;em&gt;anything&lt;/em&gt;, even if it wasn’t the job losers fault in the first place. People care about the job status of others. This is, I would venture, some of the reason that individuals care about their &lt;em&gt;own&lt;/em&gt; job status in the first place.&lt;/p&gt;
-
-&lt;p&gt;The hypothetical winners also tend to express a sort of endowment effect. Once you pay them 1000, it is much more tangible to them that they are giving up some of “their” money to subsidize job losers. On the other hand, under plan B they pay the subsidy implicitly through higher prices and lower nominal wages, and there is no endowment effect for them. And the people I asked this question are completely aware, like Kenny, of the fact that they are paying a subsidy through higher prices. The winners are for redistribution, but they care a lot about how that redistibution takes place. Again, this sounds like money illusion, but that doesn’t make it wrong.&lt;/p&gt;
-
-&lt;p&gt;I think the answers I got are in line with what Konczal, Smith, and Rodrik (and others) have said before about the value of jobs versus GDP. I’d suggest that even those with secure employment have preferences that would lead them to support jobs &lt;em&gt;for others&lt;/em&gt; at the cost of some GDP.&lt;/p&gt;
-
-&lt;p&gt;Does this mean we should scrap every trade deal? No. The implication of my little study is that people are willing to trade off &lt;em&gt;some&lt;/em&gt; of the gains from trade to keep more people employed. That doesn’t mean they are willing to trade off &lt;em&gt;all&lt;/em&gt; of the gains from trade. If Option B were to scrap all trade deals and lower the real wage of everyone to 200, rather than 700, you would probably get a different answer from both potential winners and losers. And given the embedded nature of imports in supply chains, you could well make the case that the losses would be astronomical, and thus not worth it.&lt;/p&gt;
-
-&lt;p&gt;Other policies relating to job creation would face the same questions. Noah brought up the idea of incentives for long-term contracts, and noted the worry that you can take this too far. If you incentivize long-term contracts, do you gum up the labor market so much that new firms cannot afford to get stated or grow, and old ones cannot afford to shut down? Or do you end up getting the same issues we have now with trade; a class of “winners” that get long-term contracts and a class of “losers” that do not?&lt;/p&gt;
-
-&lt;p&gt;From the perspective of doing economics, I’m not sold that building the concept of this job preference into models would amount to much more than slapping some math around. I think our job is a little more humble. Be really clear about the economic costs and benefits of Options A and B on things like real wages and GDP that we have some hope of actually quantifying, and then let people decide if they are willing to pay those costs to save jobs or not.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 03 Dec 2016 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 12 Dec 2016 00:00:00 -0600</pubDate>
       </item>
     
   </channel>
