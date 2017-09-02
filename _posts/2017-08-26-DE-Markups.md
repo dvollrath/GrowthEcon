@@ -3,6 +3,7 @@ layout: post
 title: Rising Markups and Falling Productivity
 published: true
 category: feed
+tags: prod
 ---
 
 In between checking weather updates here in Houston, I finally got around to reading the new working paper by Jan De Loecker and Jan Eeckhout (DE), on "[The Rise of Market Power and the Macroeconomic Implications](http://www.janeeckhout.com/wp-content/uploads/RMP.pdf)". The authors find that the markup of price over marginal cost charged by public US firms has been rising steadily since 1960, and in particular after 1980. It has generated a lot of commentary already, as in this [post](http://noahpinionblog.blogspot.com) by Noah Smith, this [post](https://niskanencenter.org/blog/markups-market-power/) by Karl Smith, and [this](http://marginalrevolution.com/marginalrevolution/2017/08/rise-market-power.html) from Tyler Cowen. A lot of the discussion so far has been about how to interpret their results, and whether it indicates a rise in "market power", and that devolved somewhat into a discussion of how to define "market power" in the first place. 
