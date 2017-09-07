@@ -1,0 +1,7 @@
+---
+title: How to Make a \$1500 Sandwich in Only 6 Months
+author: How to Make Everything
+category: link
+external_url: https://www.youtube.com/watch?v=URvWSsAgtJE
+tags: rich
+---

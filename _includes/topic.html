@@ -3,19 +3,37 @@
 <ul>
   {% for post in {{include.pass}} %}
     {% if post.url %}
+    	{% if post.categories contains 'feed' %}
         <li>
+        	{{ post.date | date: "%Y-%m-%d" }} &nbsp; 
          <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.date | date_to_string }} &nbsp; {{ post.title }}
+            {{ post.title }}
           </a>
         </li>
+        {% endif %}
     {% endif %}
   {% endfor %}
 </ul>
 </div>
 
 <h3>External Links</h3> 
+<div class="posts">
+<ul>
+  {% for post in {{include.pass}} %}
+    {% if post.url %}
+    	{% if post.categories contains 'link' %}
+        <li>
+        {{ post.date | date: "%Y" }} &nbsp; {{ post.author }} &nbsp; 
+         <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">
+            {{ post.title }}
+          </a>
+        </li>
+        {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>
 
-{% bibliography -q @url[keywords ~= {{include.ref}}] @webpage[keywords ~= {{include.ref}}] %}
 
 <h3>Academic References</h3>
 

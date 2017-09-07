@@ -1,0 +1,7 @@
+---
+title: 9 Facts that prove disability insurance isn't a giant boondoggle
+author: Thinkprogress
+category: link
+external_url: https://thinkprogress.org/nine-facts-that-prove-disability-insurance-isnt-a-giant-boondoggle-995fa13e65aa
+tags: policy
+---
