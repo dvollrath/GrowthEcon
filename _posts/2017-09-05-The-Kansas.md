@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Kansas Republican Governance Experiment
+author: Brad DeLong
 published: true
 tags: policy
 category: link

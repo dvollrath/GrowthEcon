@@ -1,0 +1,55 @@
+---
+layout: page
+title: Links
+permalink: /links/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Links</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="section-title">
+          </div>
+          <p>The following are links to external posts and sites that I have saved off. They are loosely organized by tags.</p>
+
+        <p>  
+            {% assign sorted_tags = site.tags | sort %}
+              {% for tag in sorted_tags %}
+                {% assign zz = tag[1] | where: "category", "link" | sort %}
+                  {% if zz != empty %}
+
+                    <h2>{{ tag[0] | camelize | replace: "-", " " }}</h2>
+                    <ul>
+                      {% for p in zz %}
+                       <li>
+                        {{ p.date | date: "%Y" }} &nbsp; {{ p.author }} &nbsp; 
+                        <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">
+                        {{ p.title }}
+                        </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+
+              {% endfor %}
+
+        </p>
+        </div>
+      </div><!-- .col-md-7 close -->
+    </div>
+  </div>
+</section>
