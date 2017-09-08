@@ -46,7 +46,7 @@ permalink: /
       </div>
     </div>
   <div class="posts">
-      {% for post in site.posts limit:3 %}
+      {% for post in site.categories.feed limit:3 %}
       <div class="post-area">
         <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
         <p class="post-date">{{ post.date | date_to_long_string }}</p>
