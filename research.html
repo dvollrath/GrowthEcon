@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Research
+title: Test
 permalink: /research/
 ---
-
 <!-- Slider Start -->
 <section id="global-header">
   <div class="container">
@@ -22,18 +21,15 @@ permalink: /research/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <div class="section-title">
-            <h2>Working Papers</h2>
+          {% for post in site.categories.paper %}
+          <div class="posts">
+            <p>
+            {{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
+            "<a href="{{ post.pdf | prepend: site.baseurl }}">{{ post.title }}</a>." &nbsp; 
+            <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp; {% if post.data %}  <a href="{{ post.data }}">Replication</a>. {% endif %}
+            </p>
           </div>
-          <p>
-          {% bibliography -q @unpublished[keywords ~= me] %}
-          </p>
-          <div class="section-title">
-            <h2>Published Work</h2>
-          </div>
-          <p>
-          {% bibliography -q @article[keywords ~= me] --group_by year --group_order descending %}
-          </p>
+          {% endfor %}
        </div>
       </div><!-- .col-md-7 close -->
     </div>
