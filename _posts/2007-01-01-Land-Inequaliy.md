@@ -8,5 +8,5 @@ author: D. Vollrath
 journal: American Journal of Agricultural Economics
 volume: 89(1)
 pdf: /assets/ajae_2007.pdf
-data: /assets/agproddata.zip
+data: https://github.com/dvollrath/LandInequality
 ---

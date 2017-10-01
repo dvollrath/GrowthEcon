@@ -8,4 +8,6 @@ author: D. Vollrath
 journal: Journal of Development Economics
 volume: 108
 pdf: /assets/JDE_HC_2014.pdf
+data: https://github.com/dvollrath/HC-Efficiency
+appendix: /assets/wage_012714_appx.pdf
 ---

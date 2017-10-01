@@ -7,6 +7,7 @@ abstract: We provide a methodology to estimate the elasticity of agricultural ou
 author: T. R. Johnson and D. Vollrath
 journal: UH Working Paper
 volume: 2017-192-55
-pdf: /assets/Constraint-Master.pdf
+pdf: https://github.com/dvollrath/Crops/blob/master/Drafts/Constraint-Master.pdf
 data: https://github.com/dvollrath/Crops
+appendix: https://github.com/dvollrath/Crops/blob/master/Drafts/Constraint-Appendix.pdf
 ---
