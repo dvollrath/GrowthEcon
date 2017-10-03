@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://growthecon.com/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://localhost:4000/</link>
     <description></description>
-    <pubDate>Sun, 01 Oct 2017 14:15:50 -0500</pubDate>
+    <pubDate>Mon, 02 Oct 2017 11:37:35 -0500</pubDate>
     
       <item>
         <title>Harvey</title>
-        <link>https://growthecon.com/blog/Harvey/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Harvey/</guid>
+        <link>http://localhost:4000/blog/Harvey/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Harvey/</guid>
         <description>&lt;p&gt;You may or may not realize that the global headquarters of Growthecon.com is in Houston. So it’s been an interesting few days, to say the least. This post has nothing to do with economics. It’s just things that keep running through my head as we clean up.&lt;/p&gt;
 
 &lt;p&gt;I live a charmed life, for so many reasons. But most recently, it’s the fact that we made it out of the storm with a dry house (barely) and with everyone safe. Lots of our neighbors are not so lucky, so we’ve been doing what we can to help. It doesn’t feel like much. I hope it makes a difference.&lt;/p&gt;
@@ -76,8 +76,8 @@
     
       <item>
         <title>Rising Markups and Falling Productivity</title>
-        <link>https://growthecon.com/blog/DE-Markups/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/DE-Markups/</guid>
+        <link>http://localhost:4000/blog/DE-Markups/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/DE-Markups/</guid>
         <description>&lt;p&gt;In between checking weather updates here in Houston, I finally got around to reading the new working paper by Jan De Loecker and Jan Eeckhout (DE), on “&lt;a href=&quot;http://www.janeeckhout.com/wp-content/uploads/RMP.pdf&quot;&gt;The Rise of Market Power and the Macroeconomic Implications&lt;/a&gt;”. The authors find that the markup of price over marginal cost charged by public US firms has been rising steadily since 1960, and in particular after 1980. It has generated a lot of commentary already, as in this &lt;a href=&quot;http://noahpinionblog.blogspot.com&quot;&gt;post&lt;/a&gt; by Noah Smith, this &lt;a href=&quot;https://niskanencenter.org/blog/markups-market-power/&quot;&gt;post&lt;/a&gt; by Karl Smith, and &lt;a href=&quot;http://marginalrevolution.com/marginalrevolution/2017/08/rise-market-power.html&quot;&gt;this&lt;/a&gt; from Tyler Cowen. A lot of the discussion so far has been about how to interpret their results, and whether it indicates a rise in “market power”, and that devolved somewhat into a discussion of how to define “market power” in the first place.&lt;/p&gt;
 
 &lt;p&gt;I want to jump in with some of my own thoughts on the paper, but I’m going to avoid getting into this “market power” interpretation thing. I’m more interested in what DE’s results have to say about the productivity slowdown. Let’s start with how DE get these numbers in the first place.&lt;/p&gt;
@@ -191,8 +191,8 @@
     
       <item>
         <title>Are some places &quot;More Malthusian&quot; than other?</title>
-        <link>https://growthecon.com/blog/Constraints/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Constraints/</guid>
+        <link>http://localhost:4000/blog/Constraints/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Constraints/</guid>
         <description>&lt;p&gt;I’ve got a new working paper out (&lt;a href=&quot;/assets/2017-06-28-Constraint.pdf&quot;&gt;pdf&lt;/a&gt; or &lt;a href=&quot;https://ideas.repec.org/p/hou/wpaper/2017-192-55.html&quot;&gt;repec&lt;/a&gt;), co-authored with Ryan Johnson, on Malthusian constraints. There is some material that we’re cutting from the paper, because it is already getting too long, but I kind of like the graphs and the results, so I figured I would write them up here. Fair warning: there will be some math.&lt;/p&gt;
 
 &lt;p&gt;In the &lt;a href=&quot;https://growthecon.com/blog/Malthus/&quot;&gt;post&lt;/a&gt; I wrote not too long ago on what “Malthusian” means, I said that a key feature of a Malthusian economy was that living standards are &lt;em&gt;inversely&lt;/em&gt; related to population size. Typically, we’d think of this as being due to fixed (or very expensive to acquire) amounts of agricultural land. What Ryan and I are trying to figure out is exactly how sensitive living standards are to population size.&lt;/p&gt;
@@ -262,8 +262,8 @@
     
       <item>
         <title>The Return of Peasant Mentality?</title>
-        <link>https://growthecon.com/blog/Peasant/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Peasant/</guid>
+        <link>http://localhost:4000/blog/Peasant/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Peasant/</guid>
         <description>&lt;p&gt;Without intending to, I ended up taking a blog hiatus (blacation?) for about a month. But in that month I built up a whole reserve of speculative energy that I now need to disgorge all at once. So strap in, because this one gets hairy towards the end.&lt;/p&gt;
 
 &lt;p&gt;A thing that has interested me since grad school is the clear gap in labor productivity between urban and rural areas, or between non-agricultural workers and agricultural workers. There are two big questions that come up given that fact. Why do those gaps exist? What effect do those gaps have, if any, on development? I’ve taken a couple of swipes at the second question &lt;a href=&quot;/assets/JDE_Final.pdf&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;/assets/dvhc2014.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -314,8 +314,8 @@
     
       <item>
         <title>Understanding the Cost Disease of Services</title>
-        <link>https://growthecon.com/blog/What-You-Spend/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/What-You-Spend/</guid>
+        <link>http://localhost:4000/blog/What-You-Spend/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/What-You-Spend/</guid>
         <description>&lt;p&gt;As my internal clock is not on internet time, I’m only now getting up a post in reaction to the death of William Baumol, who has been a consistent reference on this blog over the years. My topic page on the &lt;a href=&quot;https://growthecon.com/blog/Productivity-Slowdown/&quot;&gt;productivity slowdown&lt;/a&gt; is in many ways an extended riff on his work.&lt;/p&gt;
 
 &lt;p&gt;I can share no personal stories about the man, as I never met him. What I can do is spend some time digging through what I consider the key paper of his most famous idea, the “cost disease of services”. I’d like to think that as an academic, he’d appreciate this as much as an anecdote.&lt;/p&gt;
@@ -397,9 +397,9 @@
       </item>
     
       <item>
-        <title>Sigh....No, tax cuts won&#39;t boost growth</title>
-        <link>https://growthecon.com/blog/Taxes-Growth/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Taxes-Growth/</guid>
+        <title>Sigh....No, tax cuts won't boost growth</title>
+        <link>http://localhost:4000/blog/Taxes-Growth/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Taxes-Growth/</guid>
         <description>&lt;p&gt;I guess we need to go over this again. No, cuts to corporate tax rates and/or the reforms/cuts proposed on individual income taxes will not boost economic growth in any appreciable way. Not to 4%, nor 4.5%, nor 5%. There is no evidence supporting this claim. And even theoretically, there is no reason to believe that these tax reforms/cuts can boost growth to those rates.&lt;/p&gt;
 
 &lt;h3 id=&quot;prima-facie-evidence&quot;&gt;Prima Facie Evidence&lt;/h3&gt;
@@ -459,8 +459,8 @@
     
       <item>
         <title>Topics in Economic Growth</title>
-        <link>https://growthecon.com/blog/Topics-Pages/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Topics-Pages/</guid>
+        <link>http://localhost:4000/blog/Topics-Pages/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Topics-Pages/</guid>
         <description>&lt;p&gt;Less of a post, and more of an announcement. I just created some new pages here at Growthecon.com that collect resources and materials related to specific topics regarding growth. See the &lt;a href=&quot;https://growthecon.com/topics/&quot;&gt;Topics&lt;/a&gt; link in the header of the webpage.&lt;/p&gt;
 
 &lt;p&gt;This was an exercise in intellectual housecleaning, and a way to organize some materials for possible use in classes in the future. Each topic has links to my own posts on the subject, links to other web articles or resources, and some selected academic citations. The topics are thus more accessible, but less comprehensive, then the pages of &lt;a href=&quot;https://growthecon.com/references/&quot;&gt;references&lt;/a&gt; that are also posted on this site.&lt;/p&gt;
@@ -488,8 +488,8 @@
     
       <item>
         <title>Aggregate Productivity versus Aggregate Technology ... Again</title>
-        <link>https://growthecon.com/blog/TFP-With-Profits/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/TFP-With-Profits/</guid>
+        <link>http://localhost:4000/blog/TFP-With-Profits/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/TFP-With-Profits/</guid>
         <description>&lt;p&gt;You can file this as another example of how measured aggregate TFP growth is like a trash can. It happens to include aggregate technology (which got tossed in there by accident while cleaning up kitchen), but also all sorts of other junk (like leftover coffee grounds). Today’s example shows that even if you are smart about how you construct your measure of aggregate TFP growth, you can still end up with some garbage in there because of aggregation issues. I know this is pushing the analogy, but actually measuing aggregate &lt;em&gt;technology&lt;/em&gt; is like trying to wipe up just the waffle crumbs your kids left behind, but &lt;em&gt;not&lt;/em&gt; the drops of syrup.&lt;/p&gt;
 
 &lt;p&gt;Let me try to give the English-language, and non-garbage related, version of this before turning to the math. To calculate TFP growth, we look at how fast aggregate GDP grew relative to how fast aggregate input use grew. But there is a discrepancy about how we measure GDP growth and how we measure input growth. Aggregate GDP growth is a summation of the growth rate of each individual sector, with each weighted by how big a part of GDP they are. Manufacturing is about 12% of GDP, so a 3% growth rate of manufacturing output would add 0.12 x 0.03 = 0.0036 to total GDP growth, or about one-third of one percentage point.&lt;/p&gt;
@@ -563,8 +563,8 @@
     
       <item>
         <title>An Update on the Profits from Housing</title>
-        <link>https://growthecon.com/blog/Ricardian-Housing/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Ricardian-Housing/</guid>
+        <link>http://localhost:4000/blog/Ricardian-Housing/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Ricardian-Housing/</guid>
         <description>&lt;p&gt;In the last &lt;a href=&quot;https://growthecon.com/blog/Profit-Accounting/&quot;&gt;post&lt;/a&gt; I used some findings by &lt;a href=&quot;http://home.uchicago.edu/~barkai/&quot;&gt;Simcha Barkai&lt;/a&gt; and the BLS to infer that housing may a major source of the rise in the share of profits in GDP. I got an e-mail from Simcha regarding the post, and the upshot is that I’m wrong. First, and foremost, it turns out that I got confused reading his paper, and all his calculations &lt;em&gt;exclude&lt;/em&gt; residential housing. This means that my inference from comparing the BLS profit share to his profit share is invalid. You cannot conclude that residential housing profits are driving a rise in profits share of aggregate GDP, because there is no information on housing in Barkai’s number. He documents that the profit share of the non-financial corporate sector is rising over time.&lt;/p&gt;
 
 &lt;p&gt;So, my bad on that. Simcha also made a point in his e-mail about how the BLS calculates profit shares, and it makes me lean towards his calculations as being correct. But let’s leave that for another day and post. For the time being, you should go forth and freak out about the increasing profit share in the non-financial corporate sector, whatever your preferred explanation for that may be.&lt;/p&gt;
@@ -608,8 +608,8 @@
     
       <item>
         <title>Is Housing Driving the Rise in Profits?</title>
-        <link>https://growthecon.com/blog/Profit-Accounting/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Profit-Accounting/</guid>
+        <link>http://localhost:4000/blog/Profit-Accounting/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Profit-Accounting/</guid>
         <description>&lt;p&gt;Um, this has nothing to do with health care or repealing the ACA. Sorry.&lt;/p&gt;
 
 &lt;p&gt;My last &lt;a href=&quot;https://growthecon.com/blog/Markups/&quot;&gt;post&lt;/a&gt; was on the profit share in GDP. I drew on some work by &lt;a href=&quot;http://home.uchicago.edu/~barkai/&quot;&gt;Barkai&lt;/a&gt;, who calculated that the profit share in GDP had been rising steadily over the last thirty years. To save you the bother of clicking any links, here is his figure showing the profit share over time, rising from about 2.5% of GDP in 1985 to over 15% in 2014.&lt;/p&gt;
@@ -677,8 +677,8 @@
     
       <item>
         <title>Text</title>
-        <link>https://growthecon.com/blog/Markups/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Markups/</guid>
+        <link>http://localhost:4000/blog/Markups/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Markups/</guid>
         <description>&lt;p&gt;I’ve put out a few posts in the past on the effect of higher markups on the &lt;em&gt;growth&lt;/em&gt; in measured productivity. But in those cases I’ve generally avoided the question of whether higher markups have an effect on the &lt;em&gt;level&lt;/em&gt; of measured productivity.&lt;/p&gt;
 
 &lt;h3 id=&quot;evidence-on-higher-profit-shares-and-markups&quot;&gt;Evidence on higher profit shares and markups&lt;/h3&gt;
@@ -717,8 +717,8 @@
     
       <item>
         <title>Who are you calling Malthusian?</title>
-        <link>https://growthecon.com/blog/Malthus/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Malthus/</guid>
+        <link>http://localhost:4000/blog/Malthus/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Malthus/</guid>
         <description>&lt;p&gt;I recently had a student ask me if I was a “Malthusian”. It’s not the first time someone has asked me that, and I’m never quite sure what to make of it. It’s always asked in a way that implies it is a belief system, similar to “Christian”, “Muslim”, or “Packer Fan”.&lt;/p&gt;
 
 &lt;p&gt;I’m not sure how to reply. I’m not a Malthusian “believer”, because that isn’t a thing. But I do think that several of Malthus’ assumptions about how economies function, in particular prior to the onset of sustained growth during the 1800’s, are well founded. And those assumptions have implications that help make sense of the world in that period of time. Some of the assumptions Malthus made may still be relevant today, too.&lt;/p&gt;
@@ -790,9 +790,9 @@
       </item>
     
       <item>
-        <title>Yes, ideas are harder to find. Don&#39;t panic yet.</title>
-        <link>https://growthecon.com/blog/Idea-TFP/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Idea-TFP/</guid>
+        <title>Yes, ideas are harder to find. Don't panic yet.</title>
+        <link>http://localhost:4000/blog/Idea-TFP/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Idea-TFP/</guid>
         <description>&lt;p&gt;Nick Bloom, Chad Jones, John van Reenen, and Michael Webb have a new &lt;a href=&quot;http://web.stanford.edu/~chadj/IdeaPF.pdf&quot;&gt;paper&lt;/a&gt; on how productive we are at producing “ideas”, which one can argue are the ultimate source of all economic growth.&lt;/p&gt;
 
 &lt;p&gt;The splash graphic from the paper, which I believe made a brief tour of the Twitter-verse a month or so ago, is shown below. It shows that the TFP growth rate (in blue) peaked around the 1940’s, and has declined since then. The axis measurement here is a big funky, as you could see more of the details of this line if they had made the left axis go up to say 5%, rather than 25%. Regardless, the TFP growth rate is smaller than it was in the past, following Robert Gordon’s numbers.&lt;/p&gt;
@@ -858,8 +858,8 @@
     
       <item>
         <title>The returns to societal capital</title>
-        <link>https://growthecon.com/blog/Society-Dividend/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Society-Dividend/</guid>
+        <link>http://localhost:4000/blog/Society-Dividend/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Society-Dividend/</guid>
         <description>&lt;p&gt;Brad DeLong had a &lt;a href=&quot;http://equitablegrowth.org/equitablog/regional-policy-and-distributional-policy-in-a-world-where-people-want-to-ignore-the-value-and-contribution-of-knowledge-and-network-based-increasing-returns/&quot;&gt;recent post&lt;/a&gt; that contained a number of ideas regarding how we view redistribution in a market economy. I picked up on some comments he made towards the end of that post, in which he points out that much of our prosperity comes from a stock of societal capital that we unknowingly rely on every day. And because that societal capital is unseen and uncompensated, we are all in some way overpaid for what we do.&lt;/p&gt;
 
 &lt;p&gt;When he says societal capital, I think of it in two broad categories:&lt;/p&gt;
@@ -918,8 +918,8 @@
     
       <item>
         <title>Can you do historical counter-factuals?</title>
-        <link>https://growthecon.com/blog/Causality/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Causality/</guid>
+        <link>http://localhost:4000/blog/Causality/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Causality/</guid>
         <description>&lt;p&gt;&lt;em&gt;Warning: rank speculation lies ahead&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Last weekend I fell hopelessly behind in an on-going Twitter-storm surrounding history and economics, and how the two fields think of causality and counterfactuals. The culprits filling up my notifications page included &lt;a href=&quot;https://twitter.com/pseudoerasmus&quot;&gt;Pseudoerasmus&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/leah_boustan&quot;&gt;Leah Platt Boustan&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/RichardALJones&quot;&gt;Richard Jones&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/kevinhorourke&quot;&gt;Kevin O’Rourke&lt;/a&gt;. This is my uber-Tweet response, and I’m going to leave the 140 character limit in the dust.&lt;/p&gt;
