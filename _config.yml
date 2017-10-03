@@ -38,7 +38,7 @@ scholar:
   bibliography: growthbib
   bibtex_filters: 
     - latex
-#    - dietz
+    - dietz
   bibliography_list_tag: ol
   bibliography_template: bib
 
@@ -46,7 +46,7 @@ scholar:
 paginate: 3
 paginate_path: "blog/page:num"
 permalink: blog/:title/ 
-plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
 
 visiblewords: 20
 str_continue_reading: "Continue Reading..."
