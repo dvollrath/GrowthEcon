@@ -5,7 +5,70 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Fri, 13 Oct 2017 13:19:38 -0500</pubDate>
+    <pubDate>Wed, 25 Oct 2017 17:57:25 -0500</pubDate>
+    
+      <item>
+        <title>Where did all the investment go?</title>
+        <link>https://growthecon.com/blog/Investment/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Investment/</guid>
+        <description>&lt;p&gt;The fact that economic growth has slowed in the last few decades is not news, at least not on this blog. And I’ve been through a series of possible explanations over the course of the last few years. One bit of data that I played around with a few years ago was the decline in the growth rate of capital per worker. In this &lt;a href=&quot;https://growthecon.com/blog/describing-the-decline-of-capital-per-worker/&quot;&gt;post&lt;/a&gt; I looked at some figures using BLS data that showed the amount of capital per worker was &lt;em&gt;declining&lt;/em&gt; in 2010-2013. That was unprecedented, as even during recessions in the past it was the case that capital per worker kept growing.&lt;/p&gt;
+
+&lt;p&gt;A new working paper by &lt;a href=&quot;https://www.brookings.edu/wp-content/uploads/2017/09/2_gutierrezphilippon.pdf&quot;&gt;German Gutierrez and Thomas Philippon&lt;/a&gt; (GP) has taken on this same topic, only in much more detail, and with a lot of effort put into understanding &lt;em&gt;why&lt;/em&gt; investment has been low recently. Moreover, they document that investment by firms has been falling over a longer period of time, coincident in large part with the productivity slowdown of the 21st century.&lt;/p&gt;
+
+&lt;h2 id=&quot;investment-is-lower-than-youd-expect-given-profits&quot;&gt;Investment is lower than you’d expect given profits&lt;/h2&gt;
+&lt;p&gt;GP start by documenting that firms remain profitable over time, but that their investments are declining over time. This first figure shows the net operating return on capital for non-financial firms (which do the bulk of non-residential investment). “Business” here is the umbrella covering both corporate and non-corporate firms. What is apaprent from GP’s first figure is that the net operating return on capital has remained constant, or grown, over time. For corporations, it is about 10% throughout this period, while for non-corporate firms it has gone up from about 20% to almost 30%. So the decline in investment by firms is not because they are unprofitable. Even the financial crisis in 2009 only produces a slight dip in the net operating returns.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gp1.png&quot; alt=&quot;Net operating return on capital&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second figure shows the crux of the story in GP. Net investment (investment spending minus deprecation) relative to net operating surplus appears to have shifted down after 2000. Prior to that, net investment averaged roughly 20% of net operating surplus, while afterwards it averaged only about 10%. I’m not sure how hard to think about the spike in this ratio in the 1990’s - this may be a temporary thing driven by the same technology surge that appears to have driven productivity growth - but you might be able to argue that the average net investment rate got down to 10% as early as 1990. Regardless, it is clear that the investment rate out of operating surplus fell, and stayed low, in the 2000’s. This, derived from more finely-grained data, is the equivalent of what I was talking about in my post from a few years ago.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gp2.png&quot; alt=&quot;Net investment relative to net operating surplus&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, as GP point out, it is not the case that we should expect this ratio of net investment to net operating surplus to be constant over time. Firms are (presumably) optimizing their investment behavior to maximize profits, and based on changing conditions it might make sense to invest more or less of their net operating surplus. What GP work through is a standard model of firm behavior, and link net investment to Tobin’s Q. This metric is, roughly, the market value of a firm relative to the replacement cost of its capital. If Q is more than 1, then the firm should be investing enough to &lt;em&gt;increase&lt;/em&gt; its capital stock, because market value they get from having capital is more than what it costs to install it. If Q is less than one, the firm should let its capital stock run down (allow depreciation to outweigh investment) as the they are not generating as much market value with their capital as they would pay to replace it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gp3.png&quot; alt=&quot;Two measures of Q&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One explanation, then, for the decline in net investment relative to net operating surplus is just that Tobin’s Q fell. And Tobin’s Q would fall if people expected particularly low future earnings (and hence gave firms lower market values) or if the replacement cost of capital was rising. But as GP show, Q wasn’t falling. It was &lt;em&gt;rising&lt;/em&gt;, at least for corporate firms. The two measures of Q differ by how exactly GP calculate it, as it isn’t obvious how to treat a set of miscellaneous assets and liabilities at firms in order to come up with the market value part of the Q ratio. Regardless, however Q is measured, it is now relatively high compared to the 1980’s, and only lags the very high values seen in the late 1990’s.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gp4.png&quot; alt=&quot;Net investment versus Q ratio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;GP then use the data on investment rates and Q from 1990 to 2001 to get a baseline relationship of the two. Given that relationship, they look at what the net investment rate &lt;em&gt;would have been&lt;/em&gt; given the Q values we had in the 2000’s, if investment had continued to follow that 1990-2001 relationship. In the above figure, this is plotted as the orange dashed line. Compared to that is the solid green line, which is the &lt;em&gt;actual&lt;/em&gt; net investment rate. You can see that starting in 2000 the observed investment rate is always &lt;em&gt;below&lt;/em&gt; the predicted investment rate, and sometimes by substantial amounts. Based on this, GP conclude that firms are under-investing compared to how they used to. This, despite the fact that they are profitable.&lt;/p&gt;
+
+&lt;h2 id=&quot;blame-it-on-concentration-and-institutional-ownership&quot;&gt;Blame it on concentration and institutional ownership&lt;/h2&gt;
+&lt;p&gt;Okay, so &lt;em&gt;why&lt;/em&gt; are firms investing less given their Q ratio and profitability? GP go through an extensive list of possible explanations, which I will not repeat here. Let me jump ahead to the two explanations that hold up across all of their analysis: concentration and institutional ownership. Before I get on to that, let me say that their analysis consists of regressions of net investment rates at either aggregate, industry, or firm level on various sets of control variables. In each case, they control for Q itself, to capture the natural fluctuations in net investment rates. The other control variables are there to see if they are significantly &lt;em&gt;correlated&lt;/em&gt; with net investment rates. GP have a &lt;a href=&quot;https://www8.gsb.columbia.edu/faculty-research/sites/faculty-research/files/finance/Macro%20Lunch/IK_Comp_v1.pdf&quot;&gt;companion paper&lt;/a&gt; which does more work trying to see if those significant correlations are in fact causal. For the time being, let’s just hang in there with the correlations.&lt;/p&gt;
+
+&lt;p&gt;Across all these regressions, what keeps showing up is a significant correlation between net investment rates and measures of concentration and measures of institutional ownership, while other possible correlations are insignificant or disappear once you control for other variables.&lt;/p&gt;
+
+&lt;p&gt;For concentration, what GP mean is fewer firms within small sub-industries, implying that each remaining firm has possibly more market power. At the aggregate level, the following figure shows that the rate of firm entry and exit has declined over time, consistent with all the evidence that the John Haltiwanger-led posse of researchers has been banging on for several years. Less entry means fewer new competitors entering, and less exit means fewer firms are being forced out of business. This is consistent with higher concentration.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gp8.png&quot; alt=&quot;Establishment exit and entry rates&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Why would concentration limit investment? The simple intuition is that if you don’t have to worry about competing with anyone, why bother to blow any money investing in a better product? Think of a cable company (&lt;em&gt;cough&lt;/em&gt; Comcast &lt;em&gt;cough&lt;/em&gt;) which has a monopoly in a local market. What incentive do they have to either upgrade their technology to make it more reliable or faster, and what incentive do they have to invest in, say, more repair vans and extra technicians? None, because they know you can’t go anywhere. Be careful to not run too far in the other direction, however. If firms have &lt;em&gt;zero&lt;/em&gt; market power, they also will have no incentive to invest, because any advantage they get will be immediately competed away. Somewhere in there is some kind of market power/concentration level that maximizes firms incentives to invest (and innovate, by the way). GP’s results suggest we are on the “back side” of the curve, and increasing concentration is leading to less investment (i.e. more Comcasts) rather than creating incentives for firms to invest.&lt;/p&gt;
+
+&lt;p&gt;The second significant correlation GP find is with institutional ownership of firms, which can include mutual funds and pension funds. Since 1980, these institutional investors have taken on larger and larger stakes in corporations, to the point that the average firm has about 60% ownership by institutions as opposed to individuals. I’ll admit to not being quite clear on what a “transient” institution means, but the “quasi-indexers” are things like actual index funds as well as widely-diversified mutual funds.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gp10b.png&quot; alt=&quot;Institutional ownership&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As the share of quasi-indexers rises, GP find, the rate of net investment falls. Now, you can tell yourself a lot of stories about this, both good and bad. The bad is that quasi-indexers are pushing firms to think only about short-term ((e.g. quarterly) results, and as such firms are loath to spend on long-term investments. The good is that quasi-indexers are pushing management to be more thoughtful about exactly what they invest in, which would imply that the high rates of net investment before were probably &lt;em&gt;too high&lt;/em&gt;. It isn’t obvious which one of those interpretations is correct, on the face of it. The prima facie evidence would be that the growth rate of GDP has fallen in the same period in which the net investment rate has fallen, suggesting the bad interpretation is correct. But there could be other forces at work that kept the growth rate high in the 1980’s, even though the net investment rate was too high. So don’t pull out the torches and pitchforks just yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gp10.png&quot; alt=&quot;Buybacks and payouts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Whatever the intepretation of the institutional ownership, what GP do document is that share buybacks have climbed over this period. Mechanically, spending more on doing share buybacks means less money left over for net investment. It appears that firms, since the early 1980’s, have been using more of their net operating surplus to buy back existing shares (driving up the market value for existing owners) and less on investment. The total payouts/assets in this last figure include buybacks and dividends, and after 1982 you can see that the trend upward in total payouts/assets is driven by an increase in buybacks. GP note in the figure 1982 as an important point because this is when the SEC passed a rule (10b-18) allowing companies to repurchase their own shares on the open market without any regulatory limit. Prior to that, there were restrictions on how much they could repurchase.&lt;/p&gt;
+
+&lt;p&gt;For a major shareholder of a firm, you can think of two major ways of making money off your holding. First, you could pursue long-term investments to grow the business and/or expand your market. This would raise the value of your shares by increasing the assets of the firm. Second, you could get the firm to buy back existing shares, driving up their price, and the value of your shares would increase proportionately. This second strategy is faster (you don’t need to wait to install the capital) and arguably less risky, because you don’t have to make a commitment to a new plant or location that may or may not prove to be profitable. Of course, you could go back and argue again that firms were over-investing in the past, and that the buybacks allow those shareholder who were bought out to reinvest their money in higher-return projects. Again, the prima facie evidence is working against you here, but that doesn’t mean you’re wrong.&lt;/p&gt;
+
+&lt;p&gt;One last note here is that GP look separately at the effect of concentration and institutional ownership on capital expenditures (e.g. physical equipment) and R&amp;amp;D spending. Higher concentration and more institutional ownership are correlated with lower rates of spending on both. The decline in investment they document is not just for physical equipment (which perhaps one could argue is becoming less relevant for production) but also for R&amp;amp;D (which one could not argue is becoming less relevant).&lt;/p&gt;
+
+&lt;h2 id=&quot;does-it-really-matter-for-growth&quot;&gt;Does it really matter for growth?&lt;/h2&gt;
+&lt;p&gt;The last section of GP covers the implications of this for growth. I’m not going to go through their work in detail, as they are trying to line it up with some work by &lt;a href=&quot;https://www.brookings.edu/wp-content/uploads/2017/08/fernaldtextsp17bpea.pdf&quot;&gt;Fernald, Hall, Stock, and Watson&lt;/a&gt;, and that gets more complicated than I want to cover in a blog post.&lt;/p&gt;
+
+&lt;p&gt;But GP do sneak in an interesting point in their discussion about the importance of falling investment for growth. If we think that the underlying growth rate of productivity has fallen, which is what appears in the data regarding productivity growth, then this implies that the long-run capital/output ratio should &lt;em&gt;rise&lt;/em&gt;. For those of you who grok the Solow model, the capital/output ratio is &lt;img src=&quot;http://latex.codecogs.com/png.latex?K/Y = s/(n+\delta+g)\inline&quot;/&gt; in steady state. Lower g, higher K/Y ratio. Except that we do not see a higher K/Y ratio over time. It has remained relatively constant, even as the trend growth rate of productivity has fallen. So something else must be going on, and one possibility is that “s” has fallen. In the Solow model, that “s” is the share of output that is turned into investment goods (“saved”) every period. Consistent with the GP story, if s has fallen at the same time g has fallen, then the K/Y ratio will remain roughly constant.&lt;/p&gt;
+
+&lt;p&gt;What this means is that the growth rate of GDP gets pulled down even more than it would be through just the decline in g. If s stayed constant, then the drop in g would lower the growth rate of GDP, but the increase in the K/Y ratio would offset that by a little. With the coincident drop in s, we don’t get that offset, and so the effect of the drop in g is particularly pronounced. GP speculate that increased market power of firms can explain why s dropped at the same time as g. That story is consistent with the data that is accumulating, for sure. I have not worked through their companion paper on causality in detail yet, so I can’t offer any opinion on whether increased concentration or market power appears to &lt;em&gt;cause&lt;/em&gt; the decline in s. For now, let’s leave it out there as a very plausible story for what has occurred. Whatever the causality, their initial evidence is clear that there has been a decline in net investment, and that warrants attention if we’re trying to account for why the growth rate of GDP has fallen over the last few decades.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 25 Oct 2017 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Why don&#39;t tax cuts boost growth?</title>
@@ -908,66 +971,6 @@
 
 </description>
         <pubDate>Tue, 24 Jan 2017 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>The returns to societal capital</title>
-        <link>https://growthecon.com/blog/Society-Dividend/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Society-Dividend/</guid>
-        <description>&lt;p&gt;Brad DeLong had a &lt;a href=&quot;http://equitablegrowth.org/equitablog/regional-policy-and-distributional-policy-in-a-world-where-people-want-to-ignore-the-value-and-contribution-of-knowledge-and-network-based-increasing-returns/&quot;&gt;recent post&lt;/a&gt; that contained a number of ideas regarding how we view redistribution in a market economy. I picked up on some comments he made towards the end of that post, in which he points out that much of our prosperity comes from a stock of societal capital that we unknowingly rely on every day. And because that societal capital is unseen and uncompensated, we are all in some way overpaid for what we do.&lt;/p&gt;
-
-&lt;p&gt;When he says societal capital, I think of it in two broad categories:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Trust&lt;/strong&gt;: I think this is much of what DeLong has in mind. We are lucky to be in the “trust” or “cooperate” equilibrium in our repeated game of exhanging goods and services. If you like, call it the “stag hunt” equilibrium &lt;a href=&quot;http://worthwhile.typepad.com/worthwhile_canadian_initi/2016/12/staghunt-and-the-irs.html&quot;&gt;Nick Rowe&lt;/a&gt; talks about. Regardless, we benefit from the decisions of our ancestors to play this equilibrium, so that it is the default. If you want to say this is due to some institutions, or culture, or pure luck, it doesn’t matter. We’ve found our way to the trust equilibrium, and benfit from that immensely.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Scale&lt;/strong&gt;: He doesn’t mention this explicitly, but I think it is as relevant as trust. Scale influences the potential profits from innovations, and so is crucial to growth. Bigger market, more profits, more incentives to innovate. But scale is not the same thing as trust, or institutions, or culture. If you doubt that, ask yourself why no firm is spending millions to get into New Zealand, paragon of free market institutions, but they are falling all over themselves to do business in China. Living in the US, or EU, or China, is to reap the benefits of living with scale.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The heart of DeLong’s point is that neither trust nor scale are things that are owned by any firm or individual. You could say that we inherited them from our ancestors, or you could say these are emergent properties, or you could say that they are designed by the institutions we choose for ourselves. Regardless, trust and scale are “ideas” in the broadest sense, and are inputs into the production process in that trust and scale mean our set of rival inputs (labor, capital) can produce more with them than without.&lt;/p&gt;
-
-&lt;p&gt;How is it that scale and trust mean we are overpaid? Here I’ll borrow an idea from DeLong, and “hoist one from the archives” of this &lt;a href=&quot;https://growthecon.com/blog/what-assumptions-matter-for-growth-theory/&quot;&gt;blog&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Just to refresh, a production function tells us that output is determined by some combination of non-rival inputs and rival inputs. Non-rival inputs are things like ideas that can be used by many firms or people at once without limiting the use by others. Think of blueprints. Rival inputs are things that can only be used by one person or firm at a time. Think of nails. The income earned by both rival and non-rival inputs has to add up to total output. Okay, given all that setup, here are three statements that &lt;em&gt;could&lt;/em&gt; be true.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;ol&gt;
-    &lt;li&gt;Output is constant returns to scale in &lt;em&gt;rival&lt;/em&gt; inputs&lt;/li&gt;
-    &lt;li&gt;Non-rival inputs receive some portion of output&lt;/li&gt;
-    &lt;li&gt;Rival inputs receive output equal to their marginal product&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Pick two.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The ideas of trust and scale are non-rival inputs to production. If we assume that output is constant returns to scale in rival inputs (point 1), then we have to pick wither 2 or 3. As neither trust nor scale receive payments, we have essentially chosen 3. And in that sense DeLong means that rival inputs (our labor and our capital) are overpaid. We are not compensating anyone for the trust and scale that we inherited or created as a group.&lt;/p&gt;
-
-&lt;p&gt;A first aside is that in my set-up choosing 3 implies that rival inputs earn their marginal products, and DeLong is saying that our labor is earning &lt;em&gt;more&lt;/em&gt; than its marginal product. I don’t think this is actually a meaningful difference. DeLong is saying that labor is overpaid because it earns returns that could be going to ideas like trust and scale. Whether we say that what it earns is the marginal product or not is irrelevant.&lt;/p&gt;
-
-&lt;p&gt;A second aside is that it isn’t really as stark as saying we chose option 3. Some ideas - the patent for an iPhone, the trademark on Coca-Cola - are protected and receive compensation. All I’m saying here is that scale and trust are ideas that are &lt;em&gt;not&lt;/em&gt; receiving compensation, and in that sense rival inputs like labor are overpaid.&lt;/p&gt;
-
-&lt;p&gt;A third aside is you may be wondering how the increasing returns to scale that DeLong mentions fits in here. Note that point 1 only says production is constant returns to scale in rival inputs (labor and capital). In terms of &lt;em&gt;all&lt;/em&gt; inputs (labor, capital, and ideas) production is increasing returns to scale. If I doubled all of them, output would more than double.&lt;/p&gt;
-
-&lt;p&gt;Back to the main story. What DeLong does with this is to provide what I found to be a unique justification for the public sector. That is, taxes are a way of collecting the royalties on trust and scale that we inherited and/or create ourselves. Taxes are the rents to idea of playing “cooperate” or having scale. And the proper use of those rents, if I am reading him correctly, is in ensuring that those endowments are perpetuated and handed off to our own children.&lt;/p&gt;
-
-&lt;p&gt;What does it mean to perpetuate trust and scale? Part of it, I think, is in providing the insurance against the fluctuations that are the necessary corrollary of the markets we create with trust and scale. Those fluctuations play havoc with local communities and ways of life, a la Polyani. Hence individuals or communities may be tempted to defect from the cooperate/trust equilibria, or hive themselves off on their own and reduce the scale of the economy. If we spend the rents of trust and scale supporting those communities, we can incent them to stay in the good equilibrium.&lt;/p&gt;
-
-&lt;p&gt;The issue with this, as DeLong spends most of his post working out, is that simply handing out those rents to people creates issues for everyone involved. Those paying taxes feel that they are being taken as suckers. Those receiving the rents - the members of disrupted communities - feel like deadbeats. No one wants to be in either of those positions. We have built-in preferences that make deviation from trust and scale look attractive. Which is why being in the good equilibrium is such a delicate thing.&lt;/p&gt;
-
-&lt;p&gt;How then, do you justify the collection of the rents that, arguably, rightfully belong to all of us, and ensure that we pass on the trust and scale necessary for prosperity to the next generation? And do so in a way that is palatable to all parties?&lt;/p&gt;
-
-&lt;p&gt;One idea is that you can use the idea of rents or royalties as a positive justifcation of taxation. We are collecting on the royalties due to us as a citizenry for our trust and scale, the same way that Apple collects royalties due to them as a designer of useful touchscreen emoji delivery machines. In this concept, taxation is not theft, or a necessary evil, but rather the enforcement of our intellectual property rights over trust and scale.&lt;/p&gt;
-
-&lt;p&gt;On the other end, the distribution of those rents is perhaps more palatable when seen not as a handout (which makes people feel like a deadbeat) but as something like a dividend on shared ownership of an asset. I feel like this would be one way to think of how a universal basic income could be framed - everyone is getting their share of the collective dividend payment due to the owners of the “ideas” of trust and scale. It is a sign of ownership, not dependence.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 26 Dec 2016 00:00:00 -0600</pubDate>
       </item>
     
   </channel>
