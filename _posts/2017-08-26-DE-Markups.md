@@ -90,7 +90,7 @@ $$
 
 Or technology is equivalent to the markup times the wage. I like to think of this expression this way: technology (or an increase in technology) can be used for one of two things (a) raising the markup or (b) raising the wage paid to inputs. One quibble with DE is that they say something along the line of "if markups go up, this raises technology", which should more accurately be phrased "if markups go up, this implies that tecnology was higher", which eliminates the implicit causal statement.
 
-So we've got two ways to backing out technology, T, from the data. Either use $T = Y/X$, or use $T = \mu w$. In terms of growth rates, the first says that the growth rate of technology (using little hats to denote growth rates) is $\hat{T} = \hat{Y} - \hat{X}$, and the second says that $\hat{T} = \hat{\mu} + \hat{w}$.
+So we've got two ways of backing out technology, T, from the data. Either use $T = Y/X$, or use $T = \mu w$. In terms of growth rates, the first says that the growth rate of technology (using little hats to denote growth rates) is $\hat{T} = \hat{Y} - \hat{X}$, and the second says that $\hat{T} = \hat{\mu} + \hat{w}$.
 
 That's great, but when we go to the data is it quite plausible that we make mistakes. That is, we go to the data and calculate residual *productivity*, P. And unless we are exactly right about how the world works, our measure of P may not be equal to T. Here's what I mean. Take the production function version of things, which I've talked about a lot before.
 
@@ -103,7 +103,7 @@ The growth rate of productivity is the growth rate of output minus the growth ra
 If you instead were going to try and measure productivity growth using the real wage, then you could get something like
 
 $$
-\hat{P} = \hat{\mu}^{wrong} + \hat{X} = (\hat{\mu}^{wrong} - \hat{\mu}) + \hat{\mu} +  \hat{X} = \hat{T} + (\hat{\mu}^{wrong} - \hat{\mu})
+\hat{P} = \hat{\mu}^{wrong} + \hat{w} = (\hat{\mu}^{wrong} - \hat{\mu}) + \hat{\mu} +  \hat{w} = \hat{T} + (\hat{\mu}^{wrong} - \hat{\mu})
 $$
 
 where you might be making an error about how fast markups are growing. If you do, and in particular if you assume $\hat{\mu}^{wrong} < \hat{\mu}$, which you might do if you assumed markups were unchanging over time, then your productivity growth term understates technological growth.

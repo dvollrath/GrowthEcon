@@ -46,7 +46,7 @@ scholar:
 paginate: 3
 paginate_path: "blog/page:num"
 permalink: blog/:title/ 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 visiblewords: 20
 str_continue_reading: "Continue Reading..."

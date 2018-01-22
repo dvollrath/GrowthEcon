@@ -5,7 +5,7 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Sat, 28 Oct 2017 22:58:55 -0500</pubDate>
+    <pubDate>Mon, 22 Jan 2018 08:35:12 -0600</pubDate>
     
       <item>
         <title>Where did all the investment go?</title>
@@ -271,7 +271,7 @@
 
 &lt;p&gt;Or technology is equivalent to the markup times the wage. I like to think of this expression this way: technology (or an increase in technology) can be used for one of two things (a) raising the markup or (b) raising the wage paid to inputs. One quibble with DE is that they say something along the line of “if markups go up, this raises technology”, which should more accurately be phrased “if markups go up, this implies that tecnology was higher”, which eliminates the implicit causal statement.&lt;/p&gt;
 
-&lt;p&gt;So we’ve got two ways to backing out technology, T, from the data. Either use &lt;img src=&quot;http://latex.codecogs.com/png.latex?T = Y/X\inline&quot;/&gt;, or use &lt;img src=&quot;http://latex.codecogs.com/png.latex?T = \mu w\inline&quot;/&gt;. In terms of growth rates, the first says that the growth rate of technology (using little hats to denote growth rates) is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{T} = \hat{Y} - \hat{X}\inline&quot;/&gt;, and the second says that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{T} = \hat{\mu} + \hat{w}\inline&quot;/&gt;.&lt;/p&gt;
+&lt;p&gt;So we’ve got two ways of backing out technology, T, from the data. Either use &lt;img src=&quot;http://latex.codecogs.com/png.latex?T = Y/X\inline&quot;/&gt;, or use &lt;img src=&quot;http://latex.codecogs.com/png.latex?T = \mu w\inline&quot;/&gt;. In terms of growth rates, the first says that the growth rate of technology (using little hats to denote growth rates) is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{T} = \hat{Y} - \hat{X}\inline&quot;/&gt;, and the second says that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{T} = \hat{\mu} + \hat{w}\inline&quot;/&gt;.&lt;/p&gt;
 
 &lt;p&gt;That’s great, but when we go to the data is it quite plausible that we make mistakes. That is, we go to the data and calculate residual &lt;em&gt;productivity&lt;/em&gt;, P. And unless we are exactly right about how the world works, our measure of P may not be equal to T. Here’s what I mean. Take the production function version of things, which I’ve talked about a lot before.&lt;/p&gt;
 
@@ -281,7 +281,7 @@
 
 &lt;p&gt;If you instead were going to try and measure productivity growth using the real wage, then you could get something like&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{P} = \hat{\mu}^{wrong} + \hat{X} = (\hat{\mu}^{wrong} - \hat{\mu}) + \hat{\mu} +  \hat{X} = \hat{T} + (\hat{\mu}^{wrong} - \hat{\mu})&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{P} = \hat{\mu}^{wrong} + \hat{w} = (\hat{\mu}^{wrong} - \hat{\mu}) + \hat{\mu} +  \hat{w} = \hat{T} + (\hat{\mu}^{wrong} - \hat{\mu})&lt;/script&gt;
 
 &lt;p&gt;where you might be making an error about how fast markups are growing. If you do, and in particular if you assume &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{\mu}^{wrong} &amp;lt; \hat{\mu}\inline&quot;/&gt;, which you might do if you assumed markups were unchanging over time, then your productivity growth term understates technological growth.&lt;/p&gt;
 
@@ -793,46 +793,6 @@
       </item>
     
       <item>
-        <title>Text</title>
-        <link>https://growthecon.com/blog/Markups/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Markups/</guid>
-        <description>&lt;p&gt;I’ve put out a few posts in the past on the effect of higher markups on the &lt;em&gt;growth&lt;/em&gt; in measured productivity. But in those cases I’ve generally avoided the question of whether higher markups have an effect on the &lt;em&gt;level&lt;/em&gt; of measured productivity.&lt;/p&gt;
-
-&lt;h3 id=&quot;evidence-on-higher-profit-shares-and-markups&quot;&gt;Evidence on higher profit shares and markups&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.dropbox.com/s/0nk9egcg8tf1sdv/figure_kcl_2.png?dl=0&quot; alt=&quot;Testing&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;the-effect-of-markups-on-productivity-levels&quot;&gt;The effect of markups on productivity levels&lt;/h3&gt;
-&lt;p&gt;To say something about the effect that markups could be having on productivity, we need some conception of &lt;em&gt;why&lt;/em&gt; firms are able to charge a markup over marginal cost, and also some conception of what drives those markups. For the &lt;em&gt;why&lt;/em&gt;, we assume that firms have some market power based on …. something about them. Maybe they have a patent on a product, meaning they are the monopoly provider. Or maybe they have created some kind of brand, or reputation for quality (deserved or not), that makes people want to only buy &lt;em&gt;that&lt;/em&gt; product. Think Apple. Or maybe they have some kind of locational advantage, like being a coffee shop in a busy train station. Whatever the reason, these firms have enough market power to charge a markup.&lt;/p&gt;
-
-&lt;p&gt;What determines the level of that markup, and why would it change? In general, the elasticity of demand for their product with respect to price is what matters here. The higher the elasticity (the “flatter” the demand curve), the less market power a firm has, and the smaller a markup they can charge. The lower the elasticity (the “steeper” the demand curve), the more market power a firm has, and the bigger a markup they can charge.&lt;/p&gt;
-
-&lt;p&gt;A high elasticity would be the case if there were lots of close substitutes for the product, so people were willing to abandon a firm’s specific product if the price went up just a little. Think of gas stations, which have a tiny bit of market power due to location. But lots of people would stop going to a gas station that raised its price by 1 or 2 cents per gallon. A low elasticity would be the case if there were few substitutes for the product, or the product was a strong complement to other things people buy. Then, no matter what the firm charges, people will buy some. Think of an iPhone. Apple has convinced people - whether you believe it or not - that there is no substitute for an &lt;em&gt;iPhone&lt;/em&gt;; other smartphones just aren’t the same. So they can charge 600 bucks for one, while the marginal cost is something closer to 100.&lt;/p&gt;
-
-&lt;p&gt;When the evidence says that markups have gone up, then one interpretation is that the elasticity of demand for different goods has gone &lt;em&gt;down&lt;/em&gt;. I think of this as meaning that people have gotten very picky. I want an &lt;em&gt;iPhone&lt;/em&gt;, not a Samsung. I want a double chai skim latte, not a coffee. I want a Lululemon pair of yoga pants, not the ones from Target. Just imagine that everyone has become a 13-year-old girl.&lt;/p&gt;
-
-&lt;p&gt;Now, if markups are higher because the elasticity of demand for individual goods is lower, what does this imply for measured productivity? Well, in most typical settings, this would lower measured productivity. Why?&lt;/p&gt;
-
-&lt;p&gt;Let’s start with a very standard way of thinking about how to model this, with a constant elasticity of substitution across firms.&lt;/p&gt;
-
-&lt;p&gt;The crux of the paper is that if both labor’s share and capital’s share are falling, then by necessity profit’s share is rising.&lt;/p&gt;
-
-&lt;p&gt;Analytically, we like to talk about profits as a function of markups - the ratio of price to marginal cost charged by firms. If the profit share is rising, then it must be that markups are rising.&lt;/p&gt;
-
-&lt;p&gt;I’ve talked before about the impact of markups, but the Barkai paper lays out clearly the effect.&lt;/p&gt;
-
-&lt;p&gt;Why is output lower with higher markups? Within the setup that Barkai uses, it is because the lower shares going to labor and capital lower the wage and rate of return, respectively. With the benefit of working or investing lower due to higher markups, labor supply and savings are lower. Output is lower because we provide fewer inputs to the economy.&lt;/p&gt;
-
-&lt;p&gt;As an alternative, imagine that both capital and labor were inelastically supplied. Then, regardless of the labor or capital share, we’d have the same amount of inputs, and hence the same amount of output. The only difference would be the distribution of output.&lt;/p&gt;
-
-&lt;p&gt;In this case, wages stagnate for two reasons. First, labor’s share of output is lower, so they are taking a smaller slice of the pie. Second, the pie is smaller as well.&lt;/p&gt;
-
-&lt;h3 id=&quot;other-mechanisms&quot;&gt;Other mechanisms&lt;/h3&gt;
-&lt;p&gt;The mechanism here is that higher markups lower factor supplies. And that fits within the model Barkai uses, which uses a bunch of standard assumptions. There is monopolistic competition between firms, with a fixed elasticity of substitution between them.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 06 Mar 2017 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
         <title>Who are you calling Malthusian?</title>
         <link>https://growthecon.com/blog/Malthus/</link>
         <guid isPermaLink="true">https://growthecon.com/blog/Malthus/</guid>
@@ -971,6 +931,66 @@
 
 </description>
         <pubDate>Tue, 24 Jan 2017 00:00:00 -0600</pubDate>
+      </item>
+    
+      <item>
+        <title>The returns to societal capital</title>
+        <link>https://growthecon.com/blog/Society-Dividend/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Society-Dividend/</guid>
+        <description>&lt;p&gt;Brad DeLong had a &lt;a href=&quot;http://equitablegrowth.org/equitablog/regional-policy-and-distributional-policy-in-a-world-where-people-want-to-ignore-the-value-and-contribution-of-knowledge-and-network-based-increasing-returns/&quot;&gt;recent post&lt;/a&gt; that contained a number of ideas regarding how we view redistribution in a market economy. I picked up on some comments he made towards the end of that post, in which he points out that much of our prosperity comes from a stock of societal capital that we unknowingly rely on every day. And because that societal capital is unseen and uncompensated, we are all in some way overpaid for what we do.&lt;/p&gt;
+
+&lt;p&gt;When he says societal capital, I think of it in two broad categories:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Trust&lt;/strong&gt;: I think this is much of what DeLong has in mind. We are lucky to be in the “trust” or “cooperate” equilibrium in our repeated game of exhanging goods and services. If you like, call it the “stag hunt” equilibrium &lt;a href=&quot;http://worthwhile.typepad.com/worthwhile_canadian_initi/2016/12/staghunt-and-the-irs.html&quot;&gt;Nick Rowe&lt;/a&gt; talks about. Regardless, we benefit from the decisions of our ancestors to play this equilibrium, so that it is the default. If you want to say this is due to some institutions, or culture, or pure luck, it doesn’t matter. We’ve found our way to the trust equilibrium, and benfit from that immensely.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Scale&lt;/strong&gt;: He doesn’t mention this explicitly, but I think it is as relevant as trust. Scale influences the potential profits from innovations, and so is crucial to growth. Bigger market, more profits, more incentives to innovate. But scale is not the same thing as trust, or institutions, or culture. If you doubt that, ask yourself why no firm is spending millions to get into New Zealand, paragon of free market institutions, but they are falling all over themselves to do business in China. Living in the US, or EU, or China, is to reap the benefits of living with scale.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The heart of DeLong’s point is that neither trust nor scale are things that are owned by any firm or individual. You could say that we inherited them from our ancestors, or you could say these are emergent properties, or you could say that they are designed by the institutions we choose for ourselves. Regardless, trust and scale are “ideas” in the broadest sense, and are inputs into the production process in that trust and scale mean our set of rival inputs (labor, capital) can produce more with them than without.&lt;/p&gt;
+
+&lt;p&gt;How is it that scale and trust mean we are overpaid? Here I’ll borrow an idea from DeLong, and “hoist one from the archives” of this &lt;a href=&quot;https://growthecon.com/blog/what-assumptions-matter-for-growth-theory/&quot;&gt;blog&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Just to refresh, a production function tells us that output is determined by some combination of non-rival inputs and rival inputs. Non-rival inputs are things like ideas that can be used by many firms or people at once without limiting the use by others. Think of blueprints. Rival inputs are things that can only be used by one person or firm at a time. Think of nails. The income earned by both rival and non-rival inputs has to add up to total output. Okay, given all that setup, here are three statements that &lt;em&gt;could&lt;/em&gt; be true.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Output is constant returns to scale in &lt;em&gt;rival&lt;/em&gt; inputs&lt;/li&gt;
+    &lt;li&gt;Non-rival inputs receive some portion of output&lt;/li&gt;
+    &lt;li&gt;Rival inputs receive output equal to their marginal product&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pick two.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The ideas of trust and scale are non-rival inputs to production. If we assume that output is constant returns to scale in rival inputs (point 1), then we have to pick wither 2 or 3. As neither trust nor scale receive payments, we have essentially chosen 3. And in that sense DeLong means that rival inputs (our labor and our capital) are overpaid. We are not compensating anyone for the trust and scale that we inherited or created as a group.&lt;/p&gt;
+
+&lt;p&gt;A first aside is that in my set-up choosing 3 implies that rival inputs earn their marginal products, and DeLong is saying that our labor is earning &lt;em&gt;more&lt;/em&gt; than its marginal product. I don’t think this is actually a meaningful difference. DeLong is saying that labor is overpaid because it earns returns that could be going to ideas like trust and scale. Whether we say that what it earns is the marginal product or not is irrelevant.&lt;/p&gt;
+
+&lt;p&gt;A second aside is that it isn’t really as stark as saying we chose option 3. Some ideas - the patent for an iPhone, the trademark on Coca-Cola - are protected and receive compensation. All I’m saying here is that scale and trust are ideas that are &lt;em&gt;not&lt;/em&gt; receiving compensation, and in that sense rival inputs like labor are overpaid.&lt;/p&gt;
+
+&lt;p&gt;A third aside is you may be wondering how the increasing returns to scale that DeLong mentions fits in here. Note that point 1 only says production is constant returns to scale in rival inputs (labor and capital). In terms of &lt;em&gt;all&lt;/em&gt; inputs (labor, capital, and ideas) production is increasing returns to scale. If I doubled all of them, output would more than double.&lt;/p&gt;
+
+&lt;p&gt;Back to the main story. What DeLong does with this is to provide what I found to be a unique justification for the public sector. That is, taxes are a way of collecting the royalties on trust and scale that we inherited and/or create ourselves. Taxes are the rents to idea of playing “cooperate” or having scale. And the proper use of those rents, if I am reading him correctly, is in ensuring that those endowments are perpetuated and handed off to our own children.&lt;/p&gt;
+
+&lt;p&gt;What does it mean to perpetuate trust and scale? Part of it, I think, is in providing the insurance against the fluctuations that are the necessary corrollary of the markets we create with trust and scale. Those fluctuations play havoc with local communities and ways of life, a la Polyani. Hence individuals or communities may be tempted to defect from the cooperate/trust equilibria, or hive themselves off on their own and reduce the scale of the economy. If we spend the rents of trust and scale supporting those communities, we can incent them to stay in the good equilibrium.&lt;/p&gt;
+
+&lt;p&gt;The issue with this, as DeLong spends most of his post working out, is that simply handing out those rents to people creates issues for everyone involved. Those paying taxes feel that they are being taken as suckers. Those receiving the rents - the members of disrupted communities - feel like deadbeats. No one wants to be in either of those positions. We have built-in preferences that make deviation from trust and scale look attractive. Which is why being in the good equilibrium is such a delicate thing.&lt;/p&gt;
+
+&lt;p&gt;How then, do you justify the collection of the rents that, arguably, rightfully belong to all of us, and ensure that we pass on the trust and scale necessary for prosperity to the next generation? And do so in a way that is palatable to all parties?&lt;/p&gt;
+
+&lt;p&gt;One idea is that you can use the idea of rents or royalties as a positive justifcation of taxation. We are collecting on the royalties due to us as a citizenry for our trust and scale, the same way that Apple collects royalties due to them as a designer of useful touchscreen emoji delivery machines. In this concept, taxation is not theft, or a necessary evil, but rather the enforcement of our intellectual property rights over trust and scale.&lt;/p&gt;
+
+&lt;p&gt;On the other end, the distribution of those rents is perhaps more palatable when seen not as a handout (which makes people feel like a deadbeat) but as something like a dividend on shared ownership of an asset. I feel like this would be one way to think of how a universal basic income could be framed - everyone is getting their share of the collective dividend payment due to the owners of the “ideas” of trust and scale. It is a sign of ownership, not dependence.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Dec 2016 00:00:00 -0600</pubDate>
       </item>
     
   </channel>

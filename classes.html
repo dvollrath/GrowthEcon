@@ -24,25 +24,8 @@ permalink: /classes/
         <div class="block">
           <div class="section-title">
           </div>
-          <p>Nearly all of the class material is now on Blackboard (UH) or Canvas (Dartmouth). For some graduate courses, you can find additional material in these links.</p>
+          <p>All class materials are now on Blackboard (for UH students) or Canvas (for Dartmouth students). Please see those to find all materials for your course.</p>
 
-        <p>
-        <ul>
-        {% for post in site.categories.class %}
-            {% if post.url %}
-                <div class="post">
-                <header>
-                <h3>
-                     <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        {{ post.course }} {{ post.title }}
-                    </a>
-                </h3>
-                </header>
-                </div>
-            {% endif %}
-          {% endfor %}        
-        </ul>
-        </p>
         </div>
       </div><!-- .col-md-7 close -->
     </div>
