@@ -37,7 +37,7 @@ permalink: /links/
                       {% for p in zz %}
                        <li>
                         {{ p.date | date: "%Y" }} &nbsp; {{ p.author }} &nbsp; 
-                        <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">
+                        <a id="post-link-trans" class="post-link" href="{{ p.external_url }}">
                         {{ p.title }}
                         </a>
                         </li>
