@@ -1,0 +1,37 @@
+---
+layout: page
+title: Figures
+permalink: /figures/
+---
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Figures</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          {% for post in site.categories.figure %}
+          <div class="posts">
+            <p>
+            <h3>{{ post.title }}</h3>
+            <a href="{{ post.data }}">Data</a> &nbsp; <a href="{{ post.code }}">Code</a> &nbsp; <a href="{{ post.codebook }}">Codebook</a>
+            <img src="{{ post.img }}" width="200">
+            </p>
+          </div>
+          {% endfor %}
+       </div>
+      </div><!-- .col-md-7 close -->
+    </div>
+  </div>
+</section>
