@@ -21,13 +21,22 @@ permalink: /figures/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          {% for post in site.categories.figure %}
-          <div class="post-area">
-            <p>
-            <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
-            </p>
+          <div class="section-title">
           </div>
-          {% endfor %}
+          <p>Each post here is a separate figure I've created for either class, a blog post, or a bigger project. All the figures are for the United States, at least at the moment. If you click on the link, you'll find the figure itself, as well as links to the data used (CSV file), a codebook describing that data (they are not always informative - I'm working on it), and the Stata code used to produce the figure. If you are interested in getting the same look for the figures, I use the "plotplain" style in Stata. You can get this by using "net install gr0070.pkg". </p>
+          <p>  
+            <ol>
+              {% for post in site.categories.figure %}
+                {% if post.url %}
+                    <li>
+                     <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        {{ post.title }}
+                      </a>
+                    </li>
+                {% endif %}
+              {% endfor %}
+            </ol>
+          </p>
        </div>
       </div><!-- .col-md-7 close -->
     </div>
