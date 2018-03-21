@@ -1,0 +1,1 @@
+ twoway scatter Glforce temp_avg_jan if flaz==1, msymbol(o) || scatter Glforce temp_avg_jan if flaz==0, xlabel(10 20 30 40 50 60 70 80) xtitle("Mean January temperature (F)") ytitle("Percent growth in size, 2001-2015") legend(label(1 "Florida and Arizona") label(2 "All other states")) 
