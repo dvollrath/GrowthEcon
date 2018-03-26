@@ -1,0 +1,1 @@
+ twoway line priceindex76 year || line priceindex75 year || line priceindex82 year || line priceindex65 year || line priceindex13 year || line priceindex19 year, clcolor(black) || line priceindex21 year || line priceindex49 year, ytitle("Price index (1997=100)") xtitle("Year") xlabel(1997(2)2017) legend(cols(1) colfirst textfirst) 

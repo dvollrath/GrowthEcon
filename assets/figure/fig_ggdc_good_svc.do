@@ -1,0 +1,1 @@
+ twoway line valVA_perc Year if top==1 || line valVA_perc Year if top==2, xtitle("Year") ytitle("Share of real GDP") xlabel(1950(10)2010) ylabel(.1(.1).8) legend(label(1 "Goods") label(2 "Services")) 
