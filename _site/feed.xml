@@ -5,7 +5,54 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Mon, 26 Mar 2018 12:55:57 -0500</pubDate>
+    <pubDate>Fri, 30 Mar 2018 16:30:53 -0500</pubDate>
+    
+      <item>
+        <title>When did sustained growth start?</title>
+        <link>https://growthecon.com/blog/When-Growth/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/When-Growth/</guid>
+        <description>&lt;p&gt;You know how when you get older, time seems to move faster? Well, imagine how that feels, and now pretend that you write a blog. It’s been about six months since I last posted something, and that was not a conscious decision, but just something that kind of happened as I kept putting it off while I worked on classes or research. If I want to blame something in particular, I have been helping to coach my kids lacrosse team for the last few months, and you’d be shocked at how much mental real estate U-12 lacrosse eats up.&lt;/p&gt;
+
+&lt;p&gt;Whatever the reason, I’m back. And it was a working paper that I finally got around to reading that prompted me to get back on the wagon. Jane Humphries and Jacob Weisdorf have put out “Unreal wages? Real income and economic growth in England, 1260-1850”, which you can find an ungated version of &lt;a href=&quot;https://jacobweisdorf.files.wordpress.com/2017/12/unreal-wages_humphries-and-weisdorf_dec-2017_wp1.pdf&quot;&gt;here&lt;/a&gt;. As they set it out, there is a disparity in the data sources we use to think about the timing and evolution of sustained economic growth. The basic problem can be see in their figure, reproduced below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;HWfig1.png&quot; alt=&quot;GDP per capita and wages&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using aggregated data, Broadberry, Campbell, Klein, Overton, and van Leeuwen in &lt;a href=&quot;https://amzn.to/2GnD1Nm&quot;&gt;British Economic Growth, 1270-1870&lt;/a&gt; come up with a series for GDP per capita, plotted in the open circles in the figure. This shows a take-off to growth around 1650. However, the standard data used to establish the path of living standards has been wage data, and here a paper by &lt;a href=&quot;https://ideas.repec.org/a/bla/ehsrev/v60y2007i1p97-135.html&quot;&gt;Clark&lt;/a&gt; from 2007 is their source. As you can see, the wage data indicate no take-off in the 1600’s, and even by 1850 there is little to indicate that wages are experiencing sustained growth.&lt;/p&gt;
+
+&lt;p&gt;These two data series tell very different stories about the origin of economic growth. And it seems as if one of them must be wrong. What Humphries and Weisdorf (HW) suggest, in short, is that the wage data are incorrect. The underlying issue is that the most of the discussion about living standards for workers over this period is based on observations of &lt;em&gt;day&lt;/em&gt; wages drawn from various sources, which are then multiplied through by some estimate of the number of working days in a year - typically 250 - to get an implied annual income. But this of course has all sorts of issues. How many days of work was truly typical, and did it vary significantly over time? Even if the day wages recorded in the data are accurate, should we believe that any worker could earn that wage for as many days as they wish during a year?&lt;/p&gt;
+
+&lt;p&gt;What HW do is dig back into the data and pull out evidence on actual &lt;em&gt;annual&lt;/em&gt; labor contracts. Many farm workers had annual, or permanent contracts, and the farm owner padded out that work force with day laborers as necessary. But annual contracts existed outside of agriculture as well. These annual contracts are, in theory, a much better way of measuring labor’s living standard. However, they have the issue that these contracts often included not just a monetary payment, but payments in-kind, in terms of housing and food allowances. The big issue that HW have is trying to value those in-kind payments.&lt;/p&gt;
+
+&lt;p&gt;To do this, they make the assumption that all annual workers received in-kind payments that had a monetary value equal to a “respectability” basket of goods. This set of goods (and services in the form of rent) was defined by Bob Allen, and you can find the details of it in the HW paper. It consists of a a certain amount of specific foods (e.g. 234 kg of bread), as well as things like soap, linen, lamp oil, fuel, and rent. The monetary value of this basket is added to the actual observed money wages in the annual contracts, and that forms the annual earnings of a worker for HW.&lt;/p&gt;
+
+&lt;p&gt;This is probably the element of the paper you should be most concerned with. HW check the value of this respectability basket of goods against the few contracts they have that are more specific about the in-kind benefits that a worker receives, and for those cases Allen’s basket doesn’t look too far off. But that’s not the same as saying that all workers received exactly this same kind of basket, and more important for HW, that’s not the same thing as saying that all workers received this basket &lt;em&gt;over time&lt;/em&gt;. If the in-kind payments were declining over time, then they are overstating the growth in the value of annual earnings. If the in-kind payments were increasing, then they are understating the growth in annual earnings. I don’t know enough about the historical sources to make an educated criticism here; I’ll leave that to the economic historians. What HW do given the lack of data is reasonable, but that doesn’t make it accurate.&lt;/p&gt;
+
+&lt;p&gt;For the purposes of this post, let’s assume that this issue is not significant issue, and see what their numbers tell us. The punch line of the paper is really the following figure. The dark line is the annual wage series developed by HW, and the other two lines are identical to the first figure. You can see that the annual wages track the GDP per capita data very well. And as HW point out, there are two significant things to draw from that.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;HWfig2.png&quot; alt=&quot;Annual earnings, GDP per capita, and wages&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First, the reaction of wages to the Black Death (around 1350-1450) is &lt;em&gt;much&lt;/em&gt; smaller in terms of annual wages compared to day wages. We (and by we, I mean me in most of my classes) have used the day wage data for years to illustrate the Malthusian reaction of living standards to population shocks. As the Black Death killed off between one-quarter and one-third of the population, wages shot up, but as the population recovered after that (in the 1500s) wages dropped back to their roughly stagnant level. The HW annual earnings data show that the reaction was more muted. It still existed (look at 1350 to 1400 in particular), but was not as dramatic. In fact, it does not look like annual wages &lt;em&gt;ever&lt;/em&gt; fell back to the pre-Black Death level. This doesn’t mean that the Malthusian model is wrong; there are a lot of other changes going on in the economy over the 200 years following the Black Death. But it isn’t the neat illustration of the mechanism it once was. A different way of looking at this is as follows; assuming that the Malthusian model is &lt;em&gt;correct&lt;/em&gt;, then the annual earnings data tell us that there must have been &lt;em&gt;some&lt;/em&gt; kind of significant change in the English economy in that period, otherwise the earnings should have dropped back to the 50-75 range in the figure by 1650.&lt;/p&gt;
+
+&lt;p&gt;Second, and probably most noticeable, is the onset of sustained growth in annual earnings &lt;em&gt;much&lt;/em&gt; earlier than the actual Industrial Revolution. Both the GDP per capita and the annual earnings series being to accelerate around 1650. The Broadberry et al series of GDP per capita does not just reflect an increase in land rents or payments to capital, but appears to also represent an increase in the real living standards of workers.&lt;/p&gt;
+
+&lt;p&gt;That increase predates even the most aggressive dating of the industrial revolution in terms of specific technologies (e.g. Newcomen’s engine in 1712), and is well before dates in the 1760’s based on the spinning jenny or water frame. Steam power was invented in the 1700’s, but it wasn’t really until the early 1800’s that it became a significant source of motive energy for industry in England.&lt;/p&gt;
+
+&lt;p&gt;What HW’s data does, in its strongest interpretation, is firmly sever the connection of the Industrial Revolution - a technological event - from the onset of sustained growth - an economic event. I’ve made this case &lt;a href=&quot;https://growthecon.com/blog/unified-growth-theory-is-not-the-enemy/&quot;&gt;before&lt;/a&gt;, and the HW findings only reinforce it. The day wage data had already sawed through most of that connection, because day wages had lagged technological change by so many decades. But notice that the HW data suggest the disconnect is not that earnings &lt;em&gt;lagged&lt;/em&gt; the technological change, it is that they &lt;em&gt;predated&lt;/em&gt; the technological change. This is consistent with the GDP per capita data, and that has a very different set of implications for growth.&lt;/p&gt;
+
+&lt;p&gt;One story that would need a rethink is human capital as the origin of sustained growth. The idea here has been that it was not until the industrial processes of England, in the mid 1800’s, started to require more human capital that the quantity/quality trade-off for families tilted towards quality, allowing for sustained growth. But if sustained growth began in 1650, then it cannot be that the change in industrial demands for human capital of the mid-1800’s led to sustained growth. Now, you could rescue this by saying that &lt;em&gt;whatever&lt;/em&gt; was going on in 1650 was human-capital intense, and that while the timing of the story was wrong, the theory itself if right. But now we’ve got to establish what was going on with the nature of human capital in 1650 to cause this. At the same time, you need to account for the fact that population growth in England did &lt;em&gt;not&lt;/em&gt; slow down starting in 1650, and on the basis of much data, accelerated not long afterwards.&lt;/p&gt;
+
+&lt;p&gt;A second story that needs some rethinking is the institutions hypothesis. Here’s what you don’t want to do. Don’t look at the HW data and decide that it must have been the murder of Charles I in 1649, or the ascendancy of Oliver Cromwell that “caused” the acceleration to sustained growth. One, the HW data in the figure look precise, but you need to imagine some kind of errors bars around their earnings series, so the take-off to growth is probably safely situated somewhere between 1600 and 1700. Two, that’s not how causal inference works. That said, I probably need to update my prior on the plausibility of the institutional changes associated with the Glorious Revolution of 1689 having an important effect on growth.&lt;/p&gt;
+
+&lt;p&gt;Another story that comes to mind with respect to origins of sustained growth is the role of discoveries or early colonization. By pushing back sustained growth into the 1600’s, the timing fits as a reaction to the growing colonization of the Americas. The Pilgrims were in 1620, and Massachusetts Bay Colony was organized around 1630. So one could take more seriously that the Americas were an important feature of sustained growth. At the same time, it seems hard to believe that the scale of migration and trade between the Americas and England was so big that it could show up in an appreciable change in English wages even by the late 1600’s. But like the institutional hypothesis, let’s say that I would update my prior on the importance of the colonies. I’m still not sold, but I’m a little less skeptical than I was a few days ago.&lt;/p&gt;
+
+&lt;p&gt;A last story that seems to benefit from this kind of data is Bob Allen’s theory about wage pressures and industrial technology. In thinking about why England &lt;em&gt;adopted&lt;/em&gt; certain technologies in the late 1700’s and early 1800’s, and many continental countries did not, Allen cites the relatively high wages in England (compared to relatively low energy prices). The annual earnings data are consistent with his hypothesis, conditional on those technologies (e.g. the jennies and water frames and steam engines) having been invented when they were. There is still a different story to tell about why those inventions were made in the first place, but that probably will stray off too far into the weeds for this post.&lt;/p&gt;
+
+&lt;p&gt;In short, the HW data shakes up the stylized facts about the take-off to sustained growth enough that it should change our ideas of what caused it. It at least got me to start thinking hard about this again. We should separate the notion of sustained growth (i.e growth in annual earnings) from the notion of industrial revolution (i.e. the invention or adoption of specific technologies). Yes, we think growth depends on technological changes, but no, it does not mean it &lt;em&gt;had&lt;/em&gt; to be the technologies involved in cotton production that led to sustained growth.&lt;/p&gt;
+
+&lt;p&gt;The really big question, though, is whether I can get out the next post in under six months. Stay tuned. But not too closely, because you might waste a few months waiting.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Mar 2018 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Where did all the investment go?</title>
@@ -931,66 +978,6 @@
 
 </description>
         <pubDate>Tue, 24 Jan 2017 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>The returns to societal capital</title>
-        <link>https://growthecon.com/blog/Society-Dividend/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Society-Dividend/</guid>
-        <description>&lt;p&gt;Brad DeLong had a &lt;a href=&quot;http://equitablegrowth.org/equitablog/regional-policy-and-distributional-policy-in-a-world-where-people-want-to-ignore-the-value-and-contribution-of-knowledge-and-network-based-increasing-returns/&quot;&gt;recent post&lt;/a&gt; that contained a number of ideas regarding how we view redistribution in a market economy. I picked up on some comments he made towards the end of that post, in which he points out that much of our prosperity comes from a stock of societal capital that we unknowingly rely on every day. And because that societal capital is unseen and uncompensated, we are all in some way overpaid for what we do.&lt;/p&gt;
-
-&lt;p&gt;When he says societal capital, I think of it in two broad categories:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Trust&lt;/strong&gt;: I think this is much of what DeLong has in mind. We are lucky to be in the “trust” or “cooperate” equilibrium in our repeated game of exhanging goods and services. If you like, call it the “stag hunt” equilibrium &lt;a href=&quot;http://worthwhile.typepad.com/worthwhile_canadian_initi/2016/12/staghunt-and-the-irs.html&quot;&gt;Nick Rowe&lt;/a&gt; talks about. Regardless, we benefit from the decisions of our ancestors to play this equilibrium, so that it is the default. If you want to say this is due to some institutions, or culture, or pure luck, it doesn’t matter. We’ve found our way to the trust equilibrium, and benfit from that immensely.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Scale&lt;/strong&gt;: He doesn’t mention this explicitly, but I think it is as relevant as trust. Scale influences the potential profits from innovations, and so is crucial to growth. Bigger market, more profits, more incentives to innovate. But scale is not the same thing as trust, or institutions, or culture. If you doubt that, ask yourself why no firm is spending millions to get into New Zealand, paragon of free market institutions, but they are falling all over themselves to do business in China. Living in the US, or EU, or China, is to reap the benefits of living with scale.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The heart of DeLong’s point is that neither trust nor scale are things that are owned by any firm or individual. You could say that we inherited them from our ancestors, or you could say these are emergent properties, or you could say that they are designed by the institutions we choose for ourselves. Regardless, trust and scale are “ideas” in the broadest sense, and are inputs into the production process in that trust and scale mean our set of rival inputs (labor, capital) can produce more with them than without.&lt;/p&gt;
-
-&lt;p&gt;How is it that scale and trust mean we are overpaid? Here I’ll borrow an idea from DeLong, and “hoist one from the archives” of this &lt;a href=&quot;https://growthecon.com/blog/what-assumptions-matter-for-growth-theory/&quot;&gt;blog&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Just to refresh, a production function tells us that output is determined by some combination of non-rival inputs and rival inputs. Non-rival inputs are things like ideas that can be used by many firms or people at once without limiting the use by others. Think of blueprints. Rival inputs are things that can only be used by one person or firm at a time. Think of nails. The income earned by both rival and non-rival inputs has to add up to total output. Okay, given all that setup, here are three statements that &lt;em&gt;could&lt;/em&gt; be true.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;ol&gt;
-    &lt;li&gt;Output is constant returns to scale in &lt;em&gt;rival&lt;/em&gt; inputs&lt;/li&gt;
-    &lt;li&gt;Non-rival inputs receive some portion of output&lt;/li&gt;
-    &lt;li&gt;Rival inputs receive output equal to their marginal product&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Pick two.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The ideas of trust and scale are non-rival inputs to production. If we assume that output is constant returns to scale in rival inputs (point 1), then we have to pick wither 2 or 3. As neither trust nor scale receive payments, we have essentially chosen 3. And in that sense DeLong means that rival inputs (our labor and our capital) are overpaid. We are not compensating anyone for the trust and scale that we inherited or created as a group.&lt;/p&gt;
-
-&lt;p&gt;A first aside is that in my set-up choosing 3 implies that rival inputs earn their marginal products, and DeLong is saying that our labor is earning &lt;em&gt;more&lt;/em&gt; than its marginal product. I don’t think this is actually a meaningful difference. DeLong is saying that labor is overpaid because it earns returns that could be going to ideas like trust and scale. Whether we say that what it earns is the marginal product or not is irrelevant.&lt;/p&gt;
-
-&lt;p&gt;A second aside is that it isn’t really as stark as saying we chose option 3. Some ideas - the patent for an iPhone, the trademark on Coca-Cola - are protected and receive compensation. All I’m saying here is that scale and trust are ideas that are &lt;em&gt;not&lt;/em&gt; receiving compensation, and in that sense rival inputs like labor are overpaid.&lt;/p&gt;
-
-&lt;p&gt;A third aside is you may be wondering how the increasing returns to scale that DeLong mentions fits in here. Note that point 1 only says production is constant returns to scale in rival inputs (labor and capital). In terms of &lt;em&gt;all&lt;/em&gt; inputs (labor, capital, and ideas) production is increasing returns to scale. If I doubled all of them, output would more than double.&lt;/p&gt;
-
-&lt;p&gt;Back to the main story. What DeLong does with this is to provide what I found to be a unique justification for the public sector. That is, taxes are a way of collecting the royalties on trust and scale that we inherited and/or create ourselves. Taxes are the rents to idea of playing “cooperate” or having scale. And the proper use of those rents, if I am reading him correctly, is in ensuring that those endowments are perpetuated and handed off to our own children.&lt;/p&gt;
-
-&lt;p&gt;What does it mean to perpetuate trust and scale? Part of it, I think, is in providing the insurance against the fluctuations that are the necessary corrollary of the markets we create with trust and scale. Those fluctuations play havoc with local communities and ways of life, a la Polyani. Hence individuals or communities may be tempted to defect from the cooperate/trust equilibria, or hive themselves off on their own and reduce the scale of the economy. If we spend the rents of trust and scale supporting those communities, we can incent them to stay in the good equilibrium.&lt;/p&gt;
-
-&lt;p&gt;The issue with this, as DeLong spends most of his post working out, is that simply handing out those rents to people creates issues for everyone involved. Those paying taxes feel that they are being taken as suckers. Those receiving the rents - the members of disrupted communities - feel like deadbeats. No one wants to be in either of those positions. We have built-in preferences that make deviation from trust and scale look attractive. Which is why being in the good equilibrium is such a delicate thing.&lt;/p&gt;
-
-&lt;p&gt;How then, do you justify the collection of the rents that, arguably, rightfully belong to all of us, and ensure that we pass on the trust and scale necessary for prosperity to the next generation? And do so in a way that is palatable to all parties?&lt;/p&gt;
-
-&lt;p&gt;One idea is that you can use the idea of rents or royalties as a positive justifcation of taxation. We are collecting on the royalties due to us as a citizenry for our trust and scale, the same way that Apple collects royalties due to them as a designer of useful touchscreen emoji delivery machines. In this concept, taxation is not theft, or a necessary evil, but rather the enforcement of our intellectual property rights over trust and scale.&lt;/p&gt;
-
-&lt;p&gt;On the other end, the distribution of those rents is perhaps more palatable when seen not as a handout (which makes people feel like a deadbeat) but as something like a dividend on shared ownership of an asset. I feel like this would be one way to think of how a universal basic income could be framed - everyone is getting their share of the collective dividend payment due to the owners of the “ideas” of trust and scale. It is a sign of ownership, not dependence.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 26 Dec 2016 00:00:00 -0600</pubDate>
       </item>
     
   </channel>
