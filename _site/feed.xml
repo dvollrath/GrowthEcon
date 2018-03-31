@@ -5,7 +5,7 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Fri, 30 Mar 2018 16:43:23 -0500</pubDate>
+    <pubDate>Sat, 31 Mar 2018 14:03:55 -0500</pubDate>
     
       <item>
         <title>When did sustained growth start?</title>
@@ -15,7 +15,7 @@
 
 &lt;p&gt;Whatever the reason, I’m back. And it was a working paper that I finally got around to reading that prompted me to get back on the wagon. Jane Humphries and Jacob Weisdorf have put out “Unreal wages? Real income and economic growth in England, 1260-1850”, which you can find an ungated version of &lt;a href=&quot;https://jacobweisdorf.files.wordpress.com/2017/12/unreal-wages_humphries-and-weisdorf_dec-2017_wp1.pdf&quot;&gt;here&lt;/a&gt;. As they set it out, there is a disparity in the data sources we use to think about the timing and evolution of sustained economic growth. The basic problem can be see in their figure, reproduced below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;HWfig1.png&quot; alt=&quot;GDP per capita and wages&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/HWfig1.png&quot; alt=&quot;GDP per capita and wages&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Using aggregated data, Broadberry, Campbell, Klein, Overton, and van Leeuwen in &lt;a href=&quot;https://amzn.to/2GnD1Nm&quot;&gt;British Economic Growth, 1270-1870&lt;/a&gt; come up with a series for GDP per capita, plotted in the open circles in the figure. This shows a take-off to growth around 1650. However, the standard data used to establish the path of living standards has been wage data, and here a paper by &lt;a href=&quot;https://ideas.repec.org/a/bla/ehsrev/v60y2007i1p97-135.html&quot;&gt;Clark&lt;/a&gt; from 2007 is their source. As you can see, the wage data indicate no take-off in the 1600’s, and even by 1850 there is little to indicate that wages are experiencing sustained growth.&lt;/p&gt;
 
@@ -29,7 +29,7 @@
 
 &lt;p&gt;For the purposes of this post, let’s assume that this issue is not significant issue, and see what their numbers tell us. The punch line of the paper is really the following figure. The dark line is the annual wage series developed by HW, and the other two lines are identical to the first figure. You can see that the annual wages track the GDP per capita data very well. And as HW point out, there are two significant things to draw from that.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;HWfig2.png&quot; alt=&quot;Annual earnings, GDP per capita, and wages&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/HWfig2.png&quot; alt=&quot;Annual earnings, GDP per capita, and wages&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;First, the reaction of wages to the Black Death (around 1350-1450) is &lt;em&gt;much&lt;/em&gt; smaller in terms of annual wages compared to day wages. We (and by we, I mean me in most of my classes) have used the day wage data for years to illustrate the Malthusian reaction of living standards to population shocks. As the Black Death killed off between one-quarter and one-third of the population, wages shot up, but as the population recovered after that (in the 1500s) wages dropped back to their roughly stagnant level. The HW annual earnings data show that the reaction was more muted. It still existed (look at 1350 to 1400 in particular), but was not as dramatic. In fact, it does not look like annual wages &lt;em&gt;ever&lt;/em&gt; fell back to the pre-Black Death level. This doesn’t mean that the Malthusian model is wrong; there are a lot of other changes going on in the economy over the 200 years following the Black Death. But it isn’t the neat illustration of the mechanism it once was. A different way of looking at this is as follows; assuming that the Malthusian model is &lt;em&gt;correct&lt;/em&gt;, then the annual earnings data tell us that there must have been &lt;em&gt;some&lt;/em&gt; kind of significant change in the English economy in that period, otherwise the earnings should have dropped back to the 50-75 range in the figure by 1650.&lt;/p&gt;
 

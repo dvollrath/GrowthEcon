@@ -9,7 +9,7 @@ You know how when you get older, time seems to move faster? Well, imagine how th
 
 Whatever the reason, I'm back. And it was a working paper that I finally got around to reading that prompted me to get back on the wagon. Jane Humphries and Jacob Weisdorf have put out "Unreal wages? Real income and economic growth in England, 1260-1850", which you can find an ungated version of [here](https://jacobweisdorf.files.wordpress.com/2017/12/unreal-wages_humphries-and-weisdorf_dec-2017_wp1.pdf). As they set it out, there is a disparity in the data sources we use to think about the timing and evolution of sustained economic growth. The basic problem can be see in their figure, reproduced below.
 
-![GDP per capita and wages](HWfig1.png)
+![GDP per capita and wages](/assets/HWfig1.png)
 
 Using aggregated data, Broadberry, Campbell, Klein, Overton, and van Leeuwen in [British Economic Growth, 1270-1870](https://amzn.to/2GnD1Nm) come up with a series for GDP per capita, plotted in the open circles in the figure. This shows a take-off to growth around 1650. However, the standard data used to establish the path of living standards has been wage data, and here a paper by [Clark](https://ideas.repec.org/a/bla/ehsrev/v60y2007i1p97-135.html) from 2007 is their source. As you can see, the wage data indicate no take-off in the 1600's, and even by 1850 there is little to indicate that wages are experiencing sustained growth.
 
@@ -23,7 +23,7 @@ This is probably the element of the paper you should be most concerned with. HW 
 
 For the purposes of this post, let's assume that this issue is not significant issue, and see what their numbers tell us. The punch line of the paper is really the following figure. The dark line is the annual wage series developed by HW, and the other two lines are identical to the first figure. You can see that the annual wages track the GDP per capita data very well. And as HW point out, there are two significant things to draw from that.
 
-![Annual earnings, GDP per capita, and wages](HWfig2.png)
+![Annual earnings, GDP per capita, and wages](/assets/HWfig2.png)
 
 First, the reaction of wages to the Black Death (around 1350-1450) is *much* smaller in terms of annual wages compared to day wages. We (and by we, I mean me in most of my classes) have used the day wage data for years to illustrate the Malthusian reaction of living standards to population shocks. As the Black Death killed off between one-quarter and one-third of the population, wages shot up, but as the population recovered after that (in the 1500s) wages dropped back to their roughly stagnant level. The HW annual earnings data show that the reaction was more muted. It still existed (look at 1350 to 1400 in particular), but was not as dramatic. In fact, it does not look like annual wages *ever* fell back to the pre-Black Death level. This doesn't mean that the Malthusian model is wrong; there are a lot of other changes going on in the economy over the 200 years following the Black Death. But it isn't the neat illustration of the mechanism it once was. A different way of looking at this is as follows; assuming that the Malthusian model is *correct*, then the annual earnings data tell us that there must have been *some* kind of significant change in the English economy in that period, otherwise the earnings should have dropped back to the 50-75 range in the figure by 1650. 
 
