@@ -1,0 +1,1 @@
+ twoway line eia_energy_share year if year>=1970, xtitle("Year") ytitle("Factor Share of Energy") clcolor(black) ylabel(0.01(0.02)0.15, nogrid angle(0) format(%4.2f)) xlabel(1970(5)2010) clwidth(thick) graphregion(color(white)) 

@@ -1,0 +1,1 @@
+ twoway line P_commod_wage_index year, clwidth(thick) clcolor(black) || line P_fuel_wage_index year, clwidth(thick) clcolor(gray) xtitle("Year") ytitle("Commodity Price Divided" "by Hourly Wage (2000 = 100)", ) ylabel(0(100)900, angle(0) nogrid) xlabel(1910(10)2010) graphregion(color(white)) legend(cols(1) ring(0) pos(2)) 

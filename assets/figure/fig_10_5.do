@@ -1,0 +1,1 @@
+ twoway line eia_mil_btu_pc year, xtitle("Year") ytitle("Energy Use (Millions of Btu per person)") ylabel(200(20)360, nogrid angle(0)) xlabel(1950(10)2010) clwidth(thick) clcolor(black) graphregion(color(white)) 
