@@ -5,7 +5,61 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Thu, 28 Jun 2018 07:49:32 -0400</pubDate>
+    <pubDate>Mon, 09 Jul 2018 18:59:40 -0400</pubDate>
+    
+      <item>
+        <title>What determines value?</title>
+        <link>https://growthecon.com/blog/Value-Everything/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Value-Everything/</guid>
+        <description>&lt;p&gt;I had the opportunity to read &lt;a href=&quot;https://amzn.to/2z9NWXJ&quot;&gt;The Value of Everything&lt;/a&gt;, by Mariana Mazzucato, a few weeks ago, and have finally gotten around to writing up something of a review. This book made me think, so I count that as a positive recommendation. Sometimes I was thinking things like, “This is ridiculous, you cannot refuse to acknowledge the difference in stocks and flows!”, but in between those there were some genuine moments where Mazzucato got me to see things from a different perspective.&lt;/p&gt;
+
+&lt;p&gt;Mazzucato makes the point - obvious in retrospect but easy to forget - that the value of economic activity involves a choice. A choice of what “counts” as having value, and what does not. In exploring this, she works through the systems that past writers have used, and compares that to ideas that underlay our current thinking. This is not just a question of “what gets counted in GDP?”, but intended to be broader. Her question is something like, “by using GDP what implicit decisions have we made about what has economic value?”&lt;/p&gt;
+
+&lt;p&gt;The threads of her answer come a little undone by later in the book. After setting up the contingent nature of measuring economic value, she moves into questioning why finance is assigned too much value, while government is assigned too little. I think she intends all this to be radical, but I think the book fails to provide the real kill shot on this. A radical book would outline a new means of assigning value, even in vague terms, but I didn’t get that here.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, as I said the book did get me thinking on several points. What follows then is far less in the way of review, and more speculative response. Caveat emptor.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-counts-as-valuable&quot;&gt;What counts as valuable?&lt;/h3&gt;
+&lt;p&gt;What became apparent to me in reading Mazzucato’s history was that in most cases, the notion of what counted as valuable in the economy had less to do with &lt;em&gt;output&lt;/em&gt;, and more to do with the &lt;em&gt;inputs&lt;/em&gt;. The Physiocrats, for example, explained that economic value came from agriculture alone. If something was produced using the land, and some sturdy peasants and perhaps some draft animals, then that something had economic value. Any other transactions that took place, like people moving or trading grain, didn’t add value. They shuffled value around between the movers or traders, but didn’t create value. You could increase value only by adding land, peasants, or animals. I’d guess that if you pressed the Physiocrat line, you could allow for technological change in agriculture to raise value, but regardless, value was assigned only to output coming from a specific set of inputs.&lt;/p&gt;
+
+&lt;p&gt;It is not a big leap from here to Marx, where value was located in the labor effort that went into a product. Marx dropped the focus on land or agriculture, per se, but retained the concept that what determined whether output had value was whether it used labor. You could have a hypothetical factory that ran on complete automation, and used no labor. That output could only have value from digging back into the labor used in producing the factory, etc.., but the point is similar to the Physiocrats. It took the “right” inputs to create value.&lt;/p&gt;
+
+&lt;p&gt;We tend to snort at the ideas of the Physiocrats and Marx regarding this kind of thinking. But I’d argue that the most peoples intuitive sense of “economic value” still comes back to their sense of which inputs were used. Much like Marx, most people will attribute value to output based on the perceived labor effort that went into producing it. Like the Physiocrats, production that involves extracting or processing raw materials is considered to have value. Again, it takes the “right” inputs to create value.&lt;/p&gt;
+
+&lt;p&gt;You can see examples of this all over the place. To demonstrate the Physiocrat/Marxist attitude, I give you Commerce Secretary Wilbur Ross, whose Senate testimony on Trump’s tariffs is quated in this article from the &lt;a href=&quot;https://www.huffingtonpost.ca/2018/06/20/wilbur-ross-canada-steel_a_23463975/&quot;&gt;Huffington Post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“We don’t have a trade deficit of note (on steel),” Ross replied. “We have a surplus in dollars; we do not have a surplus in physical value.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You could do a whole class unpacking the incoherence of that statement. But let’s focus on the fact that what ultimately matters to Ross is &lt;em&gt;not&lt;/em&gt; the notion of dollars, but rather the “physical value”. Steel is built from “real” inputs, so it has a real value beyond anything that we can measure with dollars. I think you can get some traction in thinking about the motives behind tariffs (and support for them) if you consider this notion of value. We can be “losing” at trade because we import things of value (based on their input content) from abroad, even if the associated money flows don’t look so bad.&lt;/p&gt;
+
+&lt;p&gt;In a different context, when people argue for a minimum wage, or a “living wage”, they often appeal to the idea that a hard days work (e.g. the input) grants the work value different from and beyond the dollar value that work earns on the open market. Support for family farms has a similar language of value based on fact that it employs physical labor and - Physiocratic-style - land. It is seen as unfair if this labor and land does not generate a large monetary value, because we assign inherent value to those inputs.&lt;/p&gt;
+
+&lt;p&gt;You can see something of this in the original sets of national accounts, where far more attention was paid to counting up manufacturing output (based on real inputs like labor and coal and iron) that to service output (which presumably used less inherently valuable labor, and, &lt;em&gt;gasp&lt;/em&gt;, no iron ore at all).&lt;/p&gt;
+
+&lt;p&gt;This sense that finance doesn’t “count” works in a similar way. The inputs that go into finance work - people sitting at desks being clever - aren’t assigned value by themselves. The notion of “bullshit” jobs is another example of judging value based on the nature of the input - presumably sitting at a desk and stapling. No one considers farming or mining or manufacturing a “bullshit” job, why? Because they involve “real” labor input, physical work.&lt;/p&gt;
+
+&lt;p&gt;Mazzucato engages in this type of argument, although she doesn’t phrase it this way. Her argument that a number of financial activities do not have value is because they involves &lt;em&gt;no&lt;/em&gt; inputs. Well, a little bit of clever accounting, perhaps, but for all intents and purposes the only “input” they are using is market power. Because the output produced by finance doesn’t rely on real inputs, it cannot have real value. The opposite holds for government and public sector work. This involves real labor (e.g. police officers) and other real inputs (e.g. highways) so it has real value, even if we have trouble putting a clear number on it because of a lack of a profit and loss statement.&lt;/p&gt;
+
+&lt;p&gt;Let me say that there is nothing inherently wrong with Mazzucatos position, as in there being some kind of logical inconsistency. She, and everyone, is welcome to value inputs and hence the output of different sectors in any way they want. The question becomes why standard measures of economic activity, like GDP, have diverged so much from Mazzucatos notion of value, and whether there is some way to bring them back together.&lt;/p&gt;
+
+&lt;h3 id=&quot;gdp-and-the-value-of-output&quot;&gt;GDP and the value of output&lt;/h3&gt;
+&lt;p&gt;How did we get to the point where finance is valued “too much”, while government is valued “too little”? Let’s go back and think about how we would add up the value of economic activity if we did appeal to our notions of which inputs matter, or are “real” enough to count. How do you compare the value of one product to another? How do you compare the labor used in one product to another? Just time? Or does skill matter? How do you add up the value of a bushel of corn with a ton of steel? Do those values change over time?&lt;/p&gt;
+
+&lt;p&gt;You may want to value economic output based on your opinion of the inputs involved, and that’s fine. But I’m not sure you can do that, for all the reasons that Hayek laid out long ago. It’s an information problem. There are too many products, with too much heterogeneity, and too many inputs, for you to come up with a &lt;em&gt;complete&lt;/em&gt; set of rules to value output. And no, general principles don’t solve this, because you need to make particular decisions. The general principles of national income accounting are simple, but the details of how and what we count run to hundreds of pages. And what if I disagree with your opinion, how do we reconcile this? I guess we could each have our own individual measure of economic activity?&lt;/p&gt;
+
+&lt;p&gt;But if you want a single measure then you need a consistent way of measuring the value of output from different activities relative to one another, so that you can add them up. The only practical way to do this we’ve come up with so far is to use relative prices. This is how GDP is calculated.&lt;/p&gt;
+
+&lt;p&gt;The issue for Mazzucato is that by using relative prices, it breaks the link to the inherent value of inputs. Products that have high prices count for a lot, even if those high prices are due to markups from market power, rather than some “true” value of the inputs used. Hence finance, where the markups seem to represent market power to Mazzucato (e.g. net interest margin) gets a heavy weight. Government, where we don’t even have a clear measure of the true price of the output because it isn’t bought and sold like a normal good, ends up downweighted.&lt;/p&gt;
+
+&lt;p&gt;I don’t know that Mazzucatos argument about the problems with using relative prices is very compelling, for the reasons I laid out above about information. There does not seem to be a plausible way to add up economic activity without using prices. I guess to my point much earlier, if this was a radical book it would have proposed some kind of structure to add up activity that does not involve these prices. But I didn’t see that radical idea. In a lot of ways, Mazzucato’s point is just that relative prices are a poor approximation of &lt;em&gt;average&lt;/em&gt; utilities, even if they are good approximations of &lt;em&gt;marginal&lt;/em&gt; utilities. Note, by the way, that even if there is market power and markups that relative prices are still a good indicator of marginal utilities. See my post on the &lt;a href=&quot;https://growthecon.com/blog/Paradox-2/&quot;&gt;paradox of markups&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anyway, while I’d leave aside this particular criticism of using relative prices, I still think there was a lot of value (yes, that was deliberate) in the book for thinking about how inputs inform our opinions on inherent value. There is a coherent argument to make about how we could or should value certain economic activities more, in the sense of supporting or encouraging them, even if they do &lt;em&gt;not&lt;/em&gt; lead to higher measured GDP, but because they involve the use of some inherently valuable inputs. For example, you could argue that a jobs guarantee is valuable even if it led to GDP being lower than it would otherwise (of course, it might be higher, but that’s a different argument). That would be the case of valuing things based on the nature of the input (e.g. full time work for adults) rather than on the value of output. But using relative prices to value GDP is neither an argument for, nor against, your position.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Jul 2018 00:00:00 -0400</pubDate>
+      </item>
     
       <item>
         <title>Sustained growth and the increase in work hours</title>
@@ -934,51 +988,6 @@
 &lt;p&gt;I think the lesson here is that you really cannot use only aggregate data if you want a measure of aggregate technology growth. You will always run into the garbage can issue. If you want a measure of aggregate technology growth, you should calculate technological growth for each individual unit (firm or sector) separately, and &lt;em&gt;then&lt;/em&gt; add those up, if you want any chance. Since I know you were hoping for another breakfast food analogy, imagine using a tweezers to pick up each individual crumb of waffle to ensure you do not touch any syrup.&lt;/p&gt;
 </description>
         <pubDate>Tue, 18 Apr 2017 00:00:00 -0400</pubDate>
-      </item>
-    
-      <item>
-        <title>An Update on the Profits from Housing</title>
-        <link>https://growthecon.com/blog/Ricardian-Housing/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Ricardian-Housing/</guid>
-        <description>&lt;p&gt;In the last &lt;a href=&quot;https://growthecon.com/blog/Profit-Accounting/&quot;&gt;post&lt;/a&gt; I used some findings by &lt;a href=&quot;http://home.uchicago.edu/~barkai/&quot;&gt;Simcha Barkai&lt;/a&gt; and the BLS to infer that housing may a major source of the rise in the share of profits in GDP. I got an e-mail from Simcha regarding the post, and the upshot is that I’m wrong. First, and foremost, it turns out that I got confused reading his paper, and all his calculations &lt;em&gt;exclude&lt;/em&gt; residential housing. This means that my inference from comparing the BLS profit share to his profit share is invalid. You cannot conclude that residential housing profits are driving a rise in profits share of aggregate GDP, because there is no information on housing in Barkai’s number. He documents that the profit share of the non-financial corporate sector is rising over time.&lt;/p&gt;
-
-&lt;p&gt;So, my bad on that. Simcha also made a point in his e-mail about how the BLS calculates profit shares, and it makes me lean towards his calculations as being correct. But let’s leave that for another day and post. For the time being, you should go forth and freak out about the increasing profit share in the non-financial corporate sector, whatever your preferred explanation for that may be.&lt;/p&gt;
-
-&lt;p&gt;I still had housing on the brain, though, so I wanted to figure whether I was wrong about profits rising in the housing sector. Effectively, I’d like to recreate Barkai’s analysis, but now for the housing sector only. To figure that out, I need to look at the data on the stock of residential housing capital (K), and the imputed flow of value-added from housing (Y). The other thing I need to calculate is the required rate of return on housing (R).&lt;/p&gt;
-
-&lt;p&gt;Let’s start with the stock and flow, which I pulled down from FRED. The stock, K, is the “Current-Cost Net Stock of Fixed Assets: Residential” from the national income accounts. That includes all privately owned residential assets, which encompasses both owner-occupied and tenant-occupied. The flow, Y, is “Gross housing value added”, which comes from Table 1.3.5 of the national accounts. This is the BEA’s estimate of the total flow of housing services (including imputed rents for owner-occupied housing) minus the cost of any intermediate goods. Those intermediates would include maintenance and repairs on your house, or the cost of property management services if you owned a rental building.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_housing_ky.png&quot; alt=&quot;Housing YK&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The first figure is the ratio of Y/K, or roughly the average product of housing capital. On average, the flow of housing services is equal to around 8% of the stock of housing. But there are clear fluctuations, with a big dip after WWII, and then subsequent dips around 1980 and 2009. But there is also a tendency for the ratio Y/K to rise from WWII to today, from maybe 6% to 9%. This tendency of Y/K to &lt;em&gt;rise&lt;/em&gt; means that the ratio of K/Y is going to &lt;em&gt;fall&lt;/em&gt;, and that is going to matter in my little profit share calculation.&lt;/p&gt;
-
-&lt;p&gt;I want profit’s share of the flow of housing output. I’m going to assume that no labor is used in providing housing services. Don’t get freaked out by that, the flow of housing services is not the same thing as construction. Construction - which does use lots of labor - is the flow of &lt;em&gt;new&lt;/em&gt; housing (or other structures) into the stock. What we’re talking about here is the flow of services provided by &lt;em&gt;existing&lt;/em&gt; housing, which does not involve much labor at all.&lt;/p&gt;
-
-&lt;p&gt;This means I am assuming that the flow of housing can be split as follows, &lt;strong&gt;Y = RK + Profits&lt;/strong&gt;. In shares, this is just &lt;strong&gt;1 = RK/Y + Profits/Y&lt;/strong&gt;. If I know RK/Y, I can figure out the profit share easily. Note that RK/Y depends on K/Y, which was falling over time, based on the prior figure. So that, by itself, suggests the profit share was rising.&lt;/p&gt;
-
-&lt;p&gt;In addition, it seems likely that R was falling over time. If you remember from the prior post, we could write &lt;strong&gt;R = i - g + d&lt;/strong&gt;, where R is the return on capital, i is the nominal interest rate, g is the expected inflation in the capital price, and d is depreciation. For i, the obvious choice here is the mortgage rate. I (or rather FRED) does not have mortgage rate data going back as far as 1930, but it does have it for the 1970’s forward.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_housing_mort.png&quot; alt=&quot;Housing Mortgage&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s not a big surprise that mortgage rates have fallen over time, much like any other nominal interest rate. They’re under 5% now, from a high of around 17% in 1981. By itself, this is going to drive R lower over time.&lt;/p&gt;
-
-&lt;p&gt;The other information I need is on g and d. I’ve played around a lot with these, and I can’t come up with any reasonable assumptions about them that can overcome the drop in nominal mortgage rates over time. That is, if you really wanted to make R go &lt;em&gt;up&lt;/em&gt; over time, you’d need people to believe that housing prices were going to &lt;em&gt;fall&lt;/em&gt; significantly (so g&amp;lt;0) or that depreciation rates on houses have risen significantly over time. I can’t get my head around how either of those could be true.&lt;/p&gt;
-
-&lt;p&gt;For the figure I’ll show below, I’m assuming that g = 3% at all times (not true) and d = 1% at all times (not true). I’m not going to get hung up on the actual numbers, because what we’re interested in is the change in R over time, not the actual level. It’s also a blog post, not a paper. So take the data on the mortgage rate, and combine that with my assumption on g and d to get a measure of R over time. Use that R, and combine it with the data on K/Y, and you’ve got a time series for RK/Y. With that time series, you can solve for &lt;strong&gt;Profits/Y = 1 - RK/Y&lt;/strong&gt;, and I’ve got my profit share in housing.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_housing_profit.png&quot; alt=&quot;Housing Mortgage&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s hard to get your eyes off the gigantic negative number in 1981. According to this calculation, the profit share on housing was negative 100%. To be more concrete, what this is saying is that the rent you could get on a house (Y) in 1981 was equal to about half of the cost of the mortgage (RK). You were implicitly losing money owning a home, but if it was owner-occupied, you were losing money to yourself. That dramatic negative profit share is a function of the spike in mortgage rates during the Volcker disinflation, and as I said, it is hard to see around it in the figure. But notice that the profit share started to climb around 1990.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_housing_profit90.png&quot; alt=&quot;Housing Mortgage&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I pulled the 1990-2016 period out to show the evolution of the profit share more clearly. Here the rise in the profit share is apparent, from about 20 to about 80% from 1990 to 2016. I don’t want to get too stuck on the precise level of these numbers, which depend in part on my assumption regarding 3% expected house price inflation and 1% depreciation. But the trend is clear. Because of the decline in the mortgage rate, the cost of owning a home fell, but the flow of output produced by houses did not. In essence, you can rent out your owner-occupied home for more than you’d pay in mortgage costs, and you are profiting. You may be paying those profits to yourself, but there is a profit involved.&lt;/p&gt;
-
-&lt;p&gt;Let’s round this back to the discussion of profit shares in the wider economy. Barkai found that the profit share is rising in the private, non-housing, sector. My mini-analysis here suggests that the profit share in the housing sector is rising as well. Combined, that means the profit share in aggregate GDP is rising.&lt;/p&gt;
-
-&lt;p&gt;The difference from the last post is that the rise in housing profits is not mutually exclusive with the rise in profts in the private, non-housing, sector. The source of the rise in profits is similar in both cases, as it turns out. The drop in nominal interest rates means that the required return for capital (housing or non-housing) is falling over time, but the flow of output produced in part by that capital is not, so the profit share is rising.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 28 Mar 2017 00:00:00 -0400</pubDate>
       </item>
     
   </channel>
