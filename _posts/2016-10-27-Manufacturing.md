@@ -3,7 +3,7 @@ layout: post
 title: Productivity measures productivity ... that's it
 published: true
 category: feed
-tags: manuf
+tags: sector slowdown rich
 ---
 
 Justin Fox at Bloomberg put up a few articles ([here](https://www.bloomberg.com/view/articles/2016-10-19/no-u-s-manufacturing-isn-t-really-booming), [here](https://www.bloomberg.com/view/articles/2016-10-26/manufacturing-s-productivity-myth)) recently digging into trends in productivity in the US manufacturing sector. The overarching theme of the two articles is that claims regarding the success of the manufacturing sector in the US (he cites Binyamin Applebaum's [article](http://mobile.nytimes.com/2016/10/09/magazine/why-are-politicians-so-obsessed-with-manufacturing.html?referer=https://t.co/vEnqUjWznf) specifically) are overstated. Fox's first article is titled "No, U.S. Manufacturing isn't Really Booming". 

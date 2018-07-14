@@ -3,7 +3,7 @@ layout: post
 title: Aggregate Productivity versus Aggregate Technology ... Again
 published: true
 category: feed
-tags: innov
+tags: slowdown markup
 ---
 
 You can file this as another example of how measured aggregate TFP growth is like a trash can. It happens to include aggregate technology (which got tossed in there by accident while cleaning up kitchen), but also all sorts of other junk (like leftover coffee grounds). Today's example shows that even if you are smart about how you construct your measure of aggregate TFP growth, you can still end up with some garbage in there because of aggregation issues. I know this is pushing the analogy, but actually measuing aggregate *technology* is like trying to wipe up just the waffle crumbs your kids left behind, but *not* the drops of syrup.

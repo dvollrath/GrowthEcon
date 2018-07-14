@@ -2,7 +2,7 @@
 layout: post
 title: What determines value?
 published: true
-tag: rich
+tags: rich
 category: feed
 ---
 

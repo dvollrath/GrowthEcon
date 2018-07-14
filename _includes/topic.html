@@ -34,7 +34,23 @@
 </ul>
 </div>
 
+<h3>Figures</h3> 
+<div class="posts">
+<ul>
+  {% for post in {{include.pass}} %}
+    {% if post.url %}
+      {% if post.categories contains 'figure' %}
+        <li>
+         <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">
+            {{ post.title }}
+          </a>
+        </li>
+        {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>
 
 <h3>Academic References</h3>
 
-{% bibliography -q @article[keywords ~= {{include.ref}}] @book[keywords ~= {{include.ref}}] @techreport[keywords ~= {{include.ref}}] -max 50 %}
+{% bibliography -q @article[keywords ~= {{include.ref}}] @book[keywords ~= {{include.ref}}] @techreport[keywords ~= {{include.ref}}] %}

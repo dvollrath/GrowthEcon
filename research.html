@@ -25,8 +25,17 @@ permalink: /research/
           <div class="posts">
             <p>
             {{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
-            "<a href="{{ post.pdf | prepend: site.baseurl }}">{{ post.title }}</a>." &nbsp; 
-            <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp; {% if post.appendix %}  <a href="{{ post.appendix }}">Appendix</a>. {% endif %} &nbsp; {% if post.data %}  <a href="{{ post.data }}">Replication</a>. {% endif %}
+            "{{ post.title }}." &nbsp; 
+            <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp; 
+            <a href="{{ post.pdf | prepend: site.baseurl }}">Paper</a>. &nbsp; {% if post.appendix %}  <a href="{{ post.appendix }}">Appendix</a>. {% endif %} &nbsp; {% if post.data %}  <a href="{{ post.data }}">Replication</a>. {% endif %}
+            {% if post.abstract %}
+                <ul style="list-style: none;">
+                <li><details>
+                <summary>Abstract</summary>
+                <p>{{ post.abstract }}</p>
+                </details></li>
+                </ul>
+              {% endif %}
             </p>
           </div>
           {% endfor %}

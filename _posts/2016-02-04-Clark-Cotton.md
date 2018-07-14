@@ -3,6 +3,7 @@ layout: post
 title: Why Isn't the Whole World Developed?
 published: true
 category: feed
+tags: deep takeoff
 ---
 
 That's the title of Greg Clark's [article](https://ideas.repec.org/a/cup/jechis/v47y1987i01p141-173_04.html) from 1987 on cotton production in the early 20th century. Clark uses that specific industry to study the sources of variation across countries in real wages. I revisited it recently because I want to use it in my graduate course, and because I think it lays out a clear case for what could be loosely called a "cultural" explanation for differences in development. In short, the paper is going to come to the conclusion that poor countries are poor because of some unknown cultural source that supports a norm of low efficiency of labor.

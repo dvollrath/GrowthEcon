@@ -3,6 +3,7 @@ layout: post
 title: The Persistence of Technology
 published: true
 category: feed
+tags: deep
 ---
 
 One of the papers I use to introduce several ideas into my graduate growth and development course is by [Diego Comin, Bill Easterly, and Erick Gong](https://ideas.repec.org/a/aea/aejmac/v2y2010i3p65-97.html), titled "Was the Wealth of Nations Determined in 1000BC?". If we were being strict about things, the answer is no. But the longer answer is "Well, not really 1000BC. But there is a surprising amount of explanatory power in technology measures from 1500AD".  

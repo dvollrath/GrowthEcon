@@ -3,6 +3,7 @@ layout: post
 title: The Early Transformation of Britain's Economy
 published: true
 category: feed
+tags: takeoff
 ---
 
 There's a nice working paper out by [Patrick Wallis, Justin Colson, and David Chilosi](http://www.lse.ac.uk/economicHistory/workingPapers/2016/WP240.pdf) called "Puncturing the Malthus Delusion: Structural Change in the British Economy before the Industrial Revolution, 1500-1800". The big project they undertake here is to mine the probate inventories (along with several other sources) from Britain in this period to build up a picture of the rough allocation of workers across sectors. They do a very nice job of walking through their data sources, and the limitations, in the paper, so let me leave those details aside. In short, they use the reported occupations in wills to back out a picture of the sectoral structure, finding it consistent with other sources based on apprentice records, as well as prior estimates from specific years. 

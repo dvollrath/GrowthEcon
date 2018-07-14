@@ -3,7 +3,7 @@ layout: post
 title: An Update on the Profits from Housing
 published: true
 category: feed
-tags: #post
+tags: markup
 ---
 
 In the last [post](https://growthecon.com/blog/Profit-Accounting/) I used some findings by [Simcha Barkai](http://home.uchicago.edu/~barkai/) and the BLS to infer that housing may a major source of the rise in the share of profits in GDP. I got an e-mail from Simcha regarding the post, and the upshot is that I'm wrong. First, and foremost, it turns out that I got confused reading his paper, and all his calculations *exclude* residential housing. This means that my inference from comparing the BLS profit share to his profit share is invalid. You cannot conclude that residential housing profits are driving a rise in profits share of aggregate GDP, because there is no information on housing in Barkai's number. He documents that the profit share of the non-financial corporate sector is rising over time. 

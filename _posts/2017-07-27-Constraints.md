@@ -3,6 +3,7 @@ layout: post
 title: Are some places "More Malthusian" than other?
 published: true
 category: feed
+tags: deep
 ---
 
 I've got a new working paper out ([pdf](/assets/2017-06-28-Constraint.pdf) or [repec](https://ideas.repec.org/p/hou/wpaper/2017-192-55.html)), co-authored with Ryan Johnson, on Malthusian constraints. There is some material that we're cutting from the paper, because it is already getting too long, but I kind of like the graphs and the results, so I figured I would write them up here. Fair warning: there will be some math.

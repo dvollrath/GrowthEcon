@@ -3,6 +3,7 @@ layout: post
 title: Savings, Savings, and More Savings
 published: true
 category: feed
+tags: theory
 ---
 
 This post is about savings. It is also a plea with Nick Rowe to slow the *)#*#@ down in posting things that get stuck in my head. I'm still working on this savings thing, and now he's got a [post](http://worthwhile.typepad.com/worthwhile_canadian_initi/2014/05/mrscc1r1mpkmrtcidmrtcidt.html) up about capital that I'm chewing over too. I have a life, Nick, for God's sake - pump the brakes!

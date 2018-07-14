@@ -3,7 +3,7 @@ layout: post
 title: Can we get rich by "Doing Business" better?
 published: true
 category: feed
-tags: converge
+tags: reform
 ---
 
 John Cochrane wrote a [piece](http://www.wsj.com/articles/ending-americas-slow-growth-tailspin-1462230818) for the Wall Street Journal's <s>Confirmation Bias</s> Opinion page. It used the World Bank's Doing Business index to suggest that the US could achieve massive gains in economic growth by adopting policies that pushed up our Doing Business score. 

@@ -3,7 +3,7 @@ layout: post
 title: Technology versus the Distribution of Workers in Aggregate Productivity
 published: true
 category: feed
-tags: innov
+tags: slowdown sector
 ---
 
 There was a recent [post](https://artir.wordpress.com/2016/04/25/no-great-technological-stagnation/) by an engineer rebutting Robert Gordon's (and others) thesis that technological change was slowing down. The evidence cited is a series of plots and figures showing how specific technologies (battery storage, energy efficiency, computer speed, etc..) are advancing just as fast as they have for decades, if not faster. And there were a number of responses along the lines of "See, Gordon is wrong!". 

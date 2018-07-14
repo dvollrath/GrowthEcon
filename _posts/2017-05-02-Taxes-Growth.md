@@ -3,7 +3,7 @@ layout: post
 title: Sigh....No, tax cuts won't boost growth
 published: true
 category: feed
-tags: converge
+tags: reform
 ---
 
 I guess we need to go over this again. No, cuts to corporate tax rates and/or the reforms/cuts proposed on individual income taxes will not boost economic growth in any appreciable way. Not to 4%, nor 4.5%, nor 5%. There is no evidence supporting this claim. And even theoretically, there is no reason to believe that these tax reforms/cuts can boost growth to those rates.

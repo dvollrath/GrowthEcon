@@ -3,7 +3,7 @@ layout: post
 title: Understanding the Cost Disease of Services
 published: true
 category: feed
-tags: prod
+tags: sector
 ---
 
 As my internal clock is not on internet time, I'm only now getting up a post in reaction to the death of William Baumol, who has been a consistent reference on this blog over the years. My topic page on the [productivity slowdown](https://growthecon.com/blog/Productivity-Slowdown/) is in many ways an extended riff on his work. 

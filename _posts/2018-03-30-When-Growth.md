@@ -3,6 +3,7 @@ layout: post
 title: When did sustained growth start?
 published: true
 category: feed
+tags: takeoff
 ---
 
 You know how when you get older, time seems to move faster? Well, imagine how that feels, and now pretend that you write a blog. It's been about six months since I last posted something, and that was not a conscious decision, but just something that kind of happened as I kept putting it off while I worked on classes or research. If I want to blame something in particular, I have been helping to coach my kids lacrosse team for the last few months, and you'd be shocked at how much mental real estate U-12 lacrosse eats up.

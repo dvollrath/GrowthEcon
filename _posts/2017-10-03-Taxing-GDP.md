@@ -3,6 +3,7 @@ layout: post
 title: Why don't tax cuts boost growth?
 published: true
 category: feed
+tags: reform
 ---
 
 Relative to current events, this probably seems less important at the moment, and a week or so too late, but the tax cut proposed by th Trump administration is still kicking around. There have been any number of responses to it, and responses in particular to the claim that it will "supercharge" economic growth, and ultimately pay for itself. In short, it won't do either of those things, which is the conclusion you come to after reviewing all the evidence available. I did so here, in a [prior post](https://growthecon.com/blog/Taxes-Growth/). [Bruce Bartlett](https://www.washingtonpost.com/news/posteverything/wp/2017/09/28/i-helped-create-the-gop-tax-myth-trump-is-wrong-tax-cuts-dont-equal-growth/) just posted an article where he also comes to that conclusion, and recants his earlier stand in the 1980's pushing the whole "tax cuts increase growth" line. 

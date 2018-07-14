@@ -3,7 +3,7 @@ layout: post
 title: Labor Recovery and the Productivity Slowdown
 published: true
 category: feed
-tags: prod
+tags: slowdown
 ---
 
 Everyone loves talking about productivity, and how it doesn't grow as fast as it used to. Very low productivity growth rates, in same cases negative, have been used very recently as evidence of this long-run slowdown and why perhaps it will get worse. But inferring something about long-run trends in productivity growth from a few years of data, especially years that represent a recovery from a deep recession, is probably unwise. Now that I have the 2015 BEA data on sector-specific output and employment, let me try to illustrate what I mean.

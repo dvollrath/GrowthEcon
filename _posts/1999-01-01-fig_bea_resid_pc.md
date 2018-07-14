@@ -6,6 +6,7 @@ img: /assets/figure/fig_bea_resid_pc-thumb.png
 data: /assets/figure/fig_bea_resid_pc.csv
 code: /assets/figure/fig_bea_resid_pc.do
 codebook: /assets/figure/fig_bea_resid_pc.txt
+tags: rich
 ---
 
 [Data](/assets/figure/fig_bea_resid_pc.csv) [Code](/assets/figure/fig_bea_resid_pc.do) [Codebook](/assets/figure/fig_bea_resid_pc.txt)

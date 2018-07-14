@@ -3,7 +3,7 @@ layout: post
 title: Concentration and Growth
 published: true
 category: feed
-tags: comp
+tags: markup
 ---
 
 A whole raft of posts and articles ([here](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2612047), [here](https://promarket.org/are-we-all-rent-seeking-investors/), [here](http://equitablegrowth.org/what-are-the-factors-behind-high-economic-rents/), [here](http://www.nybooks.com/articles/2015/12/17/robert-reich-challenging-oligarchy/#fnr-5)) has shown up recently regarding "rent-seeking". This is kind of a catch-all for increased concentration within industries, more lenient anti-trust enforcement, and the increasing share of corporate profits in output. This is then tied to the slowdown in wages over the last few decades, increasing inequality, and even to slower aggregate growth. 

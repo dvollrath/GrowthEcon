@@ -3,7 +3,7 @@ layout: post
 title: How to Accelerate Growth Rates
 published: true
 category: feed
-tag: converge
+tag: reform
 ---
 
 A good amount of discussion takes place about how to accelerate growth, with a lot of prominent examples coming from the US presidential primaries. Jeb! promised to get the growth rate of GDP to 4%. [Gerald Friedman](http://www.dollarsandsense.org/What-would-Sanders-do-013016.pdf) said that Sanders' plans would raise growth to 5.3%, and the [Romer's](http://ineteconomics.org/uploads/general/romer-and-romer-evaluation-of-friedman1.pdf) have published a rebuttal saying that is almost impossible to achieve. [Narayana Kocherlakota](https://sites.google.com/site/kocherlakota009/home/policy/thoughts-on-policy/2-23-16), on the other hand, says that we can adopt policies that can achieve 5-6% growth over the next four years. I know I've [said before](https://growthecon.com/blog/insert-policy-here-wont-boost-growth-rates/) that whatever your favorite policy is, it won't boost growth rates by maybe more than 1 percentage point, so maybe you could hit 3%. 

@@ -3,6 +3,7 @@ layout: post
 title: Where did all the investment go?
 published: true
 category: feed
+tags: slowdown
 ---
 
 The fact that economic growth has slowed in the last few decades is not news, at least not on this blog. And I've been through a series of possible explanations over the course of the last few years. One bit of data that I played around with a few years ago was the decline in the growth rate of capital per worker. In this [post](https://growthecon.com/blog/describing-the-decline-of-capital-per-worker/) I looked at some figures using BLS data that showed the amount of capital per worker was *declining* in 2010-2013. That was unprecedented, as even during recessions in the past it was the case that capital per worker kept growing. 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why isn't every country rich?
+title: How deep are the roots of current economic development?
 published: true
 category: topic
 ---

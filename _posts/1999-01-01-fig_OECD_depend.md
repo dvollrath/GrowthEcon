@@ -6,6 +6,7 @@ img: /assets/figure/fig_OECD_depend-thumb.png
 data: /assets/figure/fig_OECD_depend.csv
 code: /assets/figure/fig_OECD_depend.do
 codebook: /assets/figure/fig_OECD_depend.txt
+tags: rich
 ---
 
 [Data](/assets/figure/fig_OECD_depend.csv) [Code](/assets/figure/fig_OECD_depend.do) [Codebook](/assets/figure/fig_OECD_depend.txt)
