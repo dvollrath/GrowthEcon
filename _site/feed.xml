@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>http://localhost:4000/</link>
+    <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Sun, 15 Jul 2018 20:26:43 -0400</pubDate>
+    <pubDate>Thu, 16 Aug 2018 13:34:43 -0400</pubDate>
     
       <item>
         <title>What determines value?</title>
-        <link>http://localhost:4000/blog/Value-Everything/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Value-Everything/</guid>
+        <link>https://growthecon.com/blog/Value-Everything/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Value-Everything/</guid>
         <description>&lt;p&gt;I had the opportunity to read &lt;a href=&quot;https://amzn.to/2z9NWXJ&quot;&gt;The Value of Everything&lt;/a&gt;, by Mariana Mazzucato, a few weeks ago, and have finally gotten around to writing up something of a review. This book made me think, so I count that as a positive recommendation. Sometimes I was thinking things like, “This is ridiculous, you cannot refuse to acknowledge the difference in stocks and flows!”, but in between those there were some genuine moments where Mazzucato got me to see things from a different perspective.&lt;/p&gt;
 
 &lt;p&gt;Mazzucato makes the point - obvious in retrospect but easy to forget - that the value of economic activity involves a choice. A choice of what “counts” as having value, and what does not. In exploring this, she works through the systems that past writers have used, and compares that to ideas that underlay our current thinking. This is not just a question of “what gets counted in GDP?”, but intended to be broader. Her question is something like, “by using GDP what implicit decisions have we made about what has economic value?”&lt;/p&gt;
@@ -63,8 +63,8 @@
     
       <item>
         <title>Sustained growth and the increase in work hours</title>
-        <link>http://localhost:4000/blog/Leisure/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Leisure/</guid>
+        <link>https://growthecon.com/blog/Leisure/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Leisure/</guid>
         <description>&lt;p&gt;Back in March, I &lt;a href=&quot;https://growthecon.com/blog/When-Growth/&quot;&gt;posted&lt;/a&gt; a summary of some &lt;a href=&quot;https://jacobweisdorf.files.wordpress.com/2017/12/unreal-wages_humphries-and-weisdorf_dec-2017_wp1.pdf&quot;&gt;research&lt;/a&gt; by Jane Humphries and Jacob Weisdorf on the onset of economic growth. Their paper documented &lt;em&gt;annual&lt;/em&gt; labor contract terms in England over several centuries, and compared those to the typical &lt;em&gt;day&lt;/em&gt; labor rates that have been used in economic history to study the onset of growth and the effects of the Industrial Revolution. The short version of that paper is that the annual labor contracts starting seeing sustained growth in their value around 1650 or so, far sooner than the day wages indicated. This pushes back the origin of economic growth to well before the actual technological IR, and this also matches the data on GDP per capita developed by Broadberry, Campbell, Klein, Overton, and van Leeuwen in &lt;a href=&quot;https://amzn.to/2GnD1Nm&quot;&gt;British Economic Growth, 1270-1870&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;One thing that I didn’t address in my post, but which came up in a few replies I saw, was whether the data on annual contracts (and on GDP per capita) indicate a rise in &lt;em&gt;living standards&lt;/em&gt;. Let’s take the day wage data as factually correct, and those day wages remained roughly constant from 1650-ish to 1850-ish. This has several implications. First, people that did work for day wages in this period would only see their annual income rise by working more days or hours per day. Second, if the value of annual contracts were tied in some way to the day wage, then annual contracts rose in value also due to rising work effort in days/hours. For both types of workers this doesn’t seem to indicate that they are better off, just working more hours.&lt;/p&gt;
@@ -119,8 +119,8 @@
     
       <item>
         <title>The paradox of markups, part 2</title>
-        <link>http://localhost:4000/blog/Paradox-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Paradox-2/</guid>
+        <link>https://growthecon.com/blog/Paradox-2/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Paradox-2/</guid>
         <description>&lt;p&gt;I told you I wouldn’t leave you waiting on the next post concerning markups and the paper by &lt;a href=&quot;https://dl.dropboxusercontent.com/content_link/JCsTqiauR0JBboj3vsNFRhyw9MrxV3B0j7L3f4fURJnfAUAxSXJXASiRl8OFiU2F/file&quot;&gt;David Baqaee and Emmanuel Fahri&lt;/a&gt;, so here you go. In the &lt;a href=&quot;https://growthecon.com/blog/Paradox/&quot;&gt;last post&lt;/a&gt;, I described the (at times) paradoxical nature of markups. When there is &lt;em&gt;dispersion&lt;/em&gt; in markups, output is lower than it could otherwise be, given technology. But when there is dispersion in markups, there are circumstances - like increasing markups in low-markup producers or shifting resources towards high-markup producers - where raising the average markup in the economy will be associated with higher output.&lt;/p&gt;
 
 &lt;p&gt;All that is in the BF paper, but it is not the main purpose of it. One of the main contributions of the paper is to show that you can generalize these effects of markups to almost any arbitrary model of the economy. The paradox is not just the result of making some particular assumptions about production functions or preferences.&lt;/p&gt;
@@ -189,8 +189,8 @@
     
       <item>
         <title>The paradox of markups</title>
-        <link>http://localhost:4000/blog/Paradox/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Paradox/</guid>
+        <link>https://growthecon.com/blog/Paradox/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Paradox/</guid>
         <description>&lt;p&gt;I’ve gotten the lag time between posts down from 6 months to six weeks. Progress.&lt;/p&gt;
 
 &lt;p&gt;A topic that comes up often here is the effect of markups on aggregate productivity. And there is a recent-ish paper by &lt;a href=&quot;https://dl.dropboxusercontent.com/content_link/JCsTqiauR0JBboj3vsNFRhyw9MrxV3B0j7L3f4fURJnfAUAxSXJXASiRl8OFiU2F/file&quot;&gt;David Baqaee and Emmanuel Fahri&lt;/a&gt; that has approached the relationship of markups (and distortions in general) with aggregate productivity from a very general perspective. By that I mean they show how to assess the impact of markups in an economy that may have some arbitrarily complex input-output structure for production, and in which it may be impossible to write down a coherent aggregate production function. In other words, they can assess the effect of markups on something approaching an actual economy.&lt;/p&gt;
@@ -274,8 +274,8 @@
     
       <item>
         <title>When did sustained growth start?</title>
-        <link>http://localhost:4000/blog/When-Growth/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/When-Growth/</guid>
+        <link>https://growthecon.com/blog/When-Growth/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/When-Growth/</guid>
         <description>&lt;p&gt;You know how when you get older, time seems to move faster? Well, imagine how that feels, and now pretend that you write a blog. It’s been about six months since I last posted something, and that was not a conscious decision, but just something that kind of happened as I kept putting it off while I worked on classes or research. If I want to blame something in particular, I have been helping to coach my kids lacrosse team for the last few months, and you’d be shocked at how much mental real estate U-12 lacrosse eats up.&lt;/p&gt;
 
 &lt;p&gt;Whatever the reason, I’m back. And it was a working paper that I finally got around to reading that prompted me to get back on the wagon. Jane Humphries and Jacob Weisdorf have put out “Unreal wages? Real income and economic growth in England, 1260-1850”, which you can find an ungated version of &lt;a href=&quot;https://jacobweisdorf.files.wordpress.com/2017/12/unreal-wages_humphries-and-weisdorf_dec-2017_wp1.pdf&quot;&gt;here&lt;/a&gt;. As they set it out, there is a disparity in the data sources we use to think about the timing and evolution of sustained economic growth. The basic problem can be see in their figure, reproduced below.&lt;/p&gt;
@@ -321,8 +321,8 @@
     
       <item>
         <title>Where did all the investment go?</title>
-        <link>http://localhost:4000/blog/Investment/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Investment/</guid>
+        <link>https://growthecon.com/blog/Investment/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Investment/</guid>
         <description>&lt;p&gt;The fact that economic growth has slowed in the last few decades is not news, at least not on this blog. And I’ve been through a series of possible explanations over the course of the last few years. One bit of data that I played around with a few years ago was the decline in the growth rate of capital per worker. In this &lt;a href=&quot;https://growthecon.com/blog/describing-the-decline-of-capital-per-worker/&quot;&gt;post&lt;/a&gt; I looked at some figures using BLS data that showed the amount of capital per worker was &lt;em&gt;declining&lt;/em&gt; in 2010-2013. That was unprecedented, as even during recessions in the past it was the case that capital per worker kept growing.&lt;/p&gt;
 
 &lt;p&gt;A new working paper by &lt;a href=&quot;https://www.brookings.edu/wp-content/uploads/2017/09/2_gutierrezphilippon.pdf&quot;&gt;German Gutierrez and Thomas Philippon&lt;/a&gt; (GP) has taken on this same topic, only in much more detail, and with a lot of effort put into understanding &lt;em&gt;why&lt;/em&gt; investment has been low recently. Moreover, they document that investment by firms has been falling over a longer period of time, coincident in large part with the productivity slowdown of the 21st century.&lt;/p&gt;
@@ -384,8 +384,8 @@
     
       <item>
         <title>Why don't tax cuts boost growth?</title>
-        <link>http://localhost:4000/blog/Taxing-GDP/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Taxing-GDP/</guid>
+        <link>https://growthecon.com/blog/Taxing-GDP/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Taxing-GDP/</guid>
         <description>&lt;p&gt;Relative to current events, this probably seems less important at the moment, and a week or so too late, but the tax cut proposed by th Trump administration is still kicking around. There have been any number of responses to it, and responses in particular to the claim that it will “supercharge” economic growth, and ultimately pay for itself. In short, it won’t do either of those things, which is the conclusion you come to after reviewing all the evidence available. I did so here, in a &lt;a href=&quot;https://growthecon.com/blog/Taxes-Growth/&quot;&gt;prior post&lt;/a&gt;. &lt;a href=&quot;https://www.washingtonpost.com/news/posteverything/wp/2017/09/28/i-helped-create-the-gop-tax-myth-trump-is-wrong-tax-cuts-dont-equal-growth/&quot;&gt;Bruce Bartlett&lt;/a&gt; just posted an article where he also comes to that conclusion, and recants his earlier stand in the 1980’s pushing the whole “tax cuts increase growth” line.&lt;/p&gt;
 
 &lt;p&gt;The purpose of this post is not to rehash the arguments and evidence showing that tax cuts do not increase growth. Rather, I want to think a little about &lt;em&gt;why&lt;/em&gt; they do not increase growth. Because the claim that they do &lt;em&gt;sounds&lt;/em&gt; right, but fails in the real world.&lt;/p&gt;
@@ -438,8 +438,8 @@
     
       <item>
         <title>Harvey</title>
-        <link>http://localhost:4000/blog/Harvey/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Harvey/</guid>
+        <link>https://growthecon.com/blog/Harvey/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Harvey/</guid>
         <description>&lt;p&gt;You may or may not realize that the global headquarters of Growthecon.com is in Houston. So it’s been an interesting few days, to say the least. This post has nothing to do with economics. It’s just things that keep running through my head as we clean up.&lt;/p&gt;
 
 &lt;p&gt;I live a charmed life, for so many reasons. But most recently, it’s the fact that we made it out of the storm with a dry house (barely) and with everyone safe. Lots of our neighbors are not so lucky, so we’ve been doing what we can to help. It doesn’t feel like much. I hope it makes a difference.&lt;/p&gt;
@@ -505,8 +505,8 @@
     
       <item>
         <title>Rising Markups and Falling Productivity</title>
-        <link>http://localhost:4000/blog/DE-Markups/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/DE-Markups/</guid>
+        <link>https://growthecon.com/blog/DE-Markups/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/DE-Markups/</guid>
         <description>&lt;p&gt;In between checking weather updates here in Houston, I finally got around to reading the new working paper by Jan De Loecker and Jan Eeckhout (DE), on “&lt;a href=&quot;http://www.janeeckhout.com/wp-content/uploads/RMP.pdf&quot;&gt;The Rise of Market Power and the Macroeconomic Implications&lt;/a&gt;”. The authors find that the markup of price over marginal cost charged by public US firms has been rising steadily since 1960, and in particular after 1980. It has generated a lot of commentary already, as in this &lt;a href=&quot;http://noahpinionblog.blogspot.com&quot;&gt;post&lt;/a&gt; by Noah Smith, this &lt;a href=&quot;https://niskanencenter.org/blog/markups-market-power/&quot;&gt;post&lt;/a&gt; by Karl Smith, and &lt;a href=&quot;http://marginalrevolution.com/marginalrevolution/2017/08/rise-market-power.html&quot;&gt;this&lt;/a&gt; from Tyler Cowen. A lot of the discussion so far has been about how to interpret their results, and whether it indicates a rise in “market power”, and that devolved somewhat into a discussion of how to define “market power” in the first place.&lt;/p&gt;
 
 &lt;p&gt;I want to jump in with some of my own thoughts on the paper, but I’m going to avoid getting into this “market power” interpretation thing. I’m more interested in what DE’s results have to say about the productivity slowdown. Let’s start with how DE get these numbers in the first place.&lt;/p&gt;
@@ -620,8 +620,8 @@
     
       <item>
         <title>Are some places &quot;More Malthusian&quot; than other?</title>
-        <link>http://localhost:4000/blog/Constraints/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Constraints/</guid>
+        <link>https://growthecon.com/blog/Constraints/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Constraints/</guid>
         <description>&lt;p&gt;I’ve got a new working paper out (&lt;a href=&quot;/assets/2017-06-28-Constraint.pdf&quot;&gt;pdf&lt;/a&gt; or &lt;a href=&quot;https://ideas.repec.org/p/hou/wpaper/2017-192-55.html&quot;&gt;repec&lt;/a&gt;), co-authored with Ryan Johnson, on Malthusian constraints. There is some material that we’re cutting from the paper, because it is already getting too long, but I kind of like the graphs and the results, so I figured I would write them up here. Fair warning: there will be some math.&lt;/p&gt;
 
 &lt;p&gt;In the &lt;a href=&quot;https://growthecon.com/blog/Malthus/&quot;&gt;post&lt;/a&gt; I wrote not too long ago on what “Malthusian” means, I said that a key feature of a Malthusian economy was that living standards are &lt;em&gt;inversely&lt;/em&gt; related to population size. Typically, we’d think of this as being due to fixed (or very expensive to acquire) amounts of agricultural land. What Ryan and I are trying to figure out is exactly how sensitive living standards are to population size.&lt;/p&gt;
@@ -691,8 +691,8 @@
     
       <item>
         <title>The Return of Peasant Mentality?</title>
-        <link>http://localhost:4000/blog/Peasant/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Peasant/</guid>
+        <link>https://growthecon.com/blog/Peasant/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Peasant/</guid>
         <description>&lt;p&gt;Without intending to, I ended up taking a blog hiatus (blacation?) for about a month. But in that month I built up a whole reserve of speculative energy that I now need to disgorge all at once. So strap in, because this one gets hairy towards the end.&lt;/p&gt;
 
 &lt;p&gt;A thing that has interested me since grad school is the clear gap in labor productivity between urban and rural areas, or between non-agricultural workers and agricultural workers. There are two big questions that come up given that fact. Why do those gaps exist? What effect do those gaps have, if any, on development? I’ve taken a couple of swipes at the second question &lt;a href=&quot;/assets/JDE_Final.pdf&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;/assets/dvhc2014.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -743,8 +743,8 @@
     
       <item>
         <title>Understanding the Cost Disease of Services</title>
-        <link>http://localhost:4000/blog/What-You-Spend/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/What-You-Spend/</guid>
+        <link>https://growthecon.com/blog/What-You-Spend/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/What-You-Spend/</guid>
         <description>&lt;p&gt;As my internal clock is not on internet time, I’m only now getting up a post in reaction to the death of William Baumol, who has been a consistent reference on this blog over the years. My topic page on the &lt;a href=&quot;https://growthecon.com/blog/Productivity-Slowdown/&quot;&gt;productivity slowdown&lt;/a&gt; is in many ways an extended riff on his work.&lt;/p&gt;
 
 &lt;p&gt;I can share no personal stories about the man, as I never met him. What I can do is spend some time digging through what I consider the key paper of his most famous idea, the “cost disease of services”. I’d like to think that as an academic, he’d appreciate this as much as an anecdote.&lt;/p&gt;
@@ -827,8 +827,8 @@
     
       <item>
         <title>Sigh....No, tax cuts won't boost growth</title>
-        <link>http://localhost:4000/blog/Taxes-Growth/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Taxes-Growth/</guid>
+        <link>https://growthecon.com/blog/Taxes-Growth/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Taxes-Growth/</guid>
         <description>&lt;p&gt;I guess we need to go over this again. No, cuts to corporate tax rates and/or the reforms/cuts proposed on individual income taxes will not boost economic growth in any appreciable way. Not to 4%, nor 4.5%, nor 5%. There is no evidence supporting this claim. And even theoretically, there is no reason to believe that these tax reforms/cuts can boost growth to those rates.&lt;/p&gt;
 
 &lt;h3 id=&quot;prima-facie-evidence&quot;&gt;Prima Facie Evidence&lt;/h3&gt;
@@ -888,8 +888,8 @@
     
       <item>
         <title>Topics in Economic Growth</title>
-        <link>http://localhost:4000/blog/Topics-Pages/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/Topics-Pages/</guid>
+        <link>https://growthecon.com/blog/Topics-Pages/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Topics-Pages/</guid>
         <description>&lt;p&gt;Less of a post, and more of an announcement. I just created some new pages here at Growthecon.com that collect resources and materials related to specific topics regarding growth. See the &lt;a href=&quot;https://growthecon.com/topics/&quot;&gt;Topics&lt;/a&gt; link in the header of the webpage.&lt;/p&gt;
 
 &lt;p&gt;This was an exercise in intellectual housecleaning, and a way to organize some materials for possible use in classes in the future. Each topic has links to my own posts on the subject, links to other web articles or resources, and some selected academic citations. The topics are thus more accessible, but less comprehensive, then the pages of &lt;a href=&quot;https://growthecon.com/references/&quot;&gt;references&lt;/a&gt; that are also posted on this site.&lt;/p&gt;
@@ -917,8 +917,8 @@
     
       <item>
         <title>Aggregate Productivity versus Aggregate Technology ... Again</title>
-        <link>http://localhost:4000/blog/TFP-With-Profits/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/TFP-With-Profits/</guid>
+        <link>https://growthecon.com/blog/TFP-With-Profits/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/TFP-With-Profits/</guid>
         <description>&lt;p&gt;You can file this as another example of how measured aggregate TFP growth is like a trash can. It happens to include aggregate technology (which got tossed in there by accident while cleaning up kitchen), but also all sorts of other junk (like leftover coffee grounds). Today’s example shows that even if you are smart about how you construct your measure of aggregate TFP growth, you can still end up with some garbage in there because of aggregation issues. I know this is pushing the analogy, but actually measuing aggregate &lt;em&gt;technology&lt;/em&gt; is like trying to wipe up just the waffle crumbs your kids left behind, but &lt;em&gt;not&lt;/em&gt; the drops of syrup.&lt;/p&gt;
 
 &lt;p&gt;Let me try to give the English-language, and non-garbage related, version of this before turning to the math. To calculate TFP growth, we look at how fast aggregate GDP grew relative to how fast aggregate input use grew. But there is a discrepancy about how we measure GDP growth and how we measure input growth. Aggregate GDP growth is a summation of the growth rate of each individual sector, with each weighted by how big a part of GDP they are. Manufacturing is about 12% of GDP, so a 3% growth rate of manufacturing output would add 0.12 x 0.03 = 0.0036 to total GDP growth, or about one-third of one percentage point.&lt;/p&gt;
