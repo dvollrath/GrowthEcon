@@ -3,7 +3,7 @@ layout: post
 title: Productivity versus Technology in American Growth
 published: true
 category: feed
-tags: slowdown
+tags: slowdown markup
 ---
 
 I just [reviewed](https://growthecon.com/blog/Gordon-Review/) Bob Gordon's book on the rise and fall of American growth. A quick recap of Gordon's thesis is that we experienced an anomalous burst of technological progress during the 1930's and 1940's, bleeding a little into the 1950's and 60's. Prior to that period, and since that period, technological progress was relatively slow, and Gordon expects that slow technological progress to be the norm for the foreseeable future. 
