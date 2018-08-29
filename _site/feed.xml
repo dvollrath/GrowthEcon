@@ -5,7 +5,111 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Fri, 24 Aug 2018 13:31:40 -0500</pubDate>
+    <pubDate>Wed, 29 Aug 2018 14:42:00 -0500</pubDate>
+    
+      <item>
+        <title>The inverse relationship of farm size and productivity</title>
+        <link>https://growthecon.com/blog/IFSP/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/IFSP/</guid>
+        <description>&lt;p&gt;Since I am an intellectual raccoon, it was not a surprise that when &lt;a href=&quot;https://twitter.com/GarettJones&quot;&gt;Garett Jones&lt;/a&gt; dangled a shiny object called “the inverse farm-size productivity relationship” in front of me on Twitter, I grabbed hold with my dirty little paws and would not let go. The inverse farm-size productivity (IFSP) relationship is something I’ve been interested in since grad school, and my very first published paper has a strong link to the subject. But from Garett’s tweet, and the responses it gathered, I realized I was a bit behind on the state of this literature. And so here we are, with a blog post that is something of a literature review and something of a critical analysis.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-origin-of-the-ifsp-fact&quot;&gt;The origin of the IFSP “fact”&lt;/h3&gt;
+&lt;p&gt;Let’s start by laying out what precisely the IFSP is, and some of the implications of it. Note that by the end of this post you’re going to see that the “standard” IFSP I’m going to define here is probably wrong. Still, I think it is worth seeing what it is, where it came from, and &lt;em&gt;why&lt;/em&gt; we now think it is wrong.&lt;/p&gt;
+
+&lt;p&gt;The IFSP is the stylized fact that small farms have higher yields per acre than large farms. In other words, output per hectare is decreasing with the number of hectares, and hence there is an &lt;em&gt;inverse&lt;/em&gt; relationship of farm size (hectares) and productivity (output per hectare).&lt;/p&gt;
+
+&lt;p&gt;The ur-text of the IFSP literature is &lt;a href=&quot;/assets/papers/Sen_1962.pdf&quot;&gt;Sen&lt;/a&gt; (1962). Yes, I know &lt;a href=&quot;/assets/papers/alexander_chayanov_the_theory_of_peasant_economy.pdf&quot;&gt;Chayanov&lt;/a&gt; (1926) talked about it as well in the context of Russia, but Sen’s work managed to kick off a few &lt;em&gt;decades&lt;/em&gt; worth of research, whereas Chayanov’s observation just kind of sat there for years without much response (at least within economics). Sen’s original 1962 paper does not provide any direct evidence of the IFSP. He simply mentions this (his Observation III) as something that is found to be generally valid in Indian agriculture. This conclusion is based on a series of Farm Management Surveys done in the 1950’s for several Indian states.&lt;/p&gt;
+
+&lt;p&gt;If you dig back through a lot of the papers that follow Sen, they take this relationship for granted, or also appeal to the Farm Management Surveys (FMS). One of the first papers I know of that actually documents the IFSP in the FMS data is from &lt;a href=&quot;/assets/papers/Saini_1971.pdf&quot;&gt;Saini&lt;/a&gt; (1971). He looks, using the farm level data, at the elasticity of total output with respect to operational area of a farm. If that elasticity is less than one, it means that if farm size increases by 1%, output increases by &lt;em&gt;less&lt;/em&gt; than 1%, and hence the yield falls. This constitutes the standard method for establishing the &lt;em&gt;prima facie&lt;/em&gt; evidence that the IFSP exists. Here’s the original table from Saini,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_saini_tab1.png&quot; alt=&quot;Saini Table 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Look at the column labelled &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;, which is the estimated elasticity. You can see that all but three are less than one. And if you look at the second to last column, at the t-values, you see that in all but six we can reject the hypothesis that the elasticity is equal to one. On this basis, Saini says that the stylized fact of the IFSP used by Sen and others is a robust statistical relationship.&lt;/p&gt;
+
+&lt;p&gt;And at this point (roughly) forward, the notion that the IFSP exists in some manner becomes an established fact. Note that this is based on Indian data alone, and it will remain the case throughout this literature that the IFSP is centered around a discussion of Indian agriculture.&lt;/p&gt;
+
+&lt;p&gt;It isn’t until a book by &lt;a href=&quot;https://books.google.com/books/about/Agrarian_Structure_and_Productivity_in_D.html?id=i_4DAAAAMAAJ&quot;&gt;Berry and Cline&lt;/a&gt; (1979) that we get some evidence for the IFSP in different contexts. The strength of the book at the time was pulling in farm-level data from different countries, and exploring the existence of the IFSP directly in each. The book, in addition, documents a number of other facts related to farm-size distributions. Which is the reason that the U of Houston library copy has lived in my office for the last 13 years (and, uh, sorry about all the margin notes).&lt;/p&gt;
+
+&lt;p&gt;Quickly, Berry and Cline examine the farm-level data and find:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Brazil: a regression shows a negative relationship of yield (output per area or &lt;img src=&quot;http://latex.codecogs.com/png.latex?output per\inline&quot;/&gt; value of land) and the number of hectares on a farm, including controls for regions&lt;/li&gt;
+  &lt;li&gt;Colombia: summary data shows that yield (gross or net farm income per hectare) falls as you look at groups of larger and larger farms&lt;/li&gt;
+  &lt;li&gt;Philippines: regression shows a negative relationship of yield (value-added per hectare or just value-added from crops per hectare) and the area (total hectares or cultivated hectares) across farms&lt;/li&gt;
+  &lt;li&gt;Pakistan: regression shows a negative relationship of yield (gross farm income per acre) with area of farms (in acres), including controls for regions&lt;/li&gt;
+  &lt;li&gt;Malaysia: summary data shows that yield (value-added per hectare) falls as you look at groups of larger and larger farms&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Berry and Cline also confirm the findings for India. So between that original work on India, and the Berry and Cline evidence from different settings, the IFSP appears to be an established fact by the early 1970s.&lt;/p&gt;
+
+&lt;h3 id=&quot;unleash-the-theorists&quot;&gt;Unleash the theorists!&lt;/h3&gt;
+&lt;p&gt;We could not let a good stylized fact go to waste, so the economics profession quickly got to work theorizing about &lt;em&gt;why&lt;/em&gt; the IFSP existed. And that theorizing invariably started with an observation that the IFSP &lt;em&gt;should not&lt;/em&gt; exist given standard assumptions about how markets work. In this, the IFSP literature echoed the literature on share-cropping, the existence of which had bothered economists all the way back to Marshall.&lt;/p&gt;
+
+&lt;p&gt;If people can buy, sell, or rent land at will, and if people can work for wages, hire workers for wages, and work on their own farm, and if people are attempting to maximize the profits they earn using their land (if they hold some), &lt;em&gt;then&lt;/em&gt; there should be no IFSP. Let’s say you have a large farm and a small farm , but the yield on the large farm is lower than on the small farm. The large farmer should offer to rent the small farmer some land. This will reduce the large farm size, but raise its yield. The small farmer would get larger, and their yield would fall. It will make sense to keep renting land to the small(er) farmer until the yield is identical on the two farms. This will maximize the total output across the two farms.&lt;/p&gt;
+
+&lt;p&gt;You can also get to this idea if we think of the labor market. The large farmer should offer to hire the small farmer for some hours of work. This would lower the yield on the small farm (less work is getting done) but raise the yield on the large farm (more work is getting done). For a similar argument, the large farmer should keep hiring more hours of the small farmer’s time until the yield across all hectares is identical.&lt;/p&gt;
+
+&lt;p&gt;Regardless, the yield on every hectare of land should be identical, no matter the actual ownership structure of the land to begin with. The fact that the yield is &lt;em&gt;not&lt;/em&gt; identical means we are sacrificing some output. And that didn’t make sense. It’s seems like leaving dollar bills on the sidewalk.&lt;/p&gt;
+
+&lt;p&gt;But simply assuming that developing country farmers had some inability to see, or desire to take advantage of, these kinds of gains, was a no go. T.W. Schultz had just published in 1964 &lt;em&gt;Transforming Traditional Agriculture&lt;/em&gt;, which argued that you had to see farmers in these situations as keen optimizers (given their poverty, probably even more concious of maximizing their output than someone with a more secure lifestyle). So the game was to see under what conditions it would be that the IFSP was the result of many farmers pursuing an optimizing strategy.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/papers/Sen_1966.pdf&quot;&gt;Sen&lt;/a&gt; (1966) laid the groundwork for one common explanation, which was that the labor employed on small farms was effectively &lt;em&gt;different&lt;/em&gt; than hired workers. Because of a surplus labor situation (a la Lewis), or a low opportunity cost for family labor, or a monitoring cost for hired workers, the effective wage of family workers is lower than hired workers. For a small family farm, they “hire” more of their own labor given the relatively low effective wage, raising the labor used per hectare and raising yields. For large farms, which must hire in workers, the effective wage is higher, and as such the large farmer employs fewer workers per hectare, resulting in lower yields.&lt;/p&gt;
+
+&lt;p&gt;That makes &lt;em&gt;some&lt;/em&gt; sense, and you can get into the weeds on what exactly creates the monitoring costs or lowers the opportunity cost for family members. But regardless of the explanation, a paper by &lt;a href=&quot;/assets/papers/Feder_1985.pdf&quot;&gt;Feder&lt;/a&gt; (1985) established that a single market failure like this (i.e. a wedge in the effective wage of otherwise similar workers) cannot, by itself, account for the IFSP. The basic argument is that if only one market has a wedge or friction, the &lt;em&gt;other&lt;/em&gt; markets can all adjust such that the IFSP doesn’t hold. To see this, imagine that our large farmer and small farmer exist as before, and that the large farmer hires some of the small farmers time (or hires some of the small farmers family members) to work on their farm along with the large farmers own family. You could still raise output by having the large farmer rent some land to the small farmer. You would do this until the two farms were just of the size that both were being worked by only family workers. Thus output would be higher, and the work effort (and yield), would be identical across the two farms. What Feder showed was that it took &lt;em&gt;multiple&lt;/em&gt; market failures to deliver the IFSP. We need &lt;em&gt;both&lt;/em&gt; an implicit difference in wages between family and hired labor, &lt;em&gt;and&lt;/em&gt; an inability to rent in/out land, for the IFSP to persist. So in that sense, the presence of the IFSP implied multiple failed or missing markets within developing countries.&lt;/p&gt;
+
+&lt;p&gt;Now, there was another line of reasoning that attempted to explain the IFSP, based on risk. &lt;a href=&quot;/assets/papers/Srinivasan_1972.pdf&quot;&gt;Srinivasan&lt;/a&gt; (1972) and &lt;a href=&quot;/assets/papers/Barrett_1996.pdf&quot;&gt;Barrett&lt;/a&gt; (1996) both considered that production risk could induce small farmers to work more intensely on their farms. A simple way to see this is to imagine that each farmer has a fixed minimum absolute amount of output that they &lt;em&gt;have&lt;/em&gt; to produce to survive, and that there is some uncertainty in how much their land will yield in a given year. For a small farmer, they raise the expected yield of their land to a very high level so that they eliminate (or make insignificant) the risk that a bad year leaves them without enough to eat, and hence they achieve high yields on average. For the large farmer, the absolute amount of output they get from their land is large even in a bad year, so they do not need to jack up their expected yield. Hence their observed average yield is low. (As an aside, Barrett’s paper is really about price risk for output, not risk in the actual output itself, but the same ideas apply.)&lt;/p&gt;
+
+&lt;p&gt;A last theoretical possibilty, one that tended to get dismissed for the most part, is that farm production is decreasing returns to scale. That kind of assumes the answer, but still left open the question of why the large farmer didn’t split up or rent out their land to smaller farmers. You still needed some kind of missing market to make this one work.&lt;/p&gt;
+
+&lt;h3 id=&quot;implications-for-redistribution&quot;&gt;Implications for redistribution&lt;/h3&gt;
+&lt;p&gt;The importance of the IFSP in practice is that it makes a case for redistribution of land. Regardless of the underlying source of the IFSP, its presence implies that one could &lt;em&gt;force&lt;/em&gt; a break up of large farms into small farms, and have higher output overall. You might imagine that one can use the extra output to compensate the large farmers, or perhaps you don’t care. Regardless, the implication of the IFSP is that an unequal distribution is &lt;em&gt;directly&lt;/em&gt; related to lower output.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/vollrath_fig1.png&quot; alt=&quot;Vollrath 2007 Figure 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This, by they way, was what my first &lt;a href=&quot;https://growthecon.com/assets/ajae_2007.pdf&quot;&gt;published paper&lt;/a&gt; was about. I looked at the relationship of country-level measures of land inequality and the output per hectare from agriculture. I found a negative relationship, and you can see the raw version of this in the figure, and it holds up once you control for all sorts of other things that you’d expect affect yields.&lt;/p&gt;
+
+&lt;p&gt;This negative relationship is consistent with the presence of the IFSP within countries. In fact, it &lt;em&gt;only&lt;/em&gt; makes sense if there is an IFSP to begin with. If you dare to believe my results were causal - and you’d want to be very, very hesitant to do that - then it supports that idea that redistributing land (lowering inequality) would be associated with higher yields.&lt;/p&gt;
+
+&lt;p&gt;Thus the IFSP provides one justification for land redistribution, including a relatively recent (2009) &lt;a href=&quot;http://siteresources.worldbank.org/INTARD/Resources/Ag_Land_Redistribution.pdf&quot;&gt;book&lt;/a&gt; from the World Bank on the prospects for land reform. See Chapter 1, page 11. When you combine this IFSP with the historical origins of land inequality in many locations (i.e. elites controlling vast amounts of land) then the rationale for land redistribution comes from both notions of fairness and from notions of efficiency.&lt;/p&gt;
+
+&lt;h3 id=&quot;trying-to-explain-it-away&quot;&gt;Trying to explain it away&lt;/h3&gt;
+&lt;p&gt;While the fairness motive for redistribution can exist independently of the IFSP, the efficiency argument cannot. And starting not long after the IFSP became a stylized fact, people have asking whether the IFSP represents a real efficiency loss, or just a spurious correlation.&lt;/p&gt;
+
+&lt;p&gt;The main argument for a spurious correlation is that the IFSP ignores differences in land quality. If small farmers simply have better quality land, then the higher yields make perfect sense, and there is no mystery about missing markets or effective wages. More important, if land quality differences explain the difference in yields between small and large farms, there is &lt;em&gt;no&lt;/em&gt; efficiency argument for redistribution. No matter who farms a given plot of land, we’d get the same yield, so the distribution is unimportant.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/papers/Carter_1984.pdf&quot;&gt;Carter&lt;/a&gt; (1984) looked at the IFSP within India, and compared farms within given villages, on the assumption that land quality was similar within a village. He found the IFSP was slightly weaker, but still existed. &lt;a href=&quot;/assets/papers/Bhalla_Roy_1988.pdf&quot;&gt;Bhalla and Roy&lt;/a&gt; (1988) went back to the Indian data as well, and incorporated information on soil quality directly, finding that the IFSP weakened substantially when you control for this. Implicitly, when they controlled for soil quality, they were comparing small farms to large farms that have the &lt;em&gt;same&lt;/em&gt; quality of soil. And when they did that, the IFSP disappeared in most settings. They concluded that the evidence for the IFSP was weak. &lt;a href=&quot;/assets/papers/Benjamin_1995.pdf&quot;&gt;Benjamin&lt;/a&gt; (1995) used Indonesian data, and came at the question indirectly. Without getting into the weeds on this, he finds that unobservable characteristics (e.g. land quality) likely explain the IFSP in the raw data, but didn’t have direct data on land quality. So there is/was some evidence that the IFSP could be accounted for by land quality, but hang onto that result for a moment.&lt;/p&gt;
+
+&lt;p&gt;A different line of research tried to assess the source of the IFSP by looking at &lt;em&gt;within&lt;/em&gt;-household variation in yields by plots. There are a few papers that did this, but let me use &lt;a href=&quot;/assets/papers/Assuncao_Braido_2007.pdf&quot;&gt;Assuncao and Braido&lt;/a&gt; (2007) as the example here. These authors used Indian data, and were able to look not only at each farmer, but at each &lt;em&gt;plot&lt;/em&gt; used by each farmer. What they found was that there was an IFSP that held across each individual farmers plots. That is, the same farmer achieves higher yields on smaller plots than on larger plots. This suggests that household-specific explanations are not to blame for the IFSP. That is, it cannot just be that some farms use family labor and some farms have to hire in workers, and that they face different implicit prices for labor (or for other inputs). These are the same farmers, and they can adjust the labor they do use however they want across plots. Assuncao and Braido suggested instead that perhaps their result reflects unmeasured differences in land quality across the plots.&lt;/p&gt;
+
+&lt;p&gt;However, a 2010 paper by &lt;a href=&quot;/assets/papers/Barrett_etal_2010.pdf&quot;&gt;Barrett, Bellemare, and Hou&lt;/a&gt; did a similar study, but with very detailed soil quality measurements done on each specific plot a farmer uses (the data is from Madagascar). What they find is that the land quality differences explain &lt;em&gt;nothing&lt;/em&gt; of the differential yields across plot sizes, and that thus the IFSP is not due to land quality differences. What remains is possible &lt;em&gt;intra&lt;/em&gt;-household inefficiency in allocations of labor across plots, or perhaps the IFSP just reflects errors in how we measure the size of farms and/or plots. &lt;a href=&quot;/assets/papers/Lamb_2003.pdf&quot;&gt;Lamb&lt;/a&gt; (2003) was one of the first to suggest the IFSP was due to some measurement error in the area of farms, but a recent paper by &lt;a href=&quot;/assets/papers/Carletto_etal_2013.pdf&quot;&gt;Carletto, Savastano, and Zezza&lt;/a&gt; (2013) using data from Uganda that uses GPS tracking claims that accurate measurement of plots actually &lt;em&gt;reinforces&lt;/em&gt; the IFSP.&lt;/p&gt;
+
+&lt;p&gt;Which means we might be down to just intra-household explanations. And at that point I’m not sure what to tell you, because then it becomes closer to saying that farmers are leaving dollar bills on the sidewalk (or that there is some additional unmeasured difference in land quality we just cannot capture).&lt;/p&gt;
+
+&lt;h3 id=&quot;the-u-shaped-relationship&quot;&gt;The U-shaped relationship&lt;/h3&gt;
+&lt;p&gt;But before we leave the IFSP behind, we have to check in with another recent paper from &lt;a href=&quot;/assets/papers/Foster_Rosenzweig_2017.pdf&quot;&gt;Foster and Rosenzweig&lt;/a&gt; (2017) that tells us that the stylized facts behind the IFSP are in fact incorrect, and that what we should be looking at is the U-shaped relationship of yields and farm size. While among relatively small farms in developing countries we see the IFSP, this does not capture what is seen in more developed economies, where yields &lt;em&gt;rise&lt;/em&gt; as farm size increases. By itself, that might not be very interesting, as it may be a little like comparing apples and oranges. But what the authors show is that using more recent data from India there is a clear U-shaped relationship of farm size and yield.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fr_fig6.png&quot; alt=&quot;Foster and Rosenzweig Figure 6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure shows the raw data they use to make this claim, and the U-shape is obvious. Above 10 acres, yields rise with size. Now, you can subject this to similar types of analysis to what I explained in the prior section, such as controlling for soil quality and looking only at plots run by a single given farmer. In each case, they find that the U-shape persists.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fr_fig8.png&quot; alt=&quot;Foster and Rosenzweig Figure 8&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This second figure shows the yields after controlling for these things. The blue line shows the case when they looked across farmers plots, and controlled for soil quality. The squiggly nature of the estimated line comes from the fact that they are allowing for a flexible estimation, and so small variations in yields are going to show up in the line. Nevertheless, the U-shape still appears.&lt;/p&gt;
+
+&lt;p&gt;What is really interesting is that this is essentially the same analysis that was done in Assuncao and Braido. But those authors used Indian data from 1975-1984, while Foster and Rosenzweig are using Indian data from 2009-2014. It is possible that the IFSP held as expected in the earlier period, and it is only with subsequent development (e.g. the availability of new types of capital goods) that the upward slope among large farms appeared.&lt;/p&gt;
+
+&lt;p&gt;FR work out a theory that can help explain the U-shape, and it really is a nesting of two explanations. First, they assume that there are some labor market issues as the classic IFSP explanations use. First, labor gets more expensive as farms get larger (when farms are small). Second, capital goods require a minimum scale of farm or plot to use, but these capital goods are really productive. Hence you see yields fall from very small to medium-sized farms due to the effect of rising labor costs, and then somewhere around 10 hectares (in this data) it starts to make sense to use capital goods, which starts to raise yields as you get bigger.&lt;/p&gt;
+
+&lt;p&gt;Remember that one of the implications of the IFSP could be that land redistribution would increase output. This is no longer so clear with the FR results. If you took all the land and redistributed it out in 10-hectare parcels, so that there was no inequality in land holdings, you’d get the &lt;em&gt;lowest&lt;/em&gt; possible yield from the land. Your best bet, given their data, is to redistribute such that you &lt;em&gt;maximized&lt;/em&gt; inequality, with a bunch of very small farms (high yields due to low labor costs) and very large farms (big enough to use capital).&lt;/p&gt;
+
+&lt;p&gt;The FR results bring back in some notions of earlier ag and development economists suggesting that fostering agricultural consolidation, and encouraging large farms that could leverage modern capital and techniques, was the best way to raise agricultural output. That strategy faced the problem of explaining what exactly the now-landless small farmers were supposed to do, but from the IFSP facts that suggested it would not actually raise yields. Does the calculus change if you know yields would actually rise given a consolidation of land into large farms? Would it allow you enough resources to compensate the small holders who lost land - assuming that you could figure out a way to actually make that compensation happen?&lt;/p&gt;
+
+&lt;p&gt;Because of its relevance for thinking about the aggregate level of production in agriculture, and the possible effects of land redistribution, the IFSP and/or U-shaped relationship remains a relevant topic for development economics. What I think remains the really key question is why the IFSP part of the relationship appears to hold &lt;em&gt;within&lt;/em&gt; households, where the farmers should face fewer frictions to allocating resources. Quick gut reactions are that it might have to do with distance (e.g. large plots tend to be located far away?) or some kind of limited stock of management ability/attention that can be allocated by a farmer to different plots.&lt;/p&gt;
+
+&lt;p&gt;There you go, Garett. Now I’m done.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Aug 2018 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Detecting changes in trend growth</title>
@@ -936,35 +1040,6 @@
 
 </description>
         <pubDate>Tue, 02 May 2017 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Topics in Economic Growth</title>
-        <link>https://growthecon.com/blog/Topics-Pages/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Topics-Pages/</guid>
-        <description>&lt;p&gt;Less of a post, and more of an announcement. I just created some new pages here at Growthecon.com that collect resources and materials related to specific topics regarding growth. See the &lt;a href=&quot;https://growthecon.com/topics/&quot;&gt;Topics&lt;/a&gt; link in the header of the webpage.&lt;/p&gt;
-
-&lt;p&gt;This was an exercise in intellectual housecleaning, and a way to organize some materials for possible use in classes in the future. Each topic has links to my own posts on the subject, links to other web articles or resources, and some selected academic citations. The topics are thus more accessible, but less comprehensive, then the pages of &lt;a href=&quot;https://growthecon.com/references/&quot;&gt;references&lt;/a&gt; that are also posted on this site.&lt;/p&gt;
-
-&lt;p&gt;Right now, the topics include&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Are-We-Rich/&quot;&gt;Are we rich?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Converge-Reform/&quot;&gt;Can you reform your way to higher growth?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Comp-Assumptions/&quot;&gt;Does growth depend on competition?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Dev-Growth/&quot;&gt;Does economic growth mean economic development?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Productivity-Slowdown/&quot;&gt;Productivity slowdown&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Manuf-Special/&quot;&gt;Is manufacturing special?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Robots-Jobs/&quot;&gt;Robots and jobs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Inst-Geography/&quot;&gt;Deep determinants of development&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://growthecon.com/blog/Growth-Nature/&quot;&gt;Does economic growth harm the environment?&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;It’s a decent start, and there may be a few more topics to show up. The first job is probably to split the topic on productivity slowdown into separate pieces, maybe just on measuring TFP, and then on the Baumol effects.&lt;/p&gt;
-
-&lt;p&gt;Enjoy!&lt;/p&gt;
-</description>
-        <pubDate>Fri, 21 Apr 2017 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
