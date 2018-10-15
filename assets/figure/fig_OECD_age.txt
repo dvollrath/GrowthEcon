@@ -1,0 +1,4242 @@
+no observations
+r(2000);
+
+end of do-file
+
+r(2000);
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-OECD-Pop.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. publish, name(fig_OECD_depend) title("Dependency ratios over time")
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-OECD-Pop.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_depend) title("Dependency ratios over time")
+. 
+. ////////////////////////////////////////////////////////
+> // Process data for age distribution figure
+. ////////////////////////////////////////////////////////
+> keep if inlist(time,1950,1960,1970,1980,1990,2000,2010,2020)
+(6,716 observations deleted)
+
+. keep if sex=="TT" // both sexes
+(416 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(168 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(8 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(8 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. replace value = value/1000 // put population count in millions
+(144 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of age distribution by year
+. ////////////////////////////////////////////////////////
+> scatter value str_age if time==1960, connect(line) ///
+>         || scatter value str_age if time==1990, connect(line) lpattern(dash) ///
+>         || scatter value str_age if time==2020, connect(line) ///
+>         xtitle("Minimum age in bin") ytitle("Millions of people") ///
+>         xlabel(0(5)85) ///
+>         legend(label(1 "1960") label(2 "1990") label(3 "2020"))
+
+. graph export "./Drafts/fig_OECD_age.png", replace as(png)       
+(file ./Drafts/fig_OECD_age.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_age) title("Age structure by year")
+. 
+. ////////////////////////////////////////////////////////
+> // Process summary data for average age of workers
+. ////////////////////////////////////////////////////////
+> keep if inrange(str_age,20,65)
+(64 observations deleted)
+
+. gen tot_age = (str_age+2)*value
+
+. collapse (sum) tot_age value, by(time)
+
+. gen avg_age = tot_age/value
+
+. 
+end of do-file
+
+. do "/var/folders/0s/4qw6psw12b59s0xqvn28qtbm0000gn/T//SD32964.000000"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_depend) title("Dependency ratios over time")
+. 
+. ////////////////////////////////////////////////////////
+> // Process data for age distribution figure
+. ////////////////////////////////////////////////////////
+> keep if inlist(time,1960,1970,1980,1990,2000,2010,2020)
+(6,808 observations deleted)
+
+. keep if sex=="TT" // both sexes
+(364 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(147 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(7 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(7 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. replace value = value/1000 // put population count in millions
+(126 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of age distribution by year
+. ////////////////////////////////////////////////////////
+> scatter value str_age if time==1960, connect(line) ///
+>         || scatter value str_age if time==1990, connect(line) lpattern(dash) ///
+>         || scatter value str_age if time==2020, connect(line) ///
+>         xtitle("Minimum age in bin") ytitle("Millions of people") ///
+>         xlabel(0(5)85) ///
+>         legend(label(1 "1960") label(2 "1990") label(3 "2020"))
+
+. graph export "./Drafts/fig_OECD_age.png", replace as(png)       
+(file ./Drafts/fig_OECD_age.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_age) title("Age structure by year")
+. 
+. ////////////////////////////////////////////////////////
+> // Process summary data for average age of workers
+. ////////////////////////////////////////////////////////
+> 
+. pctile perc_age = (str_age+2)
+
+. 
+end of do-file
+
+. drop perc_age
+
+. do "/var/folders/0s/4qw6psw12b59s0xqvn28qtbm0000gn/T//SD32964.000000"
+
+. keep if inrange(str_age,20,65)
+(56 observations deleted)
+
+. bysort year: pctile perc_age = (str_age+2)
+variable year not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "/var/folders/0s/4qw6psw12b59s0xqvn28qtbm0000gn/T//SD32964.000000"
+
+. keep if inrange(str_age,20,65)
+(0 observations deleted)
+
+. bysort time: pctile perc_age = (str_age+2)
+pctile may not be combined with by
+r(190);
+
+end of do-file
+
+r(190);
+
+. do "/var/folders/0s/4qw6psw12b59s0xqvn28qtbm0000gn/T//SD32964.000000"
+
+. pctile perc_age_1960 = (str_age+2) if time==1960
+
+. 
+end of do-file
+
+. sort time str_age
+
+. do "/var/folders/0s/4qw6psw12b59s0xqvn28qtbm0000gn/T//SD32964.000000"
+
+. keep if inrange(str_age,20,60)
+(7 observations deleted)
+
+. bysort time: gen sum_value = sum(value)
+
+. gen perc_value = value/sum_value
+
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-OECD-Pop.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_depend) title("Dependency ratios over time")
+. 
+. ////////////////////////////////////////////////////////
+> // Process data for age distribution figure
+. ////////////////////////////////////////////////////////
+> keep if inlist(time,1960,1970,1980,1990,2000,2010,2020)
+(6,808 observations deleted)
+
+. keep if sex=="TT" // both sexes
+(364 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(147 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(7 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(7 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. replace value = value/1000 // put population count in millions
+(126 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of age distribution by year
+. ////////////////////////////////////////////////////////
+> scatter value str_age if time==1960, connect(line) ///
+>         || scatter value str_age if time==1990, connect(line) lpattern(dash) ///
+>         || scatter value str_age if time==2020, connect(line) ///
+>         xtitle("Minimum age in bin") ytitle("Millions of people") ///
+>         xlabel(0(5)85) ///
+>         legend(label(1 "1960") label(2 "1990") label(3 "2020"))
+
+. graph export "./Drafts/fig_OECD_age.png", replace as(png)       
+(file ./Drafts/fig_OECD_age.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_age) title("Age structure by year")
+. 
+. ////////////////////////////////////////////////////////
+> // Process summary data for average age of workers
+. ////////////////////////////////////////////////////////
+> keep if inrange(str_age,20,60)
+(63 observations deleted)
+
+. bysort time: gen sum_value = sum(value)
+
+. bysort time: egen tot_value = total(value)
+
+. gen perc_value = sum_value/tot_value
+
+. 
+. 
+. //gen tot_age = (str_age+2)*value
+. //collapse (sum) tot_age value, by(time)
+. //gen avg_age = tot_age/value
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-OECD-Pop.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_depend) title("Dependency ratios over time")
+. 
+. ////////////////////////////////////////////////////////
+> // Process data for age distribution figure
+. ////////////////////////////////////////////////////////
+> keep if inlist(time,1960,1970,1980,1990,2000,2010,2020)
+(6,808 observations deleted)
+
+. keep if sex=="TT" // both sexes
+(364 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(147 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(7 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(7 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. replace value = value/1000 // put population count in millions
+(126 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of age distribution by year
+. ////////////////////////////////////////////////////////
+> scatter value str_age if time==1960, connect(line) ///
+>         || scatter value str_age if time==1990, connect(line) lpattern(dash) ///
+>         || scatter value str_age if time==2020, connect(line) ///
+>         xtitle("Minimum age in bin") ytitle("Millions of people") ///
+>         xlabel(0(5)85) ///
+>         legend(label(1 "1960") label(2 "1990") label(3 "2020"))
+
+. graph export "./Drafts/fig_OECD_age.png", replace as(png)       
+(file ./Drafts/fig_OECD_age.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_age) title("Age structure by year")
+. 
+. ////////////////////////////////////////////////////////
+> // Process summary data for average age of workers
+. ////////////////////////////////////////////////////////
+> keep if inrange(str_age,20,60)
+(63 observations deleted)
+
+. bysort time str_age: gen sum_value = sum(value)
+
+. bysort time: egen tot_value = total(value)
+
+. gen perc_value = sum_value/tot_value
+
+. 
+. 
+. //gen tot_age = (str_age+2)*value
+. //collapse (sum) tot_age value, by(time)
+. //gen avg_age = tot_age/value
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-OECD-Pop.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_depend) title("Dependency ratios over time")
+. 
+. ////////////////////////////////////////////////////////
+> // Process data for age distribution figure
+. ////////////////////////////////////////////////////////
+> keep if inlist(time,1960,1970,1980,1990,2000,2010,2020)
+(6,808 observations deleted)
+
+. keep if sex=="TT" // both sexes
+(364 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(147 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(7 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(7 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. replace value = value/1000 // put population count in millions
+(126 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of age distribution by year
+. ////////////////////////////////////////////////////////
+> scatter value str_age if time==1960, connect(line) ///
+>         || scatter value str_age if time==1990, connect(line) lpattern(dash) ///
+>         || scatter value str_age if time==2020, connect(line) ///
+>         xtitle("Minimum age in bin") ytitle("Millions of people") ///
+>         xlabel(0(5)85) ///
+>         legend(label(1 "1960") label(2 "1990") label(3 "2020"))
+
+. graph export "./Drafts/fig_OECD_age.png", replace as(png)       
+(file ./Drafts/fig_OECD_age.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_age) title("Age structure by year")
+. 
+. ////////////////////////////////////////////////////////
+> // Process summary data for average age of workers
+. ////////////////////////////////////////////////////////
+> keep if inrange(str_age,20,60)
+(63 observations deleted)
+
+. bysort time: gen sum_value = sum(value)
+
+. bysort time: egen tot_value = total(value)
+
+. gen perc_value = sum_value/tot_value
+
+. 
+. 
+. //gen tot_age = (str_age+2)*value
+. //collapse (sum) tot_age value, by(time)
+. //gen avg_age = tot_age/value
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-OECD-Pop.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_depend) title("Dependency ratios over time")
+. 
+. ////////////////////////////////////////////////////////
+> // Process data for age distribution figure
+. ////////////////////////////////////////////////////////
+> keep if inlist(time,1960,1970,1980,1990,2000,2010,2020)
+(6,808 observations deleted)
+
+. keep if sex=="TT" // both sexes
+(364 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(147 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(7 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(7 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. replace value = value/1000 // put population count in millions
+(126 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of age distribution by year
+. ////////////////////////////////////////////////////////
+> scatter value str_age if time==1960, connect(line) ///
+>         || scatter value str_age if time==1990, connect(line) lpattern(dash) ///
+>         || scatter value str_age if time==2020, connect(line) ///
+>         xtitle("Minimum age in bin") ytitle("Millions of people") ///
+>         xlabel(0(5)85) ///
+>         legend(label(1 "1960") label(2 "1990") label(3 "2020"))
+
+. graph export "./Drafts/fig_OECD_age.png", replace as(png)       
+(file ./Drafts/fig_OECD_age.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_age) title("Age structure by year")
+. 
+. ////////////////////////////////////////////////////////
+> // Process summary data for average age of workers
+. ////////////////////////////////////////////////////////
+> keep if inrange(str_age,20,60)
+(63 observations deleted)
+
+. sort time str_age
+
+. by time: gen sum_value = sum(value)
+
+. by time: egen tot_value = total(value)
+
+. gen perc_value = sum_value/tot_value
+
+. 
+. 
+. //gen tot_age = (str_age+2)*value
+. //collapse (sum) tot_age value, by(time)
+. //gen avg_age = tot_age/value
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-OECD-Pop.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_depend) title("Dependency ratios over time")
+. 
+. ////////////////////////////////////////////////////////
+> // Process data for age distribution figure
+. ////////////////////////////////////////////////////////
+> keep if inlist(time,1960,1970,1980,1990,2000,2010,2020)
+(6,808 observations deleted)
+
+. keep if sex=="TT" // both sexes
+(364 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(147 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(7 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(7 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. replace value = value/1000 // put population count in millions
+(126 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of age distribution by year
+. ////////////////////////////////////////////////////////
+> scatter value str_age if time==1960, connect(line) ///
+>         || scatter value str_age if time==1990, connect(line) lpattern(dash) ///
+>         || scatter value str_age if time==2020, connect(line) ///
+>         xtitle("Minimum age in bin") ytitle("Millions of people") ///
+>         xlabel(0(5)85) ///
+>         legend(label(1 "1960") label(2 "1990") label(3 "2020"))
+
+. graph export "./Drafts/fig_OECD_age.png", replace as(png)       
+(file ./Drafts/fig_OECD_age.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_age) title("Age structure by year")
+. 
+. ////////////////////////////////////////////////////////
+> // Process summary data for average age of workers
+. ////////////////////////////////////////////////////////
+> keep if inrange(str_age,15,60)
+(56 observations deleted)
+
+. sort time str_age
+
+. by time: gen sum_value = sum(value)
+
+. by time: egen tot_value = total(value)
+
+. gen perc_value = sum_value/tot_value
+
+. 
+. 
+. //gen tot_age = (str_age+2)*value
+. //collapse (sum) tot_age value, by(time)
+. //gen avg_age = tot_age/value
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-OECD-Pop.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on birth rates
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/OECD-pop.dta", clear
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of dependency ratios by year
+. ////////////////////////////////////////////////////////
+> line value time if age=="D1TTR5Y2" ///
+>         || line value time if age=="D1TTR5O2", ///
+>         xtitle("Year") xlabel(1950(10)2030) ///
+>         ytitle("Percent of working age population (20-64)") ///
+>         legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)"))
+
+. graph export "./Drafts/fig_OECD_depend.png", replace as(png)
+(file ./Drafts/fig_OECD_depend.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_depend) title("Dependency ratios over time")
+. 
+. ////////////////////////////////////////////////////////
+> // Process data for age distribution figure
+. ////////////////////////////////////////////////////////
+> keep if inlist(time,1960,1970,1980,1990,2000,2010,2020)
+(6,808 observations deleted)
+
+. keep if sex=="TT" // both sexes
+(364 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(147 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(7 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(7 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. replace value = value/1000 // put population count in millions
+(126 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of age distribution by year
+. ////////////////////////////////////////////////////////
+> scatter value str_age if time==1960, connect(line) ///
+>         || scatter value str_age if time==1990, connect(line) lpattern(dash) ///
+>         || scatter value str_age if time==2020, connect(line) ///
+>         xtitle("Minimum age in bin") ytitle("Millions of people") ///
+>         xlabel(0(5)85) ///
+>         legend(label(1 "1960") label(2 "1990") label(3 "2020"))
+
+. graph export "./Drafts/fig_OECD_age.png", replace as(png)       
+(file ./Drafts/fig_OECD_age.png written in PNG format)
+
+. 
+. //publish, name(fig_OECD_age) title("Age structure by year")
+. 
+. ////////////////////////////////////////////////////////
+> // Process summary data for average age of workers
+. ////////////////////////////////////////////////////////
+> keep if inrange(str_age,20,60)
+(63 observations deleted)
+
+. sort time str_age
+
+. by time: gen sum_value = sum(value)
+
+. by time: egen tot_value = total(value)
+
+. gen perc_value = sum_value/tot_value
+
+. 
+. 
+. //gen tot_age = (str_age+2)*value
+. //collapse (sum) tot_age value, by(time)
+. //gen avg_age = tot_age/value
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Tab-BEA-Account.do"
+
+. ////////////////////////////////////////////////////////
+> // Growth Accounting
+. ////////////////////////////////////////////////////////
+> // This script does a lot
+. // 1. Take in annual data, and normalize variables to 1950 values
+. // 2. Declare a program that does growth accounting between arbitrary years
+. // 3. Call that program several times to fill in rows of accounting tables
+. // 4. Produce figures on the growth rates of capital and HC
+. // 5. Produce figures on the share of GDP pc that comes from capital
+. 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/FRED-Annual.dta", clear
+
+. 
+. keep if year>1949
+(25 observations deleted)
+
+. tsset year
+        time variable:  year, 1950 to 2018
+                delta:  1 unit
+
+. sort year
+
+. 
+. gen ylow = 100 // reference point for figures
+
+. gen cap  = bea_chain_k^(1-.65)*bea_h^(.65) // gdp pc just from capital
+(10 missing values generated)
+
+. 
+. // Normalize variables to 1950 for use in accounting and figures
+. foreach v in bea_chain_assets gdp_pc hours_nonfarm bea_chain_k bea_H bea_h KY cap {
+  2.         summ `v' if year==1950
+  3.         replace `v' = 100*`v'/r(mean)
+  4. }
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+bea_chain_~s |          1      17.809           .     17.809     17.809
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      gdp_pc |          1    .0143983           .   .0143983   .0143983
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+hours_nonf~m |          1      117.95           .     117.95     117.95
+(69 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+ bea_chain_k |          1    .0001174           .   .0001174   .0001174
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       bea_H |          1    5.21e+10           .   5.21e+10   5.21e+10
+(60 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       bea_h |          1    343411.1           .   343411.1   343411.1
+(59 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          KY |          1    .0081544           .   .0081544   .0081544
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         cap |          1    166.9838           .   166.9838   166.9838
+(59 real changes made)
+
+. 
+. // 10-year growth rates of capital stocks
+. gen hgrowth = 100*([bea_h/L10.bea_h]^(1/10) - 1)
+(20 missing values generated)
+
+. gen kgrowth = 100*([bea_chain_k/L10.bea_chain_k]^(1/10) - 1)
+(12 missing values generated)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce accounting tables
+. ////////////////////////////////////////////////////////
+> 
+. // Open output text files to hold tables
+. capture file close h
+
+. file open h using "./Drafts/tab-account-pc-bea.tex", write replace
+
+. capture file close j
+
+. file open j using "./Drafts/tab-account-hc-bea.tex", write replace
+
+. capture file close k
+
+. file open k using "./Drafts/tab-account-alt-bea.tex", write replace
+
+. 
+. // Declare program that calculates the accounting terms and writes to the output files
+. capture program drop calc_growth
+
+. program calc_growth
+  1.         syntax [, first(integer 1960) last(integer 2010) labor(real 0.6)] // contains default values
+  2. 
+.         // Set locals to identify beginning and end years, which correspond to rows in dataset
+.         summ year
+  3.         local end = `last' - r(min) + 1
+  4.         local begin = `first' - r(min) + 1
+  5.         local diff = `end' - `begin'
+  6.         
+.         // Calculate locals for growth rates of gpd pc, capital pc, HC pc, and residual productivity
+.         local Gy = (ln(gdp_pc[`end']) - ln(gdp_pc[`begin']))/`diff'
+  7.         local Gk = (1-`labor')*(ln(bea_chain_k[`end']) - ln(bea_chain_k[`begin']))/`diff'
+  8.         local Gh = `labor'*(ln(bea_h[`end']) - ln(bea_h[`begin']))/`diff'
+  9.         local Gprod = `Gy' - `Gk' - `Gh'
+ 10.         
+.         // Calculate locals for growth rates of components of HC - hours, education, experience, and LN ratio
+.         local Ghours = (ln(hours_nonfarm[`end']) - ln(hours_nonfarm[`begin']))/`diff'
+ 11.         local Ghc = (ln(hc[`end']) - ln(hc[`begin']))/`diff'
+ 12.         local Gexp = (ln(exp[`end']) - ln(exp[`begin']))/`diff'
+ 13.         local GLN = (ln(LNratio[`end']) - ln(LNratio[`begin']))/`diff'
+ 14.         
+.         // Calculate locals for growth rate in capital/output ratio, and alternative residual productivity
+.         local GKY = ((1-`labor')/`labor')*(ln(KY[`end']) - ln(KY[`begin']))/`diff'
+ 15.         local Galt = `Gy' - `GKY' - `Gh'/`labor'
+ 16. 
+.         // Write those locals to different files, formatted for Latex
+.         file write h "`first'-`last' &" %9.2f (100*`Gy') "&" %9.2f (100*`Gk') "&" %9.2f (100*`Gh')  "&" %9.2f (100*`Gprod') "\\" _n
+ 17.         file write k "`first'-`last' &" %9.2f (100*`Gy') "&" %9.2f (100*`GKY') "&" %9.2f (100*`Gh'/`labor')  "&" %9.2f (100*`Galt') "\\" _n
+ 18.         file write j "`first'-`last' &" %9.2f (100*`Gh'/`labor') "&" %9.2f (100*`Ghc') "&" %9.2f (100*`Gexp') "&" %9.2f (100*`GLN') "&" %9.2f (10
+> 0*`Ghours')  "\\" _n
+ 19. end     
+
+. 
+. // Call the program for different time frames, write output to file
+. calc_growth, first(1950) last(2000) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. file write h "\\" _n // insert extra line break
+
+. file write j "\\" _n // insert extra line break
+
+. file write k "\\" _n // insert extra line break
+
+. calc_growth, first(1950) last(1960) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(1960) last(1970) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(1970) last(1980) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(1980) last(1990) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(1990) last(2000) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. file write h "\\" _n // insert extra line break
+
+. file write j "\\" _n // insert extra line break
+
+. file write k "\\" _n // insert extra line break
+
+. calc_growth, first(2000) last(2016) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(2006) last(2016) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. 
+. file close h
+
+. file close j
+
+. file close k
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figures
+. ////////////////////////////////////////////////////////
+> 
+. // Produce figure of capital versus residual growth for per capita GDP
+. twoway rarea cap ylow year || rarea gdp_pc cap year, ///
+>         xtitle("Year") ytitle("Real GDP per capita") xlabel(1950(10)2010 2016) ///
+>         legend(label(1 "Growth from cap. accum.") label(2 "Residual growth"))
+
+. graph export "./Drafts/fig_PWT_Resid_pop_USA.png", replace as(png)      
+(file ./Drafts/fig_PWT_Resid_pop_USA.png written in PNG format)
+
+. 
+. // Produce growth rate of human capital
+. line hgrowth year,  ///
+>         xtitle("Year") ytitle("10-year average growth in human capital per capita (%)") ///
+>         ylabel(, format(%9.1f)) ///
+>         xlabel(1950(10)2010 2016)
+
+. graph export "./Drafts/fig_H_growth_USA.png", replace as(png)
+(file ./Drafts/fig_H_growth_USA.png written in PNG format)
+
+. 
+. // Produce growth rate of physical capital
+. line kgrowth year, ///
+>         xtitle("Year") ytitle("10-year average growth in physical capital per capita (%)") ///
+>         ylabel(0(.5)2.5, format(%9.1f)) ///
+>         xlabel(1950(10)2010 2016)
+
+. graph export "./Drafts/fig_K_growth_USA.png", replace as(png)
+(file ./Drafts/fig_K_growth_USA.png written in PNG format)
+
+. 
+. // Produce figure of human capital stock
+. line bea_h year,  ///
+>         xtitle("Year") ytitle("Human capital per capita (1950=100)") ///
+>         xlabel(1950(10)2010 2016) ylabel(100(10)150)
+
+. graph export "./Drafts/fig_H_USA.png", replace as(png)
+(file ./Drafts/fig_H_USA.png written in PNG format)
+
+. 
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. 
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+
+. replace exp = exp/check_total // experience stock per person
+(62 real changes made)
+
+. replace hc = hc/check_total // education stock per person
+(62 real changes made)
+
+. 
+. // Create shares of workers by level of education
+. gen share_elem_04 = elem_04/check_total
+
+. gen share_elem_58 = elem_58/check_total
+
+. gen share_high_13 = high_13/check_total
+
+. gen share_high_4 = high_4/check_total
+
+. gen share_coll_13 = coll_13/check_total
+
+. gen share_coll_4plus = coll_4plus/check_total
+
+. 
+. save "./Work/CPS-hc-exp.dta", replace
+file ./Work/CPS-hc-exp.dta saved
+
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-Merge-Calculate.do"
+
+. ////////////////////////////////////////////////////////
+> // Merge datasets and do calculations of common variables
+. ////////////////////////////////////////////////////////
+> use "./Work/FRED-Extract.dta", clear
+
+. 
+. // Merge in offline BEA capital data
+. // This is indexed to year 2009
+. merge 1:1 year using "./Work/BEA-chain-assets.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                         2  (_merge==1)
+        from using                         22  (_merge==2)
+
+    matched                                70  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. merge 1:1 year using "./Work/BEA-priv-assets.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             2
+        from master                         2  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                92  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. // Merge in the CPS data on human capital and experience
+. merge 1:1 year using "./Work/CPS-hc-exp.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            32
+        from master                        32  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                62  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. // Merge in the CPS data on human capital and experience
+. merge 1:1 year using "./Work/CENSUS-move.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            32
+        from master                        32  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                62  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. // Merge in the DOJ data on human capital and experience
+. merge 1:1 year using "./Work/DOJ-cases.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            47
+        from master                        47  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                47  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. 
+. ////////////////////////////////////////////////////////
+> // Calculations
+. ////////////////////////////////////////////////////////
+> gen gdp_pc = gdp/pop // GDP per capita
+(24 missing values generated)
+
+. 
+. gen bea_chain_k = bea_chain_assets/pop // calculate BEA capital per person
+(24 missing values generated)
+
+. gen KY = bea_chain_assets/gdp // calculate capital/output ratio
+(24 missing values generated)
+
+. // Note that assets are an index, so both of these can only be used to calculate growth rates, not levels
+. 
+. // Extend labor force data prior to 1960
+. summ lforce16plus if year==1960 // normalize civ labor force in 1960
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+lforce16plus |          1       68962           .      68962      68962
+
+. replace lforce16plus = lforce16plus*100/r(mean)
+(71 real changes made)
+
+. summ lforce1564 if year==1960 // get actual 15-64 labor force in 1960
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+  lforce1564 |          1    6.64e+07           .   6.64e+07   6.64e+07
+
+. replace lforce1564 = r(mean)*lforce16plus/100 if year<1960 // use civ labor force (16plus) to interpolate 15-64 for pre-1960
+(12 real changes made)
+
+. gen LNratio = lforce1564/pop // labor/population ratio
+(25 missing values generated)
+
+. 
+. // Human capital data
+. gen bea_H = hc*exp*hours_nonfarm*lforce1564 // cacluate bea based hc stock
+(34 missing values generated)
+
+. gen bea_h = bea_H/pop // calculate bea hc stock per capita
+(35 missing values generated)
+
+. 
+. save "./Work/FRED-Annual.dta", replace
+file ./Work/FRED-Annual.dta saved
+
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Tab-BEA-Account.do"
+
+. ////////////////////////////////////////////////////////
+> // Growth Accounting
+. ////////////////////////////////////////////////////////
+> // This script does a lot
+. // 1. Take in annual data, and normalize variables to 1950 values
+. // 2. Declare a program that does growth accounting between arbitrary years
+. // 3. Call that program several times to fill in rows of accounting tables
+. // 4. Produce figures on the growth rates of capital and HC
+. // 5. Produce figures on the share of GDP pc that comes from capital
+. 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/FRED-Annual.dta", clear
+
+. 
+. keep if year>1949
+(25 observations deleted)
+
+. tsset year
+        time variable:  year, 1950 to 2018
+                delta:  1 unit
+
+. sort year
+
+. 
+. gen ylow = 100 // reference point for figures
+
+. gen cap  = bea_chain_k^(1-.65)*bea_h^(.65) // gdp pc just from capital
+(10 missing values generated)
+
+. 
+. // Normalize variables to 1950 for use in accounting and figures
+. foreach v in bea_chain_assets gdp_pc hours_nonfarm bea_chain_k bea_H bea_h KY cap {
+  2.         summ `v' if year==1950
+  3.         replace `v' = 100*`v'/r(mean)
+  4. }
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+bea_chain_~s |          1      17.809           .     17.809     17.809
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      gdp_pc |          1    .0143983           .   .0143983   .0143983
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+hours_nonf~m |          1      117.95           .     117.95     117.95
+(69 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+ bea_chain_k |          1    .0001174           .   .0001174   .0001174
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       bea_H |          1    5.21e+10           .   5.21e+10   5.21e+10
+(60 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       bea_h |          1    343411.1           .   343411.1   343411.1
+(59 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          KY |          1    .0081544           .   .0081544   .0081544
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         cap |          1    166.9838           .   166.9838   166.9838
+(59 real changes made)
+
+. 
+. // 10-year growth rates of capital stocks
+. gen hgrowth = 100*([bea_h/L10.bea_h]^(1/10) - 1)
+(20 missing values generated)
+
+. gen kgrowth = 100*([bea_chain_k/L10.bea_chain_k]^(1/10) - 1)
+(12 missing values generated)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce accounting tables
+. ////////////////////////////////////////////////////////
+> 
+. // Open output text files to hold tables
+. capture file close h
+
+. file open h using "./Drafts/tab-account-pc-bea.tex", write replace
+
+. capture file close j
+
+. file open j using "./Drafts/tab-account-hc-bea.tex", write replace
+
+. capture file close k
+
+. file open k using "./Drafts/tab-account-alt-bea.tex", write replace
+
+. 
+. // Declare program that calculates the accounting terms and writes to the output files
+. capture program drop calc_growth
+
+. program calc_growth
+  1.         syntax [, first(integer 1960) last(integer 2010) labor(real 0.6)] // contains default values
+  2. 
+.         // Set locals to identify beginning and end years, which correspond to rows in dataset
+.         summ year
+  3.         local end = `last' - r(min) + 1
+  4.         local begin = `first' - r(min) + 1
+  5.         local diff = `end' - `begin'
+  6.         
+.         // Calculate locals for growth rates of gpd pc, capital pc, HC pc, and residual productivity
+.         local Gy = (ln(gdp_pc[`end']) - ln(gdp_pc[`begin']))/`diff'
+  7.         local Gk = (1-`labor')*(ln(bea_chain_k[`end']) - ln(bea_chain_k[`begin']))/`diff'
+  8.         local Gh = `labor'*(ln(bea_h[`end']) - ln(bea_h[`begin']))/`diff'
+  9.         local Gprod = `Gy' - `Gk' - `Gh'
+ 10.         
+.         // Calculate locals for growth rates of components of HC - hours, education, experience, and LN ratio
+.         local Ghours = (ln(hours_nonfarm[`end']) - ln(hours_nonfarm[`begin']))/`diff'
+ 11.         local Ghc = (ln(hc[`end']) - ln(hc[`begin']))/`diff'
+ 12.         local Gexp = (ln(exp[`end']) - ln(exp[`begin']))/`diff'
+ 13.         local GLN = (ln(LNratio[`end']) - ln(LNratio[`begin']))/`diff'
+ 14.         
+.         // Calculate locals for growth rate in capital/output ratio, and alternative residual productivity
+.         local GKY = ((1-`labor')/`labor')*(ln(KY[`end']) - ln(KY[`begin']))/`diff'
+ 15.         local Galt = `Gy' - `GKY' - `Gh'/`labor'
+ 16. 
+.         // Write those locals to different files, formatted for Latex
+.         file write h "`first'-`last' &" %9.2f (100*`Gy') "&" %9.2f (100*`Gk') "&" %9.2f (100*`Gh')  "&" %9.2f (100*`Gprod') "\\" _n
+ 17.         file write k "`first'-`last' &" %9.2f (100*`Gy') "&" %9.2f (100*`GKY') "&" %9.2f (100*`Gh'/`labor')  "&" %9.2f (100*`Galt') "\\" _n
+ 18.         file write j "`first'-`last' &" %9.2f (100*`Gh'/`labor') "&" %9.2f (100*`Ghc') "&" %9.2f (100*`Gexp') "&" %9.2f (100*`GLN') "&" %9.2f (10
+> 0*`Ghours')  "\\" _n
+ 19. end     
+
+. 
+. // Call the program for different time frames, write output to file
+. calc_growth, first(1950) last(2000) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. file write h "\\" _n // insert extra line break
+
+. file write j "\\" _n // insert extra line break
+
+. file write k "\\" _n // insert extra line break
+
+. calc_growth, first(1950) last(1960) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(1960) last(1970) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(1970) last(1980) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(1980) last(1990) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(1990) last(2000) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. file write h "\\" _n // insert extra line break
+
+. file write j "\\" _n // insert extra line break
+
+. file write k "\\" _n // insert extra line break
+
+. calc_growth, first(2000) last(2016) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. calc_growth, first(2006) last(2016) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         69        1984     20.0624       1950       2018
+
+. 
+. file close h
+
+. file close j
+
+. file close k
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figures
+. ////////////////////////////////////////////////////////
+> 
+. // Produce figure of capital versus residual growth for per capita GDP
+. twoway rarea cap ylow year || rarea gdp_pc cap year, ///
+>         xtitle("Year") ytitle("Real GDP per capita") xlabel(1950(10)2010 2016) ///
+>         legend(label(1 "Growth from cap. accum.") label(2 "Residual growth"))
+
+. graph export "./Drafts/fig_PWT_Resid_pop_USA.png", replace as(png)      
+(file ./Drafts/fig_PWT_Resid_pop_USA.png written in PNG format)
+
+. 
+. // Produce growth rate of human capital
+. line hgrowth year,  ///
+>         xtitle("Year") ytitle("10-year average growth in human capital per capita (%)") ///
+>         ylabel(, format(%9.1f)) ///
+>         xlabel(1950(10)2010 2016)
+
+. graph export "./Drafts/fig_H_growth_USA.png", replace as(png)
+(file ./Drafts/fig_H_growth_USA.png written in PNG format)
+
+. 
+. // Produce growth rate of physical capital
+. line kgrowth year, ///
+>         xtitle("Year") ytitle("10-year average growth in physical capital per capita (%)") ///
+>         ylabel(0(.5)2.5, format(%9.1f)) ///
+>         xlabel(1950(10)2010 2016)
+
+. graph export "./Drafts/fig_K_growth_USA.png", replace as(png)
+(file ./Drafts/fig_K_growth_USA.png written in PNG format)
+
+. 
+. // Produce figure of human capital stock
+. line bea_h year,  ///
+>         xtitle("Year") ytitle("Human capital per capita (1950=100)") ///
+>         xlabel(1950(10)2010 2016) ylabel(100(10)150)
+
+. graph export "./Drafts/fig_H_USA.png", replace as(png)
+(file ./Drafts/fig_H_USA.png written in PNG format)
+
+. 
+. 
+end of do-file
+
+. do "/var/folders/0s/4qw6psw12b59s0xqvn28qtbm0000gn/T//SD32964.000000"
+
+. use "./Work/OECD-pop.dta", clear
+
+. 
+. keep if sex=="TT" // both sexes
+(4,212 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(1,701 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(81 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(81 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. keep if inrange(str_age,20,60) // keep only counts of those in working-age range
+(729 observations deleted)
+
+. gen exp_assumed = str_age + 2 - 20 // Add 2 to get mid-range of age group, subtract 20 for first year of work
+
+. gen exp = exp(.05*exp_assumed) if inrange(exp_assumed,0,10)
+(567 missing values generated)
+
+. replace exp = exp(.05*10 + .03*(exp_assumed - 10)) if inrange(exp_assumed,11,20)
+(162 real changes made)
+
+. replace exp = exp(.05*10 + .03*(exp_assumed - 10) + .01*(exp_assumed-20)) if inrange(exp_assumed,21,9999)
+(405 real changes made)
+
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+exp ambiguous abbreviation
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+exp ambiguous abbreviation
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp_by_ed elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+
+. replace exp_check = exp_by_ed/check_total // experience stock per person
+variable exp_check not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp_by_ed elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+
+. replace exp_by_ed = exp_by_ed/check_total // experience stock per person
+(62 real changes made)
+
+. replace hc = hc/check_total // education stock per person
+(62 real changes made)
+
+. 
+. // Create shares of workers by level of education
+. gen share_elem_04 = elem_04/check_total
+
+. gen share_elem_58 = elem_58/check_total
+
+. gen share_high_13 = high_13/check_total
+
+. gen share_high_4 = high_4/check_total
+
+. gen share_coll_13 = coll_13/check_total
+
+. gen share_coll_4plus = coll_4plus/check_total
+
+. 
+. save "./Work/CPS-hc-exp.dta", replace
+file ./Work/CPS-hc-exp.dta saved
+
+. 
+. // Combine with OECD baseline data on age structure to calculate naive experience 
+. use "./Work/OECD-pop.dta", clear
+
+. 
+. keep if sex=="TT" // both sexes
+(4,212 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(1,701 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(81 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(81 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. keep if inrange(str_age,20,60) // keep only counts of those in working-age range
+(729 observations deleted)
+
+. gen exp_assumed = str_age + 2 - 20 // Add 2 to get mid-range of age group, subtract 20 for first year of work
+
+. gen exp = value*exp(0.05*exp_assumed - .0007*exp_assumed^2)
+
+. 
+. collapse (sum) exp value, by(year)
+variable year not found
+(error in option by())
+r(111);
+
+end of do-file
+
+r(111);
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp_by_ed elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+
+. replace exp_by_ed = exp_by_ed/check_total // experience stock per person
+(62 real changes made)
+
+. replace hc = hc/check_total // education stock per person
+(62 real changes made)
+
+. 
+. // Create shares of workers by level of education
+. gen share_elem_04 = elem_04/check_total
+
+. gen share_elem_58 = elem_58/check_total
+
+. gen share_high_13 = high_13/check_total
+
+. gen share_high_4 = high_4/check_total
+
+. gen share_coll_13 = coll_13/check_total
+
+. gen share_coll_4plus = coll_4plus/check_total
+
+. 
+. save "./Work/CPS-hc-exp.dta", replace
+file ./Work/CPS-hc-exp.dta saved
+
+. 
+. // Combine with OECD baseline data on age structure to calculate naive experience 
+. use "./Work/OECD-pop.dta", clear
+
+. 
+. keep if sex=="TT" // both sexes
+(4,212 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(1,701 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(81 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(81 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. keep if inrange(str_age,20,60) // keep only counts of those in working-age range
+(729 observations deleted)
+
+. gen exp_assumed = str_age + 2 - 20 // Add 2 to get mid-range of age group, subtract 20 for first year of work
+
+. gen exp = value*exp(0.05*exp_assumed - .0007*exp_assumed^2)
+
+. 
+. rename time year
+
+. 
+. collapse (sum) exp value, by(year)
+
+. replace exp = exp/value // calculate per person
+(81 real changes made)
+
+. 
+. save "./Work/OECD-pop-exp.dta"
+file ./Work/OECD-pop-exp.dta saved
+
+. 
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-Merge-Calculate.do"
+
+. ////////////////////////////////////////////////////////
+> // Merge datasets and do calculations of common variables
+. ////////////////////////////////////////////////////////
+> use "./Work/FRED-Extract.dta", clear
+
+. 
+. // Merge in offline BEA capital data
+. // This is indexed to year 2009
+. merge 1:1 year using "./Work/BEA-chain-assets.dta" 
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            24
+        from master                         2  (_merge==1)
+        from using                         22  (_merge==2)
+
+    matched                                70  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. merge 1:1 year using "./Work/BEA-priv-assets.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             2
+        from master                         2  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                92  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. // Merge in the CPS data on human capital and experience
+. merge 1:1 year using "./Work/CPS-hc-exp.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            32
+        from master                        32  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                62  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. // Merge in the OECD derived experience data
+. merge 1:1 year using "./Work/OECD-pop-exp.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            37
+        from master                        25  (_merge==1)
+        from using                         12  (_merge==2)
+
+    matched                                69  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. // Merge in the CPS data on human capital and experience
+. merge 1:1 year using "./Work/CENSUS-move.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            44
+        from master                        44  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                62  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. // Merge in the DOJ data on human capital and experience
+. merge 1:1 year using "./Work/DOJ-cases.dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            59
+        from master                        59  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                47  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. 
+. ////////////////////////////////////////////////////////
+> // Calculations
+. ////////////////////////////////////////////////////////
+> gen gdp_pc = gdp/pop // GDP per capita
+(36 missing values generated)
+
+. 
+. gen bea_chain_k = bea_chain_assets/pop // calculate BEA capital per person
+(36 missing values generated)
+
+. gen KY = bea_chain_assets/gdp // calculate capital/output ratio
+(36 missing values generated)
+
+. // Note that assets are an index, so both of these can only be used to calculate growth rates, not levels
+. 
+. // Extend labor force data prior to 1960
+. summ lforce16plus if year==1960 // normalize civ labor force in 1960
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+lforce16plus |          1       68962           .      68962      68962
+
+. replace lforce16plus = lforce16plus*100/r(mean)
+(71 real changes made)
+
+. summ lforce1564 if year==1960 // get actual 15-64 labor force in 1960
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+  lforce1564 |          1    6.64e+07           .   6.64e+07   6.64e+07
+
+. replace lforce1564 = r(mean)*lforce16plus/100 if year<1960 // use civ labor force (16plus) to interpolate 15-64 for pre-1960
+(12 real changes made)
+
+. gen LNratio = lforce1564/pop // labor/population ratio
+(37 missing values generated)
+
+. 
+. // Human capital data
+. gen bea_H = hc*exp*hours_nonfarm*lforce1564 // cacluate bea based hc stock
+(46 missing values generated)
+
+. gen bea_h = bea_H/pop // calculate bea hc stock per capita
+(47 missing values generated)
+
+. 
+. save "./Work/FRED-Annual.dta", replace
+file ./Work/FRED-Annual.dta saved
+
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Tab-BEA-Account.do"
+
+. ////////////////////////////////////////////////////////
+> // Growth Accounting
+. ////////////////////////////////////////////////////////
+> // This script does a lot
+. // 1. Take in annual data, and normalize variables to 1950 values
+. // 2. Declare a program that does growth accounting between arbitrary years
+. // 3. Call that program several times to fill in rows of accounting tables
+. // 4. Produce figures on the growth rates of capital and HC
+. // 5. Produce figures on the share of GDP pc that comes from capital
+. 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/FRED-Annual.dta", clear
+
+. 
+. keep if year>1949
+(25 observations deleted)
+
+. tsset year
+        time variable:  year, 1950 to 2030
+                delta:  1 unit
+
+. sort year
+
+. 
+. gen ylow = 100 // reference point for figures
+
+. gen cap  = bea_chain_k^(1-.65)*bea_h^(.65) // gdp pc just from capital
+(22 missing values generated)
+
+. 
+. // Normalize variables to 1950 for use in accounting and figures
+. foreach v in bea_chain_assets gdp_pc hours_nonfarm bea_chain_k bea_H bea_h KY cap {
+  2.         summ `v' if year==1950
+  3.         replace `v' = 100*`v'/r(mean)
+  4. }
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+bea_chain_~s |          1      17.809           .     17.809     17.809
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      gdp_pc |          1    .0143983           .   .0143983   .0143983
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+hours_nonf~m |          1      117.95           .     117.95     117.95
+(69 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+ bea_chain_k |          1    .0001174           .   .0001174   .0001174
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       bea_H |          1    3.67e+10           .   3.67e+10   3.67e+10
+(60 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       bea_h |          1    242143.4           .   242143.4   242143.4
+(59 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          KY |          1    .0081544           .   .0081544   .0081544
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         cap |          1    133.0583           .   133.0583   133.0583
+(59 real changes made)
+
+. 
+. // 10-year growth rates of capital stocks
+. gen hgrowth = 100*([bea_h/L10.bea_h]^(1/10) - 1)
+(32 missing values generated)
+
+. gen kgrowth = 100*([bea_chain_k/L10.bea_chain_k]^(1/10) - 1)
+(24 missing values generated)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce accounting tables
+. ////////////////////////////////////////////////////////
+> 
+. // Open output text files to hold tables
+. capture file close h
+
+. file open h using "./Drafts/tab-account-pc-bea.tex", write replace
+
+. capture file close j
+
+. file open j using "./Drafts/tab-account-hc-bea.tex", write replace
+
+. capture file close k
+
+. file open k using "./Drafts/tab-account-alt-bea.tex", write replace
+
+. 
+. // Declare program that calculates the accounting terms and writes to the output files
+. capture program drop calc_growth
+
+. program calc_growth
+  1.         syntax [, first(integer 1960) last(integer 2010) labor(real 0.6)] // contains default values
+  2. 
+.         // Set locals to identify beginning and end years, which correspond to rows in dataset
+.         summ year
+  3.         local end = `last' - r(min) + 1
+  4.         local begin = `first' - r(min) + 1
+  5.         local diff = `end' - `begin'
+  6.         
+.         // Calculate locals for growth rates of gpd pc, capital pc, HC pc, and residual productivity
+.         local Gy = (ln(gdp_pc[`end']) - ln(gdp_pc[`begin']))/`diff'
+  7.         local Gk = (1-`labor')*(ln(bea_chain_k[`end']) - ln(bea_chain_k[`begin']))/`diff'
+  8.         local Gh = `labor'*(ln(bea_h[`end']) - ln(bea_h[`begin']))/`diff'
+  9.         local Gprod = `Gy' - `Gk' - `Gh'
+ 10.         
+.         // Calculate locals for growth rates of components of HC - hours, education, experience, and LN ratio
+.         local Ghours = (ln(hours_nonfarm[`end']) - ln(hours_nonfarm[`begin']))/`diff'
+ 11.         local Ghc = (ln(hc[`end']) - ln(hc[`begin']))/`diff'
+ 12.         local Gexp = (ln(exp[`end']) - ln(exp[`begin']))/`diff'
+ 13.         local GLN = (ln(LNratio[`end']) - ln(LNratio[`begin']))/`diff'
+ 14.         
+.         // Calculate locals for growth rate in capital/output ratio, and alternative residual productivity
+.         local GKY = ((1-`labor')/`labor')*(ln(KY[`end']) - ln(KY[`begin']))/`diff'
+ 15.         local Galt = `Gy' - `GKY' - `Gh'/`labor'
+ 16. 
+.         // Write those locals to different files, formatted for Latex
+.         file write h "`first'-`last' &" %9.2f (100*`Gy') "&" %9.2f (100*`Gk') "&" %9.2f (100*`Gh')  "&" %9.2f (100*`Gprod') "\\" _n
+ 17.         file write k "`first'-`last' &" %9.2f (100*`Gy') "&" %9.2f (100*`GKY') "&" %9.2f (100*`Gh'/`labor')  "&" %9.2f (100*`Galt') "\\" _n
+ 18.         file write j "`first'-`last' &" %9.2f (100*`Gh'/`labor') "&" %9.2f (100*`Ghc') "&" %9.2f (100*`Gexp') "&" %9.2f (100*`GLN') "&" %9.2f (10
+> 0*`Ghours')  "\\" _n
+ 19. end     
+
+. 
+. // Call the program for different time frames, write output to file
+. calc_growth, first(1950) last(2000) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. file write h "\\" _n // insert extra line break
+
+. file write j "\\" _n // insert extra line break
+
+. file write k "\\" _n // insert extra line break
+
+. calc_growth, first(1950) last(1960) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(1960) last(1970) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(1970) last(1980) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(1980) last(1990) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(1990) last(2000) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. file write h "\\" _n // insert extra line break
+
+. file write j "\\" _n // insert extra line break
+
+. file write k "\\" _n // insert extra line break
+
+. calc_growth, first(2000) last(2016) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(2006) last(2016) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. 
+. file close h
+
+. file close j
+
+. file close k
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figures
+. ////////////////////////////////////////////////////////
+> 
+. // Produce figure of capital versus residual growth for per capita GDP
+. twoway rarea cap ylow year || rarea gdp_pc cap year, ///
+>         xtitle("Year") ytitle("Real GDP per capita") xlabel(1950(10)2010 2016) ///
+>         legend(label(1 "Growth from cap. accum.") label(2 "Residual growth"))
+
+. graph export "./Drafts/fig_PWT_Resid_pop_USA.png", replace as(png)      
+(file ./Drafts/fig_PWT_Resid_pop_USA.png written in PNG format)
+
+. 
+. // Produce growth rate of human capital
+. line hgrowth year,  ///
+>         xtitle("Year") ytitle("10-year average growth in human capital per capita (%)") ///
+>         ylabel(, format(%9.1f)) ///
+>         xlabel(1950(10)2010 2016)
+
+. graph export "./Drafts/fig_H_growth_USA.png", replace as(png)
+(file ./Drafts/fig_H_growth_USA.png written in PNG format)
+
+. 
+. // Produce growth rate of physical capital
+. line kgrowth year, ///
+>         xtitle("Year") ytitle("10-year average growth in physical capital per capita (%)") ///
+>         ylabel(0(.5)2.5, format(%9.1f)) ///
+>         xlabel(1950(10)2010 2016)
+
+. graph export "./Drafts/fig_K_growth_USA.png", replace as(png)
+(file ./Drafts/fig_K_growth_USA.png written in PNG format)
+
+. 
+. // Produce figure of human capital stock
+. line bea_h year,  ///
+>         xtitle("Year") ytitle("Human capital per capita (1950=100)") ///
+>         xlabel(1950(10)2010 2016) ylabel(100(10)150)
+
+. graph export "./Drafts/fig_H_USA.png", replace as(png)
+(file ./Drafts/fig_H_USA.png written in PNG format)
+
+. 
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-BLS-Employees.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on employment and hours worked
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/FRED-Annual.dta", clear
+
+. 
+. replace emp_women = emp_women/1000
+(71 real changes made)
+
+. replace emp_men = emp_men/1000
+(71 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figures
+. ////////////////////////////////////////////////////////
+> 
+. // Produce figure for employment of men and women
+. preserve
+
+.         drop if year<1965
+(40 observations deleted)
+
+. 
+.         line emp_women year, ///
+>                 || line emp_men year, ///
+>                 ytitle("Millions of employees") xtitle("Year") ///
+>                 ylabel(,format(%3.0fc)) xlabel(1945(10)2015) ///
+>                 legend(label(1 "Women") label(2 "Men"))
+
+.         graph export "./Drafts/fig_bls_emp.png", replace as(png)        
+(file ./Drafts/fig_bls_emp.png written in PNG format)
+
+. 
+. restore
+
+. 
+. //publish, name(fig_bls_emp) title("Number of employees by year")
+. 
+. // Produce figure for weekly hours
+. preserve
+
+.         drop if year<1965
+(40 observations deleted)
+
+. 
+.         line hours_weekly year, ///
+>                 ytitle("Weekly hours") xtitle("Year") ///
+>                 ylabel(, format(%3.0fc)) xlabel(1965(10)2005 2010 2017) ///
+>                 legend(off)
+
+.         graph export "./Drafts/fig_hours_weekly.png", replace as(png)   
+(file ./Drafts/fig_hours_weekly.png written in PNG format)
+
+.         
+.         //publish, name(fig_hours_weekly) title("Weekly hours worked")
+. restore
+
+. 
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-BLS-Employees.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures on employment and hours worked
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/FRED-Annual.dta", clear
+
+. 
+. replace emp_women = emp_women/1000
+(71 real changes made)
+
+. replace emp_men = emp_men/1000
+(71 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figures
+. ////////////////////////////////////////////////////////
+> 
+. // Produce figure for employment of men and women
+. preserve
+
+.         drop if year<1945
+(20 observations deleted)
+
+. 
+.         line emp_women year, ///
+>                 || line emp_men year, ///
+>                 ytitle("Millions of employees") xtitle("Year") ///
+>                 ylabel(,format(%3.0fc)) xlabel(1945(10)2015) ///
+>                 legend(label(1 "Women") label(2 "Men"))
+
+.         graph export "./Drafts/fig_bls_emp.png", replace as(png)        
+(file ./Drafts/fig_bls_emp.png written in PNG format)
+
+. 
+. restore
+
+. 
+. //publish, name(fig_bls_emp) title("Number of employees by year")
+. 
+. // Produce figure for weekly hours
+. preserve
+
+.         drop if year<1965
+(40 observations deleted)
+
+. 
+.         line hours_weekly year, ///
+>                 ytitle("Weekly hours") xtitle("Year") ///
+>                 ylabel(, format(%3.0fc)) xlabel(1965(10)2005 2010 2017) ///
+>                 legend(off)
+
+.         graph export "./Drafts/fig_hours_weekly.png", replace as(png)   
+(file ./Drafts/fig_hours_weekly.png written in PNG format)
+
+.         
+.         //publish, name(fig_hours_weekly) title("Weekly hours worked")
+. restore
+
+. 
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp_by_ed elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+
+. replace exp_by_ed = exp_by_ed/check_total // experience stock per person
+(62 real changes made)
+
+. replace hc = hc/check_total // education stock per person
+(62 real changes made)
+
+. 
+. // Create shares of workers by level of education
+. gen share_elem_04 = elem_04/check_total
+
+. gen share_elem_58 = elem_58/check_total
+
+. gen share_high_13 = high_13/check_total
+
+. gen share_high_4 = high_4/check_total
+
+. gen share_coll_13 = coll_13/check_total
+
+. gen share_coll_4plus = coll_4plus/check_total
+
+. 
+. save "./Work/CPS-hc-exp.dta", replace
+file ./Work/CPS-hc-exp.dta saved
+
+. 
+. // Combine with OECD baseline data on age structure to calculate naive experience 
+. use "./Work/OECD-pop.dta", clear
+
+. 
+. keep if sex=="TT" // both sexes
+(4,212 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(1,701 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(81 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(81 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. keep if inrange(str_age,20,60) // keep only counts of those in working-age range
+(729 observations deleted)
+
+. gen exp_assumed = str_age + 2 - 20 // Add 2 to get mid-range of age group, subtract 20 for first year of work
+
+. gen exp = value*exp(0.05*exp_assumed - .0007*exp_assumed^2)
+
+. 
+. rename time year
+
+. 
+. collapse (sum) exp value, by(year)
+
+. replace exp = exp/value // calculate per person
+(81 real changes made)
+
+. 
+. save "./Work/OECD-pop-exp.dta"
+file ./Work/OECD-pop-exp.dta already exists
+r(602);
+
+end of do-file
+
+r(602);
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp_by_ed elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+
+. replace exp_by_ed = exp_by_ed/check_total // experience stock per person
+(62 real changes made)
+
+. replace hc = hc/check_total // education stock per person
+(62 real changes made)
+
+. 
+. // Create shares of workers by level of education
+. gen share_elem_04 = elem_04/check_total
+
+. gen share_elem_58 = elem_58/check_total
+
+. gen share_high_13 = high_13/check_total
+
+. gen share_high_4 = high_4/check_total
+
+. gen share_coll_13 = coll_13/check_total
+
+. gen share_coll_4plus = coll_4plus/check_total
+
+. 
+. save "./Work/CPS-hc-exp.dta", replace
+file ./Work/CPS-hc-exp.dta saved
+
+. 
+. // Combine with OECD baseline data on age structure to calculate naive experience 
+. use "./Work/OECD-pop.dta", clear
+
+. 
+. keep if sex=="TT" // both sexes
+(4,212 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(1,701 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(81 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(81 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. keep if inrange(str_age,20,60) // keep only counts of those in working-age range
+(729 observations deleted)
+
+. gen exp_assumed = str_age + 2 - 20 // Add 2 to get mid-range of age group, subtract 20 for first year of work
+
+. gen exp = value*exp(0.05*exp_assumed - .0007*exp_assumed^2)
+
+. 
+. rename time year
+
+. 
+. collapse (sum) exp value, by(year)
+
+. replace exp = exp/value // calculate per person
+(81 real changes made)
+
+. 
+. save "./Work/OECD-pop-exp.dta"
+file ./Work/OECD-pop-exp.dta already exists
+r(602);
+
+end of do-file
+
+r(602);
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.134) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(4*.134 + 3*.101) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(4*.134 + 4*.101 + 2*.068) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(4*.134 + 4*.101 + 4*.068) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(4*.134 + 4*.101 + 6*.068) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(4*.134 + 4*.101 + 8*.068) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp_by_ed elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+
+. replace exp_by_ed = exp_by_ed/check_total // experience stock per person
+(62 real changes made)
+
+. replace hc = hc/check_total // education stock per person
+(62 real changes made)
+
+. 
+. // Create shares of workers by level of education
+. gen share_elem_04 = elem_04/check_total
+
+. gen share_elem_58 = elem_58/check_total
+
+. gen share_high_13 = high_13/check_total
+
+. gen share_high_4 = high_4/check_total
+
+. gen share_coll_13 = coll_13/check_total
+
+. gen share_coll_4plus = coll_4plus/check_total
+
+. 
+. save "./Work/CPS-hc-exp.dta", replace
+file ./Work/CPS-hc-exp.dta saved
+
+. 
+. // Combine with OECD baseline data on age structure to calculate naive experience 
+. use "./Work/OECD-pop.dta", clear
+
+. 
+. keep if sex=="TT" // both sexes
+(4,212 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(1,701 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(81 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(81 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. keep if inrange(str_age,20,60) // keep only counts of those in working-age range
+(729 observations deleted)
+
+. gen exp_assumed = str_age + 2 - 20 // Add 2 to get mid-range of age group, subtract 20 for first year of work
+
+. gen exp = value*exp(0.05*exp_assumed - .0007*exp_assumed^2)
+
+. 
+. rename time year
+
+. 
+. collapse (sum) exp value, by(year)
+
+. replace exp = exp/value // calculate per person
+(81 real changes made)
+
+. 
+. save "./Work/OECD-pop-exp.dta", replace
+file ./Work/OECD-pop-exp.dta saved
+
+. 
+. 
+end of do-file
+
+. do "/var/folders/0s/4qw6psw12b59s0xqvn28qtbm0000gn/T//SD32964.000000"
+
+. // Combine with OECD baseline data on age structure to calculate naive experience 
+. use "./Work/OECD-pop.dta", clear
+
+. 
+. keep if sex=="TT" // both sexes
+(4,212 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(1,701 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(81 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(81 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. keep if inrange(str_age,20,60) // keep only counts of those in working-age range
+(729 observations deleted)
+
+. gen exp_assumed = str_age + 2 - 20 // Add 2 to get mid-range of age group, subtract 20 for first year of work
+
+. gen exp = value*exp(0.05*exp_assumed - .0007*exp_assumed^2)
+
+. 
+. rename time year
+
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-PWT-Compare.do"
+
+. ////////////////////////////////////////////////////////
+> // Figures comparing US, Japan, China
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> 
+. // Penn World Table 9.0 downloaded from
+. // https://www.rug.nl/ggdc/productivity/pwt/
+. use "./Data/pwt90.dta", clear
+
+. 
+. egen countryid = group(countrycode) // create a numeric country id
+
+. xtset countryid year // organize in Stata to do lag operators
+       panel variable:  countryid (strongly balanced)
+        time variable:  year, 1950 to 2014
+                delta:  1 unit
+
+. 
+. capture drop ln_gdppc
+
+. capture drop gdppc
+
+. 
+. // Get values from the US in 2009 as comparisons
+. summ rgdpe if countrycode=="USA" & year==2009
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       rgdpe |          1    1.50e+07           .   1.50e+07   1.50e+07
+
+. replace rgdpe = rgdpe/r(mean)
+(9,439 real changes made)
+
+. summ pop if countrycode=="USA" & year==2009
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         pop |          1     307.232           .    307.232    307.232
+
+. replace pop = pop/r(mean)
+(9,439 real changes made)
+
+. 
+. // Calculate GDP per capita, and scale to US
+. gen gdppc = 100*rgdpe/pop
+(2,391 missing values generated)
+
+. gen ln_gdppc = ln(rgdpe/pop)
+(2,391 missing values generated)
+
+. replace rgdpe = 100*rgdpe
+(9,439 real changes made)
+
+. 
+. // Calculate growth rates for each country
+. gen Grgdpe = 100*(rgdpe/L.rgdpe - 1)
+(2,573 missing values generated)
+
+. label variable Grgdpe "Year-to-year growth rate"
+
+. gen G10rgdpe = 100*( (rgdpe/L10.rgdpe)^(1/10) - 1)
+(4,211 missing values generated)
+
+. label variable G10rgdpe "Average 10-year growth rate"
+
+. gen Drgdpe = (rgdpe - L.rgdpe)
+(2,573 missing values generated)
+
+. summ Drgdpe if countrycode=="USA" & year==2000
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      Drgdpe |          1    3.346832           .   3.346832   3.346832
+
+. replace Drgdpe = Drgdpe/r(mean)
+(9,257 real changes made)
+
+. 
+. // Calculate per capita growth rates for each country
+. gen Ggdppc = 100*(gdppc/L.gdppc - 1)
+(2,573 missing values generated)
+
+. label variable Ggdppc "Year-to-year growth rate"
+
+. gen G10gdppc = 100*((gdppc/L10.gdppc)^(1/10) - 1)
+(4,211 missing values generated)
+
+. label variable G10gdppc "Average 10-year growth rate"
+
+. gen Dgdppc = (gdppc - L.gdppc)
+(2,573 missing values generated)
+
+. summ Dgdppc if countrycode=="USA" & year==2000
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      Dgdppc |          1    2.593102           .   2.593102   2.593102
+
+. replace Dgdppc = Dgdppc/r(mean)
+(9,257 real changes made)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figures
+. ////////////////////////////////////////////////////////
+> preserve 
+
+. drop if year<1960 // drop pre-1960 to make figures look better
+(1,820 observations deleted)
+
+. 
+. // Produce figure for growth rates of GDP per capita
+. line G10gdppc year if countrycode=="USA" ///
+>         || line G10gdppc year if countrycode=="JPN" ///
+>         || line G10gdppc year if countrycode=="CHN", ///
+>         xtitle("Year") ytitle("10-year avg. growth in real GDP per capita") ///
+>         ylabel(-2(2)10, format(%3.1f)) xlabel(1960(10)2010 2014) ///
+>         legend(label(1 "United States") label(2 "Japan") label(3 "China"))
+
+. graph export "./Drafts/fig_Ggdppc_all.png", replace as(png)
+(file ./Drafts/fig_Ggdppc_all.png written in PNG format)
+
+. 
+. // Produce figures for growth rates of GDP
+. line G10rgdpe year if countrycode=="USA" ///
+>         || line G10rgdpe year if countrycode=="JPN" ///
+>         || line G10rgdpe year if countrycode=="CHN", ///
+>         xtitle("Year") ytitle("10-year avg. growth in real GDP") ///
+>         ylabel(-2(2)10, format(%3.1f)) xlabel(1960(10)2010 2014) ///
+>         legend(label(1 "United States") label(2 "Japan") label(3 "China"))
+
+. graph export "./Drafts/fig_Ggdp_all.png", replace as(png)
+(file ./Drafts/fig_Ggdp_all.png written in PNG format)
+
+. 
+. // Produce figures for growth rates of GDP
+. line G10gdppc year if countrycode=="USA" ///
+>         || line G10gdppc year if countrycode=="FRA" ///
+>         || line G10gdppc year if countrycode=="DEU", ///
+>         || line G10gdppc year if countrycode=="JPN", ///
+>         || line G10gdppc year if countrycode=="GBR", ///
+>         xtitle("Year") ytitle("10-year avg. growth in real GDP per capita") ///
+>         ylabel(-2(2)10, format(%3.1f)) xlabel(1960(10)2010 2014) ///
+>         legend(label(1 "United States") label(2 "France") label(3 "Germany") label(4 "Japan") label(5 "United Kingdom"))
+
+. graph export "./Drafts/fig_Ggdp_oecd.png", replace as(png)
+(file ./Drafts/fig_Ggdp_oecd.png written in PNG format)
+
+. 
+. 
+. restore
+
+. 
+. // Produce figure for level of GDP per capita
+. line gdppc year if countrycode=="USA" ///
+>         || line gdppc year if countrycode=="JPN" ///
+>         || line gdppc year if countrycode=="CHN", ///
+>         xtitle("Year") ytitle("Real GDP per capita (U.S. in 2009 = 100)") ///
+>         ylabel(,format(%7.1f)) xlabel(1950(10)2010 2014) ///
+>         legend(label(1 "United States") label(2 "Japan") label(3 "China") )
+
+. graph export "./Drafts/fig_gdppc_all.png", replace as(png)
+(file ./Drafts/fig_gdppc_all.png written in PNG format)
+
+. 
+. // Produce figure for level of GDP
+. line rgdpe year if countrycode=="USA" ///
+>         || line rgdpe year if countrycode=="JPN" ///
+>         || line rgdpe year if countrycode=="CHN", ///
+>         xtitle("Year") ytitle("Real GDP") ///
+>         ylabel(0(25)125, format(%7.1f) ) xlabel(1950(10)2010 2014) ///
+>         legend(label(1 "United States") label(2 "Japan") label(3 "China") )
+
+. graph export "./Drafts/fig_gdp_all.png", replace as(png)
+(file ./Drafts/fig_gdp_all.png written in PNG format)
+
+. 
+. // Produce figure on growth in GDP per capita
+. twoway (bar Dgdppc year if countrycode=="USA", ///
+>         xtitle("Year") ytitle("Growth in real GDP per capita (relative to US in 2000)") ///
+>         ylabel(,angle(0) format(%7.0f) nogrid) xlabel(1950(10)2010 2014, angle(45)) ) ///
+>         (bar Dgdppc year if countrycode=="CHN",  ///
+>         lwidth(narrow) ///
+>         legend(label(1 "United States") label(2 "China")) ///
+>         )
+(note:  named style narrow not found in class linewidth, default attributes used)
+(note:  linewidth not found in scheme, default attributes used)
+(note:  named style narrow not found in class linewidth, default attributes used)
+(note:  linewidth not found in scheme, default attributes used)
+
+. graph export "./Drafts/fig_Dgdppc_all.png", replace as(png)
+(file ./Drafts/fig_Dgdppc_all.png written in PNG format)
+
+. 
+. // Produce figure on growth in GDP
+. twoway (bar Drgdpe year if countrycode=="USA", ///
+>         xtitle("Year") ytitle("Growth in real GDP (relative to US in 2000)") ///
+>         ylabel(,format(%7.0f)) xlabel(1950(10)2010 2014) ) ///
+>         (bar Drgdpe year if countrycode=="CHN",  ///
+>         lwidth(narrow) ///
+>         legend(label(1 "United States") label(2 "China")) ///
+>         )
+(note:  named style narrow not found in class linewidth, default attributes used)
+(note:  linewidth not found in scheme, default attributes used)
+(note:  named style narrow not found in class linewidth, default attributes used)
+(note:  linewidth not found in scheme, default attributes used)
+
+. graph export "./Drafts/fig_Dgdp_all.png", replace as(png)
+(file ./Drafts/fig_Dgdp_all.png written in PNG format)
+
+.         
+. 
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Data-CPS-HC.do"
+
+. ////////////////////////////////////////////////////////
+> // Prepare human capital data
+. ////////////////////////////////////////////////////////
+> 
+. // Source is CPS Table A.1
+. // https://www.census.gov/data/tables/time-series/demo/educational-attainment/cps-historical-time-series.html
+. // I've used the raw spreadsheet download (taba-1.xlsx) to create an input CSV file in a useful layout
+. insheet using "./Data/cps_educ_age.csv", clear names
+(9 vars, 186 obs)
+
+. 
+. // Calculate human capital stock for each education group
+. gen hc_elem_04 = elem_04*exp(3*.10) // assume three years for each
+
+. gen hc_elem_58 = elem_58*exp(7*.10) // assume 7 years for each
+
+. gen hc_high_13 = high_13*exp(10*.10) // assume 10 years for each
+
+. gen hc_high_4  = high_4*exp(12*.10) // assume 12 years for each
+
+. gen hc_coll_13 = coll_13*exp(14*.10) // assume 14 years for each
+
+. gen hc_coll_4plus = coll_4plus*exp(16*.10) // assume 16 years for each
+
+. 
+. egen hc = rowtotal(hc_*) // sum hc for each group to get total stock for that age group in a given year
+
+. 
+. // Calculate education-specific experience terms as a check on baseline calculations
+. // Reported totals are a little off from the summation of the individual cells, so create own total
+. gen check_total = elem_04 + elem_58 + high_13 + high_4 + coll_13 + coll_4plus
+
+. 
+. // Experience calculations
+. gen exp_elem_04 = elem_04*2.886 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_04 = elem_04*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_elem_58 = elem_58*2.664 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_elem_58 = elem_58*2.915 if age=="35-54"
+(62 real changes made)
+
+. replace exp_elem_58 = elem_58*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_13 = high_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_13 = high_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_13 = high_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_high_4 = high_4*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_high_4 = high_4*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_high_4 = high_4*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_13 = coll_13*2.435 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_13 = coll_13*2.886 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_13 = coll_13*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. gen exp_coll_4plus = coll_4plus*2.013 if age=="25-34"
+(124 missing values generated)
+
+. replace exp_coll_4plus = coll_4plus*2.801 if age=="35-54"
+(62 real changes made)
+
+. replace exp_coll_4plus = coll_4plus*2.560 if age=="55plus"
+(62 real changes made)
+
+. 
+. egen exp_by_ed = rowtotal(exp_*)
+
+. 
+. // Collapse dataset down to yearly totals
+. collapse (sum) check_total hc exp_by_ed elem_04 elem_58 high_13 high_4 coll_13 coll_4plus, by(year)
+
+. replace exp_by_ed = exp_by_ed/check_total // experience stock per person
+(62 real changes made)
+
+. replace hc = hc/check_total // education stock per person
+(62 real changes made)
+
+. 
+. // Create shares of workers by level of education
+. gen share_elem_04 = elem_04/check_total
+
+. gen share_elem_58 = elem_58/check_total
+
+. gen share_high_13 = high_13/check_total
+
+. gen share_high_4 = high_4/check_total
+
+. gen share_coll_13 = coll_13/check_total
+
+. gen share_coll_4plus = coll_4plus/check_total
+
+. 
+. save "./Work/CPS-hc-exp.dta", replace
+file ./Work/CPS-hc-exp.dta saved
+
+. 
+. // Combine with OECD baseline data on age structure to calculate naive experience 
+. use "./Work/OECD-pop.dta", clear
+
+. 
+. keep if sex=="TT" // both sexes
+(4,212 observations deleted)
+
+. keep if strpos(age,"L5") // selects only 5-year bins
+(1,701 observations deleted)
+
+. drop if age=="D199L5TT" // drop total population count
+(81 observations deleted)
+
+. 
+. gen str_age = substr(age,7,2) // parse age variable for the minimum age 
+
+. replace str_age = "85" if str_age=="M8" // replace for the highest group
+(81 real changes made)
+
+. destring str_age, replace // turn into a numeric
+str_age: all characters numeric; replaced as byte
+
+. 
+. keep if inrange(str_age,20,60) // keep only counts of those in working-age range
+(729 observations deleted)
+
+. gen exp_assumed = str_age + 2 - 20 // Add 2 to get mid-range of age group, subtract 20 for first year of work
+
+. gen exp = value*exp(0.05*exp_assumed - .0007*exp_assumed^2)
+
+. 
+. rename time year
+
+. 
+. collapse (sum) exp value, by(year)
+
+. replace exp = exp/value // calculate per person
+(81 real changes made)
+
+. 
+. save "./Work/OECD-pop-exp.dta", replace
+file ./Work/OECD-pop-exp.dta saved
+
+. 
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Tab-BEA-Account.do"
+
+. ////////////////////////////////////////////////////////
+> // Growth Accounting
+. ////////////////////////////////////////////////////////
+> // This script does a lot
+. // 1. Take in annual data, and normalize variables to 1950 values
+. // 2. Declare a program that does growth accounting between arbitrary years
+. // 3. Call that program several times to fill in rows of accounting tables
+. // 4. Produce figures on the growth rates of capital and HC
+. // 5. Produce figures on the share of GDP pc that comes from capital
+. 
+. ////////////////////////////////////////////////////////
+> // Set up and data extraction
+. ////////////////////////////////////////////////////////
+> use "./Work/FRED-Annual.dta", clear
+
+. 
+. keep if year>1949
+(25 observations deleted)
+
+. tsset year
+        time variable:  year, 1950 to 2030
+                delta:  1 unit
+
+. sort year
+
+. 
+. gen ylow = 100 // reference point for figures
+
+. gen cap  = bea_chain_k^(1-.65)*bea_h^(.65) // gdp pc just from capital
+(22 missing values generated)
+
+. 
+. // Normalize variables to 1950 for use in accounting and figures
+. foreach v in bea_chain_assets gdp_pc hours_nonfarm bea_chain_k bea_H bea_h KY cap {
+  2.         summ `v' if year==1950
+  3.         replace `v' = 100*`v'/r(mean)
+  4. }
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+bea_chain_~s |          1      17.809           .     17.809     17.809
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+      gdp_pc |          1    .0143983           .   .0143983   .0143983
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+hours_nonf~m |          1      117.95           .     117.95     117.95
+(69 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+ bea_chain_k |          1    .0001174           .   .0001174   .0001174
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       bea_H |          1    3.67e+10           .   3.67e+10   3.67e+10
+(60 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       bea_h |          1    242143.4           .   242143.4   242143.4
+(59 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          KY |          1    .0081544           .   .0081544   .0081544
+(67 real changes made)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         cap |          1    133.0583           .   133.0583   133.0583
+(59 real changes made)
+
+. 
+. // 10-year growth rates of capital stocks
+. gen hgrowth = 100*([bea_h/L10.bea_h]^(1/10) - 1)
+(32 missing values generated)
+
+. gen kgrowth = 100*([bea_chain_k/L10.bea_chain_k]^(1/10) - 1)
+(24 missing values generated)
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce accounting tables
+. ////////////////////////////////////////////////////////
+> 
+. // Open output text files to hold tables
+. capture file close h
+
+. file open h using "./Drafts/tab-account-pc-bea.tex", write replace
+
+. capture file close j
+
+. file open j using "./Drafts/tab-account-hc-bea.tex", write replace
+
+. capture file close k
+
+. file open k using "./Drafts/tab-account-alt-bea.tex", write replace
+
+. 
+. // Declare program that calculates the accounting terms and writes to the output files
+. capture program drop calc_growth
+
+. program calc_growth
+  1.         syntax [, first(integer 1960) last(integer 2010) labor(real 0.6)] // contains default values
+  2. 
+.         // Set locals to identify beginning and end years, which correspond to rows in dataset
+.         summ year
+  3.         local end = `last' - r(min) + 1
+  4.         local begin = `first' - r(min) + 1
+  5.         local diff = `end' - `begin'
+  6.         
+.         // Calculate locals for growth rates of gpd pc, capital pc, HC pc, and residual productivity
+.         local Gy = (ln(gdp_pc[`end']) - ln(gdp_pc[`begin']))/`diff'
+  7.         local Gk = (1-`labor')*(ln(bea_chain_k[`end']) - ln(bea_chain_k[`begin']))/`diff'
+  8.         local Gh = `labor'*(ln(bea_h[`end']) - ln(bea_h[`begin']))/`diff'
+  9.         local Gprod = `Gy' - `Gk' - `Gh'
+ 10.         
+.         // Calculate locals for growth rates of components of HC - hours, education, experience, and LN ratio
+.         local Ghours = (ln(hours_nonfarm[`end']) - ln(hours_nonfarm[`begin']))/`diff'
+ 11.         local Ghc = (ln(hc[`end']) - ln(hc[`begin']))/`diff'
+ 12.         local Gexp = (ln(exp[`end']) - ln(exp[`begin']))/`diff'
+ 13.         local GLN = (ln(LNratio[`end']) - ln(LNratio[`begin']))/`diff'
+ 14.         
+.         // Calculate locals for growth rate in capital/output ratio, and alternative residual productivity
+.         local GKY = ((1-`labor')/`labor')*(ln(KY[`end']) - ln(KY[`begin']))/`diff'
+ 15.         local Galt = `Gy' - `GKY' - `Gh'/`labor'
+ 16. 
+.         // Write those locals to different files, formatted for Latex
+.         file write h "`first'-`last' &" %9.2f (100*`Gy') "&" %9.2f (100*`Gk') "&" %9.2f (100*`Gh')  "&" %9.2f (100*`Gprod') "\\" _n
+ 17.         file write k "`first'-`last' &" %9.2f (100*`Gy') "&" %9.2f (100*`GKY') "&" %9.2f (100*`Gh'/`labor')  "&" %9.2f (100*`Galt') "\\" _n
+ 18.         file write j "`first'-`last' &" %9.2f (100*`Gh'/`labor') "&" %9.2f (100*`Ghc') "&" %9.2f (100*`Gexp') "&" %9.2f (100*`GLN') "&" %9.2f (10
+> 0*`Ghours')  "\\" _n
+ 19. end     
+
+. 
+. // Call the program for different time frames, write output to file
+. calc_growth, first(1950) last(2000) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. file write h "\\" _n // insert extra line break
+
+. file write j "\\" _n // insert extra line break
+
+. file write k "\\" _n // insert extra line break
+
+. calc_growth, first(1950) last(1960) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(1960) last(1970) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(1970) last(1980) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(1980) last(1990) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(1990) last(2000) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. file write h "\\" _n // insert extra line break
+
+. file write j "\\" _n // insert extra line break
+
+. file write k "\\" _n // insert extra line break
+
+. calc_growth, first(2000) last(2016) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. calc_growth, first(2006) last(2016) labor(.65)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+        year |         81        1990    23.52658       1950       2030
+
+. 
+. file close h
+
+. file close j
+
+. file close k
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figures
+. ////////////////////////////////////////////////////////
+> 
+. // Produce figure of capital versus residual growth for per capita GDP
+. twoway rarea cap ylow year || rarea gdp_pc cap year, ///
+>         xtitle("Year") ytitle("Real GDP per capita") xlabel(1950(10)2010 2016) ///
+>         legend(label(1 "Growth from cap. accum.") label(2 "Residual growth"))
+
+. graph export "./Drafts/fig_PWT_Resid_pop_USA.png", replace as(png)      
+(file ./Drafts/fig_PWT_Resid_pop_USA.png written in PNG format)
+
+. 
+. // Produce growth rate of human capital
+. line hgrowth year,  ///
+>         xtitle("Year") ytitle("10-year average growth in human capital per capita (%)") ///
+>         ylabel(, format(%9.1f)) ///
+>         xlabel(1950(10)2010 2016)
+
+. graph export "./Drafts/fig_H_growth_USA.png", replace as(png)
+(file ./Drafts/fig_H_growth_USA.png written in PNG format)
+
+. 
+. // Produce growth rate of physical capital
+. line kgrowth year, ///
+>         xtitle("Year") ytitle("10-year average growth in physical capital per capita (%)") ///
+>         ylabel(0(.5)2.5, format(%9.1f)) ///
+>         xlabel(1950(10)2010 2016)
+
+. graph export "./Drafts/fig_K_growth_USA.png", replace as(png)
+(file ./Drafts/fig_K_growth_USA.png written in PNG format)
+
+. 
+. // Produce figure of human capital stock
+. line bea_h year,  ///
+>         xtitle("Year") ytitle("Human capital per capita (1950=100)") ///
+>         xlabel(1950(10)2010 2016) ylabel(100(10)150)
+
+. graph export "./Drafts/fig_H_USA.png", replace as(png)
+(file ./Drafts/fig_H_USA.png written in PNG format)
+
+. 
+. 
+end of do-file
+
+. do "/Users/dietz/Dropbox/Project/WhereGrowth/Code/Fig-KLEMS-Calculate.do"
+
+. ////////////////////////////////////////////////////////
+> // KLEMS calculations on industry level productivity
+. ////////////////////////////////////////////////////////
+> 
+. ////////////////////////////////////////////////////////
+> // Open file to write results of calculations
+. ////////////////////////////////////////////////////////
+> capture file close h
+
+. file open h using "./Drafts/tab-account-klems.tex", write replace
+
+. 
+. ////////////////////////////////////////////////////////
+> // Calculate TFP growth for total economy
+. ////////////////////////////////////////////////////////
+> 
+. use "./Work/KLEMS-total-only.dta", clear
+
+. gen g15_TFP = (TFPva_I2015-TFPva_I2000)/TFPva_I2000
+
+. gen g15_TFP_rate = (1+g15_TFP)^(1/15)-1
+
+. 
+. summarize g15_TFP_rate // actual TFP growth rate based on KLEMS from 2000-2015
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+g15_TFP_rate |          1    .0040509           .   .0040509   .0040509
+
+. file write h "Avg. growth rate of TFP, 2000-2015, Actual: " (r(mean)) _n
+
+. 
+. ////////////////////////////////////////////////////////
+> // Calculate TFP growth for counterfactual value-added shares
+. ////////////////////////////////////////////////////////
+> 
+. use "./Work/KLEMS-shaped.dta", clear
+
+. 
+. xtset industry year
+       panel variable:  industry (strongly balanced)
+        time variable:  year, 1970 to 2015
+                delta:  1 unit
+
+. sort industry year
+
+. 
+. // Calculate TFP growth for an industry from 2000-2015 (only years with this TFP data)
+. gen g15_TFPva_I = (TFPva_I - L15.TFPva_I)/L15.TFPva_I 
+(748 missing values generated)
+
+. gen g15_TFPva_I_rate = (1+g15_TFPva_I)^(1/15) - 1
+(748 missing values generated)
+
+. 
+. // Generate VA shares for actual, 2000 (lag 15), 1990 (lag 25), 1980 (lag 35)
+. gen weight = share_VA
+
+. gen weight_15 = L15.share_VA 
+(255 missing values generated)
+
+. gen weight_25 = L25.share_VA
+(425 missing values generated)
+
+. gen weight_35 = L35.share_VA
+(595 missing values generated)
+
+. 
+. // Produce counterfactual growth in TFP using earlier VA shares
+. // Sum the TFP growth from 2000-2015, weighted by the given year VA shares
+. bysort year: egen sum_g15_weight15_TFPva_I = sum(g15_TFPva_I*weight_15)
+
+. bysort year: egen sum_g15_weight25_TFPva_I = sum(g15_TFPva_I*weight_25)
+
+. bysort year: egen sum_g15_weight35_TFPva_I = sum(g15_TFPva_I*weight_35)
+
+. 
+. // Turn that growth in to an actual growth rate
+. gen g15_weight15_TFPva_I_rate = (1+sum_g15_weight15_TFPva_I)^(1/15) - 1
+
+. gen g15_weight25_TFPva_I_rate = (1+sum_g15_weight25_TFPva_I)^(1/15) - 1
+
+. gen g15_weight35_TFPva_I_rate = (1+sum_g15_weight35_TFPva_I)^(1/15) - 1
+
+. 
+. // Counter-factual growth rates of TFP from 2000-2015 based on different VA weights
+. summ g15_weight15_TFPva_I_rate if year==2015
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+g15_weight1~ |         17    .0050426           0   .0050426   .0050426
+
+. file write h "Avg. growth rate of TFP, 2000-2015, 2000 VA weights: " (r(mean)) _n
+
+. 
+. summ g15_weight25_TFPva_I_rate if year==2015
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+g~25_TFPva~e |         17    .0051313           0   .0051313   .0051313
+
+. file write h "Avg. growth rate of TFP, 2000-2015, 1990 VA weights: " (r(mean)) _n
+
+. 
+. summ g15_weight35_TFPva_I_rate if year==2015
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+g~35_TFPva~e |         17    .0059741           0   .0059741   .0059741
+
+. file write h "Avg. growth rate of TFP, 2000-2015, 1980 VA weights: " (r(mean)) _n
+
+. 
+. capture file close h
+
+. 
+. ////////////////////////////////////////////////////////
+> // Produce figure of value-added shares over time
+. ////////////////////////////////////////////////////////
+> line share_VA year if code=="C" /// manufacturing
+>         || line share_VA year if code=="Q" /// health and social work
+>         || line share_VA year if code=="M-N" /// professional services
+>         || line share_VA year if code=="J", /// information services
+>         legend(label(1 "Manufacturing") label(2 "Health and social") label(3 "Prof. services") label(4 "Info. and comm.")) ///
+>         xtitle("Year") ytitle("Share of value added") ///
+>         xlabel(1970(5)2015) ylabel(0(.05).25, format(%9.2f))
+
+. graph export "./Drafts/fig_klems_va_share.png", replace as(png) 
+(file ./Drafts/fig_klems_va_share.png written in PNG format)
+
+.         
+. preserve
+
+. drop if year<1985
+(255 observations deleted)
+
+. line share_LAB year if code=="C" /// manufacturing
+>         || line share_LAB year if code=="Q" /// health and social work
+>         || line share_LAB year if code=="M-N" /// professional services
+>         || line share_LAB year if code=="J", /// information services
+>         legend(label(1 "Manufacturing") label(2 "Health and social") label(3 "Prof. services") label(4 "Info. and comm.")) ///
+>         xtitle("Year") ytitle("Share of labor compensation") ///
+>         xlabel(1985(5)2015) ylabel(0(.05).25, format(%9.2f))
+
+. graph export "./Drafts/fig_klems_lab_share.png", replace as(png)                
+(file ./Drafts/fig_klems_lab_share.png written in PNG format)
+
+. restore
+
+. 
+. ////////////////////////////////////////////////////////
+> // Write table of industry level data
+. ////////////////////////////////////////////////////////
+> 
+. keep if year==2015 // only need to look backwards from 2015
+(765 observations deleted)
+
+. 
+. sort code // sort by the BEA codes
+
+. local number = _N // get the number of rows
+
+. 
+. capture file close f
+
+. file open f using "./Drafts/tab-industry-klems.tex", write replace
+
+. 
+. forvalues i = 1(1)`number' { // for each of the industries 
+  2.         file write f (text[`i']) "&" %9.2f (100*g15_TFPva_I_rate[`i']) "&" %9.2f (100*weight_35[`i']) "&" %9.2f  (100*weight_25[`i'])   "&" %9.2f
+>  (100*weight_15[`i']) "&" %9.2f (100*weight[`i']) "\\" _n
+  3. }       
+
+. 
+. capture file close f
+
+. 
+. 
+end of do-file
+
+. exit, clear
