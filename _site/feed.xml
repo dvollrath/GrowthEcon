@@ -5,7 +5,115 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Mon, 15 Oct 2018 12:06:59 -0500</pubDate>
+    <pubDate>Fri, 02 Nov 2018 14:30:15 -0500</pubDate>
+    
+      <item>
+        <title>New evidence on convergence</title>
+        <link>https://growthecon.com/blog/Convergence/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Convergence/</guid>
+        <description>&lt;p&gt;Dev Patel, Justin Sandefur, and Arvind Subramanian &lt;a href=&quot;https://www.cgdev.org/blog/everything-you-know-about-cross-country-convergence-now-wrong&quot;&gt;posted&lt;/a&gt; the other day some new evidence on cross-country convergence. They showed that there is statisticaly significant evidence for unconditional convergence in GDP per capita across countries. I’ll get to more details below, but in short they find that poor countries grow faster than rich ones, on average.&lt;/p&gt;
+
+&lt;p&gt;They set this up as a counter-point to an &lt;a href=&quot;https://www.aeaweb.org/articles?id=10.1257/jel.20181207&amp;amp;&amp;amp;from=f&quot;&gt;article&lt;/a&gt; coming out in the Journal of Economic Literature by Paul Johnson and Chris Papageorgiou that says cross-country convergence doesn’t occur. The difference in the PSS post and the JP paper is that PSS look at relatively recent windows of data. For example, PSS look at whether countries that were poor in 1990 grew faster than rich countries in 1990 from 1990 to 2014.&lt;/p&gt;
+
+&lt;p&gt;In constrast, JP appear to look at longer time frames. They find that there isn’t much evidence countries that were poor in 1960 grew faster than rich countries in 1960. This isn’t a contradiction with PSS. Both can be true at once. All PSS have done is indicated that around twenty-five years ago poor countries did start growing faster than rich countries.&lt;/p&gt;
+
+&lt;p&gt;The implication of that finding is that poor countries are &lt;em&gt;converging&lt;/em&gt; to rich country GDP per capita. And while that statement is defensible, it does need a host of qualifications, because it doesn’t mean you should expect that developing countries are soon going to look like Western Europe. This post is meant to pick through those qualifications.&lt;/p&gt;
+
+&lt;h3 id=&quot;flavors-of-convergence&quot;&gt;Flavors of convergence&lt;/h3&gt;
+&lt;p&gt;Let’s start with a better definition of convergence. There are two kinds. Within economics, they acquired particular names, and I’ll use those to be consistent with the literature. They are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence: this kind of convergence occurs if the growth rate of GDP per capita is negatively related to the initial level of GDP per capita. That is, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence is defined by poor countries growing faster than rich countries.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence: this kind of convergence occurs if the variance (or any measure of dispersion, really) of GDP per capita &lt;em&gt;across&lt;/em&gt; countries shrinks. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence means the gap in GDP per capita from rich to poor gets smaller.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now, it &lt;em&gt;feels&lt;/em&gt; like &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence should imply &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence. And in some cases it does. Rather than GDP per capita, think about the height of the people in my house. If you plotted the growth rate of height from 2005-2018 against height in 2005 for all four of us, you’d get a negative coefficient. My two daughters were really short in 2005, but grew very fast over the next 13 years. My wife and I were both relatively tall in 2005, but neither of us grew at all. That’s &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. In this case, if you looked at the variance of heights in 2005, that would be much larger than the variance of heights in 2018, and hence there was also &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence in my house.&lt;/p&gt;
+
+&lt;p&gt;For height, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence implies &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence because there is not any additional noise or variance in height to worry about. I don’t wake up every day and randomly find myself 6 inches taller or shorter than I was the day before. That ensures that as my daughters grow, they really do catch up in height. I don’t get randomly taller, and they don’t get randomly shorter.&lt;/p&gt;
+
+&lt;p&gt;But in the case of economic growth, there are random shocks to GDP per capita. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence says that poor countries, &lt;em&gt;on average&lt;/em&gt;, grow faster than rich countries. But there will be instances where poor countries have really slow, or negative, growth sometimes. Think of currency crises or political upheavals. There will be some instances where rich countries experience rapid growth. With both of these things going on, it’s entirely possible that poor countries keep falling farther behind in terms of GDP per capita, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-&lt;em&gt;divergence&lt;/em&gt;, even though the poorer they get the faster they grow on average.&lt;/p&gt;
+
+&lt;p&gt;Here’s an analogy that could help. Imagine somone one juggling bowling pins. Gravity is like&lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. If the bowling pin is up in the air, then gravity is making it fall. But every time it reaches the juggler, she throws it back up in the air. This means there is always the same amount of dispersion in the location of the pins; some are up and some are down. In other words, there is a constant amount of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence, even though the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence caused by gravity is always at work. If the juggler throws the pins up with a little less force each time, then the dispersion will decrease. If the juggler throws the pins up with more force each time, the dispersion will &lt;em&gt;increase&lt;/em&gt;. Nevertheless, gravity - &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence - is still working the whole time.&lt;/p&gt;
+
+&lt;p&gt;Economic shocks act a little like the juggler, except that it isn’t just the rich countries (the ones the juggler catches) that experience shocks (the toss in the air). But the principle is similar, which is that with sufficiently large shocks, the dispersion in GDP per capita may not fall, and could even rise, over time. This is true even though &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence, like gravity, operates on countries the whole time.&lt;/p&gt;
+
+&lt;p&gt;In terms of cross-country comparisons, we’re mainly interested in &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence: is the gap between poor and rich countries shrinking over time? Observing &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence in the data does not tell us whether that is true. Now, some sort of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence is &lt;em&gt;necessary&lt;/em&gt; for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence to occur. At some point, a poor country has to grow faster than a rich country in order to catch up. But &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence isn’t sufficient for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence. The PSS result doesn’t mean that the dispersion of GDP per capita across countries got smaller, or will get smaller.&lt;/p&gt;
+
+&lt;h3 id=&quot;convergence-speed&quot;&gt;Convergence speed&lt;/h3&gt;
+&lt;p&gt;Let’s leave aside whether &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence implies &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence for the moment. Let’s assume that the shocks are small enough that in fact, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence is implied. The next question is &lt;em&gt;how long&lt;/em&gt; it will take a poor country to close the gap with a rich country, and the actual coefficient that PSS estimate can tell us about this.&lt;/p&gt;
+
+&lt;p&gt;To make sense of this, I need a little math. The convergence relationship that PSS estimate looks like this&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\ln y_{t} - \ln y_0}{t} = \alpha + \beta \ln y_0.&lt;/script&gt;
+
+&lt;p&gt;On the left is the growth rate of GDP per capita, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y\inline&quot;/&gt;, from some initial year 0 to year &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;. This is related to the initial level of GDP per capita, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0\inline&quot;/&gt;, on the right-hand side. The strength of that relationship is measured by the coefficient &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta&amp;lt;0\inline&quot;/&gt;, or that the growth rate gets smaller as the initial level of income gets higher. How large (in absolute value) &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; is determines how strong that effect is. The extra parameter &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt; is a baseline growth rate.&lt;/p&gt;
+
+&lt;p&gt;A little re-arrangment of this gives us&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln y_t = \alpha t + (1 + \beta t) \ln y_0&lt;/script&gt;
+
+&lt;p&gt;which is the level of GDP per capita at time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;, given initial GDP per capita at time 0. That multiplicative term &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta t\inline&quot;/&gt; is the effect of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence over time.&lt;/p&gt;
+
+&lt;p&gt;Using this, here’s a question we could ask. Given a poor country has &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0^{Poor}\inline&quot;/&gt; that is only 10% of the value in a rich country, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0^{Rich}\inline&quot;/&gt;, how long will it take (i.e. how big does &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt; have to be) before &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_t^{Poor}\inline&quot;/&gt; is 90% of the value in the rich country, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_t^{Rich}\inline&quot;/&gt;? Given the set-up, this &lt;em&gt;will&lt;/em&gt; happen at some point. I didn’t add any of the shocks mentioned above that could keep spreading these two countries apart. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence will eventually win out.&lt;/p&gt;
+
+&lt;p&gt;At this hypothetical time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;, we want that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_t^{Poor}/y_t^{Rich} = .9\inline&quot;/&gt;, which if you take logs and plug in from the above equation, gives us&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln .9 = \alpha t + (1 + \beta t) \ln y_0^{Poor} - \alpha t - (1 + \beta t) \ln y_0^{Rich}&lt;/script&gt;
+
+&lt;p&gt;and we can simplify this to&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln .9 = (1 + \beta t) (\ln y_0^{Poor} - \ln y_0^{Rich}).&lt;/script&gt;
+
+&lt;p&gt;We also said that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0^{Poor}/y_0^{Rich} = .1\inline&quot;/&gt;, so taking logs of that, we can plug in and get&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln .9 = (1 + \beta t) \ln .1&lt;/script&gt;
+
+&lt;p&gt;and now re-arrange to solve for time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;t = \frac{\frac{\ln .9}{\ln .1} - 1}{\beta}.&lt;/script&gt;
+
+&lt;p&gt;This is how long it will take the poor country to go from 10% of rich country GDP per capita to 90% per capita. And you could plug in other numbers in the obvious spots here to think about the time to go from 20% to 99%, or whatever you wanted.&lt;/p&gt;
+
+&lt;p&gt;The key is that the absolute size of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; matters. The smaller is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; in absolute value, the more time it takes to converge. Now, what PSS show is that in samples that only run through 2000, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; was about 0, which means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt; is essentially infinity. With no &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence, there isn’t a way for the poor country to ever catch up, because it doesn’t grow faster than the rich country. But with later samples, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta&amp;lt;0\inline&quot;/&gt;, so they can.&lt;/p&gt;
+
+&lt;p&gt;Their biggest estimate value is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -.005\inline&quot;/&gt;, not very big. Plugging that into the above equation implies that &lt;img src=&quot;http://latex.codecogs.com/png.latex?t = 190\inline&quot;/&gt;, or it will take about 190 years for a country to go from 10% of rich-country GDP per capita to 90%. That’s a loooong time. So even in the case where we assume that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence leads to &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence (i.e. the ratio goes from 10% to 90%), and ignore the possibility that shocks keep spreading things out, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence may not imply much noticeable &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence over the next few decades.&lt;/p&gt;
+
+&lt;h3 id=&quot;absolute-and-conditional-convergence&quot;&gt;Absolute and conditional convergence&lt;/h3&gt;
+&lt;p&gt;The PSS result of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -.005\inline&quot;/&gt; is small. At the same time, you will see references that the convergence coefficient is more like &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt; in the literature. Probably the most famous of these papers are from &lt;a href=&quot;https://ideas.repec.org/a/oup/qjecon/v106y1991i2p407-443..html&quot;&gt;Barro&lt;/a&gt; in 1991 and &lt;a href=&quot;https://ideas.repec.org/a/ucp/jpolec/v100y1992i2p223-51.html&quot;&gt;Barro and Sala-i-Martin&lt;/a&gt; in 1992. There are a host of other papers offering more estimates of this parameter, but I think it is fair to say that -0.02 is a good eyeball average of those results.&lt;/p&gt;
+
+&lt;p&gt;Now, we have to be a little careful here in these older results to PSS. PSS estimate &lt;em&gt;unconditional&lt;/em&gt; &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence, meaning they just making raw comparisons of growth in GDP per capita against initial GDP per capita across countries. Their result implies that poorer countries grow (a little bit) faster than rich countries, and that this doesn’t depend (is unconditional) on characteristics of those countries. It says that if you are poor, no matter &lt;em&gt;why&lt;/em&gt; you are poor, you grow a little faster than rich countries, no matter &lt;em&gt;why&lt;/em&gt; they are rich.&lt;/p&gt;
+
+&lt;p&gt;The original convergence literature did the same kind of unconditional analysis, and found nothing. That is the point, in some sense, of the PSS note. But that original literature did find evidence for &lt;em&gt;conditional&lt;/em&gt; &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. This means that if you look only at groups of countries that have similar characteristics (e.g. savings rate, human capital levels, etc..) then you find &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence in those groups - the poorer ones grow faster than the rich ones.&lt;/p&gt;
+
+&lt;p&gt;But &lt;em&gt;across&lt;/em&gt; groups, there was no tendency for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. For example, if you looked only at the OECD countries, you’d see pretty strong evidence of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence, with an estimate of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt;, roughly. And if you looked only at the set of Sub-Saharan African countries, you’d see similar evidence of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. But, there was no tendency for SSA countries as a group to grow faster than OECD countries. It was only that &lt;em&gt;within&lt;/em&gt; the group of SSA countries, poorer ones grew faster, and &lt;em&gt;within&lt;/em&gt; the group of OECD countries, poorer ones grew faster. You can find this notion of conditional - or “club” - convergence in blog-favorite William Baumol’s 1986 &lt;a href=&quot;http://piketty.pse.ens.fr/files/Baumol1986.pdf&quot;&gt;paper&lt;/a&gt; that was one of the first to think about this topic.&lt;/p&gt;
+
+&lt;p&gt;A different way of looking at conditional convergence was to use data on states or prefectures within a single country. They would all have roughly similar characteristics relative to countries (e.g. Texas and Florida differ, but that difference pales in comparison to the difference between Texas and Nigeria). And within countries, the evidence seems was clear that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence happens. Again, these coefficients were usually around &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt; number implies much faster convergence. If you think of a poor state that had 10% GDP per capita relative to a rich state, then it would only take about 48 years for it to reach 90% of GDP per capita of the rich state. That’s, not surprisingly, one-fourth the time it takes a poor country to catch up to a rich one. It’s also one way of thinking about why we don’t see U.S. states with only 10% the GDP per capita of rich ones. Any time a gap opens up, it tends to dissipate. Although I need to note that there is some recent research saying that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence across U.S. states no longer occurs. Let’s leave that aside.&lt;/p&gt;
+
+&lt;p&gt;Which number is right, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta=-0.005\inline&quot;/&gt; or &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt;? Neither. They don’t measure the same thing. The former is for unconditional cross-country convergence in the last 25 years, the latter is appropriate for conditional convergence or within-country convergence. Both can be true in their individual setting. Individual provinces within Kenya might converge very quickly, even though Kenya as a whole isn’t converging very quickly to U.S. GDP per capita.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-does-convergence-tell-us&quot;&gt;What does convergence tell us?&lt;/h3&gt;
+&lt;p&gt;The use of convergence results depends on what you’re after. The &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; value that PSS report, similar to every other estimated &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; value, tells you whether &lt;em&gt;on average&lt;/em&gt; poor countries grow faster than rich ones. But that doesn’t make it very informative about any particular country. It certainly won’t tell you whether to expect some kind of growth miracle or disaster to occur in the future.&lt;/p&gt;
+
+&lt;p&gt;Here’s what I mean. I took the Penn World Tables, one of the datasets used by PSS, and plotted the data used to estimate &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;. You’ve got the average growth rate of GDP per capita from 1990 to 2014 on the y-axis, against the (log) of GDP per capita in 1990 on the x-axis. The downward-sloped dashed line is the best fit to this data, and the slope of that line is about -.005, the PSS estimate of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_convergence.png&quot; alt=&quot;Convergence&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But you can see that this hides a lot of variation. I labelled a few countries for reference. The USA and Japan (JPN), out on the right, can be the stand-in for the “Rich” countries. You can also see China (CHN) and India (IND), both of which had growth rates well above the estimated relationship, and hence they converged much faster towards rich-country GDP per capita. This would set them apart from the Central African Republic (CAF) and Zimbabwe (ZWE), who both started out relatively poor, but &lt;em&gt;shrank&lt;/em&gt; in terms of GDP per capita, and fell even further behind the USA and JPN. I also threw South Korea (KOR) in there, as an example of a country that closed almost the entire gap with JPN from 1990 to 2014, although many other countries with a similar level of GDP per capita in 1990 did not.&lt;/p&gt;
+
+&lt;p&gt;A crude way of seeing how useful the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence result is comes from looking at the R-squared of the regression that was used to estimate &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;. It’s 0.0462. In other words, 95.38% of the variation in growth rates from 1990 to 2014 is &lt;em&gt;not&lt;/em&gt; explained by how poor a country was in 1990. Yes, there is evidence here for unconditional convergence &lt;em&gt;on average&lt;/em&gt;. But plenty of countries grew slower than necessary to converge to rich country levels of GDP per capita.&lt;/p&gt;
+
+&lt;p&gt;It is probably best not to think of unconditional &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence as representing some kind of structural truth about economic growth. If it were, you’d expect it to show up regardless of the exact time frame looked at, and PSS show that’s not the case. It’s better to think of it as a summary statistic of the general experience of poor countries in a given time frame. The PSS results tell us that &lt;em&gt;something&lt;/em&gt; changed around 1990 such that many poor countries grew faster than rich countries, relative to the period from 1960 to 1990. But it doesn’t tell us what or why it changed, or if it will persist.&lt;/p&gt;
+
+&lt;p&gt;That doesn’t make the PSS estimate spurious. It’s a nice descriptive result that tells us we should think a little more about what might have changed around those years, even if the implication of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence from that period is not that strong.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Nov 2018 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Involution and growth</title>
@@ -1019,90 +1127,6 @@
 
 </description>
         <pubDate>Wed, 28 Jun 2017 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Understanding the Cost Disease of Services</title>
-        <link>https://growthecon.com/blog/What-You-Spend/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/What-You-Spend/</guid>
-        <description>&lt;p&gt;As my internal clock is not on internet time, I’m only now getting up a post in reaction to the death of William Baumol, who has been a consistent reference on this blog over the years. My topic page on the &lt;a href=&quot;https://growthecon.com/blog/Productivity-Slowdown/&quot;&gt;productivity slowdown&lt;/a&gt; is in many ways an extended riff on his work.&lt;/p&gt;
-
-&lt;p&gt;I can share no personal stories about the man, as I never met him. What I can do is spend some time digging through what I consider the key paper of his most famous idea, the “cost disease of services”. I’d like to think that as an academic, he’d appreciate this as much as an anecdote.&lt;/p&gt;
-
-&lt;p&gt;Before we get started, Baumol was one of the handful of towering figures of economics who recently passed, along with Ken Arrow and Allan Meltzer. In response, I would like to suggest that someone move Robert Solow to a secure underground bunker, and encase him in bubble wrap, just in case.&lt;/p&gt;
-
-&lt;p&gt;Back to Baumol. The central paper is “&lt;a href=&quot;http://piketty.pse.ens.fr/files/Baumol1967.pdf&quot;&gt;Macroeconomics of Unbalanced Growth: The Anatomy of Urban Crisis&lt;/a&gt;”, published in 1967 in the American Economic Review. For me, this contains a handful of insights that allow you to understand much of the story of economic growth in the fifty years since it was published.&lt;/p&gt;
-
-&lt;p&gt;To start, Baumol divides economic activity up in the following way:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The basic source of differentiation resides in the role played by labor in the activity. In some cases labor is primarily an instrument - an incidental requisite for the attainment of the final product, while in other fields of endeavor, for all practical purposes the labor is itself the end product.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;For the first case, labor as an instrument, you can read “manufactured goods”. He uses the example of an air conditioner. Just by looking at the A/C unit, or using it, there is no way for you to assess how much labor went into producing it. The labor is just incidental from your perspective as a consumer of the product.&lt;/p&gt;
-
-&lt;p&gt;Contrast that with the following:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;On the other hand there are a number of servics in which the labor is an end in itself, in which quality is judged directly in terms of amount of labor. Teaching is a clear-cut example … An even more extreme example is one I have offered in another context: live performance. A half hour horn qunitet calls for for the expenditure of 2 1/2 man hours in its performance, and any attempt to increase productivity here is likely to be viewed with concern by critics and audience alike.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Here, labor is the very essence of the product. If you go see the horn quintet, then you are buying the 1/2 of each of those players time. Likewise, for a class you are in many ways buying the teachers time. At a (nice) restaurant, you are often purchasing the time and attention of a waiter.&lt;/p&gt;
-
-&lt;p&gt;The first big conclusion, which is really an assumption of Baumol’s, is that labor productivity growth in the first kind of production (goods) is relatively fast, while labor productivity growth in the second kind (services) is relatively slow. This is just due to the nature of the work involved. For most services, you cannot do “more with less”. No one wants to see the 1/2 hour horn quintet played in only 12 minutes.&lt;/p&gt;
-
-&lt;p&gt;So where does the cost disease come in? The next crucial assumption Baumol makes is that labor costs (wages) in the two kinds of activities move together. To be clear, he doesn’t assume (or need to assume) that wages are identical in the two sectors, only that a wage increase in one sector puts upward pressure on wages in the other sector. This would be the case if labor was somewhat mobile between the two activities. Another way of saying this is that workers could work in either sector. (They may not be equally productive in both sectors, as in Alwyn Young’s recent paper, which raises the possibility that Baumol is wrong about relative productivity growth. Maybe go read &lt;a href=&quot;https://growthecon.com/blog/Roy/&quot;&gt;this post&lt;/a&gt; and his paper after you finish this one.).&lt;/p&gt;
-
-&lt;p&gt;And we’re done. Productivity growth in the goods sector raises the wage in that sector, but also raises the output of that sector. So the ratio of wage to output - a measure of the &lt;em&gt;cost&lt;/em&gt; of a unit of output - stays constant over time. Higher wages in the goods sector put pressure on wages in the service sector, so wages rise over time there. But (taking the exteme position) productivity is &lt;em&gt;not&lt;/em&gt; growing in services, and so &lt;em&gt;output&lt;/em&gt; is not growing. The ratio of wages to output in services - a measure of &lt;em&gt;costs&lt;/em&gt; - is thus rising over time. This is the “cost disease of services”.&lt;/p&gt;
-
-&lt;p&gt;The crucial elements are, again, the assumption that labor productivity growth is relatively slow in services, and the assumption that labor is mobile between sectors. Given this, the cost of services will rise over time.&lt;/p&gt;
-
-&lt;p&gt;For my money, the biggest insight Baumol had was to to notice the differential in how labor matters to production in goods and services. The subsequent logic is, by itself, not a major breakthrough. The Balassa/Samuelson effect - developed by those authors in articles published in 1964 - is the same idea. They distinguish between tradable and non-tradable goods, rather than goods and services per se, and they are thinking about a cross-sectional comparisons of countries, rather than one country over time, but the outcome is identical. Countries that are very productive in tradable goods will tend to have high aggregate price levels (an empirical regularity known as the “Penn Effect”), as that productivity drives up costs in their non-tradable sectors.&lt;/p&gt;
-
-&lt;p&gt;Here it is worth noting that labels matter. If you call this “cost disease”, it sounds like a problem. If you call this “the Penn Effect”, it means that rich countries have higher prices, and is just an empirical oddity. “Cost disease” sounds bad, but is a lot like dying in your 90’s from old age. It’s awful that you are dying, but let’s not overlook that you made it into your 90’s. Baumol’s cost disease is a result of incredible affluence.&lt;/p&gt;
-
-&lt;p&gt;The precise symptoms of the cost disease depend on further assumptions. Baumol traced out the possibilities in the rest of the paper. We have that the costs (and thus prices) of the service sector are rising relative to the goods sector.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;We may inquire what would happen if despite the change in their relative costs and prices the magnitude of the relative outputs of the two sectors were maintained … if the demand for the product in question (&lt;em&gt;services - DV&lt;/em&gt;) were sufficiently price inelastic or income elastic.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is the next essential insight, which is that demand for services is price inelastic and/or income elastic. What this means is that despite the rising costs, people continue to consume services, and may in fact &lt;em&gt;increase&lt;/em&gt; their expenditure on services as they get more expensive. Baumol traces out the implications of the demand for services on the aggregate economy. In the following quote, the “progressive sector” is the goods sector, with rising productivity, and the “nonprogressive sector” is services, with slow productivity growth. Italics are Baumol’s original.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If productivity per man hour rises cumulatively in one sector relative to its rate of growth elsewhere in the economy, while wages rise commensurately in all areas, then relative costs in the nonprogressive sectors must inevitably rise, &lt;em&gt;and these costs will rise cumulatively and without limit&lt;/em&gt;. … Thus, the very progress of the technologically progressive sectors inevitably adds to the costs of the technologically unchanging sectors of the economy, unless somehow the labor markets in these areas can be sealed off and wages held absolutely constant, a most unlikely possibility. We see then that costs in many sectors of the economy will rise relentlessly, and will do so for reasons that are for all practical purposes beyond the control of those involved. … If their relative outputs are maintained, an ever increasing proportion of the labor force must be channeled into these activities and the rate of growth of the economy must be slowed correspondingly.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I tried to summarize this in my own words three or four times, but I don’t think I did a better job than Baumol. Many posts on this blog have been about the realization of Baumol’s prediction regarding slowing productivity growth as we transition into the non-progressive sectors. I’ll just reiterate that the slowdown in aggregate growth implied by Baumol’s cost disease is driven by the nature of demand, not a technological limit.&lt;/p&gt;
-
-&lt;p&gt;Often people interalize the cost disease part of Baumol’s paper, without taking into consideration the second part regarding the effect of the demand for services. Scott Alexander has a recent post on &lt;a href=&quot;http://slatestarcodex.com/2017/02/09/considerations-on-cost-disease/&quot;&gt;cost disease&lt;/a&gt; from a few months ago that demonstrates this. Alexander’s post is not unique, it just happened to be the last thing in my reading list on this topic, and so I’m using it to illustrate a point.&lt;/p&gt;
-
-&lt;p&gt;It’s a (very) long post, but Alexander goes through education, health, and government services, effectively documenting the cost disease. He crystallizes this by asking the following kind of question. “Which would you prefer? Sending your child to a 2016 school? Or sending your child to a 1975 school, and getting a check for $5000 each year?”&lt;/p&gt;
-
-&lt;p&gt;He then does this with college; modern college, or your parent’s college plus 72,000 dollars? And then with health care; modern health care, or your parent’s health care (plus ACE inhibitors and some other now off-patent technologies) plus 8000 dollars each year?&lt;/p&gt;
-
-&lt;p&gt;Alexander’s implicit answer to all these questions is that you would choose the the second option; the older level of service plus the cash. Much of the post is spent explaining that the service offered today is of no better quality than the service offered a generation ago. And while I’d quibble with that broad conclusion, that’s not the point. Let’s stipulate that the quality of healthcare and education have not changed in a generation, which is like taking Baumol’s thought experiment as a precise statement about the world.&lt;/p&gt;
-
-&lt;p&gt;Here’s the question that Baumol implicitly asked himself. What do people spend all that extra money on?&lt;/p&gt;
-
-&lt;p&gt;They could use it towards a new car or a major appliance, both manufactured goods. Perhaps this is what Alexander has in mind; he never says what he thinks happens to the extra money.&lt;/p&gt;
-
-&lt;p&gt;But they might spend that extra five or eight thousand dollars to finally take a well-deserved vacation, meaning it is spent on tourism and hospitality services. Or they may well decide to spend that money sending their kids to a better (and more expensive?) school, or putting them in a full time daycare rather than part-time. Or in sending one of their kids to college who might not otherwise have gone. Perhaps the savings are used to send someone back to get a Master’s degree to get a promotion at work, or acquire a new certification that increases their wage.&lt;/p&gt;
-
-&lt;p&gt;And some of those savings might be spent on health services. Individuals may undertake procedures to permanently deal with chronic problems rather than only alleviating symptoms. Maybe the kids get full orthodontic treatment, rather than the partial work that only straightened one tooth. The savings Alexander proposes could be spent on seeing specialists to deal with persistent health issues, rather than relying on a GP.&lt;/p&gt;
-
-&lt;p&gt;From Baumol’s second insight, the demand for these kinds of services is &lt;em&gt;income elastic&lt;/em&gt; and &lt;em&gt;price inelastic&lt;/em&gt;. Which means that a huge part of the money people get back from Alexander’s thought experiment is plowed &lt;em&gt;right back into education and healthcare&lt;/em&gt;. What does that do? It shifts the demand curve out for healthcare and education. And then what happens? The price goes up, and the actual amount of new health care or education acquired is not that large. Moreover, there is no appreciable decline - and there may be an increase - in the share of total GDP accounted for by healthcare and education.&lt;/p&gt;
-
-&lt;p&gt;This is the same outcome Baumol described, even though for him the origin of this was a productivity increase in the goods sector. But the origin of the productivity increase is unimportant, what matters is the structure of demand for services. So long as our demand for services is income elastic and price inelastic, the share of healthcare and education in GDP are going to rise as we get more productive, no matter where that productivity improvement comes from.&lt;/p&gt;
-
-&lt;p&gt;This is not a claim that healthcare or education are efficiently run, by the way. I can list, off the top of my head, a good five or six university administrators that I would get rid of tomorrow without any noticable effect. We could spend the next week swapping stories of ridiculous medical bills for $20 band-aids and the like. But their high costs are not entirely due to deliberate inefficiency, and lowering these costs would not lower their share of GDP.&lt;/p&gt;
-
-&lt;p&gt;I think Alexander’s post is one example (of many) taking the “disease” part of “cost disease” too literally. Rising costs in education and healthcare do not always represent a pathology. In a lot of ways we are the victims of our own prosperity and preferences here. There is nothing about Baumol’s analysis that implies living standards are lower or welfare is impaired by the cost disease. Remember that the cost disease is a consequence of productivity improvements in the first place.&lt;/p&gt;
-
-&lt;p&gt;While “cost disease” may not have been the best choice of names, Baumol has to be credited with anticipating the path of economic growth and structural change in developed countries over the late 20th century. He did this without resorting to any math beyond what I could use in an intermediate college course, and in language accessible to anyone. If you’re interested in economic growth, it is well worth finding some time to sit down are read through his body of work.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 15 May 2017 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
