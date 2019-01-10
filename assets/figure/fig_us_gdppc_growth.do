@@ -1,1 +1,1 @@
- twoway (bar Dgdppc year, xtitle("Year") ytitle("Growth in real GDP p.c (as % of 2009 GDP p.c. growth)") ylabel(-1.5(.5)1.5, format(%7.1f)) xlabel(1950(10)2010 2016) ) (line Dgdppc_mean year, legend(off) ) 
+ twoway (bar Dgdppc year, xtitle("Year") ytitle("Growth in real GDP p.c (rel to 2000 GDP p.c. growth)") ylabel(-1.5(.5)1.5, format(%7.1f)) xlabel(1950(10)2010 2016) ) (line Dgdppc_mean year, legend(off) ) 
