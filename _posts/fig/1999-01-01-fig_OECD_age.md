@@ -6,7 +6,6 @@ img: /assets/figure/fig_OECD_age-thumb.png
 data: /assets/figure/fig_OECD_age.csv
 code: /assets/figure/fig_OECD_age.do
 codebook: /assets/figure/fig_OECD_age.txt
-tags: rich
 ---
 
 [Data](/assets/figure/fig_OECD_age.csv) [Code](/assets/figure/fig_OECD_age.do) [Codebook](/assets/figure/fig_OECD_age.txt)
