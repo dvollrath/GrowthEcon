@@ -5,7 +5,7 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Fri, 11 Jan 2019 11:55:21 -0600</pubDate>
+    <pubDate>Mon, 28 Jan 2019 10:07:59 -0600</pubDate>
     
       <item>
         <title>The deep roots of development - Part 2</title>
@@ -16,13 +16,13 @@
 &lt;h3 id=&quot;modern-living-standards&quot;&gt;Modern living standards&lt;/h3&gt;
 &lt;p&gt;The variance in measures like GDP per capita across countries today is well known. This variance is the source of the question “Why are some places rich and some places poor?”. To get some sense of this variation, here’s a density plot of log real GDP per capita across countries from Angus Maddison’s dataset.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/fig_dens_maddison.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/fig_dens_maddison.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The line from 2010 ranges from about 6 (&lt;img src=&quot;http://latex.codecogs.com/png.latex?400-ish real dollars) to 10 (\inline&quot;/&gt;22,000-ish real dollars), or a factor of about 55. That takes into account some extremes, but the 90th/10th ratio is around 22, and even the 75th/25th ratio is still around 4. That is the scope of what we are trying to explain. How is it that some places produce four, or twenty, or fifty times as much as others?&lt;/p&gt;
+&lt;p&gt;The line from 2010 ranges from about 6 (400-ish real dollars) to 10 (22,000-ish real dollars), or a factor of about 55. That takes into account some extremes, but the 90th/10th ratio is around 22, and even the 75th/25th ratio is still around 4. That is the scope of what we are trying to explain. How is it that some places produce four, or twenty, or fifty times as much as others?&lt;/p&gt;
 
 &lt;p&gt;If you look backward in time, say at 1913 or 1820, then you still see variance, but it is lower. In 1913 the distribution spans almost 3 log points (6 to 9), meaning a ratio of about 20 between top and bottom countries. The 90/10 ratio is about 6 in 1913. Going back to 1820, you still see variation, although the span is only about 1 log point (6 to 7), for a ratio of about 2.7, and a 90/10 ratio of about 3.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/fig_dens_maddison_lim.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/fig_dens_maddison_lim.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;One issue with the first figure is that it may be skewed a little by the fact that more and more countries are included as the year becomes more recent. The second figure here shows the same kind of plots using only the same 48 countries that appear in the 1820 data. What that does is lop off the bottom end of the distribution in 2010. The 48 countries that Maddison calculated GDP per capita for in 1820 are all somewhat well off in 2010, although not universally so.&lt;/p&gt;
 
@@ -30,7 +30,7 @@
 
 &lt;p&gt;What isn’t obvious from the figures is whether it was the &lt;em&gt;same&lt;/em&gt; countries leading, and the same countries lagging, at each point in time. It could well be that the leading countries in 1820 got overtaken by poor countries in 1820, who are now rich. But that doesn’t appear to be the case. Rather than look at the density plots, the next figure shows log GDP per capita in 2010 against log GDP per capita in 1820 for the 48 countries that have data in both years. There is a clear positive relationship, meaning that the countries at the top end of the distribution in 1820 were still around the top of the distribution in 2010.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/fig_comp_maddison.png&quot; alt=&quot;1820 versus 2010&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/fig_comp_maddison.png&quot; alt=&quot;1820 versus 2010&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I did not label these points with country names on purpose, because that way lies niggling arguments about specific cases, and for the time being that is not what I want to get into. Suffice it to say that there is evidence that leaders of 2010 were also likely to be leaders in 1820, although not universally.&lt;/p&gt;
 
@@ -47,13 +47,13 @@
 
 &lt;p&gt;We can look at some data to see that this is a bit more systematic, although don’t confuse this for any kind of causal claim, just an observation. Using data from &lt;a href=&quot;https://ideas.repec.org/a/oup/qjecon/v125y2010i4p1627-1682..html&quot;&gt;Putterman and Weil&lt;/a&gt;, I’ve created two plots. The first shows log GDP per capita in 2000 against the fraction of population in 2000 in a country that was descended from Europeans.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/fig_pw_europe.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/fig_pw_europe.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;There is a positive relationship, dominated by the two groups at the tails with either 0% or close to 100% European population, but there are a fair amount of countries lying in the middle, and you can see that the relationship is consistent across the whole range.&lt;/p&gt;
 
 &lt;p&gt;In contrast, next is the plot of log GDP per capita in 2000 against the fraction of population in a country that was descended for Sub-Saharan Africa. Here the relationship is negative, again dominated by countries in the tails, but with a consistent message through the middle of the figure.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/fig_pw_africa.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/fig_pw_africa.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;There is no way that, by chance, places with a high fraction of European descendants all happened to stumble onto the same package of institutions and technologies that stimulate sustained growth. Rather, this suggests that Europeans in general had, or developed, some institutions, technologies, or characteristics that were conducive to sustained growth. These features may have existed in some form or other back in 1500, which is how far back the migration data behind the figures goes, and Europeans just carted them around with them wherever they went. In that case, we’d want to look backwards in time to try and figure out what those characteristics were. On the other hand, it may be that the keys to sustained growth were not known in 1500, but that once some Europeans figured them out, it was easy to diffuse them amongst other Europeans. In that case, we still want to figure out what those charactersitcs were, but we’d also want to think about why diffusion was so easy amongst European populations (and so hard to other populations).&lt;/p&gt;
 
@@ -68,7 +68,7 @@
 
 &lt;p&gt;Let’s take an aside to talk about why those might (or might not) be relevant measures of living standards. What we know from other areas of the growth literature is that the urbanization rate is highly correlated with living standards. The causation here is not clear - do cities drive growth, or does growth drive cities? - but the relationship shows up consistently over time. What Remi Jedwab and I did in a &lt;a href=&quot;/assets/EEH_2015.pdf&quot;&gt;paper&lt;/a&gt; was to look back at this correlation in history.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/fig_jv_urbrates.png&quot; alt=&quot;Urbanization and development&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/fig_jv_urbrates.png&quot; alt=&quot;Urbanization and development&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The figure plots urbanization and log GDP per capita for three different years: 1500, 1950, and 2000. Yes, you should be wary of the 1500 relationship because of data issues, but a similar line is going to show up for 1700 or 1820 or 1850. The point is that the correlation is positive over a long span of history. In our paper we talk more about why the slope changed over time, and the baseline &lt;em&gt;level&lt;/em&gt; of urbanization rose across all countries, but for the purposes here we just want to see that urbanization and development are crudely correlated.&lt;/p&gt;
 
@@ -78,11 +78,11 @@
 
 &lt;p&gt;However, a more recent paper by &lt;a href=&quot;https://ideas.repec.org/a/aea/aejmac/v6y2014i3p1-28.html&quot;&gt;Chanda, Cook, and Putterman&lt;/a&gt; has revisited this result in light of &lt;em&gt;populations&lt;/em&gt;, as opposed to countries. These authors took the migration data from Putterman and Weil, and came up with the ancestry-adjusted measure of urbanization and density in each country in 1500. For example, in the original AJR data, the urbanization rate in Argentina in 1500 was essentially zero, and the population density was very low. But that reflects the populations that lived in Argentina in 1500. In the time from 1500 to today, Argentina was colonized and settled by the Spanish, and then received a major migration of Europeans like Italians. So the population in Argentina &lt;em&gt;today&lt;/em&gt; is descended from populations that had very &lt;em&gt;high&lt;/em&gt; urbanization and density in 1500.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/fig_ccp_urb.png&quot; alt=&quot;Adjusted relationship for urbanization&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/fig_ccp_urb.png&quot; alt=&quot;Adjusted relationship for urbanization&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;What CCP do is thus adjust each country’s urbanization and density in 1500 to account for this, and compare to the original AJR result. The figure here with the label “Panel A” is from their paper. On the left it shows the original AJR relationship of log GDP per capita in 1995 with the urbanization rate in 1500, and the negative slope - the reversal - is clear. But on the right, you have the CCP ancestry-adjusted measure of urbanization along the x-axis. This has a clear &lt;em&gt;positive&lt;/em&gt; slope. In other words, countries that contain a large number of people descended from places with high urbanization rates are still rich today. In that sense there was persistence in development over time.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/fig_ccp_dens.png&quot; alt=&quot;Adjusted relationship for density&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/fig_ccp_dens.png&quot; alt=&quot;Adjusted relationship for density&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can do the same adjustment with the density data, as in the figure with label “Panel B” from the CCP paper. Again, the AJR result is on the left, and the CCP result is on the right. And again, there is a clear flip from a negative relationship and reversal to a positive relationship and persistence. Countries today that have populations descended from dense places are relatively rich today.&lt;/p&gt;
 
