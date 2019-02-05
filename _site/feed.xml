@@ -5,7 +5,65 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Mon, 04 Feb 2019 10:52:41 -0600</pubDate>
+    <pubDate>Tue, 05 Feb 2019 16:27:58 -0600</pubDate>
+    
+      <item>
+        <title>The deep roots of development - Part 3</title>
+        <link>https://growthecon.com/blog/Deep-Roots-3/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Deep-Roots-3/</guid>
+        <description>&lt;p&gt;This is the third entry in the series on deep roots, and it concerns institutions. One of the earlier (and most widely-read) series on this blog was the “Skeptics Guide to Institutions” which had four entries: &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-1/&quot;&gt;one&lt;/a&gt;, &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-2/&quot;&gt;two&lt;/a&gt;, &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-3/&quot;&gt;three&lt;/a&gt;, and &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-4/&quot;&gt;four&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Those posts were particularly concerned with a critique of the cross-country empirical work on institutions that started around the mid-1990s as part of the cross-country growth regression literature, and was carried forward by the Acemoglu, Johnson, and Robinson study that used settler mortality as a source of exogenous variation in institutions. I don’t want to reinvent the wheel here, and those original posts are still a decent introduction to that set of papers. The TL;DR version of them is that I don’t find the empirical work convincing in establishing the proposition that institutions are &lt;em&gt;the&lt;/em&gt; fundamental determinant of comparative development. The main criticisms were as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The scales of institutional quality (e.g. “protection against expropriation” or “constraints on executives”) are used improperly in regressions. Treating these scales, which might run from 1 (worst) to 7 (best), as a continuous variable implies that the differences in institutions which exist can in fact be measured. That is, it implies that Liberia’s institutions (a 2) are better than Cuba’s (a 1) in &lt;em&gt;exactly&lt;/em&gt; the same way that Australia’s (a 7) are better than South Korea’s (a 6). There’s no way that is true. Better to use sets of dummies for each group.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In many cases institutional scales are just functioning as regional dummies. If you code a measure of institutional quality for European countries in 1750, and get that the Netherlands and England have a “3”, while Spain and Portugal have a “1”, and use this in a regression, then you may as well be using an indicator for “gray winters” versus “sunny winters”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Instrumenting for the quality of institutions in colonies using the mortality rates of European settlers doesn’t satisfy the condition that the instrument (settler mortality) have an effect on living standards &lt;em&gt;only&lt;/em&gt; through its affect on institutions. First, the measures of institutions are picking up far more than the specifics of constraints on the executive and the like, and second, settler mortality is like a summary statistic for biological/geographic conditions, which almost certainly have other routes to influence living standards.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Hence I don’t spend a lot of time in class going through the body of literature on these cross-country institutional studies. Nevertheless, I do spend time talking a lot about institutions.&lt;/p&gt;
+
+&lt;p&gt;Fair warning that I didn’t proofread this carefully, so apologies for the typos that probably exist.&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-the-question&quot;&gt;What’s the question?&lt;/h3&gt;
+&lt;p&gt;A key point in studying institutions, from my perspective, is being clear on what question we’re actually trying to answer. If the question is “Do institutions matter?”, then I think the answer is “Yes”, but that this answer is trivial. &lt;em&gt;Of course&lt;/em&gt; they matter. I don’t know that you can call yourself a social scientist and not believe that institutions, writ large, matter for economic outcomes. Markets (distorted or not) are institutions, and so even if you have some hardcore belief that you only want to study the &lt;em&gt;economics&lt;/em&gt; of something, you &lt;em&gt;still&lt;/em&gt; implicitly think that institutions matter. So the literature isn’t about convincing us that institutions are worth studying. They are.&lt;/p&gt;
+
+&lt;p&gt;The second kind of question is “Are institutions responsible for sustained growth and/or comparative development?” That’s a much meatier question, and there isn’t an obvious answer here, meaning it is open for study. The original cross-country literature had this as it’s main question, with one important modification. The question was usually a form of “Are institutions &lt;em&gt;solely&lt;/em&gt; responsible for sustained growth and/or comparative development?”, and the implied answer had to be Yes/No. That put too high of stakes on everything, as if there was some kind of Highlander-like cosmic battle going on amongst competing explanations and &lt;em&gt;there could be only one&lt;/em&gt;. One, there is no plausible way to pick one of those answers (although you would bet on “No”) using data, which would always involve uncertainty. Two, if you wanted to make this argument theoretically, then you can make the answer “Yes” just by redefining institutions until you have a nebulous enough concept to make it true by definition.&lt;/p&gt;
+
+&lt;p&gt;The less severe “Are institutions responsible for sustained growth and/or comparative development?” is plausible as a question, but again runs into the issue that we probably won’t be able to find enough data across a wide enough range of economies to really make any definitive conclusions. Which means that this question is something that will probably always be best addressed in a more speculative fashion by someone who is synthesizing lots of existing findings, rather than being pinned down by any specific regression.&lt;/p&gt;
+
+&lt;p&gt;But most of the papers in this literature do have specific regressions in them. What are they asking? I’d say it is something along the lines of “What were the observable effects of institution X?”. This is a much more modest question, of course. Once you answer it, you will not know whether institutions are the root cause of comparative development or not. But you will have a clear idea of the effects of institution X, and that may be an input into the synthesizing that you or someone else does later on.&lt;/p&gt;
+
+&lt;p&gt;This is the current state of the literature on institutions, from my perspective. In retreating a little on the scope of the question, we’ve been able to get a wave of very nice papers on specific institutions and their influence on economic outcomes over time. That’s the literature I focus on in the class.&lt;/p&gt;
+
+&lt;h3 id=&quot;variation-in-institutions&quot;&gt;Variation in institutions&lt;/h3&gt;
+&lt;p&gt;One of the features of this latest literature is the care it (usually) takes with identifying causal effects, motivated by the general evolution of economics in the last few decades. In the case of institutions, however, this has meant that nearly &lt;em&gt;all&lt;/em&gt; of the work now ends up studying consequences of a broader historical event, colonization.&lt;/p&gt;
+
+&lt;p&gt;The reason for this involves an implicit assumption about institutions themselves. If you think that institutions are themselves a reaction to existing conditions (geographic, economic, political, etc..), and evolve to solve very specific problems, then there is essentially no way to evaluate the effect of institutions across any two units of observation. You could call this the “Ostrom problem” after &lt;a href=&quot;https://en.wikipedia.org/wiki/Elinor_Ostrom&quot;&gt;Elinor Ostrom&lt;/a&gt;, who noted across a long career that local institutions to manage common pool resources (almost?) always had a clear rationale and were able to prevent environmental overuse.&lt;/p&gt;
+
+&lt;p&gt;Why does this create an empirical problem? Let’s assume that I’m trying to compare several different societies (or countries, or villages, or whatever) with some difference in observable institutions. Even if I control for other observable characteristics (e.g. environmental or whatever) the the Ostrom problem is that the differences in observable institutions are, almost by definition, related to some other unobservable characteristics. In short, the Ostrom problem is that differences in institutions can never be thought of as random.&lt;/p&gt;
+
+&lt;p&gt;Which brings us back to colonization. Most current work on institutions uses an aspect of colonization to find variation in institutions, because it might be plausible to argue that these institutions were imposed from outside, and not related to unobservables. In certain situations, you might even be able to argue that the institutional differences were the result of random chance.&lt;/p&gt;
+
+&lt;p&gt;A good example here is the paper by &lt;a href=&quot;https://ideas.repec.org/a/tpr/restat/v92y2010i4p693-713.html&quot;&gt;Lakshmi Iyer&lt;/a&gt; on the effects of direct versus indirect British rule in India. There, she argues that there was plausibly random variation in direct/indirect rule due to death of local rulers without heirs. For a specific time period, if there was such a lapse, the British took control directly, while in areas where an heir existed they took control and rule remained indirect. With this kind of quasi-random variation in institutions, she can do a well-defined empirical comparison, and finds that directly ruled areas have fewer public goods (e.g. schools, clinics, roads), even today, than indirectly ruled places.&lt;/p&gt;
+
+&lt;p&gt;This only works because there was a colonizer that had a level of control of the institutional structure, and thus the organic local institutions (which may have used adopted heirs or some other means of choosing a successor) were shut down. This same kind of logic is at work in most of the other institutional papers that have come out recently. By leveraging a colonizers power over a given colony, we can see some kind of clear exogenous variation in institutional structure that otherwise would be correlated with unobservables.&lt;/p&gt;
+
+&lt;h3 id=&quot;institutions-and-historical-persistence&quot;&gt;Institutions and historical persistence&lt;/h3&gt;
+&lt;p&gt;I talked about this in my original Skeptics Guides, but once we’re looking at the literature on effects of specific (often colonial) institutions, we’re talking much more about historical persistence than institutions &lt;em&gt;per se&lt;/em&gt;. That is, a common goal in these papers is to establish that there are &lt;em&gt;current&lt;/em&gt; differences in living standards associated with some &lt;em&gt;historical&lt;/em&gt; differences in institutions. That’s the purpose of Dell’s paper on the mining &lt;em&gt;mita&lt;/em&gt;, and the purpose of Iyer’s paper on British rule in India.&lt;/p&gt;
+
+&lt;p&gt;The institutions that they study no longer exist, of course. So the finding that the &lt;em&gt;mita&lt;/em&gt; or British direct rule had negative effects on living standards is not a statement about the direct effects of &lt;em&gt;those&lt;/em&gt; institutions on contemporaneous populations. Instead, these papers establish that while once those institutions had &lt;em&gt;some&lt;/em&gt; negative effect on the affected economies - although this is usually some kind of black box - these areas remained behind even after the institution itself was removed. These papers are evidence that there is some path dependence in development, and if you push down a place far enough, it won’t be able to catch up again. Note that this runs counter to our standard stories of growth and development, where negative shocks have temporary effects and forces of accumulation, catch-up, and/or convergence bring the economy back to normal.&lt;/p&gt;
+
+&lt;p&gt;In the sense that institutions like the &lt;em&gt;mita&lt;/em&gt; or British rule can push an area below the threshold beyond which they cannot recover, then institutions matter for development for sure. And the evidence seems to keep accumulating that institutions of various kinds have these kinds of effects. The broader conclusion is thresholds exist, and that in turn means history matters for development in a powerful way. This gives us another reason for looking backwards for the sources of comparative development. Moreover, while the institutions literature was crucial in establishing that thresholds exist, that doesn’t limit us to thinking only of institutional reasons for falling behind. Anything, including geography or culture, could be a reason for falling below a threshold. It’s not institutions OR geography OR culture. It’s institutions AND geography AND culture.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Feb 2019 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>The deep roots of development - Part 2</title>
@@ -1077,121 +1135,6 @@
 &lt;p&gt;If you read this far, thanks. It was a self-indulgent brain dump from someone with exactly zero problems right now. I should be outside finding a better way to help than generating a blog post. If you have a mind to help, one charity that my wife has been involved with, and does a great job locally, is the &lt;a href=&quot;http://www.houstonfoodbank.org&quot;&gt;Houston Food Bank&lt;/a&gt;. Go there, give them money. Let them feed people.&lt;/p&gt;
 </description>
         <pubDate>Thu, 31 Aug 2017 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Rising Markups and Falling Productivity</title>
-        <link>https://growthecon.com/blog/DE-Markups/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/DE-Markups/</guid>
-        <description>&lt;p&gt;In between checking weather updates here in Houston, I finally got around to reading the new working paper by Jan De Loecker and Jan Eeckhout (DE), on “&lt;a href=&quot;http://www.janeeckhout.com/wp-content/uploads/RMP.pdf&quot;&gt;The Rise of Market Power and the Macroeconomic Implications&lt;/a&gt;”. The authors find that the markup of price over marginal cost charged by public US firms has been rising steadily since 1960, and in particular after 1980. It has generated a lot of commentary already, as in this &lt;a href=&quot;http://noahpinionblog.blogspot.com&quot;&gt;post&lt;/a&gt; by Noah Smith, this &lt;a href=&quot;https://niskanencenter.org/blog/markups-market-power/&quot;&gt;post&lt;/a&gt; by Karl Smith, and &lt;a href=&quot;http://marginalrevolution.com/marginalrevolution/2017/08/rise-market-power.html&quot;&gt;this&lt;/a&gt; from Tyler Cowen. A lot of the discussion so far has been about how to interpret their results, and whether it indicates a rise in “market power”, and that devolved somewhat into a discussion of how to define “market power” in the first place.&lt;/p&gt;
-
-&lt;p&gt;I want to jump in with some of my own thoughts on the paper, but I’m going to avoid getting into this “market power” interpretation thing. I’m more interested in what DE’s results have to say about the productivity slowdown. Let’s start with how DE get these numbers in the first place.&lt;/p&gt;
-
-&lt;h2 id=&quot;estimating-markups&quot;&gt;Estimating markups&lt;/h2&gt;
-
-&lt;p&gt;Here’s the thing; you can’t observe these markups. While the price of a specific good might be knowable, the marginal cost of that good is not. The average cost of producing that good - total costs divided by number of goods sold - is not the same thing as the marginal cost. I’d be willing to bet that a lot of firms would be hard-pressed themselves to tell you the marginal cost of an additional good. And that doesn’t even get into the issue with multi-product firms, where their aggregated financials cannot tell you about the specific prices and costs associated with specific products.&lt;/p&gt;
-
-&lt;p&gt;So when DE are talking about estimating markups, they are extracting the markup of a firms “price” over the firms “marginal cost”, where the price is some agglomeration of the prices of their various products, and the cost is some agglomeration of the cost of their various inputs. That’s not a knock on the approach, but it should be kept in mind.&lt;/p&gt;
-
-&lt;p&gt;How do you extract this markup if you don’t have the exact costs, or even prices? DE assume that firms are cost-minimizers, a less forceful assumption than strict profit maximization. Whether firms are pricing their goods to maximize profits or not is immaterial to DE, but they assume that firms are trying to produce their goods or services using the lowest-cost combination of inputs.&lt;/p&gt;
-
-&lt;p&gt;You can see the logic involved in the firm’s decision pretty easily. If a firm’s markup is the price relative to marginal cost, then for the marginal good it produces, it should be that&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;Rev = Markup \times MC \times Inputs&lt;/script&gt;
-
-&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?Rev\inline&quot;/&gt; is the revenue from that marginal good, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Markup\inline&quot;/&gt; is the … markup, &lt;img src=&quot;http://latex.codecogs.com/png.latex?MC\inline&quot;/&gt; is the cost of an additional bundle of inputs, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?Inputs\inline&quot;/&gt; are the bundles of inputs it takes to produce that marginal good. Simply rearrange this to&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;Markup = \frac{Rev}{MC \times Inputs}&lt;/script&gt;
-
-&lt;p&gt;and you’ve got it. DE have data on firm-level revenues, and they have data on firm-level costs for inputs. There is an extra step, which is that this kind of condition should hold for each separate input (i.e. labor and capital) as opposed to “Inputs” the way I’ve described it. All this does is insert a parameter into this expression that weights revenues by how important that specific input is to production. If we were working with labor, for instance, we might say that the revenue &lt;em&gt;attributable to labor&lt;/em&gt; is only 60% of total revenues, and so divide 0.6 times revenues by the cost of labor to arrive at the markup. For the purposes of this post, though, I think you can easily stick with the idea that markups are obtained from ratios of revenues to costs.&lt;/p&gt;
-
-&lt;p&gt;DE do this for all the public firms they have data for, for all the years running from 1960 to recently. The figure below is the central result, which is that markups rose steadily from 1960’s - when they were about 1.18 on average - to today, when they are about 1.67 on average.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/DE_2017_Fig1.png&quot; alt=&quot;Evolution of Markups&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is one of those papers where it shocks you that no one has done this before. This paper takes some relatively off-the-shelf techniques, and uses them to generate an incredibly interesting set of estimates. Granted, the authors are some of the people who put those techniques up on the shelf in the first place, but the innovation in this paper is the application to the long panel of US public firms, not the techniques. The results in this figure are what have generated a lot of commentary.&lt;/p&gt;
-
-&lt;p&gt;Let’s start with the big empirical caveats. If you want to disbelieve DE’s results, then you’d have to think hard about the effect of these:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;The sample is only public firms. Probably the biggest question mark. The average markup charged by &lt;em&gt;all&lt;/em&gt; firms in the economy may not have changed much over time, but if there was a distinct change in the choice to either go public, or stay public, starting around 1980, and that change was related to markup sizes, then this could just be sample selection. For example, you could argue that as investors became laser-focused on quarterly earnings, this meant that the only firms willing to go public or stay public were those with large markups that could generate the expected earnings growth. All the low markup firms are private, and so don’t show up in the DE dataset.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Industry production functions are assumed to be identical for all firms and over time. I mentioned above that DE actually use specific inputs in the calculation, and for that they need these weights (like the 60% for labor I mentioned). To get those, they estimate production functions for each industry using their data. And that estimation assumes that the weights are identical for all firms in an industry (i.e. American and United each have a weight of 44% on labor) and over time (i.e. United’s weight on labor is 44% every year from 1960 forward). DE have an appendix where they relax this assumption, and show that the growth in markups over time (but not their level) is unchanged, so this is unlikely to be driving the results.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Cost minimization may not hold. This doesn’t seem like a strong assumption, and it is certainly weaker than assuming full profit maximization. But it &lt;em&gt;is&lt;/em&gt; an assumption. If the firms in the DE dataset are not operating to minimize costs (perhaps they just care about maximizing market share or executive compensation?) then the first order condition DE use would be picking up something other than the true markup. I don’t have a great sense of how the bias would work here, or a great sense of whether this could be a big or a small problem. But it could be a problem.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If you are willing to take the DE results as indicative of what is happening in the US as a whole, then the second half of their paper is for you. Here, they break down several secular trends in the economy (e.g. declining labor shares, declining productivity growth) and show how the rise in markups can account for them. As the association of markups with productivity is something I’ve been banging around on for a few years - you could start with this &lt;a href=&quot;https://growthecon.com/blog/Cake/&quot;&gt;post&lt;/a&gt; and work backwards - let me focus on that.&lt;/p&gt;
-
-&lt;h2 id=&quot;productivity-accounting&quot;&gt;Productivity Accounting&lt;/h2&gt;
-
-&lt;p&gt;The presence of markups - and changes in markups - have implications for measured productivity growth. And DE corroborate that, while offering the data to be more precise about the effects. But they do it using a slightly different line of attack than I have in the past, so let me digress for a moment to try and link this all together.&lt;/p&gt;
-
-&lt;p&gt;There are two ways we could describe aggregate output. The first is using a production function, like&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y = T X&lt;/script&gt;
-
-&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?T\inline&quot;/&gt; is &lt;em&gt;technology&lt;/em&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?X\inline&quot;/&gt; is an index of &lt;em&gt;inputs&lt;/em&gt;. Technology, T, is the for-realisies measure of how good we are at transforming inputs into useful output. It is what we really would like to measure. Based on this production function, we could back out technology as&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;T = \frac{Y}{X}.&lt;/script&gt;
-
-&lt;p&gt;Leave that aside for the moment, we’ll come back to it.&lt;/p&gt;
-
-&lt;p&gt;We can also describe aggregate output using incomes, meaning we can write&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y = \Pi + wX&lt;/script&gt;
-
-&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?\Pi\inline&quot;/&gt; are economic profits, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?w\inline&quot;/&gt; is the “wage” of inputs. For those wages, think of something like a weighted average of actual wages (to labor) and payments to capital and/or natural resource.&lt;/p&gt;
-
-&lt;p&gt;What are profits? Well, let’s assume that there is a markup, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu\inline&quot;/&gt;, which recall measures the ratio of price to marginal cost. If &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu = 1.5\inline&quot;/&gt;, then firms are charging 50% over cost. So profits are equal to 50% of costs. Another way of saying this is that profits are &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mu - 1\inline&quot;/&gt; times costs,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y = (\mu - 1)wX + wX = \mu w X&lt;/script&gt;
-
-&lt;p&gt;or total output can be expressed as the markup times the wage times the inputs used. We’re still the world of pure accounting, by the way. No behavioral assumptions have been made.&lt;/p&gt;
-
-&lt;p&gt;Now, go back and compare the original production function version of output, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y = T X\inline&quot;/&gt;, to this markup version, &lt;img src=&quot;http://latex.codecogs.com/png.latex?Y = \mu w X\inline&quot;/&gt;. From these, it shows us that we could write&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;T = \mu w.&lt;/script&gt;
-
-&lt;p&gt;Or technology is equivalent to the markup times the wage. I like to think of this expression this way: technology (or an increase in technology) can be used for one of two things (a) raising the markup or (b) raising the wage paid to inputs. One quibble with DE is that they say something along the line of “if markups go up, this raises technology”, which should more accurately be phrased “if markups go up, this implies that tecnology was higher”, which eliminates the implicit causal statement.&lt;/p&gt;
-
-&lt;p&gt;So we’ve got two ways of backing out technology, T, from the data. Either use &lt;img src=&quot;http://latex.codecogs.com/png.latex?T = Y/X\inline&quot;/&gt;, or use &lt;img src=&quot;http://latex.codecogs.com/png.latex?T = \mu w\inline&quot;/&gt;. In terms of growth rates, the first says that the growth rate of technology (using little hats to denote growth rates) is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{T} = \hat{Y} - \hat{X}\inline&quot;/&gt;, and the second says that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{T} = \hat{\mu} + \hat{w}\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;That’s great, but when we go to the data is it quite plausible that we make mistakes. That is, we go to the data and calculate residual &lt;em&gt;productivity&lt;/em&gt;, P. And unless we are exactly right about how the world works, our measure of P may not be equal to T. Here’s what I mean. Take the production function version of things, which I’ve talked about a lot before.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{P} = \hat{Y} - \hat{X}^{wrong} = \hat{Y} - \hat{X} + (\hat{X} - \hat{X}^{wrong}) = \hat{T} + (\hat{X} - \hat{X}^{wrong})&lt;/script&gt;
-
-&lt;p&gt;The growth rate of productivity is the growth rate of output minus the growth rate of &lt;em&gt;a possibly mismeasured index of input use&lt;/em&gt;. This mismeasurement may be because we really don’t know how to count units of capital or human capital correctly, or because we are weighting those counts incorrectly. The point I’ve made in a few posts in the past is that by ignoring markups, you could may be making a weighting mistake, and this would lead to &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{X}^{wrong} &amp;gt; \hat{X}\inline&quot;/&gt;, so productivity growth understates technological growth.&lt;/p&gt;
-
-&lt;p&gt;If you instead were going to try and measure productivity growth using the real wage, then you could get something like&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{P} = \hat{\mu}^{wrong} + \hat{w} = (\hat{\mu}^{wrong} - \hat{\mu}) + \hat{\mu} +  \hat{w} = \hat{T} + (\hat{\mu}^{wrong} - \hat{\mu})&lt;/script&gt;
-
-&lt;p&gt;where you might be making an error about how fast markups are growing. If you do, and in particular if you assume &lt;img src=&quot;http://latex.codecogs.com/png.latex?\hat{\mu}^{wrong} &amp;lt; \hat{\mu}\inline&quot;/&gt;, which you might do if you assumed markups were unchanging over time, then your productivity growth term understates technological growth.&lt;/p&gt;
-
-&lt;p&gt;And this is what DE essentially do in the very last part of the paper. They say that by falsely assuming markups are constant, productivity growth measured using changes in real wages is understating true technological growth. When they make an adjustment to allow for the real growth in markups they observe, they find that true technological growth was around 3-4% per year over the last few year, as opposed to almost 0% growth in measured productivity.&lt;/p&gt;
-
-&lt;p&gt;This is a massive difference, and suggests that (a) technological progress is clipping along very nicely, thank you, and (b) that almost all of the gains from this are being leveraged into higher markups rather than higher real wages to inputs like labor. Entirely consistent with stories of increased market power and concentration.&lt;/p&gt;
-
-&lt;p&gt;There isn’t a glaring issue with the analysis that DE do here, but they could go further with it. The papers that establish the discrepancies between growth in productivity, P, and technology, T, point out that much of the problem stems from trying to do this at the aggregate level alone. If you had individual firm-level (or plant-level) data on technological growth, then you could add those up directly (suitably weighted by their size), to arrive at &lt;img src=&quot;http://latex.codecogs.com/png.latex?T\inline&quot;/&gt; directly. No need to back it out from aggregate information on inputs used, or wages.&lt;/p&gt;
-
-&lt;p&gt;And DE have all the data to do this. When they estimate the production functions that allow them to recover the markups, they also recover an estimate of technology for each firm. It would be straightforward to find technological growth from the “bottom-up”, and compare it to what we get using aggregate methods. This would give us (a) a true(r) measure of technological growth and (b) help identify what precisely we are doing wrong with the aggregate measures of productivity growth. I’ll let DE add that to the near-infinite list of things that people have suggested they do with this data.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-are-markups-higher&quot;&gt;Why are markups higher?&lt;/h2&gt;
-
-&lt;p&gt;From the perspective of productivity, and for most of the other secular trends DE talk about, the &lt;em&gt;source&lt;/em&gt; of the markup is irrelevant. Arguing about whether markups represent market power or not, or whether monopolistic competition is equivalent to market power, adds nothing to the discussion of the implications. They would matter if we were talking about how to change markups. But at this stage DE are simply documenting the growth in markups and showing that these can be associated with a number of phenomena.&lt;/p&gt;
-
-&lt;p&gt;As much of the discussion about the markups has circled around market power, let me point out two additional possible sources of markups, and growth in markups. First, scale. If there are increasing returns to scale, then the markup will be above one. Think of a firm with big fixed costs. They have to charge above marginal cost in order to recover those fixed costs. You could imagine that what has changed over time is that the firms in the DE dataset invested in some fixed costs that gave them increasing returns to scale, and the markups are covering those costs. The problem with this explanation is that you wouldn’t expect labor’s and capital’s share of output to be declining over time in this case, which they are. So perhaps it doesn’t matter much.&lt;/p&gt;
-
-&lt;p&gt;Second, it could be us. That is, the markup could be rising because consumers are getting more particular about their bundle of purchases. Whether these firms are true monopolists, or involved in monopolistic competition, or compete in some kind of strategic game with one another, the more inelastic our demand gets for their product, the bigger the markups they can charge. I think of this as a caveat of structural change. As our basic material needs get met more easily over time, we get pickier about the goods and services we consume, making our demand more inelastic. This could explain some of the rise in markups.&lt;/p&gt;
-
-&lt;p&gt;If you take seriously the DE findings, then decomposing this rise in markups into different sources is the natural next step. The other step is to find ways to confirm that this rise in markups is robust to non-public, and possibly non-US, firms. Tracking similar changes across countries would help eliminate or confirm some explanations (US-specific anti-trust policies). Nevertheless, I found the DE paper an intriguing (and very large) step forwards.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 26 Aug 2017 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
