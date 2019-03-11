@@ -1,0 +1,1 @@
+ twoway line share_VA year if code=="C" || line share_VA year if code=="Q" || line share_VA year if code=="M-N" || line share_VA year if code=="J", legend(label(1 "Manufacturing") label(2 "Health and social") label(3 "Prof. services") label(4 "Info. and comm.")) xtitle("Year") ytitle("Share of value added") xlabel(1970(5)2015) ylabel(0(.05).25, format(%9.2f)) 

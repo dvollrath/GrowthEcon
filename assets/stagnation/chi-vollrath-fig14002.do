@@ -1,0 +1,1 @@
+ twoway scatter growth alec_rank, xtitle("ALEC rank (1=best, 50=worst), 2012") ytitle("Average growth rate of GDP (%), 2012-2016") msymbol(none) mlabel(state) mlabposition(0) xlabel(1 10(10) 50) ylabel(-4(1)3, format(%9.1f)) 

@@ -1,0 +1,1 @@
+ twoway bar movers year || scatter move_rate year, connect(line) yaxis(2) xtitle("Year") ytitle("Percent of people who moved", axis(2)) ytitle("Number of movers (mil)") xlabel(1950(10)2010 2016) ylabel(0(5)20, axis(2)) 

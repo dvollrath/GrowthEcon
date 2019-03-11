@@ -1,0 +1,56 @@
+---
+layout: page
+title: Fully Grown
+permalink: /fully/
+---
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Fully Grown</h1>
+          <p>Why the growth slowdown is a sign of success</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="section-title">
+          </div>
+          <h3>
+          Data and Code
+          </h3>
+          <p> You can replicate everything in the book using the code and data in the <a href="https://github.com/dvollrath/FullyGrown">Github</a> repository for this project. There is nothing super technical about that - you can easily download everything in a convenient zip file to use on your own computer. The advantage of Github is that the link will always point to the latest version of my code if I fix anything.
+
+          All the figures and tables in the book were created using publicly available data, in many cases downloaded directly from <a href="https://fred.stlouisfed.org">FRED</a>. Other data was pulled by me from various places on the web, and the sources are documented as part of the code you can download.
+          
+          </p>
+          <h3>
+          Figures
+          </h3>
+          <p>The links to each individual figure from the book below will give you the figure in PNG format, as well as a CSV file of the raw data contained in the figure, and a snippet of Stata code used to produce the figure. If you want to see the data source and any processing I did to the data, you'll need to take a look at the code/data files linked to above. </p>
+          <p>  
+            <ul>
+              {% for post in site.categories.stagnation reversed %}
+                {% if post.url %}
+                    <li>
+                     <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        {{ post.title }}
+                      </a>
+                    </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </p>
+       </div>
+      </div><!-- .col-md-7 close -->
+    </div>
+  </div>
+</section>

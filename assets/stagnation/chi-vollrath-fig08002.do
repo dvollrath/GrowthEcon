@@ -1,0 +1,1 @@
+ twoway line share_pce_services year || line share_pce_durables year || line share_pce_nondurables year , xlabel(1950(10)2010 2017) ylabel(0(0.1)0.8,format(%9.1f)) ytitle("Share of total personal expenditures") xtitle("Year") legend(cols(1) colfirst textfirst) 

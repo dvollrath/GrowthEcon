@@ -1,0 +1,1 @@
+ twoway rarea consumption government year || rarea government investment year || rarea investment exports year || rarea exports low year, legend(label(1 "Consumption purchases") label(2 "Government purchases") label(3 "Capital purchases") label(4 "Foreign purchases")) xlabel(1950(10)2010 2016) xtitle("Year") ytitle("Purchases per capita (1950=100)") 
