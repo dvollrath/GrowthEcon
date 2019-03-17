@@ -5,7 +5,83 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Mon, 11 Mar 2019 12:54:46 -0400</pubDate>
+    <pubDate>Sun, 17 Mar 2019 17:13:05 -0500</pubDate>
+    
+      <item>
+        <title>The deep roots of development - Part 4</title>
+        <link>https://growthecon.com/blog/Deep-Roots-4/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Deep-Roots-4/</guid>
+        <description>&lt;p&gt;Congratulations to all of you who guessed that I would fall behind in writing up these deep roots posts. I was able to get my notes together enough to cover material on culture during my class, but only now finally got around to writing this up as a post. This line of research is relatively new to me, so I’m going to apologize ahead of time for what is probably a less coherent take on the state of things than I’d like.&lt;/p&gt;
+
+&lt;p&gt;Guiso, Sapienza, and Zingales have a very nice &lt;a href=&quot;https://ideas.repec.org/a/aea/jecper/v20y2006i2p23-48.html&quot;&gt;paper&lt;/a&gt; on the relationship of culture and economic outcomes, although it is now over a decade old and thus missing out on some of the latest work in this area. Nevertheless, it gives a good idea of what we’re talking about here.&lt;/p&gt;
+
+&lt;p&gt;The aspect of culture most used by GSZ is trust, meaning generally a willingness to trust strangers (non-kin). I’m going to leave aside any question of causality of trust on economic outcomes for the moment, but for now let’s just note that the evidence shows this aspect of culture varies a lot across populations. Using data on immigrants to the US (thus holding constant the institutional and economic setting to some extent) they show that people self-report being willing to trust others.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/Guiso_etal_2006_fig2.png&quot; alt=&quot;Trust&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What you can see are big differences, with those of Japanese and Scandanavian descent reporting much more trust, and those from South Asia, the Carribean, or Africa reporting much less. The fact that this varies so much is alone quite interesting, as it indicates substantial variation in something you might have guessed only varied across individuals, but not systematically across populations.&lt;/p&gt;
+
+&lt;p&gt;Moreover, eye-balling this figure you get a quick sense of why people latched onto culture as an explanation for economic outcomes. The level of reported trust almost looks like it was rank-ordered by the average GDP per capita of the origin countries of different ethnic groups. China is probably an outlier, but in general we see relatively rich places with high levels of trust.&lt;/p&gt;
+
+&lt;p&gt;In a nutshell, that is the kind of fact motivating this literature on culture and development. The idea is that there are certain cultural attitudes, or preferences, or norms, or what have you, that foster economic exchange, or innovation, or accumulation. Therefore development could be driven, in part, by having a specific culture that promotes those three things.&lt;/p&gt;
+
+&lt;p&gt;This sounds a lot like the argument about institutions, that some foster exchange, innovation, or accumulation more than others. And just like institutions, there is a definitional problem. What exactly counts as “culture”? For my own purposes, and for the purposes of this post, I tend to think of it in the following way. Economic development involves a series of constrained optimization problems, which implies a set of preferences and a set of constraints. Things like geography (for sure) and institutions (kind of) set the constraints. Culture (kind of) is related to the preferences.&lt;/p&gt;
+
+&lt;h3 id=&quot;preference-measures&quot;&gt;Preference measures&lt;/h3&gt;
+&lt;p&gt;We can look more carefully at people’s preferences along a variety of dimensions. One prime example of this is a recent paper on global preferences by &lt;a href=&quot;https://academic.oup.com/qje/article/133/4/1645/5025666&quot;&gt;Falk, Becker, Dohman, Enke, Huffman, and Sunde&lt;/a&gt;, which includes a fantastic &lt;a href=&quot;https://www.briq-institute.org/global-preferences/about&quot;&gt;site&lt;/a&gt; where you can download and use their data. FBDEHS worked with Gallup to run survey questions on preferences around the world, on a comparable basis, recovering about 80,000 individual responses in 76 countries.&lt;/p&gt;
+
+&lt;p&gt;They group the preferences into six types: patience, risk-taking, positive reciprocity, negative reciprocity, altruism, and trust. They use several questions to measure each of the six, and then combine the answers to those questions to get a single index of each one. A person’s risk-taking score, for example, depends on both a self-assessment as well as a value elicited from a standard set of questions asking that ask people to choose between a certain amount of money (e.g. &lt;img src=&quot;http://latex.codecogs.com/png.latex?10) or a lottery (e.g. a coin flip for\inline&quot;/&gt;25 or zero). The materials on their site have full information on how each of these was measured and validated.&lt;/p&gt;
+
+&lt;p&gt;Given the individual responses, they can do some simple country-level averages, and then look at how the different preferences correlate across countries. Their Table 3, shown here, shows those relationships. While there are a number of strong correlations here, it is not the case that these are perfectly related, meaning the six measures contain some distinct information. Patience and altruism, for example, are unrelated, implying one could think about them as different concepts. And given that kind of variation, it is at least plausible that one could identify different effects of patience and altruism on economic outcomes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/falketal3.png&quot; alt=&quot;Correlations&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the same time, there are some patterns that show up, or preferences that tend to move together. Trust, altruism, and positive reciprocity are all significantly and positively related, and one might term that package of preferences “prosociality”. Another set of characteristics that tend to move together are patience, risk-taking, and negative reciprocity. There is no obvious name for that correlation, although I’m tempted to call it “the revenant” because it calls to mind people willing to undertake a dangerous quest for revenge long after they are already dead. That is probably reading a little too much into the data, though.&lt;/p&gt;
+
+&lt;p&gt;More seriously, be very careful that this second set of correlations is &lt;em&gt;not&lt;/em&gt; “antisocial”, because it is &lt;em&gt;not&lt;/em&gt; the opposite of the prosocial characteristics. It is a different dimension along which people appear to vary. A country low in trust, altruism, and positive reciprocity would be “antisocial”, regardless of their patience, risk-taking, and negative reciprocity. One could also have a prosocial country that also rated high on the “revenant” characteristics.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/falketal10.png&quot; alt=&quot;Individuals&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;FBDEHS also report similar correlations at individual level in their Table 10, which are interesting to compare to the country-level averages in the last table. Here, everything is signficant because they are using 80,000 individuals, but don’t let that distract you. What I see here is a weaker set of relationships, in terms of the size of the coefficients, but still some evidence of sets of characteristics. Prosociality appears again as a collection of positive reciprocity, altruism, and trust, and you also get the revenant package of patience, risk-taking, and negative reciprocity.&lt;/p&gt;
+
+&lt;p&gt;The numbers in this table are all excluding country fixed effects, meaning that they ignore the fact that in some countries that average level of trust, altruism, and positive reciprocity are high (and in others those are low), for example. These numbers show that taking those averages as given, within a country it also tends to be that people who trust &lt;em&gt;more than average for their country&lt;/em&gt; also are more altruistic &lt;em&gt;than the average for their country&lt;/em&gt;, and so on.&lt;/p&gt;
+
+&lt;p&gt;This leaves the comparison of the two tables. Table 10 tells us that the prosocial characteristics tend to move together across individuals within &lt;em&gt;all&lt;/em&gt; countries. More altruistic people tend to be more trusting everywhere, for example. Similarly, in every country people who are more patient tend to favor more negative reciprocity. There is nothing about this, however, that necessarily implies that the cross-country average relationships in Table 3 have to arise. It is quite possible to have these individual correlations within every country, but for the average level of trust or patience to be similar across countries. That is, Table 10 could be true, but Table 3 could easily have been full of zeroes, or even negative relationships.&lt;/p&gt;
+
+&lt;p&gt;However, the numbers in Table 3 indicate that on top of those individual correlations, there is a similar pattern of variation in the &lt;em&gt;average&lt;/em&gt; level of trust or patience (or any of the other characteristics) across countries as we see with individuals. That means that the raw correlations across all individuals in the FBDEHS sample that underlay the packages of traits (prosocial, revenant) are even stronger than what you see in the individual or country level alone.&lt;/p&gt;
+
+&lt;p&gt;From the perspective of research on the deep roots of comparative development, it is mainly the country-level variation that we’re interested in. And these preferences do appear correlated with country-level outcomes. FBDEHS look at raw correlations of each preference with several measures, which I cut and paste below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/falketal2.png&quot; alt=&quot;Characteristics&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are strong correlations - and let’s be really clear here that these are correlations - of GDP per capita with patience, negative reciprocity, and trust. In fact, patience, negative reciprocity, and trust are the three traits that show up correlated with most of the other measures in the table: democracy, life expectancy, the Gini, and homicides. If we take high GDP per capita, high life expectancy, and few homicides as a rough gauge of development, then developed places tend to have two traits, patience and trust, and probably tend to be risk-averse and put a high weight on negative reciprocity. Keep in mind that there is nothing wrong with being both prosocial (trusting) and patient (a revenant), they are not mutually exclusive.&lt;/p&gt;
+
+&lt;p&gt;So here is the million-dollar question. Does being trusting and patient &lt;em&gt;make&lt;/em&gt; you developed? Or does development &lt;em&gt;make&lt;/em&gt; you trusting and patient? I am unaware of any clear evidence that answers these questions with any confidence. GSZ attempt to solve this causality problem by using religion to instrument for preferences. That … doesn’t make sense. It’s not any different than using say, the mortality of European settlers in different colonies to instrument for institutions, to pick a completely random example out of hat. In both cases, it is implausible that the only effect of the instrument (e.g. religion) on the outcome (e.g. savings rates, income redistribution) is through preferences.&lt;/p&gt;
+
+&lt;p&gt;Most research relies on what I’d call “verbal Granger causality”. The argument is that culture and preferences changes very slowly over time and were determined in the past. Therefore if we see a correlation of preferences with some economic outcome, it must be that the preference caused the economic outcome. But that isn’t quite right either. We know that history matters for economic outcomes, in the sense that past events can have persistent effects. So it is quite possible that there was some event in the “deep” past that made an economy poor, for example, and that also made its population less trusting of strangers, for example. The poverty persists, perhaps for reasons entirely unrelated to culture or preferences, and the lack of trust persists because cultural attitudes tend not to change much without a large shock. So when we look today, we see a poor country that is less trusting. But that doesn’t mean the lack of trust is why they are poor.&lt;/p&gt;
+
+&lt;p&gt;The danger here is that we’re doing ex post reasoning on cultural causes of development. Trust in strangers must be good for development because we see trust high in rich countries. Maybe trusting strangers is bad for development, but a host of other positive forces made trusting countries rich. Negative reciprocity is associated with higher GDP per capita, and you can tell yourself a story about why that could be. Perhaps because punishing cheaters deters others from cheating in the future, and that’s more important that rewarding good behavior (positive reciprocity). But if the coefficient on positive reciprocity had been significant, and that on negative reciprocity insignificant, you probably would have been just as happy with a story about how it is the rewards that matter more than the punishments. The point is that we don’t have any clear theory of which cultural preferences &lt;em&gt;should&lt;/em&gt; be good for development, so we may just be making stuff up based on correlations.&lt;/p&gt;
+
+&lt;h3 id=&quot;family-structure&quot;&gt;Family structure&lt;/h3&gt;
+&lt;p&gt;Keeping in mind the danger of ex post reasoning, and the lack of clear causal relationships, there is one aspect of culture that is of particular importance for studying development: family preferences. I’ve written on the blog a number of &lt;a href=&quot;https://growthecon.com/blog/topic-takeoff/&quot;&gt;posts&lt;/a&gt; about how it is the change in the relationship of population growth and GDP per capita growth that generates sustained development, and not a specific technological revolution (e.g. steam engines). Thus cultural preferences regarding family size and structure can be crucial in understanding why some places developed earlier than others.&lt;/p&gt;
+
+&lt;p&gt;There are several papers out there now specifically looking at cultural differences in family preferences and modern outcomes. Benjamin Enke has a &lt;a href=&quot;https://ideas.repec.org/p/nbr/nberwo/23499.html&quot;&gt;paper&lt;/a&gt; that looks at how family structure is related to cooperation and moral systems, while Jon Schulz has a &lt;a href=&quot;https://ideas.repec.org/p/not/notcdx/2016-16.html&quot;&gt;paper&lt;/a&gt; that uses variation in exposure to the Catholic Church as an exogenous driver of differences in family structure, and hence of modern attitudes.&lt;/p&gt;
+
+&lt;p&gt;Both papers document in detail what an anthropologist would tell you, which is that the nature of family structure differs a lot across cultures. Nuclear families or clans? Do you trace relationships through the father, the mother, or both? Do new couples co-locate near one branch of the family or another? Are there dowries or bride prices? Is cousin-marriage encouraged or banned?&lt;/p&gt;
+
+&lt;p&gt;The answers to those questions matter to the extent that they affect preferences for familiy size or quality/quantity of kids. &lt;a href=&quot;https://ideas.repec.org/a/kap/jecgro/v15y2010i2p93-125.html&quot;&gt;Alesina and Giuliano&lt;/a&gt; have a paper that looks at how variation in family structure (strong versus weak family ties is how they refer to it) affects fertility and several other outcomes. While those same authors along with Nunn have a &lt;a href=&quot;https://ideas.repec.org/p/hrv/faseco/11986333.html&quot;&gt;paper&lt;/a&gt; on how plow use changed cultural attitudes towards fertility. The upshot of both is that these differences in preferences for family size are quite substantial.&lt;/p&gt;
+
+&lt;p&gt;These papers are probably underappreciated for their importance to the story of the take-off to sustained growth. Differences in fertility preferences would affect the level of living standards in Malthusian settings for sure. Beyond that, differences in fertility preferences, and in particular how sensitive fertility was to living standards, could influence whether a given culture took advantage of a technological or institutional or historical shock to make the move to sustained growth. I think this is a place where it might be useful to step back from the almost purely empirical work being done right now in the deep roots literature, and reconnect explicitly with the growth theory on the origins of take-offs. That theory could provide some guidance to what exactly we should be trying to measure when we talk about culture or preferences for family size.&lt;/p&gt;
+
+&lt;h3 id=&quot;cultural-variation&quot;&gt;Cultural variation&lt;/h3&gt;
+&lt;p&gt;As a last point, let’s assume that there is &lt;em&gt;something&lt;/em&gt; causal about culture (related to families or otherwise) for economic development. Why do those country-level preferences vary at all? Aren’t we all sort of the same? I’ve read some with these questions in mind, but not deeply. One place to start is this &lt;a href=&quot;https://pseudoerasmus.com/2015/10/04/ce/&quot;&gt;post&lt;/a&gt; by Pseudoerasmus, who takes a much deeper dive into the subject.&lt;/p&gt;
+
+&lt;p&gt;Two main theories about the deep roots of culture are “evolutionary psychology” and “cultural evolution”. The former thinks about how natural selection operated to create specific “hard-wired” mental structures in humans in response to their environment. The latter adds that culture itself - knowledge, norms, rules - evolve as well. From the perspective of someone reading the economics literature on deep origins of development, the distinction between these fields is not that important.&lt;/p&gt;
+
+&lt;p&gt;Why? Because for the purposes of the empirical work that people do in this area, it is environmental variation that is measurable and (arguably) exogenous. For the papers you’ll find in economics involving deep origins of culture, environmental characteristics are always on the right-hand side, and there is little to no explicit discussion of cultural evolution. Perhaps there is some hand-waving about how culture does evolve, but for the purposes of running some regressions, researchers almost always fall back on environmental features to explain (imperfectly, with R2 less than one) cultural variation.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Mar 2019 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>The deep roots of development - Part 3</title>
@@ -62,7 +138,7 @@
 
 &lt;p&gt;In the sense that institutions like the &lt;em&gt;mita&lt;/em&gt; or British rule can push an area below the threshold beyond which they cannot recover, then institutions matter for development for sure. And the evidence seems to keep accumulating that institutions of various kinds have these kinds of effects. The broader conclusion is thresholds exist, and that in turn means history matters for development in a powerful way. This gives us another reason for looking backwards for the sources of comparative development. Moreover, while the institutions literature was crucial in establishing that thresholds exist, that doesn’t limit us to thinking only of institutional reasons for falling behind. Anything, including geography or culture, could be a reason for falling below a threshold. It’s not institutions OR geography OR culture. It’s institutions AND geography AND culture.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 05 Feb 2019 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 05 Feb 2019 00:00:00 -0600</pubDate>
       </item>
     
       <item>
@@ -157,7 +233,7 @@
 
 &lt;p&gt;We need both steps. The first step, by itself, can be interesting, but without the second step can deteriorate into “just-so” stories about why certain populations are “of course” better suited to development. The second step, by itself, can be interesting, but without the first can deteriorate into what amounts to overly complicated magazine articles without any relevance for current development. Which isn’t to say that every single paper has to tackle both steps, although some do. Our overall understanding has to involve both.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 11 Jan 2019 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 11 Jan 2019 00:00:00 -0600</pubDate>
       </item>
     
       <item>
@@ -250,7 +326,7 @@
 
 &lt;p&gt;There is a &lt;a href=&quot;https://growthecon.com/blog/topic-deep/&quot;&gt;topic page&lt;/a&gt; up on my site already with all the existing posts I’ve classified as related to “deep roots”, so if you’re into this material feel free to have a poke around that.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 31 Dec 2018 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 31 Dec 2018 00:00:00 -0600</pubDate>
       </item>
     
       <item>
@@ -358,7 +434,7 @@
 
 &lt;p&gt;That doesn’t make the PSS estimate spurious. It’s a nice descriptive result that tells us we should think a little more about what might have changed around those years, even if the implication of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence from that period is not that strong.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 02 Nov 2018 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 02 Nov 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -482,7 +558,7 @@
 
 &lt;p&gt;But the crude definition of involution is just a synonym for “Malthusian equilibrium allowing for technological change”. It isn’t a problem to use a single term to stand in for a more complex phenomena. It can save you some time typing. But I think using the concept of involution without its Malthusian context leads one to do a lot more analytical work than necessary. The Malthusian setting gives you clear guidance on what the proximate determinants of living standards are. And in the Asia/China setting, the experience with respect to commercial and technological changes are not necessasrily paradoxes or mysteries.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 15 Oct 2018 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 15 Oct 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -586,7 +662,7 @@
 
 &lt;p&gt;There you go, Garett. Now I’m done.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 29 Aug 2018 00:00:00 -0400</pubDate>
+        <pubDate>Wed, 29 Aug 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -638,7 +714,7 @@
 
 &lt;p&gt;The point is that you don’t want to confuse the scenarios with growth changes and level shifts. These have very distinct implications for the future. And the available evidence on GDP per capita doesn’t tell us which of these scenarios is right, and which is wrong. All we know is that we can reject the old 2% trend line, but we’ll need more evidence before we can figure out whether we saw a drop to a lower growth rate only, or a level shift and possible drop int he growth rate.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 24 Aug 2018 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 24 Aug 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -692,7 +768,7 @@
 &lt;p&gt;Anyway, while I’d leave aside this particular criticism of using relative prices, I still think there was a lot of value (yes, that was deliberate) in the book for thinking about how inputs inform our opinions on inherent value. There is a coherent argument to make about how we could or should value certain economic activities more, in the sense of supporting or encouraging them, even if they do &lt;em&gt;not&lt;/em&gt; lead to higher measured GDP, but because they involve the use of some inherently valuable inputs. For example, you could argue that a jobs guarantee is valuable even if it led to GDP being lower than it would otherwise (of course, it might be higher, but that’s a different argument). That would be the case of valuing things based on the nature of the input (e.g. full time work for adults) rather than on the value of output. But using relative prices to value GDP is neither an argument for, nor against, your position.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 09 Jul 2018 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 09 Jul 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -748,7 +824,7 @@
 &lt;h3 id=&quot;a-complete-aside&quot;&gt;A complete aside&lt;/h3&gt;
 &lt;p&gt;This has absolutely nothing to do with the onset of sustained growth. But the logic of the industrious revolution I presented above can be used in reverse to think about changes in economic growth in the recent past. You could argue that recent innovations have made time-intense consumption items (e.g. Netflix or video games) cheaper. And in a mirror image response to the 1600’s, people are substituting more time-intense consumption for goods-intense consumption. This means that they willingly withdraw labor from the market in order to enjoy those time-intense activities, as in the proverbial 20-something male living in his parents basement playing Halo all day. Nothing terribly insightful here, I just thought I was interesting to think about this as the flip of the industrious revolution.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 11 Jun 2018 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 11 Jun 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -818,7 +894,7 @@
 
 &lt;p&gt;I have not even begun to scratch the surface of the interesting applications of the BF paper. I focused on the productivity accounting just because it is something I find to be of particular interest. The power of the paper is, to repeat, that these findings hold without having to make any strong assumptions about what production functions look like or how firms fit together into an input/output matrix. The only annoying thing about the paper is that it is forcing me to see how limited my understanding of the role of markups was in the economy. But it is well worth the effort to read it (so much notation!) if you’re into this kind of thing.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 11 May 2018 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 11 May 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -903,7 +979,7 @@
 &lt;p&gt;We’ll get to all of that - and more! - in the next post.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 07 May 2018 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 07 May 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -950,7 +1026,7 @@
 
 &lt;p&gt;The really big question, though, is whether I can get out the next post in under six months. Stay tuned. But not too closely, because you might waste a few months waiting.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 30 Mar 2018 00:00:00 -0400</pubDate>
+        <pubDate>Fri, 30 Mar 2018 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -1013,7 +1089,7 @@
 &lt;p&gt;What this means is that the growth rate of GDP gets pulled down even more than it would be through just the decline in g. If s stayed constant, then the drop in g would lower the growth rate of GDP, but the increase in the K/Y ratio would offset that by a little. With the coincident drop in s, we don’t get that offset, and so the effect of the drop in g is particularly pronounced. GP speculate that increased market power of firms can explain why s dropped at the same time as g. That story is consistent with the data that is accumulating, for sure. I have not worked through their companion paper on causality in detail yet, so I can’t offer any opinion on whether increased concentration or market power appears to &lt;em&gt;cause&lt;/em&gt; the decline in s. For now, let’s leave it out there as a very plausible story for what has occurred. Whatever the causality, their initial evidence is clear that there has been a decline in net investment, and that warrants attention if we’re trying to account for why the growth rate of GDP has fallen over the last few decades.&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 25 Oct 2017 00:00:00 -0400</pubDate>
+        <pubDate>Wed, 25 Oct 2017 00:00:00 -0500</pubDate>
       </item>
     
       <item>
@@ -1067,74 +1143,7 @@
 
 &lt;p&gt;That aside, I think it’s key to reiterate that claiming tax cuts will not have an effect on growth is not a denial of the basic theory. Rather, the claim is based on the low elasticities, which mean that the responses are small, and a disconnect between the returns that are &lt;em&gt;taxed&lt;/em&gt; and the returns that are paid to real inputs.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 03 Oct 2017 00:00:00 -0400</pubDate>
-      </item>
-    
-      <item>
-        <title>Harvey</title>
-        <link>https://growthecon.com/blog/Harvey/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Harvey/</guid>
-        <description>&lt;p&gt;You may or may not realize that the global headquarters of Growthecon.com is in Houston. So it’s been an interesting few days, to say the least. This post has nothing to do with economics. It’s just things that keep running through my head as we clean up.&lt;/p&gt;
-
-&lt;p&gt;I live a charmed life, for so many reasons. But most recently, it’s the fact that we made it out of the storm with a dry house (barely) and with everyone safe. Lots of our neighbors are not so lucky, so we’ve been doing what we can to help. It doesn’t feel like much. I hope it makes a difference.&lt;/p&gt;
-
-&lt;p&gt;Some of this post is me documenting things I don’t want to forget, which includes a lot of raw emotions in response to some amazing events. So farther down you are going to find me taking some shots that maybe one day I’ll regret. Maybe. But right now I don’t think so.&lt;/p&gt;
-
-&lt;h2 id=&quot;this-is-what-lucky-looks-like&quot;&gt;This is what lucky looks like&lt;/h2&gt;
-&lt;p&gt;Saturday night, the 26th, is when the rain started hard in the Houston area. We didn’t sleep. We just watched the rain come down, and ran outside during breaks to clear debris away from the storm drain in front of our house.&lt;/p&gt;
-
-&lt;p&gt;The Houston Flood Control district has an online system recording rain totals around the bayous in the city. If you watched the news, you know the bayous are a series of artificially widened creeks that drain the city into the Gulf. Here’s the time series of rainfall totals from the Braes Bayou near Stella Link road, the closest gauge to our house.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/harvey_rain.png&quot; alt=&quot;Rainfall totals&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We already had 1.32 inches during the morning of the 26th, and then before midnight we added another 3.56 inches. For some sense of scale, 4.88 inches is right around the typical &lt;em&gt;monthly&lt;/em&gt; total for August in Houston. And that was before the heavy stuff came. Between midnight and noon on Sunday, the 27th, we took 9.92 inches, most of that between midnight and 3am. I cannot describe for you how fast and how hard the rain came down in the first few hours of Sunday. And our area wasn’t the worst.&lt;/p&gt;
-
-&lt;p&gt;There was a break Sunday morning, and this was the view out of our front door. That front areas of bricks was under an inch of water that you can’t quite make out in the picture. Under the street light, on the left, is the storm drain. When I waded out there to check it for blockages, the water was at my waist. Across the street from the light is supposed to be a fire hydrant. It was under water.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/harvey_worst.png&quot; alt=&quot;Flooding&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;That water rose not just because it rained hard, but because the bayou overflowed, and there was no place for it to go. The flood district also provides plots of the level of each bayou at certain stations, and here’s the time series of Braes Bayou. You can see the essentially vertical rise right around midnight of the 26th, into the 27th. At that point the rains continued, and the bayou, thanks to our rain, rain upstream flowing down, and rain downstream backing it up, stayed above flood level into Monday the 28th.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/harvey_bayou.png&quot; alt=&quot;Bayou level&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you flip back to the rain chart, you’ll see that we still got 3.2, 2.28, and 6.24 inches of rain in the 36 hours &lt;em&gt;after&lt;/em&gt; the heavy stuff. Believe it or not, this is where we got lucky. That let-up of 3.2 and 2.28 inches allowed the bayou to recede, just a little. It bought us a few inches to spare, so when the 6.24 came, our house was able to survive. When I wandered downstairs at about 1:30am on Monday morning, the water had at retreated about one foot from our house, and it wouldn’t come closer.&lt;/p&gt;
-
-&lt;p&gt;At its height, we came within 1-3 inches of flooding, depending where exactly around the house you looked. Over the rest of the morning of the 28th, Monday, the water retreated further, and we (personally) were out of trouble. Some tense moments occurred on Tuesday as we took more rain, but never enough to flood the bayou near us again.&lt;/p&gt;
-
-&lt;p&gt;Like I said, this is a story of amazing luck. Through all that, we didn’t flood. We didn’t even lose power throughout the storm. We didn’t do anything special, it just turns out that our house is one or two inches higher than a few others on our street. People just a few doors down our street are now ripping out carpet and drywall. I don’t know the exact number of people we know who flooded, but it’s more than I can count up quickly in my head. We’ve tried to help people out, but it feels like very little.&lt;/p&gt;
-
-&lt;h2 id=&quot;people-really-are-amazing&quot;&gt;People really are amazing&lt;/h2&gt;
-&lt;p&gt;Just about a week ago, I was still reading stories about alt-right neo-Nazi shitheads with brittle egos and tiki torches. And right as Harvey was hitting land the first time, known terrorist Joe Arpaio was getting pardoned for taking a dump on the Constitution. But for each and every one of those people, I saw over the last week hundreds and thousands of decent human beings put everything they had on the line to help perfect strangers. Hundreds and thousands. Remember that when the news gets back to publicizing the worst among us.&lt;/p&gt;
-
-&lt;p&gt;Here’s a few of the best:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Everyone with a boat. They came from Houston itself, from the rest of Texas, from Louisiana, from Kentucky, from Michigan, and hundreds of places I missed. Brave, selfless, and inexhaustible. These people drove &lt;em&gt;into&lt;/em&gt; the shitstorm that was Harvey and got to work.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Jeff Lindner and everyone at the Houston Flood Control District. Step by step, Lindner came on TV or radio and talked everyone through the situation with the bayous and rivers. Never flustered, never hyperbolic, never flippant, he is part of the reason this didn’t turn out more chaotic than it already was.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;City of Houston and Harris County emergency response teams. I hope you all can go home and sleep for six months. I hope &lt;em&gt;your&lt;/em&gt; families and &lt;em&gt;your&lt;/em&gt; homes are safe and dry. And yes, that includes Mayor Turner and Judge Emmett (the county administrator). Those two somehow kept it together the whole time. I’m sure you can find some mistake they made along the way, but anyone who wants to nitpick their decisions should be invited to kiss both of their asses.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Eric and Matt at &lt;a href=&quot;https://spacecityweather.com&quot;&gt;Space City Weather&lt;/a&gt;. Those two were a beacon of sanity and reality throughout the weekend. The TV weather guys were not over the top, but were often just struggling to keep up with the constant series of tornado and flood warnings. Eric and Matt were able to put out clear and concise summaries, about every 3-4 hours, of what was coming.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The National Weather Service. Without the information provided by these people, this and every hurricane (not to mention most tornadoes) are mass casualty events. Keep this in mind when you start getting antsy to cut funding at federal agencies to support a tax cut. Weather information doesn’t “trickle down”.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;And I haven’t mentioned all the people that are out right now volunteering their time to clean out their neighbor’s houses, or cook them food, or help evacuees fill out FEMA forms, or … everything else they are doing.&lt;/p&gt;
-
-&lt;p&gt;For every editor of every newpaper, magazine, and website out there, here’s the deal. Go out and find every single one of these magnificent people. Go find them and tell their story. Until you do that, I don’t want to see or hear another piece that involves the term “real America”, or how some unnamed official is “distressed” at something happening in the White House, or provides a profile of some shitbag neo-Nazi with a self-esteem issue. And until you find all these people, I don’t want to read any Vox or Atlantic columns on “What Harvey says about …”. It’s a catastrophe, not a fucking metaphor.&lt;/p&gt;
-
-&lt;p&gt;For those of you wondering why the whole city didn’t evacuate, do you really think that the city was shocked to discover it could be hit by a massive hurricane? Sheltering in place was not some shoot-from-the-hip wild guess of a strategy. It’s the best of bunch of crappy options. If you want to have a discussion, say a month from now after the worst of this is all over, about whether there are ways to effect an evacuation during the next Harvey-like event, great. Let’s do it. In the meantime, your homework is to devise a plan to evacuate the &lt;em&gt;entire state of Massachusetts&lt;/em&gt; subject to the following constraints. (A) you have 48 hours, (B) you can’t use Rhode Island, Connecticut, or New York, and (C) everyone needs shelter for up to 10 days. Go.&lt;/p&gt;
-
-&lt;p&gt;If you read this far, thanks. It was a self-indulgent brain dump from someone with exactly zero problems right now. I should be outside finding a better way to help than generating a blog post. If you have a mind to help, one charity that my wife has been involved with, and does a great job locally, is the &lt;a href=&quot;http://www.houstonfoodbank.org&quot;&gt;Houston Food Bank&lt;/a&gt;. Go there, give them money. Let them feed people.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 31 Aug 2017 00:00:00 -0400</pubDate>
+        <pubDate>Tue, 03 Oct 2017 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
