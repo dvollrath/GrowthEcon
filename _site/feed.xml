@@ -5,7 +5,105 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Thu, 18 Apr 2019 16:47:11 -0500</pubDate>
+    <pubDate>Thu, 18 Apr 2019 16:52:58 -0500</pubDate>
+    
+      <item>
+        <title>The deep roots of development - Part 5</title>
+        <link>https://growthecon.com/blog/Deep-Roots-5/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Deep-Roots-5/</guid>
+        <description>&lt;p&gt;In my quest to fall behind on everything in my life, I left writing up the next installment of the deep roots reviews until well after I actually gave the lecture. Here I want to go over some thinking about how geographic, environmental, and/or agricultural characteristics led to variation in development across the globe.&lt;/p&gt;
+
+&lt;h3 id=&quot;where-economic-activity-happens&quot;&gt;Where economic activity happens&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/map_lights.jpg&quot; alt=&quot;Night lights&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The world is not uniformly populated, and neither is economic activity distributed uniformly across the globe. The map shown above is of night lights around the globe, and they are concentrated in several areas - the eastern US, eastern Mediterranean, eastern coast of South America, Europe, India, eastern China, Japan, and a few others. If you could zoom in, you’d see that even within those areas, the lights are not uniform, but concentrated in urban areas with big stretches of relative dark in between.&lt;/p&gt;
+
+&lt;p&gt;One possibility is that this lack of uniformity is random, perhaps driven by contingent historical events or intitutions and culture. &lt;a href=&quot;https://ideas.repec.org/p/cpr/ceprdp/9760.html&quot;&gt;Michaels and Rauch&lt;/a&gt;, for example, find that urban areas in France are more likely to be based around old Roman towns or forts, meaning the modern location of most economic activity in France was determined in part by Julius Caesar. What Michaels and Rauch also find, though, is urban locations in Britain do &lt;em&gt;not&lt;/em&gt; share this feature. There, because urbanization completely collapsed after the Romans left, cities and economic activity are more likely to be organized around places suitable for river transportation.&lt;/p&gt;
+
+&lt;p&gt;You could try to extend this kind of analysis to the entire world, and this is, in princple, what &lt;a href=&quot;https://academic.oup.com/qje/article-abstract/133/1/357/4110418&quot;&gt;Henderson, Squires, Storeygard, and Weil&lt;/a&gt; did in a recent paper. They use night lights, as in the map above, to proxy for economic activity in each pixel of the map (there are 240,000 pixels). They then use a regression to explore how much explanatory power the geographic characteristics of a pixel have for those night lights. This is a stretch, but they are asking whether the world looks more like France, or more like Britain.&lt;/p&gt;
+
+&lt;p&gt;The geographic characteristics they use include some they relate to agricultural productivity: climate type (e.g. tropical dry forest, etc.), temperature, precipitation, number of growing days, elevation, latitude, and a measure of land suitability. Others they include relate to trade: being close to the coast, being on a river, having a natural harbor, and so on. You can quibble with the set of variables, perhaps arguing they are missing separate controls for soil types. Or you could quibble with the division into agriculture and trade, as being on a river or near a coast likely influences both. Nevertheless, their division isn’t particularly important, as all they are interested in is raw explanatory power.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/hssvtab2.png&quot; alt=&quot;Explanatory values&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Their Table 2, shown above, gives you the summary of their results. Combined, line (1) shows you that their variables can explain 46% of the variation in night lights. In other words, raw geographic characteristics can predict almost half of the dispersion in economic activity, meaning it is a bit like Britain. But the remainder is attributable to either other geographic factors HSSW don’t measure, or to “France-like” historical factors.&lt;/p&gt;
+
+&lt;p&gt;If you look down the table, lines (8) and (9) show you that of their variables, the ones they associate with agriculture are responsible for almost all of the explanatory power, while trade variables explain far less. And perhaps this isn’t surprising, as we might expect that people (and hence economic activity) would tend to cluster around areas where food was relatively easy to grow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/hssvfig3.png&quot; alt=&quot;Predicted values&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Regardless, the main story here is about these R-squareds, as opposed to causality, per se. If all you knew about the Earth was the geographic conditions, you’d be able to predict about 46% of the variation in the location of economic activity. This isn’t perfect, as the France/Britain story would suggest, and as HSSW’s own maps show. Take a look at their Figure 3, above, which plots their predicted level of economic activity by pixel from their regressions. It overstates the amount of activity in places like Cuba, the lower Mississippi and the east coast of Australia. And it misses the concentration of economic activity along the Ganges, Indonesia, or the large urban areas of Africa. It also understates to some extent the activity along the east coast of the United States.&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;em&gt;of course&lt;/em&gt; they can get some predictive power from geographic variables, you may be thinking. Most economic activity is clustered in a few areas (Europe, eastern US, east Asia) and since geographic characteristics tend to cluster as well (i.e. if one pixel is a jungle, the next pixel is likely to be a jungle as well), there has to be &lt;em&gt;some&lt;/em&gt; predictive power to geography. Does this tell us something useful?&lt;/p&gt;
+
+&lt;p&gt;HSSW say yes, in part because of a second set of regressions they run. Because they have multiple pixels per country, they can include country fixed effects. In that case, the estimated effect of geographic variables is made only by looking at how geography correlates with economic activity &lt;em&gt;within&lt;/em&gt; individual countries, and they are effectively throwing out cross-country variation in both geography and economic activity. In this case, they find similar patterns in the effects of geographic variables. For example, across countries places with tropical rain forests show less econoimc activity, but tropical rain forests also display less economic activity than other areas &lt;em&gt;in the same country&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hence HSSW argue that there is something important about geography, in general, in determining where economic activity takes places. It wouldn’t make sense for the same patterns to hold within and across countries unless there was something meaningful about those geographic features.&lt;/p&gt;
+
+&lt;h3 id=&quot;population-density&quot;&gt;Population density&lt;/h3&gt;
+&lt;p&gt;HSSW show these correlations, but do not open up the “black box” of why certain characteristics might be associated with economic activity. Other papers, however, do attempt to provide some mechanisms. One example is &lt;a href=&quot;https://ideas.repec.org/a/aea/aecrev/v101y2011i5p2003-41.html&quot;&gt;Ashraf and Galor&lt;/a&gt;, who looked specifically at the relationship of agricultural productivity to population density and living standards in the pre-industrial period. The “black box” here is a simple Malthusian model where population growth is positively related to living standards, and living standards are negatively related to the size of the population (see &lt;a href=&quot;https://growthecon.com/blog/Malthus/&quot;&gt;here&lt;/a&gt; for a more thorough summary).&lt;/p&gt;
+
+&lt;p&gt;This model says that higher agricultural productivity should be associated with higher population density, but unrelated to living standards themselves. And the empirical work Ashraf and Galor do in this paper confirms these basic predictions. To measure agricultural productivity they use two things, the time elapsed since the onset of settled agriculture associated in a given area, and a combo term that mixes together some of the measures HSSW use, but can be summarized as “inherent land productivity”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/agfig3a.png&quot; alt=&quot;Revolution&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first figure shows the partial relationship (after netting out other controls) for the years since the Neolithic Revolution and population density. As you can see, the longer this gap, the higher the density. The notional story here is either (a) that there is some learning by doing going on in agriculture, and hence the longer you have been at it, the better you are or (b) people settled the most productive places first, and this is picking up some effect of that not captured by their other variables. The second figure shows a similar plot for inherent land productivity and density. Again, the more productive, the more dense.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/agfig3b.png&quot; alt=&quot;Productivity&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all consistent with the Malthusian black box they outline in the paper. It tells us that some of the reason for the strong geographic patterns HSSW find is that population density is higher in places with certain agricultural characteristics, and this almost mechanically is going to generate more economic activity. There is nothing Earth-shattering and counter-intuitive to these findings.&lt;/p&gt;
+
+&lt;p&gt;Where things get a little more interesting is in thinking about what else might be going on in that black box. If there are scale effects, or agglomeration effects, or if more people means more minds thinking about how to generate non-rival ideas, then high population density generates more economic activity over and above the simple fact that there are more people. And Ashraf and Galor have a little evidence of this as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/agtab1.png&quot; alt=&quot;Neolithic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This shows the results from their Table 1, where they regress measures of technological usage (from &lt;a href=&quot;https://ideas.repec.org/a/aea/aejmac/v2y2010i3p65-97.html&quot;&gt;Comin, Easterly, Wong&lt;/a&gt;) on the time since the Neolithic Revolution, which remember tells us that populations are more dense. In the case of all three classes of technology, the longer a country/area had been practicing agriculture, the more advanced was its technology.&lt;/p&gt;
+
+&lt;p&gt;There is no strict causal experiment going on here, but it is indicative that places with an early start to agriculture, which probably was due in part to high agricultural productivity, ended up with technological advantages. Comin, Easterly, and Wong already traced the persistence of these technological advantages to living standards today. I did a &lt;a href=&quot;https://growthecon.com/blog/Persistence-Technology/&quot;&gt;post&lt;/a&gt; on that a while ago. Thus it is plausible to argue that initial agricultural conditions are responsible for some fraction - perhaps in the neighborhood of the 46% that HSSW found - of the variation in living standards seen today.&lt;/p&gt;
+
+&lt;h3 id=&quot;agricultural-types-and-deep-determinants&quot;&gt;Agricultural types and deep determinants&lt;/h3&gt;
+&lt;p&gt;There are other attempts to dig into the black box connecting environmental - and in particular, agricultural - conditions and modern outcomes. These often work through the effect of particular types of agriculture on cultural norms or institutional structures. And those effects may even work to offset some of the positive advantages that high agricultural productivity may have brought through time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/litinafig9.png&quot; alt=&quot;Litina&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One example is from Anastasia Litina, with a &lt;a href=&quot;https://ideas.repec.org/a/kap/jecgro/v21y2016i4d10.1007_s10887-016-9134-7.html&quot;&gt;paper&lt;/a&gt; on agricultural productivity and cooperation. What she finds is that within continents, controlling for several other geographic factors, that places with higher inherent agricultural productivity are actually poorer than places with lower productivity. The figure above shows the residual relationship she estimates.&lt;/p&gt;
+
+&lt;p&gt;What Litina proposes is that while agricultural suitability was a positive for population density (and probably technology) prior to the industrial revolution, once the IR hit it became a detriment. In other words, agricultural productivity may have gotten you to the industrial revolution faster, but once there it slowed you down. The reason she proposes for this is not that high agricultural productivity may led you to specialize in certain goods with low productivity growth, which you might call the &lt;a href=&quot;http://web.iitd.ac.in/~debasis/Lectures_HUL737/papers/paper2_JET%201992.pdf&quot;&gt;Matsuyama hypothesis&lt;/a&gt;, but rather a cultural effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/litinatab6.png&quot; alt=&quot;Litina&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The idea is that places with &lt;em&gt;low&lt;/em&gt; agricultural productivity are forced to cooperate more to ensure survival, and that everyone meets subsistence. This generates more within-group trust, which is then useful once you hit the industrial revolution. Places with high productivity do not have to generate that same cooperate or trust, and that hinders their industrial development. Cross-country, Litina shows that in fact measures of trust do negatively relate to land suitability.&lt;/p&gt;
+
+&lt;p&gt;A slightly related idea is that the specific crops you grow may require different levels of cooperation or trust. The necessity of managing large irrigation works would seem to be something that requires, and selects for, trust or cooperation. &lt;a href=&quot;https://science.sciencemag.org/content/344/6184/603&quot;&gt;Talhelm et al&lt;/a&gt; looked at whether there were measurable psychological differences within China associated with whether people were from the rice-growing south, or wheat-growing north. The hypothesis was that the rice-growing region would have people that thought more holistically, and put greater weight on group outcomes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/talhelmfig2.png&quot; alt=&quot;Rice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;They found significant differences between the rice and wheat growing regions. The figure here shows one example of their findings, on holistic thinking. A few key pieces of information here are that they administered these tests to non-farmers within these regions. This is not research showing that &lt;em&gt;farmers&lt;/em&gt; have different attitudes, but that even people who are &lt;em&gt;non-farmers&lt;/em&gt; share these attitudes based on the farming that traditionally took place within their geographic area. Implicitly they are arguing for a strong form of persistence in how agricultural type influenced cultural norms over time. A second note is that the did these tests for areas on the rice/wheat border, finding similar results, and that this is not driven just be gross differences in development or institutions between north and south China. It isn’t experimental evidence, but it is suggestive.&lt;/p&gt;
+
+&lt;p&gt;A last example of how the particulars of agriculture might translate to cultural differences is from &lt;a href=&quot;https://ideas.repec.org/a/oup/qjecon/v128y2013i2p469-530.html&quot;&gt;Alesina, Giuliano, and Nunn&lt;/a&gt;, who looked at how agricultural areas where the plow was used have very different attitudes towards gender roles than areas where plows were not used.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/agntab1.png&quot; alt=&quot;AGN&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These first results show a negative relationship of traditional plow usage and the participation of women in agricultural tasks. This is no country-level, but rather ethnic-group level. The difference in columns (1) and (2) is that the first uses the Ethnographic Atlas (limited data but more groups), while column (2) and the remaining columns use the Standard Cross-Cultural Sample (more data, fewer groups). Regardless, more plow use is associated with less participation of women in these agricultural tasks. The speculation is that as animal-drawn plow use involves brute force, it favors male labor in agriculture, and this leads men to take on more of all agricultural tasks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/agntab3.png&quot; alt=&quot;AGN&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The more interesting fact they document is that this persists to differces in labor force participation in 2000. Their Table 3 (which I cut off a bunch of ancillary crap from) finds the negative relationships you see. Fewer women work in a country when the ethnicities making up that country were traditional plow-users. The effect size is substantial, with a 15 point drop in participation comparing full plow-use to non-plow-use, on a mean of 51%. You also see an effect on firms with female ownership, although nothing for political positions. Similar to the rice/wheat differences, this suggests persistent cultural effects associated with the type of agriculture done.&lt;/p&gt;
+
+&lt;h3 id=&quot;geography-history-and-long-run-outcomes&quot;&gt;Geography, history, and long-run outcomes&lt;/h3&gt;
+&lt;p&gt;The lesson from all these examples is that while the gross level of agricultural productivity may be central to where economic activity takes place, the kind of agriculture done has important follow-on effects that affect how this translates to living standards. The different types of agriculture - plow vs. non-plow, rice vs. wheat, etc. - created variation in cultural and institutional outcomes that influenced economic activity as well. Therefore we have places of high agricultural productivity with very different long-run outcomes, and places of low agricultural productivity with very different long-run outcomes. There is no straight line from agricultural productivity to high GDP per capita.&lt;/p&gt;
+
+&lt;p&gt;On top of that, historical circumstances generated different responses to the agricultural conditions in place. To give you a stark example of what I mean, consider the distribution of “caloric suitability” across the world prior to colonization. This caloric suitability comes from &lt;a href=&quot;https://ideas.repec.org/p/bro/econwp/2015-5.html&quot;&gt;Galor and Ozak&lt;/a&gt;, and it is an attempt to measure the raw calories that an area of land could produce. In short, they look at the raw yield (in tonnes) that each crop in a given area could produce, multiply that by the calories per tonne, and then look for the maximum of total calories across all crops. Given the adjustment for calories, this tends to make places that can grow rice or potatoes look good (both very calorie dense) relative to other staples.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/csipre1500.png&quot; alt=&quot;CSI&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The darker the green in this figure, which plots their data, the more calorie suitable a pixel is. The striking thing about this map is the massive calorie potential in the eastern US, and in the River Plate basin. But remember that this is for the per-1500 period before colonization. Those two areas were not, at that point, anywhere close to the most densely populated places on the planet, nor would either have been a clear leader in living standards. Pure agricultural productivity was not enough, apparently.&lt;/p&gt;
+
+&lt;p&gt;Why not? One theory is that their populations had simply not had enough time to “fill up” these areas and go through the learning-by-doing in agriculture that would have made them as dense and technologically sophisticated as China or Europe at this time. The Neolithic Revolution and settled agriculture only took place around 3-6,000 years ago in the Western Hempisphere, while it happened around 9-12,000 years ago in the Eastern Hempisphere. If the eastern part of North America and the River Plate basin had not been colonized, we might have predicted that the indigenous populations would achieve density levels and technological sophistication equal to, or surpassing, the Old World civilizations. That didn’t happen, of course, because of colonization. Geography matters here, but so does history. It isn’t plausible to explain long-run development ignoring one or the other.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Apr 2019 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>The deep roots of development - Part 4</title>
@@ -1090,60 +1188,6 @@
 
 </description>
         <pubDate>Wed, 25 Oct 2017 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Why don't tax cuts boost growth?</title>
-        <link>https://growthecon.com/blog/Taxing-GDP/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Taxing-GDP/</guid>
-        <description>&lt;p&gt;Relative to current events, this probably seems less important at the moment, and a week or so too late, but the tax cut proposed by th Trump administration is still kicking around. There have been any number of responses to it, and responses in particular to the claim that it will “supercharge” economic growth, and ultimately pay for itself. In short, it won’t do either of those things, which is the conclusion you come to after reviewing all the evidence available. I did so here, in a &lt;a href=&quot;https://growthecon.com/blog/Taxes-Growth/&quot;&gt;prior post&lt;/a&gt;. &lt;a href=&quot;https://www.washingtonpost.com/news/posteverything/wp/2017/09/28/i-helped-create-the-gop-tax-myth-trump-is-wrong-tax-cuts-dont-equal-growth/&quot;&gt;Bruce Bartlett&lt;/a&gt; just posted an article where he also comes to that conclusion, and recants his earlier stand in the 1980’s pushing the whole “tax cuts increase growth” line.&lt;/p&gt;
-
-&lt;p&gt;The purpose of this post is not to rehash the arguments and evidence showing that tax cuts do not increase growth. Rather, I want to think a little about &lt;em&gt;why&lt;/em&gt; they do not increase growth. Because the claim that they do &lt;em&gt;sounds&lt;/em&gt; right, but fails in the real world.&lt;/p&gt;
-
-&lt;p&gt;Let’s start with some basics. If you want to raise economic growth - meaning an increase in real GDP - then you need to increase the amount of capital, labor, and/or productivity. Whether that is pulling new capital, labor, or innovations into the economy, or putting idle capital, labor, and innovations back to work is irrelevant. You want to increase the inputs to increase GDP.&lt;/p&gt;
-
-&lt;p&gt;The core of economics is that people respond to incentives. In the case of inputs, the incentives to provide them are the returns they earn, like wages, dividends or interest, or profits. If you tax those returns, that lowers the returns, and people will provide less labor, capital, or innovations. So if you lower that tax, the idea is that people will provide &lt;em&gt;more&lt;/em&gt; labor, capital, or innovation. Nothing here is rocket science. Why does it not work the way we think?&lt;/p&gt;
-
-&lt;h3 id=&quot;small-elasticities&quot;&gt;Small elasticities&lt;/h3&gt;
-&lt;p&gt;We think that if you lower the tax rate, and hence raise the returns to inputs, we should get more of them. But to “supercharge” growth in GDP, or to have any appreciable effect on GDP at all, you need that the elasticity of that input supply with respect to those returns is really big.&lt;/p&gt;
-
-&lt;p&gt;For labor, there appears to be good evidence that this elasticity is in fact &lt;em&gt;small&lt;/em&gt;. There is not some pent-up store of workers and human capital out there that is just a 35% tax bracket away from getting off their ass and going to work. This labor supply elasticity is found to be essentially zero in almost every case, with the exception of married women. You can see some citations on this in the review paper by &lt;a href=&quot;https://ideas.repec.org/a/aea/jeclit/v50y2012i1p3-50.html&quot;&gt;Saez, Slemrod, and Giertz&lt;/a&gt; (SSG).  With an elasticity close to zero, no matter how much you lower the tax rate, and raise the return to labor (i.e. the wage), you can’t induce a substantial increase in labor supply. And without a substantial increase in labor supply, you don’t get a big increase in GDP.&lt;/p&gt;
-
-&lt;p&gt;On the capital side, this is tougher to estimate because while it is easy to assert that reported wages are payments for real labor, it is much harder to say what part of reported business income is a payment to “capital”. Dividends are probably one of the cleanest things to look at, as they are direct payments to stockholders. But when &lt;a href=&quot;https://eml.berkeley.edu/~yagan/DividendTax.pdf&quot;&gt;Yagan&lt;/a&gt; looked at the 2003 dividend tax cut, he found there was no effect on corporate investment (i.e. real capital inputs). In other words, the elasticity of real capital inputs to the tax rate was zero.&lt;/p&gt;
-
-&lt;p&gt;For innovation, there is some better evidence of an effect of taxation on R&amp;amp;D activity (although we have to be careful to distinguish between R&amp;amp;D activity and innovation itself). &lt;a href=&quot;http://economics.mit.edu/files/12817&quot;&gt;Dechezlepretre, Einio, Martin, Nguyen, and Van Reenan&lt;/a&gt; have a working paper that uses a change in the threshold for qualifying for an R&amp;amp;D tax credit in the UK on both R&amp;amp;D spending &lt;em&gt;and&lt;/em&gt; patenting, meaning they are trying to see an effect on actual innovation. They find significant effects of R&amp;amp;D tax incentives on R&amp;amp;D and patenting. Now, tax incentives (like an actual tax credit or allowing firms to write off R&amp;amp;D spending) are not exactly the same as tax rates. And the current tax proposal, so far as I can tell, does not include a specific change to R&amp;amp;D incentives. Changing the marginal tax rate on individual income or corporate income is not the same as providing R&amp;amp;D tax incentives. But, if you are looking for an avenue for tax policy to spur growth, then creating incentives for R&amp;amp;D and innovation appears more plausible than lowering tax rates on labor and capital.&lt;/p&gt;
-
-&lt;h3 id=&quot;we-tax-financial-flows-not-inputs&quot;&gt;We tax financial flows, not inputs&lt;/h3&gt;
-&lt;p&gt;The second thing reducing the impact of tax cuts on GDP is that taxes are not levied on only the transactions that are part of GDP, they are levied on all kinds of transactions. Think of the fact that every year there are billions (and maybe trillions) of individual transactions that take place in the economy. &lt;em&gt;Some&lt;/em&gt; of those transactions involve payment for a real input like labor or capital, which means they are part of GDP. But &lt;em&gt;some&lt;/em&gt; of those transactions are purely financial, and so are not. But the tax code does not make this distinction; you are not taxed only on your transactions that contribute to GDP, you are taxed on all (okay, most) of your transactions where you receive some money.&lt;/p&gt;
-
-&lt;p&gt;Let’s break this down to four different kinds of transactions.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Taxed, and income is from providing a real input. Your paycheck is an example. You provide a real input (labor) to your employer, and hence this income is part of GDP. The income you earn is also subject to taxation. So if you lower the tax rate on this income, you presumably will supply more labor, which will raise GDP. As we saw above, this response would be small for both labor and capital, so GDP would not go up by much. Lower taxes on R&amp;amp;D or innovation might have a more tangible effect.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Untaxed, and income does not come from providing a real input. Think of a small gift of cash, under the IRS threshold, from your grandparents to you. This is income, in the sense that you have an inflow of money, but it is not in return for a real input. It is untaxed because it happens to be small in size.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Untaxed, and income is from providing a real input. You could think of small scale payments for work that fall below IRS reporting thresholds, like babysitting or some home services. Now, because they do not have to be reported to the IRS, they are untaxed, but its also likely they don’t get picked up and &lt;em&gt;measured&lt;/em&gt; as part of GDP. But technically, because they involve someone providing a real input like labor, this income &lt;em&gt;should&lt;/em&gt; be measured as part of GDP. Regardless, because they are untaxed, lowering tax rates would do nothing to change the real inputs people provide here; your babysitter is not going to offer to do a 2nd night a week if the marginal tax rate falls.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Taxed, and income does not come from providing a real input. Here we’ve got a whole world of financial transactions. If you buy shares of stock for cash, there is no real input provided, so this transaction does not add to GDP. But, this transaction is taxed, in the sense that the capital gain to the seller is subject to tax. If you lower tax rates, then you will get more of these financial transactions, but that will not add anything to GDP. [A side note is that the &lt;em&gt;commissions&lt;/em&gt; on this trade &lt;em&gt;do&lt;/em&gt; get counted as part of GDP, because they are made for providing a real service.]&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;One big reason that tax cuts do not boost growth in GDP is that tax cuts apply to transactions of type 4, as well as type 1. Lowering the tax rate should increase transactions of both types In practice, the elasticities involved in type 1 transactions are small, so there is little change in &lt;em&gt;real&lt;/em&gt; inputs provided by tax cuts.&lt;/p&gt;
-
-&lt;p&gt;But tax cuts may have a big effect on those type 4, financial, transactions. Those type 4 transactions may boost &lt;em&gt;taxable incomes&lt;/em&gt; by making the transactions more attractive, but have no impact on the &lt;em&gt;real&lt;/em&gt; provision of inputs which would go into raising GDP. SSG use the example of the 1986 tax reform to demonstrate this. In response to this, there was a surge in reported S-corp income (i.e. “pass-through” income), which implies a legal shift from corporations to S-corp’s, but this had no practical effect on the supply of inputs to the economy. It is just reshuffling the paper ownership of companies.&lt;/p&gt;
-
-&lt;p&gt;In fact, you &lt;em&gt;could&lt;/em&gt; make the argument that if you want to raise GDP it would be ideal to raise taxes on financial transactions (a la the Tobin tax) to reduce the incentives to do those type 4 transactions, but lower taxes on type 1 transactions dealing with the provision of real inputs, and definitely provide incentives to R&amp;amp;D spending and innovation.&lt;/p&gt;
-
-&lt;p&gt;If you wanted to convince me that these financial transactions of type 4 &lt;em&gt;do&lt;/em&gt; have an important effect on real GDP growth, then you’d have to talk me into believing that facilitating the exchange of ownership leads to a more efficient allocation of management ability, or something like that. For that to be true, it would have to be that there are a lot of exchanges of ownership that are not currently taking place because they are not worth it due to high taxes. But the prima facie evidence works against you, because you’d want to show me that there has been some kind of decline, or stagnation in financial transactions like this over time, and that is just not the case. But that’s your in, if you are looking for one.&lt;/p&gt;
-
-&lt;p&gt;That aside, I think it’s key to reiterate that claiming tax cuts will not have an effect on growth is not a denial of the basic theory. Rather, the claim is based on the low elasticities, which mean that the responses are small, and a disconnect between the returns that are &lt;em&gt;taxed&lt;/em&gt; and the returns that are paid to real inputs.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 03 Oct 2017 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
