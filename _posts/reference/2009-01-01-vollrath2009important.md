@@ -1,0 +1,10 @@
+---
+title: How important are dual economy effects for aggregate productivity?
+author: Vollrath, Dietrich
+journal: Journal of Development Economics
+volume: 88(2):325--334
+tags: ec7340 sector me
+bibtype: article
+category: reference
+---
+Abstract: This paper brings together development accounting techniques and the dual economy model to address the role that factor markets have in creating variation in aggregate total factor productivity (TFP). Development accounting research has shown that much of the variation in income across countries can be attributed to differences in TFP. The dual economy model suggests that aggregate productivity is depressed by having too many factors allocated to low productivity work in agriculture. Data show large differences in marginal products of similar factors within many developing countries, offering prima facie evidence of this misallocation. Using a simple two-sector decomposition of the economy, this article estimates the role of these misallocations in accounting for the cross-country income distribution. A key contribution is the ability to bring sector specific data on human and physical capital stocks to the analysis. Variation across countries in the degree of misallocation is shown to account for 30 --- 40\% of the variation in income per capita, and up to 80\% of the variation in aggregate TFP.

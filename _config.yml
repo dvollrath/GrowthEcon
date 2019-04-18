@@ -50,7 +50,4 @@ plugins: [jekyll-paginate]
 
 visiblewords: 20
 str_continue_reading: "Continue Reading..."
-
-collections:
-  - links
   

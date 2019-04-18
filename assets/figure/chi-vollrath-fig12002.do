@@ -1,0 +1,1 @@
+ twoway (bar estabs_entry year, color(gs4) scheme(vollrath) ytitle("Change in number of establishments (thousands)") xtitle("Year") ylabel(,format(%9.1f)) xlabel(1975(5)2015) ) (bar estabs_exit year, color(gs12) ) (bar Destabs_check year, color(gs8) ) 

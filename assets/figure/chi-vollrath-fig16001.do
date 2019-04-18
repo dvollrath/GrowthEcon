@@ -1,0 +1,1 @@
+ twoway rarea total imports year, color(gs4) || rarea imports low year, color(gs8) legend(label(1 "Domestic production") label(2 "Imported production")) xlabel(1950(10)2010 2016) xtitle("Year") ytitle("Production per capita (1950=100)") scheme(vollrath) 

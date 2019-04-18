@@ -1,0 +1,1 @@
+ twoway line price101 year || line price60 year || line price82 year || line price5 year || line price30 year, clcolor(black) || line price8 year, ylabel(100(100)1200) xlabel(1980(5)2015) ytitle("Price index (1980=100)") xtitle("Year") legend(cols(1) colfirst textfirst) scheme(vollrath) 

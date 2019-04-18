@@ -1,0 +1,1 @@
+ twoway line gdppc year if countrycode=="USA" || line gdppc year if countrycode=="JPN" || line gdppc year if countrycode=="CHN", xtitle("Year") ytitle("Real GDP per capita (US in 2009=100)") ylabel(,format(%7.1f)) xlabel(1950(10)2010 2014) legend(label(1 "United States") label(2 "Japan") label(3 "China") ) scheme(vollrath) 

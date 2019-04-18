@@ -1,0 +1,1 @@
+ twoway line G10_equip year || line G10_struct_nonres year || line G10_struct_res year || line G10_ip year, xtitle("Year") ytitle("10-year annualized growth rate (%)") xlabel(1950(10)2010 2016) ylabel(,format(%4.0f)) scheme(vollrath) 

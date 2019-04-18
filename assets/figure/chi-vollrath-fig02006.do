@@ -1,0 +1,1 @@
+ twoway (bar Dgdppc year if countrycode=="USA", color(gs5) xtitle("Year") ytitle("Absolute growth in real GDP p.c. (relative to US in 2000)") ylabel(,angle(0) format(%7.0f) nogrid) xlabel(1950(10)2010 2014, angle(45)) ) (bar Dgdppc year if countrycode=="CHN", color(gs9) lwidth(narrow) legend(label(1 "United States") label(2 "China")) scheme(vollrath) ) 

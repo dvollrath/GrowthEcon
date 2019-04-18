@@ -1,0 +1,1 @@
+ twoway rarea cap ylow year, color(gs5) || rarea gdp_pc cap year, color(gs10) xtitle("Year") ytitle("Real GDP per capita") xlabel(1950(10)2010 2016) legend(label(1 "Growth from cap. accum.") label(2 "Residual growth")) scheme(vollrath) 

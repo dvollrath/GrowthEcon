@@ -1,0 +1,1 @@
+ twoway line value time if age=="D1TTR5Y2" || line value time if age=="D1TTR5O2", xtitle("Year") xlabel(1950(10)2030) ytitle("Percentage of working age population (20-64)") legend(label(1 "Youth dependency (0-20)") label(2 "Old age dependency (65+)")) 

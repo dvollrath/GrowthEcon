@@ -22,11 +22,7 @@
   {% for post in {{include.pass}} %}
     {% if post.url %}
     	{% if post.categories contains 'link' %}
-        <li>
-        {{ post.date | date: "%Y" }} &nbsp; {{ post.author }} &nbsp; 
-         <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">
-            {{ post.title }}
-          </a>
+        <li> <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">{{ post.title }}</a>
         </li>
         {% endif %}
     {% endif %}
@@ -51,8 +47,39 @@
 </ul>
 </div>
 
-
-
-<h3>Academic References</h3>
-
-{% bibliography -q @article[keywords ~= {{include.ref}}] @book[keywords ~= {{include.ref}}] @techreport[keywords ~= {{include.ref}}] %}
+<h3>References</h3>
+<div class="posts">
+<ol>
+  {% for post in {{include.pass}} %}
+      {% if post.categories contains 'reference' %} 
+          {% if post.journal or post.booktitle%}
+            <li>
+            {{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp; <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">"{{ post.title }}".</a>
+            {% if post.journal %}
+            &nbsp; <i>{{ post.journal }}</i>, {{ post.volume }}.
+            {% elsif post.booktitle %}
+            &nbsp; <i>{{ post.booktitle }}</i>.
+            {% endif %}
+            {% if post.external_url %}
+            &nbsp; <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">Link</a>
+            {% endif %}
+            </li>
+          {% elsif post.institution %}
+            <li>
+            {{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp; <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">"{{ post.title }}".</a> {{ post.institution }}
+            {% if post.external_url %}
+            &nbsp; <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">Link</a>
+            {% endif %}
+            </li>
+          {% elsif post.publisher %}
+            <li>
+            {{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp; <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}"><i>{{ post.title }}</i>.</a> {{ post.publisher }}
+            {% if post.external_url %}
+            &nbsp; <a id="post-link-trans" class="post-link" href="{{ post.external_url }}">Link</a>
+            {% endif %}
+            </li>            
+          {% endif %}
+      {% endif %}
+  {% endfor %}
+</ol>
+</div>

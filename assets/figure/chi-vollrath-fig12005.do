@@ -1,0 +1,1 @@
+ twoway (bar job_creation year, color(gs4) scheme(vollrath) ytitle("Change in number of jobs (millions)") xtitle("Year") ylabel(,format(%9.1f)) xlabel(1975(5)2015) ) (bar job_destruction year, color(gs12) ) (bar net_job_creation year, color(gs8) ) 

@@ -1,0 +1,1 @@
+ twoway bar movers year, color(gs4) || scatter move_rate year, connect(line) yaxis(2) lwidth(medthick) xtitle("Year") ytitle("Percentage of people who moved", axis(2)) ytitle("Number of movers (millions)") xlabel(1950(10)2010 2016) ylabel(0(5)20, axis(2)) scheme(vollrath) 

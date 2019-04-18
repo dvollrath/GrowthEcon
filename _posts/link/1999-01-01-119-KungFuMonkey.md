@@ -1,0 +1,6 @@
+---
+title: Kung Fu Monkey, Farm Fetish
+category: link
+external_url: http://kfmonkey.blogspot.com/2006/03/farm-fetish.html
+tags: teach
+---
