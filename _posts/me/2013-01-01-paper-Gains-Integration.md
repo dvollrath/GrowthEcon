@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: How big are the gains from international financial integration?
 published: true
 category: me

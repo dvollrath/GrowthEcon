@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: The agricultural basis of comparative development
 published: true
 category: me

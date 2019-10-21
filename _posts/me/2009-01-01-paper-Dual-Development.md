@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: The dual economy in long-run development
 published: true
 category: me

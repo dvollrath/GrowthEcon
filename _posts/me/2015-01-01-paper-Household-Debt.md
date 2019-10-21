@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: Household Response to Government Debt, Evidence from Life Insurance Holdings
 published: true
 category: me

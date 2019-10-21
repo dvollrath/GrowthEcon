@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: The Efficiency of Human Capital Allocations in Developing Countries
 published: true
 category: me

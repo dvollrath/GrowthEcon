@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: Land tenure, population, and long-run growth
 published: true
 category: me

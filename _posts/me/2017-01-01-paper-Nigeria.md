@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: Structural Change and the Possibilities for Future Growth in Nigeria
 published: true
 category: me

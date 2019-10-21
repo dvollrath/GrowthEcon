@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: Urbanization without growth in historical perspective
 published: true
 category: me

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: Urbanization with and without industrialization
 published: true
 category: me

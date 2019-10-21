@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: The Effect of Agricultural Technology on the Speed of Development
 published: true
 category: me

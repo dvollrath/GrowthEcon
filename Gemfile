@@ -1,5 +1,4 @@
-source "https://rubygems.org"
+source "http://rubygems.org"
 gemspec
-source 'https://ruby.taobao.org/'
 gem 'github-pages'
 gem 'jekyll-scholar'

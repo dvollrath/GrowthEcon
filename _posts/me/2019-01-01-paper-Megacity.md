@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: The Urban Mortality Transition and Poor Country Urbanization
 published: true
 category: me
@@ -7,5 +7,6 @@ abstract: Today the world's fastest-growing cities lie in low-income countries, 
 author: R. Jedwab and D. Vollrath
 journal: American Economic Journal - Macroeconomics
 volume: 11(1):223-75
-pdf: /assets/Jedwab_Vollrath_Web.pdf
+pdf: /assets/jv_aej_published.pdf
+data: https://github.com/dvollrath/UrbanMortality
 ---

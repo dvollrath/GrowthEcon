@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: How important are dual economy effects for aggregate productivity?
 published: true
 category: me

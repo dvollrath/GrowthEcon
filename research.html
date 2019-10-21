@@ -15,32 +15,22 @@ permalink: /research/
     </div>
   </div>
 </section>
-
 <section id="intro">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          {% for post in site.categories.me %}
-          <div class="posts">
-            <p>
-            {{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
-            "{{ post.title }}." &nbsp; 
-            <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp; 
-            <a href="{{ post.pdf | prepend: site.baseurl }}">Paper</a>. &nbsp; {% if post.appendix %}  <a href="{{ post.appendix }}">Appendix</a>. {% endif %} &nbsp; {% if post.data %}  <a href="{{ post.data }}">Replication</a>. {% endif %}
-            {% if post.abstract %}
-                <ul style="list-style: none;">
-                <li><details>
-                <summary>Abstract</summary>
-                <p>{{ post.abstract }}</p>
-                </details></li>
-                </ul>
-              {% endif %}
-            </p>
-          </div>
-          {% endfor %}
-       </div>
-      </div><!-- .col-md-7 close -->
+          <h4>Click titles for PDF of paper. Links to code and data where available.</h4>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+{% for post in site.categories.me %}
+<div class="container">
+  <a href="{{ post.pdf | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+   <p class="post-date">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
+            <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp;{% if post.data %}<a href="{{ post.data }}">Data and Code</a>{% endif %}</p>
+</div>
+{% endfor %}
+
