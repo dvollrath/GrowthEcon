@@ -7,6 +7,10 @@ exclude:
   - "LICENSE.md"
   - "*.gemspec"
   - "Rakefile"
+  - _posts/**/*.jpg
+  - _posts/**/*.png
+  - _posts/**/*.pdf
+  - _posts/**/*.eps
 
 keep_files:
   - "CNAME"
@@ -37,7 +41,7 @@ scholar:
   sort_by: author, year
   order: ascending, descending
   bibliography: growthbib
-  bibtex_filters: 
+  bibtex_filters:
     - latex
     - dietz
   bibliography_list_tag: ol
@@ -46,9 +50,8 @@ scholar:
 # Pagination and preview
 paginate: 3
 paginate_path: "blog/page:num"
-permalink: blog/:title/ 
+permalink: blog/:title/
 plugins: [jekyll-paginate]
 
 visiblewords: 20
 str_continue_reading: "Continue Reading..."
-  
