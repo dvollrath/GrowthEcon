@@ -5,7 +5,7 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Mon, 16 Dec 2019 11:35:57 -0600</pubDate>
+    <pubDate>Mon, 13 Jan 2020 15:54:20 -0600</pubDate>
     
       <item>
         <title>Demographics and the decline in business dynamism</title>
@@ -17,7 +17,7 @@
 
 &lt;p&gt;I also spend a lot of time in the book talking about things that are &lt;em&gt;not&lt;/em&gt; responsible for the recent growth slowdown. In particular, I work through the evidence on the decline in “business dynamism”, which refers to a set of stylized facts about the speed at which jobs and establishments enter and exit the economy. See &lt;a href=&quot;https://www.brookings.edu/wp-content/uploads/2016/08/haltiwanger_conference_draft.pdf&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://www.aeaweb.org/articles?id=10.1257/aer.p20161050&quot;&gt;here&lt;/a&gt;, and &lt;a href=&quot;https://www.nber.org/papers/w25755&quot;&gt;here&lt;/a&gt; for the evidence. A core fact is that the entry and exit rate of establishments has declined over time, meaning that average establishment age has increased. A second core fact is that job creation and destruction rates also declined, meaning there is less reallocation of labor between establishments.&lt;/p&gt;
 
-&lt;p&gt;There is no disputing those facts, but I argue in the book that this doesn’t account for much of the growth slowdown. Or at least, not much compared to demographic changes. If anything, I may be underselling the importance of demographics, because the aging of the workforce could also be driving the decline in business dynamism.&lt;/p&gt;
+&lt;p&gt;There is no disputing those facts, but I argue in the book that this doesn’t account for much of the growth slowdown. Or at least, not much compared to demographic changes. If anything, I may be underselling the importance of demographics because the aging of the workforce could also be driving the decline in business dynamism.&lt;/p&gt;
 
 &lt;p&gt;That connection from demographics to business dynamism is made in a relatively new paper from &lt;a href=&quot;https://ideas.repec.org/p/nbr/nberwo/25382.html&quot;&gt;Hopenhayn, Neira, and Singhania&lt;/a&gt;. It is new enough that I was only able to squeeze in a quick reference to it during the last stages of preparing the book. This post fleshes out the connection, explaining my understanding of their logic about how demographics link to business dynamics.&lt;/p&gt;
 
@@ -113,13 +113,13 @@
 &lt;h3 id=&quot;stable-growth-in-output-per-capita&quot;&gt;Stable growth in output per capita&lt;/h3&gt;
 &lt;p&gt;Let’s start with what I see as the most basic Kaldor fact, and one that still seems remarkable when you think about it. The growth rate of output per capita (or labor productivity if you care to call it that) is very stable over long periods of time for most &lt;em&gt;developed&lt;/em&gt; countries. I’m going to throw some data in on developing countries to see how they compare, but this whole post is really concentrating on developed country facts.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-lny-bgp.eps&quot; alt=&quot;BGP growth&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-lny-bgp.png&quot; alt=&quot;BGP growth&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The first figure plots the log output per capita over time for a handful of countries. This handful was chosen very deliberately, as they all show remarkable stability in the growth rate of log output per capita over time. I’m going to tag this the “balanced” group of countries, given the stability of the growth rates. Yes, Mexico shows a break around 1980, but on both sides of that break the growth rate is stable. A last comment on this group is that not is the growth rate stable within each country, but the growth rates are similar across countries. There appears to be a common growth rate for output per capita over time for developed countries.&lt;/p&gt;
 
 &lt;p&gt;A quick mathematical aside. You can see that stability from the fact that the lines stay roughly straight. On a log scale, the slope of a line is the growth rate, so the fact that the slope stays the same for all these countries over time means that their growth rate is stable over time.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-lny-catchup.eps&quot; alt=&quot;Catchup growth&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-lny-catchup.png&quot; alt=&quot;Catchup growth&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The second figure plots the log output per capita over time for a second set of countries, which I’ll call the “catchup” group (with the US as a reference). Here the pattern does not look like stable growth. You can see some experiences with rapid growth (e.g. high slopes) for Germany and Japan between 1950 and 1980, and for South Korea and China after 1970 or 1980, respectively. The growth rate for Nigeria is close to zero for most of the time period, with some acceleration towards the end of the figure.&lt;/p&gt;
 
@@ -130,17 +130,17 @@
 &lt;h3 id=&quot;stable-capitaloutput-ratios&quot;&gt;Stable capital/output ratios&lt;/h3&gt;
 &lt;p&gt;The second Kaldor fact is that capital/output ratios are stable. This one is going to be more tenuous than the stability of growth rates. Here’s the capital/output ratios for the “balanced” group of countries.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-ky-bgp.eps&quot; alt=&quot;KY balanced&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-ky-bgp.png&quot; alt=&quot;KY balanced&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;That is stable…ish. Most of these appear to have been drifting upwards over time, from around 2 in 1950 to around 2.5-3 by 2015. One reason to not get too wired up is that the drift could be a data artefact. All the capital/output ratios are calculated from the Penn World Tables, and this may have to do with how output and capital are valued cross-country. If you look only at the US, and use just US national accounts data, you can see more stability in the capital/output ratio.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-ky-us.eps&quot; alt=&quot;KY US&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-ky-us.png&quot; alt=&quot;KY US&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The top line here is the capital/output ratio in aggregate, and while the scaling makes it look more dynamic, note that it stays within a narrower range between 2 and 2.4, with a less obvious trend upward. Moreover, the lines below that measure the capital/output ratio for separate components of the capital stock. Residential and non-residential structures (the dominant part of the capital stock) have fluctuations but very little obvious trend. Equipment also has no distinct trend. The only component that does is intellectual property, and that trend may be due to a lack of accurate accounting in the past.&lt;/p&gt;
 
 &lt;p&gt;Now let’s hop back to the “catchup” group of countries. Here you could talk yourself into stability for Germany and China, perhaps. But there is clearly an upward trend for Japan and South Korea. But note that for both Japan and South Korea, the capital/output ratio does appear to stabilize in the 15-20 years. This would be consistent with the stabilization of their growth rates in the same period after they caught up to places like the US and UK in output per capita.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-ky-catchup.eps&quot; alt=&quot;KY catchup&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-ky-catchup.png&quot; alt=&quot;KY catchup&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If it seems like I’m straining to make the case that the capital/output ratios are stable, I am. This is the least convincing of the Kaldor facts. The idea that capital/output ratios are stable, or are heading towards stability in places like Japan and South Korea, is informed in large part by the theory (Solow, neo-classical growth) that was built on to explain that stability. Thus there is some circular reasoning going on, and here’s where the biggest dose of skepticism about the Kaldor facts should be located. We can’t help but look at the Kaldor facts and see the Solow model at work, and infer that the capital/output ratios &lt;em&gt;must&lt;/em&gt; stabilize eventually. But if you hang in there a few sections, I’ll throw in some other data on rates of return that corroborate the stable capital/output ratio story.&lt;/p&gt;
 
@@ -151,18 +151,18 @@
 
 &lt;p&gt;Yes, I said “gross capital formation” share as opposed to “savings” or “investment” share. I’m getting more and more convinced that using either of the latter two terms adds too much confusion. It is nearly impossible to shed the colloquial meanings of “savings” and “investment”, even for economists. The gross capital formation share of GDP is the fraction of all real output that consists of new capital goods (e.g. new buildings, computers, or bulldozers). It’s “gross” in the sense that it includes capital goods purchased to replace old depreciated capital goods.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-sinv-bgp.eps&quot; alt=&quot;GCF share&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-sinv-bgp.png&quot; alt=&quot;GCF share&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;First is the share for our balanced group, and you can see the stability of that around a value of 0.2 to 0.24 for most of them. Dips and spikes occur for sure, but similar to before there is no distinct rise or fall in this share. The second figure here is for the catchup group, and we’ve again got a lot more excitement. Germany has a pretty stable rate. But Japan and South Korea have rates that are quite high for a time (0.3 or more) before they appear to revert back to a slightly lower rate. Nigeria had a distinct drop in the GCF share in the early 1980’s, but appears stable since then.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-sinv-catchup.eps&quot; alt=&quot;GCF share&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-sinv-catchup.png&quot; alt=&quot;GCF share&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;China is the obvious odd duck here, with a share for gross capital formation that does appear to trend up over time. This trend has to end at some point, as the GCF share of GDP cannot go above one. But there is nothing here that says when it will stop trending up. This catchup group shows, as before, more movement than would be expected just looking at the balanced group. But compared to the capital/output ratio, the stability of the gross capital formation share seems more solid.&lt;/p&gt;
 
 &lt;h3 id=&quot;stable-cost-shares&quot;&gt;Stable cost shares&lt;/h3&gt;
 &lt;p&gt;Kaldor cited the stability of the &lt;em&gt;output&lt;/em&gt; share of labor and capital in his work. I’m going to alter his fact to refer to the stability of the &lt;em&gt;cost&lt;/em&gt; share of labor. That is, I’m interested in the payments to labor (i.e. total wages) as a fraction of total costs (i.e. total wages plus total capital costs), as opposed to the fraction of total output (i.e. total wages plus total capital costs plus economic profits). Starting with an initial &lt;a href=&quot;https://web.stanford.edu/~rehall/Invariance_Properties_of_Solow.pdf&quot;&gt;critique&lt;/a&gt; by Robert Hall, the cost share is more relevant to building a theory of production and growth (but perhaps not of distribution) than the output share. We can use the cost share, under mild assumptions, to infer the elasticity of output with respect to labor. We could use the output share, as Solow did, but that requires much stronger assumptions than I think we should be making.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-klems-labsh-cost.eps&quot; alt=&quot;Labor cost share&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-klems-labsh-cost.png&quot; alt=&quot;Labor cost share&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The figure plots the share of costs going to labor, using data from &lt;a href=&quot;http://www.worldklems.net/data.htm&quot;&gt;KLEMS&lt;/a&gt;. These shares are available for fewer countries and years than the Penn World Table data that is used in the prior facts. What we can see here is something that looks stable…ish. The French data, in particular, show a decided decline in the cost share from 1980 to 1990. But for the rest, the shares don’t have distinct trends. That should indicate to us that the elasticity of output with respect to labor in any production function we use is stable over time. Stable elasticities are what the Cobb-Douglas production function provides, and hence these stable cost shares give us some reassurance that this production function is a decent approximation.&lt;/p&gt;
 
@@ -173,7 +173,7 @@
 &lt;h3 id=&quot;what-about-rates-of-return&quot;&gt;What about rates of return?&lt;/h3&gt;
 &lt;p&gt;An omission from my primary list of revised Kaldor facts is the stability of the rate of return on capital. And if you look at recent &lt;a href=&quot;http://www.macrohistory.net/data/&quot;&gt;data&lt;/a&gt; associated with a paper by &lt;a href=&quot;http://www.macrohistory.net/?sermons=the-rate-of-return-on-everything-1870-2015&quot;&gt;Jorda, Knoll, Kuvshinov, and Taylor&lt;/a&gt;, you’ll find a lot of stability in the rate of return. Here’s a figure from the U.S., plotting five-year averages of the rates of return for three asset classes from 1890-2015. You get something similar for the other major developed countries in their dataset.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/notes-return-usa.eps&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/notes-return-usa.png&quot; alt=&quot;Returns&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I don’t think this needs to be one of the core Kaldor facts. It is almost redundant with the capital/output ratio. Or perhaps a better way to say this is that the stability of the rate of return provides some assurance that there is stability in the capital/output ratio. It would not be hard to convince me, however, that you could use the stability of the rate of return as the main Kaldor fact, and then see the capital/output ratio as redundant. But I like the capital/output ratio a little more because it speaks directly to how a growth model is built (i.e. the properties of the production function).&lt;/p&gt;
 
