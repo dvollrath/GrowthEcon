@@ -202,14 +202,14 @@ GEM
     multipart-post (2.0.0)
     namae (1.0.1)
     net-dns (0.8.0)
-    nokogiri (1.10.4)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
-    rake (10.4.2)
+    rake (12.3.3)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -241,7 +241,7 @@ DEPENDENCIES
   github-pages
   jekyll (~> 3.2)
   jekyll-scholar
-  rake (~> 10.0)
+  rake (~> 12.3)
 
 BUNDLED WITH
    1.17.3
