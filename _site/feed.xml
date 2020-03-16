@@ -5,7 +5,166 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Wed, 11 Mar 2020 11:48:36 -0500</pubDate>
+    <pubDate>Mon, 16 Mar 2020 13:11:57 -0500</pubDate>
+    
+      <item>
+        <title>Economic impacts of the coronavirus - part 1(?)</title>
+        <link>https://growthecon.com/blog/IO-Tables/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/IO-Tables/</guid>
+        <description>&lt;p&gt;I’m washing my hands, avoiding crowds (even more than normal), and thinking about the economic effects of the coronavirus. There is no question there has already been a significant effect, and there will be more effects to come. I’m thinking about what those effects are, how they are distributed across industries (e.g. airlines versus trucking), and how the affected industries influence &lt;em&gt;other&lt;/em&gt; industries and consumers.&lt;/p&gt;
+
+&lt;p&gt;I think this is going to take a few posts, as I don’t have a solid feel for how to do this. And this is going to start theoretically before I (hopefully) get to putting some numbers on things. If you’re interested in some kind of real-time estimate of the effect on GDP and the stock market, this is very much &lt;em&gt;not&lt;/em&gt; the blog for you.&lt;/p&gt;
+
+&lt;p&gt;Let’s get some definitions out of the way. We talk a lot about GDP (&lt;img src=&quot;http://latex.codecogs.com/png.latex?Y\inline&quot;/&gt;), which is the value of all &lt;em&gt;final&lt;/em&gt; goods and services produced in a year (or quarter, or whatever time frame). But many, many transactions are for &lt;em&gt;intermediate&lt;/em&gt; goods and services. Those intermediates are purchased by one firm from another in order to produce something else. The classic example here would be a bakery buying wheat (the intermediate good) from a farmer in order to sell bread (the final good). GDP only measures the value of the bread produced. &lt;em&gt;Gross output&lt;/em&gt; (&lt;img src=&quot;http://latex.codecogs.com/png.latex?Q\inline&quot;/&gt;) would measure the value of the bread &lt;em&gt;and&lt;/em&gt; the value of the wheat.&lt;/p&gt;
+
+&lt;p&gt;The distinction between gross output and GDP, by itself, doesn’t tell us anything about the effects of the coronavirus. But it does remind us that final goods depend on the production of intermediate goods, and so anything that disrupts the production of those intermediates will affect GDP even if nothing directly impacts our demand for those final goods and services. To trace the impact of the shocks from the coronavirus we need to understand the input/output (I/O) relationships linking producers of final goods and services to producers of intermediates.&lt;/p&gt;
+
+&lt;p&gt;Let’s think through some ways the virus would influence the economy in our toy farmer/baker example. If everyone stays home and cooks their own food, then demand for bread falls. The baker will sell less, demand less wheat, and in turn the farmer will suffer a loss of sales. We can use the I/O relationships to tell us how a shock to final demand influences intermediate producers.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, we could have a situation where the farmer gets the virus, say, and cannot work. Then this lowers the amount of wheat produced and hence the baker cannot make as much bread. Here the I/O relationships tell us how a shock to an intermediate producer influences the production of final goods and services.&lt;/p&gt;
+
+&lt;p&gt;Of course both of these shocks are possible, and in reality both kinds of shocks are occurring. To get my head around how big of an impact those shocks could have, I want to build up the math behind the structure of these I/O relationships. This is going to be math-heavy relative to most posts, ultimately reaching matrix algebra. I’m sorry, I don’t know any other way to talk about this stuff. I’m adapting this from notes I’ve used in the past for a grad course. I have tried to keep in some simplified examples of what I’m doing, but it can get a little hairy.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-leontief-inverse&quot;&gt;The Leontief inverse&lt;/h3&gt;
+&lt;p&gt;The connection of GDP (&lt;img src=&quot;http://latex.codecogs.com/png.latex?Y\inline&quot;/&gt;) to gross output (&lt;img src=&quot;http://latex.codecogs.com/png.latex?Q\inline&quot;/&gt;) depends on the input/output relationships of all the different units of production. Input/output refers to the fact that some of the output of one unit of production (&lt;img src=&quot;http://latex.codecogs.com/png.latex?i\inline&quot;/&gt;) is used as an input by another unit of production (&lt;img src=&quot;http://latex.codecogs.com/png.latex?j\inline&quot;/&gt;). As noted, those intermediate transactions are not part of GDP. But they do determine how much gross output is necessary to produce a given amount of GDP.&lt;/p&gt;
+
+&lt;p&gt;Let’s set up a simple example. Consider an oil drilling company that produces barrels of oil. The barrels are used by a refining company that uses them to produce gasoline. But it is also the case that the oil drilling company needs to buy gasoline in order to run their equipment. In addition, there are consumers who have final demand for gasoline, but there is no final demand for oil (i.e. no one consumes oil directly). This is more complex than the wheat/bread example, as the two industries serve as intermediate good providers for each other. But that is something we want to allow for, as most industries are going to operate both as a user and provider of intermediate goods.&lt;/p&gt;
+
+&lt;p&gt;Let’s say that 100 barrels of oil can produce 1,000 gallons of gasoline. And let’s say that consumers demand 1,000 gallons of gasoline. But it is &lt;em&gt;also&lt;/em&gt; the case that it takes 50 gallons of gasoline to produce 100 barrels of oil. So how much oil production is there? To get 1,000 final gallons of gasoline, we need 100 barrels of oil produced. But that requires an additional 50 gallons of gas, which requires an additional 5 barrels of oil. But that 5 additional barrels of oil requires 2.5 gallons of gas, which requires and additional 0.25 barrels of oil. And so on and so on.&lt;/p&gt;
+
+&lt;p&gt;We can construct this interaction in a little system of equations.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+	y_B &amp;= 0.1\times y_G + 0 \\
+	y_G &amp;= 0.5\times y_B + 1,000
+\end{aligned} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_B\inline&quot;/&gt; are barrels produced, which are equal to one-tenth of the total gallons of gas produced, as that is the demand from the refinery. The zero in the first line represents the fact that there is zero final demand for oil (no one uses oil directly, it is only an intermediate good here). The second line shows that the total gallons of gas produced are equal to one-half the number of barrels produced (that is the demand from oil producers) plus the 1,000 gallons demanded by final consumers. This is just a two-equation, two-unknown situation. It can be solved to find &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_B = 105.26\inline&quot;/&gt; is the gross output of the oil drilling company, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_G = 1,052.63\inline&quot;/&gt; is the gross output of the refinery. That 1,000 gallons of final demand for gas leads to an extra 52-ish gallons produced, along with 105-ish barrels of oil as intermediate good.&lt;/p&gt;
+
+&lt;p&gt;This same logic can be extended to the case of &lt;img src=&quot;http://latex.codecogs.com/png.latex?J\inline&quot;/&gt; arbitrary units of production. Ultimately we’d have a &lt;img src=&quot;http://latex.codecogs.com/png.latex?J\inline&quot;/&gt; equation system, with &lt;img src=&quot;http://latex.codecogs.com/png.latex?J\inline&quot;/&gt; unknown gross outputs of &lt;img src=&quot;http://latex.codecogs.com/png.latex?p_j y_j\inline&quot;/&gt;, taking the final demands &lt;img src=&quot;http://latex.codecogs.com/png.latex?p_j c_j\inline&quot;/&gt; of each unit as given. This is tedious, but it is a straightforward linear algebra problem, and can be set up in matrix form. The only difference with the little example of oil and gas is that here we’re going to use values (i.e. with relative prices included) rather than raw quantities.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+	p_1 y_1 &amp;= p_1 y_{11} + p_1 y_{21} + ... + p_1 y_{J1} + p_1 c_1 \\
+	p_2 y_2 &amp;= p_2 y_{12} + p_2 y_{22} + ... + p_2 y_{J2} + p_2 c_2 \\
+	 &amp;...&amp; \\
+	p_J y_J &amp;= p_J y_{1J} + p_J y_{2J} + ... + p_J y_{JJ} + p_J c_J \\ 
+\end{aligned} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where recall that &lt;img src=&quot;http://latex.codecogs.com/png.latex?p_i y_{ji}\inline&quot;/&gt; is the intermediate demand by unit &lt;img src=&quot;http://latex.codecogs.com/png.latex?j\inline&quot;/&gt; for output from unit &lt;img src=&quot;http://latex.codecogs.com/png.latex?i\inline&quot;/&gt;. Depending on the level of analysis you are working with - establishment, firm, sector - you might be able to assert that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_{ii} = 0\inline&quot;/&gt;. But we don’t have to assume this. It is okay if we think of units of production purchasing their own output to use as an intermediate good. Think of a refinery buying its own gas to run its own trucks and equipment. Now we can simplify this by building it into matrix form.&lt;/p&gt;
+
+&lt;p&gt;Define the matrices as follows&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\mathbf{q} = 
+	\begin{bmatrix}
+	p_1 y_1 \\
+	p_2 y_2 \\
+	... \\
+	p_J y_J
+	\end{bmatrix}
+\mathbf{c} = 
+	\begin{bmatrix}
+	p_1 c_1 \\
+	p_2 c_2 \\
+	... \\
+	p_J c_J
+	\end{bmatrix}
+\mathbf{A} = 
+	\begin{bmatrix}
+	\frac{p_1 y_{11}}{p_1 y_1} &amp; ... &amp; \frac{p_1 y_{J1}}{p_J y_J} \\
+	\frac{p_2 y_{12}}{p_1 y_1} &amp; ... &amp; \frac{p_2 y_{J2}}{p_J y_J} \\
+	... &amp; \ddots &amp; ... \\
+	\frac{p_J y_{1J}}{p_1 y_1} &amp; ... &amp; \frac{p_J y_{JJ}}{p_J y_J} \\
+	\end{bmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;The vector &lt;img src=&quot;http://latex.codecogs.com/png.latex?q\inline&quot;/&gt; captures the gross output of each unit, the vector &lt;img src=&quot;http://latex.codecogs.com/png.latex?c\inline&quot;/&gt; the final demand for each units output. The matrix &lt;img src=&quot;http://latex.codecogs.com/png.latex?A\inline&quot;/&gt; is called a “technical coefficients” matrix. The raw data for these matrices come from something called a “use table”, which are part of input/output accounts produced by statistical agencies. I’ll probably go through one of those in a future post.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?A\inline&quot;/&gt; tells us how much of each intermediate good is necessary to produce one (real) dollar of additional output from a given unit of production. It takes &lt;img src=&quot;http://latex.codecogs.com/png.latex?p_2 y_{12}/p_1 y_1\inline&quot;/&gt; in purchases of intermediate good 2 to produce one real dollar of output of good 1, for example. &lt;img src=&quot;http://latex.codecogs.com/png.latex?A\inline&quot;/&gt; thus tells us the “recipe” for producing gross output.&lt;/p&gt;
+
+&lt;p&gt;With these matrices, we can simplify our system of equations down to&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{q} = \mathbf{A}\mathbf{q} + \mathbf{c},&lt;/script&gt;
+
+&lt;p&gt;and solve this using normal matrix operations,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\mathbf{I} - \mathbf{A})\mathbf{q}  = \mathbf{c}&lt;/script&gt;
+
+&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mathbf{I}\inline&quot;/&gt; is an identity matrix, and so&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{q} = (\mathbf{I} - \mathbf{A})^{-1}\mathbf{c}.&lt;/script&gt;
+
+&lt;p&gt;This is the matrix equivalent of our earlier example with the barrels and gas. The &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\mathbf{I} - \mathbf{A})^{-1}\inline&quot;/&gt; matrix is a Leontief inverse”. It isn’t obvious here, but this Leontief inverse summarizes all of the direct and indirect effects of final demand for &lt;img src=&quot;http://latex.codecogs.com/png.latex?c\inline&quot;/&gt; on gross output &lt;img src=&quot;http://latex.codecogs.com/png.latex?q\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;To see what is going on, go back to the simple example involving barrels and gasoline. Write the matrix form of this as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{bmatrix}
+	y_B \\
+	y_G
+	\end{bmatrix}
+=
+	\begin{bmatrix}
+	0 &amp; 0.1 \\
+	0.5 &amp; 0 \\
+	\end{bmatrix}
+	\begin{bmatrix}
+	y_B \\
+	y_G
+	\end{bmatrix}
++
+	\begin{bmatrix}
+	c_B \\
+	c_G
+	\end{bmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where I’ve allowed both oil, &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_B\inline&quot;/&gt;, and gas, &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_G\inline&quot;/&gt;, to have some final demand. Our general setting says that we should form the Leontief inverse first, which in this case is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+(\mathbf{I} - \mathbf{A})^{-1} =
+	\begin{bmatrix}
+	1.052 &amp; 0.105 \\
+	0.526 &amp; 1.052 \\
+	\end{bmatrix}. %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;The entries in this table tell us the total effect of final demand, whatever that may be. For example, the upper right entry (0.105) tells us that every additional gallon of gas demanded induces 0.105 barrels of oil to be produced. We know that technically, only 0.1 barrels are necessary, but an extra 0.005 are produced because oil production requires some gasoline itself. The bottom left entry says that every additional barrel of oil demanded (if anyone wanted oil as a final good) would lead to 0.526 gallons of gas being produced, 0.5 because it takes that much gas to produce a barrel, and an additional 0.026 because that gas requires some oil itself.&lt;/p&gt;
+
+&lt;p&gt;Given that Leontief inverse, we know that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{bmatrix}
+	y_B \\
+	y_G
+	\end{bmatrix}
+=
+\begin{bmatrix}
+	1.052 &amp; 0.105 \\
+	0.526 &amp; 1.052 \\
+	\end{bmatrix}
+\begin{bmatrix}
+	c_B \\
+	c_G
+	\end{bmatrix}. %]]&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;accounting-for-shocks&quot;&gt;Accounting for shocks&lt;/h3&gt;
+&lt;p&gt;Note that just knowing the matrix &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mathbf{A}\inline&quot;/&gt;, and thus the Leontief inverse, doesn’t tell us how big GDP or gross output will be. It only allows us to solve for the relationship of gross output and GDP. Determining actual GDP or gross output would still depend on things like the supply of factors of production (e.g. labor, capital), the productivity of individual units of production, and the preferences of people involved. Nevertheless, this structure is still useful because it gives us the basis for understanding how to account for the interactions of different units of production.&lt;/p&gt;
+
+&lt;p&gt;Ignoring all those other relevant factors (preferences, productivity, factor supply), let’s see a little of what we can do with the Leontief matrix.&lt;/p&gt;
+
+&lt;p&gt;Let’s say that prior to the virus that final use of oil was &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_B = 100\inline&quot;/&gt; and final use of gasoline was &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_G = 1000\inline&quot;/&gt;, and treating these as measured in real values, that means GDP was 1,100. Gross output (again in real values) of oil was &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_B = 210.2\inline&quot;/&gt; and of gasoline was &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_G = 1104.6\inline&quot;/&gt;, for total gross output of 1314.8.&lt;/p&gt;
+
+&lt;p&gt;If the virus meant a shock to demand for gasoline because we all stayed home to watch Netflix, we can work out the impacts. Let’s say that now &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_G = 500\inline&quot;/&gt;, but that demand for oil stays the same at &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_B = 100\inline&quot;/&gt;. This drops GDP to 600. But it also drops gross output to &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_B = 157.7\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_G = 578.6\inline&quot;/&gt;, for a total drop to gross output of 736.3. Because of the drop in gasoline demand, oil production overall falls from 210.2 to 157.7. A full analysis would account for whether there was any impact on final demand for oil due to the virus, whether the drop in gross output in the oil industry or gasoline industry led people to get fired and hence to even lower final demand, and so on and so on.&lt;/p&gt;
+
+&lt;p&gt;We can make this harder. What if the virus means a drop in the production of oil, say because the virus gets loose on a drilling rig in the Gulf? Let’s say that total production of oil is forced to drop from 210.2 to &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_B = 100\inline&quot;/&gt;. What happens? We have to solve this for the level of final demand such that the gross output of oil is only 100. We’re going to have to scale down everything in order to accommodate that drop in oil production. But how? There are a lot of solutions to this system such that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_B = 100\inline&quot;/&gt;, and nothing in the Leontief inverse itself pins down exactly which solution we’d end up at. One &lt;em&gt;possible&lt;/em&gt; answer is that we have &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_B = 0\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_G = 950\inline&quot;/&gt;, so that the 100 barrels of oil are used solely to provide final consumption of gasoline, but there is no oil left over for final use. Or, we could have &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_B = 20\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_G = 750\inline&quot;/&gt; if people really, really want to consume some oil directly.&lt;/p&gt;
+
+&lt;p&gt;The point is that we’re going to have to account for people’s spending preferences as well in order to parse out the shocks. Which is why this is probably going to take me a long time and a few posts to figure out how to think about this right. For now, let’s pretend that I’ll be all over that project, and you’ll see more information over the next few days.&lt;/p&gt;
+
+&lt;p&gt;Until then, wash your hands and stay the f&amp;amp;#@ home.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 16 Mar 2020 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Knowledge diffusion and business dynamism</title>
@@ -1237,76 +1396,6 @@
 &lt;p&gt;This has absolutely nothing to do with the onset of sustained growth. But the logic of the industrious revolution I presented above can be used in reverse to think about changes in economic growth in the recent past. You could argue that recent innovations have made time-intense consumption items (e.g. Netflix or video games) cheaper. And in a mirror image response to the 1600’s, people are substituting more time-intense consumption for goods-intense consumption. This means that they willingly withdraw labor from the market in order to enjoy those time-intense activities, as in the proverbial 20-something male living in his parents basement playing Halo all day. Nothing terribly insightful here, I just thought I was interesting to think about this as the flip of the industrious revolution.&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Jun 2018 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>The paradox of markups, part 2</title>
-        <link>https://growthecon.com/blog/Paradox-2/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Paradox-2/</guid>
-        <description>&lt;p&gt;I told you I wouldn’t leave you waiting on the next post concerning markups and the paper by &lt;a href=&quot;https://dl.dropboxusercontent.com/content_link/JCsTqiauR0JBboj3vsNFRhyw9MrxV3B0j7L3f4fURJnfAUAxSXJXASiRl8OFiU2F/file&quot;&gt;David Baqaee and Emmanuel Fahri&lt;/a&gt;, so here you go. In the &lt;a href=&quot;https://growthecon.com/blog/Paradox/&quot;&gt;last post&lt;/a&gt;, I described the (at times) paradoxical nature of markups. When there is &lt;em&gt;dispersion&lt;/em&gt; in markups, output is lower than it could otherwise be, given technology. But when there is dispersion in markups, there are circumstances - like increasing markups in low-markup producers or shifting resources towards high-markup producers - where raising the average markup in the economy will be associated with higher output.&lt;/p&gt;
-
-&lt;p&gt;All that is in the BF paper, but it is not the main purpose of it. One of the main contributions of the paper is to show that you can generalize these effects of markups to almost any arbitrary model of the economy. The paradox is not just the result of making some particular assumptions about production functions or preferences.&lt;/p&gt;
-
-&lt;p&gt;One application they pursue (among many) is decomposing productivity growth into terms involving technology and terms involving allocative efficiency. If you read this blog at all, you know that productivity is a big bucket of different things going on in the economy. In that bucket are true technology effects, the ability to physically produce more widgets given some set of physical inputs. But also in that bucket are things like the allocation of those inputs across firms that produce different kinds of widgets.&lt;/p&gt;
-
-&lt;h2 id=&quot;decomposing-productivity-growth&quot;&gt;Decomposing productivity growth&lt;/h2&gt;
-&lt;p&gt;If the economy were perfectly efficient, meaning that the inputs we use were allocated across different firms such that we were at the maximum possible output level, then productivity would measure &lt;em&gt;only&lt;/em&gt; true technological improvements. Yes, inputs might move between different firms in response to technological changes, but the &lt;em&gt;efficiency&lt;/em&gt; of the economy is being held constant, and so those changes in input use have zero effect on productivity to a first approximation. The problem with using productivity to measure technology is not that inputs move around, per se, it is that the movement of inputs may not represent a move from one efficient equilibrium to another.&lt;/p&gt;
-
-&lt;p&gt;Let me give you an example to illustrate what I mean. Let’s say that in 2004, all the inputs (e.g. labor) in the economy were allocated in an efficient manner, and output was as high as it could possibly be given the specific physical technologies available in that year. We look at this allocation and say, clearly this is the best way to allocate inputs, so let’s pass a law to freeze the allocations at the 2004 shares. If 4% of all people worked at the Gap in 2004, then 4% of all people would always be required to work at the Gap.&lt;/p&gt;
-
-&lt;p&gt;In 2005, though, there are changes in the specific physical technologies used by different firms. Some may have better technology, some worse. Perhaps the Gap discovers a better way to fold shirts. Who knows. Because the technologies changed, there &lt;em&gt;should&lt;/em&gt; be changes in the allocation of inputs. In an efficient economy, there &lt;em&gt;would&lt;/em&gt; be changes in the allocations. But we have this dumb law that says the allocations cannot be changed.&lt;/p&gt;
-
-&lt;p&gt;From a productivity perspective, the growth in productivity - which remember is the output we can produce given a set of inputs - is affected by two things. First, there are the specific technological changes that occurred. By themselves, those should &lt;em&gt;raise&lt;/em&gt; productivity (remember the cool new folding technique at the Gap). Second, there are now all the distortions introduced by the law. More than 4% of the labor force should work at the Gap now, but it is confined to only employing 4%. Thus we are getting less output than we could, and hence productivity is &lt;em&gt;lower&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Productivity growth is thus a combination of the positive technological effect, and a negative effect of the allocation law. What we’d like to do is separate out those two effects. And that is what BF propose to do, in a setting that allows for any kind of arbitrary structure in terms of production functions, links between firms acting as suppliers to one another, and preferences. The contribution of their work is not to identify this issue in measuring productivity - we’ve known about that for a while - but to develop a way to manage that issue in almost any conceivable setting.&lt;/p&gt;
-
-&lt;p&gt;What do they do? Intuitively, they say you have to calculate the &lt;em&gt;efficient&lt;/em&gt; outcome in 2005 given the changes in technology. Then you compare the productivity of this hypothetical efficient 2005 economy with the efficient 2004 economy, and in that case the productivity you measure is getting the “pure” effect of technology, &lt;em&gt;holding constant the efficiency of the economy&lt;/em&gt;. In theory that is possible to do, but in practice it is hard (impossible) because you don’t know how much the true physical productivity of each firm improved over time. Hold on to that problem for a moment.&lt;/p&gt;
-
-&lt;p&gt;Once you’ve calculated this pure technological effect, you are left with changes in productivity that are due to changes in allocative efficiency. Here, the idea is that you are comparing the &lt;em&gt;efficiency&lt;/em&gt; of the economy in 2004 to the &lt;em&gt;efficiency&lt;/em&gt; of the economy in 2005, without asking about the technological changes. What BF show is that given some readily available data on markups and factor income shares (e.g. wages as a fraction of output) you can calculate this allocative efficiency effect without too much trouble, and this is true no matter how complex the underlying economy may be.&lt;/p&gt;
-
-&lt;p&gt;Overall productivity growth is thus a combination of the pure technology effect and the allocative efficiency effect. The simple math is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\% \Delta Prod = \% \Delta Tech + \% \Delta AE.&lt;/script&gt;
-
-&lt;p&gt;BF have data on productivity growth (this is just the normal thing we calculate from data on output and inputs), and they show how to calculate &lt;img src=&quot;http://latex.codecogs.com/png.latex?\% \Delta AE\inline&quot;/&gt;. So in the end they don’t need to measure the precise technological changes of each firm, they can just back out the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\% \Delta Tech\inline&quot;/&gt; term from the above equation. You can infer the pure technological change in the economy once you measure the allocative efficiency change.&lt;/p&gt;
-
-&lt;p&gt;To implement this, BF need some way of measuring allocative efficiency, and they use the data on markups charged by firms. They draw this data from a paper from Gutierrez and Philippon that I talked about &lt;a href=&quot;https://growthecon.com/blog/Investment/&quot;&gt;here&lt;/a&gt;. If you recall from the &lt;a href=&quot;https://growthecon.com/blog/Paradox/&quot;&gt;last post&lt;/a&gt;, markups push the economy away from the efficient allocation, and so BF can use changes in markups to measure the change in how far away from that efficient allocation the economy moves.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_BF_5.png&quot; alt=&quot;Sources of productivity growth&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The results of all this are in the figure. The blue line, labelled the Solow residual, shows how productivity itself grows over time. This is what they are trying to decompose. The allocative efficiency line (orange dashes) is the contribution to productivity from changes in how close to the efficient allocation the economy got. Notice that this term is &lt;em&gt;rising&lt;/em&gt; over time, meaning that according to their calculations the economy was more efficient in 2015 than in 1996. We’ll get back to that in a moment.&lt;/p&gt;
-
-&lt;p&gt;By definition, the difference between the blue line (productivity) and the orange dashed line (allocative efficiency) has to be the effect of pure technology. The purple line captures this, and you can see that this is also growing over time. But note that overall productivity grew faster than technology because of the allocative efficiency improvement. BF suggest that the each account for about 50% of the growth in productivity.&lt;/p&gt;
-
-&lt;p&gt;(You can also see one last source of growth in productivity, factor undercounting. I ignored this in my little analysis up above. This is capturing the fact that in the presence of markups the measure of inputs that we can calculate is not quite equal to the true level of input use. This effect can get very large - BF find it matters more using other data on markups that are larger than the Gutierrez and Philippon markups - but for the time being, lets set that effect aside.)&lt;/p&gt;
-
-&lt;h2 id=&quot;wait-efficiency-was-going-up&quot;&gt;Wait, efficiency was going up?&lt;/h2&gt;
-&lt;p&gt;The fact that BF find allocative efficiency was &lt;em&gt;improving&lt;/em&gt; over time is perhaps surprising. To see why this was occurring, we can turn to a further decomposition that BF provide. To understand this, it helps to think of the allocative efficiency term as being determined by something like a weighted average of the markups across firms. As a weighted average, it can change over time for two reasons. The markups themselves could change, or the weights could change.&lt;/p&gt;
-
-&lt;p&gt;In the next figure, BF have separated out these two effects. The blue line is the same total allocative efficiency term from the first figure. The “markup effect” in orange dashes is measuring changes just the change in markups charged by firms, effectively holding the weights constant. The general increase in the “markup effect” comes from the fact that most markups were &lt;em&gt;falling&lt;/em&gt; according to the Gutierrez and Philippon data. If you want to refer to the &lt;a href=&quot;https://growthecon.com/blog/Paradox/&quot;&gt;last post&lt;/a&gt;, this is telling us that all the markups in the economy were collapsing towards one (meaning no markup), and that the economy was getting closer to the point where the ratio of marginal utilites was equal to the ratio of marginal costs.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_BF_6.png&quot; alt=&quot;Sources of allocative efficiency&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;At the same time, we have what BF call the “cross-entropy” effect. That is not terribly informative. It refers to the fact that the &lt;em&gt;weights&lt;/em&gt; in the weighted average of markups change over time. Recall that holding markups constant, if you push more resources into high-markup firms, this &lt;em&gt;raises&lt;/em&gt; productivity because the output of those firms is very valuable. The yellow line shows that productivity was rising over time due to this effect, and that in turn implies that more and more resources were getting pushed into high markup firms.&lt;/p&gt;
-
-&lt;p&gt;The shift towards higher markup firms is consistent with the rise in profit share at the aggregate level. But that shift didn’t mean that productivity was falling. There &lt;em&gt;are&lt;/em&gt; situations in which the rising profit share would be associated with lower productivity; if firm-specific markups were rising this would detract from productivity while raising profits. But what appears to have happened here is that profits rose due to changes in the composition of spending towards high-markup firms, and that is associated with higher productivity.&lt;/p&gt;
-
-&lt;h2 id=&quot;revisiting-harbergers-triangle&quot;&gt;Revisiting Harberger’s triangle&lt;/h2&gt;
-&lt;p&gt;The productivity accounting that BF do relates to changes in allocative efficiency, but only in a local sense. It tells us whether we are getting closer or farther from the efficient equilibrium, but it doesn’t tell us how far away the efficient equilibrium is to begin with. How much higher would output be if there were no markups?&lt;/p&gt;
-
-&lt;p&gt;BF use their setting to answer this question. The exact numbers depend on the precise set of markups they use, and some assumptions about the structure of the economy, but the answer is that output would be about 40% higher without markups. This is much, &lt;em&gt;much&lt;/em&gt;, higher than the traditional answer, usually attributed to Harberger, who said the losses from monopoly were around 0.1%. Harberger’s number was always a bad estimate, as it was based on looking across sectors (not firms) only within manufacturing. It was an other example of assuming that what occurs within manufacturing is the only thing that matters. But even so, the scale of the effect that BF find is significant.&lt;/p&gt;
-
-&lt;p&gt;The big question is whether this substantial departure from the efficient equilibrium is worth it. We believe that markups are &lt;em&gt;necessary&lt;/em&gt; to induce economic growth, as they provide the reward to those who innovate. Is operating 40% below the efficient outcome worth it, in the sense that the markups pushing us down there are in turn generating rapid growth? I have no idea what the answer to that question is. You’d need to build some more structure on top of the BF model to do that.&lt;/p&gt;
-
-&lt;p&gt;Here’s another interesting thing about their calculations, and it is an aspect of the paradox of markups. The 40% number BF calculate is for 2014. For 1997, they find that the loss associated with markups is only 4.5%. The loss associated with markups rose from 1997 to 2014, and yet allocative efficiency improved from 1997 to 2014, which is what the productivity calculations showed. How can those two things both be true?&lt;/p&gt;
-
-&lt;p&gt;BF’s productivity calculations show that the economy was moving &lt;em&gt;towards&lt;/em&gt; the efficient equilibrium over time, and hence this contributed to productivity growth. But at the same time, the efficient equilibrium was moving farther and farther away. Think of me running a 100 meter race against Usain Bolt. He’s much faster, but I am running in the same direction, at least. My allocative efficiency improves, in the sense that I’m headed in the right direction. But my absolute efficiency declines, in the sense that Bolt gets farther and farther ahead of me every moment.&lt;/p&gt;
-
-&lt;p&gt;Again, without some more information, you can’t say whether falling further behind the efficient equilibrium is good or bad, but it is an interesting piece of information to throw into the mental wood chipper. It may be worth it to be further behind if that is associated with greater incentives to innovate. Or perhaps it is a correlate of the lack of dynamism in business formation and employment turnover that has been documented.&lt;/p&gt;
-
-&lt;p&gt;I have not even begun to scratch the surface of the interesting applications of the BF paper. I focused on the productivity accounting just because it is something I find to be of particular interest. The power of the paper is, to repeat, that these findings hold without having to make any strong assumptions about what production functions look like or how firms fit together into an input/output matrix. The only annoying thing about the paper is that it is forcing me to see how limited my understanding of the role of markups was in the economy. But it is well worth the effort to read it (so much notation!) if you’re into this kind of thing.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 11 May 2018 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
