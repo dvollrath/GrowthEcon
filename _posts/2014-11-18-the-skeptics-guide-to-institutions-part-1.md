@@ -1,24 +1,13 @@
 ---
 layout: post
 title: The Skeptics Guide to Institutions - Part 1
-date: 2014-11-18 17:28:44.000000000 -06:00
 type: post
 published: true
 status: publish
 categories: [feed]
 tags: deep takeoff
-meta:
-  _edit_last: '8005175'
-  geo_public: '0'
-  _publicize_pending: '1'
-  _oembed_2bc76761eea904168a5cb58434080bc6: '{{unknown}}'
-author:
-  login: dvollrath
-  email: dietz.vollrath@gmail.com
-  display_name: dvollrath
-  first_name: ''
-  last_name: ''
 ---
+
 <p>I'm starting a run of several lectures on institutions in my growth and development course. By revealed preference, so to speak, I take the institutions literature seriously. But there are some issues with it, and so I'm going to teach this literature from a particularly skeptical viewpoint and see what survives. These posts are going to sound very antagonistic as I do this, which isn't completely fair, but makes it more fun to write.</p>
 <p>This first post has to do with the cross-country literature on institutions. The 1st-generation of this research (<a href="https://ideas.repec.org/a/tpr/qjecon/v110y1995i3p681-712.html">Mauro, 1995</a>; <a href="https://ideas.repec.org/a/bla/ecopol/v7y1995i3p207-227.html">Knack and Keefer, 1995</a>; <a href="https://ideas.repec.org/a/tpr/qjecon/v114y1999i1p83-116.html">Hall and Jones, 1999</a>; <a href="https://ideas.repec.org/a/eee/moneco/v50y2003i1p3-39.html">Easterly and Levine, 2003</a>; <a href="https://ideas.repec.org/a/kap/jecgro/v9y2004i2p131-165.html">Rodrik et al, 2004</a>; <a href="https://ideas.repec.org/a/ucp/jpolec/v113y2005i5p949-995.html">Acemoglu and Johnson, 2005</a>) regressed either growth rates or the level of income per capita on an index of institutional quality along with other controls. In general, this literature found that institutions "matter". That is, the indices were statistically significant in the regressions, and the size of the coefficients indicated big effects of institutions on growth or income per capita. </p>
 <p>These results are the prima facie evidence that institutions are a fundamental driver of differences in development levels. The significance combined with the large absolute values of the estimate effects indicated that even small changes in institutions had a big impact on GDP per capita. We'll get to talking about questions of whether in fact these are well-identified regressions in a future post. For now, let's just take these regressions as they are.</p>

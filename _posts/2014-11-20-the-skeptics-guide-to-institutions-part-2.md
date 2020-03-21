@@ -1,23 +1,13 @@
 ---
 layout: post
 title: The Skeptics Guide to Institutions - Part 2
-date: 2014-11-20 17:18:55.000000000 -06:00
 type: post
 published: true
 status: publish
 categories: [feed]
 tags: deep takeoff
-meta:
-  _edit_last: '8005175'
-  geo_public: '0'
-  _publicize_pending: '1'
-author:
-  login: dvollrath
-  email: dietz.vollrath@gmail.com
-  display_name: dvollrath
-  first_name: ''
-  last_name: ''
 ---
+
 <p><em>This is the second of a series of posts on the empirical institutions literature that I am covering in my graduate growth and development course. In <a href="http://growthecon.wordpress.com/2014/11/18/the-skeptics-guide-to-institutions-part-1/" title="The Skeptics Guide to Institutions – Part 1">Part 1</a>, I looked at how the 1st generation of this literature misused cross-country measures of institutions in their poorly identified regressions. </em></p>
 <p>The second generation of empirical institutions work attempted to deal with the endogeneity problem in the standard "regress income per capita on institutions" regression of the 1st generation. </p>
 <p>The dividing line between 1st-generation and 2nd-generation studies isn't that bright. I used <a href="https://ideas.repec.org/a/tpr/qjecon/v110y1995i3p681-712.html">Mauro (1995)</a> as an example of 1st-generation institutions work, but that paper uses ethnolinguistic fractionalizaton as an instrument for corruption. <a href="https://ideas.repec.org/a/tpr/qjecon/v114y1999i1p83-116.html">Hall and Jones (1999)</a> look at measures of institutional quality instrumented with latitude and the percent of the population that speaks Western European languages. These instrumental variable (IV) strategies are generally dismissed, for the reason that few people believe ethnolinguistic fractionalization, latitude, or European language speaking have affects on income per capita *only* through institutions. In other words, these papers seem to fail on the second requirement of an IV, which is that the instrument has no separate correlation with the dependent variable.</p>

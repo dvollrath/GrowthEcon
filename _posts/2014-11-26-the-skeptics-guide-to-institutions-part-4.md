@@ -1,24 +1,11 @@
 ---
 layout: post
 title: The Skeptics Guide to Institutions - Part 4
-date: 2014-11-26 17:03:11.000000000 -06:00
 type: post
 published: true
 status: publish
 categories: [feed]
 tags: deep takeoff
-meta:
-  _edit_last: '8005175'
-  geo_public: '0'
-  _publicize_pending: '1'
-  _oembed_3e150a1ad382b30e8ca4fb64e626aa9a: '{{unknown}}'
-  _oembed_5ac7dbdc75b41f136993c716e04ecca6: '{{unknown}}'
-author:
-  login: dvollrath
-  email: dietz.vollrath@gmail.com
-  display_name: dvollrath
-  first_name: ''
-  last_name: ''
 ---
 <p>The final installment of my series on the empirical institutions literature. Quick summary of the prior posts:</p>
 <ol>

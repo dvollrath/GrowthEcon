@@ -1,22 +1,11 @@
 ---
 layout: post
 title: The Skeptics Guide to Institutions - Part 3
-date: 2014-11-23 18:37:12.000000000 -06:00
 type: post
 published: true
 status: publish
 categories: [feed]
 tags: deep takeoff
-meta:
-  _edit_last: '8005175'
-  geo_public: '0'
-  _publicize_pending: '1'
-author:
-  login: dvollrath
-  email: dietz.vollrath@gmail.com
-  display_name: dvollrath
-  first_name: ''
-  last_name: ''
 ---
 <p><em>This is the third in a series of posts regarding the institutions literature. The first two posts dealt with original <a href="http://growthecon.wordpress.com/2014/11/18/the-skeptics-guide-to-institutions-part-1/" title="The Skeptics Guide to Institutions – Part 1">cross-country work</a> on institutions and the attempt to identify the effects using <a href="http://growthecon.wordpress.com/2014/11/20/the-skeptics-guide-to-institutions-part-2/" title="The Skeptics Guide to Institutions – Part 2">settler mortality</a>.</em></p>
 <p>The third generation of institutions work is, in large part, a response to the empirical problems of the first 2 generations. These new papers avoid vague measurement of "institutions" by drilling down to one very specific institution, and do their best to avoid identification problems by looking for natural experiments that give them good reason to believe they are looking at exogenous variation in the institution.</p>
