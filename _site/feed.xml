@@ -5,7 +5,91 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Sat, 21 Mar 2020 14:31:17 -0500</pubDate>
+    <pubDate>Thu, 02 Apr 2020 11:41:01 -0500</pubDate>
+    
+      <item>
+        <title>Economic impacts of the coronavirus - part 3/n(?)</title>
+        <link>https://growthecon.com/blog/Labor-IO/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Labor-IO/</guid>
+        <description>&lt;p&gt;If you’re wondering what I’m attempting to do in these posts, then join the club. I’m just sort of grasping around for a way of thinking about the aggregate impacts of the shutdowns that takes into account the fact that it will hit particular industries directly (e.g. restaurants) but that this will have ripple effects on other sectors. The prior posts (&lt;a href=&quot;https://growthecon.com/blog/IO-Tables/&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://growthecon.com/blog/Base-IO/&quot;&gt;here&lt;/a&gt;) were building up some understanding of a baseline model to do this.&lt;/p&gt;
+
+&lt;p&gt;The big problem with the baseline model is the fact that it assumes a lot of flexibility in the economy, especially in terms of labor moving around between industries in response to productivity or demand shocks. We’re not seeing the kind of perfect flexibility the baseline model assumes. We are seeing &lt;em&gt;some&lt;/em&gt; flexibility, as Amazon, Costco, and other firms are hiring even as many industries are laying people off. But there is nowhere close to enough of this new hiring to offset the massive job losses that have occurred. We’re at 10 million UI claims in the last two weeks as of today.&lt;/p&gt;
+
+&lt;p&gt;Like a lot of macro models, the baseline version I started with is useful for thinking about relatively long-run changes when the frictions (search and match, for example) have had time to work themselves out. But I think I can still leverage this baseline model to get some idea of the short-run impacts by ignoring some of it and then making some simplifying assumptions of my own.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-industries&quot;&gt;The industries&lt;/h3&gt;
+&lt;p&gt;To explain, let me start with the input/output structure. I’m going to play around with fifteen industries (okay, 17, but the last two are tiny and mainly there so that things add up). I could do this for 71 or (God forbid) 405 industries using I/O tables provided by the BEA, but this is sufficient to get the idea and calculate some effects.&lt;/p&gt;
+
+&lt;p&gt;You can see the 15 main industries and some summary information in the following figure. Yes, that’s just a clip from a spreadsheet, which you can find &lt;a href=&quot;https://www.dropbox.com/s/sk1o0xd8omjrbll/IO_sim.xlsx?dl=0&quot;&gt;here&lt;/a&gt; if you want to play with it. This data is all from 2018 - I know, I know - but that is the latest version of the full I/O tables you can get. For my purpose of seeing how things spread around the economy, I’m okay with that. I’m not trying to give you a precise estimate of GDP in the 2nd quarter of 2020.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/IOsetup.png&quot; alt=&quot;Industry information&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first column shows the share of “final use”, which is another way of referring to GDP. Final use of an industry’s output is that output which is not used as an intermediate good by some other industry. The sum of final use across industries adds up to GDP. Agriculture constitutes 0.3% of GDP, and manufacturing is 9.6%, for example.&lt;/p&gt;
+
+&lt;p&gt;The second and third columns show the Domar weight for each industry, which I explained in the prior post. It’s calculated twice as a check on myself. Once calculated the normal way, by dividing gross output of an industry (Q) by GDP. The second time is calculated by using the I/O matrix itself, and this was just to make sure I wasn’t making some mistake with that matrix. If you take a look at the Domar weights, you can see which industries have a lot of connections as suppliers to other industries. Manufacturing, for example, has a Domar weight of 29.2% even though it is only 9.6% of GDP. That is because manufacturing produces a lot of output that is used as intermediates by &lt;em&gt;other&lt;/em&gt; industries, so its influence on the economy outweighs its final use. Retail, on the other hand, has a Domar weight of 8.3% compared to a share of GDP of 7.5%, not much different. That is because retail isn’t used much as an input by &lt;em&gt;other&lt;/em&gt; industries.&lt;/p&gt;
+
+&lt;p&gt;Following that you can see the total final use and gross output of each industry. And next to those in the final columns are the payroll of each industry (labor compensation as reported in the I/O accounts) and the number of employees (in thousands, which I pulled from a different BEA account).&lt;/p&gt;
+
+&lt;h3 id=&quot;the-shock&quot;&gt;The shock&lt;/h3&gt;
+&lt;p&gt;I said I was going to ignore some of the baseline model in order to make sense of the current shock. I’m going to shove through an exogenous drop in final use spending on a few industries (e.g. art, entertainment, and food service) and then &lt;em&gt;ignore&lt;/em&gt; that in the baseline model this spending would end up being done on other industries. In the baseline model there is no place for consumers money to go other than spending on final use goods or services from the industries. So if you spend less on food service, you would spend that money in the retail industry, for example.&lt;/p&gt;
+
+&lt;p&gt;What I’m doing is assuming that you can just not spend that money. I’m allowing people to have a bank account, or a mattress, or a shoebox, or whatever, and to just stop spending as much. If people spend less on goods and services, GDP will shrink. This is all pretty old school Keynsian cross stuff. And for the purposes of evaluating the effect of a massive spending shock over the horizon of a couple of weeks, I’m good with that. We’re well within the window of time when it makes sense that things like relative prices, wages, and labor allocations across industries aren’t able to adjust. If you aren’t comfortable with that, I could also introduce a “household production” industry into the mix which people spend resources on, but which doesn’t get added up as part of GDP. The drop in spending on food service and other industries would be matched by an increase in “spending” on home production.&lt;/p&gt;
+
+&lt;p&gt;Either way, measured GDP will fall. What is more interesting to me here is the impact of these immediate spending shocks on the gross output of &lt;em&gt;other&lt;/em&gt; industries. When we all spend less at restaurants and hotels, that impacts the industries they use like wholesalers, professional services, and finance. And that in turn impacts their suppliers, which in the restaurant example you might imagine includes the agricultural sector.&lt;/p&gt;
+
+&lt;p&gt;The gross output of each industry is going to be affected negatively by this spending shock, and the size of the negative effect is going to depend on how tied together they are by the I/O matrix. Without my Keynsian-like assumption, there would be some countervailing force propping up other industries as spending shifted from restaurants towards other areas. That could well be part of a response. We already see that some retail institutions (Amazon, some grocery stores) are seeing increased activity. You could play with that in the spreadsheet if you want.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-effect&quot;&gt;The effect&lt;/h3&gt;
+&lt;p&gt;I pushed some numbers through this, and the figure below shows what I’m getting. I assumed that spending on retail fell by 50%, on arts/entertainment/food service by 75%, and on other services by 75%. This is nothing other than gut feel. This is a back of the (very large) envelope stuff. The column showing these percent changes in outlined in red in the figure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/IOeffect.png&quot; alt=&quot;Effects of shock&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What follows are the implications. First comes the absolute change in final use spending in each industry. That’s 766 billion less in retail spending, 944 billion less on arts/ent/food, and 488 billion less on other services. Next comes the impact on &lt;em&gt;all&lt;/em&gt; the industries due to this shock to final use spending. The “Chg Gross Output” column takes the spending shock and pushes it through the I/O matrix to figure out the impact on each industry due to the logic I explained above.&lt;/p&gt;
+
+&lt;p&gt;Gross output in agriculture falls by 24 billion, and in mining by 26 billion, for example. You get big effects in manufacturing, with a drop in 287 billion, in finance with a 388 billion hit, and in professional services with 415 billion. Also notice that in retail, arts/ent/food, and other services, the drop in gross output is &lt;em&gt;bigger&lt;/em&gt; than just that from the drop in spending. The ripple effects from other industries come back to haunt them further.&lt;/p&gt;
+
+&lt;p&gt;Next to the absolute change in gross output is the percent change in each industry, giving you a better idea of the shock to each. No one really escapes here, except perhaps education/health, with only a drop of 0.2%. This small effect is due to the fact that education/health isn’t a big &lt;em&gt;supplier&lt;/em&gt; of intermediate goods to other industries, and so lower demand for things like retail don’t really impact this industry much.&lt;/p&gt;
+
+&lt;p&gt;We can now get to the additional simplifying assumptions I am making to parse through the effects. First, I’m assuming that the share of industry gross output used on payrolls stays constant, as if the industry had a Cobb Douglas production function. This means that payrolls scale up and down with gross output, or that the percent change in total payroll in an industry is the same as the percent change in gross output. This is the last column in the above figure.&lt;/p&gt;
+
+&lt;p&gt;The second assumption is that within an industry the wage is sticky. If the wage is sticky, then any drop in payroll has to be accomplished by firing people. So the percent change in employment in an industry is &lt;em&gt;also&lt;/em&gt; the same as the percent change in gross output. This is in the second to last column of the figure.&lt;/p&gt;
+
+&lt;p&gt;For retail, this implies a drop in employees of 7,336,000, and in arts/ent/food a drop of 1,454,000. Other services lose 4,145,000 workers. But note that professional services sees a substantial drop of 1,802,000, all because of the ripple effects of the initial spending shocks. There are hundreds of thousands of jobs lost in other industries like manufacturing and finance. None of these should be taken too seriously, as again I’m just doing back of the envelope stuff here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/IOaggregate.png&quot; alt=&quot;Aggregate&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I can aggregate all this as well. The last figure here shows those aggregations. GDP falls by 11%, which is entirely due to the assumed collapse in final use spending in those three industries. There is nothing magic about getting that number, but I did choose the shocks to get something like this, as it jives with some reports about the size of the drop in GDP we might expect over the next few months. Gross output drops by 10%, in line with GDP, and payrolls by 11%, neither of which are surprising given the assumed drop in GDP.&lt;/p&gt;
+
+&lt;p&gt;Total employment in this scenario falls by 16,886,000, which is 12% of employment in 2018. That’s not something I was trying to hit, but it is line with reports that the unemployment rate could jump by something in that neighborhood. We’re already at 10 million UI claims, so the question may be whether the negative shocks I threw in the spreadsheet are large enough.&lt;/p&gt;
+
+&lt;p&gt;What you can play with in the spreadsheet are also stimulus scenarios. Be careful here. The stimulus involves very little spending &lt;em&gt;on&lt;/em&gt; government services directly, but instead is mainly transfers by the government to others to spend on any industry they like. So don’t add a big percent increase in the “Government” final use line. Instead add a positive percent to industries you think people will spend UI benefits or the $1200 checks on.&lt;/p&gt;
+
+&lt;h3 id=&quot;doing-it-right&quot;&gt;Doing it right&lt;/h3&gt;
+&lt;p&gt;I can’t emphasize enough that this is not some kind of calibrated forecast of what is going to happen in Q2 or Q3 of this year. It is solely an exercise in seeing how &lt;em&gt;some&lt;/em&gt; kind of shocks will permeate throughout the entire economy, even if they are centered on only a handful of industries.&lt;/p&gt;
+
+&lt;p&gt;If you &lt;em&gt;did&lt;/em&gt; want to do something more accurate, what else would you have to do? I can think of several important ones.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Expectations. It’s not like the pandemic is a secret, so people are presumably adjusting their spending on other industries in &lt;em&gt;anticipation&lt;/em&gt; of the possible effects this year. For example, businesses may be lowering capex because they don’t think demand will materialize until end of this year. That would act like another spending shock to manufacturing or construction. Workers who are worried about getting laid off in the future will pull back on spending as well.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Payrolls and spending. I’m not enforcing any relationship between the drop in payrolls and the drop in spending. If my little exercise is the “through mid-April” forecast, then you have to think through how the drop in payrolls will influence spending across industries in the “mid-April to mid-May” period, and so on.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Relative price changes. I didn’t say it explicitly, but this little exercise assumes that the relative prices of industries don’t change. If retail locations slash prices to salvage &lt;em&gt;something&lt;/em&gt; out of the next few weeks, then this may get people to substitute spending towards them. Although perhaps lockdowns prevent this from doing anything about it?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Industry substitutions. Similar to above, if relative prices change then industries may decide to spend more on cheaper intermediates and less of more expensive ones. That changes the I/O matrix. I’m assuming the matrix stays constant, or that the “recipe” each industry follows for production stays constant. That may not be a bad assumption for small shocks, but is probably wrong for large shocks like these.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A lot of things missing, as you can tell. The farther forward you want to forecast, the more things my simplistic model is going to get wrong. But I find the simplistic model useful just for thinking about the rough scale of the shocks occurring and how they influence the whole economy. We’re starting to see papers coming online that are doing more sophisticated macro modeling of the impact of the virus, which from my very brief scan of intros are taking at least some of these effects into account. Those will be helpful for thinking about how long the dip will last and how significant the rebound will be, which my little spreadsheet has zero information about.&lt;/p&gt;
+
+&lt;p&gt;Stay safe. Stay home. Wash your hands. And you should probably wear a mask.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Apr 2020 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Economic impacts of the coronavirus - part 2/n(?)</title>
@@ -1356,60 +1440,6 @@
 &lt;p&gt;The point is that you don’t want to confuse the scenarios with growth changes and level shifts. These have very distinct implications for the future. And the available evidence on GDP per capita doesn’t tell us which of these scenarios is right, and which is wrong. All we know is that we can reject the old 2% trend line, but we’ll need more evidence before we can figure out whether we saw a drop to a lower growth rate only, or a level shift and possible drop int he growth rate.&lt;/p&gt;
 </description>
         <pubDate>Fri, 24 Aug 2018 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>What determines value?</title>
-        <link>https://growthecon.com/blog/Value-Everything/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Value-Everything/</guid>
-        <description>&lt;p&gt;I had the opportunity to read &lt;a href=&quot;https://amzn.to/2z9NWXJ&quot;&gt;The Value of Everything&lt;/a&gt;, by Mariana Mazzucato, a few weeks ago, and have finally gotten around to writing up something of a review. This book made me think, so I count that as a positive recommendation. Sometimes I was thinking things like, “This is ridiculous, you cannot refuse to acknowledge the difference in stocks and flows!”, but in between those there were some genuine moments where Mazzucato got me to see things from a different perspective.&lt;/p&gt;
-
-&lt;p&gt;Mazzucato makes the point - obvious in retrospect but easy to forget - that the value of economic activity involves a choice. A choice of what “counts” as having value, and what does not. In exploring this, she works through the systems that past writers have used, and compares that to ideas that underlay our current thinking. This is not just a question of “what gets counted in GDP?”, but intended to be broader. Her question is something like, “by using GDP what implicit decisions have we made about what has economic value?”&lt;/p&gt;
-
-&lt;p&gt;The threads of her answer come a little undone by later in the book. After setting up the contingent nature of measuring economic value, she moves into questioning why finance is assigned too much value, while government is assigned too little. I think she intends all this to be radical, but I think the book fails to provide the real kill shot on this. A radical book would outline a new means of assigning value, even in vague terms, but I didn’t get that here.&lt;/p&gt;
-
-&lt;p&gt;Nevertheless, as I said the book did get me thinking on several points. What follows then is far less in the way of review, and more speculative response. Caveat emptor.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-counts-as-valuable&quot;&gt;What counts as valuable?&lt;/h3&gt;
-&lt;p&gt;What became apparent to me in reading Mazzucato’s history was that in most cases, the notion of what counted as valuable in the economy had less to do with &lt;em&gt;output&lt;/em&gt;, and more to do with the &lt;em&gt;inputs&lt;/em&gt;. The Physiocrats, for example, explained that economic value came from agriculture alone. If something was produced using the land, and some sturdy peasants and perhaps some draft animals, then that something had economic value. Any other transactions that took place, like people moving or trading grain, didn’t add value. They shuffled value around between the movers or traders, but didn’t create value. You could increase value only by adding land, peasants, or animals. I’d guess that if you pressed the Physiocrat line, you could allow for technological change in agriculture to raise value, but regardless, value was assigned only to output coming from a specific set of inputs.&lt;/p&gt;
-
-&lt;p&gt;It is not a big leap from here to Marx, where value was located in the labor effort that went into a product. Marx dropped the focus on land or agriculture, per se, but retained the concept that what determined whether output had value was whether it used labor. You could have a hypothetical factory that ran on complete automation, and used no labor. That output could only have value from digging back into the labor used in producing the factory, etc.., but the point is similar to the Physiocrats. It took the “right” inputs to create value.&lt;/p&gt;
-
-&lt;p&gt;We tend to snort at the ideas of the Physiocrats and Marx regarding this kind of thinking. But I’d argue that the most peoples intuitive sense of “economic value” still comes back to their sense of which inputs were used. Much like Marx, most people will attribute value to output based on the perceived labor effort that went into producing it. Like the Physiocrats, production that involves extracting or processing raw materials is considered to have value. Again, it takes the “right” inputs to create value.&lt;/p&gt;
-
-&lt;p&gt;You can see examples of this all over the place. To demonstrate the Physiocrat/Marxist attitude, I give you Commerce Secretary Wilbur Ross, whose Senate testimony on Trump’s tariffs is quated in this article from the &lt;a href=&quot;https://www.huffingtonpost.ca/2018/06/20/wilbur-ross-canada-steel_a_23463975/&quot;&gt;Huffington Post&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“We don’t have a trade deficit of note (on steel),” Ross replied. “We have a surplus in dollars; we do not have a surplus in physical value.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You could do a whole class unpacking the incoherence of that statement. But let’s focus on the fact that what ultimately matters to Ross is &lt;em&gt;not&lt;/em&gt; the notion of dollars, but rather the “physical value”. Steel is built from “real” inputs, so it has a real value beyond anything that we can measure with dollars. I think you can get some traction in thinking about the motives behind tariffs (and support for them) if you consider this notion of value. We can be “losing” at trade because we import things of value (based on their input content) from abroad, even if the associated money flows don’t look so bad.&lt;/p&gt;
-
-&lt;p&gt;In a different context, when people argue for a minimum wage, or a “living wage”, they often appeal to the idea that a hard days work (e.g. the input) grants the work value different from and beyond the dollar value that work earns on the open market. Support for family farms has a similar language of value based on fact that it employs physical labor and - Physiocratic-style - land. It is seen as unfair if this labor and land does not generate a large monetary value, because we assign inherent value to those inputs.&lt;/p&gt;
-
-&lt;p&gt;You can see something of this in the original sets of national accounts, where far more attention was paid to counting up manufacturing output (based on real inputs like labor and coal and iron) that to service output (which presumably used less inherently valuable labor, and, &lt;em&gt;gasp&lt;/em&gt;, no iron ore at all).&lt;/p&gt;
-
-&lt;p&gt;This sense that finance doesn’t “count” works in a similar way. The inputs that go into finance work - people sitting at desks being clever - aren’t assigned value by themselves. The notion of “bullshit” jobs is another example of judging value based on the nature of the input - presumably sitting at a desk and stapling. No one considers farming or mining or manufacturing a “bullshit” job, why? Because they involve “real” labor input, physical work.&lt;/p&gt;
-
-&lt;p&gt;Mazzucato engages in this type of argument, although she doesn’t phrase it this way. Her argument that a number of financial activities do not have value is because they involves &lt;em&gt;no&lt;/em&gt; inputs. Well, a little bit of clever accounting, perhaps, but for all intents and purposes the only “input” they are using is market power. Because the output produced by finance doesn’t rely on real inputs, it cannot have real value. The opposite holds for government and public sector work. This involves real labor (e.g. police officers) and other real inputs (e.g. highways) so it has real value, even if we have trouble putting a clear number on it because of a lack of a profit and loss statement.&lt;/p&gt;
-
-&lt;p&gt;Let me say that there is nothing inherently wrong with Mazzucatos position, as in there being some kind of logical inconsistency. She, and everyone, is welcome to value inputs and hence the output of different sectors in any way they want. The question becomes why standard measures of economic activity, like GDP, have diverged so much from Mazzucatos notion of value, and whether there is some way to bring them back together.&lt;/p&gt;
-
-&lt;h3 id=&quot;gdp-and-the-value-of-output&quot;&gt;GDP and the value of output&lt;/h3&gt;
-&lt;p&gt;How did we get to the point where finance is valued “too much”, while government is valued “too little”? Let’s go back and think about how we would add up the value of economic activity if we did appeal to our notions of which inputs matter, or are “real” enough to count. How do you compare the value of one product to another? How do you compare the labor used in one product to another? Just time? Or does skill matter? How do you add up the value of a bushel of corn with a ton of steel? Do those values change over time?&lt;/p&gt;
-
-&lt;p&gt;You may want to value economic output based on your opinion of the inputs involved, and that’s fine. But I’m not sure you can do that, for all the reasons that Hayek laid out long ago. It’s an information problem. There are too many products, with too much heterogeneity, and too many inputs, for you to come up with a &lt;em&gt;complete&lt;/em&gt; set of rules to value output. And no, general principles don’t solve this, because you need to make particular decisions. The general principles of national income accounting are simple, but the details of how and what we count run to hundreds of pages. And what if I disagree with your opinion, how do we reconcile this? I guess we could each have our own individual measure of economic activity?&lt;/p&gt;
-
-&lt;p&gt;But if you want a single measure then you need a consistent way of measuring the value of output from different activities relative to one another, so that you can add them up. The only practical way to do this we’ve come up with so far is to use relative prices. This is how GDP is calculated.&lt;/p&gt;
-
-&lt;p&gt;The issue for Mazzucato is that by using relative prices, it breaks the link to the inherent value of inputs. Products that have high prices count for a lot, even if those high prices are due to markups from market power, rather than some “true” value of the inputs used. Hence finance, where the markups seem to represent market power to Mazzucato (e.g. net interest margin) gets a heavy weight. Government, where we don’t even have a clear measure of the true price of the output because it isn’t bought and sold like a normal good, ends up downweighted.&lt;/p&gt;
-
-&lt;p&gt;I don’t know that Mazzucatos argument about the problems with using relative prices is very compelling, for the reasons I laid out above about information. There does not seem to be a plausible way to add up economic activity without using prices. I guess to my point much earlier, if this was a radical book it would have proposed some kind of structure to add up activity that does not involve these prices. But I didn’t see that radical idea. In a lot of ways, Mazzucato’s point is just that relative prices are a poor approximation of &lt;em&gt;average&lt;/em&gt; utilities, even if they are good approximations of &lt;em&gt;marginal&lt;/em&gt; utilities. Note, by the way, that even if there is market power and markups that relative prices are still a good indicator of marginal utilities. See my post on the &lt;a href=&quot;https://growthecon.com/blog/Paradox-2/&quot;&gt;paradox of markups&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Anyway, while I’d leave aside this particular criticism of using relative prices, I still think there was a lot of value (yes, that was deliberate) in the book for thinking about how inputs inform our opinions on inherent value. There is a coherent argument to make about how we could or should value certain economic activities more, in the sense of supporting or encouraging them, even if they do &lt;em&gt;not&lt;/em&gt; lead to higher measured GDP, but because they involve the use of some inherently valuable inputs. For example, you could argue that a jobs guarantee is valuable even if it led to GDP being lower than it would otherwise (of course, it might be higher, but that’s a different argument). That would be the case of valuing things based on the nature of the input (e.g. full time work for adults) rather than on the value of output. But using relative prices to value GDP is neither an argument for, nor against, your position.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 09 Jul 2018 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
