@@ -5,7 +5,135 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Thu, 02 Apr 2020 11:41:01 -0500</pubDate>
+    <pubDate>Thu, 13 Aug 2020 17:06:21 -0500</pubDate>
+    
+      <item>
+        <title>The Silicon and Industrial Revolutions</title>
+        <link>https://growthecon.com/blog/Silicon-Valley/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Silicon-Valley/</guid>
+        <description>&lt;p&gt;You can see this post as a way of thinking about &lt;em&gt;anything&lt;/em&gt; other than …. whatever real life has going on right now. And a warning that I posted this without a real close edit, because otherwise it would be another month before it saw the light of day.&lt;/p&gt;
+
+&lt;p&gt;I read &lt;a href=&quot;https://amzn.to/31RI1Sb&quot;&gt;Making Silicon Valley&lt;/a&gt; by Christopher Lecuyer this summer. It’s a fairly straightforward business history of the origins of Silicon Valley, stretching back in time prior to my own vague notion of “something something Fairchild Semiconductor”. I would not recommend it as a casual read, it is very much a “and then this happened” slog through company origins, contracts, and inventions. That said, it is addressing some real historical questions about the role of military contracts and the presence of Stanford in fostering the Silicon Valley of the late 1970s/eary 80s.&lt;/p&gt;
+
+&lt;p&gt;I found the book far more interesting for the somewhat casual asides about what motivated various company founders and inventors, and what led to the concentration of so much activity in that area. As source material for thinking about agglomeration and spillovers, the book has a lot to say. Beyond that, I found myself thinking that Lecuyer was implicitly making a very Joel Mokyr-ian argument that it was ideology and culture that drove this particular silicon revolution.&lt;/p&gt;
+
+&lt;p&gt;It also reinforces this idea (which I tend to associate with Mokyr as well) that these kind of industrial revolutions are dependent on small networks of capable tinkerers, and not on either the average level of human capital or on a few heroic innovators. While all the names you’d expect are there (e.g. Shockley, Moore), my impression of their importance was significantly &lt;em&gt;deflated&lt;/em&gt; by Lecuyer’s book.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-overly-simplified-history&quot;&gt;A overly simplified history&lt;/h2&gt;
+&lt;p&gt;To give you an idea of the scope of what the book covers, I’ll give you my own 10-cent summary. It starts with the formation of local vacuum tube companies in the San Francisco area in the 1930s, in particular Eitel-McCullough. Those two were amateur radio hobbyists, and starting making tubes to service that community. This company became a central node of the network of capable mechanics and engineers that would evolve over time and spawn most of the important firms and innovations.&lt;/p&gt;
+
+&lt;p&gt;World War II created massive demand for vacuum tubes of all types. By the way, I am committing significant technological heresy here by using “vacuum tube” as a catch-all for the products Eitel-McCullough were producing. But this review isn’t about the technology itself, but the process that led to it. And to add another “by the way”, if you read the book you’re going to want Wikipedia open at all times to look up what the hell a klystron is.&lt;/p&gt;
+
+&lt;p&gt;Firms connected to Eitel-McCullough as suppliers, like Litton Engineering, emerged in this period as well. They in turn sponsored new firms like Varian Associates, and what you really had by the early to mid 1950s was “Vacuum Valley”. What will be important for the story below is that these firms required a host of specialized equipment that was provided by smaller firms in the area, and thus the Vacuum Valley had at this point a tightly integrated network of engineers available to be leveraged in other ways.&lt;/p&gt;
+
+&lt;p&gt;Vastly over-simplifying, vacuum tubes are just electrical switches, and so it became possible to think of other ways to do electrical switching, like using semiconductors. This is where Shockley Semiconductor appears in the story, although others like Hewlett-Packard were also working on semiconductors. Regardless, you now get a second wave of expansion as semiconductors become the electrical switch of choice, and the network of firms that grow out of Shockley includes Fairchild Semiconductor, which becomes its own massive node in that network. The most recognizable descendant of Fairchild is Intel. All of these firms took advantage of the engineering network of the Vacuum Valley, not just to provide equipment but to make crucial innovations.&lt;/p&gt;
+
+&lt;p&gt;The larger point to take away from this tiny history is that the network &lt;em&gt;preceded&lt;/em&gt; the breakthroughs, not the other way around.&lt;/p&gt;
+
+&lt;h2 id=&quot;iron-steel-and-silicon&quot;&gt;Iron, steel, and silicon&lt;/h2&gt;
+&lt;p&gt;There is no question that some individuals played outsized roles in the development of Silicon Valley. Eitel, McCullough, Litton, Varian, and others in the first phase built firms from basically nothing. William Shockley won a Nobel prize for a reason. Fortunately for your iPhone, he was also a major asshole, but we’ll get to that. The guys who left Shockley to found Fairchild included people that would have an argument to be on a Mt. Rushmore of Silicon Valley: Robert Noyce, Gordon Moore, Jean Hoerni. If you were looking for “the” innovation that created Silicon Valley, then Hoerni’s creation of the planar process for creating transistors in silicon is probably it. If you want an analogy with the original Industrial Revolution, then Shockley is roughly Newcomen, and Hoerni is roughly Watt.&lt;/p&gt;
+
+&lt;p&gt;But littered throughout Lecuyer’s book around these individuals are references to all the innovations and improvements made by the network of engineers working in the Valley in these decades.&lt;/p&gt;
+
+&lt;p&gt;Let me just focus on Fairchild and their contribution to give you a flavor for what I mean:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Newly available historical materials … the shaping of silicon technology … was a group effort rather than the creation of ‘heroic’ individuals such as Noyce. (p. 130)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;…their first task was to build a strong technical and management team. … The founders also recruited local electronics technicians. Those who had worked in the Peninsula’s tube industries brought with them knowledge of chemical handling, glass working, and vacuum techniques. (p. 139)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… designed the equipment needed for device development and eventual production, and outsourced its construction to local machine shops. (p. 143)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Fairchild’s engineers also developed a radically new planar component, the integrated circuit. (p. 155)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It was Last and his engineers … who made the revolutionary step of engineering and fabricating planar integrated circuits. (p. 157)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Like vacuum tube corporations, Fairchild Semiconductor was dependent on a highly skilled workforce to control complex manufacturing processes and design advanced products. (p. 163)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In addition, it [Fairchild] trained hundred of engineers and technicians in these new techniques. (p. 167)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I could go on and on with quotes like these from Lecuyer’s book. Every advance is shepherded into existence by a small group of skilled engineers, perhaps with a single individual named as the motive force or originator of an idea. But the success of all these inventions - transisitors, integrated circuits - is the continual series of improvements to production techniques and performance that were made by the unnamed engineers of the Valley.&lt;/p&gt;
+
+&lt;p&gt;Which is why my mind went to Mokyr’s work. In &lt;a href=&quot;https://amzn.to/33YHWiq&quot;&gt;The Englightened Economy&lt;/a&gt; this is one of his themes. Chapter 3 of that book is about “Useful Knowledge and Technology”, and discusses the relative importance of captial-S science versus incremental improvement.&lt;/p&gt;
+
+&lt;p&gt;A few items from Mokyr to compare to the quotes regarding Silicon Valley:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;But the spirit of mechanical improvement through better access to knowledge is symbolized by many other figures whose mechanical aptitude and ability to tease out every drop of economic value out of what they knew never ceases to astonish us. (p. 55)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tacit artisinal &lt;em&gt;savoir-faire&lt;/em&gt;, experience-driven insights, trial and error, and serendipity drove many of the eighteenth-century inventions, especially in mechanical engineering and iron and coal, far more than any solid scientific base. (p. 60)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s not that during either revolution (Industrial or Silicon) the people at work were blind to scientific principles, but knowing them doesn’t necessarily get the efficiency of your steam engine any or yield from your silicon wafers any higher. For that you need to do the thing, and by “you” I mean a small cadre of skilled “mechanics” for lack of a better term. Mokyr uses the example of John Smeaton, known for no specific invention in particular, but who developed much more efficient water mills, among his many very-important-but-not-notable accomplishments.&lt;/p&gt;
+
+&lt;p&gt;But do not take the Silicon or Industrial revolution to mean that it is the mass of workers who are responsible for these improvements.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… the Industrial Enlightenment was not the realm of a few heroic inventors and engineers, but neither was it a mass phenomenon that included the working class. It was a minority affair, confined to a fairly thin sliver of a technological elite of well-trained and often literate men. (p. 57)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is something that Lecuyer doesn’t speak to head on, but it’s lurking in the background of his entire book. Silicon Valley was built by a small group of engineers and technicians that revolved around this geographic area and its corporations. The origin of that thin sliver of the well-trained was the vacuum tube industry.&lt;/p&gt;
+
+&lt;p&gt;As Mokyr notes, it is probably impossible to separate the causation between science and practical know-ho, or to separate the causation between flashes of individual insight and the boring accumulation of process improvements. Lecuyer’s book doesn’t provide proof one way or the other. I was just more struck by symmetric the two situations were in this respect.&lt;/p&gt;
+
+&lt;p&gt;I think the tendency is to lean on the stories of individual insights and singular inventions. They are better stories, after all. There is a reason that James Burke’s &lt;a href=&quot;https://amzn.to/2POzyJU&quot;&gt;The Day the Universe Changed&lt;/a&gt; is such compelling TV. And I’ve always read Mokyr, despite his acknowledgement that there is a role for such individual moments, as pulling hard in the other direction to try and correct our overall outlook on what drove innovation, and ultimately economic growth, in the long run.&lt;/p&gt;
+
+&lt;h2 id=&quot;nocal-baby&quot;&gt;NoCal, baby&lt;/h2&gt;
+&lt;p&gt;So Joel Mokyr is really smart, and the history of Silicon Valley is consistent with his views on how industrial revolutions work. But the other element of Lecuyer’s book that stands out is the pure contingency involved in Silicon Valley evolving where it did. Remember that in the 1930s-50s when the vacuum tube industry and then the nascent semiconductor industry were developing, there was &lt;em&gt;no question&lt;/em&gt; that the beating technological heart of the U.S. was located in the Northeast. In 1948 you would have placed a more money on Rochester, N.Y. than San Francisco being the home of an innovative electronics industry.&lt;/p&gt;
+
+&lt;p&gt;What put this network of capable engineers in northern California rather than upstate New York. Have you been to either place in February? Lecuyer cites numerous examples of how it was simply a case of people preferring to live around Santa Clara rather than out east that helped Silicon Valley develop. The geographic advantages of Northern California didn’t &lt;em&gt;cause&lt;/em&gt; smart engineers to emerge there, but they did ensure that the smart engineers that did emerge &lt;em&gt;didn’t leave&lt;/em&gt;. If you were a sharp engineer in Indianapolis in 1950 and RCA came calling, you probably packed up and moved to New York. But when RCA (and Westinghouse and GE and ….) tried to poach these engineers from Silicon Valley - and they did repeatedly - these guys stayed put because Northern California is delightful. And at that point, &lt;em&gt;not&lt;/em&gt; a housing nightmare.&lt;/p&gt;
+
+&lt;p&gt;This goes all the way back to the vacuum tube origins of Silicon Valley. Many of the engineers at Eitel-McCullough, Varian, and Litton ended up working in the East during World War II, either as employees of eastern firms, or as representatives for their California-based firms. But:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;They longed for more congenial and familiar surroundings. The sentiment was not specific the Varians and their friends. It was shared by many western engineers who had moved to the East Coast in the late 1930s and during World War II. Most of these men desired to go back to the West and were afflicted by what was often called at the time “Californiaitis” - the intense desire to relocate to California.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Motivated in part by a similar attachment to California, and also to help care for his ailing mother, Bill Shockley decided to open up his semiconductor firm in Mountain View. This might have been just another example of NoCal keeping the local boys home, but a second example of contingency in the development of Silicon Valley came from his choice. Turns out Shockley was kind of an asshole to work for. He apparently tried to use lie detectors more than once on his employees, among other stories.&lt;/p&gt;
+
+&lt;p&gt;This led to a group of his top engineers - including Hoerni, Moore, and Noyce - to leave the company and set up on their own. They were funded by Fairchild Camera, and hence Fairchild Semiconductor was born. One of their great disagreements with Shockley was over the technical direction to take semiconductors, and it is arguable that had they not left, the arrival of integrated circuits would have been delayed or lost. You’ll have to leave that contention to someone who knows more about the actual engineering than me. But the combination of Shockley’s poor management style combined with the insistence of the Fairchild group that they stay in Northern California meant that the pool of engineers and knowledge stayed local to the area.&lt;/p&gt;
+
+&lt;p&gt;I think it is hard to understate how important it was that as new firms hived off and split from existing ones - including from Fairchild, which spawned numerous children - they &lt;em&gt;stayed&lt;/em&gt; in Northern California. And while some of that was for obvious economic reasons like the availability of engineers, a lot of it was also based purely on geographic preference.&lt;/p&gt;
+
+&lt;p&gt;The origin of the agglomeration economies that we think lie behind the relative productivity of particular cities may well be random. Beyond that origin, Lecuyer’s book provides some ideas for &lt;em&gt;how&lt;/em&gt; agglomeration economies work, and it is very much about the informal social networks formed that pass around tacit knowledge.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Beneath this atmosphere of intense and often ruthless competition was an undercurrent of information sharing. Engineers involved in MOS [metal oxide semiconductors] startups exchanged process and design data with engineers in other firms in an informal way. Most MOS engineers face the same difficult task of developing and stabilizing complex manufacturing techniques. Any information that would help them solve the numerous process issues that they were encountering was welcome. … A web of previous associations also facilitated information sharing. Most of the MOS engineers had worked for other corporations before …. At these firms they built friendships … These previous associations made it easy to contact engineers at other firms and ask their advice. (p. 275)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Bars also fostered the exchange of information among engineering groups. In the first half of the 1960s engineers and managers at Fairchild and other silicon corporations on the Peninsula had developed the habit of meeting after work at a local bar. (p. 275)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… the MOS community on the Peninsula developed a repertoire of process “tricks” that were known only in the area. … In contrast, MOS firms located outside Northern California were not plugged into these networks and did not benefit from their shared knowledge. (p. 275)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To draw this back to the Mokyr work and the Industrial Revolution, we’re back to the idea that the “Tacit artisinal &lt;em&gt;savoir-faire&lt;/em&gt;, experience-driven insights, trial and error, and serendipity” were as important as any scientific insights in driving innovation. But again, this was a thin sliver of highly skilled engineers circulating in a small geographic area from firm to firm, not a body of knowledge spread out across the entire workforce.&lt;/p&gt;
+
+&lt;p&gt;None of this changes the underlying idea in growth economics that it is innovations and invention that drive growth in the long run. But the similarity of the Silicon Valley experience to how Mokyr describes the Industrial Revolution experience does suggest that this innovation and invention is less a function of economy-wide aggregate features (e.g. demographics, trade) and more on niche groups of innovators embedded in specific places and cultures. Put it this way, my Bayesian posterior on the origins or economic growth took a step in Mokyr’s direction after reading Lecuyer.&lt;/p&gt;
+
+&lt;p&gt;You could also file this as an example of the idea that it is better to concentrate your investment and R&amp;amp;D (and education?) rather than making it broad-based. For a couple of other posts I did thinking along those lines, see &lt;a href=&quot;https://growthecon.com/blog/should-developing-countries-try-to-create-a-business-elite/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://growthecon.com/blog/focused-or-broad-based-growth/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m also wondering if this should make me revise opinion on how robust growth is in the long run? If growth depends on some contingent factors leading to niches of innovation, then wouldn’t we expect that to fail every now and then? Or is this where the non-rivalry of the the production processes - once they are developed - kick in a la Romer and save us?&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Aug 2020 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Economic impacts of the coronavirus - part 3/n(?)</title>
@@ -188,30 +316,27 @@
 
 &lt;p&gt;We can construct this interaction in a little system of equations.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{aligned}
-	y_B &amp;= 0.1\times y_G + 0 \\
-	y_G &amp;= 0.5\times y_B + 1,000
-\end{aligned} %]]&gt;&lt;/script&gt;
+\[\begin{aligned}
+	y_B &amp;amp;= 0.1\times y_G + 0 \\
+	y_G &amp;amp;= 0.5\times y_B + 1,000
+\end{aligned}\]
 
 &lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_B\inline&quot;/&gt; are barrels produced, which are equal to one-tenth of the total gallons of gas produced, as that is the demand from the refinery. The zero in the first line represents the fact that there is zero final demand for oil (no one uses oil directly, it is only an intermediate good here). The second line shows that the total gallons of gas produced are equal to one-half the number of barrels produced (that is the demand from oil producers) plus the 1,000 gallons demanded by final consumers. This is just a two-equation, two-unknown situation. It can be solved to find &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_B = 105.26\inline&quot;/&gt; is the gross output of the oil drilling company, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_G = 1,052.63\inline&quot;/&gt; is the gross output of the refinery. That 1,000 gallons of final demand for gas leads to an extra 52-ish gallons produced, along with 105-ish barrels of oil as intermediate good.&lt;/p&gt;
 
 &lt;p&gt;This same logic can be extended to the case of &lt;img src=&quot;http://latex.codecogs.com/png.latex?J\inline&quot;/&gt; arbitrary units of production. Ultimately we’d have a &lt;img src=&quot;http://latex.codecogs.com/png.latex?J\inline&quot;/&gt; equation system, with &lt;img src=&quot;http://latex.codecogs.com/png.latex?J\inline&quot;/&gt; unknown gross outputs of &lt;img src=&quot;http://latex.codecogs.com/png.latex?p_j y_j\inline&quot;/&gt;, taking the final demands &lt;img src=&quot;http://latex.codecogs.com/png.latex?p_j c_j\inline&quot;/&gt; of each unit as given. This is tedious, but it is a straightforward linear algebra problem, and can be set up in matrix form. The only difference with the little example of oil and gas is that here we’re going to use values (i.e. with relative prices included) rather than raw quantities.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{aligned}
-	p_1 y_1 &amp;= p_1 y_{11} + p_1 y_{21} + ... + p_1 y_{J1} + p_1 c_1 \\
-	p_2 y_2 &amp;= p_2 y_{12} + p_2 y_{22} + ... + p_2 y_{J2} + p_2 c_2 \\
-	 &amp;...&amp; \\
-	p_J y_J &amp;= p_J y_{1J} + p_J y_{2J} + ... + p_J y_{JJ} + p_J c_J \\ 
-\end{aligned} %]]&gt;&lt;/script&gt;
+\[\begin{aligned}
+	p_1 y_1 &amp;amp;= p_1 y_{11} + p_1 y_{21} + ... + p_1 y_{J1} + p_1 c_1 \\
+	p_2 y_2 &amp;amp;= p_2 y_{12} + p_2 y_{22} + ... + p_2 y_{J2} + p_2 c_2 \\
+	 &amp;amp;...&amp;amp; \\
+	p_J y_J &amp;amp;= p_J y_{1J} + p_J y_{2J} + ... + p_J y_{JJ} + p_J c_J \\ 
+\end{aligned}\]
 
 &lt;p&gt;where recall that &lt;img src=&quot;http://latex.codecogs.com/png.latex?p_i y_{ji}\inline&quot;/&gt; is the intermediate demand by unit &lt;img src=&quot;http://latex.codecogs.com/png.latex?j\inline&quot;/&gt; for output from unit &lt;img src=&quot;http://latex.codecogs.com/png.latex?i\inline&quot;/&gt;. Depending on the level of analysis you are working with - establishment, firm, sector - you might be able to assert that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_{ii} = 0\inline&quot;/&gt;. But we don’t have to assume this. It is okay if we think of units of production purchasing their own output to use as an intermediate good. Think of a refinery buying its own gas to run its own trucks and equipment. Now we can simplify this by building it into matrix form.&lt;/p&gt;
 
 &lt;p&gt;Define the matrices as follows&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\mathbf{q} = 
+\[\mathbf{q} = 
 	\begin{bmatrix}
 	p_1 y_1 \\
 	p_2 y_2 \\
@@ -227,11 +352,11 @@
 	\end{bmatrix}
 \mathbf{A} = 
 	\begin{bmatrix}
-	\frac{p_1 y_{11}}{p_1 y_1} &amp; ... &amp; \frac{p_1 y_{J1}}{p_J y_J} \\
-	\frac{p_2 y_{12}}{p_1 y_1} &amp; ... &amp; \frac{p_2 y_{J2}}{p_J y_J} \\
-	... &amp; \ddots &amp; ... \\
-	\frac{p_J y_{1J}}{p_1 y_1} &amp; ... &amp; \frac{p_J y_{JJ}}{p_J y_J} \\
-	\end{bmatrix} %]]&gt;&lt;/script&gt;
+	\frac{p_1 y_{11}}{p_1 y_1} &amp;amp; ... &amp;amp; \frac{p_1 y_{J1}}{p_J y_J} \\
+	\frac{p_2 y_{12}}{p_1 y_1} &amp;amp; ... &amp;amp; \frac{p_2 y_{J2}}{p_J y_J} \\
+	... &amp;amp; \ddots &amp;amp; ... \\
+	\frac{p_J y_{1J}}{p_1 y_1} &amp;amp; ... &amp;amp; \frac{p_J y_{JJ}}{p_J y_J} \\
+	\end{bmatrix}\]
 
 &lt;p&gt;The vector &lt;img src=&quot;http://latex.codecogs.com/png.latex?q\inline&quot;/&gt; captures the gross output of each unit, the vector &lt;img src=&quot;http://latex.codecogs.com/png.latex?c\inline&quot;/&gt; the final demand for each units output. The matrix &lt;img src=&quot;http://latex.codecogs.com/png.latex?A\inline&quot;/&gt; is called a “technical coefficients” matrix. The raw data for these matrices come from something called a “use table”, which are part of input/output accounts produced by statistical agencies. I’ll probably go through one of those in a future post.&lt;/p&gt;
 
@@ -239,29 +364,28 @@
 
 &lt;p&gt;With these matrices, we can simplify our system of equations down to&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{q} = \mathbf{A}\mathbf{q} + \mathbf{c},&lt;/script&gt;
+\[\mathbf{q} = \mathbf{A}\mathbf{q} + \mathbf{c},\]
 
 &lt;p&gt;and solve this using normal matrix operations,&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\mathbf{I} - \mathbf{A})\mathbf{q}  = \mathbf{c}&lt;/script&gt;
+\[(\mathbf{I} - \mathbf{A})\mathbf{q}  = \mathbf{c}\]
 
 &lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mathbf{I}\inline&quot;/&gt; is an identity matrix, and so&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{q} = (\mathbf{I} - \mathbf{A})^{-1}\mathbf{c}.&lt;/script&gt;
+\[\mathbf{q} = (\mathbf{I} - \mathbf{A})^{-1}\mathbf{c}.\]
 
 &lt;p&gt;This is the matrix equivalent of our earlier example with the barrels and gas. The &lt;img src=&quot;http://latex.codecogs.com/png.latex?(\mathbf{I} - \mathbf{A})^{-1}\inline&quot;/&gt; matrix is a Leontief inverse”. It isn’t obvious here, but this Leontief inverse summarizes all of the direct and indirect effects of final demand for &lt;img src=&quot;http://latex.codecogs.com/png.latex?c\inline&quot;/&gt; on gross output &lt;img src=&quot;http://latex.codecogs.com/png.latex?q\inline&quot;/&gt;.&lt;/p&gt;
 
 &lt;p&gt;To see what is going on, go back to the simple example involving barrels and gasoline. Write the matrix form of this as&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{bmatrix}
+\[\begin{bmatrix}
 	y_B \\
 	y_G
 	\end{bmatrix}
 =
 	\begin{bmatrix}
-	0 &amp; 0.1 \\
-	0.5 &amp; 0 \\
+	0 &amp;amp; 0.1 \\
+	0.5 &amp;amp; 0 \\
 	\end{bmatrix}
 	\begin{bmatrix}
 	y_B \\
@@ -271,35 +395,33 @@
 	\begin{bmatrix}
 	c_B \\
 	c_G
-	\end{bmatrix} %]]&gt;&lt;/script&gt;
+	\end{bmatrix}\]
 
 &lt;p&gt;where I’ve allowed both oil, &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_B\inline&quot;/&gt;, and gas, &lt;img src=&quot;http://latex.codecogs.com/png.latex?c_G\inline&quot;/&gt;, to have some final demand. Our general setting says that we should form the Leontief inverse first, which in this case is&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-(\mathbf{I} - \mathbf{A})^{-1} =
+\[(\mathbf{I} - \mathbf{A})^{-1} =
 	\begin{bmatrix}
-	1.052 &amp; 0.105 \\
-	0.526 &amp; 1.052 \\
-	\end{bmatrix}. %]]&gt;&lt;/script&gt;
+	1.052 &amp;amp; 0.105 \\
+	0.526 &amp;amp; 1.052 \\
+	\end{bmatrix}.\]
 
 &lt;p&gt;The entries in this table tell us the total effect of final demand, whatever that may be. For example, the upper right entry (0.105) tells us that every additional gallon of gas demanded induces 0.105 barrels of oil to be produced. We know that technically, only 0.1 barrels are necessary, but an extra 0.005 are produced because oil production requires some gasoline itself. The bottom left entry says that every additional barrel of oil demanded (if anyone wanted oil as a final good) would lead to 0.526 gallons of gas being produced, 0.5 because it takes that much gas to produce a barrel, and an additional 0.026 because that gas requires some oil itself.&lt;/p&gt;
 
 &lt;p&gt;Given that Leontief inverse, we know that&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{bmatrix}
+\[\begin{bmatrix}
 	y_B \\
 	y_G
 	\end{bmatrix}
 =
 \begin{bmatrix}
-	1.052 &amp; 0.105 \\
-	0.526 &amp; 1.052 \\
+	1.052 &amp;amp; 0.105 \\
+	0.526 &amp;amp; 1.052 \\
 	\end{bmatrix}
 \begin{bmatrix}
 	c_B \\
 	c_G
-	\end{bmatrix}. %]]&gt;&lt;/script&gt;
+	\end{bmatrix}.\]
 
 &lt;h3 id=&quot;accounting-for-shocks&quot;&gt;Accounting for shocks&lt;/h3&gt;
 &lt;p&gt;Note that just knowing the matrix &lt;img src=&quot;http://latex.codecogs.com/png.latex?\mathbf{A}\inline&quot;/&gt;, and thus the Leontief inverse, doesn’t tell us how big GDP or gross output will be. It only allows us to solve for the relationship of gross output and GDP. Determining actual GDP or gross output would still depend on things like the supply of factors of production (e.g. labor, capital), the productivity of individual units of production, and the preferences of people involved. Nevertheless, this structure is still useful because it gives us the basis for understanding how to account for the interactions of different units of production.&lt;/p&gt;
@@ -1095,13 +1217,13 @@
 
 &lt;p&gt;To make sense of this, I need a little math. The convergence relationship that PSS estimate looks like this&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\ln y_{t} - \ln y_0}{t} = \alpha + \beta \ln y_0.&lt;/script&gt;
+\[\frac{\ln y_{t} - \ln y_0}{t} = \alpha + \beta \ln y_0.\]
 
 &lt;p&gt;On the left is the growth rate of GDP per capita, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y\inline&quot;/&gt;, from some initial year 0 to year &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;. This is related to the initial level of GDP per capita, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0\inline&quot;/&gt;, on the right-hand side. The strength of that relationship is measured by the coefficient &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta&amp;lt;0\inline&quot;/&gt;, or that the growth rate gets smaller as the initial level of income gets higher. How large (in absolute value) &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; is determines how strong that effect is. The extra parameter &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt; is a baseline growth rate.&lt;/p&gt;
 
 &lt;p&gt;A little re-arrangment of this gives us&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln y_t = \alpha t + (1 + \beta t) \ln y_0&lt;/script&gt;
+\[\ln y_t = \alpha t + (1 + \beta t) \ln y_0\]
 
 &lt;p&gt;which is the level of GDP per capita at time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;, given initial GDP per capita at time 0. That multiplicative term &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta t\inline&quot;/&gt; is the effect of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence over time.&lt;/p&gt;
 
@@ -1109,19 +1231,19 @@
 
 &lt;p&gt;At this hypothetical time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;, we want that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_t^{Poor}/y_t^{Rich} = .9\inline&quot;/&gt;, which if you take logs and plug in from the above equation, gives us&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln .9 = \alpha t + (1 + \beta t) \ln y_0^{Poor} - \alpha t - (1 + \beta t) \ln y_0^{Rich}&lt;/script&gt;
+\[\ln .9 = \alpha t + (1 + \beta t) \ln y_0^{Poor} - \alpha t - (1 + \beta t) \ln y_0^{Rich}\]
 
 &lt;p&gt;and we can simplify this to&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln .9 = (1 + \beta t) (\ln y_0^{Poor} - \ln y_0^{Rich}).&lt;/script&gt;
+\[\ln .9 = (1 + \beta t) (\ln y_0^{Poor} - \ln y_0^{Rich}).\]
 
 &lt;p&gt;We also said that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0^{Poor}/y_0^{Rich} = .1\inline&quot;/&gt;, so taking logs of that, we can plug in and get&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\ln .9 = (1 + \beta t) \ln .1&lt;/script&gt;
+\[\ln .9 = (1 + \beta t) \ln .1\]
 
 &lt;p&gt;and now re-arrange to solve for time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;t = \frac{\frac{\ln .9}{\ln .1} - 1}{\beta}.&lt;/script&gt;
+\[t = \frac{\frac{\ln .9}{\ln .1} - 1}{\beta}.\]
 
 &lt;p&gt;This is how long it will take the poor country to go from 10% of rich country GDP per capita to 90% per capita. And you could plug in other numbers in the obvious spots here to think about the time to go from 20% to 99%, or whatever you wanted.&lt;/p&gt;
 
@@ -1388,58 +1510,6 @@
 &lt;p&gt;There you go, Garett. Now I’m done.&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Aug 2018 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Detecting changes in trend growth</title>
-        <link>https://growthecon.com/blog/Gordon-Again/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Gordon-Again/</guid>
-        <description>&lt;p&gt;A quick aside before I start the main part of the post. My blogging has been sparse in the last few months, or even year. This was in large part a reaction to working on a book about the growth slowdown, and time that would have gone into posts got poured into that book. Topics that I would have addressed in posts here got folded into the text of that book. As a few days ago, I’ve got a contract to publish that with the U. of Chicago Press, and it should come out in 2019. There is still some revising to do, but at this point I should get back to some more regular blogging, as I’m out of the weeds on getting the book drafted. Famous last words, of course.&lt;/p&gt;
-
-&lt;p&gt;Back to actual posting. One of the very early posts on this blog, back in 2014, asked “&lt;a href=&quot;https://growthecon.com/blog/is-robert-gordon-right-about-u-s-growth/&quot;&gt;Is Robert Gordon right about U.S. growth?&lt;/a&gt;”. Gordon had written a few pieces explaining that, as of 2007, the trend growth rate of GDP per capita in the U.S. was 0.9%. That is just under half of the trend growth rate that held through most of the 20th century and up to 2007, roughly 2% per year.&lt;/p&gt;
-
-&lt;p&gt;What I did in that post was point out that it would take several years to accumulate enough evidence to reject the hypothesis (in a statistical sense) that the growth rate was still 2%. The issue is that there are fluctuations in GDP per capita around trend (e.g. recessions, booms), and thus it was possible that GDP per capita could still have a 2% trend growth rate, yet GDP per capita could grow quite slowly for a few years due to the effects of the financial crisis or other fluctuations.&lt;/p&gt;
-
-&lt;p&gt;One of the things I came up with in that post was that it would be 2018 before we could make some concrete statements about whether the trend growth rate had fallen below 2%. I really should wait until next year when the data from 2018 are available, but nevertheless it seemed interesting to revisit this question now that we’ve got more evidence on GDP per capita from the last few years.&lt;/p&gt;
-
-&lt;p&gt;But in evaluating whether trend growth has dropped below 2% it turns out to be important to distinguish between changes in the growth rate and changes in the level of GDP per capita. The distinction of the level and growth rate is similar to the distinction between the lane you are in on a highway, and your forward speed. Your forward speed could be identical in either lane in the long run, but if you change lanes (i.e. there is a level shift) your &lt;em&gt;forward&lt;/em&gt; speed (i.e. the growth rate) will drop for a few moments as you transfer some of that into moving sideways. And we don’t want to use the temporary drop in forward speed from changing lanes to make an inference about your long-run forward speed.&lt;/p&gt;
-
-&lt;p&gt;In this setting, we could think of two versions of Gordon’s hypothesis. The first is that the growth rate changed in 2007, but there was no level shift. That is like saying that you stayed in the same lane, but the car slowed down. The second is that there was a level shift in 2007 - you changed lanes - &lt;em&gt;and&lt;/em&gt; that the car slowed down once you got into the new lane. It will be much easier to detect the change in speed in the first situation than in the second.&lt;/p&gt;
-
-&lt;p&gt;By the way, I’m calling this “Gordon’s hypothesis”, but the general idea that the trend growth rate has dropped is not a unique prediction of his, and is probably the default hypothesis for most people who pay attention to the economy. He just put a specific number on the drop, so it makes his prediction more tangible.&lt;/p&gt;
-
-&lt;h3 id=&quot;a-simple-drop-in-the-growth-rate&quot;&gt;A simple drop in the growth rate&lt;/h3&gt;
-&lt;p&gt;Look at the first version of Gordon’s argument, that the growth rate dropped in 2007, but there was no level shift. Taking that as the alternative, I did some very crude calculations in the original post asking when it might be plausible to reject the hypothesis that trend growth was still 2%. The intuition of those calculations was that if trend growth was in fact 0.9% - if we had slowed down - then eventually GDP per capita would fall so far below the 2% trend that we’d have to reject that growth was still 2%. At some point in time it wouldn’t be plausible anymore that all we were seeing were some fluctuation that took us below trend.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_gordon_trend.png&quot; alt=&quot;Trends&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The figure tries to give you some visual for this situation. The solid black line represents the old trend line, estimated using data from 1950 to 2007 (the actual growth rate of this is about 2.1%). The gray lines above and below that 2% trend line are the error bands, meaning that if GDP per capita were in that range, we couldn’t reject that 2% trend growth was accurate. What you also see is the dashed black line representing 0.9% growth starting in 2007, Gordon’s hypothesis. And again, there are gray error bands around this showing where we might expect GDP per capita to be if 0.9% growth was true.&lt;/p&gt;
-
-&lt;p&gt;Finally, you can see the thick black line tracking actual GDP per capita. The financial crisis in 2009 drops the economy below all the error bands, which just represents how dramatic the crisis was relative to the normal fluctuations we might expect in GDP per capita. Since 2009, GDP per capita continued to track upward, but not very rapidly. What seems to be clear from this figure is that GDP per capita is well outside of the 2% error bands, and has been for several years. From this we should reject 2% trend growth.&lt;/p&gt;
-
-&lt;p&gt;Does that mean Gordon is right? In favor of the 0.9% hypothesis is that GDP per capita falls within the error bands of that trend. Which means we &lt;em&gt;cannot reject&lt;/em&gt; 0.9% growth. But that is different than saying 0.9% is &lt;em&gt;right&lt;/em&gt;. We also cannot reject 1% growth, or 0.7% growth. Nevertheless, whether we want to buy Gordon’s precise 0.9% alternative, it would appear that the old trend line no longer applies. We’re just too far out of range.&lt;/p&gt;
-
-&lt;h3 id=&quot;separating-trend-growth-and-trend-level&quot;&gt;Separating trend growth and trend level&lt;/h3&gt;
-&lt;p&gt;But before we dispense with 2% trend growth, we need to think about the distinction of the growth rate and the level. It is quite possible that the financial crisis shifted the &lt;em&gt;level&lt;/em&gt; of GDP per capita down, but that the growth rate of GDP per capita remained around 2% on trend.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_gordon_shift.png&quot; alt=&quot;Level shift&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To see what I mean, take a look at this next figure. Here, what I’ve done is show what a simple level shift - a lane change - looks like for the economy that keeps the 2% trend growth rate. I eyeballed the level shift so that the financial crisis set the new level. But given that new lower level, the growth rate stays the same, and so the dashed lines show the trend and error bands we could expect for GDP per capita after the shift.&lt;/p&gt;
-
-&lt;p&gt;Here, it is less obvious that we can reject a trend 2% growth rate. The actual path of GDP per capita is still within the error bands of 2% growth &lt;em&gt;given the new level&lt;/em&gt;. We are just about to scrape outside of those error bands, so within the next year or so, barring an economic miracle, you’d probably reject 2% growth even if you believed there was a level shift after the financial crisis. But we’re not quite there yet.&lt;/p&gt;
-
-&lt;p&gt;And again, even if next year we decide that we can reject a trend 2% growth rate, that is different from accepting that growth is 0.9%. All we’ll know is that it &lt;em&gt;isn’t&lt;/em&gt; 2%. It might be 1.7%, or 1.5%, or something else. But even if we can’t say that Gordon’s prediction is &lt;em&gt;right&lt;/em&gt; precisely, we could certainly say that he is right that the trend growth rate is &lt;em&gt;lower&lt;/em&gt; than it was prior to 2007.&lt;/p&gt;
-
-&lt;h3 id=&quot;long-run-implications&quot;&gt;Long run implications&lt;/h3&gt;
-&lt;p&gt;The distinction I’m making here between the two situations may seem overblown. Regardless of the scenario, we definitely seem to be below the old trend line. True, but the implications of the two scenarios for the future are very different. If we really are going to experience 0.9 or 1% growth for the indefinite future, that is far &lt;em&gt;worse&lt;/em&gt; than experiencing a level shift in GDP per capita followed by continued 2% growth (or something like 1.5% growth). Compounding always wins.&lt;/p&gt;
-
-&lt;p&gt;Go back to 2007, and start there. Now extrapolate out different scenarios to 2040. On the old trend line, GDP per capita in 2040 would be almost exactly 2 times (98%) higher than in 2007. If starting in 2007 the trend growth rate dropped to 0.9%, then GDP per capita in 2040 would be only 35% higher than in 2007.&lt;/p&gt;
-
-&lt;p&gt;If there was a level shift after 2007 that lowered the trend line by 9% (what I drew in the figure), but the growth rate remained at 2%, then in 2040 GDP per capita would be 81% higher than in 2007. That’s much better than in the situation with the lower growth rate. And even if there is a level shift &lt;em&gt;and&lt;/em&gt; the growth rate drops to 1.5%, we’d still have GDP per capita in 2040 48% higher than in 2007. Still better off than if the growth rate dropped to 0.9% per year.&lt;/p&gt;
-
-&lt;p&gt;The point is that you don’t want to confuse the scenarios with growth changes and level shifts. These have very distinct implications for the future. And the available evidence on GDP per capita doesn’t tell us which of these scenarios is right, and which is wrong. All we know is that we can reject the old 2% trend line, but we’ll need more evidence before we can figure out whether we saw a drop to a lower growth rate only, or a level shift and possible drop int he growth rate.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 24 Aug 2018 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
