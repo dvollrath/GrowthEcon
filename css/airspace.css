@@ -36,6 +36,7 @@ h3 {
 p {
   font-size: 15px;
   line-height: 28px;
+  color: #000000;
 }
 ul {
   padding: 0;
@@ -146,7 +147,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0;
 }
 #intro .block p {
-  color: #7B7B7B;
+  color: #000000;
   padding-top: 20px;
 }
 #intro .block img {
