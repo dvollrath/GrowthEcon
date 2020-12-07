@@ -5,7 +5,89 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Thu, 03 Dec 2020 16:04:11 -0600</pubDate>
+    <pubDate>Mon, 07 Dec 2020 17:16:11 -0600</pubDate>
+    
+      <item>
+        <title>When did productivity growth slow down?</title>
+        <link>https://growthecon.com/blog/BLS-TFP/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/BLS-TFP/</guid>
+        <description>&lt;p&gt;A few weeks ago I participated in a discourse on &lt;a href=&quot;https://www.pairagraph.com/dialogue/ee04c261817f45f39e1d0bb5f63e0b90&quot;&gt;Pairagraph&lt;/a&gt; with &lt;a href=&quot;https://twitter.com/elidourado&quot;&gt;Eli Dourado&lt;/a&gt; of the Center for Growth and Opportunity. The prompt was “Economic growth is stagnating, but there’s more to the story.” I argued that one should not interpret stagnation as implying something is wrong with the economy, and Eli argued that there was evidence of a real slowdown not just in technological growth, but in growth of welfare/well-being. You will be shocked to learn that I think my take on this subject is more accurate. But you should check out both sides of this because Eli’s position is a credible one and he does a good job of arguing it.&lt;/p&gt;
+
+&lt;p&gt;One thing Eli and I agreed on was that looking at growth in &lt;em&gt;total factor productivity&lt;/em&gt; (TFP) was more relevant than looking at growth in GDP per capita. Growth in productivity allows you to either produce more stuff (good for growth in GDP per capita) or use fewer inputs (which is not good for growth in GDP per capita even if it is good for you or the environment). The growth rate of TFP is the better thing to focus on in asking whether stagnation matters.&lt;/p&gt;
+
+&lt;p&gt;Here’s where I want to jump off from the original discussion. The received wisdom is that we are living through a period of slow TFP growth, and that this slowdown in TFP growth kicked in around the early 2000s.&lt;/p&gt;
+
+&lt;p&gt;But I’m not sure that’s the whole story. When you zoom out further you’ll find that if there was a slowdown in productivity growth it started in the late 1960s or early 1970s and has continued through today. If we’re having a discussion about what went “wrong”, then we need to look &lt;em&gt;way&lt;/em&gt; earlier than the early 2000s to figure it out.&lt;/p&gt;
+
+&lt;h3 id=&quot;measuring-tfp-growth&quot;&gt;Measuring TFP growth&lt;/h3&gt;
+&lt;p&gt;The series on TFP that Eli and I reference in our discussion is from &lt;a href=&quot;https://www.frbsf.org/economic-research/indicators-data/total-factor-productivity-tfp/&quot;&gt;John Fernald of the SF Fed&lt;/a&gt; and you can download his series from that link. This series of TFP growth incorporates an adjustment for the utilization of inputs (capital and labor) based on John’s work with &lt;a href=&quot;https://ideas.repec.org/a/aea/aecrev/v96y2006i5p1418-1448.html&quot;&gt;Susanto Basu and Miles Kimball&lt;/a&gt;. The unadjusted growth in TFP he starts with is essentially just the standard BLS series on &lt;a href=&quot;https://www.bls.gov/mfp/mprdload.htm&quot;&gt;multi-factor productivity&lt;/a&gt;, which is just a synonym for TFP.&lt;/p&gt;
+
+&lt;p&gt;In the following figure there are a few things going on. First, since I figured out how to use Plotly this fall, you get an interactive figure. You’re welcome.&lt;/p&gt;
+
+&lt;p&gt;Second, and more important, there are three series plotted. The “Fernald Baseline” is the un-adjusted series on TFP growth. The “Fernald Util-Adjust” is that series adjusted for utilization of capital and labor. The “Original BLS” is my own calculation from the BLS data on the growth rate of TFP that Fernald’s work starts with. As you can see there are some very slight discrepancies in the Fernald Baseline and Original BLS series, but those are so insignificant I’m not worried.&lt;/p&gt;
+
+&lt;iframe width=&quot;900&quot; height=&quot;600&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;//plotly.com/~dvollrath/173.embed&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The utilization adjustment is apparent, and seems to smooth out the growth rate of TFP somewhat over time. Those big dips in the baseline data are, in part, due to low output induced by having low capacity utilization for capital or labor during recessions.&lt;/p&gt;
+
+&lt;p&gt;What is kinda-sorta apparent from the figure is the slowdown in the growth rate of TFP. It definitely looks as if around 2010 the average growth rate of TFP was lower than during the early 2000s and late 1990s. It was as low as you see in the early 1980s, and definitely seems lower than the average rates you see in the 1950s and 1960s.&lt;/p&gt;
+
+&lt;p&gt;With growth rates like this it is often hard to see real trends because of the noisiness. One option is to smooth the growth rates, but I find a very handy way to clarify things is just to look at the &lt;em&gt;log level&lt;/em&gt; of TFP that each of these growth rates implies over time. When you plot something in log terms (or a “ratio scale” as some people like to call it) over time, the slope of the line tells you about the growth rate, and can make trend breaks pop out.&lt;/p&gt;
+
+&lt;iframe width=&quot;900&quot; height=&quot;600&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;//plotly.com/~dvollrath/175.embed&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;This second figure shows those log TFP levels. To me, this makes it less obvious that 2000 was the real trend break we should be looking at. Yes, I know you’re all staring at that orange line with the “Fernald Util-Adjust” series and how it flatlines after 2000. Hang in there, and in the next section I’m going to tell you why the capacity utilization series doesn’t really change the conclusion.&lt;/p&gt;
+
+&lt;p&gt;If you back up and look at the Fernald Baseline (blue) and BLS Original (green) series, they definitively grow faster from 1948 to around the early 1970s, and then things slow down. Yes there is some recovery in the 1990s (a higher slope) but that looks a lot like a temporary spike in a long series of slow TFP growth.&lt;/p&gt;
+
+&lt;p&gt;To focus on that, zoom in on just the Fernald Baseline. We’d get a similar story using the BLS Original series. What I’ve done in the following figure is plot two trendlines. The first is for 1948-1972 (orange) and the second is for 1973-2019 (green).&lt;/p&gt;
+
+&lt;iframe width=&quot;900&quot; height=&quot;600&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;//plotly.com/~dvollrath/177.embed&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;It is clear that the earlier trend line had a much higher slope, and hence a much higher TFP growth rate, of about 1.98% per year. The 1973-2019 trend line had growth of only about 0.87% per year. Are the trendlines perfect fits? Nope. Notice how in the early 1990s actual TFP is below trend for a while, and then there is a spike in TFP growth until about 2005 which puts actual TFP growth above trend. After 2005 the growth rate of TFP is slow, but notice that this means we’re falling almost exactly on the trendline that kicked in around 1972. The &lt;em&gt;level&lt;/em&gt; of productivity by 2019 is not very far from what we’d have guessed if we had made a projection around 1990.&lt;/p&gt;
+
+&lt;p&gt;Why was 1972 the cutoff? Because I’m a narcissist, and that’s the year I was born. If you cut the series at any year from about 1968 to 1978 you’ll get the same story. Extremely rapid growth in the middle-20th century, and relatively slow growth in productivity in the late 20th-early 21st century. The productivity growth slowdown is not just a 21st century issue.&lt;/p&gt;
+
+&lt;p&gt;To give a sense of the scale of the effects of the slowdown that started around 1972, take a look at the extrapolation of the orange line. That is where productivity would have been, roughly, if we had continued at 1.98% TFP growth after my birth. By 2019, TFP would have been &lt;img src=&quot;http://latex.codecogs.com/png.latex?e^{6.01}/e^{5.44} = 1.77\inline&quot;/&gt; times higher. That’s a massive difference.&lt;/p&gt;
+
+&lt;p&gt;Hence my conclusion that if we’re going to argue about a productivity growth slowdown, we need to be arguing about what happened in the late 1960s and early 1970s and not what happened in 1999 or 2001 or 2009. We’ve been a slow-TFP growth economy for &lt;em&gt;decades&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;to-adjust-or-not&quot;&gt;To adjust or not&lt;/h3&gt;
+&lt;p&gt;But what about the capacity utilization adjustment? If you back up two figures, that orange line for “Fernald Util-Adjust” just looks ugly starting in about 2005. The following figure does the same trendline breakdown for this series around 1972 as above. It has a very similar flavor, except that around 2005 things just plateau and we end up farther below the trendline by 2019.&lt;/p&gt;
+
+&lt;iframe width=&quot;900&quot; height=&quot;600&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;//plotly.com/~dvollrath/179.embed&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Hover over the figure and you can see that log TFP in 2005 was 5.41, and in 2019 was …. 5.43. That’s a sum total of 2% TFP growth in 14 years, or about 0.14% per year. That &lt;em&gt;has&lt;/em&gt; to indicate there is a problem, right?&lt;/p&gt;
+
+&lt;p&gt;Maybe. Even with the 2005-2019 slowdown, the economy isn’t that far off the trendline for 1973-2019. The gap between the actual series (blue) and the trendline (green) implies TFP is about 3% below where it “should” have been given the trend. But it’s 73% behind the 1948-1972 trend. Relatively speaking, the recent sluggish growth in TFP isn’t really important to the larger story of what happened somewhere between Stevie Wonder’s release of &lt;em&gt;Music of My Mind&lt;/em&gt; and &lt;em&gt;Innervisions&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Even if you want to contend that 1995-2005 is the right period to compare our current TFP growth to, that still leaves 1972 (or thereabouts) as the more important breakpoint. Consider the red line, which plots the trendline as if 1995-2005 became the “new normal” starting in 2005, with a growth rate of TFP of 2%. By 2019 actual TFP was 31% behind that 1995-2005 trend.&lt;/p&gt;
+
+&lt;p&gt;But in 2019 even that “new normal” trendline was &lt;em&gt;still&lt;/em&gt; 36% behind the 1948-1972 trendline. You cannot escape the fact that the slowdown in TFP growth starting in the early 1970s was a massive event in the history of TFP growth. Explaining why TFP growth slowed down in 2005 is less imperative than explaining why it slowed down in 1972. And that is not just my narcissim or love of Stevie Wonder talking (well, okay, maybe a little).&lt;/p&gt;
+
+&lt;h3 id=&quot;dont-you-worry-about-a-thing&quot;&gt;Don’t you worry about a thing?&lt;/h3&gt;
+&lt;p&gt;This isn’t to say that the slowdown in TFP growth was a good thing. But trying to locate it in some breakdown or policy change around 2005 or the financial crisis is misguided. Conceiving of this as a early-70s change in trends rearranges my priors on a few things.&lt;/p&gt;
+
+&lt;p&gt;First, I think it makes the argument that structural change is important for productivity growth. The early 1970s coincide roughly with the peak of American manufacturing as a share of economic activity. Is this the a demonstration of Baumol effects really kicking in? Or did the rise of competitors like Japan, and less favorable exchange rates, constrict manufacturing activity enough to make its weight felt on productivity growth?&lt;/p&gt;
+
+&lt;p&gt;Second, even if it is due to changes in manufacturing activity, does a trend break around 1972 absolve China (WTO acession) and Mexico (NAFTA) of blame for a TFP growth slowdown? Probably?&lt;/p&gt;
+
+&lt;p&gt;Third, is it evidence that significant financial events have lasting real effects? Did the inflation of the 70s and the Volcker disinflation do &lt;em&gt;something&lt;/em&gt; to productivity growth? You’d have to entertain that possibility, right?&lt;/p&gt;
+
+&lt;p&gt;Fourth, is Bob Gordon more right than he thinks? Did the build-out of things like the interstate highway system, major airports, the electrical grid, and the telephone system exhaust the possibilities for significant step-ups in productivity? Should we think more about general purpose technologiges (GPTs) as drivers or bursts of productivity growth?&lt;/p&gt;
+
+&lt;p&gt;Fifth, this puts another hole in the “market power” story of slow TFP growth. None of the series I see on this suggest any kind of prima facie case for market power changing until well after this slowdown starts in the early 1970s. Might one make the case that market power is a consequence of slow TFP growth, and not a cause?&lt;/p&gt;
+
+&lt;p&gt;Sixth, demographics matter even more than I thought? The late 1960s/early 1970s coincide with the flood of Baby Boomers into the labor market. Are the returns to experience much more severe than we think from Mincer regressions, and so their entry lowered productivity growth before creating a spike in the late 90s as they really reached their peak?&lt;/p&gt;
+
+&lt;p&gt;Seventh, is it possible that &lt;em&gt;Innervisions&lt;/em&gt; was so good that people no longer felt it was worth trying to innovate? Once you have that album in your life, is there a reason to ask for more?&lt;/p&gt;
+
+&lt;p&gt;I have no answers to these questions, and I probably have more. If we’re looking too closely at the early 2000s we are probably missing the larger story. Don’t let recency bias narrow the field of inquiry!&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/RxsBc5p-dPU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2020 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>The Silicon and Industrial Revolutions</title>
@@ -1406,110 +1488,6 @@
 &lt;p&gt;But the crude definition of involution is just a synonym for “Malthusian equilibrium allowing for technological change”. It isn’t a problem to use a single term to stand in for a more complex phenomena. It can save you some time typing. But I think using the concept of involution without its Malthusian context leads one to do a lot more analytical work than necessary. The Malthusian setting gives you clear guidance on what the proximate determinants of living standards are. And in the Asia/China setting, the experience with respect to commercial and technological changes are not necessasrily paradoxes or mysteries.&lt;/p&gt;
 </description>
         <pubDate>Mon, 15 Oct 2018 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>The inverse relationship of farm size and productivity</title>
-        <link>https://growthecon.com/blog/IFSP/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/IFSP/</guid>
-        <description>&lt;p&gt;Since I am an intellectual raccoon, it was not a surprise that when &lt;a href=&quot;https://twitter.com/GarettJones&quot;&gt;Garett Jones&lt;/a&gt; dangled a shiny object called “the inverse farm-size productivity relationship” in front of me on Twitter, I grabbed hold with my dirty little paws and would not let go. The inverse farm-size productivity (IFSP) relationship is something I’ve been interested in since grad school, and my very first published paper has a strong link to the subject. But from Garett’s tweet, and the responses it gathered, I realized I was a bit behind on the state of this literature. And so here we are, with a blog post that is something of a literature review and something of a critical analysis.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-origin-of-the-ifsp-fact&quot;&gt;The origin of the IFSP “fact”&lt;/h3&gt;
-&lt;p&gt;Let’s start by laying out what precisely the IFSP is, and some of the implications of it. Note that by the end of this post you’re going to see that the “standard” IFSP I’m going to define here is probably wrong. Still, I think it is worth seeing what it is, where it came from, and &lt;em&gt;why&lt;/em&gt; we now think it is wrong.&lt;/p&gt;
-
-&lt;p&gt;The IFSP is the stylized fact that small farms have higher yields per acre than large farms. In other words, output per hectare is decreasing with the number of hectares, and hence there is an &lt;em&gt;inverse&lt;/em&gt; relationship of farm size (hectares) and productivity (output per hectare).&lt;/p&gt;
-
-&lt;p&gt;The ur-text of the IFSP literature is &lt;a href=&quot;/assets/papers/Sen_1962.pdf&quot;&gt;Sen&lt;/a&gt; (1962). Yes, I know &lt;a href=&quot;/assets/papers/alexander_chayanov_the_theory_of_peasant_economy.pdf&quot;&gt;Chayanov&lt;/a&gt; (1926) talked about it as well in the context of Russia, but Sen’s work managed to kick off a few &lt;em&gt;decades&lt;/em&gt; worth of research, whereas Chayanov’s observation just kind of sat there for years without much response (at least within economics). Sen’s original 1962 paper does not provide any direct evidence of the IFSP. He simply mentions this (his Observation III) as something that is found to be generally valid in Indian agriculture. This conclusion is based on a series of Farm Management Surveys done in the 1950’s for several Indian states.&lt;/p&gt;
-
-&lt;p&gt;If you dig back through a lot of the papers that follow Sen, they take this relationship for granted, or also appeal to the Farm Management Surveys (FMS). One of the first papers I know of that actually documents the IFSP in the FMS data is from &lt;a href=&quot;/assets/papers/Saini_1971.pdf&quot;&gt;Saini&lt;/a&gt; (1971). He looks, using the farm level data, at the elasticity of total output with respect to operational area of a farm. If that elasticity is less than one, it means that if farm size increases by 1%, output increases by &lt;em&gt;less&lt;/em&gt; than 1%, and hence the yield falls. This constitutes the standard method for establishing the &lt;em&gt;prima facie&lt;/em&gt; evidence that the IFSP exists. Here’s the original table from Saini,&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_saini_tab1.png&quot; alt=&quot;Saini Table 1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Look at the column labelled &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;, which is the estimated elasticity. You can see that all but three are less than one. And if you look at the second to last column, at the t-values, you see that in all but six we can reject the hypothesis that the elasticity is equal to one. On this basis, Saini says that the stylized fact of the IFSP used by Sen and others is a robust statistical relationship.&lt;/p&gt;
-
-&lt;p&gt;And at this point (roughly) forward, the notion that the IFSP exists in some manner becomes an established fact. Note that this is based on Indian data alone, and it will remain the case throughout this literature that the IFSP is centered around a discussion of Indian agriculture.&lt;/p&gt;
-
-&lt;p&gt;It isn’t until a book by &lt;a href=&quot;https://books.google.com/books/about/Agrarian_Structure_and_Productivity_in_D.html?id=i_4DAAAAMAAJ&quot;&gt;Berry and Cline&lt;/a&gt; (1979) that we get some evidence for the IFSP in different contexts. The strength of the book at the time was pulling in farm-level data from different countries, and exploring the existence of the IFSP directly in each. The book, in addition, documents a number of other facts related to farm-size distributions. Which is the reason that the U of Houston library copy has lived in my office for the last 13 years (and, uh, sorry about all the margin notes).&lt;/p&gt;
-
-&lt;p&gt;Quickly, Berry and Cline examine the farm-level data and find:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Brazil: a regression shows a negative relationship of yield (output per area or &lt;img src=&quot;http://latex.codecogs.com/png.latex?output per\inline&quot;/&gt; value of land) and the number of hectares on a farm, including controls for regions&lt;/li&gt;
-  &lt;li&gt;Colombia: summary data shows that yield (gross or net farm income per hectare) falls as you look at groups of larger and larger farms&lt;/li&gt;
-  &lt;li&gt;Philippines: regression shows a negative relationship of yield (value-added per hectare or just value-added from crops per hectare) and the area (total hectares or cultivated hectares) across farms&lt;/li&gt;
-  &lt;li&gt;Pakistan: regression shows a negative relationship of yield (gross farm income per acre) with area of farms (in acres), including controls for regions&lt;/li&gt;
-  &lt;li&gt;Malaysia: summary data shows that yield (value-added per hectare) falls as you look at groups of larger and larger farms&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Berry and Cline also confirm the findings for India. So between that original work on India, and the Berry and Cline evidence from different settings, the IFSP appears to be an established fact by the early 1970s.&lt;/p&gt;
-
-&lt;h3 id=&quot;unleash-the-theorists&quot;&gt;Unleash the theorists!&lt;/h3&gt;
-&lt;p&gt;We could not let a good stylized fact go to waste, so the economics profession quickly got to work theorizing about &lt;em&gt;why&lt;/em&gt; the IFSP existed. And that theorizing invariably started with an observation that the IFSP &lt;em&gt;should not&lt;/em&gt; exist given standard assumptions about how markets work. In this, the IFSP literature echoed the literature on share-cropping, the existence of which had bothered economists all the way back to Marshall.&lt;/p&gt;
-
-&lt;p&gt;If people can buy, sell, or rent land at will, and if people can work for wages, hire workers for wages, and work on their own farm, and if people are attempting to maximize the profits they earn using their land (if they hold some), &lt;em&gt;then&lt;/em&gt; there should be no IFSP. Let’s say you have a large farm and a small farm , but the yield on the large farm is lower than on the small farm. The large farmer should offer to rent the small farmer some land. This will reduce the large farm size, but raise its yield. The small farmer would get larger, and their yield would fall. It will make sense to keep renting land to the small(er) farmer until the yield is identical on the two farms. This will maximize the total output across the two farms.&lt;/p&gt;
-
-&lt;p&gt;You can also get to this idea if we think of the labor market. The large farmer should offer to hire the small farmer for some hours of work. This would lower the yield on the small farm (less work is getting done) but raise the yield on the large farm (more work is getting done). For a similar argument, the large farmer should keep hiring more hours of the small farmer’s time until the yield across all hectares is identical.&lt;/p&gt;
-
-&lt;p&gt;Regardless, the yield on every hectare of land should be identical, no matter the actual ownership structure of the land to begin with. The fact that the yield is &lt;em&gt;not&lt;/em&gt; identical means we are sacrificing some output. And that didn’t make sense. It’s seems like leaving dollar bills on the sidewalk.&lt;/p&gt;
-
-&lt;p&gt;But simply assuming that developing country farmers had some inability to see, or desire to take advantage of, these kinds of gains, was a no go. T.W. Schultz had just published in 1964 &lt;em&gt;Transforming Traditional Agriculture&lt;/em&gt;, which argued that you had to see farmers in these situations as keen optimizers (given their poverty, probably even more concious of maximizing their output than someone with a more secure lifestyle). So the game was to see under what conditions it would be that the IFSP was the result of many farmers pursuing an optimizing strategy.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/papers/Sen_1966.pdf&quot;&gt;Sen&lt;/a&gt; (1966) laid the groundwork for one common explanation, which was that the labor employed on small farms was effectively &lt;em&gt;different&lt;/em&gt; than hired workers. Because of a surplus labor situation (a la Lewis), or a low opportunity cost for family labor, or a monitoring cost for hired workers, the effective wage of family workers is lower than hired workers. For a small family farm, they “hire” more of their own labor given the relatively low effective wage, raising the labor used per hectare and raising yields. For large farms, which must hire in workers, the effective wage is higher, and as such the large farmer employs fewer workers per hectare, resulting in lower yields.&lt;/p&gt;
-
-&lt;p&gt;That makes &lt;em&gt;some&lt;/em&gt; sense, and you can get into the weeds on what exactly creates the monitoring costs or lowers the opportunity cost for family members. But regardless of the explanation, a paper by &lt;a href=&quot;/assets/papers/Feder_1985.pdf&quot;&gt;Feder&lt;/a&gt; (1985) established that a single market failure like this (i.e. a wedge in the effective wage of otherwise similar workers) cannot, by itself, account for the IFSP. The basic argument is that if only one market has a wedge or friction, the &lt;em&gt;other&lt;/em&gt; markets can all adjust such that the IFSP doesn’t hold. To see this, imagine that our large farmer and small farmer exist as before, and that the large farmer hires some of the small farmers time (or hires some of the small farmers family members) to work on their farm along with the large farmers own family. You could still raise output by having the large farmer rent some land to the small farmer. You would do this until the two farms were just of the size that both were being worked by only family workers. Thus output would be higher, and the work effort (and yield), would be identical across the two farms. What Feder showed was that it took &lt;em&gt;multiple&lt;/em&gt; market failures to deliver the IFSP. We need &lt;em&gt;both&lt;/em&gt; an implicit difference in wages between family and hired labor, &lt;em&gt;and&lt;/em&gt; an inability to rent in/out land, for the IFSP to persist. So in that sense, the presence of the IFSP implied multiple failed or missing markets within developing countries.&lt;/p&gt;
-
-&lt;p&gt;Now, there was another line of reasoning that attempted to explain the IFSP, based on risk. &lt;a href=&quot;/assets/papers/Srinivasan_1972.pdf&quot;&gt;Srinivasan&lt;/a&gt; (1972) and &lt;a href=&quot;/assets/papers/Barrett_1996.pdf&quot;&gt;Barrett&lt;/a&gt; (1996) both considered that production risk could induce small farmers to work more intensely on their farms. A simple way to see this is to imagine that each farmer has a fixed minimum absolute amount of output that they &lt;em&gt;have&lt;/em&gt; to produce to survive, and that there is some uncertainty in how much their land will yield in a given year. For a small farmer, they raise the expected yield of their land to a very high level so that they eliminate (or make insignificant) the risk that a bad year leaves them without enough to eat, and hence they achieve high yields on average. For the large farmer, the absolute amount of output they get from their land is large even in a bad year, so they do not need to jack up their expected yield. Hence their observed average yield is low. (As an aside, Barrett’s paper is really about price risk for output, not risk in the actual output itself, but the same ideas apply.)&lt;/p&gt;
-
-&lt;p&gt;A last theoretical possibilty, one that tended to get dismissed for the most part, is that farm production is decreasing returns to scale. That kind of assumes the answer, but still left open the question of why the large farmer didn’t split up or rent out their land to smaller farmers. You still needed some kind of missing market to make this one work.&lt;/p&gt;
-
-&lt;h3 id=&quot;implications-for-redistribution&quot;&gt;Implications for redistribution&lt;/h3&gt;
-&lt;p&gt;The importance of the IFSP in practice is that it makes a case for redistribution of land. Regardless of the underlying source of the IFSP, its presence implies that one could &lt;em&gt;force&lt;/em&gt; a break up of large farms into small farms, and have higher output overall. You might imagine that one can use the extra output to compensate the large farmers, or perhaps you don’t care. Regardless, the implication of the IFSP is that an unequal distribution is &lt;em&gt;directly&lt;/em&gt; related to lower output.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/vollrath_fig1.png&quot; alt=&quot;Vollrath 2007 Figure 1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This, by they way, was what my first &lt;a href=&quot;https://growthecon.com/assets/ajae_2007.pdf&quot;&gt;published paper&lt;/a&gt; was about. I looked at the relationship of country-level measures of land inequality and the output per hectare from agriculture. I found a negative relationship, and you can see the raw version of this in the figure, and it holds up once you control for all sorts of other things that you’d expect affect yields.&lt;/p&gt;
-
-&lt;p&gt;This negative relationship is consistent with the presence of the IFSP within countries. In fact, it &lt;em&gt;only&lt;/em&gt; makes sense if there is an IFSP to begin with. If you dare to believe my results were causal - and you’d want to be very, very hesitant to do that - then it supports that idea that redistributing land (lowering inequality) would be associated with higher yields.&lt;/p&gt;
-
-&lt;p&gt;Thus the IFSP provides one justification for land redistribution, including a relatively recent (2009) &lt;a href=&quot;http://siteresources.worldbank.org/INTARD/Resources/Ag_Land_Redistribution.pdf&quot;&gt;book&lt;/a&gt; from the World Bank on the prospects for land reform. See Chapter 1, page 11. When you combine this IFSP with the historical origins of land inequality in many locations (i.e. elites controlling vast amounts of land) then the rationale for land redistribution comes from both notions of fairness and from notions of efficiency.&lt;/p&gt;
-
-&lt;h3 id=&quot;trying-to-explain-it-away&quot;&gt;Trying to explain it away&lt;/h3&gt;
-&lt;p&gt;While the fairness motive for redistribution can exist independently of the IFSP, the efficiency argument cannot. And starting not long after the IFSP became a stylized fact, people have asking whether the IFSP represents a real efficiency loss, or just a spurious correlation.&lt;/p&gt;
-
-&lt;p&gt;The main argument for a spurious correlation is that the IFSP ignores differences in land quality. If small farmers simply have better quality land, then the higher yields make perfect sense, and there is no mystery about missing markets or effective wages. More important, if land quality differences explain the difference in yields between small and large farms, there is &lt;em&gt;no&lt;/em&gt; efficiency argument for redistribution. No matter who farms a given plot of land, we’d get the same yield, so the distribution is unimportant.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/papers/Carter_1984.pdf&quot;&gt;Carter&lt;/a&gt; (1984) looked at the IFSP within India, and compared farms within given villages, on the assumption that land quality was similar within a village. He found the IFSP was slightly weaker, but still existed. &lt;a href=&quot;/assets/papers/Bhalla_Roy_1988.pdf&quot;&gt;Bhalla and Roy&lt;/a&gt; (1988) went back to the Indian data as well, and incorporated information on soil quality directly, finding that the IFSP weakened substantially when you control for this. Implicitly, when they controlled for soil quality, they were comparing small farms to large farms that have the &lt;em&gt;same&lt;/em&gt; quality of soil. And when they did that, the IFSP disappeared in most settings. They concluded that the evidence for the IFSP was weak. &lt;a href=&quot;/assets/papers/Benjamin_1995.pdf&quot;&gt;Benjamin&lt;/a&gt; (1995) used Indonesian data, and came at the question indirectly. Without getting into the weeds on this, he finds that unobservable characteristics (e.g. land quality) likely explain the IFSP in the raw data, but didn’t have direct data on land quality. So there is/was some evidence that the IFSP could be accounted for by land quality, but hang onto that result for a moment.&lt;/p&gt;
-
-&lt;p&gt;A different line of research tried to assess the source of the IFSP by looking at &lt;em&gt;within&lt;/em&gt;-household variation in yields by plots. There are a few papers that did this, but let me use &lt;a href=&quot;/assets/papers/Assuncao_Braido_2007.pdf&quot;&gt;Assuncao and Braido&lt;/a&gt; (2007) as the example here. These authors used Indian data, and were able to look not only at each farmer, but at each &lt;em&gt;plot&lt;/em&gt; used by each farmer. What they found was that there was an IFSP that held across each individual farmers plots. That is, the same farmer achieves higher yields on smaller plots than on larger plots. This suggests that household-specific explanations are not to blame for the IFSP. That is, it cannot just be that some farms use family labor and some farms have to hire in workers, and that they face different implicit prices for labor (or for other inputs). These are the same farmers, and they can adjust the labor they do use however they want across plots. Assuncao and Braido suggested instead that perhaps their result reflects unmeasured differences in land quality across the plots.&lt;/p&gt;
-
-&lt;p&gt;However, a 2010 paper by &lt;a href=&quot;/assets/papers/Barrett_etal_2010.pdf&quot;&gt;Barrett, Bellemare, and Hou&lt;/a&gt; did a similar study, but with very detailed soil quality measurements done on each specific plot a farmer uses (the data is from Madagascar). What they find is that the land quality differences explain &lt;em&gt;nothing&lt;/em&gt; of the differential yields across plot sizes, and that thus the IFSP is not due to land quality differences. What remains is possible &lt;em&gt;intra&lt;/em&gt;-household inefficiency in allocations of labor across plots, or perhaps the IFSP just reflects errors in how we measure the size of farms and/or plots. &lt;a href=&quot;/assets/papers/Lamb_2003.pdf&quot;&gt;Lamb&lt;/a&gt; (2003) was one of the first to suggest the IFSP was due to some measurement error in the area of farms, but a recent paper by &lt;a href=&quot;/assets/papers/Carletto_etal_2013.pdf&quot;&gt;Carletto, Savastano, and Zezza&lt;/a&gt; (2013) using data from Uganda that uses GPS tracking claims that accurate measurement of plots actually &lt;em&gt;reinforces&lt;/em&gt; the IFSP.&lt;/p&gt;
-
-&lt;p&gt;Which means we might be down to just intra-household explanations. And at that point I’m not sure what to tell you, because then it becomes closer to saying that farmers are leaving dollar bills on the sidewalk (or that there is some additional unmeasured difference in land quality we just cannot capture).&lt;/p&gt;
-
-&lt;h3 id=&quot;the-u-shaped-relationship&quot;&gt;The U-shaped relationship&lt;/h3&gt;
-&lt;p&gt;But before we leave the IFSP behind, we have to check in with another recent paper from &lt;a href=&quot;/assets/papers/Foster_Rosenzweig_2017.pdf&quot;&gt;Foster and Rosenzweig&lt;/a&gt; (2017) that tells us that the stylized facts behind the IFSP are in fact incorrect, and that what we should be looking at is the U-shaped relationship of yields and farm size. While among relatively small farms in developing countries we see the IFSP, this does not capture what is seen in more developed economies, where yields &lt;em&gt;rise&lt;/em&gt; as farm size increases. By itself, that might not be very interesting, as it may be a little like comparing apples and oranges. But what the authors show is that using more recent data from India there is a clear U-shaped relationship of farm size and yield.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fr_fig6.png&quot; alt=&quot;Foster and Rosenzweig Figure 6&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The figure shows the raw data they use to make this claim, and the U-shape is obvious. Above 10 acres, yields rise with size. Now, you can subject this to similar types of analysis to what I explained in the prior section, such as controlling for soil quality and looking only at plots run by a single given farmer. In each case, they find that the U-shape persists.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fr_fig8.png&quot; alt=&quot;Foster and Rosenzweig Figure 8&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This second figure shows the yields after controlling for these things. The blue line shows the case when they looked across farmers plots, and controlled for soil quality. The squiggly nature of the estimated line comes from the fact that they are allowing for a flexible estimation, and so small variations in yields are going to show up in the line. Nevertheless, the U-shape still appears.&lt;/p&gt;
-
-&lt;p&gt;What is really interesting is that this is essentially the same analysis that was done in Assuncao and Braido. But those authors used Indian data from 1975-1984, while Foster and Rosenzweig are using Indian data from 2009-2014. It is possible that the IFSP held as expected in the earlier period, and it is only with subsequent development (e.g. the availability of new types of capital goods) that the upward slope among large farms appeared.&lt;/p&gt;
-
-&lt;p&gt;FR work out a theory that can help explain the U-shape, and it really is a nesting of two explanations. First, they assume that there are some labor market issues as the classic IFSP explanations use. First, labor gets more expensive as farms get larger (when farms are small). Second, capital goods require a minimum scale of farm or plot to use, but these capital goods are really productive. Hence you see yields fall from very small to medium-sized farms due to the effect of rising labor costs, and then somewhere around 10 hectares (in this data) it starts to make sense to use capital goods, which starts to raise yields as you get bigger.&lt;/p&gt;
-
-&lt;p&gt;Remember that one of the implications of the IFSP could be that land redistribution would increase output. This is no longer so clear with the FR results. If you took all the land and redistributed it out in 10-hectare parcels, so that there was no inequality in land holdings, you’d get the &lt;em&gt;lowest&lt;/em&gt; possible yield from the land. Your best bet, given their data, is to redistribute such that you &lt;em&gt;maximized&lt;/em&gt; inequality, with a bunch of very small farms (high yields due to low labor costs) and very large farms (big enough to use capital).&lt;/p&gt;
-
-&lt;p&gt;The FR results bring back in some notions of earlier ag and development economists suggesting that fostering agricultural consolidation, and encouraging large farms that could leverage modern capital and techniques, was the best way to raise agricultural output. That strategy faced the problem of explaining what exactly the now-landless small farmers were supposed to do, but from the IFSP facts that suggested it would not actually raise yields. Does the calculus change if you know yields would actually rise given a consolidation of land into large farms? Would it allow you enough resources to compensate the small holders who lost land - assuming that you could figure out a way to actually make that compensation happen?&lt;/p&gt;
-
-&lt;p&gt;Because of its relevance for thinking about the aggregate level of production in agriculture, and the possible effects of land redistribution, the IFSP and/or U-shaped relationship remains a relevant topic for development economics. What I think remains the really key question is why the IFSP part of the relationship appears to hold &lt;em&gt;within&lt;/em&gt; households, where the farmers should face fewer frictions to allocating resources. Quick gut reactions are that it might have to do with distance (e.g. large plots tend to be located far away?) or some kind of limited stock of management ability/attention that can be allocated by a farmer to different plots.&lt;/p&gt;
-
-&lt;p&gt;There you go, Garett. Now I’m done.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 29 Aug 2018 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
