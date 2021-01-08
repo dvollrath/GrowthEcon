@@ -1,6 +1,6 @@
 ---
-title: Worthwhile Canadian Initiative, Equalising the twin markups in a monopolistically competitive macroeconomy
+title: Worthwhile Canadian Initiative, High Wages encourage Innovation?
 category: link
-external_url: http://worthwhile.typepad.com/worthwhile_canadian_initi/2017/06/equalising-the-twin-markups-in-a-monopolistically-competitive-macroeconomy.html
+external_url: http://worthwhile.typepad.com/worthwhile_canadian_initi/2017/04/wages-and-innovation.html
 tags: ideas
 ---

@@ -5,7 +5,131 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Mon, 07 Dec 2020 17:16:11 -0600</pubDate>
+    <pubDate>Fri, 08 Jan 2021 11:48:17 -0600</pubDate>
+    
+      <item>
+        <title>The 1965 shift in growth</title>
+        <link>https://growthecon.com/blog/BLS-TFP-Again/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/BLS-TFP-Again/</guid>
+        <description>&lt;p&gt;Well, insurrection in the nation’s literal Capitol was not the context I expected for my next blog entry. But with lots of nervous energy and few useful outlets for it (I, alas, am not authorized to arrest Ted Cruz) I figured I’d work on this post.&lt;/p&gt;
+
+&lt;p&gt;This is a follow up to my &lt;a href=&quot;https://growthecon.com/blog/BLS-TFP/&quot;&gt;last post&lt;/a&gt; from early December, where I was digging deeper into some data on total factor productivity (TFP) growth rates. The reason for &lt;em&gt;that&lt;/em&gt; post was that I participated in a discourse on &lt;a href=&quot;https://www.pairagraph.com/dialogue/ee04c261817f45f39e1d0bb5f63e0b90&quot;&gt;Pairagraph&lt;/a&gt; with &lt;a href=&quot;https://twitter.com/elidourado&quot;&gt;Eli Dourado&lt;/a&gt; of the Center for Growth and Opportunity. The prompt was “Economic growth is stagnating, but there’s more to the story.” We were talking about interpretations of slow growth.&lt;/p&gt;
+
+&lt;p&gt;The upshot of the December post was that the growth rate of TFP started to drag far earlier than the discourse with Eli - or much of the current discourse around slow growth - assumed. Rather than slow TFP growth starting after the Great Recession, or after 2000, it appears to have started in the early 1970s.&lt;/p&gt;
+
+&lt;p&gt;I want to revise that earlier post a little to push back the slowdown even further to the mid-1960s, and talk more about &lt;em&gt;why&lt;/em&gt; the slowdown started so early, and lingered so long. The short answer is: Baby Boomers.&lt;/p&gt;
+
+&lt;p&gt;Standard disclaimer about this being utter speculation applies.&lt;/p&gt;
+
+&lt;h3 id=&quot;decomposing-growth&quot;&gt;Decomposing growth&lt;/h3&gt;
+&lt;p&gt;I’m using the same data from the December post, and that Eli and I talked briefly about in our posts on Pairagraph. This is the BLS series on multi-factor productivity, which is just a different word for TFP. You can see the December post for links to a version of that data hosted by John Fernald at the San Fran Fed that includes some adjustments for capacity utilization. That adjustment isn’t terribly important to what I’m doing here.&lt;/p&gt;
+
+&lt;p&gt;When the BLS (or John with his adjusted data) calculate the growth rate of TFP for a year, they use a formula that looks like this&lt;/p&gt;
+
+\[gTFP = gGDP - a gK - (1-a) gLQ - (1-a) gHours.\]
+
+&lt;p&gt;That is, the growth rate of TFP (&lt;img src=&quot;http://latex.codecogs.com/png.latex?gTFP\inline&quot;/&gt;) is equal to the growth rate of GDP (&lt;img src=&quot;http://latex.codecogs.com/png.latex?gGDP\inline&quot;/&gt;) minus the growth that can be accounted for by capital and labor (all the rest of those terms). The value of &lt;img src=&quot;http://latex.codecogs.com/png.latex?a\inline&quot;/&gt; serves as a weight on how important growth in capital is (&lt;img src=&quot;http://latex.codecogs.com/png.latex?gK\inline&quot;/&gt;) and how important the two pieces of labor are (&lt;img src=&quot;http://latex.codecogs.com/png.latex?gLQ\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?gHours\inline&quot;/&gt;). That value can change year to year, but is generally around 0.33. I have thoughts - long, tedious, boring thoughts - about why that number is probably too high, but this is not the time or place to subject you to them.&lt;/p&gt;
+
+&lt;p&gt;Those two parts of labor are &lt;img src=&quot;http://latex.codecogs.com/png.latex?gHours\inline&quot;/&gt;, which measures the growth in the raw hours worked by people in the economy, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?gLQ\inline&quot;/&gt;, which measures the “labor quality” of those people. This labor quality is inferred from changes in relative wages, and is meant to reflect any change in how valuable firms find workers. This would be capturing any increase due to education, or skill acquisition outside of formal education, or experience effects, or … whatever else might make labor useful to a firm &lt;em&gt;beyond&lt;/em&gt; the raw hours that labor works.&lt;/p&gt;
+
+&lt;p&gt;This little table shows the values of each piece of that equation for three different time periods: 1948-65, 1966-2000, and 2001-2018. All the growth rates are in percent form, to avoid lots of things to four and five decimal places.&lt;/p&gt;
+
+&lt;table style=&quot;width:100%&quot;&gt;
+	&lt;colgroup&gt;
+       &lt;col span=&quot;1&quot; style=&quot;width: 15%;&quot; /&gt;
+       &lt;col span=&quot;1&quot; style=&quot;width: 17%;&quot; /&gt;
+       &lt;col span=&quot;1&quot; style=&quot;width: 17%;&quot; /&gt;
+       &lt;col span=&quot;1&quot; style=&quot;width: 17%;&quot; /&gt;
+       &lt;col span=&quot;1&quot; style=&quot;width: 17%;&quot; /&gt;
+       &lt;col span=&quot;1&quot; style=&quot;width: 17%;&quot; /&gt;
+    &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Years&lt;/th&gt;
+    &lt;th&gt;gGDP&lt;/th&gt; 
+    &lt;th&gt;agK &lt;/th&gt;
+    &lt;th&gt;(1-a)gLQ&lt;/th&gt;
+    &lt;th&gt;(1-a)gHours&lt;/th&gt;
+    &lt;th&gt;gTFP&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;48-65&lt;/td&gt;
+    &lt;td&gt;3.46&lt;/td&gt; 
+    &lt;td&gt;3.02&lt;/td&gt;
+    &lt;td&gt;0.41&lt;/td&gt;
+    &lt;td&gt;0.38&lt;/td&gt;
+    &lt;td&gt;2.01&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;66-00&lt;/td&gt;
+    &lt;td&gt;3.29&lt;/td&gt; 
+    &lt;td&gt;3.98&lt;/td&gt;
+    &lt;td&gt;0.37&lt;/td&gt;
+    &lt;td&gt;1.55&lt;/td&gt;
+    &lt;td&gt;0.75&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;01-18&lt;/td&gt;
+    &lt;td&gt;2.05&lt;/td&gt; 
+    &lt;td&gt;2.54&lt;/td&gt;
+    &lt;td&gt;0.42&lt;/td&gt;
+    &lt;td&gt;0.44&lt;/td&gt;
+    &lt;td&gt;0.61&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Take a look at what happens, in particular, at the transition from 1948-65 to 1966-00. GDP growth falls &lt;em&gt;a little&lt;/em&gt;, from 3.46% per year to 3.29% per year. But capital growth &lt;em&gt;increases&lt;/em&gt; by almost one whole percentage point, from 3.02 to 3.98% per year. Labor quality growth doesn’t change much, but the growth rate of hours sees a very large &lt;em&gt;increase&lt;/em&gt;, from 0.38% per year to 1.55% per year.&lt;/p&gt;
+
+&lt;p&gt;The net effect of (a) the growth rate of GDP staying about the same and (b) the growth rate of inputs rising is to lower the implied growth rate of TFP. It drops from 2.01% per year to only 0.75%. This is a significant slowdown in productivity growth, and it happens in the mid-1960s, not in the late 1970s, the early 2000s, or after the Great Recession.&lt;/p&gt;
+
+&lt;p&gt;Note from the third line that the growth rate of TFP does drop in 01-18 to 0.61%, but that drop from 0.75% is much smaller than the drop that occurs starting in 1966. We’ll come back to the other pieces of this later.&lt;/p&gt;
+
+&lt;p&gt;Going back to the change in 1965, the point I want to make is that productivity growth dropped - in accounting terms - because input growth went up but we did not see any increase in output. The economy absorbed more and more workeres and more and more capital, but it didn’t translate into more and more output growth.&lt;/p&gt;
+
+&lt;h3 id=&quot;boomers&quot;&gt;Boomers!&lt;/h3&gt;
+&lt;p&gt;The choice of 1965 wasn’t an accident. That year is when the first Boomers turned 20. I chose it because it represents a point at which the Baby Boom generation really started to hit the labor force. Yes, some of them would have been working at younger than age 20 (and hence in the early 1960s) but by the late 1960s the labor force participation of the Boomers would really be kicking in.&lt;/p&gt;
+
+&lt;p&gt;And once they entered the work force, what happened? Very clearly hours started to grow faster (1.55% versus 0.38%) but output did not. Capital accumulated faster (3.98% versus 3.02%) but output did not. And if you raise the growth rate of inputs like labor and capital, but nothing happens to the growth rate of output, then by necessity the growth rate of TFP must be lower.&lt;/p&gt;
+
+&lt;p&gt;One possibility is that it just so happens that around 1965 when the Boomers hit the labor market, the pace of innovation or technological change or &lt;em&gt;something&lt;/em&gt; slowed down. And that it slowed down just enough to offset the increase in input growth, and left us with the same growth rate of output. You cannot rule that out. You could probably even make an okay case for this by talking about how the build-out of the electric grid or phone service or the interstate highway system were winding down starting in 1965?&lt;/p&gt;
+
+&lt;p&gt;But that also seems kind of coincidental. A different story is that the economy kept expanding at about 3.3% per year after 1965 for some fundamental reasons like continued technological change or even continued expansion in natural resource use, and that we then tried to stuff a whole outsized generation of workers into that same economy (along with extra buildings so they’d have a place to sit). Like “Okay, your parents own the company so we have to find &lt;em&gt;something&lt;/em&gt; for you to do, so why don’t you sit here and move these papers from that file to that one.”&lt;/p&gt;
+
+&lt;p&gt;That’s a cruel way to phrase things, but I think there is something to idea that the Baby Boom generation came along and was just too big to absorb all at once. We normally think of production expanding as you add more labor, yes. But what if that really only makes sense if you add small amounts of labor at any given time?&lt;/p&gt;
+
+&lt;p&gt;Having an additional worker show up at your construction site probably helps move things along. Having three show up might be useful. Having twenty show up becomes a management problem. In more mathemetical terms, I’m thinking that the elasticity of output with respect to labor to a first order approximation is positive and something like, say, 0.6 or 0.7. But that “to a first order approximation” part is important. That means the elasticity holds for small percent changes in labor. There could well be second-order effects (like when the 20 people show up at the site) that cause the elasticity to plummet when the percent change in labor gets large.&lt;/p&gt;
+
+&lt;p&gt;To belabor this further, I’m not just talking about a diminishing marginal product for labor. Having an elasticity of 0.6 or 0.7 (i.e. less than one) already incorporates a diminishing marginal product. I’m talking about a second-order effect that says the elasticity itself falls, and so the marginal product of labor diminishes even faster as you add more labor. It’s like talking about acceleration versus velocity, sort of.&lt;/p&gt;
+
+&lt;p&gt;The drop in TFP growth starting in 1966 (ish) may reflect the fact that it is just hard to accommodate that big of a generation into the labor force over a short time. Maybe it didn’t reflect a real change in our ability to innovate at all.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-olds&quot;&gt;The olds&lt;/h3&gt;
+&lt;p&gt;One reason I might be wrong about all that is what happened in 2001-18. We’re looking now at the tail end of the Boomers work life. They’re kind of at their career peaks around 2000, and then start the process of extracting themselves from the workforce. You can see the drop in both labor hours growth (from 1.55 to 0.44%) and the drop in capital growth (from 3.98 to 2.54%) that occur. But output growth does not stay around 3.3%. Instead it drops to 2.05%. With the end result that productivity growth stays low, and in fact drops a little more (from 0.75 to 0.61%).&lt;/p&gt;
+
+&lt;p&gt;Why didn’t the effect work in reverse? Why didn’t output growth stay at around 3.3% and TFP growth go back up to something close to 2% per year as the Boomers exited? One very plausible reason is that I’m just wrong about this idea regarding the first and second order effects in 1965. What the transition to 2001-18 might indicate is that there really was some slowdown in innovation or technological change or &lt;em&gt;something&lt;/em&gt; during the 1966-2000 period that stuck. Maybe it was the drop in manufacturing as a share of economic activity, or changes in some policies, or globalization, or whatever.&lt;/p&gt;
+
+&lt;p&gt;That could well be the case. It still leaves me wondering why we should focus hard on the period 2001-18 for the source of the slowdown in productivity growth, though. It may well be something that occurred earlier.&lt;/p&gt;
+
+&lt;p&gt;Or, perhaps there is some fundamental asymmetry between growing and shrinking. Maybe the second-order effects that pushed down the elasticity with respect to labor in 1965 don’t work in reverse. What I mean is this. Starting around 1965, the marginal product of a new Boomer worker got pushed to zero because it was just too hard to absorb them all at once (the 20 new people on the construction site). But by 2000, we’ve had a few decades to figure out how to use those Boomers, and they each have a role and reason to be there that has positive marginal value. When they leave/retire, that lowers output. So rather than having the exit of the Boomers be reflected in higher TFP growth, it is reflected in lower GDP growth.&lt;/p&gt;
+
+&lt;p&gt;In the construction analogy, after a few months with those 20 extra workers around, you’ve worked out a nice system, and can now slap up a house without them all sitting around. If I then come along and tell you to get rid of 10 of those extra workers, or all 20 of them, that is now going to have a big impact on your house-building. You’ve got to re-adjust &lt;em&gt;again&lt;/em&gt; to dealing with a smaller workforce. And you may no longer remember how you did it with fewer people.&lt;/p&gt;
+
+&lt;p&gt;This might all sound like I’m working really hard to blame Boomers for current economic problems. I’m not out to get them. I’m not even convinced that this represents an economic problem (&lt;a href=&quot;https://amzn.to/35mzPfg&quot;&gt;buy my book!&lt;/a&gt;). But the sheer scale of their impact is easy to forget. You can see it in the numbers of the above table just in the hours growth. Going from 0.38% growth in hours per year to 1.55% growth is a factor of &lt;em&gt;four&lt;/em&gt;. Four times the rate of new employees and hours entering the economy every year. That’s massive.&lt;/p&gt;
+
+&lt;p&gt;My argument depends on some kind of second-order effect, or that there isn’t a strict mechanical relationship of the number of workers to output. One way to think about this is with one of my all-time favorite papers, &lt;a href=&quot;https://ideas.repec.org/a/ucp/jpolec/v113y2005i3p582-625.html&quot;&gt;James Schmitz’s 2005 work&lt;/a&gt; on the US and Canadian iron ore industries. The point of that paper was that competition (from Brazil) lead to fundamental changes in labor productivity despite no changes in underlying technology. It’s an example of an industry that originally absorbed a lot of labor without changing output much. In this case once competition arrived they were able to shed a lot of that labor but keep output the same. No strict mechanical relatonships of labor to output.&lt;/p&gt;
+
+&lt;p&gt;A second way to think about this is with a paper on the demographics of firms by &lt;a href=&quot;https://ideas.repec.org/p/nbr/nberwo/25382.html&quot;&gt;Hopenhayn, Neira, and Singhania&lt;/a&gt;, which I talked about in a &lt;a href=&quot;https://growthecon.com/blog/Aging-Growth/&quot;&gt;post&lt;/a&gt; a little over a year ago. Flooding the economy with new labor could lead to a flood of new firms, and new firms tend to be less productive than old firms, even if they &lt;em&gt;might&lt;/em&gt; be liable to grow faster. Again, it’s a story about slowly adapting to a surge in labor.&lt;/p&gt;
+
+&lt;p&gt;Again, this isn’t some screed about Boomers ruining everything. It is an observation that our understanding of slow growth may need to back up a few decades, and may involve taking seriously second-order effects of labor force growth.&lt;/p&gt;
+
+&lt;p&gt;And it got me from doom-scrollling for a while. Which reminds me:&lt;/p&gt;
+
+&lt;p&gt;Ted Cruz is a seditious grifter who should be removed from the Senate.&lt;/p&gt;
+
+&lt;p&gt;Happy New Year!&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 07 Jan 2021 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>When did productivity growth slow down?</title>
@@ -1364,130 +1488,6 @@
 &lt;p&gt;That doesn’t make the PSS estimate spurious. It’s a nice descriptive result that tells us we should think a little more about what might have changed around those years, even if the implication of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence from that period is not that strong.&lt;/p&gt;
 </description>
         <pubDate>Fri, 02 Nov 2018 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>Involution and growth</title>
-        <link>https://growthecon.com/blog/Involution/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Involution/</guid>
-        <description>&lt;p&gt;This is a long-promised, long-simmering, longer-than-necessary post on the concept of involution. This term comes up often in discussions of Asian and/or Chinese development, or the lack thereof relative to western Europe. You can find several definitions, which is one of the problems with the concept. Perhaps the best way to give you a sense of what it means is that the Platonic use of the term would be “Rather than developing like western Europe, the Yangzi Delta involuted.”&lt;/p&gt;
-
-&lt;p&gt;I think the term arose because scholars were searching for some shorthand for what happened in Asian historical development (it is almost always used with respect to Asia) to set it apart from what happened in Europe. But just saying Asia was different than Europe is of no help; of course it is. So is there anything to the concept of involution that is useful?&lt;/p&gt;
-
-&lt;h3 id=&quot;geertz-and-the-subtleties-of-involution&quot;&gt;Geertz and the subtleties of involution&lt;/h3&gt;
-&lt;p&gt;The classic reference for the term involution in the study of economic development comes from Clifford Geertz’ &lt;em&gt;Agricultural Involution: The processes of ecological change in Indonesia&lt;/em&gt;. Geertz borrowed the term from an anthropologist, Alexander Goldenweiser, who used it to describe a situation in which the crafts or art of a society stuck with the same fundamental patterns, only making them more an more intricate over time. Think of mosaic tiles, as an example. The patterns you create in a mosaic may get more complex, or the individual tiles may get smaller, or you may find a way to create new color. But in the end you are still doing mosaics.&lt;/p&gt;
-
-&lt;p&gt;Geertz adopted the word as a description of how village society in Indonesia, in particular in the sawah (i.e. paddy rice growing) heartland of Java, had adapted to the growth in population,  colonization by the Dutch, and the introduction of sugar as an export crop. His concept was that the villages did not change in a fundamental way during all this, even as they incorporated sugar production alongside paddy rice, but simply refined their existing social structures to further support small scale intense labor use.&lt;/p&gt;
-
-&lt;p&gt;Those social structures included how land and labor was rented, hired, and shared across families. Geertz’ idea of involution meant that this became more particular over time. Perhaps people went from renting “about half” of another families rice paddy to renting “the part of the field on the west side of a line drawn from between these precise property markers”. In a situation of high population density, it would matter whether a specific rice plant was on my side or your side of the line. The basic concept of renting in land to feed your family wasn’t different, the details of it were. This is why I think the mosaic analogy is nice. You can imagine the management of land being done at smaller scales - by the plant - rather than larger scales - by the paddy. Labor would have faced a similar process, going from generic obligations to hyper-specific exchanges of tasks and time.&lt;/p&gt;
-
-&lt;p&gt;What did &lt;em&gt;not&lt;/em&gt; come along with all this refinement in agricultural relationships was growth in output per worker. That refinement allowed output per worker to tread water, given increases in population, and that was it. Involution, in Geertz’ original conception, was a situation where technological changes (i.e. sugar and rubber) as well as market changes (i.e. exposure to the Dutch trading network) occurred but there were no real changes in social structure or living standards. The village life in Indonesia did not become more market-oriented or commercialize in a way that one familiar with western European or English economic history might have expected.&lt;/p&gt;
-
-&lt;p&gt;Geertz identified a few particular characteristics of Indonesia in the colonial period that were associated with involution. First, there was paddy rice:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Wet-rice cultivation, with its extraordinary ability to maintain levels of marginal labor productivity by always managing to work one more man in without a serious fall in per-capita income, soaked up almost the whole of the additional population that Western intrusion created, at least indirectly. It is this ultimately self-defeating process that I have proposed to call “agricultural involution”. (Geertz, p. 80)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You can see some of the importance of the reaction of the marginal product of labor in rice by comparing the involution that occurred in the sawah areas of Indonesia with the areas that used swidden agriculture, which involves a slash-and-burn approach. In those swidden areas, which often became centers for rubber production, he finds some real changes in commercialization and market orientation after they are linked into the trading network.&lt;/p&gt;
-
-&lt;p&gt;The second important characteristic for involution was the relationship with the Dutch, and the idea that Indonesia was an effective agricultural hinterland for Amsterdam. Thus money and goods flowed back and forth, but there was almost no flow of &lt;em&gt;people&lt;/em&gt;. For Geertz, the importance of this showed up in a comparison of Java and Japan.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… where Japanese peasant agriculture came to be complementarily related to an expanding manufacturing system in indigenous hands, Javanese peasant agriculture came to be complementarily related to an expanding agro-industrial structure under foreign management. … in Java most of the invigorating effect of the flourishing agro-industrial sector was exercised upon Holland, and its impact upon the peasant sector was … enervating. (Geertz, p. 135)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Hang on to those distinct characteristics for a moment, because I’ll come back to both in a bit.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-crude-conception-of-involution&quot;&gt;The crude conception of involution&lt;/h3&gt;
-&lt;p&gt;Following Geertz, the term involution has been applied in a number of different contexts to describe development, or its lack. But relative to Geertz, the actual content of the term “involution” devolved from subtlety to something more crude.&lt;/p&gt;
-
-&lt;p&gt;While not the only example of this, one particular example I’ll use is Philip Huang’s work on Chinese development, both in his 1985 book on &lt;a href=&quot;https://amzn.to/2CKh7lf&quot;&gt;Northern China&lt;/a&gt;, and in his 1990 book on the &lt;a href=&quot;https://amzn.to/2ChnJGB&quot;&gt;Yangzi Delta&lt;/a&gt;. The 1990 book defines three types of agrarian economic change. First is development, where output expands faster than labor input, so output per worker grows. Second is intensification, where output expands at the same rate as labor, so that output per worker stays the same. Finally is involution, which is when output expands but at a slower rate than labor, so that output per worker falls.&lt;/p&gt;
-
-&lt;p&gt;Implicit in Huang’s conception is again the idea that there were technological and market changes taking place in the Chinese economy, but what differed by region within China, or differed between China and Europe, was the response to that. For much of China, and in particular the Yangzi delta, Huang identifies the outcome as involution, by his crude definition. He identifies changes in the type of crops produced (e.g. cotton, tobacco, maize, silk) and in family work relationships (e.g. an expansion of women’s role in producing goods for sale), but does not explore, like Geertz, the refinement or hyper-specialization of agrarian relationships within these areas. Here’s a sense of what Huang has in mind:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This is not to say that there was no modernization at all in crop production and rural industry in the Yangzi Delta. The example of the first three decades of postrevolutionary rural China, during which income per farm person stagnated side by side with vigorous agricultural modernization (tractor plowing, electrified pumping, chemical fertilizers, scientific seed selection, and the like) and urban development, should alert us to the fact that neither is precluded by involutionary growth. (Huang, 1990, p. 129)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Here the concept of involution is really about how per-worker or per-capita outcomes could stagnate or fall despite expansions in absolute output, and at the same time as significant technological and commercial changes. This observation of involution is argued to run back through Chinese history to at least 1350, the scope of Huang’s book. That isn’t to say that Huang ignores social changes, quite the contrary. Most of his work is about changes in social structures that took place in adapting to the technological and commercial changes that occurred. But that social change was not involutionary in the sense that Geertz proposed originally, as it was not necessarily a refinement of existing social or agrarian structures, but rather involved significant changes in those structures.&lt;/p&gt;
-
-&lt;p&gt;There is a side debate to be had on whether output per worker in fact &lt;em&gt;did&lt;/em&gt; stagnate, and even if it did, whether that level of output per worker was similar to those seen in Northwest Europe, or below. Huang’s argument is that it did stagnate, and stagnate at a low level, as opposed to the California School types like &lt;a href=&quot;https://amzn.to/2pRsKOQ&quot;&gt;Ken Pomeranz&lt;/a&gt; who argue that the Yangzi, at least, was equivalent in living standards to Northwest Europe just prior to the Industrial Revolution. You can see the May 2002 issue of the &lt;a href=&quot;https://www.cambridge.org/core/journals/journal-of-asian-studies/issue/3222A2F9ADD9F71283E271C62C080486&quot;&gt;&lt;em&gt;Journal of Asian Studies&lt;/em&gt;&lt;/a&gt;, which contains several articles dedicated to this debate.&lt;/p&gt;
-
-&lt;h3 id=&quot;involution-as-a-malthusian-outcome&quot;&gt;Involution as a Malthusian outcome&lt;/h3&gt;
-&lt;p&gt;Leave aside the debate on the exact level of living standards in the Yangzi. Let’s assume that in fact they were stagnant, and stagnant at a low level. Is the term involution useful as an analytical concept for understanding why this occurred? No, as far as I’m concerned. At least involution in the crude sense of the word. It is just a word that describes what happened, but doesn’t contain any explanatory power.&lt;/p&gt;
-
-&lt;p&gt;And I don’t know why we need that extra word when we’ve got a reasonable analytical model - Malthus - that allows one to think about the relationship of output per worker, population density, and the effect of changes in technology. It has the advantage of being clear on how those things are related, while also highlighting that the response of family formation and fertility to changes in output per worker is central to the story.&lt;/p&gt;
-
-&lt;p&gt;Malthus, however, does not appear in either Geertz or in Huang’s work, not even in passing. For Geertz, this is particularly odd, because he absolutely nails the logic and implications of a Malthusian model. Here he is talking about how the sawah system adapted to new crops (e.g. sugar) and what it implied.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… the maintenance of the marginal productivity at some low but nearly constant (or perhaps gradually declining) figure. It merely gave the multiplying Javanese a bigger pool in which more of them could tread water. (Geertz, p. 94)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’ve always wondered if Malthus was so &lt;em&gt;obvious&lt;/em&gt; to Geertz that he didn’t seem worth mentioning.&lt;/p&gt;
-
-&lt;p&gt;In Huang’s work - and in similar pieces - the absence of Malthus is more problematic. The goal was to explain the historical development of China, or perhaps another area in south or southeast Asia. In particular, explain why that historical development differed from Europe, given that many similar forces were at work in the sense of technological change, commercial changes, and expansion of markets. Because the outcomes differed, the presumption was that Asian development must have operated on different principles than European development, and hence involution became a necessary concept to set it apart from whatever it is that happened in Europe.&lt;/p&gt;
-
-&lt;p&gt;Except that the Malthusian setting can make sense of the both outcomes. Which is not to say that Europe and Asia were identical outside of some lucky shock, or that the particular institutional details are not important or interesting, but just that we don’t need a new concept like involution to think through the two settings.&lt;/p&gt;
-
-&lt;p&gt;The standard Malthusian model has two key elements. A negative relationship of the size of population and living standards (thanks to a fixed or nearly fixed resource base), and a positive relationship of population growth and living standards. Put those two together, and you will find that no matter where you start, the economy is pushed towards a stagnant level of output per worker. When times are good, more people are born/survive, the population grows, and this drives down living standards. When times are bad, few people born/survive, and the population shrinks, and this drives up living standards.&lt;/p&gt;
-
-&lt;p&gt;And stated that way, the logic of the Malthusian model doesn’t seem to apply. Because what we see is that the population in China, or Indonesia, or any other setting that involution was applied to, &lt;em&gt;grew&lt;/em&gt; over time, almost without fail. It would seem that the Malthusian model can get the stagnation right, but cannot fit with the rising population.&lt;/p&gt;
-
-&lt;p&gt;Except that it can, without too much trouble, once you allow for persistent growth in technology/productivity. The implication of this in the Malthusian model is one thing that is not very intuitive. If there is productivity growth, then there should be growth in living standards, right? Kind of. As long as population growth is still positively related to living standards, then productivity growth means growth in living standards, which increases population growth, which puts a drag on growth in living standards, as per the basic version of the Malthusian model. At some point, the positive effect of productivity growth will be offset by the negative drag of population growth, and output per worker will become stagnant again, even though productivity growth continues. And even more important, at that stagnant equilibrium in living standards, population growth remains &lt;em&gt;positive&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Perhaps you can see where I’m going here. It is entirely within the scope of a Malthusian economy to have (1) positive productivity changes such as increased commercialization and market access, (2) positive population growth, and (3) stagnant output per worker.&lt;/p&gt;
-
-&lt;p&gt;What about the idea that output per worker was &lt;em&gt;falling&lt;/em&gt; over time, as Huang argues? That is still understandable within the context of the Malthusian setup. If the economy is not right at the equilibrium point, but has living standards slightly above that equilibrium for whatever reason, then those living standards fall over time towards the stagnant level. And that transition can take a &lt;em&gt;long&lt;/em&gt; time. Nippe Lagerlof has a &lt;a href=&quot;http://www.nippelagerlof.com/research/happening/Waves_April_2018_post.pdf&quot;&gt;recent paper&lt;/a&gt; working out that given realistic demographics, it can take &lt;em&gt;centuries&lt;/em&gt; for a Malthusian economy to slide towards its equilibrium.&lt;/p&gt;
-
-&lt;p&gt;I guess you could call all this involution if you felt like it, but I’m not sure why I need a special name for a particular outcome of the model. I’d reserve the term involution for Geertz’ specific idea that - as part of a Malthusian outcome - the agrarian or social relationships within an economy may evolve to a more refined or hyper-specialized version of themselves.&lt;/p&gt;
-
-&lt;p&gt;One last thing that the Malthusian model suggests we should be concerned with are the particulars of fertility rates and family formation. To the extent that fertility is more, or less, sensitive to living standards, this will change the speed at which a Malthusian economy reaches equilibrium, and determine the level of living standards in that equilibrium. You can see this, and all of the nuances of the Malthusian setting, in the &lt;a href=&quot;https://drive.google.com/file/d/0Bw0xeVVYEG5XOURQR1Y1NnFKVlk/edit&quot;&gt;Ashraf and Galor&lt;/a&gt; paper, which has a very nice simple description of the model.&lt;/p&gt;
-
-&lt;p&gt;In general, work on involution does not delve into the particulars of fertility and family formation. Huang’s two books, for instance, contain only a few passing asides to fertility rates and why they may have been insensitive to living standards (which would have led to low equilibrium living standards and slow transitions). Using the concept of involution, as opposed to a Malthusian setting, buries the importance of these fertility/family differences.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-made-asia-different&quot;&gt;What made Asia different?&lt;/h3&gt;
-&lt;p&gt;Fine. Let’s say that crude involution is just one kind of Malthusian outcome, and a more sophisticated take on involution looks like Geertz’ definition. Why did crude involution appear to occur in Asia relative to Europe?&lt;/p&gt;
-
-&lt;p&gt;I think the first answer to that is that crude involution &lt;em&gt;did&lt;/em&gt; take place in many places in Europe, for a lot of Europe’s history. Despite &lt;a href=&quot;https://growthecon.com/blog/Leisure/&quot;&gt;some evidence&lt;/a&gt; that specific places within Europe - like England - may have been experiencing growth in output per worker earlier than we thought, most of Europe up until the late 1800s could still be explained within the context of a Malthusian model with modest gains in productivity over time.&lt;/p&gt;
-
-&lt;p&gt;That said, there were places within Europe that saw commercial and market development which did lead to growth in living standards, urbanization, and ultimately sustained growth earlier than this occurred in most of Asia. Why or how did they accomplish that, if they were stuck inside the same Malthusian framework?&lt;/p&gt;
-
-&lt;p&gt;For a partial answer - since this is essentially one of the all-time big questions in historical development - let me reach back to those two specifics that Geertz talked about with respect to Indonesia. They were, to remind you, the use of paddy or wet rice cultivation, and the absence of an urban outlet within Indonesia itself.&lt;/p&gt;
-
-&lt;p&gt;The importance of an urban outlet comes about because it offers an alternative sink for population growth and economic activity. This tweaks the original Malthusian setting. Now, rather than saying that living standards in general have a negative relationship to population size, we would say that agricultural output per worker has a negative relationship to agricultural population size. If there is an urban area that absorbs some population growth, then the growth rate of &lt;em&gt;agricultural&lt;/em&gt; population is not as large. If the flow to urban areas is large enough, it could be that the technological change in agricultural outweighs the drag from agricultural population growth, and output per worker in agriculture could go &lt;em&gt;up&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Recall the comparison of Japan and Java that Geertz made. Beyond the lack of a sink for population growth, urban areas offered another avenue for productivity growth, due to agglomeration effects and/or gains from specialization. Hence Japan could benefit from textile production as it developed, whereas Indonesia could not.&lt;/p&gt;
-
-&lt;p&gt;The Chinese experience included urban areas, so it was not a “pure” Malthusian economy like Indonesia, in that sense. Despite that, it still ended up in a Malthusian situation of stagnant or falling output per worker, and the urbanization rate did not appear to change much.&lt;/p&gt;
-
-&lt;p&gt;Here I think the second factor identified by Geertz, the nature of paddy rice production, played a role, at least for the development of the Yangzi (North China relies on different kinds of crops). As Geertz noted, and other sources corroborate, the marginal product of labor in rice production does not fall by much as additional labor is applied.  That means output per worker in those agricultural areas is insensitive to growth in the number of workers. This turns out to be both good and bad for those areas.&lt;/p&gt;
-
-&lt;p&gt;On the good side of the ledger, this means that living standards in agricultural areas can handle population growth without too much trouble. The drag from population growth in a Malthusian setting is more muted in areas with paddy rice production. On the bad side of the ledger is that this means population continues to grow. In the end, what you get is that the speed at which the economy approaches the Malthusian equilibrium is &lt;em&gt;very&lt;/em&gt; slow. That’s good in the sense that output per worker stays about the stagnant equilibrium level for a long time, bad in the sense that output per worker is falling for a long time.&lt;/p&gt;
-
-&lt;p&gt;There is another aspect of this effect of rice production. Remember, with an urban outlet, this can slow down population growth in the agricultural area, and thus output per worker in agriculture faces less of a drag on its growth. But this doesn’t seem to have helped in China. Here’s Huang:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The involuted peasant economy was able to support very large and complex cities, and, by extension, also a highly advanced elite and urban culture, even if the surplus above subsistence produced by the average cultivator shrank from the diminished marginal returns that came with involution. The paradox is poorly understood. Large cities and advanced urban cultures are commonly associated with rural prosperity, but I would like to suggest that the opposite was actually the case in much of Chinese history. (Huang, 1990, p. 332)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’ll contend that the nature of rice production resolves the paradox. With rice production, rural output per worker is insensitive to rural population growth. Even if there is a &lt;em&gt;lot&lt;/em&gt; of rural-to-urban migration, there is little effect on rural output per worker. The benefits of having urban outlets in China - at least the Yangzi - were not very big in the end.&lt;/p&gt;
-
-&lt;p&gt;How does this compare to Europe, and why does it explain the lack of crude involution? In European agriculture, there are reasons to think that the marginal product of labor is very &lt;em&gt;sensitive&lt;/em&gt; to the amount of labor used. This is both bad and good. It is bad, because any population growth in agriculture leads to significant loss of output per worker. But that means population growth slows down quickly, and hence the transition to the Malthusian stagnant equilibrium is very fast. So one reason Europe may not have looked like it “involuted” is that it did not have long, drawn-out, transitions towards the Malthusian equilibrium, as in China.&lt;/p&gt;
-
-&lt;p&gt;Now, with respect to urban outlets, which Europe had as well, the nature of agricultural production is helpful. When population growth in rural areas slows down thanks to urbanization, this has a very big effect on output per worker, because agricultural output is so sensitive to the amount of labor. Thus, relative to rice-growing areas of China, Europe had an advantage in that any urbanization it generated created this follow-on effect of improving rural output per worker.&lt;/p&gt;
-
-&lt;p&gt;This particular story about the difference in the sensitivity of output to labor in different types of crop systems is something I’ve done a lot of work on - see &lt;a href=&quot;https://growthecon.com/assets/eber_voll_2016.pdf}&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://github.com/dvollrath/Crops/blob/master/Drafts/Constraint-Master.pdf&quot;&gt;here&lt;/a&gt;, and &lt;a href=&quot;https://growthecon.com/assets/JOEG_basis.pdf&quot;&gt;here&lt;/a&gt;. In many ways, it was thinking about involution that got me there. Another incredible source of information on this topic is Francesca Bray’s &lt;a href=&quot;https://amzn.to/2CHXFpb&quot;&gt;The Rice Economies&lt;/a&gt;, which remains one of the very best books I’ve ever read on comparative development.&lt;/p&gt;
-
-&lt;p&gt;And I haven’t even touched on differences in family formation and fertility patterns, which would add a whole other layer on top of this. But as I’ve reached well over 3000 words at this point, we’re going to leave that aside for the time being. Suffice it to say that they were different (perhaps endogenously) and would have contributed to the different outcomes in a Malthusian setting.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-about-involution&quot;&gt;What about involution?&lt;/h3&gt;
-&lt;p&gt;Where does that leave me with respect to involution as a concept? It is crucial to distinguish Geertz’ notion of the refinement of agrarian practices from the cruder notion of stagnant or falling agricultural output per worker. Geertz’ definition of involution is useful in thinking about how the specific agrarian institutions we observe today came about.&lt;/p&gt;
-
-&lt;p&gt;But the crude definition of involution is just a synonym for “Malthusian equilibrium allowing for technological change”. It isn’t a problem to use a single term to stand in for a more complex phenomena. It can save you some time typing. But I think using the concept of involution without its Malthusian context leads one to do a lot more analytical work than necessary. The Malthusian setting gives you clear guidance on what the proximate determinants of living standards are. And in the Asia/China setting, the experience with respect to commercial and technological changes are not necessasrily paradoxes or mysteries.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 15 Oct 2018 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
