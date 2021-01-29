@@ -5,7 +5,105 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Fri, 08 Jan 2021 12:09:16 -0600</pubDate>
+    <pubDate>Fri, 29 Jan 2021 12:56:07 -0600</pubDate>
+    
+      <item>
+        <title>TFP Agnosticism</title>
+        <link>https://growthecon.com/blog/TFP-Future/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/TFP-Future/</guid>
+        <description>&lt;p&gt;In some recent Twittering, &lt;a href=&quot;https://twitter.com/elidourado&quot;&gt;Eli Dourado&lt;/a&gt; pointed to the “Gordon/Vollrath” view that stagnation is normal, healthy, and a sign of success. I guess it is kind of cool that I have a notable view, and being associated in some way with Bob Gordon is a nice honor for me (not sure how he feels about it). I made a few attempts to clarify what I thought about that view, but in the end I didn’t think I could pin it down on Twitter, so here we are.&lt;/p&gt;
+
+&lt;p&gt;The overall question of how we should view measures of TFP and innovation ranges beyond just this discussion with Eli. I’m going to pool Eli and others into a group I’ll call “TFP Believers”. As for myself, I’m going to call myself a “TFP Agnostic”.&lt;/p&gt;
+
+&lt;p&gt;The Believers and I agree on the following. Innovation is crucial to improving well-being. We need innovation to cure diseases, clean the environment, and do all sorts of other things that would make life better. There is a &lt;a href=&quot;https://www.economist.com/leaders/2021/01/16/why-a-dawn-of-technological-optimism-is-breaking&quot;&gt;growing sense&lt;/a&gt; that a new burst of innovation is occurring or coming, and that to be encouraged by and excited about. Innovations are what make life better.&lt;/p&gt;
+
+&lt;p&gt;Here’s where I think we disagree. Believers think TFP growth is a meaingful measure of that innovation. Hence, if there is a coming burst of innovation it will show up as higher measured TFP growth. Moreover, we should be actively trying to raise measured TFP growth through policies or whatever is at hand.&lt;/p&gt;
+
+&lt;p&gt;I, on the other hand, do not think that TFP growth measures innovation, per se. Hence, I do not worry much about the rate of TFP growth. I would use policy or whatever is at hand to encourage innovation, whether that has a meaningful effect on TFP growth or not.&lt;/p&gt;
+
+&lt;p&gt;We have the same ultimate goal, which is for innovation to lead to greater well-being. I think all we really disagree about is how to measure that.&lt;/p&gt;
+
+&lt;p&gt;I don’t deny that innovation plays a part in TFP. My problem is that so many &lt;em&gt;other&lt;/em&gt; things go into TFP that it ends up a very noisy, imperfect measure of innovation. Using TFP to measure innovation is like using a pedometer to measure your VO2 max. Is there a connection? Yes, to the extent that having a high VO2 max means you &lt;em&gt;could&lt;/em&gt; take more steps. Is that connection confounded by a host of other factors? Yes. Could you conceive of a very particular set of assumptions and conditions under which the number of steps you take is perfectly correlated with your VO2 max? Sure, in a bio-mechanics lab somewhere. Does we actually live in a bio-mechanics lab? No.&lt;/p&gt;
+
+&lt;p&gt;TFP isn’t built to measure innovation, just like a pedometer isn’t built to measure VO2 max. Hence my agnosticism.&lt;/p&gt;
+
+&lt;h3 id=&quot;turtles-all-the-way-down&quot;&gt;Turtles all the way down&lt;/h3&gt;
+&lt;p&gt;TFP is the sum of technical efficiency and allocative efficiency. Technical efficiency is the weighted average of industry-specific productivity growth rates. Allocative efficiency is an adjustment for whether factors of production like labor or capital are misallocated or not.&lt;/p&gt;
+
+&lt;p&gt;Where does innovation fit in here? It presumably is what drives the industry-specific productivity growth rates. But since industries are made up of sub-industries, that means industry-specific productivity growth rates are a weighted average of sub-industry-specific productivity growth rates plus an adjustment for allocative efficiency within that industry. So innovation could be what drives &lt;em&gt;sub&lt;/em&gt;-industry-specific productivity growth rates.&lt;/p&gt;
+
+&lt;p&gt;But sub-industry-specific productivity growth rates are made up of sub-sub-industry-specific productivity growth rates plus an allocative efficiency piece. So innovation could really be what drives &lt;em&gt;sub-sub&lt;/em&gt;-industry-specific productivity growth rates. And so on. It’s turtles all the way down.&lt;/p&gt;
+
+&lt;p&gt;What is the right level to stop at to measure real innovation? At what point in the disaggregation do we reach the point where innovation &lt;em&gt;actually&lt;/em&gt; occurs. We don’t know. But if you want TFP to measure innovation you have to know. You’ll get different answers for aggregate technical efficiency depending on how disaggregated your data are. Does it make sense that our measure of innovation should depend on which level NAICS code the BLS decided to use?&lt;/p&gt;
+
+&lt;p&gt;The only way the disaggregation &lt;em&gt;doesn’t&lt;/em&gt; matter is if all those allocative efficiency terms at every level are zero. They are zero in an economy where all factors of production (capital, labor, etc.) are allocated such that marginal products are perfectly equal across units. Which is the economic equivalent of the bio-mechanics lab. We don’t live in that lab.&lt;/p&gt;
+
+&lt;h3 id=&quot;weights-and-measures&quot;&gt;Weights and measures&lt;/h3&gt;
+&lt;p&gt;The disaggregation issue is my first problem. The second is that the weights in those various weighted averages &lt;em&gt;change&lt;/em&gt; due to innovation, and thus the growth rate of TFP could change even if the amount of innovation does not.&lt;/p&gt;
+
+&lt;p&gt;I think this is easiest to see with an example. Let’s have two industries, A and B. Then aggregate TFP growth is&lt;/p&gt;
+
+\[g_{TFP} = w_A g_{A,TFP} + w_B g_{B,TFP} + AE.\]
+
+&lt;p&gt;The weights are &lt;img src=&quot;http://latex.codecogs.com/png.latex?w_A\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?w_B\inline&quot;/&gt;, and the growth rate of TFP in the two industries are &lt;img src=&quot;http://latex.codecogs.com/png.latex?g_{A,TFP}\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?g_{B,TFP}\inline&quot;/&gt;. That “AE” is the allocative efficiency stuff I’ll get to later.&lt;/p&gt;
+
+&lt;p&gt;We’re going to ignore all the disaggregation problems I just cited and assume that &lt;img src=&quot;http://latex.codecogs.com/png.latex?g_{A,TFP}\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?g_{B,TFP}\inline&quot;/&gt; are in fact picking up the effect of innovation on the productivity of industries A and B. A is going to be our “innovative” industry, with &lt;img src=&quot;http://latex.codecogs.com/png.latex?g_{A,TFP}\inline&quot;/&gt; of 3%, and B is going to be our “stagnant” industry with &lt;img src=&quot;http://latex.codecogs.com/png.latex?g_{B,TFP}\inline&quot;/&gt; of 0%.&lt;/p&gt;
+
+&lt;p&gt;The important part here is that these two industry-specific productivity growth rates are going to stay constant over time. Since they measure innovation - by assumption - that means the amount of innovation is staying constant over time as well.&lt;/p&gt;
+
+&lt;p&gt;What about the weights? Those are roughly the share of GDP accounted for by each industry. I say roughly because in practice those weights depend on how the industries interact through input/output relationships, but share of GDP is a good approximation.&lt;/p&gt;
+
+&lt;p&gt;We’re going to start with the innovative industry as 50% of GDP, and the normal industry as 50%, so&lt;/p&gt;
+
+\[g_{TFP} = 0.5 (0.03) + 0.5 (0) = 0.015.\]
+
+&lt;p&gt;1.5% TFP growth. That shouldn’t be surprising as industry A accounts for half of GDP.&lt;/p&gt;
+
+&lt;p&gt;Here comes the TFP agnosticism. &lt;em&gt;What happens to the weights tomorrow&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;The answer comes down to what you think about preferences for A and B. If A and B are complements, then people take advantage of the lower price of A (or the higher quality for the same price) to buy a few more &lt;em&gt;units&lt;/em&gt; of A but overall spend &lt;em&gt;less&lt;/em&gt; on A. They take those savings and buy a little more of B and overall spend &lt;em&gt;more&lt;/em&gt; on B. The weights shift in B’s favor. Let’s say that the weight on A is now 40% and on B 60%. TFP growth is&lt;/p&gt;
+
+\[g_{TFP} = 0.4 (0.03) + 0.6 (0) = 0.012.\]
+
+&lt;p&gt;Only 1.2% TFP growth. The TFP growth rate has &lt;em&gt;fallen&lt;/em&gt; even though we just established above that innovation is constant, given that the TFP growth rates of each individual industry remain the same. TFP growth can change even though innovation does not.&lt;/p&gt;
+
+&lt;p&gt;If we continue over time like this the weight on A is going to get smaller and smaller and the weight on B is going to get bigger and bigger and eventually the share of A is going to approach zero. At that point aggregate TFP growth will be &lt;em&gt;zero&lt;/em&gt; as well. But innovation will have continued to deliver &lt;img src=&quot;http://latex.codecogs.com/png.latex?g_{A,TFP}\inline&quot;/&gt; of 3% every period.&lt;/p&gt;
+
+&lt;p&gt;This kind of dynamic is precisely what was behind agriculture’s decline as a share of economic activity. Agriculture in the 20th century, and in particular since World War II, has been one of the &lt;em&gt;most&lt;/em&gt; innovative industries in the economy, and has experienced massive increases in TFP. The result? Agriculture accounts for maybe 2% of GDP today, down from 15% around 1950, and down from around 30-40% (or possibly more) around 1900. The contribution of all that innovation to overall TFP growth has dwindled to almost zero. But that doesn’t mean the innovation didn’t happen. And it doesn’t mean innovation in agriculture stopped. All that happened is that the weights changed.&lt;/p&gt;
+
+&lt;p&gt;Assuming that A and B are substitutes, so that the share of A goes &lt;em&gt;up&lt;/em&gt; as it gets more productive, doesn’t eliminate the problem. Then the growth rate of aggregate TFP starts at 1.5% and &lt;em&gt;rises&lt;/em&gt; over time even though, again, the underlying rates of innovation are constant.&lt;/p&gt;
+
+&lt;p&gt;The only way to avoid this problem is to assume that the GDP shares of the two industries are constant, meaning the elasticity of substitution between A and B for consumers is precisely one. And that is another case of something that works only in the bio-mechanics lab.&lt;/p&gt;
+
+&lt;h3 id=&quot;nothing-is-perfect&quot;&gt;Nothing is perfect&lt;/h3&gt;
+&lt;p&gt;So the first problem was disaggregation. The second problem was that the weights change over time in response to innovation.&lt;/p&gt;
+
+&lt;p&gt;And that brings us to the last problem, which is the “AE” term I left floating around up there. This, recall, refers to allocative efficiency, or the effect of any distortions in prices (of products or factors) on economic activity. Those distortions can be things like monopoly markups, or taxes, or frictions in labor markets, or anything that means marginal products for factors of production are not equalized across different uses.&lt;/p&gt;
+
+&lt;p&gt;If these distortions are changing over time, this can have a significant impact on aggregate TFP growth. What is it telling you about innovation? Nothing we can make sense of. Innovation could occur that lowers market power, as when a new competitor enters an industry, and this could increase aggregate TFP. Or innovation could increase market power, as when someone creates a new product entirely and is the monopoly provider of that.&lt;/p&gt;
+
+&lt;p&gt;Even leaving the actual distortions as they are, innovation can alter the allocation of factors across different industries or firms. This is the same process as changing the weights I described above. If industry A is more innovative, and spending on it declines, A will shed labor and capital to industry B. Does that increase TFP or lower it? It depends.&lt;/p&gt;
+
+&lt;p&gt;If B has higher markups, then paradoxically this would &lt;em&gt;increase&lt;/em&gt; TFP growth. But if B has lower markups, it will &lt;em&gt;lower&lt;/em&gt; TFP growth. The logic here is kind of funky, but I tried to explain it in some posts a while back, see &lt;a href=&quot;https://growthecon.com/blog/Paradox/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://growthecon.com/blog/Paradox-2/&quot;&gt;here&lt;/a&gt;. Either way, the point is that innovation screws with allocative efficiency in ways that are not always positive for TFP growth.&lt;/p&gt;
+
+&lt;h3 id=&quot;here-comes-the-sun&quot;&gt;Here comes the sun&lt;/h3&gt;
+&lt;p&gt;Given those three issues - disaggregation, weights, and allocative efficiency - I don’t see how aggregate TFP growth is a good indicator of innovation. An increase in innovation can increase TFP growth, lower TFP growth, or leave TFP growth about the same. So you can’t reason backwards from TFP growth to infer anything about the speed of innovation.&lt;/p&gt;
+
+&lt;p&gt;Hence I am a TFP agnostic. I’m not &lt;em&gt;against&lt;/em&gt; growth in aggregate TFP. That would be great, because it means we’re getting more out of less. But you cannot use aggregate TFP growth to judge whether we are innovative or not, and making it your metric for innovation is doomed to disappoint.&lt;/p&gt;
+
+&lt;p&gt;Let’s take solar energy as an example. I am all on board the solar train. What has occurred in the last ten years is nothing short of amazing. All of the hype about solar, like &lt;a href=&quot;https://noahpinion.substack.com/p/why-im-so-excited-about-solar-and&quot;&gt;Noah’s post&lt;/a&gt; is well deserved.&lt;/p&gt;
+
+&lt;p&gt;I’m excited about solar &lt;em&gt;even if it doesn’t increase TFP growth&lt;/em&gt;. Why? Because it is freaking  carbon-free energy! Even if we get &lt;em&gt;nothing&lt;/em&gt; out of it in terms of increased TFP growth, it is completely and utterly worth installing. The &lt;em&gt;point&lt;/em&gt; of solar energy is not to make the economy more efficient, it is to reduce our reliance on fossil fuels. By our own actions - subsidies that distort the cost of solar - we’ve shown that we are willing to sacrifice efficiency and TFP growth in order to get our hands on that solar energy.&lt;/p&gt;
+
+&lt;p&gt;Twenty years from now, in 2041, let’s say I want to see how far we’ve gone towards having a carbon-free solar economy. I’d look at the percent of KWh produced by solar, not the average annual growth rate of TFP between 2021-2041. And if I &lt;em&gt;did&lt;/em&gt; look at the growth rate of TFP, how would I know? Does 1.2% TFP growth mean we have a carbon-free economy, and 1.1% means we don’t?&lt;/p&gt;
+
+&lt;p&gt;TFP is an incredibly useful statistic to know, and higher TFP growth is way better than low TFP growth. But it is not a meaingful measure of the speed of &lt;em&gt;innovation&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;And lest we forget, Ted Cruz is a seditious grifter who should resign.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 29 Jan 2021 00:00:00 -0600</pubDate>
+      </item>
     
       <item>
         <title>The 1965 shift in growth</title>
@@ -1380,114 +1478,6 @@
 &lt;p&gt;There is a &lt;a href=&quot;https://growthecon.com/blog/topic-deep/&quot;&gt;topic page&lt;/a&gt; up on my site already with all the existing posts I’ve classified as related to “deep roots”, so if you’re into this material feel free to have a poke around that.&lt;/p&gt;
 </description>
         <pubDate>Mon, 31 Dec 2018 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>New evidence on convergence</title>
-        <link>https://growthecon.com/blog/Convergence/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Convergence/</guid>
-        <description>&lt;p&gt;Dev Patel, Justin Sandefur, and Arvind Subramanian &lt;a href=&quot;https://www.cgdev.org/blog/everything-you-know-about-cross-country-convergence-now-wrong&quot;&gt;posted&lt;/a&gt; the other day some new evidence on cross-country convergence. They showed that there is statisticaly significant evidence for unconditional convergence in GDP per capita across countries. I’ll get to more details below, but in short they find that poor countries grow faster than rich ones, on average.&lt;/p&gt;
-
-&lt;p&gt;They set this up as a counter-point to an &lt;a href=&quot;https://www.aeaweb.org/articles?id=10.1257/jel.20181207&amp;amp;&amp;amp;from=f&quot;&gt;article&lt;/a&gt; coming out in the Journal of Economic Literature by Paul Johnson and Chris Papageorgiou that says cross-country convergence doesn’t occur. The difference in the PSS post and the JP paper is that PSS look at relatively recent windows of data. For example, PSS look at whether countries that were poor in 1990 grew faster than rich countries in 1990 from 1990 to 2014.&lt;/p&gt;
-
-&lt;p&gt;In constrast, JP appear to look at longer time frames. They find that there isn’t much evidence countries that were poor in 1960 grew faster than rich countries in 1960. This isn’t a contradiction with PSS. Both can be true at once. All PSS have done is indicated that around twenty-five years ago poor countries did start growing faster than rich countries.&lt;/p&gt;
-
-&lt;p&gt;The implication of that finding is that poor countries are &lt;em&gt;converging&lt;/em&gt; to rich country GDP per capita. And while that statement is defensible, it does need a host of qualifications, because it doesn’t mean you should expect that developing countries are soon going to look like Western Europe. This post is meant to pick through those qualifications.&lt;/p&gt;
-
-&lt;h3 id=&quot;flavors-of-convergence&quot;&gt;Flavors of convergence&lt;/h3&gt;
-&lt;p&gt;Let’s start with a better definition of convergence. There are two kinds. Within economics, they acquired particular names, and I’ll use those to be consistent with the literature. They are:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence: this kind of convergence occurs if the growth rate of GDP per capita is negatively related to the initial level of GDP per capita. That is, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence is defined by poor countries growing faster than rich countries.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence: this kind of convergence occurs if the variance (or any measure of dispersion, really) of GDP per capita &lt;em&gt;across&lt;/em&gt; countries shrinks. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence means the gap in GDP per capita from rich to poor gets smaller.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Now, it &lt;em&gt;feels&lt;/em&gt; like &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence should imply &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence. And in some cases it does. Rather than GDP per capita, think about the height of the people in my house. If you plotted the growth rate of height from 2005-2018 against height in 2005 for all four of us, you’d get a negative coefficient. My two daughters were really short in 2005, but grew very fast over the next 13 years. My wife and I were both relatively tall in 2005, but neither of us grew at all. That’s &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. In this case, if you looked at the variance of heights in 2005, that would be much larger than the variance of heights in 2018, and hence there was also &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence in my house.&lt;/p&gt;
-
-&lt;p&gt;For height, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence implies &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence because there is not any additional noise or variance in height to worry about. I don’t wake up every day and randomly find myself 6 inches taller or shorter than I was the day before. That ensures that as my daughters grow, they really do catch up in height. I don’t get randomly taller, and they don’t get randomly shorter.&lt;/p&gt;
-
-&lt;p&gt;But in the case of economic growth, there are random shocks to GDP per capita. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence says that poor countries, &lt;em&gt;on average&lt;/em&gt;, grow faster than rich countries. But there will be instances where poor countries have really slow, or negative, growth sometimes. Think of currency crises or political upheavals. There will be some instances where rich countries experience rapid growth. With both of these things going on, it’s entirely possible that poor countries keep falling farther behind in terms of GDP per capita, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-&lt;em&gt;divergence&lt;/em&gt;, even though the poorer they get the faster they grow on average.&lt;/p&gt;
-
-&lt;p&gt;Here’s an analogy that could help. Imagine somone one juggling bowling pins. Gravity is like&lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. If the bowling pin is up in the air, then gravity is making it fall. But every time it reaches the juggler, she throws it back up in the air. This means there is always the same amount of dispersion in the location of the pins; some are up and some are down. In other words, there is a constant amount of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence, even though the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence caused by gravity is always at work. If the juggler throws the pins up with a little less force each time, then the dispersion will decrease. If the juggler throws the pins up with more force each time, the dispersion will &lt;em&gt;increase&lt;/em&gt;. Nevertheless, gravity - &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence - is still working the whole time.&lt;/p&gt;
-
-&lt;p&gt;Economic shocks act a little like the juggler, except that it isn’t just the rich countries (the ones the juggler catches) that experience shocks (the toss in the air). But the principle is similar, which is that with sufficiently large shocks, the dispersion in GDP per capita may not fall, and could even rise, over time. This is true even though &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence, like gravity, operates on countries the whole time.&lt;/p&gt;
-
-&lt;p&gt;In terms of cross-country comparisons, we’re mainly interested in &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence: is the gap between poor and rich countries shrinking over time? Observing &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence in the data does not tell us whether that is true. Now, some sort of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence is &lt;em&gt;necessary&lt;/em&gt; for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence to occur. At some point, a poor country has to grow faster than a rich country in order to catch up. But &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence isn’t sufficient for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence. The PSS result doesn’t mean that the dispersion of GDP per capita across countries got smaller, or will get smaller.&lt;/p&gt;
-
-&lt;h3 id=&quot;convergence-speed&quot;&gt;Convergence speed&lt;/h3&gt;
-&lt;p&gt;Let’s leave aside whether &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence implies &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence for the moment. Let’s assume that the shocks are small enough that in fact, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence is implied. The next question is &lt;em&gt;how long&lt;/em&gt; it will take a poor country to close the gap with a rich country, and the actual coefficient that PSS estimate can tell us about this.&lt;/p&gt;
-
-&lt;p&gt;To make sense of this, I need a little math. The convergence relationship that PSS estimate looks like this&lt;/p&gt;
-
-\[\frac{\ln y_{t} - \ln y_0}{t} = \alpha + \beta \ln y_0.\]
-
-&lt;p&gt;On the left is the growth rate of GDP per capita, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y\inline&quot;/&gt;, from some initial year 0 to year &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;. This is related to the initial level of GDP per capita, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0\inline&quot;/&gt;, on the right-hand side. The strength of that relationship is measured by the coefficient &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta&amp;lt;0\inline&quot;/&gt;, or that the growth rate gets smaller as the initial level of income gets higher. How large (in absolute value) &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; is determines how strong that effect is. The extra parameter &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt; is a baseline growth rate.&lt;/p&gt;
-
-&lt;p&gt;A little re-arrangment of this gives us&lt;/p&gt;
-
-\[\ln y_t = \alpha t + (1 + \beta t) \ln y_0\]
-
-&lt;p&gt;which is the level of GDP per capita at time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;, given initial GDP per capita at time 0. That multiplicative term &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta t\inline&quot;/&gt; is the effect of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence over time.&lt;/p&gt;
-
-&lt;p&gt;Using this, here’s a question we could ask. Given a poor country has &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0^{Poor}\inline&quot;/&gt; that is only 10% of the value in a rich country, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0^{Rich}\inline&quot;/&gt;, how long will it take (i.e. how big does &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt; have to be) before &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_t^{Poor}\inline&quot;/&gt; is 90% of the value in the rich country, &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_t^{Rich}\inline&quot;/&gt;? Given the set-up, this &lt;em&gt;will&lt;/em&gt; happen at some point. I didn’t add any of the shocks mentioned above that could keep spreading these two countries apart. &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence will eventually win out.&lt;/p&gt;
-
-&lt;p&gt;At this hypothetical time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;, we want that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_t^{Poor}/y_t^{Rich} = .9\inline&quot;/&gt;, which if you take logs and plug in from the above equation, gives us&lt;/p&gt;
-
-\[\ln .9 = \alpha t + (1 + \beta t) \ln y_0^{Poor} - \alpha t - (1 + \beta t) \ln y_0^{Rich}\]
-
-&lt;p&gt;and we can simplify this to&lt;/p&gt;
-
-\[\ln .9 = (1 + \beta t) (\ln y_0^{Poor} - \ln y_0^{Rich}).\]
-
-&lt;p&gt;We also said that &lt;img src=&quot;http://latex.codecogs.com/png.latex?y_0^{Poor}/y_0^{Rich} = .1\inline&quot;/&gt;, so taking logs of that, we can plug in and get&lt;/p&gt;
-
-\[\ln .9 = (1 + \beta t) \ln .1\]
-
-&lt;p&gt;and now re-arrange to solve for time &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt;&lt;/p&gt;
-
-\[t = \frac{\frac{\ln .9}{\ln .1} - 1}{\beta}.\]
-
-&lt;p&gt;This is how long it will take the poor country to go from 10% of rich country GDP per capita to 90% per capita. And you could plug in other numbers in the obvious spots here to think about the time to go from 20% to 99%, or whatever you wanted.&lt;/p&gt;
-
-&lt;p&gt;The key is that the absolute size of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; matters. The smaller is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; in absolute value, the more time it takes to converge. Now, what PSS show is that in samples that only run through 2000, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; was about 0, which means that &lt;img src=&quot;http://latex.codecogs.com/png.latex?t\inline&quot;/&gt; is essentially infinity. With no &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence, there isn’t a way for the poor country to ever catch up, because it doesn’t grow faster than the rich country. But with later samples, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta&amp;lt;0\inline&quot;/&gt;, so they can.&lt;/p&gt;
-
-&lt;p&gt;Their biggest estimate value is &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -.005\inline&quot;/&gt;, not very big. Plugging that into the above equation implies that &lt;img src=&quot;http://latex.codecogs.com/png.latex?t = 190\inline&quot;/&gt;, or it will take about 190 years for a country to go from 10% of rich-country GDP per capita to 90%. That’s a loooong time. So even in the case where we assume that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence leads to &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence (i.e. the ratio goes from 10% to 90%), and ignore the possibility that shocks keep spreading things out, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence may not imply much noticeable &lt;img src=&quot;http://latex.codecogs.com/png.latex?\sigma\inline&quot;/&gt;-convergence over the next few decades.&lt;/p&gt;
-
-&lt;h3 id=&quot;absolute-and-conditional-convergence&quot;&gt;Absolute and conditional convergence&lt;/h3&gt;
-&lt;p&gt;The PSS result of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -.005\inline&quot;/&gt; is small. At the same time, you will see references that the convergence coefficient is more like &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt; in the literature. Probably the most famous of these papers are from &lt;a href=&quot;https://ideas.repec.org/a/oup/qjecon/v106y1991i2p407-443..html&quot;&gt;Barro&lt;/a&gt; in 1991 and &lt;a href=&quot;https://ideas.repec.org/a/ucp/jpolec/v100y1992i2p223-51.html&quot;&gt;Barro and Sala-i-Martin&lt;/a&gt; in 1992. There are a host of other papers offering more estimates of this parameter, but I think it is fair to say that -0.02 is a good eyeball average of those results.&lt;/p&gt;
-
-&lt;p&gt;Now, we have to be a little careful here in these older results to PSS. PSS estimate &lt;em&gt;unconditional&lt;/em&gt; &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence, meaning they just making raw comparisons of growth in GDP per capita against initial GDP per capita across countries. Their result implies that poorer countries grow (a little bit) faster than rich countries, and that this doesn’t depend (is unconditional) on characteristics of those countries. It says that if you are poor, no matter &lt;em&gt;why&lt;/em&gt; you are poor, you grow a little faster than rich countries, no matter &lt;em&gt;why&lt;/em&gt; they are rich.&lt;/p&gt;
-
-&lt;p&gt;The original convergence literature did the same kind of unconditional analysis, and found nothing. That is the point, in some sense, of the PSS note. But that original literature did find evidence for &lt;em&gt;conditional&lt;/em&gt; &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. This means that if you look only at groups of countries that have similar characteristics (e.g. savings rate, human capital levels, etc..) then you find &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence in those groups - the poorer ones grow faster than the rich ones.&lt;/p&gt;
-
-&lt;p&gt;But &lt;em&gt;across&lt;/em&gt; groups, there was no tendency for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. For example, if you looked only at the OECD countries, you’d see pretty strong evidence of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence, with an estimate of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt;, roughly. And if you looked only at the set of Sub-Saharan African countries, you’d see similar evidence of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence. But, there was no tendency for SSA countries as a group to grow faster than OECD countries. It was only that &lt;em&gt;within&lt;/em&gt; the group of SSA countries, poorer ones grew faster, and &lt;em&gt;within&lt;/em&gt; the group of OECD countries, poorer ones grew faster. You can find this notion of conditional - or “club” - convergence in blog-favorite William Baumol’s 1986 &lt;a href=&quot;http://piketty.pse.ens.fr/files/Baumol1986.pdf&quot;&gt;paper&lt;/a&gt; that was one of the first to think about this topic.&lt;/p&gt;
-
-&lt;p&gt;A different way of looking at conditional convergence was to use data on states or prefectures within a single country. They would all have roughly similar characteristics relative to countries (e.g. Texas and Florida differ, but that difference pales in comparison to the difference between Texas and Nigeria). And within countries, the evidence seems was clear that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence happens. Again, these coefficients were usually around &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;The &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt; number implies much faster convergence. If you think of a poor state that had 10% GDP per capita relative to a rich state, then it would only take about 48 years for it to reach 90% of GDP per capita of the rich state. That’s, not surprisingly, one-fourth the time it takes a poor country to catch up to a rich one. It’s also one way of thinking about why we don’t see U.S. states with only 10% the GDP per capita of rich ones. Any time a gap opens up, it tends to dissipate. Although I need to note that there is some recent research saying that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence across U.S. states no longer occurs. Let’s leave that aside.&lt;/p&gt;
-
-&lt;p&gt;Which number is right, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta=-0.005\inline&quot;/&gt; or &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta = -0.02\inline&quot;/&gt;? Neither. They don’t measure the same thing. The former is for unconditional cross-country convergence in the last 25 years, the latter is appropriate for conditional convergence or within-country convergence. Both can be true in their individual setting. Individual provinces within Kenya might converge very quickly, even though Kenya as a whole isn’t converging very quickly to U.S. GDP per capita.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-does-convergence-tell-us&quot;&gt;What does convergence tell us?&lt;/h3&gt;
-&lt;p&gt;The use of convergence results depends on what you’re after. The &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; value that PSS report, similar to every other estimated &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt; value, tells you whether &lt;em&gt;on average&lt;/em&gt; poor countries grow faster than rich ones. But that doesn’t make it very informative about any particular country. It certainly won’t tell you whether to expect some kind of growth miracle or disaster to occur in the future.&lt;/p&gt;
-
-&lt;p&gt;Here’s what I mean. I took the Penn World Tables, one of the datasets used by PSS, and plotted the data used to estimate &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;. You’ve got the average growth rate of GDP per capita from 1990 to 2014 on the y-axis, against the (log) of GDP per capita in 1990 on the x-axis. The downward-sloped dashed line is the best fit to this data, and the slope of that line is about -.005, the PSS estimate of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/fig_convergence.png&quot; alt=&quot;Convergence&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But you can see that this hides a lot of variation. I labelled a few countries for reference. The USA and Japan (JPN), out on the right, can be the stand-in for the “Rich” countries. You can also see China (CHN) and India (IND), both of which had growth rates well above the estimated relationship, and hence they converged much faster towards rich-country GDP per capita. This would set them apart from the Central African Republic (CAF) and Zimbabwe (ZWE), who both started out relatively poor, but &lt;em&gt;shrank&lt;/em&gt; in terms of GDP per capita, and fell even further behind the USA and JPN. I also threw South Korea (KOR) in there, as an example of a country that closed almost the entire gap with JPN from 1990 to 2014, although many other countries with a similar level of GDP per capita in 1990 did not.&lt;/p&gt;
-
-&lt;p&gt;A crude way of seeing how useful the &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence result is comes from looking at the R-squared of the regression that was used to estimate &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;. It’s 0.0462. In other words, 95.38% of the variation in growth rates from 1990 to 2014 is &lt;em&gt;not&lt;/em&gt; explained by how poor a country was in 1990. Yes, there is evidence here for unconditional convergence &lt;em&gt;on average&lt;/em&gt;. But plenty of countries grew slower than necessary to converge to rich country levels of GDP per capita.&lt;/p&gt;
-
-&lt;p&gt;It is probably best not to think of unconditional &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence as representing some kind of structural truth about economic growth. If it were, you’d expect it to show up regardless of the exact time frame looked at, and PSS show that’s not the case. It’s better to think of it as a summary statistic of the general experience of poor countries in a given time frame. The PSS results tell us that &lt;em&gt;something&lt;/em&gt; changed around 1990 such that many poor countries grew faster than rich countries, relative to the period from 1960 to 1990. But it doesn’t tell us what or why it changed, or if it will persist.&lt;/p&gt;
-
-&lt;p&gt;That doesn’t make the PSS estimate spurious. It’s a nice descriptive result that tells us we should think a little more about what might have changed around those years, even if the implication of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\beta\inline&quot;/&gt;-convergence from that period is not that strong.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 02 Nov 2018 00:00:00 -0500</pubDate>
       </item>
     
   </channel>
