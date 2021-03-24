@@ -5,7 +5,114 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Mon, 01 Feb 2021 15:04:24 -0600</pubDate>
+    <pubDate>Wed, 24 Mar 2021 11:53:23 -0500</pubDate>
+    
+      <item>
+        <title>Pandemic relief and potential GDP (plus CBO methodology appendices!)</title>
+        <link>https://growthecon.com/blog/CBO-Potential/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/CBO-Potential/</guid>
+        <description>&lt;p&gt;The figure below is from the &lt;a href=&quot;https://www.hamiltonproject.org/blog/the_macroeconomic_implications_of_bidens_1.9_trillion_fiscal_package&quot;&gt;Hamilton Project&lt;/a&gt; but you could have found something similar in a lot of evaluations of the relief bill. It compares the projected path of GDP with the relief bill to the CBO projection of potential GDP formed in January 2020, prior to the pandemic.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/hamiltonfig1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see it projects that the relief bill will put us the earlier CBO projection by the end of 2021 and early in 2022. This is one argument used against the bill, or at least against the size of the bill. The idea is that the relief bill will “overheat” the economy or cause the economy to run “over potential”. Some leave that complaint as is, assuming it is self-evident that this would be bad. Others take time to explain that they think running above potential raises the risk of inflation.&lt;/p&gt;
+
+&lt;p&gt;The problem is that while the CBO refers to their projection as “potential GDP”, that is misleading. When most people think of “potential GDP” they think “The maximum GDP that we could produce before running into physical constraints”, or “The maximum GDP that we can produce before firms start jacking up prices rather than expanding real production”. That is the notion of “potential GDP” that lies at the heart of this particular inflation-based argument against the relief bill.&lt;/p&gt;
+
+&lt;p&gt;However, what the CBO projection actually means is “The GDP you might get if the economy was sorta like in 2005, but we took into account population aging”. It has nothing to do with physical limits, and nothing to do with firms being willing or able to increase output.&lt;/p&gt;
+
+&lt;p&gt;I’m going to walk through how the CBO projection is formed, and why my slightly snarky definition is in fact the correct one. And it might come off like I’m dumping on the CBO. I’m not. Aside from some quibbles about semantics, the numbers they produce are useful for specific purposes. The problem is that people use these numbers for the &lt;em&gt;wrong&lt;/em&gt; purposes, mainly because they don’t understand how these projections are formed.&lt;/p&gt;
+
+&lt;p&gt;I’m not dismissing &lt;em&gt;all&lt;/em&gt; arguments about inflation risks from the relief bill, I’m just working through this &lt;em&gt;one&lt;/em&gt; argument about inflation risk, and why it is probably unfounded.&lt;/p&gt;
+
+&lt;p&gt;Oh, since apparently you are only allowed to have an opinion on inflation risks if you were alive during the 1970s, I’ll just say that I have sat in a car waiting in a gas line, watched the original Muppet Show when it was on broadcast TV, and at some point owned plaid bell-bottom pants.&lt;/p&gt;
+
+&lt;p&gt;Having established my macro credentials, let’s get started.&lt;/p&gt;
+
+&lt;h3 id=&quot;you-have-no-potential&quot;&gt;You have no potential&lt;/h3&gt;
+&lt;p&gt;The answer, as always, is to read the f$&amp;amp;#ing manual. You can find the CBO methodology from 2018 &lt;a href=&quot;https://www.cbo.gov/publication/53558&quot;&gt;here&lt;/a&gt;. That site includes software and data you can download to replicate their projections, although it is written for EViews. So for the four of you out there that still use EViews, it is your time to shine. There is also a supplement on estimating labor force participation &lt;a href=&quot;https://www.cbo.gov/system/files/115th-congress-2017-2018/workingpaper/53616-wp-laborforceparticipation.pdf&quot;&gt;here&lt;/a&gt; that is relevant to the process.&lt;/p&gt;
+
+&lt;p&gt;“Potential GDP” is a terrible description for what the CBO estimates. “Smoothed historical GDP” is more accurate. The figure below is from the methodology paper linked above. The dashed blue line is “potential GDP”, and you can see that it is a smoothed version of actual GDP. Their goal is just to remove business cycle effects.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/cbofig8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also see that we have to distinguish between the historical series of potential GDP (1950-2018), and the projected series of potential GDP (after 2018). The projected series, which is what went into that Hamilton Project figure that I started with, is based on information from the historical series, along with assumptions about things like productivity growth.&lt;/p&gt;
+
+&lt;p&gt;That projected series is what is important here, as it forms the basis of the argument that the relief bill will “overheat” the economy. So let’s break down how the CBO forms that projection.&lt;/p&gt;
+
+&lt;p&gt;Projected GDP for the CBO comes from a basic Cobb-Douglas production function&lt;/p&gt;
+
+\[Y^{Proj} = A^{Proj} \left(K^{Proj}\right)^{\alpha} \left(E^{Proj}\right)^{1-\alpha}.\]
+
+&lt;p&gt;To create an estimate of projected GDP they need an estimate of the projected size of each of these three items: TFP (A), capital (K), and employed labor (E). In each case they are extrapolations and/or flat-out guesses based on the smoothed historical series, and &lt;em&gt;not&lt;/em&gt; based on some notion of physical capacity or limits on production.&lt;/p&gt;
+
+&lt;p&gt;Let’s start with TFP. “The agency therefore applies a substantial degree of judgement to its projections of potential TFP rather than simply projecting the most recent estimated trend,” (p. 35 in the 2018 report). Well, of course they do. There is no way to project TFP into the future that isn’t just a wild-ass guess. As the CBO notes in their report, TFP tends to grow at a steady rate for a while….until it doesn’t. And you don’t know when one of these jumps up or down in the growth rate of TFP is going to occur.&lt;/p&gt;
+
+&lt;p&gt;What the CBO does is assume that the rate of TFP growth will converge from its recent short-run trend (say about 0.7% per year) to a long-run average growth rate (say about 1.2% per year). This isn’t any worse or better than just assuming the rate will stay at 0.7%, or jump to 2%, or anything else.&lt;/p&gt;
+
+&lt;p&gt;But it is clear that this isn’t an estimate of how fast TFP &lt;em&gt;could&lt;/em&gt; grow. It’s not an upper bound on the rate of TFP growth, above which the economy couldn’t possibly go.&lt;/p&gt;
+
+&lt;h3 id=&quot;work-it&quot;&gt;Work it&lt;/h3&gt;
+&lt;p&gt;The second, and more relevant, piece of information going into the CBO projection is employment, E. In principle, what the CBO is projecting for employment is&lt;/p&gt;
+
+\[E^{Proj} = (1-u^{Proj}) \times LFPR^{Proj} \times POP^{Proj}\]
+
+&lt;p&gt;where &lt;img src=&quot;http://latex.codecogs.com/png.latex?u^{Proj}\inline&quot;/&gt; is the projected unemployment rate, &lt;img src=&quot;http://latex.codecogs.com/png.latex?LFPR^{Proj}\inline&quot;/&gt; is the labor force participation rate, and &lt;img src=&quot;http://latex.codecogs.com/png.latex?POP^{Proj}\inline&quot;/&gt; is the working-age population. In practice, this is a sum of employment projections for 516 different sub-groups distinguished by age, sex, race/ethnicity, and education. The second link above about labor force projections gives you all the info you want about how those sub-groups are formed.&lt;/p&gt;
+
+&lt;p&gt;Regardless, the game for the CBO projection goes like this. First, get the projected working age population, &lt;img src=&quot;http://latex.codecogs.com/png.latex?POP^{Proj}\inline&quot;/&gt;. That’s pretty easily done from normal demographic tables, and in that sense there is little that is controversial about it.&lt;/p&gt;
+
+&lt;p&gt;Next they need to come up with a projected labor-force participation rate and projected unemployment rate (for each group). Here is where the CBO’s meaning of “potential” comes into focus, and why it does not mean what you think it means.&lt;/p&gt;
+
+&lt;h4 id=&quot;participation-rates&quot;&gt;Participation rates&lt;/h4&gt;
+&lt;p&gt;The projected labor-force participation rate is found primarily by taking the average or smoothed LFPR from the past for each sub-group, while also incorporating a few actual projections by the CBO of the effects of federal policies. But the projection is not what the LFPR &lt;em&gt;could&lt;/em&gt; be, it is what the LFPR &lt;em&gt;was&lt;/em&gt; during “normal” economic times in the past. For example, if married females with young children had a low LFPR in the past, then the CBO projects them to have a low LFPR in the future. There is no sense of potential LFPR here, in the sense of asking what the LFPR of married females with young children &lt;em&gt;could&lt;/em&gt; be.&lt;/p&gt;
+
+&lt;p&gt;The same idea holds with all the LFPR projected on the basis of race/ethnicity, disability, education attainment, birth-year, and the like. The CBO embeds all the accrued historical factors leading to variation in the LFPR across groups into their projection. It’s a sensible way to approach the projection. And it is probably a good projection of what LFPR will be in the next few years. But it is not a measure of some physical upper bound on how much the economy could produce.&lt;/p&gt;
+
+&lt;p&gt;Take the birth-year cohort effects they embed in their projection. This is the observation that some cohorts happen to have lower LFPR than others, presumably because of past experiences in the job market. Think of kids born around 1988-1992, who graduated from HS or college around 2009-10, had no luck finding entry level jobs, and now are more likely to be out of the labor force because of that experience. The CBO projection assumes that this cohort will &lt;em&gt;always&lt;/em&gt; participate less in the labor force in the future. It is as if there is a fixed technological limit to their participation.&lt;/p&gt;
+
+&lt;p&gt;Age effects dominate the projection of LFPR by the CBO. Given historical patterns of LFPR, the aging of Baby Boomers is projected to lower the LFPR by 2.8 percentage points from 2017-2028. The historical pattern implies that LFPR starts to fall at age 50, well before standard retirement age. Does this mean that this represents a physical limit on the ability to work by people aged 50+? Is it literally impossible that more people over 50 might continue to work? If the answer is no, then the CBO projection doesn’t represent an upper bound on LFPR.&lt;/p&gt;
+
+&lt;p&gt;Again, the CBO is not doing anything wrong. The mistake lies is interpreting the CBO projection of LFPR as some unbreakable limit on labor-force participation (and hence GDP).&lt;/p&gt;
+
+&lt;h4 id=&quot;unemployment-rates&quot;&gt;Unemployment rates&lt;/h4&gt;
+&lt;p&gt;The last bit involved in the projection of employment is the unemployment rate, &lt;img src=&quot;http://latex.codecogs.com/png.latex?u^{Proj}\inline&quot;/&gt;. Again, the CBO is going to actually project the unemployment rate for all the different sub-groups they track, and again they are going to assume that historical unemployment rates during “normal” economic times will continue in the future.&lt;/p&gt;
+
+&lt;p&gt;What constitutes “normal”? Well, here is a screenshot of Appendix B of the CBO’s 2018 documentation on potential GDP calculations, and you can use the link above to go look it up yourself.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/cboapp1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The “natural rate” for each one of the sub-groups tracked by the CBO is assumed to be whatever the unemployment rate was for that group in …. 2005? Because 2005 was the year when unemployment rates were “natural” and unaffected by a business cycle, apparently. Let that settle in for a little bit, and think about it. This has all of the same issues as the projection of LFPR.&lt;/p&gt;
+
+&lt;p&gt;The unemployment rate for those with less than a HS diploma, aged 25+, was 7.4% in December 2005. The CBO methodology assumes that this is the natural rate of unemployment for that group, hence they project that the unemployment rate for this group will be 7.4% in the future. As with LFPR, does this imply that 7.4% is a physical limit on how low the unemployment rate can go for those with less than a HS diploma? No, of course not.&lt;/p&gt;
+
+&lt;p&gt;There is no sense that the CBO projection represents a lower bound on unemployment (and hence an upper bound on employment). It’s just using a guess as to what a “normal” economy might look like. It is a mistake to use this projection as an upper bound on what the economy &lt;em&gt;could&lt;/em&gt; do in the future.&lt;/p&gt;
+
+&lt;h3 id=&quot;so-what-is-it&quot;&gt;So what is it?&lt;/h3&gt;
+&lt;p&gt;What, then, is the CBO projection found in the first figure of this post telling us? At the beginning of the post I said it was: “The GDP you might get if the economy was sorta like in 2005, but we took into account population aging.” And that is the right way to look at it.&lt;/p&gt;
+
+&lt;p&gt;Their projection involves a guess about the future path of TFP growth. Not an unreasonable guess, but a guess. Their projection then involves a projection of labor-force participation rates based on historical experience, and population aging implies that this participation rate will continue to fall. Last, they plug in unemployment numbers from 2005 to figure out how many people will actually be working. I didn’t cover their assumptions about capital services because those get really into the weeds and from what I can tell have only a marginal impact on their projection.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately they call this projection “potential GDP” and I think that screws a lot of people up. The words “potential GDP” connote some sort of upper bound or hypothetical limit. The CBO projections are nothing of the sort. Using “potential GDP” as a reference point to argue about the likelihood of inflation is wrong. Not wrong-technically-but-kinda-sorta-okay-anyway, just wrong.&lt;/p&gt;
+
+&lt;p&gt;It is quite possible for actual GDP to be above their potential GDP and yet no increase in inflation can occur. We just saw almost four years of that being the case. It also is quite possible for actual GDP to be &lt;em&gt;below&lt;/em&gt; CBO potential GDP and yet see an increase in inflation, perhaps because Jay Powell starts doing shrooms. There is no mechanical relationship between actual GDP, CBO potential GDP, and inflation. There isn’t even a solid empirical regularity.&lt;/p&gt;
+
+&lt;p&gt;Here is where I am going to chuck some rocks in the CBO’s direction. Even &lt;em&gt;they&lt;/em&gt; succumb to this notion that their projection has some real meaning regarding upper bounds. They use a form of this definition at various points throughout their documentation.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Potential output is the amount of real GDP that can be produced if labor and capital are employed at maximum sustainable rates.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What is the definition of “sustainable”? None is given by the CBO. It implies that their projection represents some sort of hard limit we must be wary of crossing lest …. some undefined entity be not sustained. Like, if the unemployment rate for people without HS diplomas drops below 7.4% will the sun explode? If TFP growth turns out to be higher than that guess, does &lt;em&gt;that&lt;/em&gt; mean the sun explodes? Should I be worried about a Chernobyl type incident?&lt;/p&gt;
+
+&lt;p&gt;If you want to jump in with “sustainable means not increasing the inflation rate”, then you better be prepared to explain why 2005 is the crux of all macroeconomic history around which inflation expectations were formed. You also have to explain why people forming inflation expectations are savvy enough to account for population aging and other demographic trends, but too stupid to understand when TFP growth over- or under-shoots a guess made by the CBO. Oh, you’d also need to come up with a coherent explanation for why 1-1.5% inflation is okay, why 2-2.5% inflation is not, and why if inflation did get to 2-2.5% the Fed would suddenly lose the ability to influence said inflation rate.&lt;/p&gt;
+
+&lt;p&gt;I love you, CBO peeps. But you gotta clean up the language on this, because the projections are getting misused to make bad economic arguments.&lt;/p&gt;
+
+&lt;p&gt;Your projections are “The GDP you might get if the economy was sorta like in 2005, but we took into account population aging.” That’s a really useful set of numbers! It just isn’t a set of numbers that have much, if anything, to do with the prospects of future inflation.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 24 Mar 2021 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Judge me by my TFP, do you?</title>
@@ -1371,101 +1478,6 @@
 &lt;p&gt;In the sense that institutions like the &lt;em&gt;mita&lt;/em&gt; or British rule can push an area below the threshold beyond which they cannot recover, then institutions matter for development for sure. And the evidence seems to keep accumulating that institutions of various kinds have these kinds of effects. The broader conclusion is thresholds exist, and that in turn means history matters for development in a powerful way. This gives us another reason for looking backwards for the sources of comparative development. Moreover, while the institutions literature was crucial in establishing that thresholds exist, that doesn’t limit us to thinking only of institutional reasons for falling behind. Anything, including geography or culture, could be a reason for falling below a threshold. It’s not institutions OR geography OR culture. It’s institutions AND geography AND culture.&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Feb 2019 00:00:00 -0600</pubDate>
-      </item>
-    
-      <item>
-        <title>The deep roots of development - Part 2</title>
-        <link>https://growthecon.com/blog/Deep-Roots-2/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Deep-Roots-2/</guid>
-        <description>&lt;p&gt;Look at me, two posts in less than two weeks! I’m back with the second part of the series I’m writing on the deep roots of comparative development. Part 1 is here, and gave an overview of this literature. Here I’m gonna tackle some of the basic evidence on crude living standard differences that I think motivates studying those deep roots in the first place.&lt;/p&gt;
-
-&lt;h3 id=&quot;modern-living-standards&quot;&gt;Modern living standards&lt;/h3&gt;
-&lt;p&gt;The variance in measures like GDP per capita across countries today is well known. This variance is the source of the question “Why are some places rich and some places poor?”. To get some sense of this variation, here’s a density plot of log real GDP per capita across countries from Angus Maddison’s dataset.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/fig_dens_maddison.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The line from 2010 ranges from about 6 (400-ish real dollars) to 10 (22,000-ish real dollars), or a factor of about 55. That takes into account some extremes, but the 90th/10th ratio is around 22, and even the 75th/25th ratio is still around 4. That is the scope of what we are trying to explain. How is it that some places produce four, or twenty, or fifty times as much as others?&lt;/p&gt;
-
-&lt;p&gt;If you look backward in time, say at 1913 or 1820, then you still see variance, but it is lower. In 1913 the distribution spans almost 3 log points (6 to 9), meaning a ratio of about 20 between top and bottom countries. The 90/10 ratio is about 6 in 1913. Going back to 1820, you still see variation, although the span is only about 1 log point (6 to 7), for a ratio of about 2.7, and a 90/10 ratio of about 3.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/fig_dens_maddison_lim.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;One issue with the first figure is that it may be skewed a little by the fact that more and more countries are included as the year becomes more recent. The second figure here shows the same kind of plots using only the same 48 countries that appear in the 1820 data. What that does is lop off the bottom end of the distribution in 2010. The 48 countries that Maddison calculated GDP per capita for in 1820 are all somewhat well off in 2010, although not universally so.&lt;/p&gt;
-
-&lt;p&gt;What can we learn from these figures? First, we can see that the very wide distribution of GDP per capita today (2010) was much narrower about 200 years ago, which was right around the time the Industrial Revolution hit northwest Europe. (NB: Arguing about the timing and scope of the IR is &lt;em&gt;not&lt;/em&gt; what I’m interested in here - 1820 is correct +/- 40 years either way). So with the onset of industrialization a major divergence took place that exaggerated the distribution of GDP per capita.&lt;/p&gt;
-
-&lt;p&gt;What isn’t obvious from the figures is whether it was the &lt;em&gt;same&lt;/em&gt; countries leading, and the same countries lagging, at each point in time. It could well be that the leading countries in 1820 got overtaken by poor countries in 1820, who are now rich. But that doesn’t appear to be the case. Rather than look at the density plots, the next figure shows log GDP per capita in 2010 against log GDP per capita in 1820 for the 48 countries that have data in both years. There is a clear positive relationship, meaning that the countries at the top end of the distribution in 1820 were still around the top of the distribution in 2010.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/fig_comp_maddison.png&quot; alt=&quot;1820 versus 2010&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I did not label these points with country names on purpose, because that way lies niggling arguments about specific cases, and for the time being that is not what I want to get into. Suffice it to say that there is evidence that leaders of 2010 were also likely to be leaders in 1820, although not universally.&lt;/p&gt;
-
-&lt;p&gt;As an aside, a perfectly valid question here is whether we should buy Maddison’s numbers for 1820. It could well be that Maddison decided &lt;em&gt;first&lt;/em&gt; that there &lt;em&gt;must&lt;/em&gt; be a positive relationship, and then backed out his 1820 numbers to make sure the figure ended up right. I don’t think he explicitly did this, but it could well be that his implicit ideas about relative incomes based on his impression of history were leading him one way or another. But I think there is sufficient data from wage series accumulating to support the idea that Maddison’s numbers are &lt;em&gt;roughly&lt;/em&gt; right in how they order countries in 1820.&lt;/p&gt;
-
-&lt;p&gt;A second thing to learn from these figures - or at least the first one - is that the bottom end of the distribution is about the &lt;em&gt;same&lt;/em&gt; in 2010 as it was in 1820. The poorest places in both time periods have real GDP per capita of around $400. It’s not just that the top end saw faster growth from 1820 to 2010 than the bottom end, it’s that the bottom end doesn’t appear to have grown &lt;em&gt;at all&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Perhaps this is trying to be too subtle, but I think this leads to a distinction in the following questions. “Why did poor countries today grow slower than rich countries from 1820 to 2010?” is not the same thing as “Why did poor countries today not grow at all?”. The latter question is more relevant to this deep roots literature. It is about what conditions led some countries to (eventually) make the jump to sustained growth, and what conditions have prevented (so far) others from making that same jump. I think the deep roots literature takes as a given that once you do make the jump, that there are strong convergence forces at work that will carry you to the neighborhood of rich countries, a la South Korea or Japan.&lt;/p&gt;
-
-&lt;p&gt;So perhaps to explain growth &lt;em&gt;today&lt;/em&gt;, we need to reach back to 1820 or earlier and identify what created the variation in the first place.&lt;/p&gt;
-
-&lt;h3 id=&quot;rich-populations-and-poor-populations&quot;&gt;Rich populations and poor populations&lt;/h3&gt;
-&lt;p&gt;The data in the prior figures is all based on country borders. And if you think about which ones are rich and which ones are poor, there are some regularities based on the origins of the people in those countries. Europe, and especially western Europe, is relatively rich. But so are places like the U.S., Canada, New Zealand, and Australia that are referred to as “Neo-Europes” because they are populated mainly be former Europeans. Looking down the range of GDP per capita, places like the southern cone of South America (Argentina, Chile, Uruguay) all have large groups of European descent, and they tend to be somewhat richer than places without European-descended populations, as in much of South Asia and Sub-Saharan Africa. Exceptions do exist, of course, as with South Korea or Japan.&lt;/p&gt;
-
-&lt;p&gt;We can look at some data to see that this is a bit more systematic, although don’t confuse this for any kind of causal claim, just an observation. Using data from &lt;a href=&quot;https://ideas.repec.org/a/oup/qjecon/v125y2010i4p1627-1682..html&quot;&gt;Putterman and Weil&lt;/a&gt;, I’ve created two plots. The first shows log GDP per capita in 2000 against the fraction of population in 2000 in a country that was descended from Europeans.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/fig_pw_europe.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There is a positive relationship, dominated by the two groups at the tails with either 0% or close to 100% European population, but there are a fair amount of countries lying in the middle, and you can see that the relationship is consistent across the whole range.&lt;/p&gt;
-
-&lt;p&gt;In contrast, next is the plot of log GDP per capita in 2000 against the fraction of population in a country that was descended for Sub-Saharan Africa. Here the relationship is negative, again dominated by countries in the tails, but with a consistent message through the middle of the figure.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/fig_pw_africa.png&quot; alt=&quot;Density plots of GDP per capita&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There is no way that, by chance, places with a high fraction of European descendants all happened to stumble onto the same package of institutions and technologies that stimulate sustained growth. Rather, this suggests that Europeans in general had, or developed, some institutions, technologies, or characteristics that were conducive to sustained growth. These features may have existed in some form or other back in 1500, which is how far back the migration data behind the figures goes, and Europeans just carted them around with them wherever they went. In that case, we’d want to look backwards in time to try and figure out what those characteristics were. On the other hand, it may be that the keys to sustained growth were not known in 1500, but that once some Europeans figured them out, it was easy to diffuse them amongst other Europeans. In that case, we still want to figure out what those charactersitcs were, but we’d also want to think about why diffusion was so easy amongst European populations (and so hard to other populations).&lt;/p&gt;
-
-&lt;p&gt;Let me be very clear that this is not a justification for doing ex-post reasoning about why Europeans are “better” than other populations. The leap to sustained growth by mainly European populations did not happen in a historical vacuum. The remaining populations of the world were not afforded an opportunity to see if they would find their way to sustained growth, and if that would diffuse among them in a similar manner, because the Europeans stepped in and colonized many of those populations first. As will be clear from this deep roots literature, colonization had significant and persistent effects on institutions, technologies, and other characteristics of these populations. It could well be that the only thing Europeans figured out and diffused among themselves was the willingness and ability to colonize other populations, and extract resources from them.&lt;/p&gt;
-
-&lt;h3 id=&quot;reversals-and-persistence&quot;&gt;Reversals and persistence&lt;/h3&gt;
-&lt;p&gt;That colonization experience should make us wary of assuming that the characteristics of rich, European-descended populations today are instrumental for development. The variation in living standards that shows up in Maddisons data in 1820 is correlated with whether a country took off to sustained growth or not after 1820, but that variation reflects the experience of colonization that took place prior to 1820 as well.&lt;/p&gt;
-
-&lt;p&gt;If we can go backwards to a period prior to colonization, then this can tell us more about the differences in 1820, and hence today. And it opens up the question of whether the places that did reach sustained growth today really were &lt;em&gt;always&lt;/em&gt; richer or better off (persistence), or whether they in fact were behind, and then overtook other economies (reversal).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ideas.repec.org/a/oup/qjecon/v117y2002i4p1231-1294..html&quot;&gt;Acemoglu, Johnson, and Robinson&lt;/a&gt; posed this question, and argued for a reversal. In order to do this, they had to use proxies for development, as GDP per capita numbers are not available for a lot of countries back to 1500, and furthermore they are going to be very noisy estimates.&lt;/p&gt;
-
-&lt;p&gt;Let’s take an aside to talk about why those might (or might not) be relevant measures of living standards. What we know from other areas of the growth literature is that the urbanization rate is highly correlated with living standards. The causation here is not clear - do cities drive growth, or does growth drive cities? - but the relationship shows up consistently over time. What Remi Jedwab and I did in a &lt;a href=&quot;/assets/EEH_2015.pdf&quot;&gt;paper&lt;/a&gt; was to look back at this correlation in history.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/fig_jv_urbrates.png&quot; alt=&quot;Urbanization and development&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The figure plots urbanization and log GDP per capita for three different years: 1500, 1950, and 2000. Yes, you should be wary of the 1500 relationship because of data issues, but a similar line is going to show up for 1700 or 1820 or 1850. The point is that the correlation is positive over a long span of history. In our paper we talk more about why the slope changed over time, and the baseline &lt;em&gt;level&lt;/em&gt; of urbanization rose across all countries, but for the purposes here we just want to see that urbanization and development are crudely correlated.&lt;/p&gt;
-
-&lt;p&gt;That takes care of urbanization. The other proxy is population density. That one is a little tougher to argue is a good measure of &lt;em&gt;living standards&lt;/em&gt;, even though it might be a very good proxy for the overall level of productivity or technology. For the period of time that AJR are thinking about, 1500, we think that the world was operating in a Malthusian state, as most production relied directly on fixed natural resources and population growth was positively associated with living standards. We could do the theory on this, as in &lt;a href=&quot;https://ideas.repec.org/a/aea/aecrev/v101y2011i5p2003-41.html&quot;&gt;Ashraf and Galor&lt;/a&gt;, to show that those living standards, in equilibrium, are &lt;em&gt;not&lt;/em&gt; related to productivity or technology, but rather to the parameters governing fertility and mortality behavior. On the other hand, population density &lt;em&gt;would&lt;/em&gt; be related to productivity or technology. Rather than looking at their theory, you could also read &lt;a href=&quot;https://growthecon.com/blog/Malthus/&quot;&gt;this post&lt;/a&gt; on Malthusian mechanics I did a while ago. The point is that population density isn’t a very good metric for living standards, although it does give us some indication of economic possibilities, perhaps, of a country/nation.&lt;/p&gt;
-
-&lt;p&gt;Going back to AJR, they showed that &lt;em&gt;among colonies&lt;/em&gt;, places with high urbanization rates or high population density in 1500 (e.g. North Africa, Mexico) were relatively &lt;em&gt;poor&lt;/em&gt; in GDP per capita by 1995. At the same time, places with low urbanization and population density in 1500 (e.g. Australia, Canada) were relatively &lt;em&gt;rich&lt;/em&gt; by 1995.&lt;/p&gt;
-
-&lt;p&gt;However, a more recent paper by &lt;a href=&quot;https://ideas.repec.org/a/aea/aejmac/v6y2014i3p1-28.html&quot;&gt;Chanda, Cook, and Putterman&lt;/a&gt; has revisited this result in light of &lt;em&gt;populations&lt;/em&gt;, as opposed to countries. These authors took the migration data from Putterman and Weil, and came up with the ancestry-adjusted measure of urbanization and density in each country in 1500. For example, in the original AJR data, the urbanization rate in Argentina in 1500 was essentially zero, and the population density was very low. But that reflects the populations that lived in Argentina in 1500. In the time from 1500 to today, Argentina was colonized and settled by the Spanish, and then received a major migration of Europeans like Italians. So the population in Argentina &lt;em&gt;today&lt;/em&gt; is descended from populations that had very &lt;em&gt;high&lt;/em&gt; urbanization and density in 1500.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/fig_ccp_urb.png&quot; alt=&quot;Adjusted relationship for urbanization&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;What CCP do is thus adjust each country’s urbanization and density in 1500 to account for this, and compare to the original AJR result. The figure here with the label “Panel A” is from their paper. On the left it shows the original AJR relationship of log GDP per capita in 1995 with the urbanization rate in 1500, and the negative slope - the reversal - is clear. But on the right, you have the CCP ancestry-adjusted measure of urbanization along the x-axis. This has a clear &lt;em&gt;positive&lt;/em&gt; slope. In other words, countries that contain a large number of people descended from places with high urbanization rates are still rich today. In that sense there was persistence in development over time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../assets/fig_ccp_dens.png&quot; alt=&quot;Adjusted relationship for density&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can do the same adjustment with the density data, as in the figure with label “Panel B” from the CCP paper. Again, the AJR result is on the left, and the CCP result is on the right. And again, there is a clear flip from a negative relationship and reversal to a positive relationship and persistence. Countries today that have populations descended from dense places are relatively rich today.&lt;/p&gt;
-
-&lt;p&gt;This gives us some evidence that population-based differences in living standards are persistent over very long periods of time. And the fact that these comparisons are only over former colonies removes some concern that we’re comparing apples (colonizers) to oranges (colonized). But there clearly remain some open issues here. The nature of colonization was not identical across these countries. The ancestry-adjusted population of Argentina is heavily European because colonization led, through disease or warfare, to an almost total annihilation of the original population. On the other hand, Nigeria’s population has very little European descent because the disease environment favored Nigerians and (perhaps because of this) Europeans never wanted to, or never could, undertake migrations like those into Argentina.&lt;/p&gt;
-
-&lt;p&gt;Nevertheless, the CCP results confirm that there is &lt;em&gt;something&lt;/em&gt; persistent in development levels of populations. So if we want to understand why some of those populations were able to achieve the take-off to sustained growth, and some not, we want to keep digging backwards in time to see how they differed.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-do-we-do-with-this-evidence&quot;&gt;What do we do with this evidence?&lt;/h3&gt;
-&lt;p&gt;Before going forward, it may be worth thinking about what we’re up against in trying to explain current development patterns as a function of past development patterns. I think of it in two steps.&lt;/p&gt;
-
-&lt;p&gt;First, we have to identify characteristics of &lt;em&gt;populations&lt;/em&gt; today that differ by the level of development. We cannot just identify them, we need some causal evidence that these characteristics have a real effect on development. In addition, we’ll need some theoretical understanding, which need not involve any kind of fancy math, of what creates that causal link. To give you an example of what I mean here, think of trust in strangers. There is evidence that the amount of trust people have in strangers differs significantly between populations, with many rich populations displaying higher levels of trust than poor populations. There is some plausible evidence that trust in fact causes more economic activity, and the theory is that trust with strangers allows one access to a much wider possible set of transactions than limiting oneself to transactions with kin-group members.&lt;/p&gt;
-
-&lt;p&gt;The second step, which is where the deep roots literature specializes, is in trying to identify the &lt;em&gt;source&lt;/em&gt; of the variation in that characteristic. Why would some populations be prone to trust strangers more than other populations? The data presented here are indirect evidence that this variation extends way back in time, and hence the source may extend way back in time as well. It could be specific historical events, such as evidence that trust within Africa was affected by the degree to which populations were exposed to the slave trade. Or perhaps there are environmental features that lead to variation, as perhaps different types of farming require different amounts of cooperation or work with possible strangers? Maybe it involves some combination of institutional and cultural shifts, perhaps related to marriage patterns? Regardless, we’re after &lt;em&gt;why&lt;/em&gt; these characteristics, like trust, vary by populations, not just in identifying that they vary in the first place.&lt;/p&gt;
-
-&lt;p&gt;We need both steps. The first step, by itself, can be interesting, but without the second step can deteriorate into “just-so” stories about why certain populations are “of course” better suited to development. The second step, by itself, can be interesting, but without the first can deteriorate into what amounts to overly complicated magazine articles without any relevance for current development. Which isn’t to say that every single paper has to tackle both steps, although some do. Our overall understanding has to involve both.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 11 Jan 2019 00:00:00 -0600</pubDate>
       </item>
     
   </channel>
