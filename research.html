@@ -15,22 +15,45 @@ permalink: /research/
     </div>
   </div>
 </section>
-<section id="intro">
+
+<section id="working">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h4>Click titles for PDF of paper. Links to code and data where available.</h4>
-        </div>
+          <h1>Working papers</h1>
+
+            {% for post in site.categories.wp %}
+            <div class="post-area">
+              <a href="{{ post.pdf | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+               <p style="font-size:20px">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
+                        <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp;{% if post.data %}
+                        <a href="{{ post.data }}" style="font-size:20px">Data/Code</a>{% endif %} &nbsp;{% if post.appendix %}<a href="{{ post.appendix }}" style="font-size:20px">Appendix</a>{% endif %}</p>
+            </div>
+            {% endfor %}
+       </div>
       </div>
     </div>
   </div>
 </section>
-{% for post in site.categories.me %}
-<div class="container">
-  <a href="{{ post.pdf | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
-   <p class="post-date">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
-            <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp;{% if post.data %}<a href="{{ post.data }}">Data/Code</a>{% endif %} &nbsp;{% if post.appendix %}<a href="{{ post.appendix }}">Appendix</a>{% endif %}</p>
-</div>
-{% endfor %}
+<section id="published">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Published</h1>
+
+            {% for post in site.categories.me %}
+            <div class="post-area">
+              <a href="{{ post.pdf | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+               <p style="font-size:20px">{{ post.date | date: "%Y" }}. &nbsp; {{ post.author }}. &nbsp;
+                        <i>{{ post.journal }}.</i> &nbsp; {{ post.volume }}. &nbsp;{% if post.data %}
+                        <a href="{{ post.data }}" style="font-size:20px">Data/Code</a>{% endif %} &nbsp;{% if post.appendix %}<a href="{{ post.appendix }}" style="font-size:20px">Appendix</a>{% endif %}</p>
+            </div>
+            {% endfor %}
+      </div>
+      </div>
+    </div>
+  </div>            
+</section>
 

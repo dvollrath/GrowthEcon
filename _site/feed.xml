@@ -5,7 +5,125 @@
     <atom:link href="https://growthecon.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://growthecon.com/</link>
     <description></description>
-    <pubDate>Wed, 24 Mar 2021 11:53:23 -0500</pubDate>
+    <pubDate>Wed, 28 Apr 2021 13:32:42 -0500</pubDate>
+    
+      <item>
+        <title>How sensitive is GDP to capital?</title>
+        <link>https://growthecon.com/blog/Elasticity/</link>
+        <guid isPermaLink="true">https://growthecon.com/blog/Elasticity/</guid>
+        <description>&lt;p&gt;This is an odd post because it is an advertisement for a new paper that is …. in an advanced draft state? “Finished” is wrong because I’m about to embark on the roller-coaster that is submission and publication. But there are actual pages of text, and tables, and figures, and bibliography.&lt;/p&gt;
+
+&lt;p&gt;The paper itself is titled &lt;a href=&quot;https://growthecon.com/assets/Elasticity-Master.pdf&quot;&gt;The Elasticity of Aggregate Output with Respect to Capital and Labor&lt;/a&gt;. Code and data for it can be found on &lt;a href=&quot;https://github.com/dvollrath/Elasticity&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you’re a bit of a growth geek and somehow find that title intriguing, you can jump right to the link and read. Happy to receive comments. Otherwise, the rest of this post is an extended abstract explaining the main findings and how I got them.&lt;/p&gt;
+
+&lt;h3 id=&quot;alpha-equals-what&quot;&gt;Alpha equals what?&lt;/h3&gt;
+&lt;p&gt;From a macro/policy perspective, it would be nice to know how sensitive GDP is to the stock of capital or the amount of labor used. Focusing on capital, I’d like to know the elasticity of GDP with respect to capital, or&lt;/p&gt;
+
+\[\frac{d \ln Y}{d \ln K} = ??.\]
+
+&lt;p&gt;Knowing that ?? number would inform me about things like the possible impact of a federal infrastructure bill, or the consequences of changes in savings behavior based on capital gains taxes, or the possible implications of demographic changes that influence home purchases and construction (capital goods). It’s got implications for how fast countries converge to steady state over time. It has a first-order effect on how we calculate TFP growth. It’s a relevant, important number, and you can make the same argument for why the elasticity of GDP with respect to labor is important.&lt;/p&gt;
+
+&lt;p&gt;Probably the most commonly used assumption in macro, and maybe in all of economics, is that this elasticity with respect to capital is equal to one-third. It’s even got it’s own greek letter. Hence you’ll see “alpha equals one-third” in a million macro papers, which refers to the coefficient &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt; on capital in a Cobb-Douglas production function. If you’ve taken an intermediate macro course, you’ve seen this,&lt;/p&gt;
+
+\[Y = K^{\alpha}(AL)^{1-\alpha},\]
+
+&lt;p&gt;or something very, very close to it. If you take logs of this, you can figure out that &lt;img src=&quot;http://latex.codecogs.com/png.latex?d \ln Y/ d \ln K = \alpha\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;That holds in general. Where does this idea that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha = 1/3\inline&quot;/&gt; come from? That requires two big assumptions. First, it requires that there is such a thing as an aggregate production function. The existence of an aggregate production function requires a &lt;em&gt;lot&lt;/em&gt; of underlying assumptions to be true. &lt;a href=&quot;http://jesusfelipe.com/wp-content/uploads/2019/09/The-Aggregate-Production-Function-Not-Even-Wrong.pdf&quot;&gt;Felipe and McCombie&lt;/a&gt; refer to the aggregate production function as “not even wrong”, echoing Pauli’s assertion about a theory that was too incomplete to be used to make predictions. I think the best way to think about the issue is that an aggregate production function is pretending to be a statement about a physical relationship (e.g. combine two units of capital with three workers to get 12 widgets) as if it were a chemical formula. But because output is aggregate across goods using relative prices (and capital is handled similarly) the analogy just doesn’t hold.&lt;/p&gt;
+
+&lt;p&gt;Second, the rule of thumb about &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha = 1/3\inline&quot;/&gt; depends on the assumption that there are no economic profits in the economy. Without economic profits, it would be the case that &lt;img src=&quot;http://latex.codecogs.com/png.latex?1-\alpha = wL/Y\inline&quot;/&gt; if the economy were cost-minimizing, with &lt;img src=&quot;http://latex.codecogs.com/png.latex?wL\inline&quot;/&gt; being total labor compensation. Since we see that &lt;img src=&quot;http://latex.codecogs.com/png.latex?wL/Y\inline&quot;/&gt; is about 2/3 in the data (or was until recently), that means &lt;img src=&quot;http://latex.codecogs.com/png.latex?1-\alpha\inline&quot;/&gt; is about 2/3, and therefore &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha\inline&quot;/&gt; is about 1/3.&lt;/p&gt;
+
+&lt;p&gt;The common answer that “alpha equals on-third” delivers an answer to the question of what is the elasticity of GDP with respect to capital. But is it a meaningful answer, given that the assumptions it relies on are tenuous? It might be the right answer for a fictional economy that only exists on paper, but not in real life.&lt;/p&gt;
+
+&lt;h3 id=&quot;higher-faster-farther&quot;&gt;Higher, faster, farther&lt;/h3&gt;
+&lt;p&gt;Can we do better? Yes. Thanks to recent work in a series of papers by David Baqaee and the late Emmanuel Farhi (see &lt;a href=&quot;https://ideas.repec.org/a/wly/emetrp/v87y2019i4p1155-1203.html&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://ideas.repec.org/p/nbr/nberwo/25688.html&quot;&gt;here&lt;/a&gt; for what I think are the right places to start) it is possible to break with the strict assumptions lying behind the aggregate Cobb-Douglas function and the rule of thumb “alpha equals one-third”.&lt;/p&gt;
+
+&lt;p&gt;In my paper, I’m taking their theory and calculating the elasticity &lt;img src=&quot;http://latex.codecogs.com/png.latex?d \ln Y/ d \ln K\inline&quot;/&gt; (and a similar one for labor) while relaxing a bunch of the assumptions embedded in the rule of thumb. In particular, what do Baqaee and Farhi allow for?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Different units with different cost structures&lt;/strong&gt;. In my case, the economy will have a bunch of different industries, each responding to capital and labor in a unique way. There is no need to assume that all industries have a similar Cobb-Douglas formula, or that it is Cobb-Douglas at all. Conceptually the theory could allow one to do this with information on all firms or establishments, I just don’t have that kind of detail.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Input-output relationships&lt;/strong&gt;. Those industries can be suppliers to one another, as in real life. This means that the impact of some additional capital in one industry (e.g. a new truck) can have a cascade of effects on other industries by making their costs (e.g. of shipping) lower. The effect of capital on GDP depends on the network that connects these industries, and the aggregate elasticity I’m after is not just adding up the individual effects.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Frictions or markups&lt;/strong&gt;. One of the big problems above was that it assumed zero economic profits, which a whole host of recent research (and baseline intuition) tells us is wrong. Each industry may be charging a markup of price over costs, and that could be due to market power or some other friction. The Baqaee/Farhi setting is flexible enough that the source of that markup doesn’t matter.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Baqaee/Farhi show how to find the aggregate elasticity I want from the industry-level information on costs of labor and capital. Before we move on, a couple of comments. First, this is like one tiny sliver of the Baqaee/Farhi theoretical setting. There are a ton of additional insights to work with. Second, my implementation of this is &lt;em&gt;better&lt;/em&gt; than the rule of thumb, but it is not &lt;em&gt;perfect&lt;/em&gt;. If you had data on each individual establishment and worker you could conceptually do this in an even more refined manner, improving on the numbers I’ll show you below.&lt;/p&gt;
+
+&lt;h3 id=&quot;garbage-in-garbage-out&quot;&gt;Garbage in, garbage out&lt;/h3&gt;
+&lt;p&gt;Okay, so I implement what Baqaee/Farhi came up with. Was that really that hard? Yes, because the data you need to stick into the formula that Baqaee/Farhi come up with is not immediately available from any national account. The core pieces of information you need are, for each industry, their cost of labor, their cost of intermediates purchased from other industries, and their cost of capital.&lt;/p&gt;
+
+&lt;p&gt;It’s this last one - the cost of capital - that creates the issue. The cost of capital is not reported in the national accounts, in large part because what we as economists consider the cost of capital is &lt;em&gt;not&lt;/em&gt; what businesses think of when they talk about costs. Here’s one way to think about this.&lt;/p&gt;
+
+&lt;p&gt;When economists think of breaking down the value-added of an industry (it’s contribution to GDP) they do so in the following way&lt;/p&gt;
+
+\[VA_i = COST_{iL} + COST_{iK} + EPROF_{i}\]
+
+&lt;p&gt;or the value-added of industry &lt;img src=&quot;http://latex.codecogs.com/png.latex?i\inline&quot;/&gt; gets accounted for by costs of labor (the first term), costs of capital (the second term), or economic profits (the last term). Those economic profits are often called “rents”, and refer to earnings the industry makes over and above the strict cost of production (labor and capital).&lt;/p&gt;
+
+&lt;p&gt;When businesses or the BEA breaks down value-added of an industry they do so more like this&lt;/p&gt;
+
+\[VA_i = COST_{iL} + GOS_{i}\]
+
+&lt;p&gt;where the cost of labor is the same, but the second term is “Gross Operating Surplus”. That gross operating surplus combines the cost of capital and the economic profits of the industry. Why? Think of an industry (or firm) who owns their capital outright (as opposed to renting it in). There is no “cost of capital” to record in the books. Everything that isn’t a cost of labor is an accounting profit for them, and the distinction between accounting profits they make due to owning capital versus earning economic profits is irrelevant.&lt;/p&gt;
+
+&lt;p&gt;But to do the Baqaee/Farhi calculation you have to have &lt;img src=&quot;http://latex.codecogs.com/png.latex?COST_{iK}\inline&quot;/&gt;. Gross operating surplus doesn’t cut it. So the game I play in my paper is coming up with various assumptions about how industries work to come up with estimates of &lt;img src=&quot;http://latex.codecogs.com/png.latex?COST_{iK}\inline&quot;/&gt;, and looking at what they imply for the elasticity of GDP with respect to capital.&lt;/p&gt;
+
+&lt;p&gt;I can’t come up with a single elasticity. I instead provide you, dear reader, with a set of bounds between which the real elasticity probably lives. What are the bounds?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;No-profit upper bound&lt;/strong&gt;. The first assumption is to assume that economic profits are zero. In that case you can see from the two prior equations that &lt;img src=&quot;http://latex.codecogs.com/png.latex?COST_{iK} = GOS_i\inline&quot;/&gt;, so this is measurable from the national accounts. But wait, isn’t this just what I said the rule of thumb did wrong? Yes! It was one of the assumptions in the rule of thumb. But even with this I’m still able to allow for the multiple industries and the input-output relationships, so this is a mild improvement over the rule of thumb. With this no-profit assumption note that the cost of capital is as large as it could be, and hence the elasticity of GDP with respect to capital is going to be as large as it could be. Thus this represents an upper bound.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Depreciation lower bound&lt;/strong&gt;. The national accounts data don’t have a true cost of capital measure. But they have &lt;em&gt;some&lt;/em&gt; information on costs of capital. In particular, they report the depreciation of capital for each industry, which is something like the minimal cost of capital that each industry faces - stuff breaks or wears out. Using depreciation to proxy for &lt;img src=&quot;http://latex.codecogs.com/png.latex?COST_{iK}\inline&quot;/&gt;, I can calculate the elasticity of GDP with respect to capital. Because this is like the minimal amount of capital cost each industry faces, it also represents the lower bound for the elasticity.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I could also bore you for a while with having to match industry-level data up bewteen the input-output tables and the national accounts, which is tedious and annoying and I hated it and it took by far the most time in all of this. But none of you want to hear about that.&lt;/p&gt;
+
+&lt;p&gt;What do I find? The figure below shows you the core result. The dashed line on top is the estimated elasticity of GDP with respect to capital when I use the no-profit assumption described, and the solid line on the bottom is the elasticity using the depreciation cost assumption. The real elasticity lives somewhere in that gray zone in between them. Note this isn’t a confidence interval, and there is nothing telling us that the real elasticity must be in the middle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_cap_base_comparison.png&quot; alt=&quot;Base results&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that for most of this period the elasticity lies below one-third, or the rule of thumb is probably over-stating how sensitive GDP is to capital. That possible changed around 1998, when the bounds both start to drift up. It doesn’t prove the actual elasticity changed, but starts to imply it. The rule of thumb isn’t exactly right, and it probably makes sense to think of this elasticity being lower than one-third, but not by a lot.&lt;/p&gt;
+
+&lt;p&gt;Incidentally, the labor elasticity is just the reverse of this, as the labor elasticity is going to be one minus the capital elasticity. So turn your phone upside down and look at the figure and you’ll get the bounds for the labor elasticity.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of variations one can run with this, and that is a lot of what the paper does. One version that I find interesting is to consider the elasticity of private business sector output with respect to capital. The private business sector is GDP minus housing and the government. The next figure shows you the same kinds of bounds (no-profit and depreciation) for this more limited slice of the economy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_cap_priv_comparison.png&quot; alt=&quot;Base results&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The range is shifted down by about 0.05 or so everywhere. That means the private business sector is less sensitive to capital than the economy as a whole. Why? Mainly because housing value-added is very, &lt;em&gt;very&lt;/em&gt;, sensitive to capital. Remember, the BEA imputes the value-added from housing as the rents that you would pay yourself for living in your home. That imputed rent almost all ends up being attributed as a capital cost rather than a labor cost. A big reason that one-third is even plausible as an upper bound for the elasticity is because housing is extremely sensitive to capital. Absent that, the economy appears to be less sensitive as a whole.&lt;/p&gt;
+
+&lt;h3 id=&quot;um-so-who-cares&quot;&gt;Um, so who cares?&lt;/h3&gt;
+&lt;p&gt;One of the things that this elasticity gets used for is in backing out TFP growth. The standard way to calculate TFP growth is as follows&lt;/p&gt;
+
+\[d \ln TFP_t = d \ln Y_t - \epsilon_K d \ln K_t - \epsilon_L d \ln L_t\]
+
+&lt;p&gt;which shows that TFP growth is just what is “left over” after you subtract off the growth of capital and labor from the growth in GDP. The weights on the growth rate of capital and labor are the elasticities, &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt;. These elasticities are what I was calculating above, and I’m just using the greek letters here as shorthand.&lt;/p&gt;
+
+&lt;p&gt;If you go to the BLS and look at their TFP growth estimates, they infer &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt; using a similar rule of thumb to &lt;img src=&quot;http://latex.codecogs.com/png.latex?\alpha = 1/3\inline&quot;/&gt;. They don’t assume that &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; is literally fixed for all time, but they do assume that they can back out the value of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; using the no-profit assumption. That means they are using the highest possible estimate for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt;, and the lowest possible one for &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt;. But we know this is an extreme assumption, so it may well be over or understating TFP growth.&lt;/p&gt;
+
+&lt;p&gt;What do you get if you use different estimates of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt;, based on the Baqaee/Farhi calculations I do? Then this changes the implied growth rate of TFP, and hence the implied path of TFP over time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fig_tfp_comparison.png&quot; alt=&quot;TFP&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this figure, the lowest line matches what the BLS calculates for the level of TFP over time (starting from a baseline of 100 in 1948). The other lines show the implied path of TFP when you use different estimates of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt; depending on the assumptions about capital costs. The top solid line is when you use depreciation costs to measure capital costs, and the implied elasticity on capital is lower (and the elasticity on labor is higher). TFP ends up higher by about 20% (a little over 300 versus about 250 in 2018). The intermediate cases are based on some other assumptions about capital costs that lead to different estimates of &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_K\inline&quot;/&gt; and &lt;img src=&quot;http://latex.codecogs.com/png.latex?\epsilon_L\inline&quot;/&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nothing about this changes the general picture of TFP growth over time. There’s a slowdown in the 1970s into the 1980s. There is more rapid growth in the late 1990s. There is another slowdown in the 21st century. But the implied growth rate the BLS gets is almost certainly a &lt;em&gt;lower&lt;/em&gt; bound to actual TFP growth. Which means the level of TFP is higher today than the BLS would imply, and that the trend growth rate is slightly higher than they would tell you.&lt;/p&gt;
+
+&lt;p&gt;I think there are a number of other applications of these elasticities. The Baqaee/Farhi setting gives you the ability to talk about a very complex production side of the economy (I/O relationships, multiple industries, markups) in a very concise way. These elasticities give you the sensitivity of the aggregate economy to capital and labor with all those complications already embedded in them. It means you can answer questions about policy, demographics, and TFP for an economy with all those complications, but without having to &lt;em&gt;model&lt;/em&gt; all those complications explicitly. The elasticities are sufficient for a lot of purposes.&lt;/p&gt;
+
+&lt;p&gt;As I said above, this is not definitive. One could drill down even further and come up with even more refined estimates of those elasticities. But it is an improvement on the rule of thumb, and gives some sense of how that rule of thumb likely overshoots the right elasticity with respect to capital (and undershoots it with respect to labor).&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Apr 2021 00:00:00 -0500</pubDate>
+      </item>
     
       <item>
         <title>Pandemic relief and potential GDP (plus CBO methodology appendices!)</title>
@@ -1420,64 +1538,6 @@
 &lt;p&gt;Why? Because for the purposes of the empirical work that people do in this area, it is environmental variation that is measurable and (arguably) exogenous. For the papers you’ll find in economics involving deep origins of culture, environmental characteristics are always on the right-hand side, and there is little to no explicit discussion of cultural evolution. Perhaps there is some hand-waving about how culture does evolve, but for the purposes of running some regressions, researchers almost always fall back on environmental features to explain (imperfectly, with R2 less than one) cultural variation.&lt;/p&gt;
 </description>
         <pubDate>Sun, 17 Mar 2019 00:00:00 -0500</pubDate>
-      </item>
-    
-      <item>
-        <title>The deep roots of development - Part 3</title>
-        <link>https://growthecon.com/blog/Deep-Roots-3/</link>
-        <guid isPermaLink="true">https://growthecon.com/blog/Deep-Roots-3/</guid>
-        <description>&lt;p&gt;This is the third entry in the series on deep roots, and it concerns institutions. One of the earlier (and most widely-read) series on this blog was the “Skeptics Guide to Institutions” which had four entries: &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-1/&quot;&gt;one&lt;/a&gt;, &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-2/&quot;&gt;two&lt;/a&gt;, &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-3/&quot;&gt;three&lt;/a&gt;, and &lt;a href=&quot;https://growthecon.com/blog/the-skeptics-guide-to-institutions-part-4/&quot;&gt;four&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Those posts were particularly concerned with a critique of the cross-country empirical work on institutions that started around the mid-1990s as part of the cross-country growth regression literature, and was carried forward by the Acemoglu, Johnson, and Robinson study that used settler mortality as a source of exogenous variation in institutions. I don’t want to reinvent the wheel here, and those original posts are still a decent introduction to that set of papers. The TL;DR version of them is that I don’t find the empirical work convincing in establishing the proposition that institutions are &lt;em&gt;the&lt;/em&gt; fundamental determinant of comparative development. The main criticisms were as follows:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;The scales of institutional quality (e.g. “protection against expropriation” or “constraints on executives”) are used improperly in regressions. Treating these scales, which might run from 1 (worst) to 7 (best), as a continuous variable implies that the differences in institutions which exist can in fact be measured. That is, it implies that Liberia’s institutions (a 2) are better than Cuba’s (a 1) in &lt;em&gt;exactly&lt;/em&gt; the same way that Australia’s (a 7) are better than South Korea’s (a 6). There’s no way that is true. Better to use sets of dummies for each group.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In many cases institutional scales are just functioning as regional dummies. If you code a measure of institutional quality for European countries in 1750, and get that the Netherlands and England have a “3”, while Spain and Portugal have a “1”, and use this in a regression, then you may as well be using an indicator for “gray winters” versus “sunny winters”.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Instrumenting for the quality of institutions in colonies using the mortality rates of European settlers doesn’t satisfy the condition that the instrument (settler mortality) have an effect on living standards &lt;em&gt;only&lt;/em&gt; through its affect on institutions. First, the measures of institutions are picking up far more than the specifics of constraints on the executive and the like, and second, settler mortality is like a summary statistic for biological/geographic conditions, which almost certainly have other routes to influence living standards.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Hence I don’t spend a lot of time in class going through the body of literature on these cross-country institutional studies. Nevertheless, I do spend time talking a lot about institutions.&lt;/p&gt;
-
-&lt;p&gt;Fair warning that I didn’t proofread this carefully, so apologies for the typos that probably exist.&lt;/p&gt;
-
-&lt;h3 id=&quot;whats-the-question&quot;&gt;What’s the question?&lt;/h3&gt;
-&lt;p&gt;A key point in studying institutions, from my perspective, is being clear on what question we’re actually trying to answer. If the question is “Do institutions matter?”, then I think the answer is “Yes”, but that this answer is trivial. &lt;em&gt;Of course&lt;/em&gt; they matter. I don’t know that you can call yourself a social scientist and not believe that institutions, writ large, matter for economic outcomes. Markets (distorted or not) are institutions, and so even if you have some hardcore belief that you only want to study the &lt;em&gt;economics&lt;/em&gt; of something, you &lt;em&gt;still&lt;/em&gt; implicitly think that institutions matter. So the literature isn’t about convincing us that institutions are worth studying. They are.&lt;/p&gt;
-
-&lt;p&gt;The second kind of question is “Are institutions responsible for sustained growth and/or comparative development?” That’s a much meatier question, and there isn’t an obvious answer here, meaning it is open for study. The original cross-country literature had this as it’s main question, with one important modification. The question was usually a form of “Are institutions &lt;em&gt;solely&lt;/em&gt; responsible for sustained growth and/or comparative development?”, and the implied answer had to be Yes/No. That put too high of stakes on everything, as if there was some kind of Highlander-like cosmic battle going on amongst competing explanations and &lt;em&gt;there could be only one&lt;/em&gt;. One, there is no plausible way to pick one of those answers (although you would bet on “No”) using data, which would always involve uncertainty. Two, if you wanted to make this argument theoretically, then you can make the answer “Yes” just by redefining institutions until you have a nebulous enough concept to make it true by definition.&lt;/p&gt;
-
-&lt;p&gt;The less severe “Are institutions responsible for sustained growth and/or comparative development?” is plausible as a question, but again runs into the issue that we probably won’t be able to find enough data across a wide enough range of economies to really make any definitive conclusions. Which means that this question is something that will probably always be best addressed in a more speculative fashion by someone who is synthesizing lots of existing findings, rather than being pinned down by any specific regression.&lt;/p&gt;
-
-&lt;p&gt;But most of the papers in this literature do have specific regressions in them. What are they asking? I’d say it is something along the lines of “What were the observable effects of institution X?”. This is a much more modest question, of course. Once you answer it, you will not know whether institutions are the root cause of comparative development or not. But you will have a clear idea of the effects of institution X, and that may be an input into the synthesizing that you or someone else does later on.&lt;/p&gt;
-
-&lt;p&gt;This is the current state of the literature on institutions, from my perspective. In retreating a little on the scope of the question, we’ve been able to get a wave of very nice papers on specific institutions and their influence on economic outcomes over time. That’s the literature I focus on in the class.&lt;/p&gt;
-
-&lt;h3 id=&quot;variation-in-institutions&quot;&gt;Variation in institutions&lt;/h3&gt;
-&lt;p&gt;One of the features of this latest literature is the care it (usually) takes with identifying causal effects, motivated by the general evolution of economics in the last few decades. In the case of institutions, however, this has meant that nearly &lt;em&gt;all&lt;/em&gt; of the work now ends up studying consequences of a broader historical event, colonization.&lt;/p&gt;
-
-&lt;p&gt;The reason for this involves an implicit assumption about institutions themselves. If you think that institutions are themselves a reaction to existing conditions (geographic, economic, political, etc..), and evolve to solve very specific problems, then there is essentially no way to evaluate the effect of institutions across any two units of observation. You could call this the “Ostrom problem” after &lt;a href=&quot;https://en.wikipedia.org/wiki/Elinor_Ostrom&quot;&gt;Elinor Ostrom&lt;/a&gt;, who noted across a long career that local institutions to manage common pool resources (almost?) always had a clear rationale and were able to prevent environmental overuse.&lt;/p&gt;
-
-&lt;p&gt;Why does this create an empirical problem? Let’s assume that I’m trying to compare several different societies (or countries, or villages, or whatever) with some difference in observable institutions. Even if I control for other observable characteristics (e.g. environmental or whatever) the the Ostrom problem is that the differences in observable institutions are, almost by definition, related to some other unobservable characteristics. In short, the Ostrom problem is that differences in institutions can never be thought of as random.&lt;/p&gt;
-
-&lt;p&gt;Which brings us back to colonization. Most current work on institutions uses an aspect of colonization to find variation in institutions, because it might be plausible to argue that these institutions were imposed from outside, and not related to unobservables. In certain situations, you might even be able to argue that the institutional differences were the result of random chance.&lt;/p&gt;
-
-&lt;p&gt;A good example here is the paper by &lt;a href=&quot;https://ideas.repec.org/a/tpr/restat/v92y2010i4p693-713.html&quot;&gt;Lakshmi Iyer&lt;/a&gt; on the effects of direct versus indirect British rule in India. There, she argues that there was plausibly random variation in direct/indirect rule due to death of local rulers without heirs. For a specific time period, if there was such a lapse, the British took control directly, while in areas where an heir existed they took control and rule remained indirect. With this kind of quasi-random variation in institutions, she can do a well-defined empirical comparison, and finds that directly ruled areas have fewer public goods (e.g. schools, clinics, roads), even today, than indirectly ruled places.&lt;/p&gt;
-
-&lt;p&gt;This only works because there was a colonizer that had a level of control of the institutional structure, and thus the organic local institutions (which may have used adopted heirs or some other means of choosing a successor) were shut down. This same kind of logic is at work in most of the other institutional papers that have come out recently. By leveraging a colonizers power over a given colony, we can see some kind of clear exogenous variation in institutional structure that otherwise would be correlated with unobservables.&lt;/p&gt;
-
-&lt;h3 id=&quot;institutions-and-historical-persistence&quot;&gt;Institutions and historical persistence&lt;/h3&gt;
-&lt;p&gt;I talked about this in my original Skeptics Guides, but once we’re looking at the literature on effects of specific (often colonial) institutions, we’re talking much more about historical persistence than institutions &lt;em&gt;per se&lt;/em&gt;. That is, a common goal in these papers is to establish that there are &lt;em&gt;current&lt;/em&gt; differences in living standards associated with some &lt;em&gt;historical&lt;/em&gt; differences in institutions. That’s the purpose of Dell’s paper on the mining &lt;em&gt;mita&lt;/em&gt;, and the purpose of Iyer’s paper on British rule in India.&lt;/p&gt;
-
-&lt;p&gt;The institutions that they study no longer exist, of course. So the finding that the &lt;em&gt;mita&lt;/em&gt; or British direct rule had negative effects on living standards is not a statement about the direct effects of &lt;em&gt;those&lt;/em&gt; institutions on contemporaneous populations. Instead, these papers establish that while once those institutions had &lt;em&gt;some&lt;/em&gt; negative effect on the affected economies - although this is usually some kind of black box - these areas remained behind even after the institution itself was removed. These papers are evidence that there is some path dependence in development, and if you push down a place far enough, it won’t be able to catch up again. Note that this runs counter to our standard stories of growth and development, where negative shocks have temporary effects and forces of accumulation, catch-up, and/or convergence bring the economy back to normal.&lt;/p&gt;
-
-&lt;p&gt;In the sense that institutions like the &lt;em&gt;mita&lt;/em&gt; or British rule can push an area below the threshold beyond which they cannot recover, then institutions matter for development for sure. And the evidence seems to keep accumulating that institutions of various kinds have these kinds of effects. The broader conclusion is thresholds exist, and that in turn means history matters for development in a powerful way. This gives us another reason for looking backwards for the sources of comparative development. Moreover, while the institutions literature was crucial in establishing that thresholds exist, that doesn’t limit us to thinking only of institutional reasons for falling behind. Anything, including geography or culture, could be a reason for falling below a threshold. It’s not institutions OR geography OR culture. It’s institutions AND geography AND culture.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 05 Feb 2019 00:00:00 -0600</pubDate>
       </item>
     
   </channel>
