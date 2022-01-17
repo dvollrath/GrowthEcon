@@ -1,6 +1,6 @@
 ---
-title: Thinking Out Aloud, Why Gifts Are Not Exchange (and how exchange leads to money), a reconsideration of Marcel Mauss’s essay The Gift
+title: Thinking Out Aloud, Clades not clusters, about the folk theory of race
 category: link
-external_url: http://lorenzo-thinkingoutaloud.blogspot.com/2020/08/why-gifts-are-not-exchange-and-how.html
+external_url: http://lorenzo-thinkingoutaloud.blogspot.com/2019/06/clades-not-clusters-about-folk-theory.html
 tags: deep
 ---
